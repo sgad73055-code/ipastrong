@@ -7,16 +7,16 @@ from datetime import datetime, timezone
 
 
 # ==========================================
-# إعدادات
+# الإعدادات
 # ==========================================
 
 FILE = Path("ipastrong.json")
 MAX_APPS = 12000
 
 BACKUP_FILES = [
-    Path("ipastrong-base.json"),
     Path("IPA-STORE.json"),
     Path("ipa-store.json"),
+    Path("ipastrong-base.json"),
     Path("IPA-AR.json"),
 ]
 
@@ -45,7 +45,7 @@ SOURCES = [
 
 
 # ==========================================
-# معلومات المصدر
+# معلومات المتجر
 # ==========================================
 
 STORE_INFO = {
@@ -62,7 +62,7 @@ STORE_INFO = {
 
 
 # ==========================================
-# قراءة ملف JSON
+# قراءة JSON
 # ==========================================
 
 def load_json_file(file_path):
@@ -77,9 +77,7 @@ def load_json_file(file_path):
             "r",
             encoding="utf-8-sig"
         ) as file:
-            data = json.load(file)
-
-        return data
+            return json.load(file)
 
     except (
         json.JSONDecodeError,
@@ -98,18 +96,20 @@ def load_json_file(file_path):
 # ==========================================
 
 def load_base_data():
-    data = load_json_file(FILE)
+    # استخدام الملف القديم السليم أولاً
+    priority_files = [
+        Path("IPA-STORE.json"),
+        Path("ipa-store.json"),
+        Path("ipastrong-base.json"),
+        FILE,
+    ]
 
-    if isinstance(data, dict):
-        print(f"Loaded base file: {FILE}")
-        return data
-
-    for backup_file in BACKUP_FILES:
+    for backup_file in priority_files:
         data = load_json_file(backup_file)
 
         if isinstance(data, dict):
             print(
-                f"Loaded backup file: "
+                f"Loaded base file: "
                 f"{backup_file}"
             )
             return data
@@ -199,7 +199,9 @@ def fetch_json(url):
             content = response.read()
 
             if not content:
-                print(f"Empty response: {url}")
+                print(
+                    f"Empty response: {url}"
+                )
                 return None
 
             text = content.decode(
@@ -216,11 +218,14 @@ def fetch_json(url):
 
     except urllib.error.URLError as error:
         print(
-            f"URL error: {url} - {error.reason}"
+            f"URL error: {url} - "
+            f"{error.reason}"
         )
 
     except TimeoutError:
-        print(f"Timeout: {url}")
+        print(
+            f"Timeout: {url}"
+        )
 
     except json.JSONDecodeError as error:
         print(
@@ -254,7 +259,7 @@ def app_key(app):
 
 
 # ==========================================
-# الدمج بدون حذف التطبيقات المختلفة
+# دمج التطبيقات
 # ==========================================
 
 def merge_apps(base_apps, new_apps):
@@ -275,7 +280,7 @@ def merge_apps(base_apps, new_apps):
 
 
 # ==========================================
-# تحديد العدد
+# تحديد عدد التطبيقات
 # ==========================================
 
 def limit_apps(apps):
@@ -295,14 +300,6 @@ def limit_apps(apps):
 # ==========================================
 
 def preserve_store_metadata(base_data):
-    """
-    الحفاظ على معلومات المصدر القديمة،
-    مثل صورة الإعلان والأخبار.
-
-    يتم الاحتفاظ بكل الحقول القديمة
-    ما عدا apps و lastUpdated.
-    """
-
     if not isinstance(base_data, dict):
         return {}
 
@@ -319,7 +316,7 @@ def preserve_store_metadata(base_data):
 
 
 # ==========================================
-# حفظ آمن
+# الحفظ الآمن
 # ==========================================
 
 def save_json_file(file_path, data):
@@ -429,7 +426,7 @@ def main():
     )
 
     # ======================================
-    # إنشاء النتيجة مع الحفاظ على الإعلانات
+    # إنشاء النتيجة مع الحفاظ على البيانات
     # ======================================
 
     old_metadata = preserve_store_metadata(
