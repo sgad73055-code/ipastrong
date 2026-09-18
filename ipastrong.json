@@ -1,28 +1,10 @@
 {
   "name": "ipastrong",
   "identifier": "com.ipastrong.store",
-  "sourceURL": "https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/ipastrong.json",
-  "website": "https://t.me/ipastrong",
-  "news": [
-    {
-      "title": "IPA STORE",
-      "identifier": "com.ikiraplus.certpaid",
-      "caption": "IPA STORE — تطبيقات IPA وخدمات iOS",
-      "date": "2026-08-22",
-      "imageURL": "https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/ipa-store-banner.png",
-      "url": "https://t.me/ipastrong"
-    },
-    {
-      "title": "IPA STORE",
-      "identifier": "com.ikiraplus.card",
-      "caption": "IPA STORE — تطبيقات IPA وخدمات iOS",
-      "date": "2026-05-11",
-      "imageURL": "https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/ipa-store-banner.png",
-      "url": "https://t.me/ipastrong"
-    }
-  ],
-  "subtitle": "ipastrong",
+  "subtitle": "IPA Store",
   "description": "Merged IPA sources",
+  "website": "https://t.me/ipastrong",
+  "sourceURL": "https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/ipastrong.json",
   "apps": [
     {
       "id": "APP-9268555834",
@@ -220402,5 +220384,5 @@
       "type": 1
     }
   ],
-  "lastUpdated": "2026-09-18T21:24:53.306635Z"
+  "lastUpdated": "2026-09-18T21:31:25.529418Z"
 }
