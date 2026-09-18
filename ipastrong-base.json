@@ -1,4 +1,95 @@
-{
+{{
+  "name": "IPA Strong Repo",
+  "identifier": "com.ipastrong.repo",
+  "version": "3.0",
+  "subtitle": "متجرك الشامل لتطبيقات الأيفون المعدلة والألعاب",
+  "description": "المصدر الرسمي والأساسي لتطبيقات الأيفون المعدلة والألعاب تحت إدارتك الكاملة",
+  "iconURL": "https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/icon.png",
+  "website": "https://t.me/ipastrong",
+  "apps": [
+    {
+      "name": "تطبيقات Sajjad الأساسية (المصدر الرئيسي)",
+      "bundleIdentifier": "com.ipastrong.main",
+      "version": "1.0",
+      "developerName": "ipastrong",
+      "localizedDescription": "تطبيقاتك الخاصة والأساسية في واجهة المتجر بالبداية.",
+      "downloadURL": "https://example.com/main_apps.ipa",
+      "iconURL": "https://example.com/icon.png",
+      "category": "مفضلة المتجر"
+    },
+    {
+      "name": "YouTube Plus (ipastrong)",
+      "bundleIdentifier": "com.google.ios.youtube.ipastrong",
+      "version": "19.10",
+      "developerName": "ipastrong",
+      "localizedDescription": "نسخة يوتيوب المعدلة والمزودة بمميزات منع الإعلانات والتشغيل في الخلفية.",
+      "downloadURL": "https://example.com/youtube_plus.ipa",
+      "iconURL": "https://example.com/yt.png",
+      "category": "تطبيقات التواصل"
+    },
+    {
+      "name": "Instagram Plus (ipastrong)",
+      "bundleIdentifier": "com.burbn.instagram.ipastrong",
+      "version": "315.0",
+      "developerName": "ipastrong",
+      "localizedDescription": "إنستغرام بلس مع إمكانية حفظ الصور والقصص وتعطيل جاري الكتابة.",
+      "downloadURL": "https://example.com/insta_plus.ipa",
+      "iconURL": "https://example.com/insta.png",
+      "category": "تطبيقات التواصل"
+    },
+    {
+      "name": "TikTok Plus (No Watermark)",
+      "bundleIdentifier": "com.zhiliaoapp.musically.ipastrong",
+      "version": "34.0",
+      "developerName": "ipastrong",
+      "localizedDescription": "تيك توك بلس بدون علامة مائية وبدعم فتح القيود الجغرافية والتحميل.",
+      "downloadURL": "https://example.com/tiktok_plus.ipa",
+      "iconURL": "https://example.com/tiktok.png",
+      "category": "تطبيقات الترفيه"
+    },
+    {
+      "name": "Minecraft Mobile Mod",
+      "bundleIdentifier": "com.mojang.minecraftpe.ipastrong",
+      "version": "1.20.70",
+      "developerName": "ipastrong",
+      "localizedDescription": "لعبة ماينكرافت الشهيرة نسخة الأيفون المعدلة.",
+      "downloadURL": "https://example.com/minecraft.ipa",
+      "iconURL": "https://example.com/minecraft.png",
+      "category": "ألعاب"
+    },
+    {
+      "name": "Car Parking Multiplayer",
+      "bundleIdentifier": "com.olgam.carparking.ipastrong",
+      "version": "4.8.5",
+      "developerName": "ipastrong",
+      "localizedDescription": "لعبة محاكاة السيارات مع تعديلات الأموال والسيارات المفتوحة.",
+      "downloadURL": "https://example.com/carparking.ipa",
+      "iconURL": "https://example.com/carparking.png",
+      "category": "ألعاب"
+    },
+    {
+      "name": "ESign Signing Tool",
+      "bundleIdentifier": "p3.xyz.esign.ipastrong",
+      "version": "5.0.2",
+      "developerName": "ipastrong",
+      "localizedDescription": "أداة التوقيع والتثبيت الشهيرة لشهادات الـ IPA مباشرة على جهازك.",
+      "downloadURL": "https://example.com/esign.ipa",
+      "iconURL": "https://example.com/esign.png",
+      "category": "أدوات النظام"
+    },
+    {
+      "name": "Feather Installer",
+      "bundleIdentifier": "com.feather.installer.ipastrong",
+      "version": "1.2",
+      "developerName": "ipastrong",
+      "localizedDescription": "مخزن ومثبت شهادات وتطبيقات بديل لتثبيت حزم الـ IPA بكل سهولة.",
+      "downloadURL": "https://example.com/feather.ipa",
+      "iconURL": "https://example.com/feather.png",
+      "category": "أدوات النظام"
+    }
+  ]
+}
+
   "name": "ipastrong",
   "identifier": "com.ipastrong.store",
   "sourceURL": "https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/IPA-STORE.json",
