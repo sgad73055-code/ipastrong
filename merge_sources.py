@@ -1,71 +1,83 @@
+
 import json
 import urllib.request
 from pathlib import Path
 
-BASE = Path("ipastrong-base.json")
-OUT = Path("ipastrong.json")
+FILE = Path("ipastrong.json")
 
 SOURCES = [
     "https://repository.apptesters.org",
+    "https://repo.apptesters.org",
     "https://ipa.cypwn.xyz/cypwn.json",
-    "https://apps.nabzclan.vip/repos/altstore.php",
-    "https://ipa.thuthuatjb.com/repo",
-    "https://repo.ethsign.fyi",
+    "https://wuxu1.github.io/wuxu-complete.json",
     "https://wuxu1.github.io/wuxu-complete-plus.json",
-    "https://fastsign.dev/repo.json",
-    "https://fastsign.dev/repo.lite.json",
+    "https://repo.ikghd.me/repo.json",
+    "https://check0ver.site/repo.json",
+    "https://quarksources.github.io/dist/quantumsource%2B%2B.min.json",
+    "https://cdn.altstore.io/file/altstore/apps.json",
+    "https://alts.lao.sb/source.json",
 ]
 
 def fetch_json(url):
-    req = urllib.request.Request(
+    request = urllib.request.Request(
         url,
-        headers={"User-Agent": "ipastrong-source-merger/1.0"}
+        headers={"User-Agent": "ipastrong-source-merger"}
     )
-    with urllib.request.urlopen(req, timeout=45) as r:
-        return json.loads(r.read().decode("utf-8-sig"))
+    with urllib.request.urlopen(request, timeout=60) as response:
+        return json.loads(response.read().decode("utf-8-sig"))
+
+def get_apps(data):
+    if isinstance(data, list):
+        return data
+
+    if isinstance(data, dict):
+        for key in ("apps", "data", "items"):
+            if isinstance(data.get(key), list):
+                return data[key]
+
+    return []
 
 def app_key(app):
-    # Prefer stable bundle IDs; fall back to AltStore IDs/names.
-    for k in ("bundleIdentifier", "bundleId", "identifier", "id"):
-        v = app.get(k)
-        if isinstance(v, str) and v.strip():
-            return k + ":" + v.strip().lower()
-    name = app.get("name")
-    return "name:" + str(name).strip().lower() if name else None
+    return json.dumps(
+        app,
+        ensure_ascii=False,
+        sort_keys=True,
+        separators=(",", ":")
+    )
 
-with BASE.open("r", encoding="utf-8") as f:
-    base = json.load(f)
+with FILE.open("r", encoding="utf-8") as file:
+    result = json.load(file)
 
-# Preserve ipastrong metadata and its app order.
-base["name"] = "ipastrong"
-apps = list(base.get("apps", []))
-seen = {k for a in apps if (k := app_key(a))}
+apps = result.get("apps", [])
+seen = {
+    app_key(app)
+    for app in apps
+    if isinstance(app, dict)
+}
 
-stats = []
-for url in SOURCES:
+for url in dict.fromkeys(SOURCES):
     try:
         data = fetch_json(url)
-        incoming = data.get("apps", []) if isinstance(data, dict) else []
-        added = 0
-        for app in incoming:
+
+        for app in get_apps(data):
             if not isinstance(app, dict):
                 continue
-            k = app_key(app)
-            if not k or k in seen:
-                continue
-            apps.append(app)
-            seen.add(k)
-            added += 1
-        stats.append(f"{url} -> +{added} apps")
-    except Exception as e:
-        stats.append(f"{url} -> SKIPPED ({type(e).__name__}: {e})")
 
-base["apps"] = apps
+            key = app_key(app)
 
-# Keep the user's own banner/news configuration.
-with OUT.open("w", encoding="utf-8") as f:
-    json.dump(base, f, ensure_ascii=False, indent=2)
+            if key not in seen:
+                apps.append(app)
+                seen.add(key)
 
-print(f"Final app count: {len(apps)}")
-for s in stats:
-    print(s)
+        print("Completed:", url)
+
+    except Exception as error:
+        print("Skipped:", url, error)
+
+result["name"] = "ipastrong"
+result["apps"] = apps
+
+with FILE.open("w", encoding="utf-8") as file:
+    json.dump(result, file, ensure_ascii=False, indent=2)
+
+print("Total apps:", len(apps))
