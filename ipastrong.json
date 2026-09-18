@@ -21,7 +21,7 @@
       "url": "https://t.me/ipastrong"
     }
   ],
-  "subtitle": "IPA Store",
+  "subtitle": "ipastrong",
   "description": "Merged IPA sources",
   "apps": [
     {
@@ -20720,6 +20720,22 @@
       "size": 256901120,
       "addedAt": "2026-09-07",
       "updatedAt": "2026-09-07"
+    },
+    {
+      "name": "ProCCD",
+      "type": 1,
+      "bundleID": "com.yengshine.proccd",
+      "bundleIdentifier": "com.yengshine.proccd",
+      "version": "6.8.1",
+      "versionDate": "2026-09-19",
+      "fullDate": "20260919024419",
+      "size": 290745744,
+      "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-09-2026/ProCCD_6.8.1_Pro_%40thisismanpreets_apptesters.org.ipa",
+      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-09-2026/ProCCD_6.8.1_Pro_%40thisismanpreets_apptesters.org.ipa",
+      "developerName": "",
+      "localizedDescription": "Injected with Pro",
+      "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.yengshine.proccd.png",
+      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.yengshine.proccd.png"
     },
     {
       "name": "Pigment",
@@ -175938,7 +175954,7 @@
       "down": "https://appstore.sidelix.vip/download-repo-source/2226",
       "downloadURL": "https://appstore.sidelix.vip/download-repo-source/2226",
       "download_page_url": "https://appstore.sidelix.vip/apps/11/2463",
-      "appstore_download_count": 413,
+      "appstore_download_count": 415,
       "developerName": "sidelix",
       "localizedDescription": "Detail combines the simplicity of a camera app with the power of a professional AI video editor. Whether you're creating a 60-second reaction video, a polished YouTube vlog, a 30-minute interview or podcast, or going live to thousands of viewers, you can do it all in one place with Detail.\r\n\r\n\r\nINSTANT VIDEO WITH AI AUTO-EDIT\r\n\r\nRecord or import a video and let AI Auto-Edit do the rest. Detail's AI finds the best moments, removes silences, and creates ready-to-share shorts and reels automatically. Instant video — record, done.\r\n\r\n\r\nAI DIRECTOR — YOUR PERSONAL TELEPROMPTER\r\n\r\nStay on script with AI Director, your conversational teleprompter guide. It listens as you speak and keeps you on track, so every take is your best take. Perfect for con",
       "icon": "https://appstore.sidelix.vip/images/icon_6aac7f351b0f2.jpg",
@@ -177500,7 +177516,7 @@
       "down": "https://appstore.sidelix.vip/download-repo-source/1834",
       "downloadURL": "https://appstore.sidelix.vip/download-repo-source/1834",
       "download_page_url": "https://appstore.sidelix.vip/apps/11/2071",
-      "appstore_download_count": 89178,
+      "appstore_download_count": 89179,
       "developerName": "sidelix",
       "localizedDescription": "Dive into an open world of building, crafting and survival. Gather resources, survive the night, and build whatever you can imagine one block at a time. Explore and craft your way through a completely open world where you can play with friends, build a city, start a farm, mine deep into the ground, face mysterious enemies, or just experiment to the limits of your imagination! \r\n \r\nThe possibilities are endless. Embark on an epic adventure and play with friends, building from the ground up. Build and expand in Creative mode, where you can craft from unlimited resources. Survive the night, face intense battles, craft tools, and fend off danger in Survival mode. With seamless cross-platform and multiplayer gameplay on Minecraft: Bedrock Edition, yo",
       "icon": "https://appstore.sidelix.vip/images/icon_6a96f8be6c92e.jpg",
@@ -178751,7 +178767,7 @@
       "down": "https://appstore.sidelix.vip/download-repo-source/1979",
       "downloadURL": "https://appstore.sidelix.vip/download-repo-source/1979",
       "download_page_url": "https://appstore.sidelix.vip/apps/11/2216",
-      "appstore_download_count": 8587,
+      "appstore_download_count": 8589,
       "developerName": "sidelix",
       "localizedDescription": "A rootless semi-untethered jailbreak for iOS 15.0 - 17.3.1 (arm64e), iOS 15.0 - 18.7.1, 26.0 - 26.0.1 (A12/A13) and iOS 15.0 - 18.7.1 (arm64).",
       "icon": "https://appstore.sidelix.vip/images/1774418667.png",
@@ -188956,7 +188972,7 @@
       "down": "https://appstore.sidelix.vip/download-repo-source/1992",
       "downloadURL": "https://appstore.sidelix.vip/download-repo-source/1992",
       "download_page_url": "https://appstore.sidelix.vip/apps/11/2229",
-      "appstore_download_count": 10808,
+      "appstore_download_count": 10809,
       "developerName": "sidelix",
       "localizedDescription": "Features:\r\n\r\n- in app purchase",
       "icon": "https://appstore.sidelix.vip/images/icon_69efdff53d09b.jpg",
@@ -192967,7 +192983,7 @@
       "down": "https://appstore.sidelix.vip/download-repo-source/1713",
       "downloadURL": "https://appstore.sidelix.vip/download-repo-source/1713",
       "download_page_url": "https://appstore.sidelix.vip/apps/13/1999",
-      "appstore_download_count": 418,
+      "appstore_download_count": 419,
       "developerName": "Holloway",
       "localizedDescription": "Injected with Pro",
       "icon": "https://appstore.sidelix.vip/images/1761380756.png",
@@ -198453,7 +198469,7 @@
       "down": "https://appstore.sidelix.vip/download-repo-source/1233",
       "downloadURL": "https://appstore.sidelix.vip/download-repo-source/1233",
       "download_page_url": "https://appstore.sidelix.vip/apps/13/1759",
-      "appstore_download_count": 309,
+      "appstore_download_count": 310,
       "developerName": "Holloway",
       "localizedDescription": "Injected with Premium",
       "icon": "https://appstore.sidelix.vip/images/1761376736.png",
@@ -220384,35 +220400,7 @@
       "bundleID": "in.muditbhargava.LookUp",
       "fullDate": "20260915030031",
       "type": 1
-    },
-    {
-      "name": "Nuvio Enhanced",
-      "bundleIdentifier": "com.nuvio.media",
-      "developerName": "scholars lounge",
-      "version": "0.4.20",
-      "versionDate": "2026-09-15",
-      "size": 66202899,
-      "minOSVersion": "14.0",
-      "localizedDescription": "scholars lounge | Nuvio Enhanced Version: 0.4.20 Bundle ID: com​.nuvio​.media Fork by luqmanfadlli  Nuvio Enhanced This custom variant includes experi\n\nFastSign is operated by CertFish.\nThe easy way to sideload: https://cert.fish/",
-      "iconURL": "https://fastsign.dev/tg-icon/scholars-lounge/74793.png",
-      "downloadURL": "https://fastsign.dev/tg-ipa/scholars-lounge/74793-Nuvio-v0.4.20-Enhanced.ipa",
-      "versions": [
-        {
-          "version": "0.4.20",
-          "date": "2026-09-15",
-          "localizedDescription": "scholars lounge | Nuvio Enhanced Version: 0.4.20 Bundle ID: com​.nuvio​.media Fork by luqmanfadlli  Nuvio Enhanced This custom variant includes experi",
-          "downloadURL": "https://fastsign.dev/tg-ipa/scholars-lounge/74793-Nuvio-v0.4.20-Enhanced.ipa",
-          "size": 66202899,
-          "minOSVersion": "14.0"
-        }
-      ],
-      "subtitle": "scholars lounge | Nuvio Enhanced Version: 0.4.20 Bundle ID: com​.nuvio​.media Fork by luqmanfadlli  Nuvio Enhanced This custom variant includes experi",
-      "tintColor": "000000",
-      "icon": "https://fastsign.dev/tg-icon/scholars-lounge/74793.png",
-      "bundleID": "com.nuvio.media",
-      "fullDate": "20260915030031",
-      "type": 1
     }
   ],
-  "lastUpdated": "2026-09-18T21:15:39.880098Z"
+  "lastUpdated": "2026-09-18T21:24:53.306635Z"
 }
