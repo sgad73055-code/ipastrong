@@ -1,5 +1,6 @@
 
 import json
+import math
 import urllib.request
 import urllib.error
 from pathlib import Path
@@ -45,13 +46,13 @@ SOURCES = [
 
 
 # ==========================================
-# معلومات المتجر
+# معلومات ipastrong
 # ==========================================
 
 STORE_INFO = {
     "name": "ipastrong",
     "identifier": "com.ipastrong.store",
-    "subtitle": "IPA Store",
+    "subtitle": "ipastrong",
     "description": "Merged IPA sources",
     "website": "https://t.me/ipastrong",
     "sourceURL": (
@@ -59,6 +60,30 @@ STORE_INFO = {
         "sgad73055-code/ipastrong/main/ipastrong.json"
     ),
 }
+
+
+# ==========================================
+# تنظيف البيانات غير الصالحة
+# ==========================================
+
+def clean_json_data(value):
+    if isinstance(value, dict):
+        return {
+            key: clean_json_data(item)
+            for key, item in value.items()
+        }
+
+    if isinstance(value, list):
+        return [
+            clean_json_data(item)
+            for item in value
+        ]
+
+    if isinstance(value, float):
+        if not math.isfinite(value):
+            return None
+
+    return value
 
 
 # ==========================================
@@ -96,7 +121,6 @@ def load_json_file(file_path):
 # ==========================================
 
 def load_base_data():
-    # استخدام الملف القديم السليم أولاً
     priority_files = [
         Path("IPA-STORE.json"),
         Path("ipa-store.json"),
@@ -209,7 +233,9 @@ def fetch_json(url):
                 errors="replace"
             )
 
-            return json.loads(text)
+            return clean_json_data(
+                json.loads(text)
+            )
 
     except urllib.error.HTTPError as error:
         print(
@@ -248,10 +274,11 @@ def fetch_json(url):
 def app_key(app):
     try:
         return json.dumps(
-            app,
+            clean_json_data(app),
             sort_keys=True,
             ensure_ascii=False,
-            separators=(",", ":")
+            separators=(",", ":"),
+            allow_nan=False
         )
 
     except (TypeError, ValueError):
@@ -270,6 +297,7 @@ def merge_apps(base_apps, new_apps):
         if not isinstance(app, dict):
             continue
 
+        app = clean_json_data(app)
         key = app_key(app)
 
         if key not in existing_keys:
@@ -310,7 +338,7 @@ def preserve_store_metadata(base_data):
             "apps",
             "lastUpdated"
         ]:
-            metadata[key] = value
+            metadata[key] = clean_json_data(value)
 
     return metadata
 
@@ -324,6 +352,8 @@ def save_json_file(file_path, data):
         ".tmp.json"
     )
 
+    data = clean_json_data(data)
+
     with temporary_file.open(
         "w",
         encoding="utf-8"
@@ -333,7 +363,8 @@ def save_json_file(file_path, data):
             data,
             file,
             ensure_ascii=False,
-            indent=2
+            indent=2,
+            allow_nan=False
         )
 
         file.write("\n")
@@ -351,6 +382,7 @@ def main():
     print("=" * 50)
 
     base_data = load_base_data()
+    base_data = clean_json_data(base_data)
 
     base_apps = get_apps(base_data)
 
@@ -425,10 +457,6 @@ def main():
         merged_apps
     )
 
-    # ======================================
-    # إنشاء النتيجة مع الحفاظ على البيانات
-    # ======================================
-
     old_metadata = preserve_store_metadata(
         base_data
     )
@@ -444,9 +472,7 @@ def main():
         )
     }
 
-    # ======================================
-    # التحقق قبل الحفظ
-    # ======================================
+    result = clean_json_data(result)
 
     if not isinstance(
         result.get("apps"),
@@ -508,6 +534,10 @@ def main():
     print(
         "Advertisement metadata preserved "
         "when available."
+    )
+
+    print(
+        "Invalid numbers cleaned safely."
     )
 
     print(
