@@ -1,30 +1,67 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>ipastrong</title>
-<meta name="description" content="ipastrong IPA Library">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b0d12">
+<title>ipastrong — IPA Store</title>
 <style>
-*{box-sizing:border-box}body{margin:0;background:#0b0d12;color:#fff;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-.wrap{max-width:1100px;margin:auto;padding:18px}.hero{padding:28px 20px;border-radius:24px;background:linear-gradient(135deg,#191d27,#10131b);border:1px solid #292e3a}
-.brand{font-size:36px;font-weight:800}.sub{color:#aeb5c4;margin-top:5px}.search{width:100%;margin-top:20px;padding:15px;border-radius:15px;border:1px solid #303645;background:#151924;color:#fff;font-size:16px}
-.nav{display:flex;gap:8px;overflow:auto;padding:15px 0}.nav button{border:1px solid #303645;background:#151924;color:#ddd;border-radius:12px;padding:9px 13px;white-space:nowrap}.nav .active{background:#fff;color:#111}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:13px}.card{background:#121620;border:1px solid #272d39;border-radius:18px;padding:14px;display:flex;gap:12px}.icon{width:62px;height:62px;border-radius:15px;object-fit:cover;background:#252a36}.info{min-width:0;flex:1}.name{font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.desc{font-size:12px;color:#969eae;margin-top:5px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.ver{font-size:11px;color:#737c8e;margin-top:6px}.btn{display:inline-block;margin-top:9px;padding:8px 11px;border-radius:10px;background:#fff;color:#111;font-weight:700;font-size:12px}.empty{text-align:center;color:#929aaa;padding:40px}.foot{text-align:center;color:#737c8e;padding:30px}
+:root{--bg:#080a0f;--card:#11141b;--card2:#171b23;--text:#f5f7fb;--muted:#9da5b5;--line:#242a35;--accent:#6d7cff}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 50% -10%,#202741 0,#0b0d12 38%,#080a0f 75%);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Arial,sans-serif}
+header{position:sticky;top:0;z-index:20;background:rgba(8,10,15,.82);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,.06)}
+.wrap{max-width:1100px;margin:auto;padding:0 18px}.top{height:72px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.brand{display:flex;align-items:center;gap:11px;font-weight:800;font-size:22px}.logo{width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,#7b8cff,#4c59ff);display:grid;place-items:center;font-weight:900;box-shadow:0 8px 28px #4c59ff33}
+nav{display:flex;gap:8px;overflow:auto;padding:10px 0 14px}nav button{border:1px solid var(--line);background:#11141b;color:#cbd1dc;border-radius:999px;padding:9px 15px;white-space:nowrap;font-size:14px}nav button.active{background:#eef0ff;color:#10131b;border-color:#eef0ff}
+.hero{padding:45px 0 28px}.hero h1{font-size:clamp(34px,7vw,62px);margin:0 0 12px;letter-spacing:-2px}.hero p{color:var(--muted);font-size:17px;max-width:700px;line-height:1.7;margin:0 0 22px}
+.actions{display:flex;gap:10px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;border-radius:13px;padding:12px 18px;font-weight:700;border:1px solid var(--line);color:var(--text);background:var(--card2)}.btn.primary{background:#eef0ff;color:#11131a;border-color:#eef0ff}
+.search{margin:15px 0 28px;position:relative}.search input{width:100%;padding:16px 48px 16px 16px;border-radius:15px;border:1px solid var(--line);background:#10131a;color:white;font-size:16px;outline:none}.search span{position:absolute;right:16px;top:15px;color:#8e96a6}
+.sectionhead{display:flex;align-items:end;justify-content:space-between;margin:24px 0 14px}.sectionhead h2{margin:0;font-size:25px}.count{color:var(--muted);font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(235px,1fr));gap:13px}.app{background:linear-gradient(180deg,#141821,#10131a);border:1px solid var(--line);border-radius:20px;padding:15px;display:flex;gap:13px;min-height:155px;flex-direction:column}.appmain{display:flex;gap:13px}.icon{width:66px;height:66px;border-radius:16px;object-fit:cover;background:#20242d;flex:none}.app h3{margin:2px 0 5px;font-size:17px}.desc{font-size:13px;line-height:1.55;color:var(--muted);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.meta{font-size:12px;color:#7f8898}.download{width:100%;padding:11px;border-radius:12px;background:#eef0ff;color:#10131a;text-decoration:none;text-align:center;font-weight:800;margin-top:auto}.empty{text-align:center;color:var(--muted);padding:45px 10px;grid-column:1/-1}
+footer{border-top:1px solid var(--line);margin-top:55px;padding:28px 0 40px;color:var(--muted);font-size:13px;line-height:1.8}.footerlinks{display:flex;gap:14px;flex-wrap:wrap;margin-top:10px}.footerlinks a{color:#cbd1ff;text-decoration:none}
+.loading{padding:45px;text-align:center;color:var(--muted)}
+@media(max-width:600px){.top{height:64px}.hero{padding-top:34px}.grid{grid-template-columns:1fr}.app{min-height:145px}}
 </style>
 </head>
-<body><div class="wrap">
-<section class="hero"><div class="brand">ipastrong</div><div class="sub">IPA Library • تطبيقات وعروض iOS</div>
-<input id="search" class="search" placeholder="ابحث عن تطبيق..." autocomplete="off"></section>
-<div id="nav" class="nav"></div><main id="apps" class="grid"></main><div id="empty" class="empty" hidden>ماكو نتائج.</div>
-<div class="foot"><a href="offers.html">عروض الشهادات والخدمات</a>　•　<a href="https://t.me/ipastrong" target="_blank">Telegram @ipastrong</a></div>
-</div>
+<body>
+<header><div class="wrap">
+  <div class="top"><div class="brand"><div class="logo">IPA</div><span>ipastrong</span></div><a class="btn" href="https://t.me/ipastrong" target="_blank">Telegram</a></div>
+  <nav id="cats"></nav>
+</div></header>
+<main class="wrap">
+<section class="hero">
+  <h1>ipastrong</h1>
+  <p>متجر IPA مرتب وسريع. تصفح التطبيقات، ابحث عن التطبيق اللي تريده، وادخل على التحميل مباشرة.</p>
+  <div class="actions"><a class="btn primary" href="#apps">تصفح التطبيقات</a><a class="btn" href="offers.html">العروض والخدمات</a></div>
+</section>
+<div class="search"><span>⌕</span><input id="search" placeholder="ابحث عن تطبيق..." autocomplete="off"></div>
+<section id="apps"><div class="sectionhead"><h2>التطبيقات</h2><span class="count" id="count"></span></div><div class="grid" id="grid"><div class="loading">جاري تحميل التطبيقات...</div></div></section>
+</main>
+<footer><div class="wrap"><strong>ipastrong</strong><br>مصدر IPA وتطبيقات iOS.<div class="footerlinks"><a href="https://t.me/ipastrong" target="_blank">قناة Telegram</a><a href="offers.html">العروض والخدمات</a></div></div></footer>
 <script>
-let apps=[],cat="الكل";const $=x=>document.getElementById(x);
-const name=a=>a.name||a.localizedName||"بدون اسم",icon=a=>a.iconURL||"",desc=a=>a.localizedDescription||a.subtitle||a.description||"",ver=a=>a.version||a.versionString||"",url=a=>a.downloadURL||(a.versions&&a.versions[0]&&a.versions[0].downloadURL)||"",category=a=>a.category||a.genre||"أخرى";
-const esc=s=>String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));
-function nav(){let cs=["الكل",...new Set(apps.map(category).filter(Boolean))];$("nav").innerHTML=cs.slice(0,35).map(c=>`<button class="${c==cat?"active":""}" onclick='setCat(${JSON.stringify(c)})'>${esc(c)}</button>`).join("")}
-function setCat(c){cat=c;nav();render()}
-function render(){let q=$("search").value.trim().toLowerCase();let list=apps.filter(a=>(cat=="الكل"||category(a)==cat)&&(!q||(name(a)+" "+desc(a)+" "+category(a)).toLowerCase().includes(q)));$("apps").innerHTML=list.map(a=>`<article class="card"><img class="icon" src="${esc(icon(a))}" onerror="this.style.visibility='hidden'"><div class="info"><div class="name">${esc(name(a))}</div><div class="desc">${esc(desc(a))}</div><div class="ver">${ver(a)?"الإصدار "+esc(ver(a)):"IPA"}</div>${url(a)?`<a class="btn" href="${esc(url(a))}" target="_blank" rel="noopener">تحميل IPA</a>`:""}</div></article>`).join("");$("empty").hidden=list.length>0}
-$("search").oninput=render;
-fetch("ipastrong.json?v="+Date.now()).then(r=>r.json()).then(d=>{apps=Array.isArray(d.apps)?d.apps:[];nav();render()}).catch(()=>{$("empty").hidden=false;$("empty").textContent="تعذر تحميل مصدر التطبيقات."});
-</script></body></html>
+const SOURCE="ipastrong.json?v="+Date.now();
+let all=[], category="الكل";
+const esc=s=>String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
+function getIcon(a){return a.iconURL||a.icon||"https://placehold.co/128x128/20242d/ffffff?text=IPA"}
+function getURL(a){return a.downloadURL||a.versions?.[0]?.downloadURL||a.versions?.[0]?.url||a.url||"#"}
+function getDesc(a){return a.subtitle||a.description||a.localizedDescription||"تطبيق IPA"}
+function render(){
+ let q=document.getElementById("search").value.trim().toLowerCase();
+ let list=all.filter(a=>{
+   let text=(a.name+" "+getDesc(a)+" "+(a.bundleIdentifier||a.bundleId||"")).toLowerCase();
+   let cats=a.category||a.categories||[];
+   if(!Array.isArray(cats))cats=[cats];
+   return (category==="الكل"||cats.includes(category)||a.category===category) && (!q||text.includes(q));
+ });
+ document.getElementById("count").textContent=list.length+" تطبيق";
+ document.getElementById("grid").innerHTML=list.length?list.map(a=>`<article class="app"><div class="appmain"><img class="icon" src="${esc(getIcon(a))}" loading="lazy"><div><h3>${esc(a.name||"بدون اسم")}</h3><div class="desc">${esc(getDesc(a))}</div><div class="meta">الإصدار: ${esc(a.version||a.versions?.[0]?.version||"—")}</div></div></div><a class="download" href="${esc(getURL(a))}" target="_blank" rel="noopener">تحميل IPA</a></article>`).join(""):`<div class="empty">ما لكيت تطبيق بهالبحث.</div>`;
+}
+function buildCats(){
+ let set=new Set();
+ all.forEach(a=>{let c=a.category||a.categories||[];if(!Array.isArray(c))c=[c];c.forEach(x=>x&&set.add(x))});
+ let cats=["الكل",...Array.from(set).slice(0,10)];
+ document.getElementById("cats").innerHTML=cats.map(c=>`<button class="${c===category?"active":""}" onclick="category='${String(c).replace(/'/g,"\\'")}';buildCats();render()">${esc(c)}</button>`).join("");
+}
+fetch(SOURCE).then(r=>{if(!r.ok)throw Error();return r.json()}).then(d=>{all=d.apps||[];buildCats();render()}).catch(()=>{document.getElementById("grid").innerHTML='<div class="empty">تعذر تحميل ipastrong.json. تأكد أن الملف موجود بنفس مجلد الموقع.</div>'});
+document.getElementById("search").addEventListener("input",render);
+</script>
+</body></html>
