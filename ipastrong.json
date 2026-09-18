@@ -1,26 +1,24 @@
 {
   "name": "ipastrong",
-  "identifier": "com.ikiraplus.store",
-  "sourceURL": "https://ikiraplus.pages.dev/IPA-AR.json",
-  "iconURL": "https://raw.githubusercontent.com/ikiraplus/ipastore/main/images/kiraplus.png",
-  "sourceIcon": "https://raw.githubusercontent.com/ikiraplus/ipastore/main/images/kiraplus.png",
-  "website": "https://t.me/iKiraPlus",
+  "identifier": "com.ipastrong.store",
+  "sourceURL": "https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/IPA-STORE.json",
+  "website": "https://t.me/ipastrong",
   "news": [
     {
       "title": "IPA STORE",
       "identifier": "com.ikiraplus.certpaid",
-      "caption": "باقات وشهادات iOS — تطبيقات IPA، تثبيت سريع ودعم مستمر",
+      "caption": "IPA STORE — تطبيقات IPA وخدمات iOS",
       "date": "2026-08-22",
-      "url": "https://t.me/ipastrong",
-      "imageURL": "https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/ipa-store-banner.png"
+      "imageURL": "https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/ipa-store-banner.png",
+      "url": "https://t.me/ipastrong"
     },
     {
       "title": "IPA STORE",
       "identifier": "com.ikiraplus.card",
-      "caption": "متجر IPA STORE للتطبيقات والخدمات",
+      "caption": "IPA STORE — تطبيقات IPA وخدمات iOS",
       "date": "2026-05-11",
-      "url": "https://t.me/ipastrong",
-      "imageURL": "https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/ipa-store-banner.png"
+      "imageURL": "https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/ipa-store-banner.png",
+      "url": "https://t.me/ipastrong"
     }
   ],
   "apps": [
