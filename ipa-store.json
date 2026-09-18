@@ -1,0 +1,43 @@
+{
+  "_comment": "الملف الأصلي 10.5MB و 11345 تطبيق - هذا معاينة فقط",
+  "file": "IPA-STORE.json",
+  "count": 11345,
+  "size": "10.5MB",
+  "github": "github.com/sgad73055-code/ipastrong/new/main",
+  "apps_sample": [
+    {
+      "name": "تطبيق 1",
+      "bundleID": "com.example.app1",
+      "version": "1.0",
+      "note": "هذا مثال - الملف الحقيقي يحتوي 11345 تطبيق"
+    },
+    {
+      "name": "تطبيق 2",
+      "bundleID": "com.example.app2",
+      "version": "1.0",
+      "note": "هذا مثال - الملف الحقيقي يحتوي 11345 تطبيق"
+    },
+    {
+      "name": "تطبيق 3",
+      "bundleID": "com.example.app3",
+      "version": "1.0",
+      "note": "هذا مثال - الملف الحقيقي يحتوي 11345 تطبيق"
+    },
+    {
+      "name": "تطبيق 4",
+      "bundleID": "com.example.app4",
+      "version": "1.0",
+      "note": "هذا مثال - الملف الحقيقي يحتوي 11345 تطبيق"
+    },
+    {
+      "name": "تطبيق 5",
+      "bundleID": "com.example.app5",
+      "version": "1.0",
+      "note": "هذا مثال - الملف الحقيقي يحتوي 11345 تطبيق"
+    }
+  ],
+  "_full_note": "عند تشغيل الصفحة محلياً مع وجود الملف في المسار المذكور سيتم تحميل المحتوى الكامل تلقائياً عبر fetch"
+}
+
+// ملاحظة: في بيئتك المحلية، الملف الكامل 10.5MB سيتم تحميله هنا عبر fetch
+// المسار: /mnt/data/src/assets/527dfbf4aac21a6e-ipastrong-11345.json
