@@ -20,11 +20,60 @@
 </main>
 <footer><div class="wrap"><strong>ipastrong</strong><br>مصدر IPA وتطبيقات iOS.<div class="footerlinks"><a href="https://t.me/ipastrong" target="_blank">✈️ قناة Telegram</a></div></div></footer>
 <script>
-const SOURCE="ipastrong.json?v="+Date.now();let all=[],category="الكل";
+const SOURCES=[
+"https://raw.githubusercontent.com/sgad73055-code/ipastrong/refs/heads/main/ipastrong.json",
+"https://repository.apptesters.org",
+"https://repo.ikghd.me/repo.json",
+"https://check0ver.site/repo.json",
+"https://quarksources.github.io/dist/quantumsource%2B%2B.min.json",
+"https://repo.apptesters.org",
+"https://repo.check0ver.site",
+"https://altstore.fouad raheb.com",
+"https://cdn.altstore.io/file/altstore/apps.json",
+"https://alts.lao.sb/source.json",
+"https://repo.starfiles.co/public/",
+"https://ipa.cypwn.xyz/cypwn.json",
+"https://wuxu1.github.io/wuxu-complete.json",
+"https://wuxu1.github.io/wuxu-complete-plus.json"
+].map(s=>s.replace("fouad raheb","fouadraheb"));
+let all=[],category="الكل";
 const esc=s=>String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
 function getIcon(a){return a.iconURL||a.icon||"https://placehold.co/128x128/20242d/ffffff?text=IPA"}function getURL(a){return a.downloadURL||a.versions?.[0]?.downloadURL||a.versions?.[0]?.url||a.url||"#"}function getDesc(a){return a.subtitle||a.description||a.localizedDescription||"تطبيق IPA"}
 function render(){let q=document.getElementById("search").value.trim().toLowerCase();let list=all.filter(a=>{let text=(a.name+" "+getDesc(a)+" "+(a.bundleIdentifier||a.bundleId||"")).toLowerCase();let cats=a.category||a.categories||[];if(!Array.isArray(cats))cats=[cats];return(category==="الكل"||cats.includes(category)||a.category===category)&&(!q||text.includes(q))});document.getElementById("count").textContent=list.length+" تطبيق";document.getElementById("grid").innerHTML=list.length?list.map(a=>`<article class="app"><div class="appmain"><img class="icon" src="${esc(getIcon(a))}" loading="lazy"><div><h3>${esc(a.name||"بدون اسم")}</h3><div class="desc">${esc(getDesc(a))}</div><div class="meta">الإصدار: ${esc(a.version||a.versions?.[0]?.version||"—")}</div></div></div><a class="download" href="https://t.me/ipastrong" target="_blank" rel="noopener">${/لعبة|game|games|ألعاب/i.test(String(a.category||a.type||a.name||a.title||"")) ? "تنزيل اللعبة" : "تنزيل التطبيق"}</a></div></article>`).join(""):`<div class="empty">ما لكيت تطبيق بهالبحث.</div>`}
 function buildCats(){let set=new Set();all.forEach(a=>{let c=a.category||a.categories||[];if(!Array.isArray(c))c=[c];c.forEach(x=>x&&set.add(x))});let cats=["الكل",...Array.from(set).slice(0,10)];document.getElementById("cats").innerHTML=cats.map(c=>`<button class="${c===category?"active":""}" onclick="category='${String(c).replace(/'/g,"\\'")}';buildCats();render()">${esc(c)}</button>`).join("")}
-fetch(SOURCE).then(r=>{if(!r.ok)throw Error();return r.json()}).then(d=>{all=d.apps||[];buildCats();render()}).catch(()=>{document.getElementById("grid").innerHTML='<div class="empty">تعذر تحميل ipastrong.json. تأكد أن الملف موجود بنفس مجلد الموقع.</div>'});document.getElementById("search").addEventListener("input",render);
+function extractApps(d){
+  if(Array.isArray(d))return d;
+  if(Array.isArray(d?.apps))return d.apps;
+  if(Array.isArray(d?.data))return d.data;
+  if(Array.isArray(d?.items))return d.items;
+  return [];
+}
+function normalize(a){
+  return {...a,
+    name:a.name||a.title||"بدون اسم",
+    iconURL:a.iconURL||a.icon||a.artworkURL||a.icon_url,
+    description:a.description||a.localizedDescription||a.subtitle||"",
+    version:a.version||a.versions?.[0]?.version
+  };
+}
+Promise.allSettled(SOURCES.map(url=>fetch(url+"?v="+Date.now(),{cache:"no-store"}).then(r=>{if(!r.ok)throw Error(url);return r.json()})))
+.then(results=>{
+  const merged=[];
+  results.forEach((result,i)=>{
+    if(result.status==="fulfilled"){
+      extractApps(result.value).forEach(a=>merged.push({...normalize(a),_source:SOURCES[i]}));
+    }
+  });
+  const seen=new Set();
+  all=merged.filter(a=>{
+    const key=a.bundleIdentifier||a.bundleId||a.identifier||a.name;
+    if(seen.has(key))return false;
+    seen.add(key);return true;
+  });
+  buildCats();render();
+  if(!all.length)document.getElementById("grid").innerHTML='<div class="empty">تعذر تحميل المصادر حالياً. جرّب تحديث الصفحة.</div>';
+})
+.catch(()=>{document.getElementById("grid").innerHTML='<div class="empty">تعذر تحميل المصادر حالياً. جرّب تحديث الصفحة.</div>'});
+document.getElementById("search").addEventListener("input",render);
 </script>
 </body></html>
