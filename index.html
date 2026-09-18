@@ -64,9 +64,16 @@ Promise.allSettled(SOURCES.map(url=>fetch(url+"?v="+Date.now(),{cache:"no-store"
       extractApps(result.value).forEach(a=>merged.push({...normalize(a),_source:SOURCES[i]}));
     }
   });
+  // Keep every app, including apps sharing the same Bundle ID.
+  // Only exact duplicate records are removed.
   const seen=new Set();
   all=merged.filter(a=>{
-    const key=a.bundleIdentifier||a.bundleId||a.identifier||a.name;
+    const key=JSON.stringify({
+      name:a.name||"",
+      version:a.version||a.versions?.[0]?.version||"",
+      bundleIdentifier:a.bundleIdentifier||a.bundleId||a.identifier||"",
+      downloadURL:getURL(a)
+    });
     if(seen.has(key))return false;
     seen.add(key);return true;
   });
