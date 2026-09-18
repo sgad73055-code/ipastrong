@@ -7,12 +7,10 @@ from datetime import datetime, timezone
 
 
 # ==========================================
-# إعدادات الملفات
+# إعدادات
 # ==========================================
 
 FILE = Path("ipastrong.json")
-
-# الحد الأعلى لعدد التطبيقات
 MAX_APPS = 12000
 
 BACKUP_FILES = [
@@ -24,7 +22,7 @@ BACKUP_FILES = [
 
 
 # ==========================================
-# مصادر JSON
+# المصادر
 # ==========================================
 
 SOURCES = [
@@ -47,7 +45,7 @@ SOURCES = [
 
 
 # ==========================================
-# معلومات المصدر الناتج
+# معلومات المصدر
 # ==========================================
 
 STORE_INFO = {
@@ -64,7 +62,7 @@ STORE_INFO = {
 
 
 # ==========================================
-# قراءة JSON من ملف
+# قراءة ملف JSON
 # ==========================================
 
 def load_json_file(file_path):
@@ -79,18 +77,17 @@ def load_json_file(file_path):
             "r",
             encoding="utf-8-sig"
         ) as file:
-            return json.load(file)
+            data = json.load(file)
 
-    except (json.JSONDecodeError, UnicodeDecodeError) as error:
-        print(
-            f"Invalid JSON file skipped: "
-            f"{file_path} - {error}"
-        )
-        return None
+        return data
 
-    except OSError as error:
+    except (
+        json.JSONDecodeError,
+        UnicodeDecodeError,
+        OSError
+    ) as error:
         print(
-            f"Could not read file: "
+            f"Could not read JSON: "
             f"{file_path} - {error}"
         )
         return None
@@ -101,14 +98,12 @@ def load_json_file(file_path):
 # ==========================================
 
 def load_base_data():
-    # قراءة الملف الحالي أولًا
     data = load_json_file(FILE)
 
     if isinstance(data, dict):
         print(f"Loaded base file: {FILE}")
         return data
 
-    # تجربة النسخ الاحتياطية
     for backup_file in BACKUP_FILES:
         data = load_json_file(backup_file)
 
@@ -119,7 +114,6 @@ def load_base_data():
             )
             return data
 
-    # إنشاء ملف فارغ إذا لم يوجد ملف صالح
     print(
         "Warning: No valid base JSON file found."
     )
@@ -131,11 +125,10 @@ def load_base_data():
 
 
 # ==========================================
-# استخراج التطبيقات من JSON
+# استخراج التطبيقات
 # ==========================================
 
 def get_apps(data):
-    # بعض المصادر تكون عبارة عن قائمة مباشرة
     if isinstance(data, list):
         return [
             app for app in data
@@ -145,7 +138,6 @@ def get_apps(data):
     if not isinstance(data, dict):
         return []
 
-    # الصيغة المعتادة في AltStore
     apps = data.get("apps")
 
     if isinstance(apps, list):
@@ -154,7 +146,6 @@ def get_apps(data):
             if isinstance(app, dict)
         ]
 
-    # بعض المصادر تستخدم data
     data_items = data.get("data")
 
     if isinstance(data_items, list):
@@ -172,7 +163,6 @@ def get_apps(data):
                 if isinstance(app, dict)
             ]
 
-    # بعض المصادر تستخدم items
     items = data.get("items")
 
     if isinstance(items, list):
@@ -185,7 +175,7 @@ def get_apps(data):
 
 
 # ==========================================
-# جلب JSON من الإنترنت
+# جلب المصادر
 # ==========================================
 
 def fetch_json(url):
@@ -209,9 +199,7 @@ def fetch_json(url):
             content = response.read()
 
             if not content:
-                print(
-                    f"Empty response: {url}"
-                )
+                print(f"Empty response: {url}")
                 return None
 
             text = content.decode(
@@ -225,48 +213,34 @@ def fetch_json(url):
         print(
             f"HTTP error {error.code}: {url}"
         )
-        return None
 
     except urllib.error.URLError as error:
         print(
             f"URL error: {url} - {error.reason}"
         )
-        return None
 
     except TimeoutError:
-        print(
-            f"Timeout: {url}"
-        )
-        return None
+        print(f"Timeout: {url}")
 
     except json.JSONDecodeError as error:
         print(
-            f"Invalid JSON from source: "
-            f"{url} - {error}"
+            f"Invalid JSON: {url} - {error}"
         )
-        return None
 
     except Exception as error:
         print(
             f"Could not fetch source: "
             f"{url} - {error}"
         )
-        return None
+
+    return None
 
 
 # ==========================================
-# مفتاح التكرار
+# مفتاح منع التكرار
 # ==========================================
 
 def app_key(app):
-    """
-    منع التكرار حسب محتوى التطبيق كاملًا.
-
-    لا نستخدم Bundle ID وحده،
-    حتى لا نحذف التطبيقات المختلفة
-    التي تحمل نفس Bundle ID.
-    """
-
     try:
         return json.dumps(
             app,
@@ -280,26 +254,14 @@ def app_key(app):
 
 
 # ==========================================
-# دمج التطبيقات بدون تكرار
+# الدمج بدون حذف التطبيقات المختلفة
 # ==========================================
 
 def merge_apps(base_apps, new_apps):
     merged = []
     existing_keys = set()
 
-    # إضافة التطبيقات الموجودة مسبقًا
-    for app in base_apps:
-        if not isinstance(app, dict):
-            continue
-
-        key = app_key(app)
-
-        if key not in existing_keys:
-            existing_keys.add(key)
-            merged.append(app)
-
-    # إضافة التطبيقات الجديدة
-    for app in new_apps:
+    for app in base_apps + new_apps:
         if not isinstance(app, dict):
             continue
 
@@ -313,30 +275,51 @@ def merge_apps(base_apps, new_apps):
 
 
 # ==========================================
-# تحديد الحد الأعلى للتطبيقات
+# تحديد العدد
 # ==========================================
 
-def limit_apps(apps, maximum):
-    """
-    الاحتفاظ بأول MAX_APPS تطبيقًا.
-
-    لا يوجد حذف حسب Bundle ID.
-    كل سجل مختلف يُعامل كتطبيق مستقل.
-    """
-
-    if len(apps) <= maximum:
+def limit_apps(apps):
+    if len(apps) <= MAX_APPS:
         return apps
 
     print(
         f"Limiting applications from "
-        f"{len(apps)} to {maximum}"
+        f"{len(apps)} to {MAX_APPS}"
     )
 
-    return apps[:maximum]
+    return apps[:MAX_APPS]
 
 
 # ==========================================
-# حفظ الملف بطريقة آمنة
+# الحفاظ على معلومات الإعلانات
+# ==========================================
+
+def preserve_store_metadata(base_data):
+    """
+    الحفاظ على معلومات المصدر القديمة،
+    مثل صورة الإعلان والأخبار.
+
+    يتم الاحتفاظ بكل الحقول القديمة
+    ما عدا apps و lastUpdated.
+    """
+
+    if not isinstance(base_data, dict):
+        return {}
+
+    metadata = {}
+
+    for key, value in base_data.items():
+        if key not in [
+            "apps",
+            "lastUpdated"
+        ]:
+            metadata[key] = value
+
+    return metadata
+
+
+# ==========================================
+# حفظ آمن
 # ==========================================
 
 def save_json_file(file_path, data):
@@ -384,7 +367,6 @@ def main():
     successful_sources = 0
     failed_sources = 0
 
-    # جلب كل المصادر
     for index, url in enumerate(
         SOURCES,
         start=1
@@ -427,13 +409,11 @@ def main():
     print("Merging applications")
     print("=" * 50)
 
-    # الدمج بدون حذف التطبيقات المختلفة
     merged_apps = merge_apps(
         base_apps,
         all_apps
     )
 
-    # حماية من إنشاء ملف فارغ
     if (
         len(merged_apps) == 0
         and len(base_apps) > 0
@@ -444,14 +424,20 @@ def main():
         )
         return
 
-    # تحديد العدد النهائي إلى 12,000
     merged_apps = limit_apps(
-        merged_apps,
-        MAX_APPS
+        merged_apps
     )
 
-    # إنشاء النتيجة النهائية
+    # ======================================
+    # إنشاء النتيجة مع الحفاظ على الإعلانات
+    # ======================================
+
+    old_metadata = preserve_store_metadata(
+        base_data
+    )
+
     result = {
+        **old_metadata,
         **STORE_INFO,
         "apps": merged_apps,
         "lastUpdated": (
@@ -461,15 +447,27 @@ def main():
         )
     }
 
-    # التأكد من وجود قائمة تطبيقات
-    if not isinstance(result.get("apps"), list):
+    # ======================================
+    # التحقق قبل الحفظ
+    # ======================================
+
+    if not isinstance(
+        result.get("apps"),
+        list
+    ):
         print(
             "Update cancelled: "
             "apps is not a list"
         )
         return
 
-    # حفظ الملف
+    if len(result["apps"]) == 0:
+        print(
+            "Update cancelled: "
+            "no applications available"
+        )
+        return
+
     save_json_file(
         FILE,
         result
@@ -511,12 +509,17 @@ def main():
     )
 
     print(
+        "Advertisement metadata preserved "
+        "when available."
+    )
+
+    print(
         f"Saved file: {FILE}"
     )
 
 
 # ==========================================
-# تشغيل البرنامج
+# التشغيل
 # ==========================================
 
 if __name__ == "__main__":
