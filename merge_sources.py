@@ -1,9 +1,10 @@
 
 import json
 import urllib.request
-import urllib.error
 from pathlib import Path
 from datetime import datetime, timezone
+from urllib.parse import urlparse
+import re
 
 
 # =========================
@@ -11,8 +12,11 @@ from datetime import datetime, timezone
 # =========================
 
 FILE = "ipastrong.json"
+
+# الحد الأقصى للتطبيقات
 MAX_APPS = 9000
 
+# ملفات التطبيقات الخاصة بك
 BACKUP_FILES = [
     "IPA-STORE.json",
     "ipa-store.json",
@@ -20,6 +24,7 @@ BACKUP_FILES = [
     "ipastrong-base.json",
 ]
 
+# المصادر الخارجية
 SOURCES = [
     "https://repository.apptesters.org",
     "https://repo.apptesters.org",
@@ -45,7 +50,10 @@ STORE_INFO = {
     "subtitle": "ipastrong",
     "description": "Merged IPA sources",
     "website": "https://t.me/ipastrong",
-    "sourceURL": "https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/ipastrong.json",
+    "sourceURL": (
+        "https://raw.githubusercontent.com/"
+        "sgad73055-code/ipastrong/main/ipastrong.json"
+    ),
 }
 
 
@@ -72,7 +80,10 @@ def load_base_data():
 
         data = load_json_file(path)
 
-        if isinstance(data, dict) and isinstance(data.get("apps"), list):
+        if (
+            isinstance(data, dict)
+            and isinstance(data.get("apps"), list)
+        ):
             print(f"Using base file: {filename}")
             return data
 
@@ -84,11 +95,12 @@ def load_base_data():
             return data
 
     print("No valid base file found.")
+
     return dict(STORE_INFO)
 
 
 # =========================
-# APPS
+# APP HELPERS
 # =========================
 
 def get_apps(data):
@@ -112,7 +124,10 @@ def fetch_json(url):
             }
         )
 
-        with urllib.request.urlopen(request, timeout=30) as response:
+        with urllib.request.urlopen(
+            request,
+            timeout=30
+        ) as response:
             content = response.read().decode("utf-8")
 
         data = json.loads(content)
@@ -129,103 +144,375 @@ def fetch_json(url):
         return None
 
 
-# =========================
-# DUPLICATE CHECK
-# =========================
+def clean_text(value):
+    if value is None:
+        return ""
 
-def app_key(app):
-    if not isinstance(app, dict):
-        return None
+    if isinstance(value, list):
+        value = " ".join(str(item) for item in value)
 
-    bundle_id = (
+    return str(value).strip()
+
+
+def get_name(app):
+    return clean_text(
+        app.get("name")
+        or app.get("title")
+        or ""
+    )
+
+
+def get_bundle_id(app):
+    return clean_text(
         app.get("bundleIdentifier")
         or app.get("bundleId")
         or ""
-    ).strip()
+    )
 
-    name = str(app.get("name", "")).strip().lower()
 
-    version = str(
+def get_version(app):
+    return clean_text(
         app.get("version")
         or app.get("versionName")
+        or app.get("currentVersion")
         or ""
-    ).strip()
+    )
 
-    download_url = (
+
+def get_download_url(app):
+    return clean_text(
         app.get("downloadURL")
         or app.get("ipaUrl")
         or app.get("ipaURL")
+        or app.get("downloadUrl")
         or ""
-    ).strip()
+    )
 
-    # Different download links are treated as different app versions/mods.
-    if bundle_id and download_url:
-        return (
-            "bundle:"
-            + bundle_id.lower()
-            + "|url:"
-            + download_url.lower()
-        )
 
-    # If no download URL exists, include the version.
+def get_version_date(app):
+    return clean_text(
+        app.get("versionDate")
+        or app.get("date")
+        or app.get("updatedDate")
+        or app.get("lastUpdated")
+        or ""
+    )
+
+
+def get_description(app):
+    return clean_text(
+        app.get("subtitle")
+        or app.get("description")
+        or app.get("localizedDescription")
+        or ""
+    )
+
+
+# =========================
+# VERSION COMPARISON
+# =========================
+
+def version_numbers(version):
+    """
+    يحول رقم الإصدار إلى أرقام قابلة للمقارنة.
+
+    أمثلة:
+    1.2.3       -> [1, 2, 3]
+    2.0         -> [2, 0]
+    v3.1.4      -> [3, 1, 4]
+    """
+
+    if not version:
+        return [0]
+
+    numbers = re.findall(r"\d+", str(version))
+
+    if not numbers:
+        return [0]
+
+    try:
+        return [int(number) for number in numbers]
+
+    except Exception:
+        return [0]
+
+
+def compare_versions(first, second):
+    """
+    يرجع:
+    1  إذا first أحدث
+    -1 إذا second أحدث
+    0  إذا متساويين
+    """
+
+    first_numbers = version_numbers(first)
+    second_numbers = version_numbers(second)
+
+    max_length = max(
+        len(first_numbers),
+        len(second_numbers)
+    )
+
+    first_numbers += [0] * (
+        max_length - len(first_numbers)
+    )
+
+    second_numbers += [0] * (
+        max_length - len(second_numbers)
+    )
+
+    if first_numbers > second_numbers:
+        return 1
+
+    if first_numbers < second_numbers:
+        return -1
+
+    return 0
+
+
+# =========================
+# APP IDENTITY
+# =========================
+
+def normalize_name(name):
+    """
+    ينظف اسم التطبيق حتى نقدر نعرف
+    إذا كان التطبيق نفسه أو إصدار جديد.
+
+    لا نحذف علامات ++ حتى تبقى
+    النسخ المعدلة المختلفة محفوظة.
+    """
+
+    name = clean_text(name).lower()
+
+    name = re.sub(
+        r"\bversion\s*[\d.]+\b",
+        "",
+        name
+    )
+
+    name = re.sub(
+        r"\bv?\d+(?:\.\d+)+\b",
+        "",
+        name
+    )
+
+    name = re.sub(
+        r"\s+",
+        " ",
+        name
+    )
+
+    return name.strip()
+
+
+def get_variant_name(app):
+    """
+    يفرق بين النسخة العادية والمعدلة
+    إذا كان اسم النسخة مختلفاً.
+
+    مثال:
+    Instagram
+    Instagram++
+    Instagram Rocket
+
+    تبقى نسخ منفصلة إذا اختلف اسمها.
+    """
+
+    name = normalize_name(get_name(app))
+
+    if name:
+        return name
+
+    return "unknown-app"
+
+
+def get_source_host(download_url):
+    """
+    يأخذ اسم الموقع من رابط التحميل.
+    يستخدم كمعلومة مساعدة فقط.
+    """
+
+    if not download_url:
+        return ""
+
+    try:
+        parsed = urlparse(download_url)
+        return parsed.netloc.lower()
+
+    except Exception:
+        return ""
+
+
+def app_identity(app):
+    """
+    هوية التطبيق التي نستخدمها للتحديث.
+
+    إذا توفر Bundle ID:
+      Bundle ID + اسم النسخة
+
+    إذا ما توفر:
+      اسم النسخة + اسم التطبيق
+
+    رابط التحميل لا يدخل في الهوية،
+    لأن الرابط قد يتغير عند تحديث التطبيق.
+    """
+
+    bundle_id = get_bundle_id(app)
+    variant_name = get_variant_name(app)
+
     if bundle_id:
         return (
             "bundle:"
             + bundle_id.lower()
-            + "|version:"
-            + version.lower()
-            + "|name:"
-            + name
+            + "|variant:"
+            + variant_name
         )
 
-    if name and download_url:
-        return (
-            "name:"
-            + name
-            + "|url:"
-            + download_url.lower()
-        )
-
-    if name:
-        return "name:" + name + "|version:" + version.lower()
+    if variant_name:
+        return "name:" + variant_name
 
     return None
 
 
-def merge_apps(base_apps, external_apps):
-    merged = []
-    seen = set()
+# =========================
+# SELECT NEWEST APP
+# =========================
 
-    # Your own apps come first.
+def choose_newest(existing, incoming):
+    """
+    يختار الإصدار الأحدث بين تطبيقين
+    لهما الهوية نفسها.
+
+    إذا كان الإصداران متساويين:
+    نفضل التطبيق الوارد حديثاً إذا
+    كان يحتوي على رابط تحميل أفضل.
+    """
+
+    existing_version = get_version(existing)
+    incoming_version = get_version(incoming)
+
+    comparison = compare_versions(
+        incoming_version,
+        existing_version
+    )
+
+    if comparison > 0:
+        print(
+            "Updated app: "
+            + get_name(incoming)
+            + " "
+            + incoming_version
+        )
+
+        return incoming
+
+    if comparison < 0:
+        return existing
+
+    existing_url = get_download_url(existing)
+    incoming_url = get_download_url(incoming)
+
+    if incoming_url and not existing_url:
+        return incoming
+
+    existing_date = get_version_date(existing)
+    incoming_date = get_version_date(incoming)
+
+    if incoming_date > existing_date:
+        return incoming
+
+    return existing
+
+
+# =========================
+# MERGE APPS
+# =========================
+
+def merge_apps(base_apps, external_apps):
+    """
+    يدمج التطبيقات مع تحديث الإصدارات.
+
+    تطبيقاتك الأساسية لها الأولوية
+    عند وجود تطبيق مطابق.
+
+    النسخ المعدلة ذات الاسم المختلف
+    تبقى منفصلة.
+    """
+
+    merged = []
+    positions = {}
+    identities = {}
+
+    # -------------------------
+    # ADD BASE APPS FIRST
+    # -------------------------
+
     for app in base_apps:
         if not isinstance(app, dict):
             continue
 
-        key = app_key(app)
+        identity = app_identity(app)
 
-        if key and key not in seen:
-            seen.add(key)
+        if not identity:
+            continue
+
+        if identity not in positions:
+            positions[identity] = len(merged)
+            identities[identity] = app
             merged.append(app)
 
-    # External apps come after your own apps.
+        else:
+            index = positions[identity]
+
+            identities[identity] = choose_newest(
+                identities[identity],
+                app
+            )
+
+            merged[index] = identities[identity]
+
+    # -------------------------
+    # ADD EXTERNAL APPS
+    # -------------------------
+
     for app in external_apps:
         if not isinstance(app, dict):
             continue
 
-        key = app_key(app)
+        identity = app_identity(app)
 
-        if key and key not in seen:
-            seen.add(key)
+        if not identity:
+            continue
+
+        if identity not in positions:
+            positions[identity] = len(merged)
+            identities[identity] = app
             merged.append(app)
+
+        else:
+            index = positions[identity]
+
+            selected = choose_newest(
+                identities[identity],
+                app
+            )
+
+            identities[identity] = selected
+            merged[index] = selected
 
     return merged
 
 
 # =========================
-# LIMIT
+# LIMIT APPS
 # =========================
 
 def limit_apps(apps):
+    """
+    يحافظ على الحد الأقصى.
+    """
+
     return apps[:MAX_APPS]
 
 
@@ -246,7 +533,7 @@ def preserve_store_metadata(data):
 
 
 # =========================
-# SAVE
+# SAVE JSON
 # =========================
 
 def save_json_file(data):
@@ -273,7 +560,10 @@ def main():
     base_data = load_base_data()
     base_apps = get_apps(base_data)
 
-    print(f"Your apps: {len(base_apps)}")
+    print(
+        f"Your apps before update: "
+        f"{len(base_apps)}"
+    )
 
     external_apps = []
 
@@ -287,15 +577,25 @@ def main():
 
         apps = get_apps(data)
 
-        print(f"Found {len(apps)} apps from source")
+        print(
+            f"Found {len(apps)} apps from source"
+        )
 
         external_apps.extend(apps)
 
-    print(f"External apps collected: {len(external_apps)}")
+    print(
+        f"External apps collected: "
+        f"{len(external_apps)}"
+    )
 
     merged_apps = merge_apps(
         base_apps,
         external_apps
+    )
+
+    print(
+        f"Apps after merging and updates: "
+        f"{len(merged_apps)}"
     )
 
     merged_apps = limit_apps(merged_apps)
@@ -304,10 +604,16 @@ def main():
 
     output["apps"] = merged_apps
 
-    if not isinstance(output.get("news"), list):
+    if not isinstance(
+        output.get("news"),
+        list
+    ):
         output["news"] = []
 
-    if not isinstance(output.get("permissions"), list):
+    if not isinstance(
+        output.get("permissions"),
+        list
+    ):
         output["permissions"] = []
 
     output["lastUpdated"] = datetime.now(
@@ -316,7 +622,11 @@ def main():
 
     save_json_file(output)
 
-    print(f"Final apps count: {len(merged_apps)}")
+    print(
+        f"Final apps count: "
+        f"{len(merged_apps)}"
+    )
+
     print("Merge completed successfully.")
 
 
