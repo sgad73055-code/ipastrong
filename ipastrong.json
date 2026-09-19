@@ -20720,6 +20720,22 @@
       "updatedAt": "2026-09-07"
     },
     {
+      "name": "Crsel",
+      "type": 1,
+      "bundleID": "com.frameoneapps.Crsel",
+      "bundleIdentifier": "com.frameoneapps.Crsel",
+      "version": "1.5.1",
+      "versionDate": "2026-09-19",
+      "fullDate": "20260919173837",
+      "size": 148238054,
+      "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-09-2026/Crsel_1.5.1_Pro_%40thisismanpreets_apptesters.org.ipa",
+      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-09-2026/Crsel_1.5.1_Pro_%40thisismanpreets_apptesters.org.ipa",
+      "developerName": "",
+      "localizedDescription": "Injected with Pro",
+      "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.frameoneapps.Crsel.png",
+      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.frameoneapps.Crsel.png"
+    },
+    {
       "name": "Thenx",
       "type": 1,
       "bundleID": "com.calisthenics.thenx",
@@ -151198,26 +151214,10 @@
       "localizedDescription": "Injected with Premium",
       "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.dubox.drive.png",
       "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.dubox.drive.png"
-    },
-    {
-      "name": "ShiftWorkCal",
-      "type": 1,
-      "bundleID": "jp.ebisusoft.shiftworkcallite",
-      "bundleIdentifier": "jp.ebisusoft.shiftworkcallite",
-      "version": "2025.2.0",
-      "versionDate": "2025-09-12",
-      "fullDate": "20250912002403",
-      "size": 19244377,
-      "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-09-2025/ShiftWorkCal_2025.2.0_Premium_%40thisismanpreets_apptesters.org.ipa",
-      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-09-2025/ShiftWorkCal_2025.2.0_Premium_%40thisismanpreets_apptesters.org.ipa",
-      "developerName": "",
-      "localizedDescription": "Injected with Premium",
-      "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/jp.ebisusoft.shiftworkcallite.png",
-      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/jp.ebisusoft.shiftworkcallite.png"
     }
   ],
   "subtitle": "ipastrong",
   "description": "Merged IPA sources",
   "permissions": [],
-  "lastUpdated": "2026-09-19T09:17:04.007474+00:00"
+  "lastUpdated": "2026-09-19T12:30:26.285796+00:00"
 }
