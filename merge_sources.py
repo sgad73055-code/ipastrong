@@ -3,8 +3,6 @@ import json
 import urllib.request
 from pathlib import Path
 from datetime import datetime, timezone
-from urllib.parse import urlparse
-import re
 
 
 # =========================
@@ -13,10 +11,8 @@ import re
 
 FILE = "ipastrong.json"
 
-# الحد الأقصى للتطبيقات
 MAX_APPS = 9000
 
-# ملفات التطبيقات الخاصة بك
 BACKUP_FILES = [
     "IPA-STORE.json",
     "ipa-store.json",
@@ -24,7 +20,7 @@ BACKUP_FILES = [
     "ipastrong-base.json",
 ]
 
-# المصادر الخارجية
+
 SOURCES = [
     "https://repository.apptesters.org",
     "https://repo.apptesters.org",
@@ -58,7 +54,7 @@ STORE_INFO = {
 
 
 # =========================
-# LOAD JSON
+# LOAD JSON FILE
 # =========================
 
 def load_json_file(path):
@@ -149,23 +145,23 @@ def clean_text(value):
         return ""
 
     if isinstance(value, list):
-        value = " ".join(str(item) for item in value)
+        return " ".join(str(item) for item in value)
 
     return str(value).strip()
-
-
-def get_name(app):
-    return clean_text(
-        app.get("name")
-        or app.get("title")
-        or ""
-    )
 
 
 def get_bundle_id(app):
     return clean_text(
         app.get("bundleIdentifier")
         or app.get("bundleId")
+        or ""
+    )
+
+
+def get_name(app):
+    return clean_text(
+        app.get("name")
+        or app.get("title")
         or ""
     )
 
@@ -199,13 +195,71 @@ def get_version_date(app):
     )
 
 
-def get_description(app):
-    return clean_text(
-        app.get("subtitle")
-        or app.get("description")
-        or app.get("localizedDescription")
-        or ""
-    )
+# =========================
+# APP KEY
+# =========================
+
+def app_key(app):
+    """
+    يحافظ على النسخ المختلفة.
+
+    نفس Bundle ID + نفس رابط التحميل
+    = نفس التطبيق.
+
+    إذا اختلف رابط التحميل:
+    تبقى النسخة منفصلة.
+
+    هذا يمنع دمج النسخ المعدلة
+    المختلفة بالغلط.
+    """
+
+    if not isinstance(app, dict):
+        return None
+
+    bundle_id = get_bundle_id(app).lower()
+    name = get_name(app).lower()
+    version = get_version(app).lower()
+    download_url = get_download_url(app).lower()
+
+    # المفتاح الأساسي:
+    # Bundle ID + رابط التحميل
+    if bundle_id and download_url:
+        return (
+            "bundle:"
+            + bundle_id
+            + "|url:"
+            + download_url
+        )
+
+    # إذا ماكو رابط تحميل
+    if bundle_id:
+        return (
+            "bundle:"
+            + bundle_id
+            + "|name:"
+            + name
+            + "|version:"
+            + version
+        )
+
+    # إذا ماكو Bundle ID
+    if name and download_url:
+        return (
+            "name:"
+            + name
+            + "|url:"
+            + download_url
+        )
+
+    if name:
+        return (
+            "name:"
+            + name
+            + "|version:"
+            + version
+        )
+
+    return None
 
 
 # =========================
@@ -214,37 +268,35 @@ def get_description(app):
 
 def version_numbers(version):
     """
-    يحول رقم الإصدار إلى أرقام قابلة للمقارنة.
+    يحول رقم الإصدار إلى قائمة أرقام.
 
-    أمثلة:
-    1.2.3       -> [1, 2, 3]
-    2.0         -> [2, 0]
-    v3.1.4      -> [3, 1, 4]
+    1.2.3 -> [1, 2, 3]
+    2.0   -> [2, 0]
     """
 
     if not version:
         return [0]
 
-    numbers = re.findall(r"\d+", str(version))
+    numbers = []
 
-    if not numbers:
-        return [0]
+    current_number = ""
 
-    try:
-        return [int(number) for number in numbers]
+    for character in str(version):
+        if character.isdigit():
+            current_number += character
 
-    except Exception:
-        return [0]
+        else:
+            if current_number:
+                numbers.append(int(current_number))
+                current_number = ""
+
+    if current_number:
+        numbers.append(int(current_number))
+
+    return numbers or [0]
 
 
 def compare_versions(first, second):
-    """
-    يرجع:
-    1  إذا first أحدث
-    -1 إذا second أحدث
-    0  إذا متساويين
-    """
-
     first_numbers = version_numbers(first)
     second_numbers = version_numbers(second)
 
@@ -271,122 +323,15 @@ def compare_versions(first, second):
 
 
 # =========================
-# APP IDENTITY
-# =========================
-
-def normalize_name(name):
-    """
-    ينظف اسم التطبيق حتى نقدر نعرف
-    إذا كان التطبيق نفسه أو إصدار جديد.
-
-    لا نحذف علامات ++ حتى تبقى
-    النسخ المعدلة المختلفة محفوظة.
-    """
-
-    name = clean_text(name).lower()
-
-    name = re.sub(
-        r"\bversion\s*[\d.]+\b",
-        "",
-        name
-    )
-
-    name = re.sub(
-        r"\bv?\d+(?:\.\d+)+\b",
-        "",
-        name
-    )
-
-    name = re.sub(
-        r"\s+",
-        " ",
-        name
-    )
-
-    return name.strip()
-
-
-def get_variant_name(app):
-    """
-    يفرق بين النسخة العادية والمعدلة
-    إذا كان اسم النسخة مختلفاً.
-
-    مثال:
-    Instagram
-    Instagram++
-    Instagram Rocket
-
-    تبقى نسخ منفصلة إذا اختلف اسمها.
-    """
-
-    name = normalize_name(get_name(app))
-
-    if name:
-        return name
-
-    return "unknown-app"
-
-
-def get_source_host(download_url):
-    """
-    يأخذ اسم الموقع من رابط التحميل.
-    يستخدم كمعلومة مساعدة فقط.
-    """
-
-    if not download_url:
-        return ""
-
-    try:
-        parsed = urlparse(download_url)
-        return parsed.netloc.lower()
-
-    except Exception:
-        return ""
-
-
-def app_identity(app):
-    """
-    هوية التطبيق التي نستخدمها للتحديث.
-
-    إذا توفر Bundle ID:
-      Bundle ID + اسم النسخة
-
-    إذا ما توفر:
-      اسم النسخة + اسم التطبيق
-
-    رابط التحميل لا يدخل في الهوية،
-    لأن الرابط قد يتغير عند تحديث التطبيق.
-    """
-
-    bundle_id = get_bundle_id(app)
-    variant_name = get_variant_name(app)
-
-    if bundle_id:
-        return (
-            "bundle:"
-            + bundle_id.lower()
-            + "|variant:"
-            + variant_name
-        )
-
-    if variant_name:
-        return "name:" + variant_name
-
-    return None
-
-
-# =========================
-# SELECT NEWEST APP
+# CHOOSE APP
 # =========================
 
 def choose_newest(existing, incoming):
     """
-    يختار الإصدار الأحدث بين تطبيقين
-    لهما الهوية نفسها.
+    إذا كانت الهوية نفسها، نختار الإصدار الأحدث.
 
-    إذا كان الإصداران متساويين:
-    نفضل التطبيق الوارد حديثاً إذا
-    كان يحتوي على رابط تحميل أفضل.
+    إذا الإصدار متساوي:
+    نفضل البيانات التي تحتوي رابط تحميل.
     """
 
     existing_version = get_version(existing)
@@ -399,7 +344,7 @@ def choose_newest(existing, incoming):
 
     if comparison > 0:
         print(
-            "Updated app: "
+            "Updated: "
             + get_name(incoming)
             + " "
             + incoming_version
@@ -410,16 +355,16 @@ def choose_newest(existing, incoming):
     if comparison < 0:
         return existing
 
-    existing_url = get_download_url(existing)
-    incoming_url = get_download_url(incoming)
-
-    if incoming_url and not existing_url:
-        return incoming
-
     existing_date = get_version_date(existing)
     incoming_date = get_version_date(incoming)
 
     if incoming_date > existing_date:
+        return incoming
+
+    existing_url = get_download_url(existing)
+    incoming_url = get_download_url(incoming)
+
+    if incoming_url and not existing_url:
         return incoming
 
     return existing
@@ -431,88 +376,85 @@ def choose_newest(existing, incoming):
 
 def merge_apps(base_apps, external_apps):
     """
-    يدمج التطبيقات مع تحديث الإصدارات.
+    دمج آمن:
 
-    تطبيقاتك الأساسية لها الأولوية
-    عند وجود تطبيق مطابق.
-
-    النسخ المعدلة ذات الاسم المختلف
-    تبقى منفصلة.
+    - تطبيقاتك الأساسية أولاً.
+    - النسخ المختلفة تبقى منفصلة.
+    - نفس الرابط لا يتكرر.
+    - الإصدارات الأحدث تحل محل القديمة
+      عندما تكون الهوية نفسها.
     """
 
     merged = []
     positions = {}
-    identities = {}
+    selected_apps = {}
 
     # -------------------------
-    # ADD BASE APPS FIRST
+    # BASE APPS
     # -------------------------
 
     for app in base_apps:
         if not isinstance(app, dict):
             continue
 
-        identity = app_identity(app)
+        key = app_key(app)
 
-        if not identity:
+        if not key:
             continue
 
-        if identity not in positions:
-            positions[identity] = len(merged)
-            identities[identity] = app
+        if key not in positions:
+            positions[key] = len(merged)
+            selected_apps[key] = app
             merged.append(app)
 
         else:
-            index = positions[identity]
+            index = positions[key]
 
-            identities[identity] = choose_newest(
-                identities[identity],
+            selected = choose_newest(
+                selected_apps[key],
                 app
             )
 
-            merged[index] = identities[identity]
+            selected_apps[key] = selected
+            merged[index] = selected
 
     # -------------------------
-    # ADD EXTERNAL APPS
+    # EXTERNAL APPS
     # -------------------------
 
     for app in external_apps:
         if not isinstance(app, dict):
             continue
 
-        identity = app_identity(app)
+        key = app_key(app)
 
-        if not identity:
+        if not key:
             continue
 
-        if identity not in positions:
-            positions[identity] = len(merged)
-            identities[identity] = app
+        if key not in positions:
+            positions[key] = len(merged)
+            selected_apps[key] = app
             merged.append(app)
 
         else:
-            index = positions[identity]
+            index = positions[key]
 
             selected = choose_newest(
-                identities[identity],
+                selected_apps[key],
                 app
             )
 
-            identities[identity] = selected
+            selected_apps[key] = selected
             merged[index] = selected
 
     return merged
 
 
 # =========================
-# LIMIT APPS
+# LIMIT
 # =========================
 
 def limit_apps(apps):
-    """
-    يحافظ على الحد الأقصى.
-    """
-
     return apps[:MAX_APPS]
 
 
@@ -533,7 +475,7 @@ def preserve_store_metadata(data):
 
 
 # =========================
-# SAVE JSON
+# SAVE
 # =========================
 
 def save_json_file(data):
@@ -561,7 +503,7 @@ def main():
     base_apps = get_apps(base_data)
 
     print(
-        f"Your apps before update: "
+        f"Base apps collected: "
         f"{len(base_apps)}"
     )
 
@@ -594,7 +536,7 @@ def main():
     )
 
     print(
-        f"Apps after merging and updates: "
+        f"Apps after merging: "
         f"{len(merged_apps)}"
     )
 
