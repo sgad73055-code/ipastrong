@@ -9,242 +9,376 @@
 
 <style>
 *{box-sizing:border-box}
+
 :root{
---bg:#080a10;
---card:#111621;
---card2:#171e2d;
---text:#f5f7ff;
---muted:#9da8bd;
---line:#293348;
---accent:#7d88ff;
+  --bg:#080a10;
+  --card:#111621;
+  --card2:#171e2d;
+  --text:#f5f7ff;
+  --muted:#9da8bd;
+  --line:#293348;
+  --accent:#7d88ff;
 }
+
 body{
-margin:0;
-background:radial-gradient(circle at 50% -10%,#28345d,#0b0e17 45%,#080a10);
-color:var(--text);
-font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 50% -10%,#28345d,#0b0e17 45%,#080a10);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
 }
-.wrap{width:min(1120px,calc(100% - 30px));margin:auto}
+
+.wrap{
+  width:min(1120px,calc(100% - 30px));
+  margin:auto;
+}
+
 header{
-position:sticky;
-top:0;
-z-index:10;
-background:#080a10e8;
-backdrop-filter:blur(18px);
-border-bottom:1px solid #ffffff12;
+  position:sticky;
+  top:0;
+  z-index:20;
+  background:#080a10e8;
+  backdrop-filter:blur(18px);
+  border-bottom:1px solid #ffffff12;
 }
+
 .top{
-min-height:75px;
-display:flex;
-align-items:center;
-justify-content:space-between;
-gap:12px;
+  min-height:75px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
 }
+
 .brand{
-display:flex;
-align-items:center;
-gap:10px;
-font-size:22px;
-font-weight:900;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-size:22px;
+  font-weight:900;
 }
+
 .logo{
-width:45px;
-height:45px;
-display:grid;
-place-items:center;
-border-radius:15px;
-background:linear-gradient(135deg,#7c88ff,#a17aff);
-font-size:12px;
-font-weight:900;
-box-shadow:0 8px 30px #7c88ff35;
+  width:45px;
+  height:45px;
+  display:grid;
+  place-items:center;
+  border-radius:15px;
+  background:linear-gradient(135deg,#7c88ff,#a17aff);
+  font-size:12px;
+  font-weight:900;
+  box-shadow:0 8px 30px #7c88ff35;
 }
+
 .btn{
-display:inline-flex;
-align-items:center;
-justify-content:center;
-gap:8px;
-padding:12px 17px;
-border:1px solid var(--line);
-border-radius:13px;
-background:var(--card2);
-color:white;
-text-decoration:none;
-font-weight:800;
-transition:.2s;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  padding:12px 17px;
+  border:1px solid var(--line);
+  border-radius:13px;
+  background:var(--card2);
+  color:white;
+  text-decoration:none;
+  font-weight:800;
+  transition:.2s;
 }
-.btn:hover{transform:translateY(-2px)}
-.primary{background:#eff0ff;color:#10131c;border-color:#eff0ff}
+
+.btn:hover{
+  transform:translateY(-2px);
+}
+
+.primary{
+  background:#eff0ff;
+  color:#10131c;
+  border-color:#eff0ff;
+}
+
 nav{
-display:flex;
-gap:8px;
-overflow-x:auto;
-padding:10px 0 14px;
+  display:flex;
+  gap:8px;
+  overflow-x:auto;
+  padding:10px 0 14px;
 }
+
 nav button{
-border:1px solid var(--line);
-border-radius:999px;
-padding:10px 17px;
-background:var(--card);
-color:#cbd3e5;
-white-space:nowrap;
-cursor:pointer;
+  border:1px solid var(--line);
+  border-radius:999px;
+  padding:10px 17px;
+  background:var(--card);
+  color:#cbd3e5;
+  white-space:nowrap;
+  cursor:pointer;
 }
+
 nav button.active{
-background:#eff0ff;
-color:#10131c;
-border-color:#eff0ff;
+  background:#eff0ff;
+  color:#10131c;
+  border-color:#eff0ff;
 }
-.hero{padding:55px 0 20px}
+
+.hero{
+  padding:55px 0 20px;
+}
+
 .eyebrow{
-display:inline-block;
-padding:8px 13px;
-border:1px solid #7d88ff40;
-border-radius:999px;
-background:#7d88ff15;
-color:#b9c0ff;
-font-size:13px;
-font-weight:700;
-margin-bottom:17px;
+  display:inline-block;
+  padding:8px 13px;
+  border:1px solid #7d88ff40;
+  border-radius:999px;
+  background:#7d88ff15;
+  color:#b9c0ff;
+  font-size:13px;
+  font-weight:700;
+  margin-bottom:17px;
 }
+
 h1{
-font-size:clamp(38px,7vw,68px);
-line-height:1.1;
-letter-spacing:-2px;
-margin:0 0 18px;
+  font-size:clamp(38px,7vw,68px);
+  line-height:1.1;
+  letter-spacing:-2px;
+  margin:0 0 18px;
 }
-h1 span{color:#9da8ff}
+
+h1 span{
+  color:#9da8ff;
+}
+
 .hero p{
-max-width:650px;
-color:var(--muted);
-font-size:17px;
-line-height:1.9;
-margin-bottom:25px;
+  max-width:650px;
+  color:var(--muted);
+  font-size:17px;
+  line-height:1.9;
+  margin-bottom:25px;
 }
-.actions{display:flex;gap:10px;flex-wrap:wrap}
+
+.actions{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
 .stats{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:12px;
-margin:25px 0;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:12px;
+  margin:25px 0;
 }
+
 .stat{
-text-align:center;
-padding:17px 8px;
-border:1px solid var(--line);
-border-radius:18px;
-background:linear-gradient(145deg,#151d2c,#10141e);
+  text-align:center;
+  padding:17px 8px;
+  border:1px solid var(--line);
+  border-radius:18px;
+  background:linear-gradient(145deg,#151d2c,#10141e);
 }
-.stat strong{display:block;color:#c6ccff;font-size:24px}
-.stat span{display:block;color:var(--muted);font-size:12px;margin-top:5px}
-.search{position:relative;margin:25px 0 30px}
+
+.stat strong{
+  display:block;
+  color:#c6ccff;
+  font-size:24px;
+}
+
+.stat span{
+  display:block;
+  color:var(--muted);
+  font-size:12px;
+  margin-top:5px;
+}
+
+.search{
+  position:relative;
+  margin:25px 0 30px;
+}
+
 .search span{
-position:absolute;
-right:17px;
-top:13px;
-font-size:23px;
-color:#9da8bd;
+  position:absolute;
+  right:17px;
+  top:13px;
+  font-size:23px;
+  color:#9da8bd;
 }
+
 .search input{
-width:100%;
-padding:17px 50px 17px 17px;
-border:1px solid var(--line);
-border-radius:16px;
-outline:none;
-background:#101521;
-color:white;
-font-size:16px;
+  width:100%;
+  padding:17px 50px 17px 17px;
+  border:1px solid var(--line);
+  border-radius:16px;
+  outline:none;
+  background:#101521;
+  color:white;
+  font-size:16px;
 }
-.search input:focus{border-color:var(--accent)}
+
+.search input:focus{
+  border-color:var(--accent);
+}
+
 .sectionhead{
-display:flex;
-align-items:end;
-justify-content:space-between;
-gap:10px;
-margin:28px 0 15px;
+  display:flex;
+  align-items:end;
+  justify-content:space-between;
+  gap:10px;
+  margin:28px 0 15px;
 }
-.sectionhead h2{margin:0;font-size:27px}
-.count{font-size:13px;color:var(--muted)}
+
+.sectionhead h2{
+  margin:0;
+  font-size:27px;
+}
+
+.count{
+  font-size:13px;
+  color:var(--muted);
+}
+
 .grid{
-display:grid;
-grid-template-columns:repeat(auto-fill,minmax(245px,1fr));
-gap:16px;
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(245px,1fr));
+  gap:16px;
 }
+
 .app{
-display:flex;
-flex-direction:column;
-gap:15px;
-padding:16px;
-min-height:205px;
-border:1px solid var(--line);
-border-radius:21px;
-background:linear-gradient(145deg,#151d2c,#10141e);
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+  padding:16px;
+  min-height:205px;
+  border:1px solid var(--line);
+  border-radius:21px;
+  background:linear-gradient(145deg,#151d2c,#10141e);
 }
-.appmain{display:flex;gap:13px}
+
+.appmain{
+  display:flex;
+  gap:13px;
+}
+
 .icon{
-width:68px;
-height:68px;
-flex:none;
-object-fit:cover;
-border-radius:17px;
-background:#202837;
+  width:68px;
+  height:68px;
+  flex:none;
+  object-fit:cover;
+  border-radius:17px;
+  background:#202837;
 }
-.app h3{font-size:17px;margin:2px 0 6px}
+
+.app h3{
+  font-size:17px;
+  margin:2px 0 6px;
+}
+
 .desc{
-display:-webkit-box;
--webkit-line-clamp:2;
--webkit-box-orient:vertical;
-overflow:hidden;
-font-size:13px;
-line-height:1.6;
-color:var(--muted);
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+  font-size:13px;
+  line-height:1.6;
+  color:var(--muted);
 }
-.meta{font-size:12px;color:#818da3;margin-top:5px}
+
+.meta{
+  font-size:12px;
+  color:#818da3;
+  margin-top:5px;
+}
+
+.badge{
+  display:inline-block;
+  margin-top:7px;
+  padding:4px 8px;
+  border-radius:7px;
+  font-size:10px;
+  background:#7d88ff18;
+  color:#aeb6ff;
+}
+
 .download{
-display:block;
-width:100%;
-padding:12px;
-margin-top:auto;
-border-radius:12px;
-background:#eff0ff;
-color:#10131c;
-text-align:center;
-text-decoration:none;
-font-weight:900;
+  display:block;
+  width:100%;
+  padding:12px;
+  margin-top:auto;
+  border-radius:12px;
+  background:#eff0ff;
+  color:#10131c;
+  text-align:center;
+  text-decoration:none;
+  font-weight:900;
 }
+
 .loading,.empty{
-grid-column:1/-1;
-padding:45px 10px;
-text-align:center;
-color:var(--muted);
+  grid-column:1/-1;
+  padding:45px 10px;
+  text-align:center;
+  color:var(--muted);
 }
+
 .contact{
-margin-top:45px;
-padding:28px 20px;
-border:1px solid var(--line);
-border-radius:22px;
-background:linear-gradient(145deg,#181f31,#10141e);
-text-align:center;
+  margin-top:45px;
+  padding:28px 20px;
+  border:1px solid var(--line);
+  border-radius:22px;
+  background:linear-gradient(145deg,#181f31,#10141e);
+  text-align:center;
 }
-.contact h2{margin:0 0 10px}
-.contact p{color:var(--muted);line-height:1.9}
-.contact .btn{margin-top:10px}
+
+.contact h2{
+  margin:0 0 10px;
+}
+
+.contact p{
+  color:var(--muted);
+  line-height:1.9;
+}
+
+.contact .btn{
+  margin-top:10px;
+}
+
 footer{
-margin-top:65px;
-padding:30px 0 40px;
-border-top:1px solid var(--line);
-color:var(--muted);
-font-size:13px;
-line-height:1.9;
+  margin-top:65px;
+  padding:30px 0 40px;
+  border-top:1px solid var(--line);
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.9;
 }
-.footerlinks{margin-top:12px}
-.footerlinks a{color:#cbd1ff;text-decoration:none}
+
+.footerlinks{
+  margin-top:12px;
+}
+
+.footerlinks a{
+  color:#cbd1ff;
+  text-decoration:none;
+}
+
 @media(max-width:600px){
-.hero{padding-top:42px}
-.grid{grid-template-columns:1fr}
-.stats{gap:8px}
-.stat{padding:13px 4px}
-.stat strong{font-size:20px}
-h1{letter-spacing:-1px}
+  .hero{
+    padding-top:42px;
+  }
+
+  .grid{
+    grid-template-columns:1fr;
+  }
+
+  .stats{
+    gap:8px;
+  }
+
+  .stat{
+    padding:13px 4px;
+  }
+
+  .stat strong{
+    font-size:20px;
+  }
+
+  h1{
+    letter-spacing:-1px;
+  }
 }
 </style>
 </head>
@@ -253,6 +387,7 @@ h1{letter-spacing:-1px}
 
 <header>
 <div class="wrap">
+
 <div class="top">
 <div class="brand">
 <div class="logo">IPA</div>
@@ -264,19 +399,21 @@ h1{letter-spacing:-1px}
 </a>
 </div>
 
-<nav>
+<nav id="categories">
 <button class="active" data-category="الكل">الكل</button>
 <button data-category="تطبيقات">📱 التطبيقات</button>
 <button data-category="ألعاب">🎮 الألعاب</button>
 <button data-category="أدوات">🛠️ الأدوات</button>
 <button data-category="معدلة">🔓 المعدلة</button>
 </nav>
+
 </div>
 </header>
 
 <main class="wrap">
 
 <section class="hero">
+
 <div class="eyebrow">مرحباً بك في ipastrong</div>
 
 <h1>
@@ -294,9 +431,11 @@ h1{letter-spacing:-1px}
 <a class="btn primary" href="#apps">تصفح التطبيقات ↓</a>
 <a class="btn" href="#contact">تواصل معنا</a>
 </div>
+
 </section>
 
 <div class="stats">
+
 <div class="stat">
 <strong id="total">—</strong>
 <span>تطبيق ولعبة</span>
@@ -311,6 +450,7 @@ h1{letter-spacing:-1px}
 <strong>iOS</strong>
 <span>مخصص للآيفون</span>
 </div>
+
 </div>
 
 <div class="search">
@@ -319,6 +459,7 @@ h1{letter-spacing:-1px}
 </div>
 
 <section id="apps">
+
 <div class="sectionhead">
 <h2 id="sectionTitle">كل التطبيقات</h2>
 <span class="count" id="count">جاري التحميل...</span>
@@ -327,9 +468,11 @@ h1{letter-spacing:-1px}
 <div class="grid" id="grid">
 <div class="loading">جاري تحميل التطبيقات...</div>
 </div>
+
 </section>
 
 <section class="contact" id="contact">
+
 <h2>📩 تواصل مع ipastrong</h2>
 
 <p>
@@ -340,12 +483,14 @@ h1{letter-spacing:-1px}
 <a class="btn primary" href="https://t.me/ipastrong" target="_blank" rel="noopener">
 ✈️ تواصل عبر Telegram
 </a>
+
 </section>
 
 </main>
 
 <footer>
 <div class="wrap">
+
 <strong>ipastrong</strong><br>
 متجر التطبيقات والألعاب والشهادات لأجهزة iOS.
 
@@ -354,6 +499,7 @@ h1{letter-spacing:-1px}
 ✈️ قناة Telegram
 </a>
 </div>
+
 </div>
 </footer>
 
@@ -366,244 +512,377 @@ let currentCategory = "الكل";
 
 const $ = id => document.getElementById(id);
 
-function escapeHTML(value) {
-return String(value ?? "").replace(/[&<>"']/g, char => ({
-"&":"&amp;",
-"<":"&lt;",
-">":"&gt;",
-'"':"&quot;",
-"'":"&#39;"
-}[char]));
+function escapeHTML(value){
+  return String(value ?? "").replace(/[&<>"']/g, char => ({
+    "&":"&amp;",
+    "<":"&lt;",
+    ">":"&gt;",
+    '"':"&quot;",
+    "'":"&#39;"
+  }[char]));
 }
 
-function appName(app) {
-return app.name || app.title || "بدون اسم";
+function getName(app){
+  return app.name ||
+         app.title ||
+         "بدون اسم";
 }
 
-function appDescription(app) {
-return app.subtitle ||
-app.description ||
-app.localizedDescription ||
-"تطبيق IPA";
+function getDescription(app){
+  return app.subtitle ||
+         app.description ||
+         app.localizedDescription ||
+         "تطبيق IPA";
 }
 
-function appIcon(app) {
-return app.iconURL ||
-app.icon ||
-app.artworkURL ||
-app.icon_url ||
-"https://placehold.co/128x128/20242d/ffffff?text=IPA";
+function getIcon(app){
+  return app.iconURL ||
+         app.icon ||
+         app.artworkURL ||
+         app.icon_url ||
+         "https://placehold.co/128x128/20242d/ffffff?text=IPA";
 }
 
-function appDownload(app) {
-return app.downloadURL ||
-app.versions?.[0]?.downloadURL ||
-app.versions?.[0]?.url ||
-app.url ||
-"https://t.me/ipastrong";
+function getDownloadURL(app){
+  return app.downloadURL ||
+         app.versions?.[0]?.downloadURL ||
+         app.versions?.[0]?.url ||
+         app.url ||
+         "https://t.me/ipastrong";
 }
 
-function appVersion(app) {
-return app.version ||
-app.versions?.[0]?.version ||
-"—";
+function getVersion(app){
+  return app.version ||
+         app.versions?.[0]?.version ||
+         "—";
 }
 
-function searchText(app) {
-const values = [
-app.category,
-app.categories,
-app.type,
-app.genre,
-app.name,
-app.title,
-app.description,
-app.subtitle,
-app.bundleIdentifier,
-app.bundleId
-];
+function getExplicitCategory(app){
+  const values = [
+    app.category,
+    app.categories,
+    app.type,
+    app.genre,
+    app.primaryCategory,
+    app.appCategory
+  ];
 
-return values
-.flatMap(value => Array.isArray(value) ? value : [value])
-.filter(Boolean)
-.join(" ")
-.toLowerCase();
+  return values
+    .flatMap(value => Array.isArray(value) ? value : [value])
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
 }
 
-function isGame(app) {
-return /game|games|لعبة|العاب|ألعاب|arcade|puzzle/.test(searchText(app));
+function getAllText(app){
+  const values = [
+    app.category,
+    app.categories,
+    app.type,
+    app.genre,
+    app.primaryCategory,
+    app.appCategory,
+    app.name,
+    app.title,
+    app.subtitle,
+    app.description,
+    app.localizedDescription,
+    app.bundleIdentifier,
+    app.bundleId
+  ];
+
+  return values
+    .flatMap(value => Array.isArray(value) ? value : [value])
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
 }
 
-function isTool(app) {
-return /tool|utility|أداة|أدوات|manager|file manager|vpn|browser/.test(searchText(app));
+function isModified(app){
+  const explicit = getExplicitCategory(app);
+  const text = getAllText(app);
+
+  const words = [
+    "mod",
+    "tweak",
+    "plus",
+    "premium",
+    "enhanced",
+    "patched",
+    "modified",
+    "معدل",
+    "معدلة",
+    "مهكر",
+    "مفتوح",
+    "نسخة معدلة"
+  ];
+
+  return words.some(word =>
+    explicit.includes(word) || text.includes(word)
+  );
 }
 
-function isModified(app) {
-return /plus|mod|tweak|premium|enhanced|ipa|معدل|معدلة|مهكر|مفتوح|pro/.test(searchText(app));
+function isGame(app){
+  const explicit = getExplicitCategory(app);
+  const text = getAllText(app);
+
+  const gameWords = [
+    "game",
+    "games",
+    "gaming",
+    "arcade",
+    "puzzle",
+    "racing",
+    "action",
+    "adventure",
+    "لعبة",
+    "العاب",
+    "ألعاب",
+    "سباق"
+  ];
+
+  return gameWords.some(word => explicit.includes(word)) ||
+         gameWords.some(word => text.includes(word));
 }
 
-function belongsTo(app, category) {
-if (category === "الكل") return true;
+function isTool(app){
+  const explicit = getExplicitCategory(app);
+  const text = getAllText(app);
 
-if (category === "ألعاب") {
-return isGame(app);
+  const toolWords = [
+    "tool",
+    "tools",
+    "utility",
+    "utilities",
+    "productivity",
+    "manager",
+    "file manager",
+    "browser",
+    "vpn",
+    "أداة",
+    "أدوات",
+    "متصفح"
+  ];
+
+  return toolWords.some(word => explicit.includes(word)) ||
+         toolWords.some(word => text.includes(word));
 }
 
-if (category === "أدوات") {
-return !isGame(app) && isTool(app);
+function getAppCategory(app){
+  /*
+    ترتيب الفحص مهم:
+    1. المعدلة
+    2. الألعاب
+    3. الأدوات
+    4. التطبيقات العادية
+
+    جميع التطبيقات القديمة والجديدة تمر من هنا.
+  */
+
+  if(isModified(app)){
+    return "معدلة";
+  }
+
+  if(isGame(app)){
+    return "ألعاب";
+  }
+
+  if(isTool(app)){
+    return "أدوات";
+  }
+
+  return "تطبيقات";
 }
 
-if (category === "معدلة") {
-return isModified(app);
+function belongsTo(app, category){
+  if(category === "الكل"){
+    return true;
+  }
+
+  return getAppCategory(app) === category;
 }
 
-if (category === "تطبيقات") {
-return !isGame(app) && !isTool(app);
+function getApps(data){
+  if(Array.isArray(data)){
+    return data;
+  }
+
+  if(Array.isArray(data.apps)){
+    return data.apps;
+  }
+
+  if(Array.isArray(data.data)){
+    return data.data;
+  }
+
+  if(Array.isArray(data.items)){
+    return data.items;
+  }
+
+  return [];
 }
 
-return true;
-}
+function renderApps(){
+  const query = $("search").value.trim().toLowerCase();
 
-function getApps(data) {
-if (Array.isArray(data)) return data;
-if (Array.isArray(data.apps)) return data.apps;
-if (Array.isArray(data.data)) return data.data;
-if (Array.isArray(data.items)) return data.items;
-return [];
-}
+  const filtered = allApps.filter(app => {
+    const text = getAllText(app);
 
-function renderApps() {
-const query = $("search").value.trim().toLowerCase();
+    return belongsTo(app,currentCategory) &&
+           (!query || text.includes(query));
+  });
 
-const filtered = allApps.filter(app => {
-const text = searchText(app);
+  $("sectionTitle").textContent =
+    currentCategory === "الكل"
+      ? "كل التطبيقات"
+      : currentCategory;
 
-return belongsTo(app, currentCategory) &&
-(!query || text.includes(query));
-});
+  $("count").textContent =
+    filtered.length.toLocaleString("en-US") + " تطبيق";
 
-$("sectionTitle").textContent =
-currentCategory === "الكل" ? "كل التطبيقات" : currentCategory;
+  if(!filtered.length){
+    $("grid").innerHTML =
+      '<div class="empty">ما لكيت نتائج بهذا البحث.</div>';
+    return;
+  }
 
-$("count").textContent =
-filtered.length.toLocaleString("en-US") + " تطبيق";
+  $("grid").innerHTML = filtered.map(app => {
+    const category = getAppCategory(app);
 
-if (!filtered.length) {
-$("grid").innerHTML =
-'<div class="empty">ما لكيت نتائج بهذا البحث.</div>';
-return;
-}
+    let badge = "";
 
-$("grid").innerHTML = filtered.map(app => {
-const game = isGame(app);
+    if(category === "ألعاب"){
+      badge = "🎮 لعبة";
+    }
 
-return `
-<article class="app">
-<div class="appmain">
+    if(category === "أدوات"){
+      badge = "🛠️ أداة";
+    }
 
-<img
-class="icon"
-src="${escapeHTML(appIcon(app))}"
-loading="lazy"
-alt="${escapeHTML(appName(app))}"
-onerror="this.src='https://placehold.co/128x128/20242d/ffffff?text=IPA'"
->
+    if(category === "معدلة"){
+      badge = "🔓 معدلة";
+    }
 
-<div>
-<h3>${escapeHTML(appName(app))}</h3>
+    if(category === "تطبيقات"){
+      badge = "📱 تطبيق";
+    }
 
-<div class="desc">
-${escapeHTML(appDescription(app))}
-</div>
+    return `
+      <article class="app">
 
-<div class="meta">
-الإصدار: ${escapeHTML(appVersion(app))}
-</div>
-</div>
-</div>
+        <div class="appmain">
 
-<a
-class="download"
-href="${escapeHTML(appDownload(app))}"
-target="_blank"
-rel="noopener"
->
-${game ? "تنزيل اللعبة" : "تنزيل التطبيق"}
-</a>
-</article>
-`;
-}).join("");
+          <img
+            class="icon"
+            src="${escapeHTML(getIcon(app))}"
+            loading="lazy"
+            alt="${escapeHTML(getName(app))}"
+            onerror="this.src='https://placehold.co/128x128/20242d/ffffff?text=IPA'"
+          >
+
+          <div>
+
+            <h3>${escapeHTML(getName(app))}</h3>
+
+            <div class="desc">
+              ${escapeHTML(getDescription(app))}
+            </div>
+
+            <div class="meta">
+              الإصدار: ${escapeHTML(getVersion(app))}
+            </div>
+
+            <span class="badge">
+              ${badge}
+            </span>
+
+          </div>
+
+        </div>
+
+        <a
+          class="download"
+          href="${escapeHTML(getDownloadURL(app))}"
+          target="_blank"
+          rel="noopener"
+        >
+          ${category === "ألعاب" ? "تنزيل اللعبة" : "تنزيل التطبيق"}
+        </a>
+
+      </article>
+    `;
+  }).join("");
 }
 
 document.querySelectorAll("nav button").forEach(button => {
-button.addEventListener("click", () => {
-currentCategory = button.dataset.category;
+  button.addEventListener("click",() => {
 
-document.querySelectorAll("nav button").forEach(btn => {
-btn.classList.toggle(
-"active",
-btn.dataset.category === currentCategory
-);
+    currentCategory = button.dataset.category;
+
+    document.querySelectorAll("nav button").forEach(btn => {
+      btn.classList.toggle(
+        "active",
+        btn.dataset.category === currentCategory
+      );
+    });
+
+    renderApps();
+  });
 });
 
-renderApps();
-});
-});
+$("search").addEventListener("input",renderApps);
 
-$("search").addEventListener("input", renderApps);
+async function loadApps(){
 
-async function loadApps() {
-try {
-const controller = new AbortController();
+  try{
 
-const timeout = setTimeout(() => {
-controller.abort();
-}, 20000);
+    const controller = new AbortController();
 
-const response = await fetch(
-SOURCE + "?v=" + Date.now(),
-{
-cache:"no-store",
-signal:controller.signal
-}
-);
+    const timeout = setTimeout(() => {
+      controller.abort();
+    },20000);
 
-clearTimeout(timeout);
+    const response = await fetch(
+      SOURCE + "?v=" + Date.now(),
+      {
+        cache:"no-store",
+        signal:controller.signal
+      }
+    );
 
-if (!response.ok) {
-throw new Error("فشل تحميل المصدر");
-}
+    clearTimeout(timeout);
 
-const data = await response.json();
+    if(!response.ok){
+      throw new Error("فشل تحميل المصدر");
+    }
 
-allApps = getApps(data).filter(
-app => app && typeof app === "object"
-);
+    const data = await response.json();
 
-$("total").textContent =
-allApps.length.toLocaleString("en-US");
+    allApps = getApps(data).filter(
+      app => app && typeof app === "object"
+    );
 
-renderApps();
+    $("total").textContent =
+      allApps.length.toLocaleString("en-US");
 
-if (!allApps.length) {
-$("grid").innerHTML =
-'<div class="empty">المصدر لا يحتوي على تطبيقات.</div>';
-}
+    renderApps();
 
-} catch (error) {
-console.error(error);
+  }catch(error){
 
-$("total").textContent = "—";
+    console.error(error);
 
-$("count").textContent = "حدث خطأ";
+    $("total").textContent = "—";
+    $("count").textContent = "حدث خطأ";
 
-$("grid").innerHTML = `
-<div class="empty">
-⚠️ تعذر تحميل التطبيقات حالياً.<br>
-حاول تحديث الصفحة بعد قليل.
-</div>
-`;
-}
+    $("grid").innerHTML = `
+      <div class="empty">
+        ⚠️ تعذر تحميل التطبيقات حالياً.<br>
+        حاول تحديث الصفحة بعد قليل.
+      </div>
+    `;
+
+  }
+
 }
 
 loadApps();
