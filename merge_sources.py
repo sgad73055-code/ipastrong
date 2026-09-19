@@ -14,10 +14,10 @@ FILE = "ipastrong.json"
 MAX_APPS = 9000
 
 BACKUP_FILES = [
-    "ipastrong-base.json",
     "IPA-STORE.json",
     "ipa-store.json",
     "IPA-AR.json",
+    "ipastrong-base.json",
 ]
 
 SOURCES = [
@@ -57,7 +57,9 @@ def load_json_file(path):
     try:
         with open(path, "r", encoding="utf-8") as file:
             return json.load(file)
-    except Exception:
+
+    except Exception as error:
+        print(f"Could not read {path}: {error}")
         return None
 
 
@@ -65,12 +67,14 @@ def load_base_data():
     for filename in BACKUP_FILES:
         path = Path(filename)
 
-        if path.exists():
-            data = load_json_file(path)
+        if not path.exists():
+            continue
 
-            if isinstance(data, dict):
-                print(f"Using base file: {filename}")
-                return data
+        data = load_json_file(path)
+
+        if isinstance(data, dict) and isinstance(data.get("apps"), list):
+            print(f"Using base file: {filename}")
+            return data
 
     if Path(FILE).exists():
         data = load_json_file(FILE)
@@ -79,7 +83,7 @@ def load_base_data():
             print(f"Using existing file: {FILE}")
             return data
 
-    print("No base file found. Creating a new store.")
+    print("No valid base file found.")
     return dict(STORE_INFO)
 
 
@@ -116,15 +120,11 @@ def fetch_json(url):
         if isinstance(data, dict):
             return data
 
-        return None
-
-    except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError) as error:
-        print(f"Failed source: {url}")
-        print(error)
+        print(f"Invalid data format: {url}")
         return None
 
     except Exception as error:
-        print(f"Invalid source: {url}")
+        print(f"Failed source: {url}")
         print(error)
         return None
 
@@ -137,24 +137,66 @@ def app_key(app):
     if not isinstance(app, dict):
         return None
 
-    identifier = app.get("bundleIdentifier")
+    bundle_id = (
+        app.get("bundleIdentifier")
+        or app.get("bundleId")
+        or ""
+    ).strip()
 
-    if identifier:
-        return f"id:{identifier}"
+    name = str(app.get("name", "")).strip().lower()
 
-    name = app.get("name")
+    version = str(
+        app.get("version")
+        or app.get("versionName")
+        or ""
+    ).strip()
+
+    download_url = (
+        app.get("downloadURL")
+        or app.get("ipaUrl")
+        or app.get("ipaURL")
+        or ""
+    ).strip()
+
+    # Different download links are treated as different app versions/mods.
+    if bundle_id and download_url:
+        return (
+            "bundle:"
+            + bundle_id.lower()
+            + "|url:"
+            + download_url.lower()
+        )
+
+    # If no download URL exists, include the version.
+    if bundle_id:
+        return (
+            "bundle:"
+            + bundle_id.lower()
+            + "|version:"
+            + version.lower()
+            + "|name:"
+            + name
+        )
+
+    if name and download_url:
+        return (
+            "name:"
+            + name
+            + "|url:"
+            + download_url.lower()
+        )
 
     if name:
-        return f"name:{name.lower().strip()}"
+        return "name:" + name + "|version:" + version.lower()
 
     return None
 
 
-def merge_apps(base_apps, new_apps):
+def merge_apps(base_apps, external_apps):
     merged = []
     seen = set()
 
-    # Base apps have priority.
+    # Your own apps come first.
     for app in base_apps:
         if not isinstance(app, dict):
             continue
@@ -165,8 +207,8 @@ def merge_apps(base_apps, new_apps):
             seen.add(key)
             merged.append(app)
 
-    # External apps are added after base apps.
-    for app in new_apps:
+    # External apps come after your own apps.
+    for app in external_apps:
         if not isinstance(app, dict):
             continue
 
@@ -180,7 +222,7 @@ def merge_apps(base_apps, new_apps):
 
 
 # =========================
-# LIMIT APPS
+# LIMIT
 # =========================
 
 def limit_apps(apps):
@@ -213,7 +255,8 @@ def save_json_file(data):
             data,
             file,
             ensure_ascii=False,
-            indent=2
+            indent=2,
+            allow_nan=False
         )
 
     print(f"Saved {FILE}")
@@ -230,7 +273,7 @@ def main():
     base_data = load_base_data()
     base_apps = get_apps(base_data)
 
-    print(f"Base apps: {len(base_apps)}")
+    print(f"Your apps: {len(base_apps)}")
 
     external_apps = []
 
@@ -244,7 +287,7 @@ def main():
 
         apps = get_apps(data)
 
-        print(f"Found {len(apps)} apps")
+        print(f"Found {len(apps)} apps from source")
 
         external_apps.extend(apps)
 
@@ -258,10 +301,14 @@ def main():
     merged_apps = limit_apps(merged_apps)
 
     output = preserve_store_metadata(base_data)
+
     output["apps"] = merged_apps
 
-    output["news"] = output.get("news", [])
-    output["permissions"] = output.get("permissions", [])
+    if not isinstance(output.get("news"), list):
+        output["news"] = []
+
+    if not isinstance(output.get("permissions"), list):
+        output["permissions"] = []
 
     output["lastUpdated"] = datetime.now(
         timezone.utc
