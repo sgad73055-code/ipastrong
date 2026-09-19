@@ -6,17 +6,19 @@ from pathlib import Path
 from datetime import datetime, timezone
 
 
-FILE = Path("ipastrong.json")
-MAX_APPS = 12000
+# =========================
+# SETTINGS
+# =========================
 
+FILE = "ipastrong.json"
+MAX_APPS = 9000
 
 BACKUP_FILES = [
-    Path("ipastrong-base.json"),
-    Path("IPA-STORE.json"),
-    Path("ipa-store.json"),
-    Path("IPA-AR.json"),
+    "ipastrong-base.json",
+    "IPA-STORE.json",
+    "ipa-store.json",
+    "IPA-AR.json",
 ]
-
 
 SOURCES = [
     "https://repository.apptesters.org",
@@ -43,100 +45,56 @@ STORE_INFO = {
     "subtitle": "ipastrong",
     "description": "Merged IPA sources",
     "website": "https://t.me/ipastrong",
-    "sourceURL": (
-        "https://raw.githubusercontent.com/"
-        "sgad73055-code/ipastrong/main/ipastrong.json"
-    ),
+    "sourceURL": "https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/ipastrong.json",
 }
 
 
-def load_json_file(file_path):
+# =========================
+# LOAD JSON
+# =========================
+
+def load_json_file(path):
     try:
-        if not file_path.exists():
-            return None
-
-        if file_path.stat().st_size == 0:
-            return None
-
-        with file_path.open(
-            "r",
-            encoding="utf-8-sig"
-        ) as file:
+        with open(path, "r", encoding="utf-8") as file:
             return json.load(file)
-
-    except (
-        json.JSONDecodeError,
-        UnicodeDecodeError,
-        OSError
-    ) as error:
-        print(f"Could not read {file_path}: {error}")
+    except Exception:
         return None
 
 
 def load_base_data():
-    for file_path in BACKUP_FILES:
-        data = load_json_file(file_path)
+    for filename in BACKUP_FILES:
+        path = Path(filename)
+
+        if path.exists():
+            data = load_json_file(path)
+
+            if isinstance(data, dict):
+                print(f"Using base file: {filename}")
+                return data
+
+    if Path(FILE).exists():
+        data = load_json_file(FILE)
 
         if isinstance(data, dict):
-            print(f"Loaded base file: {file_path}")
+            print(f"Using existing file: {FILE}")
             return data
 
-    data = load_json_file(FILE)
+    print("No base file found. Creating a new store.")
+    return dict(STORE_INFO)
 
-    if isinstance(data, dict):
-        print(f"Loaded current file: {FILE}")
-        return data
 
-    print("Warning: No valid base JSON file found.")
-
-    return {
-        **STORE_INFO,
-        "apps": []
-    }
-
+# =========================
+# APPS
+# =========================
 
 def get_apps(data):
-    if isinstance(data, list):
-        return [
-            app for app in data
-            if isinstance(app, dict)
-        ]
-
     if not isinstance(data, dict):
         return []
 
-    apps = data.get("apps")
+    apps = data.get("apps", [])
 
     if isinstance(apps, list):
-        return [
-            app for app in apps
-            if isinstance(app, dict)
-        ]
-
-    data_items = data.get("data")
-
-    if isinstance(data_items, list):
-        return [
-            app for app in data_items
-            if isinstance(app, dict)
-        ]
-
-    if isinstance(data_items, dict):
-        nested_apps = data_items.get("apps")
-
-        if isinstance(nested_apps, list):
-            return [
-                app for app in nested_apps
-                if isinstance(app, dict)
-            ]
-
-    items = data.get("items")
-
-    if isinstance(items, list):
-        return [
-            app for app in items
-            if isinstance(app, dict)
-        ]
+        return apps
 
     return []
 
@@ -146,291 +104,173 @@ def fetch_json(url):
         request = urllib.request.Request(
             url,
             headers={
-                "User-Agent": (
-                    "Mozilla/5.0 "
-                    "ipastrong-source-updater"
-                ),
-                "Accept": "application/json"
+                "User-Agent": "Mozilla/5.0"
             }
         )
 
-        with urllib.request.urlopen(
-            request,
-            timeout=30
-        ) as response:
+        with urllib.request.urlopen(request, timeout=30) as response:
+            content = response.read().decode("utf-8")
 
-            content = response.read()
+        data = json.loads(content)
 
-            if not content:
-                print(f"Empty response: {url}")
-                return None
+        if isinstance(data, dict):
+            return data
 
-            text = content.decode(
-                "utf-8-sig",
-                errors="replace"
-            )
-
-            return json.loads(text)
-
-    except urllib.error.HTTPError as error:
-        print(f"HTTP error {error.code}: {url}")
         return None
 
-    except urllib.error.URLError as error:
-        print(f"URL error: {url} - {error.reason}")
-        return None
-
-    except TimeoutError:
-        print(f"Timeout: {url}")
-        return None
-
-    except json.JSONDecodeError as error:
-        print(f"Invalid JSON: {url} - {error}")
+    except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError) as error:
+        print(f"Failed source: {url}")
+        print(error)
         return None
 
     except Exception as error:
-        print(f"Could not fetch {url}: {error}")
+        print(f"Invalid source: {url}")
+        print(error)
         return None
 
 
-def app_key(app):
-    try:
-        return json.dumps(
-            app,
-            sort_keys=True,
-            ensure_ascii=False,
-            separators=(",", ":")
-        )
+# =========================
+# DUPLICATE CHECK
+# =========================
 
-    except (TypeError, ValueError):
-        return str(app)
+def app_key(app):
+    if not isinstance(app, dict):
+        return None
+
+    identifier = app.get("bundleIdentifier")
+
+    if identifier:
+        return f"id:{identifier}"
+
+    name = app.get("name")
+
+    if name:
+        return f"name:{name.lower().strip()}"
+
+    return None
 
 
 def merge_apps(base_apps, new_apps):
     merged = []
-    existing_keys = set()
+    seen = set()
 
-    # تطبيقاتك الأصلية أولًا
+    # Base apps have priority.
     for app in base_apps:
         if not isinstance(app, dict):
             continue
 
         key = app_key(app)
 
-        if key not in existing_keys:
-            existing_keys.add(key)
+        if key and key not in seen:
+            seen.add(key)
             merged.append(app)
 
-    # التطبيقات الخارجية بعد تطبيقاتك
+    # External apps are added after base apps.
     for app in new_apps:
         if not isinstance(app, dict):
             continue
 
         key = app_key(app)
 
-        if key not in existing_keys:
-            existing_keys.add(key)
+        if key and key not in seen:
+            seen.add(key)
             merged.append(app)
 
     return merged
 
 
-def limit_apps(apps, maximum):
-    if len(apps) <= maximum:
-        return apps
+# =========================
+# LIMIT APPS
+# =========================
 
-    print(
-        f"Limiting applications from "
-        f"{len(apps)} to {maximum}"
-    )
-
-    return apps[:maximum]
+def limit_apps(apps):
+    return apps[:MAX_APPS]
 
 
-def preserve_store_metadata(base_data):
-    if not isinstance(base_data, dict):
-        return {}
+# =========================
+# STORE METADATA
+# =========================
 
-    return {
-        key: value
-        for key, value in base_data.items()
-        if key not in ("apps", "lastUpdated")
-    }
+def preserve_store_metadata(data):
+    result = {}
+
+    if isinstance(data, dict):
+        result.update(data)
+
+    for key, value in STORE_INFO.items():
+        result[key] = value
+
+    return result
 
 
-def save_json_file(file_path, data):
-    temporary_file = file_path.with_suffix(
-        ".tmp.json"
-    )
+# =========================
+# SAVE
+# =========================
 
-    with temporary_file.open(
-        "w",
-        encoding="utf-8"
-    ) as file:
-
+def save_json_file(data):
+    with open(FILE, "w", encoding="utf-8") as file:
         json.dump(
             data,
             file,
             ensure_ascii=False,
-            indent=2,
-            allow_nan=False
+            indent=2
         )
 
-        file.write("\n")
+    print(f"Saved {FILE}")
 
-    temporary_file.replace(file_path)
 
+# =========================
+# MAIN
+# =========================
 
 def main():
-    print("=" * 50)
-    print("Starting ipastrong source updater")
-    print("=" * 50)
+    print("Starting IPA source merger...")
+    print(f"Maximum apps: {MAX_APPS}")
 
     base_data = load_base_data()
     base_apps = get_apps(base_data)
 
-    print(
-        f"Base applications: "
-        f"{len(base_apps)}"
-    )
+    print(f"Base apps: {len(base_apps)}")
 
-    all_apps = []
+    external_apps = []
 
-    successful_sources = 0
-    failed_sources = 0
+    for source in SOURCES:
+        print(f"Loading source: {source}")
 
-    for index, url in enumerate(
-        SOURCES,
-        start=1
-    ):
+        data = fetch_json(source)
 
-        print()
-        print(
-            f"[{index}/{len(SOURCES)}] "
-            f"Fetching: {url}"
-        )
-
-        source_data = fetch_json(url)
-
-        if source_data is None:
-            failed_sources += 1
-            print("Source failed")
+        if not data:
             continue
 
-        source_apps = get_apps(source_data)
+        apps = get_apps(data)
 
-        if not source_apps:
-            print(
-                "Source loaded, "
-                "but no applications found"
-            )
+        print(f"Found {len(apps)} apps")
 
-            successful_sources += 1
-            continue
+        external_apps.extend(apps)
 
-        all_apps.extend(source_apps)
-        successful_sources += 1
+    print(f"External apps collected: {len(external_apps)}")
 
-        print(
-            f"Applications received: "
-            f"{len(source_apps)}"
-        )
-
-    print()
-    print("=" * 50)
-    print("Merging applications")
-    print("=" * 50)
-
-    # تطبيقاتك الأصلية أولًا
     merged_apps = merge_apps(
         base_apps,
-        all_apps
+        external_apps
     )
 
-    if (
-        len(merged_apps) == 0
-        and len(base_apps) > 0
-    ):
-        print(
-            "Update cancelled: "
-            "merged result is empty"
-        )
-        return
+    merged_apps = limit_apps(merged_apps)
 
-    # الحد الأقصى 12,000 تطبيق
-    merged_apps = limit_apps(
-        merged_apps,
-        MAX_APPS
-    )
+    output = preserve_store_metadata(base_data)
+    output["apps"] = merged_apps
 
-    old_metadata = preserve_store_metadata(
-        base_data
-    )
+    output["news"] = output.get("news", [])
+    output["permissions"] = output.get("permissions", [])
 
-    result = {
-        **old_metadata,
-        **STORE_INFO,
-        "apps": merged_apps,
-        "lastUpdated": (
-            datetime.now(timezone.utc)
-            .isoformat()
-            .replace("+00:00", "Z")
-        )
-    }
+    output["lastUpdated"] = datetime.now(
+        timezone.utc
+    ).isoformat()
 
-    if not isinstance(
-        result.get("apps"),
-        list
-    ):
-        print(
-            "Update cancelled: "
-            "apps is not a list"
-        )
-        return
+    save_json_file(output)
 
-    save_json_file(
-        FILE,
-        result
-    )
-
-    print()
-    print("=" * 50)
-    print("Update completed successfully")
-    print("=" * 50)
-
-    print(
-        f"Base applications: "
-        f"{len(base_apps)}"
-    )
-
-    print(
-        f"Fetched applications: "
-        f"{len(all_apps)}"
-    )
-
-    print(
-        f"Final applications: "
-        f"{len(merged_apps)}"
-    )
-
-    print(
-        f"Successful sources: "
-        f"{successful_sources}"
-    )
-
-    print(
-        f"Failed sources: "
-        f"{failed_sources}"
-    )
-
-    print(
-        f"Maximum applications: "
-        f"{MAX_APPS}"
-    )
-
-    print(
-        f"Saved file: {FILE}"
-    )
+    print(f"Final apps count: {len(merged_apps)}")
+    print("Merge completed successfully.")
 
 
 if __name__ == "__main__":
