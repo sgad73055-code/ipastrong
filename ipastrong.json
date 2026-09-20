@@ -20720,6 +20720,38 @@
       "updatedAt": "2026-09-07"
     },
     {
+      "name": "Shapeyard",
+      "type": 1,
+      "bundleID": "app.chudo",
+      "bundleIdentifier": "app.chudo",
+      "version": "5.28",
+      "versionDate": "2026-09-20",
+      "fullDate": "20260920140423",
+      "size": 86595594,
+      "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-09-2026/Shapeyard_5.28_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-09-2026/Shapeyard_5.28_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+      "developerName": "",
+      "localizedDescription": "Injected with Subscription Unlocked",
+      "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/app.chudo.png",
+      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/app.chudo.png"
+    },
+    {
+      "name": "MobileScanner",
+      "type": 1,
+      "bundleID": "com.glority.everlens",
+      "bundleIdentifier": "com.glority.everlens",
+      "version": "2.26.1",
+      "versionDate": "2026-09-20",
+      "fullDate": "20260920132406",
+      "size": 111037622,
+      "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-09-2026/MobileScanner_2.26.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-09-2026/MobileScanner_2.26.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+      "developerName": "",
+      "localizedDescription": "Injected with Subscription Unlocked",
+      "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.glority.everlens.png",
+      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.glority.everlens.png"
+    },
+    {
       "name": "",
       "type": 1,
       "bundleID": "com.intsig.CamScannerLite",
@@ -151182,42 +151214,10 @@
       "localizedDescription": "Injected with Subscription Unlocked",
       "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.alightcreative.motion.png",
       "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.alightcreative.motion.png"
-    },
-    {
-      "name": "Bazaart",
-      "type": 1,
-      "bundleID": "co.bazaart.app",
-      "bundleIdentifier": "co.bazaart.app",
-      "version": "26.0",
-      "versionDate": "2025-09-12",
-      "fullDate": "20250912121637",
-      "size": 92244226,
-      "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-09-2025/Bazaart_26.0_Premium_%40thisismanpreets_apptesters.org.ipa",
-      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-09-2025/Bazaart_26.0_Premium_%40thisismanpreets_apptesters.org.ipa",
-      "developerName": "",
-      "localizedDescription": "Injected with Premium",
-      "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.bazaart.app.png",
-      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.bazaart.app.png"
-    },
-    {
-      "name": "MobileScanner",
-      "type": 1,
-      "bundleID": "com.glority.everlens",
-      "bundleIdentifier": "com.glority.everlens",
-      "version": "2.16.3",
-      "versionDate": "2025-09-12",
-      "fullDate": "20250912113631",
-      "size": 71340177,
-      "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-09-2025/MobileScanner_2.16.3_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-09-2025/MobileScanner_2.16.3_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-      "developerName": "",
-      "localizedDescription": "Injected with Subscription Unlocked",
-      "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.glority.everlens.png",
-      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.glority.everlens.png"
     }
   ],
   "subtitle": "ipastrong",
   "description": "Merged IPA sources",
   "permissions": [],
-  "lastUpdated": "2026-09-20T06:30:57.557954+00:00"
+  "lastUpdated": "2026-09-20T12:30:30.513873+00:00"
 }
