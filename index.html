@@ -1,510 +1,307 @@
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#080a10">
-
-<title>ipastrong | متجر التطبيقات والشهادات</title>
+<meta name="theme-color" content="#0b0d12">
+<title>ipastrong — IPA Store</title>
 
 <style>
-* {
-  box-sizing: border-box;
-}
-
-:root {
-  --bg: #080a10;
-  --card: #111621;
-  --card2: #171e2d;
-  --text: #f5f7ff;
-  --muted: #9da8bd;
-  --line: #293348;
-  --accent: #7d88ff;
-  --accent2: #a17aff;
-  --green: #45d49a;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-  color: var(--text);
-  background:
-    radial-gradient(
-      circle at 50% -10%,
-      #28345d,
-      #0b0e17 45%,
-      #080a10
-    );
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Arial,
-    sans-serif;
-}
-
-.wrap {
-  width: min(1120px, calc(100% - 30px));
-  margin: auto;
-}
-
-header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background: rgba(8, 10, 16, 0.93);
-  backdrop-filter: blur(18px);
-  border-bottom: 1px solid #ffffff12;
-}
-
-.top {
-  min-height: 75px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-}
-
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 22px;
-  font-weight: 900;
-}
-
-.logo {
-  width: 45px;
-  height: 45px;
-  display: grid;
-  place-items: center;
-  border-radius: 15px;
-  background: linear-gradient(135deg, var(--accent), var(--accent2));
-  font-size: 12px;
-  font-weight: 900;
-  box-shadow: 0 8px 30px #7c88ff35;
-}
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  padding: 12px 17px;
-  border: 1px solid var(--line);
-  border-radius: 13px;
-  background: var(--card2);
-  color: white;
-  text-decoration: none;
-  font-weight: 800;
-  transition: transform 0.2s, opacity 0.2s;
-}
-
-.btn:hover {
-  transform: translateY(-2px);
-  opacity: 0.92;
-}
-
-.btn.primary {
-  background: #eff0ff;
-  color: #10131c;
-  border-color: #eff0ff;
-}
-
-.btn.green {
-  background: #173d32;
-  border-color: #28684f;
-  color: #8bffca;
-}
-
-nav {
-  display: flex;
-  gap: 8px;
-  overflow-x: auto;
-  padding: 10px 0 14px;
-  scrollbar-width: none;
-}
-
-nav::-webkit-scrollbar {
-  display: none;
-}
-
-nav button {
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  padding: 10px 17px;
-  background: var(--card);
-  color: #cbd3e5;
-  white-space: nowrap;
-  cursor: pointer;
-  font-size: 13px;
-  transition: 0.2s;
-}
-
-nav button.active {
-  background: #eff0ff;
-  color: #10131c;
-  border-color: #eff0ff;
-}
-
-.hero {
-  padding: 55px 0 20px;
-}
-
-.eyebrow {
-  display: inline-block;
-  padding: 8px 13px;
-  border: 1px solid #7d88ff40;
-  border-radius: 999px;
-  background: #7d88ff15;
-  color: #b9c0ff;
-  font-size: 13px;
-  font-weight: 700;
-  margin-bottom: 17px;
-}
-
-h1 {
-  font-size: clamp(38px, 7vw, 68px);
-  line-height: 1.1;
-  letter-spacing: -2px;
-  margin: 0 0 18px;
-}
-
-h1 span {
-  color: #9da8ff;
-}
-
-.hero p {
-  max-width: 680px;
-  color: var(--muted);
-  font-size: 17px;
-  line-height: 1.9;
-  margin-bottom: 25px;
-}
-
-.actions {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
+:root{
+--bg:#080a10;
+--card:#111621;
+--card2:#171d2b;
+--text:#f7f8fc;
+--muted:#9ca7bb;
+--line:#263044;
+--accent:#7885ff;
+--accent2:#9a7cff
+}
+
+*{box-sizing:border-box}
+
+html{scroll-behavior:smooth}
 
-.stats {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-  margin: 25px 0;
+body{
+margin:0;
+background:radial-gradient(circle at 50% -15%,#28335a 0,#0d111c 38%,#080a10 78%);
+color:var(--text);
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif
+}
+
+.wrap{
+max-width:1120px;
+margin:auto;
+padding:0 20px
+}
+
+header{
+position:sticky;
+top:0;
+z-index:20;
+background:rgba(8,10,16,.82);
+backdrop-filter:blur(20px);
+border-bottom:1px solid #ffffff0c
 }
 
-.stat {
-  text-align: center;
-  padding: 17px 8px;
-  border: 1px solid var(--line);
-  border-radius: 18px;
-  background: linear-gradient(145deg, #151d2c, #10141e);
+.top{
+min-height:76px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:15px
 }
 
-.stat strong {
-  display: block;
-  color: #c6ccff;
-  font-size: 24px;
+.brand{
+display:flex;
+align-items:center;
+gap:12px;
+font-size:22px;
+font-weight:900
 }
 
-.stat span {
-  display: block;
-  color: var(--muted);
-  font-size: 12px;
-  margin-top: 5px;
+.logo{
+width:45px;
+height:45px;
+display:grid;
+place-items:center;
+border-radius:15px;
+background:linear-gradient(135deg,var(--accent),var(--accent2));
+box-shadow:0 8px 35px #6575ff33
+}
+
+.btn{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+gap:8px;
+padding:12px 17px;
+border-radius:13px;
+text-decoration:none;
+font-weight:800;
+border:1px solid var(--line);
+background:var(--card2);
+color:var(--text);
+transition:.2s
 }
-
-.search {
-  position: relative;
-  margin: 25px 0 30px;
-}
-
-.search span {
-  position: absolute;
-  right: 17px;
-  top: 13px;
-  font-size: 23px;
-  color: #9da8bd;
-}
-
-.search input {
-  width: 100%;
-  padding: 17px 50px 17px 17px;
-  border: 1px solid var(--line);
-  border-radius: 16px;
-  outline: none;
-  background: #101521;
-  color: white;
-  font-size: 16px;
-}
-
-.search input:focus {
-  border-color: var(--accent);
-}
-
-.sectionhead {
-  display: flex;
-  align-items: end;
-  justify-content: space-between;
-  gap: 10px;
-  margin: 28px 0 15px;
-}
-
-.sectionhead h2 {
-  margin: 0;
-  font-size: 27px;
-}
-
-.count {
-  font-size: 13px;
-  color: var(--muted);
+
+.btn:hover{transform:translateY(-2px)}
+
+.btn.primary{
+background:#eef0ff;
+color:#10131b;
+border-color:#eef0ff
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
-  gap: 16px;
+nav{
+display:flex;
+gap:8px;
+overflow:auto;
+padding:10px 0 14px
 }
 
-.app {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  padding: 16px;
-  min-height: 215px;
-  border: 1px solid var(--line);
-  border-radius: 21px;
-  background: linear-gradient(145deg, #151d2c, #10141e);
+nav button{
+border:1px solid var(--line);
+background:#111621;
+color:#cbd3e3;
+border-radius:999px;
+padding:9px 16px;
+white-space:nowrap;
+font-size:14px;
+cursor:pointer
 }
 
-.appmain {
-  display: flex;
-  gap: 13px;
+nav button.active{
+background:#eef0ff;
+color:#10131b;
+border-color:#eef0ff
 }
 
-.icon {
-  width: 68px;
-  height: 68px;
-  flex: none;
-  object-fit: cover;
-  border-radius: 17px;
-  background: #202837;
+.hero{
+padding:65px 0 30px
 }
 
-.app h3 {
-  font-size: 17px;
-  margin: 2px 0 6px;
+.eyebrow{
+display:inline-block;
+color:#b9c0ff;
+background:#7885ff14;
+border:1px solid #7885ff35;
+padding:7px 12px;
+border-radius:999px;
+font-size:13px;
+font-weight:700;
+margin-bottom:17px
 }
 
-.desc {
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  font-size: 13px;
-  line-height: 1.6;
-  color: var(--muted);
+.hero h1{
+font-size:clamp(38px,7vw,68px);
+letter-spacing:-2px;
+line-height:1.08;
+margin:0 0 17px
 }
 
-.meta {
-  font-size: 12px;
-  color: #818da3;
-  margin-top: 5px;
-}
-
-.badge {
-  display: inline-block;
-  margin-top: 7px;
-  padding: 4px 8px;
-  border-radius: 7px;
-  font-size: 10px;
-  background: #7d88ff18;
-  color: #aeb6ff;
-}
-
-.download {
-  display: block;
-  width: 100%;
-  padding: 12px;
-  margin-top: auto;
-  border-radius: 12px;
-  background: #eff0ff;
-  color: #10131c;
-  text-align: center;
-  text-decoration: none;
-  font-weight: 900;
-}
-
-.loading,
-.empty {
-  grid-column: 1 / -1;
-  padding: 45px 10px;
-  text-align: center;
-  color: var(--muted);
-  line-height: 2;
-}
+.hero h1 span{color:#9da7ff}
 
-.offers {
-  margin-top: 50px;
+.hero p{
+color:var(--muted);
+font-size:17px;
+line-height:1.9;
+max-width:650px;
+margin:0 0 25px
 }
 
-.offers-intro {
-  color: var(--muted);
-  line-height: 1.9;
-  margin-bottom: 20px;
+.actions{
+display:flex;
+gap:10px;
+flex-wrap:wrap
 }
 
-.offer-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 14px;
+.search{
+margin:22px 0 30px;
+position:relative
 }
 
-.offer {
-  position: relative;
-  padding: 22px 18px;
-  border: 1px solid var(--line);
-  border-radius: 20px;
-  background: linear-gradient(145deg, #211c2c, #121722);
-  overflow: hidden;
+.search input{
+width:100%;
+padding:17px 48px 17px 17px;
+border-radius:16px;
+border:1px solid var(--line);
+background:#101521;
+color:white;
+font-size:16px;
+outline:none
 }
 
-.offer.featured {
-  border-color: #8c82ff80;
-  box-shadow: 0 0 30px #7d88ff0d;
+.search span{
+position:absolute;
+right:17px;
+top:15px;
+color:#9ba6ba;
+font-size:21px
 }
 
-.offer .medal {
-  font-size: 27px;
+.sectionhead{
+display:flex;
+align-items:end;
+justify-content:space-between;
+gap:10px;
+margin:28px 0 15px
 }
 
-.offer h3 {
-  margin: 12px 0 8px;
-  font-size: 18px;
+.sectionhead h2{
+margin:0;
+font-size:27px
 }
 
-.offer .price {
-  color: #c6ccff;
-  font-size: 26px;
-  font-weight: 900;
-  margin: 12px 0;
+.count{
+color:var(--muted);
+font-size:13px
 }
 
-.offer p {
-  color: var(--muted);
-  line-height: 1.8;
-  font-size: 13px;
-  margin: 0 0 15px;
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fill,minmax(245px,1fr));
+gap:16px
 }
 
-.offer .offer-btn {
-  display: block;
-  padding: 11px;
-  border-radius: 11px;
-  background: #eff0ff;
-  color: #10131c;
-  text-align: center;
-  text-decoration: none;
-  font-size: 13px;
-  font-weight: 900;
+.app{
+background:linear-gradient(145deg,#151c29,#10141e);
+border:1px solid var(--line);
+border-radius:21px;
+padding:16px;
+display:flex;
+flex-direction:column;
+gap:15px;
+min-height:170px
 }
 
-.features {
-  margin-top: 20px;
-  padding: 22px;
-  border: 1px solid var(--line);
-  border-radius: 20px;
-  background: #111722;
+.appmain{
+display:flex;
+gap:13px
 }
 
-.features h3 {
-  margin-top: 0;
+.icon{
+width:68px;
+height:68px;
+border-radius:17px;
+object-fit:cover;
+background:#202837;
+flex:none
 }
 
-.features ul {
-  padding-right: 20px;
-  margin-bottom: 0;
+.app h3{
+margin:2px 0 6px;
+font-size:17px
 }
 
-.features li {
-  color: var(--muted);
-  line-height: 2;
-  margin-bottom: 5px;
+.desc{
+font-size:13px;
+line-height:1.6;
+color:var(--muted);
+display:-webkit-box;
+-webkit-line-clamp:2;
+-webkit-box-orient:vertical;
+overflow:hidden
 }
 
-.contact {
-  margin-top: 45px;
-  padding: 30px 20px;
-  border: 1px solid var(--line);
-  border-radius: 22px;
-  background: linear-gradient(145deg, #181f31, #10141e);
-  text-align: center;
+.meta{
+font-size:12px;
+color:#818da3;
+margin-top:5px
 }
 
-.contact h2 {
-  margin: 0 0 10px;
+.download{
+width:100%;
+padding:12px;
+border-radius:12px;
+background:#eef0ff;
+color:#10131b;
+text-decoration:none;
+text-align:center;
+font-weight:900;
+margin-top:auto
 }
 
-.contact p {
-  color: var(--muted);
-  line-height: 1.9;
+.empty{
+text-align:center;
+color:var(--muted);
+padding:45px 10px;
+grid-column:1/-1
 }
 
-.contact .btn {
-  margin-top: 10px;
+footer{
+border-top:1px solid var(--line);
+margin-top:65px;
+padding:30px 0 42px;
+color:var(--muted);
+font-size:13px;
+line-height:1.9
 }
 
-footer {
-  margin-top: 65px;
-  padding: 30px 0 40px;
-  border-top: 1px solid var(--line);
-  color: var(--muted);
-  font-size: 13px;
-  line-height: 1.9;
+.footerlinks{
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+margin-top:13px
 }
 
-.footerlinks {
-  margin-top: 12px;
+.footerlinks a{
+color:#cbd1ff;
+text-decoration:none
 }
 
-.footerlinks a {
-  color: #cbd1ff;
-  text-decoration: none;
+.loading{
+padding:45px;
+text-align:center;
+color:var(--muted)
 }
-
-@media (max-width: 600px) {
-  .hero {
-    padding-top: 42px;
-  }
-
-  .grid {
-    grid-template-columns: 1fr;
-  }
-
-  .stats {
-    gap: 8px;
-  }
-
-  .stat {
-    padding: 13px 4px;
-  }
-
-  .stat strong {
-    font-size: 20px;
-  }
-
-  h1 {
-    letter-spacing: -1px;
-  }
 
-  .offer-grid {
-    grid-template-columns: 1fr;
-  }
+@media(max-width:600px){
+.top{min-height:68px}
+.hero{padding-top:43px}
+.grid{grid-template-columns:1fr}
+.hero h1{letter-spacing:-1px}
 }
 </style>
 </head>
@@ -512,805 +309,577 @@ footer {
 <body>
 
 <header>
-  <div class="wrap">
+<div class="wrap">
 
-    <div class="top">
-      <div class="brand">
-        <div class="logo">IPA</div>
-        <span>ipastrong</span>
-      </div>
+<div class="top">
+<div class="brand">
+<div class="logo">IPA</div>
+<span>ipastrong</span>
+</div>
 
-      <a
-        class="btn"
-        href="https://t.me/ipastrong"
-        target="_blank"
-        rel="noopener"
-      >
-        ✈️ تواصل
-      </a>
-    </div>
+<a class="btn" href="https://t.me/ipastrong" target="_blank">
+✈️ Telegram
+</a>
+</div>
 
-    <nav id="categories">
-      <button class="active" data-category="الكل">
-        الكل
-      </button>
+<nav id="cats"></nav>
 
-      <button data-category="تواصل">
-        📱 التواصل
-      </button>
-
-      <button data-category="ألعاب">
-        🎮 الألعاب
-      </button>
-
-      <button data-category="أدوات">
-        🛠️ الأدوات
-      </button>
-
-      <button data-category="معدلة">
-        🔓 المعدلة
-      </button>
-
-      <button data-category="تطبيقات">
-        📲 التطبيقات
-      </button>
-    </nav>
-
-  </div>
+</div>
 </header>
 
 <main class="wrap">
 
-  <section class="hero">
+<section class="hero">
 
-    <div class="eyebrow">
-      مرحباً بك في متجر ipastrong
-    </div>
+<div class="eyebrow">
+مرحباً بك في ipastrong
+</div>
 
-    <h1>
-      كل التطبيقات<br>
-      <span>بمكان واحد.</span>
-    </h1>
+<h1>
+كل ما تحتاجه<br>
+<span>بمكان واحد.</span>
+</h1>
 
-    <p>
-      متجر ipastrong يوفر لك آلاف التطبيقات والألعاب
-      والتطبيقات المعدلة لأجهزة iPhone، مع تحديثات مستمرة
-      وتجربة استخدام سهلة وسريعة.
-    </p>
+<p>
+متجر IPA مرتب وسريع. تصفح التطبيقات، ابحث عن التطبيق اللي تريده، واستفد من العروض والخدمات المتوفرة.
+</p>
 
-    <div class="actions">
-      <a class="btn primary" href="#apps">
-        تصفح التطبيقات ↓
-      </a>
+<div class="actions">
+<a class="btn primary" href="#apps">
+تصفح التطبيقات ↓
+</a>
 
-      <a class="btn" href="#offers">
-        💎 العروض والباقات
-      </a>
+<a class="btn" href="offers.html">
+العروض والخدمات
+</a>
+</div>
 
-      <a class="btn" href="https://t.me/ipastrong" target="_blank" rel="noopener">
-        ✈️ قناتنا
-      </a>
-    </div>
+</section>
 
-  </section>
+<div class="search">
+<span>⌕</span>
+<input
+id="search"
+placeholder="ابحث عن تطبيق..."
+autocomplete="off">
+</div>
 
-  <div class="stats">
+<section id="apps">
 
-    <div class="stat">
-      <strong id="total">—</strong>
-      <span>تطبيق ولعبة</span>
-    </div>
+<div class="sectionhead">
+<h2>التطبيقات</h2>
+<span class="count" id="count"></span>
+</div>
 
-    <div class="stat">
-      <strong>24/7</strong>
-      <span>تحديثات مستمرة</span>
-    </div>
+<div class="grid" id="grid">
+<div class="loading">
+جاري تحميل التطبيقات...
+</div>
+</div>
 
-    <div class="stat">
-      <strong>iOS</strong>
-      <span>مخصص للآيفون</span>
-    </div>
-
-  </div>
-
-  <div class="search">
-    <span>⌕</span>
-
-    <input
-      id="search"
-      type="search"
-      placeholder="ابحث عن تطبيق أو لعبة..."
-      autocomplete="off"
-    >
-  </div>
-
-  <section id="apps">
-
-    <div class="sectionhead">
-      <h2 id="sectionTitle">كل التطبيقات</h2>
-      <span class="count" id="count">
-        جاري التحميل...
-      </span>
-    </div>
-
-    <div class="grid" id="grid">
-      <div class="loading">
-        جاري تحميل التطبيقات...
-      </div>
-    </div>
-
-  </section>
-
-  <section class="offers" id="offers">
-
-    <div class="sectionhead">
-      <h2>💎 العروض والباقات</h2>
-      <span class="count">شهادات سنوية</span>
-    </div>
-
-    <p class="offers-intro">
-      فعّل شهادة الآيفون السنوية واستمتع بحرية تثبيت
-      ألعاب وتطبيقات IPA بدون حدود سنة كاملة.
-      اختر الباقة التي تناسب احتياجك.
-    </p>
-
-    <div class="offer-grid">
-
-      <div class="offer">
-        <div class="medal">🥉</div>
-
-        <h3>
-          شهادة سنوية
-          <br>
-          ضمان شهر
-        </h3>
-
-        <div class="price">
-          10,000 د.ع
-        </div>
-
-        <p>
-          إصدار سنوي مع ضمان وتعويض 100%
-          خلال الشهر.
-        </p>
-
-        <a
-          class="offer-btn"
-          href="https://t.me/ipastrong"
-          target="_blank"
-          rel="noopener"
-        >
-          طلب الباقة
-        </a>
-      </div>
-
-      <div class="offer">
-        <div class="medal">🥈</div>
-
-        <h3>
-          شهادة سنوية
-          <br>
-          ضمان 3 أشهر
-        </h3>
-
-        <div class="price">
-          15,000 د.ع
-        </div>
-
-        <p>
-          إصدار سنوي مع ضمان وتعويض 100%
-          خلال 3 أشهر.
-        </p>
-
-        <a
-          class="offer-btn"
-          href="https://t.me/ipastrong"
-          target="_blank"
-          rel="noopener"
-        >
-          طلب الباقة
-        </a>
-      </div>
-
-      <div class="offer featured">
-        <div class="medal">🥇</div>
-
-        <h3>
-          شهادة سنوية
-          <br>
-          ضمان 6 أشهر
-        </h3>
-
-        <div class="price">
-          20,000 د.ع
-        </div>
-
-        <p>
-          إصدار سنوي مع ضمان وتعويض 100%
-          خلال 6 أشهر.
-        </p>
-
-        <a
-          class="offer-btn"
-          href="https://t.me/ipastrong"
-          target="_blank"
-          rel="noopener"
-        >
-          طلب الباقة
-        </a>
-      </div>
-
-      <div class="offer featured">
-        <div class="medal">💎</div>
-
-        <h3>
-          شهادة سنوية
-          <br>
-          ضمان 10 أشهر
-        </h3>
-
-        <div class="price">
-          30,000 د.ع
-        </div>
-
-        <p>
-          إصدار سنوي مع ضمان وتعويض موسّع
-          بنسبة 100%.
-        </p>
-
-        <a
-          class="offer-btn"
-          href="https://t.me/ipastrong"
-          target="_blank"
-          rel="noopener"
-        >
-          طلب الباقة
-        </a>
-      </div>
-
-    </div>
-
-    <div class="features">
-
-      <h3>
-        ⚡ مميزات الشهادات السنوية
-      </h3>
-
-      <ul>
-        <li>
-          تثبيت مباشر عبر التطبيقات المساعدة مثل
-          Esign وScarlet وKsign.
-        </li>
-
-        <li>
-          دعم تشغيل ملفات IPA المعدلة مثل البرو
-          والألعاب المهكرة والأدوات.
-        </li>
-
-        <li>
-          تعويض فوري ومجاني في حال التوقف ضمن
-          فترة الضمان المدفوعة.
-        </li>
-
-        <li>
-          الشهادة تستمر سنة كاملة حسب الباقة
-          وشروط الضمان.
-        </li>
-
-        <li>
-          للتفاصيل وطرق الدفع، تواصل معنا عبر القناة.
-        </li>
-      </ul>
-
-      <a
-        class="btn green"
-        href="https://t.me/ipastrong"
-        target="_blank"
-        rel="noopener"
-      >
-        ✈️ تواصل بخصوص الشهادات
-      </a>
-
-    </div>
-
-  </section>
-
-  <section class="contact" id="contact">
-
-    <h2>
-      📩 تواصل مع ipastrong
-    </h2>
-
-    <p>
-      للاستفسار عن الشهادات والباقات والتطبيقات
-      والخدمات المتوفرة، تواصل معنا عبر قناتنا الرسمية.
-    </p>
-
-    <a
-      class="btn primary"
-      href="https://t.me/ipastrong"
-      target="_blank"
-      rel="noopener"
-    >
-      ✈️ افتح قناة ipastrong
-    </a>
-
-  </section>
+</section>
 
 </main>
 
 <footer>
-  <div class="wrap">
+<div class="wrap">
 
-    <strong>ipastrong</strong>
-    <br>
+<strong>ipastrong</strong>
+<br>
+مصدر IPA وتطبيقات iOS.
 
-    متجر التطبيقات والألعاب والشهادات لأجهزة iOS.
+<div class="footerlinks">
+<a href="https://t.me/ipastrong" target="_blank">
+✈️ قناة Telegram
+</a>
+</div>
 
-    <div class="footerlinks">
-
-      <a
-        href="https://t.me/ipastrong"
-        target="_blank"
-        rel="noopener"
-      >
-        ✈️ قناة Telegram
-      </a>
-
-    </div>
-
-  </div>
+</div>
 </footer>
 
 <script>
-const SOURCE =
-  "https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/ipastrong.json";
 
-const TELEGRAM =
-  "https://t.me/ipastrong";
+const SOURCES=[
 
-let allApps = [];
-let currentCategory = "الكل";
+"https://raw.githubusercontent.com/sgad73055-code/ipastrong/refs/heads/main/ipastrong.json",
 
-const $ = id => document.getElementById(id);
+"https://repository.apptesters.org",
 
-function escapeHTML(value) {
-  return String(value ?? "").replace(/[&<>"']/g, char => ({
-    "&": "&amp;",
-    "<": "&lt;",
-    ">": "&gt;",
-    '"': "&quot;",
-    "'": "&#39;"
-  }[char]));
+"https://repo.ikghd.me/repo.json",
+
+"https://check0ver.site/repo.json",
+
+"https://quarksources.github.io/dist/quantumsource%2B%2B.min.json",
+
+"https://repo.apptesters.org",
+
+"https://repo.check0ver.site",
+
+"https://altstore.fouad raheb.com",
+
+"https://cdn.altstore.io/file/altstore/apps.json",
+
+"https://alts.lao.sb/source.json",
+
+"https://repo.starfiles.co/public/",
+
+"https://ipa.cypwn.xyz/cypwn.json",
+
+"https://wuxu1.github.io/wuxu-complete.json",
+
+"https://wuxu1.github.io/wuxu-complete-plus.json"
+
+].map(s=>s.replace("fouad raheb","fouadraheb"));
+
+let all=[];
+let category="الكل";
+
+/* تبويب المشاهدة والترفيه */
+
+const WATCH_CATEGORY="🎬 المشاهدة والترفيه";
+
+const WATCH_WORDS=[
+
+"سينمانا",
+"sinmana",
+"سينما",
+"cinema",
+"netflix",
+"نتفلكس",
+"shahid",
+"شاهد",
+"osn",
+"disney",
+"prime video",
+"amazon prime",
+"hbo",
+"movie",
+"movies",
+"فيلم",
+"أفلام",
+"film",
+"series",
+"مسلسل",
+"مسلسلات",
+"tv",
+"iptv",
+"live tv",
+"قنوات",
+"مشاهدة",
+"watch",
+"video",
+"youtube",
+"يوتيوب",
+"sport",
+"sports",
+"رياضة",
+"bein",
+"أنمي",
+"anime",
+"crunchyroll",
+"stream",
+"streaming"
+
+];
+
+/* التحقق من كون التطبيق خاص بالمشاهدة */
+
+function isWatchApp(a){
+
+const text=String([
+
+a.name,
+a.title,
+a.description,
+a.subtitle,
+a.localizedDescription,
+a.category,
+a.categories,
+a.type,
+a.bundleIdentifier,
+a.bundleId
+
+].flat().join(" ")).toLowerCase();
+
+return WATCH_WORDS.some(
+w=>text.includes(w.toLowerCase())
+);
+
 }
 
-function getName(app) {
-  return app.name ||
-         app.title ||
-         "بدون اسم";
+/* حماية النصوص من أكواد HTML */
+
+const esc=s=>String(s??"").replace(
+/[&<>"']/g,
+m=>({
+"&":"&amp;",
+"<":"&lt;",
+">":"&gt;",
+'"':"&quot;",
+"'":"&#39;"
+}[m])
+);
+
+/* أيقونة التطبيق */
+
+function getIcon(a){
+
+return a.iconURL ||
+a.icon ||
+a.artworkURL ||
+a.icon_url ||
+"https://placehold.co/128x128/20242d/ffffff?text=IPA";
+
 }
 
-function getDescription(app) {
-  return app.subtitle ||
-         app.description ||
-         app.localizedDescription ||
-         "تطبيق IPA";
+/* رابط التطبيق */
+
+function getURL(a){
+
+return a.downloadURL ||
+a.versions?.[0]?.downloadURL ||
+a.versions?.[0]?.url ||
+a.url ||
+"#";
+
 }
 
-function getIcon(app) {
-  return app.iconURL ||
-         app.icon ||
-         app.artworkURL ||
-         app.icon_url ||
-         "https://placehold.co/128x128/20242d/ffffff?text=IPA";
+/* وصف التطبيق */
+
+function getDesc(a){
+
+return a.subtitle ||
+a.description ||
+a.localizedDescription ||
+"تطبيق IPA";
+
 }
 
-function getVersion(app) {
-  return app.version ||
-         app.versions?.[0]?.version ||
-         "—";
+/* عرض التطبيقات */
+
+function render(){
+
+let q=document
+.getElementById("search")
+.value
+.trim()
+.toLowerCase();
+
+let list=all.filter(a=>{
+
+let text=(
+a.name+" "+
+getDesc(a)+" "+
+(a.bundleIdentifier||a.bundleId||"")
+).toLowerCase();
+
+let cats=a.category||a.categories||[];
+
+if(!Array.isArray(cats)){
+cats=[cats];
 }
 
-function getSearchText(app) {
-  const values = [
-    app.name,
-    app.title,
-    app.subtitle,
-    app.description,
-    app.localizedDescription,
-    app.category,
-    app.categories,
-    app.type,
-    app.genre,
-    app.primaryCategory,
-    app.appCategory,
-    app.bundleIdentifier,
-    app.bundleId
-  ];
+let matchesWatch=
+category===WATCH_CATEGORY &&
+isWatchApp(a);
 
-  return values
-    .flatMap(value => Array.isArray(value) ? value : [value])
-    .filter(Boolean)
-    .join(" ")
-    .toLowerCase();
-}
+return(
 
-function getExplicitCategoryText(app) {
-  const values = [
-    app.category,
-    app.categories,
-    app.type,
-    app.genre,
-    app.primaryCategory,
-    app.appCategory
-  ];
+category==="الكل" ||
+matchesWatch ||
+cats.includes(category) ||
+a.category===category
 
-  return values
-    .flatMap(value => Array.isArray(value) ? value : [value])
-    .filter(Boolean)
-    .join(" ")
-    .toLowerCase();
-}
+)&&(
 
-function containsAny(text, words) {
-  return words.some(word => text.includes(word));
-}
+!q ||
+text.includes(q)
 
-function getAppTags(app) {
-  const text = getSearchText(app);
-  const explicit = getExplicitCategoryText(app);
+);
 
-  const tags = new Set();
-
-  const socialWords = [
-    "instagram",
-    "instagram++",
-    "tiktok",
-    "tik tok",
-    "snapchat",
-    "whatsapp",
-    "facebook",
-    "messenger",
-    "telegram",
-    "twitter",
-    "twitter x",
-    "x app",
-    "discord",
-    "reddit",
-    "threads",
-    "social",
-    "سوشيال",
-    "تواصل",
-    "انستا",
-    "انستغرام",
-    "تيك توك",
-    "سناب",
-    "واتساب",
-    "فيسبوك"
-  ];
-
-  const gameWords = [
-    "game",
-    "games",
-    "gaming",
-    "arcade",
-    "puzzle",
-    "racing",
-    "action",
-    "adventure",
-    "sports game",
-    "لعبة",
-    "العاب",
-    "ألعاب",
-    "سباق"
-  ];
-
-  const toolWords = [
-    "tool",
-    "tools",
-    "utility",
-    "utilities",
-    "productivity",
-    "manager",
-    "file manager",
-    "browser",
-    "vpn",
-    "editor",
-    "أداة",
-    "أدوات",
-    "متصفح"
-  ];
-
-  const modifiedWords = [
-    "mod",
-    "tweak",
-    "plus",
-    "premium",
-    "enhanced",
-    "patched",
-    "modified",
-    "++",
-    "pro",
-    "معدل",
-    "معدلة",
-    "مهكر",
-    "مفتوح",
-    "نسخة معدلة"
-  ];
-
-  if (
-    containsAny(explicit, [
-      "social",
-      "تواصل",
-      "سوشيال"
-    ]) ||
-    containsAny(text, socialWords)
-  ) {
-    tags.add("تواصل");
-  }
-
-  if (
-    containsAny(explicit, [
-      "game",
-      "games",
-      "gaming",
-      "arcade"
-    ]) ||
-    containsAny(text, gameWords)
-  ) {
-    tags.add("ألعاب");
-  }
-
-  if (
-    containsAny(explicit, [
-      "tool",
-      "tools",
-      "utility",
-      "utilities"
-    ]) ||
-    containsAny(text, toolWords)
-  ) {
-    tags.add("أدوات");
-  }
-
-  if (containsAny(text, modifiedWords)) {
-    tags.add("معدلة");
-  }
-
-  /*
-    إذا ما انعرف نوع التطبيق، نخليه ضمن التطبيقات.
-    التطبيق ممكن يكون بأكثر من قسم، مثل:
-    تطبيق تواصل معدل يظهر بالتواصل والمعدلة.
-  */
-
-  if (tags.size === 0 || !tags.has("ألعاب")) {
-    tags.add("تطبيقات");
-  }
-
-  return [...tags];
-}
-
-function getMainBadge(app) {
-  const tags = app._tags || [];
-
-  if (tags.includes("معدلة")) {
-    return "🔓 معدلة";
-  }
-
-  if (tags.includes("تواصل")) {
-    return "📱 تواصل";
-  }
-
-  if (tags.includes("ألعاب")) {
-    return "🎮 لعبة";
-  }
-
-  if (tags.includes("أدوات")) {
-    return "🛠️ أداة";
-  }
-
-  return "📲 تطبيق";
-}
-
-function belongsTo(app, category) {
-  if (category === "الكل") {
-    return true;
-  }
-
-  return (app._tags || []).includes(category);
-}
-
-function getApps(data) {
-  if (Array.isArray(data)) {
-    return data;
-  }
-
-  if (Array.isArray(data.apps)) {
-    return data.apps;
-  }
-
-  if (Array.isArray(data.data)) {
-    return data.data;
-  }
-
-  if (Array.isArray(data.items)) {
-    return data.items;
-  }
-
-  return [];
-}
-
-function renderApps() {
-  const query = $("search").value.trim().toLowerCase();
-
-  const filtered = allApps.filter(app => {
-    const text = getSearchText(app);
-
-    return belongsTo(app, currentCategory) &&
-      (!query || text.includes(query));
-  });
-
-  $("sectionTitle").textContent =
-    currentCategory === "الكل"
-      ? "كل التطبيقات"
-      : currentCategory;
-
-  $("count").textContent =
-    filtered.length.toLocaleString("en-US") + " تطبيق";
-
-  if (!filtered.length) {
-    $("grid").innerHTML =
-      '<div class="empty">ما لكيت نتائج بهذا البحث.</div>';
-
-    return;
-  }
-
-  $("grid").innerHTML = filtered.map(app => {
-    const name = getName(app);
-    const description = getDescription(app);
-    const icon = getIcon(app);
-    const version = getVersion(app);
-    const badge = getMainBadge(app);
-
-    /*
-      كل زر تحميل يفتح قناة Telegram
-      بدلاً من رابط تحميل مباشر.
-    */
-
-    return `
-      <article class="app">
-
-        <div class="appmain">
-
-          <img
-            class="icon"
-            src="${escapeHTML(icon)}"
-            loading="lazy"
-            alt="${escapeHTML(name)}"
-            onerror="this.src='https://placehold.co/128x128/20242d/ffffff?text=IPA'"
-          >
-
-          <div>
-
-            <h3>
-              ${escapeHTML(name)}
-            </h3>
-
-            <div class="desc">
-              ${escapeHTML(description)}
-            </div>
-
-            <div class="meta">
-              الإصدار: ${escapeHTML(version)}
-            </div>
-
-            <span class="badge">
-              ${escapeHTML(badge)}
-            </span>
-
-          </div>
-
-        </div>
-
-        <a
-          class="download"
-          href="${TELEGRAM}"
-          target="_blank"
-          rel="noopener"
-        >
-          ✈️ طلب التطبيق
-        </a>
-
-      </article>
-    `;
-  }).join("");
-}
-
-function updateCategoryButtons() {
-  document.querySelectorAll("nav button").forEach(button => {
-    button.classList.toggle(
-      "active",
-      button.dataset.category === currentCategory
-    );
-  });
-}
-
-document.querySelectorAll("nav button").forEach(button => {
-  button.addEventListener("click", () => {
-    /*
-      الفرز يتم من البيانات الموجودة بالذاكرة.
-      ماكو طلب جديد للمصدر عند تغيير القسم.
-      لذلك التنقل يكون سريع.
-    */
-
-    currentCategory = button.dataset.category;
-
-    updateCategoryButtons();
-    renderApps();
-  });
 });
 
-$("search").addEventListener("input", renderApps);
+document.getElementById("count")
+.textContent=list.length+" تطبيق";
 
-async function loadApps() {
-  try {
-    const controller = new AbortController();
+document.getElementById("grid")
+.innerHTML=list.length?
 
-    const timeout = setTimeout(() => {
-      controller.abort();
-    }, 30000);
+list.map(a=>`
 
-    const response = await fetch(
-      SOURCE + "?v=" + Date.now(),
-      {
-        cache: "no-store",
-        signal: controller.signal
-      }
-    );
+<article class="app">
 
-    clearTimeout(timeout);
+<div class="appmain">
 
-    if (!response.ok) {
-      throw new Error("فشل تحميل المصدر");
-    }
+<img
+class="icon"
+src="${esc(getIcon(a))}"
+loading="lazy"
+onerror="this.src='https://placehold.co/128x128/20242d/ffffff?text=IPA'">
 
-    const data = await response.json();
+<div>
 
-    allApps = getApps(data)
-      .filter(app => app && typeof app === "object")
-      .map(app => {
-        /*
-          نحسب الأقسام مرة واحدة فقط عند التحميل.
-          هذا يقلل التأخير عند الضغط على الأقسام.
-        */
+<h3>
+${esc(a.name||"بدون اسم")}
+</h3>
 
-        app._tags = getAppTags(app);
+<div class="desc">
+${esc(getDesc(a))}
+</div>
 
-        return app;
-      });
+<div class="meta">
+الإصدار:
+${esc(a.version||a.versions?.[0]?.version||"—")}
+</div>
 
-    $("total").textContent =
-      allApps.length.toLocaleString("en-US");
+</div>
 
-    renderApps();
+</div>
 
-  } catch (error) {
-    console.error(error);
+<a
+class="download"
+href="https://t.me/ipastrong"
+target="_blank"
+rel="noopener">
 
-    $("total").textContent = "—";
-    $("count").textContent = "حدث خطأ";
+${/لعبة|game|games|ألعاب/i.test(
+String(
+a.category||
+a.type||
+a.name||
+a.title||
+""
+)
+)?"تنزيل اللعبة":"تنزيل التطبيق"}
 
-    $("grid").innerHTML = `
-      <div class="empty">
-        ⚠️ تعذر تحميل التطبيقات حالياً.
-        <br>
-        حاول تحديث الصفحة بعد قليل.
-      </div>
-    `;
-  }
+</a>
+
+</article>
+
+`).join("")
+
+:
+
+`<div class="empty">
+ما لكيت تطبيق بهالبحث.
+</div>`;
+
 }
 
-loadApps();
+/* إنشاء أزرار الأقسام */
+
+function buildCats(){
+
+let set=new Set();
+
+all.forEach(a=>{
+
+let c=a.category||a.categories||[];
+
+if(!Array.isArray(c)){
+c=[c];
+}
+
+c.forEach(x=>{
+
+if(x){
+set.add(x);
+}
+
+});
+
+});
+
+let cats=[
+
+"الكل",
+WATCH_CATEGORY,
+
+...Array.from(set)
+.filter(x=>x!==WATCH_CATEGORY)
+.slice(0,10)
+
+];
+
+document.getElementById("cats")
+.innerHTML=cats.map(c=>`
+
+<button
+class="${c===category?"active":""}"
+onclick="category='${String(c).replace(/'/g,"\\'")}';buildCats();render()">
+
+${esc(c)}
+
+</button>
+
+`).join("");
+
+}
+
+/* استخراج التطبيقات من المصادر */
+
+function extractApps(d){
+
+if(Array.isArray(d)){
+return d;
+}
+
+if(Array.isArray(d?.apps)){
+return d.apps;
+}
+
+if(Array.isArray(d?.data)){
+return d.data;
+}
+
+if(Array.isArray(d?.items)){
+return d.items;
+}
+
+return [];
+
+}
+
+/* توحيد بيانات التطبيقات */
+
+function normalize(a){
+
+return{
+
+...a,
+
+name:a.name||
+a.title||
+"بدون اسم",
+
+iconURL:a.iconURL||
+a.icon||
+a.artworkURL||
+a.icon_url,
+
+description:a.description||
+a.localizedDescription||
+a.subtitle||
+"",
+
+version:a.version||
+a.versions?.[0]?.version
+
+};
+
+}
+
+/* تحميل المصادر */
+
+Promise.allSettled(
+
+SOURCES.map(url=>
+
+fetch(
+url+"?v="+Date.now(),
+{cache:"no-store"}
+)
+
+.then(r=>{
+
+if(!r.ok){
+throw Error(url);
+}
+
+return r.json();
+
+})
+
+)
+
+)
+
+.then(results=>{
+
+const merged=[];
+
+results.forEach((result,i)=>{
+
+if(result.status==="fulfilled"){
+
+extractApps(result.value)
+.forEach(a=>{
+
+merged.push({
+
+...normalize(a),
+_source:SOURCES[i]
+
+});
+
+});
+
+}
+
+});
+
+/* حذف السجلات المتطابقة فقط */
+
+const seen=new Set();
+
+all=merged.filter(a=>{
+
+const key=JSON.stringify({
+
+name:a.name||"",
+
+version:a.version||
+a.versions?.[0]?.version||
+"",
+
+bundleIdentifier:a.bundleIdentifier||
+a.bundleId||
+a.identifier||
+"",
+
+downloadURL:getURL(a)
+
+});
+
+if(seen.has(key)){
+return false;
+}
+
+seen.add(key);
+
+return true;
+
+});
+
+buildCats();
+render();
+
+if(!all.length){
+
+document.getElementById("grid")
+.innerHTML=
+
+'<div class="empty">تعذر تحميل المصادر حالياً. جرّب تحديث الصفحة.</div>';
+
+}
+
+})
+
+.catch(()=>{
+
+document.getElementById("grid")
+.innerHTML=
+
+'<div class="empty">تعذر تحميل المصادر حالياً. جرّب تحديث الصفحة.</div>';
+
+});
+
+/* البحث المباشر */
+
+document
+.getElementById("search")
+.addEventListener("input",render);
+
 </script>
 
 </body>
