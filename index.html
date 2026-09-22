@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#08090d">
+<title>IPASTRONG — التطبيقات والألعاب</title>
+<style>
+:root{--bg:#07080c;--card:#10121a;--card2:#151823;--text:#f8f8fb;--muted:#a5a9b8;--line:#242838;--p:#8b5cf6;--p2:#6d28d9;--ok:#22c55e}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(900px 500px at 50% -10%,#26134f 0%,transparent 60%),var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Arial,sans-serif}
+a{text-decoration:none;color:inherit}.wrap{width:min(1180px,calc(100% - 28px));margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(7,8,12,.72);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.06)}
+.nav{height:70px;display:flex;align-items:center;gap:14px}.brand{display:flex;align-items:center;gap:10px;font-weight:900;white-space:nowrap}.logo{width:42px;height:42px;border-radius:13px;background:linear-gradient(135deg,#a78bfa,#6d28d9);display:grid;place-items:center;box-shadow:0 10px 30px #6d28d955;font-size:21px}.brand small{display:block;color:var(--muted);font-weight:600;font-size:10px;margin-top:2px}
+.search{flex:1;position:relative}.search input{width:100%;height:46px;border:1px solid var(--line);border-radius:15px;background:#0d0f15;color:white;padding:0 44px 0 14px;outline:none;font-size:15px}.search span{position:absolute;right:14px;top:13px;color:#85899a}
+.tg{height:44px;border:0;border-radius:14px;padding:0 15px;background:#229ed9;color:#fff;font-weight:800;cursor:pointer}
+.hero{margin:26px 0 20px;padding:28px;border:1px solid #28223c;border-radius:26px;background:linear-gradient(135deg,#171126,#0d1018 60%,#141022);overflow:hidden;position:relative}.hero:after{content:"";position:absolute;width:250px;height:250px;background:#8b5cf633;filter:blur(45px);left:-80px;top:-100px}.hero>*{position:relative;z-index:1}.hero h1{font-size:clamp(28px,5vw,52px);margin:0 0 10px}.hero p{margin:0;color:#b8b7c8;max-width:720px;line-height:1.8}.hero .stats{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.pill{background:#ffffff0a;border:1px solid #ffffff12;border-radius:999px;padding:8px 12px;color:#d8d6e4;font-size:13px}
+.section{margin:26px 0}.section-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px}.section h2{margin:0;font-size:21px}.muted{color:var(--muted)}
+.cats{display:flex;gap:9px;overflow:auto;padding:3px 1px 10px;scrollbar-width:none}.cats::-webkit-scrollbar{display:none}.cat{white-space:nowrap;border:1px solid var(--line);background:#0e1017;color:#c7cad6;border-radius:999px;padding:9px 14px;cursor:pointer}.cat.active{background:#7c3aed;color:white;border-color:#8b5cf6}
+.rail{display:flex;gap:13px;overflow:auto;scrollbar-width:none;padding:2px 1px 10px;scroll-snap-type:x mandatory}.rail::-webkit-scrollbar{display:none}
+.feature{min-width:245px;scroll-snap-align:start;background:linear-gradient(145deg,#171326,#10131b);border:1px solid #2b2440;border-radius:20px;padding:14px;display:flex;align-items:center;gap:12px;cursor:pointer}.feature img{width:64px;height:64px;border-radius:17px;object-fit:cover;background:#1d2030}.feature b{display:block;margin-bottom:5px}.feature small{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}.app{background:linear-gradient(180deg,#11141d,#0d0f15);border:1px solid var(--line);border-radius:20px;padding:13px;min-width:0;transition:.22s;cursor:pointer}.app:hover{transform:translateY(-4px);border-color:#493b68;box-shadow:0 18px 45px #0008}.app img{width:72px;height:72px;border-radius:19px;object-fit:cover;background:#1a1d29}.app h3{font-size:15px;margin:10px 0 5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.app p{font-size:12px;line-height:1.6;color:var(--muted);height:38px;overflow:hidden;margin:0 0 10px}.meta{display:flex;justify-content:space-between;color:#858a9c;font-size:11px;margin-bottom:10px}.download{display:block;text-align:center;background:linear-gradient(135deg,#8b5cf6,#6d28d9);border-radius:12px;padding:10px;font-size:12px;font-weight:900}
+.more{display:block;margin:20px auto 0;border:1px solid #40345c;background:#15121e;color:white;border-radius:14px;padding:11px 22px;cursor:pointer;font-weight:800}
+.packages{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.pack{background:#10131b;border:1px solid var(--line);border-radius:20px;padding:18px;text-align:center}.pack strong{font-size:24px}.pack p{color:var(--muted);font-size:12px}.pack a{display:block;background:#fff;color:#090a0e;border-radius:12px;padding:10px;font-weight:900}
+footer{padding:35px 0 60px;text-align:center;color:#777c8e;font-size:12px}
+.modal{position:fixed;inset:0;background:#000b;backdrop-filter:blur(10px);display:none;align-items:end;justify-content:center;z-index:50}.modal.show{display:flex}.sheet{width:min(680px,100%);background:#11141c;border:1px solid #2a2e3e;border-radius:26px 26px 0 0;padding:20px;animation:up .25s ease}.close{float:left;background:#242735;color:#fff;border:0;border-radius:10px;width:36px;height:36px;cursor:pointer}.detail{display:flex;gap:15px;align-items:center}.detail img{width:92px;height:92px;border-radius:23px;object-fit:cover}.detail h2{margin:0 0 6px}.detail p{color:var(--muted);line-height:1.8;font-size:13px;white-space:pre-line}.go{display:block;text-align:center;background:#229ed9;padding:13px;border-radius:14px;font-weight:900;margin-top:16px}
+.empty{text-align:center;padding:40px;color:var(--muted);display:none}
+@keyframes up{from{transform:translateY(40px);opacity:0}to{transform:none;opacity:1}}
+@media(max-width:900px){.grid{grid-template-columns:repeat(3,1fr)}.packages{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:650px){.nav{height:auto;padding:10px 0;flex-wrap:wrap}.brand{order:1}.tg{order:2}.search{order:3;flex-basis:100%}.grid{grid-template-columns:repeat(2,1fr);gap:10px}.app{padding:11px}.hero{padding:22px}.feature{min-width:225px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <a class="brand" href="#"><span class="logo">✦</span><span>IPASTRONG<small>أفضل التطبيقات والألعاب</small></span></a>
+  <div class="search"><span>⌕</span><input id="search" placeholder="ابحث عن تطبيق أو لعبة..."></div>
+  <a class="tg" href="https://t.me/ipastrong" target="_blank">قناتنا ↗</a>
+</div></header>
+
+<main class="wrap">
+<section class="hero">
+  <h1>كل تطبيقاتك بمكان واحد.</h1>
+  <p>تصفح مكتبة IPASTRONG، شوف التطبيقات والألعاب المتوفرة، واكتشف آخر الإضافات. زر التنزيل يوديك للقناة حتى تعرف طريقة الحصول على التطبيق بعد الاشتراك.</p>
+  <div class="stats"><span class="pill">📦 <b id="count">0</b> تطبيق</span><span class="pill">⚡ سريع وخفيف</span><span class="pill">📲 مخصص للآيفون</span></div>
+</section>
+
+<section class="section"><div class="section-head"><h2>التصنيفات</h2><span class="muted">اسحب يمين ويسار</span></div><div id="cats" class="cats"></div></section>
+
+<section class="section"><div class="section-head"><h2>⭐ تطبيقات مميزة</h2><span class="muted">الأحدث</span></div><div id="featured" class="rail"></div></section>
+
+<section class="section"><div class="section-head"><h2 id="title">كل التطبيقات</h2><span id="shown" class="muted"></span></div><div id="grid" class="grid"></div><div id="empty" class="empty">ما لكيت تطبيق بهذا الاسم.</div><button id="more" class="more">عرض المزيد</button></section>
+
+<section class="section"><div class="section-head"><h2>💜 الباقات</h2><span class="muted">للاشتراك والتفاصيل</span></div>
+<div class="packages">
+  <div class="pack"><strong>10,000 د.ع</strong><p>ضمان شهر</p><a href="https://t.me/ipastrong" target="_blank">التفاصيل</a></div>
+  <div class="pack"><strong>15,000 د.ع</strong><p>ضمان 3 أشهر</p><a href="https://t.me/ipastrong" target="_blank">التفاصيل</a></div>
+  <div class="pack"><strong>20,000 د.ع</strong><p>ضمان 6 أشهر</p><a href="https://t.me/ipastrong" target="_blank">التفاصيل</a></div>
+  <div class="pack"><strong>30,000 د.ع</strong><p>ضمان 10 أشهر</p><a href="https://t.me/ipastrong" target="_blank">التفاصيل</a></div>
+</div></section>
+</main>
+
+<footer>IPASTRONG © 2026 — التطبيقات والألعاب والخدمات</footer>
+
+<div id="modal" class="modal"><div class="sheet">
+<button class="close" onclick="closeModal()">×</button><div id="detail"></div>
+</div></div>
+
+<script>
+let apps=[], filtered=[], limit=24, category="الكل";
+const tg="https://t.me/ipastrong";
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
+function size(n){n=Number(n||0);if(!n)return "";let u=["B","KB","MB","GB"],i=0;while(n>=1024&&i<3){n/=1024;i++}return n.toFixed(i?1:0)+" "+u[i]}
+function renderCats(){
+  const cats=["الكل",...new Set(apps.map(a=>a.category).filter(Boolean))];
+  $("cats").innerHTML=cats.map(c=>`<button class="cat ${c===category?"active":""}" onclick="setCat(${JSON.stringify(c)})">${esc(c)}</button>`).join("");
+}
+function setCat(c){category=c;limit=24;apply();renderCats();window.scrollTo({top:$("title").offsetTop-90,behavior:"smooth"})}
+function card(a){
+  return `<article class="app" onclick="openModal(${JSON.stringify(a.id)})">
+    <img loading="lazy" src="${esc(a.icon)}" onerror="this.style.opacity=.25" alt="">
+    <h3>${esc(a.name)}</h3>
+    <p>${esc(a.description)}</p>
+    <div class="meta"><span>${esc(a.category)}</span><span>${esc(a.version)}</span></div>
+    <span class="download">تنزيل التطبيق</span>
+  </article>`
+}
+function apply(){
+  const q=$("search").value.trim().toLowerCase();
+  filtered=apps.filter(a=>(category==="الكل"||a.category===category)&&(!q||(a.name+" "+a.category+" "+a.description).toLowerCase().includes(q)));
+  $("count").textContent=apps.length.toLocaleString("ar-IQ");
+  $("shown").textContent=`${Math.min(limit,filtered.length).toLocaleString("ar-IQ")} من ${filtered.length.toLocaleString("ar-IQ")}`;
+  $("grid").innerHTML=filtered.slice(0,limit).map(card).join("");
+  $("empty").style.display=filtered.length?"none":"block";
+  $("more").style.display=limit<filtered.length?"block":"none";
+  $("title").textContent=category==="الكل"?"كل التطبيقات":category;
+}
+function featured(){
+  const latest=[...apps].sort((a,b)=>String(b.date).localeCompare(String(a.date))).slice(0,12);
+  $("featured").innerHTML=latest.map(a=>`<div class="feature" onclick="openModal(${JSON.stringify(a.id)})">
+    <img loading="lazy" src="${esc(a.icon)}" alt=""><div><b>${esc(a.name)}</b><small>${esc(a.category)} · ${esc(a.version)}</small></div>
+  </div>`).join("");
+}
+function openModal(id){
+  const a=apps.find(x=>x.id===id);if(!a)return;
+  $("detail").innerHTML=`<div class="detail"><img src="${esc(a.icon)}" alt=""><div><h2>${esc(a.name)}</h2><span class="muted">${esc(a.category)} · الإصدار ${esc(a.version)}</span></div></div>
+  <p>${esc(a.description)}</p>
+  <div class="meta"><span>${esc(a.date)}</span><span>${size(a.size)}</span></div>
+  <a class="go" href="${tg}" target="_blank">تنزيل التطبيق عبر قناتنا ↗</a>`;
+  $("modal").classList.add("show");
+}
+function closeModal(){$("modal").classList.remove("show")}
+$("modal").addEventListener("click",e=>{if(e.target===$("modal"))closeModal()});
+$("search").addEventListener("input",()=>{limit=24;apply()});
+$("more").addEventListener("click",()=>{limit+=24;apply()});
+
+fetch("./catalog.json",{cache:"force-cache"}).then(r=>r.json()).then(data=>{
+  apps=Array.isArray(data)?data:(data.apps||[]);
+  renderCats();featured();apply();
+}).catch(()=>{
+  $("grid").innerHTML='<div class="empty" style="display:block;grid-column:1/-1">تعذر تحميل قائمة التطبيقات. تأكد أن catalog.json موجود بجانب index.html.</div>';
+  $("more").style.display="none";
+});
+</script>
+</body>
+</html>
