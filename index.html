@@ -1,444 +1,1255 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#0b0d12">
+<meta name="theme-color" content="#070910">
+
 <title>ipastrong — IPA Store</title>
 
 <style>
+
 :root{
---bg:#080a10;
---card:#111621;
---card2:#171d2b;
---text:#f7f8fc;
---muted:#9ca7bb;
---line:#263044;
---accent:#7885ff;
---accent2:#9a7cff
+  --bg:#05060a;
+  --bg2:#0a0d15;
+  --card:#10141f;
+  --card2:#151b29;
+  --text:#f8f9ff;
+  --muted:#929cb1;
+  --line:#222b3d;
+  --purple:#7c6cff;
+  --blue:#4d9dff;
+  --pink:#d85cff;
+  --green:#45e0a2;
 }
 
-*{box-sizing:border-box}
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
 
-html{scroll-behavior:smooth}
+html{
+  scroll-behavior:smooth;
+}
 
 body{
-margin:0;
-background:radial-gradient(circle at 50% -15%,#28335a 0,#0d111c 38%,#080a10 78%);
-color:var(--text);
-font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif
+  min-height:100vh;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 50% -10%,#27346a 0,transparent 35%),
+    radial-gradient(circle at 100% 40%,#32164e 0,transparent 25%),
+    radial-gradient(circle at 0% 70%,#102b4d 0,transparent 25%),
+    var(--bg);
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "SF Pro Display",
+    "Segoe UI",
+    Arial,
+    sans-serif;
+  overflow-x:hidden;
 }
+
+/* الخلفية المتحركة */
+
+body::before{
+  content:"";
+  position:fixed;
+  width:500px;
+  height:500px;
+  border-radius:50%;
+  background:linear-gradient(
+    135deg,
+    #7c6cff33,
+    #d85cff22,
+    transparent
+  );
+  filter:blur(70px);
+  top:-180px;
+  left:50%;
+  transform:translateX(-50%);
+  animation:glow 7s ease-in-out infinite alternate;
+  pointer-events:none;
+  z-index:-1;
+}
+
+@keyframes glow{
+  from{
+    transform:translateX(-50%) scale(1);
+  }
+  to{
+    transform:translateX(-50%) scale(1.35);
+  }
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+button,
+input{
+  font-family:inherit;
+}
+
+/* الحاوية */
 
 .wrap{
-max-width:1120px;
-margin:auto;
-padding:0 20px
+  width:min(1150px,calc(100% - 32px));
+  margin:auto;
 }
 
+/* الهيدر */
+
 header{
-position:sticky;
-top:0;
-z-index:20;
-background:rgba(8,10,16,.82);
-backdrop-filter:blur(20px);
-border-bottom:1px solid #ffffff0c
+  position:sticky;
+  top:0;
+  z-index:100;
+  background:#05060acc;
+  backdrop-filter:blur(22px);
+  -webkit-backdrop-filter:blur(22px);
+  border-bottom:1px solid #ffffff0b;
 }
 
 .top{
-min-height:76px;
-display:flex;
-align-items:center;
-justify-content:space-between;
-gap:15px
+  min-height:74px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:15px;
 }
 
 .brand{
-display:flex;
-align-items:center;
-gap:12px;
-font-size:22px;
-font-weight:900
+  display:flex;
+  align-items:center;
+  gap:11px;
+  font-size:21px;
+  font-weight:900;
 }
 
 .logo{
-width:45px;
-height:45px;
-display:grid;
-place-items:center;
-border-radius:15px;
-background:linear-gradient(135deg,var(--accent),var(--accent2));
-box-shadow:0 8px 35px #6575ff33
+  width:44px;
+  height:44px;
+  display:grid;
+  place-items:center;
+  border-radius:15px;
+  font-size:12px;
+  font-weight:1000;
+  background:
+    linear-gradient(
+      135deg,
+      var(--purple),
+      var(--pink)
+    );
+  box-shadow:
+    0 0 35px #7c6cff55;
+  animation:logoFloat 3s ease-in-out infinite;
 }
 
-.btn{
-display:inline-flex;
-align-items:center;
-justify-content:center;
-gap:8px;
-padding:12px 17px;
-border-radius:13px;
-text-decoration:none;
-font-weight:800;
-border:1px solid var(--line);
-background:var(--card2);
-color:var(--text);
-transition:.2s
+@keyframes logoFloat{
+  0%,100%{
+    transform:translateY(0);
+  }
+  50%{
+    transform:translateY(-4px);
+  }
 }
 
-.btn:hover{transform:translateY(-2px)}
-
-.btn.primary{
-background:#eef0ff;
-color:#10131b;
-border-color:#eef0ff
+.telegram{
+  padding:10px 15px;
+  border:1px solid #ffffff15;
+  border-radius:13px;
+  background:#ffffff08;
+  font-size:13px;
+  font-weight:800;
+  transition:.25s;
 }
+
+.telegram:hover{
+  transform:translateY(-2px);
+  background:#ffffff12;
+}
+
+/* التنقل */
 
 nav{
-display:flex;
-gap:8px;
-overflow:auto;
-padding:10px 0 14px
+  display:flex;
+  gap:8px;
+  overflow-x:auto;
+  padding:10px 0 13px;
+  scrollbar-width:none;
+}
+
+nav::-webkit-scrollbar{
+  display:none;
 }
 
 nav button{
-border:1px solid var(--line);
-background:#111621;
-color:#cbd3e3;
-border-radius:999px;
-padding:9px 16px;
-white-space:nowrap;
-font-size:14px;
-cursor:pointer
+  flex:none;
+  cursor:pointer;
+  border:1px solid var(--line);
+  color:#aeb7ca;
+  background:#0d111a;
+  border-radius:999px;
+  padding:9px 16px;
+  font-size:13px;
+  transition:.25s;
+}
+
+nav button:hover{
+  border-color:#6e6aff66;
+  color:white;
 }
 
 nav button.active{
-background:#eef0ff;
-color:#10131b;
-border-color:#eef0ff
+  color:#080910;
+  background:white;
+  border-color:white;
+  box-shadow:0 5px 25px #ffffff18;
 }
+
+/* HERO */
 
 .hero{
-padding:65px 0 30px
+  position:relative;
+  min-height:680px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items:center;
+  gap:30px;
+  padding:70px 0 50px;
 }
 
-.eyebrow{
-display:inline-block;
-color:#b9c0ff;
-background:#7885ff14;
-border:1px solid #7885ff35;
-padding:7px 12px;
-border-radius:999px;
-font-size:13px;
-font-weight:700;
-margin-bottom:17px
+.heroText{
+  position:relative;
+  z-index:3;
+}
+
+.badge{
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  padding:8px 13px;
+  border-radius:999px;
+  border:1px solid #8a7fff38;
+  background:#7c6cff12;
+  color:#bdb7ff;
+  font-size:13px;
+  font-weight:800;
+  margin-bottom:18px;
+  animation:fadeUp .8s ease both;
+}
+
+.badge i{
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  background:#48e2a3;
+  box-shadow:0 0 12px #48e2a3;
 }
 
 .hero h1{
-font-size:clamp(38px,7vw,68px);
-letter-spacing:-2px;
-line-height:1.08;
-margin:0 0 17px
+  font-size:clamp(42px,6vw,75px);
+  line-height:1.03;
+  letter-spacing:-3px;
+  font-weight:1000;
+  margin-bottom:22px;
+  animation:fadeUp .8s .1s ease both;
 }
 
-.hero h1 span{color:#9da7ff}
+.hero h1 span{
+  background:
+    linear-gradient(
+      90deg,
+      #fff,
+      #9c91ff,
+      #e17cff,
+      #fff
+    );
+  background-size:300%;
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+  animation:textGradient 5s linear infinite;
+}
+
+@keyframes textGradient{
+  0%{background-position:0%}
+  100%{background-position:300%}
+}
 
 .hero p{
-color:var(--muted);
-font-size:17px;
-line-height:1.9;
-max-width:650px;
-margin:0 0 25px
+  max-width:590px;
+  color:var(--muted);
+  line-height:1.9;
+  font-size:16px;
+  margin-bottom:25px;
+  animation:fadeUp .8s .2s ease both;
 }
 
 .actions{
-display:flex;
-gap:10px;
-flex-wrap:wrap
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  animation:fadeUp .8s .3s ease both;
 }
 
-.search{
-margin:22px 0 30px;
-position:relative
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  padding:13px 18px;
+  border-radius:14px;
+  border:1px solid var(--line);
+  background:#111722;
+  font-size:14px;
+  font-weight:900;
+  transition:.25s;
 }
 
-.search input{
-width:100%;
-padding:17px 48px 17px 17px;
-border-radius:16px;
-border:1px solid var(--line);
-background:#101521;
-color:white;
-font-size:16px;
-outline:none
+.btn:hover{
+  transform:translateY(-3px);
 }
 
-.search span{
-position:absolute;
-right:17px;
-top:15px;
-color:#9ba6ba;
-font-size:21px
+.btn.primary{
+  background:white;
+  color:#080910;
+  border-color:white;
+  box-shadow:0 10px 35px #ffffff18;
 }
 
-.sectionhead{
-display:flex;
-align-items:end;
-justify-content:space-between;
-gap:10px;
-margin:28px 0 15px
+/* آيفون بالنص */
+
+.phoneArea{
+  min-height:580px;
+  position:relative;
+  display:grid;
+  place-items:center;
+  perspective:1000px;
 }
 
-.sectionhead h2{
-margin:0;
-font-size:27px
+.phoneGlow{
+  position:absolute;
+  width:310px;
+  height:310px;
+  border-radius:50%;
+  background:
+    radial-gradient(
+      circle,
+      #7c6cff55,
+      #d85cff18,
+      transparent 70%
+    );
+  filter:blur(25px);
+  animation:phoneGlow 4s ease-in-out infinite alternate;
+}
+
+@keyframes phoneGlow{
+  from{
+    transform:scale(.9);
+  }
+  to{
+    transform:scale(1.2);
+  }
+}
+
+.phone{
+  position:relative;
+  width:255px;
+  height:510px;
+  border:7px solid #252a38;
+  border-radius:43px;
+  background:#07090e;
+  box-shadow:
+    0 40px 100px #000b,
+    inset 0 0 0 2px #ffffff0a;
+  transform:rotateY(-8deg) rotateX(3deg);
+  animation:phoneFloat 5s ease-in-out infinite;
+  z-index:5;
+  overflow:hidden;
+}
+
+@keyframes phoneFloat{
+  0%,100%{
+    transform:translateY(0) rotateY(-8deg) rotateX(3deg);
+  }
+  50%{
+    transform:translateY(-14px) rotateY(3deg) rotateX(-2deg);
+  }
+}
+
+.phone::before{
+  content:"";
+  position:absolute;
+  top:9px;
+  left:50%;
+  transform:translateX(-50%);
+  width:90px;
+  height:23px;
+  border-radius:20px;
+  background:#000;
+  z-index:10;
+}
+
+.phoneScreen{
+  position:absolute;
+  inset:0;
+  padding:45px 14px 15px;
+  background:
+    radial-gradient(circle at 50% 0,#3a3972 0,transparent 40%),
+    linear-gradient(180deg,#101326,#07090e);
+}
+
+.phoneTitle{
+  text-align:center;
+  font-weight:1000;
+  margin-bottom:20px;
+}
+
+.miniCard{
+  padding:10px;
+  border-radius:17px;
+  border:1px solid #ffffff12;
+  background:#ffffff09;
+  margin-bottom:10px;
+  animation:miniMove 3s ease-in-out infinite;
+}
+
+.miniCard:nth-child(2){
+  animation-delay:.5s;
+}
+
+.miniCard:nth-child(3){
+  animation-delay:1s;
+}
+
+.miniIcon{
+  width:45px;
+  height:45px;
+  border-radius:12px;
+  background:
+    linear-gradient(
+      135deg,
+      #7c6cff,
+      #d85cff
+    );
+  margin-bottom:8px;
+}
+
+.miniLine{
+  height:7px;
+  width:70%;
+  border-radius:20px;
+  background:#ffffff18;
+  margin-bottom:5px;
+}
+
+.miniLine.small{
+  width:45%;
+}
+
+@keyframes miniMove{
+  0%,100%{
+    transform:translateX(0);
+  }
+  50%{
+    transform:translateX(4px);
+  }
+}
+
+/* العناصر الطافية حول الآيفون */
+
+.floatCard{
+  position:absolute;
+  padding:12px 14px;
+  border-radius:15px;
+  background:#111623dd;
+  border:1px solid #ffffff12;
+  backdrop-filter:blur(15px);
+  box-shadow:0 20px 50px #0008;
+  font-size:12px;
+  font-weight:900;
+  z-index:7;
+  animation:floatCard 4s ease-in-out infinite;
+}
+
+.floatCard.one{
+  top:90px;
+  right:10px;
+}
+
+.floatCard.two{
+  bottom:105px;
+  left:5px;
+  animation-delay:1.3s;
+}
+
+.floatCard.three{
+  bottom:60px;
+  right:0;
+  animation-delay:2s;
+}
+
+@keyframes floatCard{
+  0%,100%{
+    transform:translateY(0);
+  }
+  50%{
+    transform:translateY(-12px);
+  }
+}
+
+/* البحث */
+
+.searchBox{
+  position:relative;
+  margin:15px 0 35px;
+}
+
+.searchBox input{
+  width:100%;
+  height:58px;
+  border:1px solid var(--line);
+  border-radius:18px;
+  outline:none;
+  color:white;
+  background:#0d121c;
+  padding:0 52px 0 18px;
+  font-size:15px;
+  box-shadow:0 15px 45px #0003;
+  transition:.25s;
+}
+
+.searchBox input:focus{
+  border-color:#7c6cff66;
+  box-shadow:
+    0 0 0 4px #7c6cff0d,
+    0 15px 45px #0005;
+}
+
+.searchIcon{
+  position:absolute;
+  right:18px;
+  top:16px;
+  color:#8e98ac;
+  font-size:23px;
+}
+
+/* العناوين */
+
+.sectionHead{
+  display:flex;
+  align-items:end;
+  justify-content:space-between;
+  gap:10px;
+  margin:35px 0 17px;
+}
+
+.sectionHead h2{
+  font-size:28px;
+  font-weight:1000;
 }
 
 .count{
-color:var(--muted);
-font-size:13px
+  color:var(--muted);
+  font-size:13px;
 }
 
+/* التطبيقات */
+
 .grid{
-display:grid;
-grid-template-columns:repeat(auto-fill,minmax(245px,1fr));
-gap:16px
+  display:grid;
+  grid-template-columns:
+    repeat(auto-fill,minmax(250px,1fr));
+  gap:17px;
 }
 
 .app{
-background:linear-gradient(145deg,#151c29,#10141e);
-border:1px solid var(--line);
-border-radius:21px;
-padding:16px;
-display:flex;
-flex-direction:column;
-gap:15px;
-min-height:170px
+  position:relative;
+  overflow:hidden;
+  background:
+    linear-gradient(
+      145deg,
+      #141a28,
+      #0c1019
+    );
+  border:1px solid var(--line);
+  border-radius:23px;
+  padding:17px;
+  cursor:pointer;
+  min-height:215px;
+  display:flex;
+  flex-direction:column;
+  transition:
+    transform .3s,
+    border-color .3s,
+    box-shadow .3s;
+  animation:cardIn .55s ease both;
 }
 
-.appmain{
-display:flex;
-gap:13px
+.app::before{
+  content:"";
+  position:absolute;
+  width:160px;
+  height:160px;
+  border-radius:50%;
+  background:#7c6cff12;
+  top:-90px;
+  left:-90px;
+  filter:blur(25px);
+  transition:.4s;
+}
+
+.app:hover{
+  transform:translateY(-7px);
+  border-color:#7c6cff55;
+  box-shadow:
+    0 25px 65px #0007,
+    0 0 30px #7c6cff0b;
+}
+
+.app:hover::before{
+  transform:scale(2);
+}
+
+@keyframes cardIn{
+  from{
+    opacity:0;
+    transform:translateY(20px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+.appTop{
+  display:flex;
+  gap:13px;
+  position:relative;
+  z-index:2;
 }
 
 .icon{
-width:68px;
-height:68px;
-border-radius:17px;
-object-fit:cover;
-background:#202837;
-flex:none
+  width:68px;
+  height:68px;
+  flex:none;
+  border-radius:18px;
+  object-fit:cover;
+  background:#202735;
+  box-shadow:0 8px 25px #0005;
+}
+
+.appInfo{
+  min-width:0;
 }
 
 .app h3{
-margin:2px 0 6px;
-font-size:17px
+  font-size:17px;
+  margin:3px 0 6px;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
 }
 
 .desc{
-font-size:13px;
-line-height:1.6;
-color:var(--muted);
-display:-webkit-box;
--webkit-line-clamp:2;
--webkit-box-orient:vertical;
-overflow:hidden
+  color:var(--muted);
+  font-size:12px;
+  line-height:1.65;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
 }
 
 .meta{
-font-size:12px;
-color:#818da3;
-margin-top:5px
+  color:#7e899f;
+  font-size:11px;
+  margin-top:6px;
 }
 
-.download{
-width:100%;
-padding:12px;
-border-radius:12px;
-background:#eef0ff;
-color:#10131b;
-text-decoration:none;
-text-align:center;
-font-weight:900;
-margin-top:auto
+.tags{
+  display:flex;
+  gap:6px;
+  flex-wrap:wrap;
+  margin-top:15px;
+  position:relative;
+  z-index:2;
+}
+
+.tag{
+  color:#bfc7ff;
+  background:#7c6cff10;
+  border:1px solid #7c6cff20;
+  border-radius:999px;
+  padding:5px 8px;
+  font-size:10px;
+  font-weight:800;
+}
+
+.appBottom{
+  margin-top:auto;
+  padding-top:15px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:8px;
+  position:relative;
+  z-index:2;
+}
+
+.version{
+  color:#737f96;
+  font-size:11px;
+}
+
+.detailsBtn{
+  padding:8px 12px;
+  border-radius:10px;
+  background:#ffffff0b;
+  border:1px solid #ffffff10;
+  font-size:11px;
+  font-weight:900;
+}
+
+/* loading */
+
+.loading{
+  grid-column:1/-1;
+  text-align:center;
+  padding:60px 10px;
+  color:var(--muted);
+}
+
+.spinner{
+  width:35px;
+  height:35px;
+  border-radius:50%;
+  border:3px solid #ffffff12;
+  border-top-color:#8d82ff;
+  margin:0 auto 15px;
+  animation:spin .8s linear infinite;
+}
+
+@keyframes spin{
+  to{
+    transform:rotate(360deg);
+  }
 }
 
 .empty{
-text-align:center;
-color:var(--muted);
-padding:45px 10px;
-grid-column:1/-1
+  grid-column:1/-1;
+  text-align:center;
+  padding:55px 10px;
+  color:var(--muted);
 }
+
+/* النافذة */
+
+.modal{
+  position:fixed;
+  inset:0;
+  z-index:500;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:18px;
+  background:#000b;
+  backdrop-filter:blur(15px);
+}
+
+.modal.show{
+  display:flex;
+  animation:modalFade .25s ease;
+}
+
+@keyframes modalFade{
+  from{opacity:0}
+  to{opacity:1}
+}
+
+.modalBox{
+  width:min(520px,100%);
+  max-height:88vh;
+  overflow:auto;
+  border:1px solid #ffffff15;
+  border-radius:27px;
+  background:
+    radial-gradient(circle at 50% 0,#29265a 0,transparent 45%),
+    #0c1019;
+  box-shadow:0 35px 100px #000;
+  padding:22px;
+  animation:modalUp .3s ease;
+}
+
+@keyframes modalUp{
+  from{
+    opacity:0;
+    transform:translateY(25px) scale(.96);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0) scale(1);
+  }
+}
+
+.close{
+  width:36px;
+  height:36px;
+  border:1px solid #ffffff12;
+  border-radius:11px;
+  background:#ffffff08;
+  color:white;
+  cursor:pointer;
+  font-size:19px;
+  display:grid;
+  place-items:center;
+  margin-right:auto;
+}
+
+.modalApp{
+  text-align:center;
+  padding:5px 0 20px;
+}
+
+.modalIcon{
+  width:100px;
+  height:100px;
+  object-fit:cover;
+  border-radius:26px;
+  box-shadow:0 15px 45px #0008;
+  margin:15px auto;
+  display:block;
+}
+
+.modalApp h2{
+  font-size:25px;
+  margin-bottom:7px;
+}
+
+.modalApp p{
+  color:var(--muted);
+  line-height:1.8;
+  font-size:13px;
+}
+
+.featureTitle{
+  font-size:16px;
+  font-weight:1000;
+  margin:10px 0 10px;
+}
+
+.features{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:9px;
+}
+
+.feature{
+  padding:12px;
+  border:1px solid #ffffff0d;
+  border-radius:14px;
+  background:#ffffff06;
+  color:#cbd2e1;
+  font-size:12px;
+}
+
+.modalDownload{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:100%;
+  padding:14px;
+  margin-top:18px;
+  border-radius:14px;
+  background:white;
+  color:#080910;
+  font-weight:1000;
+}
+
+/* الفوتر */
 
 footer{
-border-top:1px solid var(--line);
-margin-top:65px;
-padding:30px 0 42px;
-color:var(--muted);
-font-size:13px;
-line-height:1.9
+  margin-top:80px;
+  padding:35px 0 45px;
+  border-top:1px solid var(--line);
+  color:var(--muted);
+  font-size:13px;
+  line-height:2;
+  text-align:center;
 }
 
-.footerlinks{
-display:flex;
-gap:10px;
-flex-wrap:wrap;
-margin-top:13px
+.footerLogo{
+  font-size:20px;
+  color:white;
+  font-weight:1000;
+  margin-bottom:5px;
 }
 
-.footerlinks a{
-color:#cbd1ff;
-text-decoration:none
+/* animation */
+
+@keyframes fadeUp{
+  from{
+    opacity:0;
+    transform:translateY(20px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
 }
 
-.loading{
-padding:45px;
-text-align:center;
-color:var(--muted)
+/* موبايل */
+
+@media(max-width:800px){
+
+  .hero{
+    grid-template-columns:1fr;
+    text-align:center;
+    padding-top:45px;
+  }
+
+  .hero p{
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .actions{
+    justify-content:center;
+  }
+
+  .phoneArea{
+    min-height:550px;
+    margin-top:-15px;
+  }
+
+  .phone{
+    width:235px;
+    height:470px;
+  }
+
+  .floatCard.one{
+    right:0;
+    top:75px;
+  }
+
+  .floatCard.two{
+    left:0;
+    bottom:105px;
+  }
+
+  .floatCard.three{
+    right:0;
+    bottom:55px;
+  }
 }
 
-@media(max-width:600px){
-.top{min-height:68px}
-.hero{padding-top:43px}
-.grid{grid-template-columns:1fr}
-.hero h1{letter-spacing:-1px}
+@media(max-width:500px){
+
+  .wrap{
+    width:min(100% - 22px,1150px);
+  }
+
+  .brand span{
+    font-size:18px;
+  }
+
+  .telegram{
+    padding:9px 11px;
+    font-size:11px;
+  }
+
+  .hero{
+    min-height:auto;
+    padding-bottom:15px;
+  }
+
+  .hero h1{
+    font-size:46px;
+    letter-spacing:-2px;
+  }
+
+  .phoneArea{
+    transform:scale(.9);
+    margin-top:-25px;
+    margin-bottom:-20px;
+  }
+
+  .grid{
+    grid-template-columns:1fr;
+  }
+
+  .features{
+    grid-template-columns:1fr;
+  }
+
 }
+
 </style>
 </head>
 
 <body>
 
 <header>
+
 <div class="wrap">
 
 <div class="top">
+
 <div class="brand">
-<div class="logo">IPA</div>
-<span>ipastrong</span>
+
+<div class="logo">
+IPA
 </div>
 
-<a class="btn" href="https://t.me/ipastrong" target="_blank">
-✈️ Telegram
+<span>ipastrong</span>
+
+</div>
+
+<a
+class="telegram"
+href="https://t.me/ipastrong"
+target="_blank">
+✈️ قناة Telegram
 </a>
+
 </div>
 
 <nav id="cats"></nav>
 
 </div>
+
 </header>
+
 
 <main class="wrap">
 
+
+<!-- HERO -->
+
 <section class="hero">
 
-<div class="eyebrow">
-مرحباً بك في ipastrong
+<div class="heroText">
+
+<div class="badge">
+<i></i>
+متجر IPA جاهز
 </div>
 
 <h1>
-كل ما تحتاجه<br>
+كل تطبيقاتك<br>
 <span>بمكان واحد.</span>
 </h1>
 
 <p>
-متجر IPA مرتب وسريع. تصفح التطبيقات، ابحث عن التطبيق اللي تريده، واستفد من العروض والخدمات المتوفرة.
+اكتشف تطبيقات iOS وملفات IPA بطريقة مرتبة وسريعة.
+ابحث، تصفح الأقسام، واضغط على أي تطبيق حتى تشوف تفاصيله ومعلوماته.
 </p>
 
 <div class="actions">
-<a class="btn primary" href="#apps">
-تصفح التطبيقات ↓
+
+<a
+class="btn primary"
+href="#apps">
+🚀 تصفح التطبيقات
 </a>
 
-<a class="btn" href="offers.html">
-العروض والخدمات
+<a
+class="btn"
+href="https://t.me/ipastrong"
+target="_blank">
+✈️ تابعنا على Telegram
 </a>
+
+</div>
+
+</div>
+
+
+<!-- الهاتف -->
+
+<div class="phoneArea">
+
+<div class="phoneGlow"></div>
+
+<div class="floatCard one">
+✨ تطبيقات جديدة
+</div>
+
+<div class="floatCard two">
+📦 IPA Store
+</div>
+
+<div class="floatCard three">
+⚡ سريع وسهل
+</div>
+
+
+<div class="phone">
+
+<div class="phoneScreen">
+
+<div class="phoneTitle">
+ipastrong
+</div>
+
+<div class="miniCard">
+
+<div class="miniIcon"></div>
+
+<div class="miniLine"></div>
+
+<div class="miniLine small"></div>
+
+</div>
+
+<div class="miniCard">
+
+<div class="miniIcon"></div>
+
+<div class="miniLine"></div>
+
+<div class="miniLine small"></div>
+
+</div>
+
+<div class="miniCard">
+
+<div class="miniIcon"></div>
+
+<div class="miniLine"></div>
+
+<div class="miniLine small"></div>
+
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 </section>
 
-<div class="search">
-<span>⌕</span>
+
+<!-- البحث -->
+
+<div class="searchBox">
+
+<div class="searchIcon">
+⌕
+</div>
+
 <input
 id="search"
-placeholder="ابحث عن تطبيق..."
+type="search"
+placeholder="ابحث عن تطبيق، لعبة، أو اسم..."
 autocomplete="off">
+
 </div>
+
+
+<!-- التطبيقات -->
 
 <section id="apps">
 
-<div class="sectionhead">
-<h2>التطبيقات</h2>
-<span class="count" id="count"></span>
+<div class="sectionHead">
+
+<h2>
+التطبيقات
+</h2>
+
+<span
+class="count"
+id="count">
+جاري التحميل...
+</span>
+
 </div>
 
-<div class="grid" id="grid">
+<div
+class="grid"
+id="grid">
+
 <div class="loading">
+
+<div class="spinner"></div>
+
 جاري تحميل التطبيقات...
+
 </div>
+
 </div>
 
 </section>
 
 </main>
 
+
+<!-- نافذة التفاصيل -->
+
+<div
+class="modal"
+id="modal">
+
+<div class="modalBox">
+
+<button
+class="close"
+id="closeModal">
+×
+</button>
+
+<div
+id="modalContent">
+</div>
+
+</div>
+
+</div>
+
+
 <footer>
-<div class="wrap">
 
-<strong>ipastrong</strong>
+<div class="footerLogo">
+ipastrong
+</div>
+
+مصدر IPA وتطبيقات iOS
+
 <br>
-مصدر IPA وتطبيقات iOS.
 
-<div class="footerlinks">
-<a href="https://t.me/ipastrong" target="_blank">
+<a
+href="https://t.me/ipastrong"
+target="_blank">
 ✈️ قناة Telegram
 </a>
-</div>
 
-</div>
 </footer>
+
 
 <script>
 
-const SOURCES=[
+/* المصدر الأساسي فقط */
 
-"https://raw.githubusercontent.com/sgad73055-code/ipastrong/refs/heads/main/ipastrong.json",
+const SOURCE =
+"https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/ipastrong.json";
 
-"https://repository.apptesters.org",
 
-"https://repo.ikghd.me/repo.json",
+let all = [];
 
-"https://check0ver.site/repo.json",
+let category = "الكل";
 
-"https://quarksources.github.io/dist/quantumsource%2B%2B.min.json",
 
-"https://repo.apptesters.org",
+/* تصنيف المشاهدة */
 
-"https://repo.check0ver.site",
+const WATCH_CATEGORY =
+"🎬 المشاهدة والترفيه";
 
-"https://altstore.fouad raheb.com",
 
-"https://cdn.altstore.io/file/altstore/apps.json",
-
-"https://alts.lao.sb/source.json",
-
-"https://repo.starfiles.co/public/",
-
-"https://ipa.cypwn.xyz/cypwn.json",
-
-"https://wuxu1.github.io/wuxu-complete.json",
-
-"https://wuxu1.github.io/wuxu-complete-plus.json"
-
-].map(s=>s.replace("fouad raheb","fouadraheb"));
-
-let all=[];
-let category="الكل";
-
-/* تبويب المشاهدة والترفيه */
-
-const WATCH_CATEGORY="🎬 المشاهدة والترفيه";
-
-const WATCH_WORDS=[
+const WATCH_WORDS = [
 
 "سينمانا",
 "sinmana",
@@ -451,7 +1262,6 @@ const WATCH_WORDS=[
 "osn",
 "disney",
 "prime video",
-"amazon prime",
 "hbo",
 "movie",
 "movies",
@@ -482,231 +1292,274 @@ const WATCH_WORDS=[
 
 ];
 
-/* التحقق من كون التطبيق خاص بالمشاهدة */
 
-function isWatchApp(a){
+/* حماية HTML */
 
-const text=String([
+function esc(value){
 
-a.name,
-a.title,
-a.description,
-a.subtitle,
-a.localizedDescription,
-a.category,
-a.categories,
-a.type,
-a.bundleIdentifier,
-a.bundleId
-
-].flat().join(" ")).toLowerCase();
-
-return WATCH_WORDS.some(
-w=>text.includes(w.toLowerCase())
-);
-
-}
-
-/* حماية النصوص من أكواد HTML */
-
-const esc=s=>String(s??"").replace(
+return String(value ?? "")
+.replace(
 /[&<>"']/g,
-m=>({
+m => ({
+
 "&":"&amp;",
 "<":"&lt;",
 ">":"&gt;",
 '"':"&quot;",
 "'":"&#39;"
+
 }[m])
 );
 
-/* أيقونة التطبيق */
+}
 
-function getIcon(a){
 
-return a.iconURL ||
-a.icon ||
-a.artworkURL ||
-a.icon_url ||
+/* الأيقونة */
+
+function getIcon(app){
+
+return app.iconURL ||
+app.icon ||
+app.artworkURL ||
+app.icon_url ||
 "https://placehold.co/128x128/20242d/ffffff?text=IPA";
 
 }
 
-/* رابط التطبيق */
 
-function getURL(a){
+/* رابط التحميل */
 
-return a.downloadURL ||
-a.versions?.[0]?.downloadURL ||
-a.versions?.[0]?.url ||
-a.url ||
+function getURL(app){
+
+return app.downloadURL ||
+app.ipaUrl ||
+app.versions?.[0]?.downloadURL ||
+app.versions?.[0]?.url ||
+app.url ||
 "#";
 
 }
 
-/* وصف التطبيق */
 
-function getDesc(a){
+/* الوصف */
 
-return a.subtitle ||
-a.description ||
-a.localizedDescription ||
-"تطبيق IPA";
+function getDesc(app){
+
+return app.subtitle ||
+app.description ||
+app.localizedDescription ||
+"تطبيق IPA متوفر في المتجر.";
 
 }
 
-/* عرض التطبيقات */
 
-function render(){
+/* الإصدار */
 
-let q=document
-.getElementById("search")
-.value
-.trim()
-.toLowerCase();
+function getVersion(app){
 
-let list=all.filter(a=>{
+return app.version ||
+app.versions?.[0]?.version ||
+"غير محدد";
 
-let text=(
-a.name+" "+
-getDesc(a)+" "+
-(a.bundleIdentifier||a.bundleId||"")
-).toLowerCase();
+}
 
-let cats=a.category||a.categories||[];
+
+/* الفئة */
+
+function getCategory(app){
+
+let c =
+app.category ||
+app.categories ||
+"عام";
+
+if(Array.isArray(c)){
+return c[0] || "عام";
+}
+
+return c;
+
+}
+
+
+/* هل التطبيق للمشاهدة؟ */
+
+function isWatchApp(app){
+
+const text = [
+
+app.name,
+app.title,
+app.description,
+app.subtitle,
+app.category,
+app.categories,
+app.type,
+app.bundleIdentifier,
+app.bundleId
+
+].flat().join(" ").toLowerCase();
+
+
+return WATCH_WORDS.some(
+word => text.includes(word.toLowerCase())
+);
+
+}
+
+
+/* مميزات التطبيق */
+
+function getFeatures(app){
+
+const features = [];
+
+const desc =
+getDesc(app).toLowerCase();
+
+
+if(
+/video|فيديو|مشاهدة|watch|stream|streaming|iptv|قنوات/
+.test(desc)
+){
+
+features.push("🎬 مشاهدة وفيديو");
+
+}
+
+
+if(
+/game|لعبة|ألعاب|games/
+.test(
+String(
+app.name ||
+app.category ||
+app.description ||
+""
+).toLowerCase()
+)
+){
+
+features.push("🎮 ألعاب");
+
+}
+
+
+if(
+/music|موسيقى|audio|صوت/
+.test(desc)
+){
+
+features.push("🎵 صوت وموسيقى");
+
+}
+
+
+if(
+/social|تواصل|chat|دردشة/
+.test(desc)
+){
+
+features.push("💬 تواصل");
+
+}
+
+
+if(
+/photo|صور|image|تصوير/
+.test(desc)
+){
+
+features.push("📸 صور وتصوير");
+
+}
+
+
+/* معلومات حقيقية من بيانات المصدر */
+
+features.push(
+"📱 تطبيق iOS"
+);
+
+features.push(
+"📦 ملف IPA"
+);
+
+features.push(
+"⚡ إصدار " + getVersion(app)
+);
+
+
+if(
+app.bundleIdentifier ||
+app.bundleId
+){
+
+features.push(
+"🔧 معرف التطبيق متوفر"
+);
+
+}
+
+
+return [...new Set(features)].slice(0,6);
+
+}
+
+
+/* إنشاء التصنيفات */
+
+function buildCategories(){
+
+const set = new Set();
+
+
+all.forEach(app => {
+
+let cats =
+app.category ||
+app.categories ||
+[];
+
 
 if(!Array.isArray(cats)){
 cats=[cats];
 }
 
-let matchesWatch=
-category===WATCH_CATEGORY &&
-isWatchApp(a);
 
-return(
+cats.forEach(c => {
 
-category==="الكل" ||
-matchesWatch ||
-cats.includes(category) ||
-a.category===category
-
-)&&(
-
-!q ||
-text.includes(q)
-
-);
-
-});
-
-document.getElementById("count")
-.textContent=list.length+" تطبيق";
-
-document.getElementById("grid")
-.innerHTML=list.length?
-
-list.map(a=>`
-
-<article class="app">
-
-<div class="appmain">
-
-<img
-class="icon"
-src="${esc(getIcon(a))}"
-loading="lazy"
-onerror="this.src='https://placehold.co/128x128/20242d/ffffff?text=IPA'">
-
-<div>
-
-<h3>
-${esc(a.name||"بدون اسم")}
-</h3>
-
-<div class="desc">
-${esc(getDesc(a))}
-</div>
-
-<div class="meta">
-الإصدار:
-${esc(a.version||a.versions?.[0]?.version||"—")}
-</div>
-
-</div>
-
-</div>
-
-<a
-class="download"
-href="https://t.me/ipastrong"
-target="_blank"
-rel="noopener">
-
-${/لعبة|game|games|ألعاب/i.test(
-String(
-a.category||
-a.type||
-a.name||
-a.title||
-""
-)
-)?"تنزيل اللعبة":"تنزيل التطبيق"}
-
-</a>
-
-</article>
-
-`).join("")
-
-:
-
-`<div class="empty">
-ما لكيت تطبيق بهالبحث.
-</div>`;
-
-}
-
-/* إنشاء أزرار الأقسام */
-
-function buildCats(){
-
-let set=new Set();
-
-all.forEach(a=>{
-
-let c=a.category||a.categories||[];
-
-if(!Array.isArray(c)){
-c=[c];
-}
-
-c.forEach(x=>{
-
-if(x){
-set.add(x);
+if(c){
+set.add(c);
 }
 
 });
 
 });
 
-let cats=[
+
+const categories = [
 
 "الكل",
+
 WATCH_CATEGORY,
 
 ...Array.from(set)
-.filter(x=>x!==WATCH_CATEGORY)
-.slice(0,10)
+.filter(
+x => x !== WATCH_CATEGORY
+)
+.slice(0,12)
 
 ];
 
-document.getElementById("cats")
-.innerHTML=cats.map(c=>`
+
+document.getElementById("cats").innerHTML =
+
+categories.map(c => `
 
 <button
-class="${c===category?"active":""}"
-onclick="category='${String(c).replace(/'/g,"\\'")}';buildCats();render()">
+class="${c === category ? "active" : ""}"
+data-cat="${esc(c)}">
 
 ${esc(c)}
 
@@ -714,171 +1567,519 @@ ${esc(c)}
 
 `).join("");
 
+
+document
+.querySelectorAll("#cats button")
+.forEach(button => {
+
+button.addEventListener(
+"click",
+() => {
+
+category =
+button.dataset.cat;
+
+buildCategories();
+
+render();
+
 }
+);
 
-/* استخراج التطبيقات من المصادر */
-
-function extractApps(d){
-
-if(Array.isArray(d)){
-return d;
-}
-
-if(Array.isArray(d?.apps)){
-return d.apps;
-}
-
-if(Array.isArray(d?.data)){
-return d.data;
-}
-
-if(Array.isArray(d?.items)){
-return d.items;
-}
-
-return [];
+});
 
 }
 
-/* توحيد بيانات التطبيقات */
 
-function normalize(a){
+/* رسم التطبيقات */
 
-return{
+function render(){
 
-...a,
+const query =
+document
+.getElementById("search")
+.value
+.trim()
+.toLowerCase();
 
-name:a.name||
-a.title||
-"بدون اسم",
 
-iconURL:a.iconURL||
-a.icon||
-a.artworkURL||
-a.icon_url,
+let list = all.filter(app => {
 
-description:a.description||
-a.localizedDescription||
-a.subtitle||
-"",
+const text = [
 
-version:a.version||
-a.versions?.[0]?.version
+app.name,
+app.title,
+getDesc(app),
+app.bundleIdentifier,
+app.bundleId,
+getCategory(app)
 
-};
+].join(" ").toLowerCase();
+
+
+let cats =
+app.category ||
+app.categories ||
+[];
+
+
+if(!Array.isArray(cats)){
+cats=[cats];
+}
+
+
+const categoryMatch =
+
+category === "الكل" ||
+
+(
+category === WATCH_CATEGORY &&
+isWatchApp(app)
+) ||
+
+cats.includes(category) ||
+
+app.category === category;
+
+
+return (
+categoryMatch &&
+(
+!query ||
+text.includes(query)
+)
+);
+
+});
+
+
+document.getElementById("count")
+.textContent =
+list.length + " تطبيق";
+
+
+if(!list.length){
+
+document.getElementById("grid")
+.innerHTML = `
+
+<div class="empty">
+
+🔎 ما لكينا تطبيق بهذا البحث.
+
+<br>
+
+جرّب اسم ثاني أو اختار قسم مختلف.
+
+</div>
+
+`;
+
+return;
 
 }
 
-/* تحميل المصادر */
 
-Promise.allSettled(
+document.getElementById("grid")
+.innerHTML =
 
-SOURCES.map(url=>
+list.map(
+(app,index) => `
+
+<article
+class="app"
+style="animation-delay:${Math.min(index * 0.035,0.5)}s"
+data-index="${all.indexOf(app)}">
+
+<div class="appTop">
+
+<img
+class="icon"
+src="${esc(getIcon(app))}"
+loading="lazy"
+onerror="
+this.src='https://placehold.co/128x128/20242d/ffffff?text=IPA'
+">
+
+<div class="appInfo">
+
+<h3>
+${esc(
+app.name ||
+app.title ||
+"بدون اسم"
+)}
+</h3>
+
+<div class="desc">
+${esc(getDesc(app))}
+</div>
+
+<div class="meta">
+${esc(getCategory(app))}
+</div>
+
+</div>
+
+</div>
+
+
+<div class="tags">
+
+<span class="tag">
+📱 iOS
+</span>
+
+<span class="tag">
+${esc(getVersion(app))}
+</span>
+
+</div>
+
+
+<div class="appBottom">
+
+<span class="version">
+${esc(
+app.bundleIdentifier ||
+app.bundleId ||
+"IPA"
+)}
+</span>
+
+<span class="detailsBtn">
+التفاصيل ←
+</span>
+
+</div>
+
+</article>
+
+`
+).join("");
+
+
+document
+.querySelectorAll(".app")
+.forEach(card => {
+
+card.addEventListener(
+"click",
+() => {
+
+const app =
+all[
+Number(card.dataset.index)
+];
+
+openModal(app);
+
+}
+);
+
+});
+
+}
+
+
+/* فتح التفاصيل */
+
+function openModal(app){
+
+const features =
+getFeatures(app);
+
+
+const download =
+getURL(app);
+
+
+document.getElementById(
+"modalContent"
+).innerHTML = `
+
+<div class="modalApp">
+
+<img
+class="modalIcon"
+src="${esc(getIcon(app))}"
+onerror="
+this.src='https://placehold.co/128x128/20242d/ffffff?text=IPA'
+">
+
+<h2>
+${esc(
+app.name ||
+app.title ||
+"بدون اسم"
+)}
+</h2>
+
+<p>
+${esc(getDesc(app))}
+</p>
+
+</div>
+
+
+<div class="featureTitle">
+✨ معلومات ومميزات
+</div>
+
+
+<div class="features">
+
+${features.map(
+feature => `
+
+<div class="feature">
+${esc(feature)}
+</div>
+
+`
+).join("")}
+
+</div>
+
+
+<div class="featureTitle">
+📋 معلومات التطبيق
+</div>
+
+
+<div class="features">
+
+<div class="feature">
+📌 الفئة:
+${esc(getCategory(app))}
+</div>
+
+<div class="feature">
+🔢 الإصدار:
+${esc(getVersion(app))}
+</div>
+
+<div class="feature">
+🆔 Bundle ID:
+${esc(
+app.bundleIdentifier ||
+app.bundleId ||
+"غير متوفر"
+)}
+</div>
+
+<div class="feature">
+📦 النوع:
+IPA
+</div>
+
+</div>
+
+
+<a
+class="modalDownload"
+href="${esc(download)}"
+target="_blank"
+rel="noopener">
+
+⬇️ تحميل التطبيق
+
+</a>
+
+`;
+
+
+document
+.getElementById("modal")
+.classList.add("show");
+
+
+document.body.style.overflow =
+"hidden";
+
+}
+
+
+/* إغلاق */
+
+function closeModal(){
+
+document
+.getElementById("modal")
+.classList.remove("show");
+
+document.body.style.overflow =
+"";
+
+}
+
+
+document
+.getElementById("closeModal")
+.addEventListener(
+"click",
+closeModal
+);
+
+
+document
+.getElementById("modal")
+.addEventListener(
+"click",
+event => {
+
+if(
+event.target.id === "modal"
+){
+
+closeModal();
+
+}
+
+});
+
+
+document.addEventListener(
+"keydown",
+event => {
+
+if(event.key === "Escape"){
+closeModal();
+}
+
+});
+
+
+/* البحث */
+
+document
+.getElementById("search")
+.addEventListener(
+"input",
+render
+);
+
+
+/* تحميل المصدر */
 
 fetch(
-url+"?v="+Date.now(),
-{cache:"no-store"}
+SOURCE +
+"?v=" +
+Date.now(),
+{
+cache:"no-store"
+}
 )
 
-.then(r=>{
+.then(response => {
 
-if(!r.ok){
-throw Error(url);
+if(!response.ok){
+throw new Error(
+"فشل تحميل المصدر"
+);
 }
 
-return r.json();
+return response.json();
 
 })
 
-)
+.then(data => {
 
-)
+let apps = [];
 
-.then(results=>{
 
-const merged=[];
+/* دعم أكثر من شكل للـ JSON */
 
-results.forEach((result,i)=>{
-
-if(result.status==="fulfilled"){
-
-extractApps(result.value)
-.forEach(a=>{
-
-merged.push({
-
-...normalize(a),
-_source:SOURCES[i]
-
-});
-
-});
-
+if(Array.isArray(data)){
+apps = data;
 }
 
-});
-
-/* حذف السجلات المتطابقة فقط */
-
-const seen=new Set();
-
-all=merged.filter(a=>{
-
-const key=JSON.stringify({
-
-name:a.name||"",
-
-version:a.version||
-a.versions?.[0]?.version||
-"",
-
-bundleIdentifier:a.bundleIdentifier||
-a.bundleId||
-a.identifier||
-"",
-
-downloadURL:getURL(a)
-
-});
-
-if(seen.has(key)){
-return false;
+else if(Array.isArray(data.apps)){
+apps = data.apps;
 }
 
-seen.add(key);
+else if(Array.isArray(data.data)){
+apps = data.data;
+}
 
-return true;
+else if(Array.isArray(data.items)){
+apps = data.items;
+}
 
-});
 
-buildCats();
+/* توحيد بسيط */
+
+all = apps.map(app => ({
+
+...app,
+
+name:
+app.name ||
+app.title ||
+"بدون اسم",
+
+description:
+app.description ||
+app.localizedDescription ||
+app.subtitle ||
+"",
+
+version:
+app.version ||
+app.versions?.[0]?.version ||
+"",
+
+iconURL:
+app.iconURL ||
+app.icon ||
+app.artworkURL ||
+app.icon_url
+
+}));
+
+
+buildCategories();
+
 render();
+
 
 if(!all.length){
 
 document.getElementById("grid")
-.innerHTML=
+.innerHTML = `
 
-'<div class="empty">تعذر تحميل المصادر حالياً. جرّب تحديث الصفحة.</div>';
+<div class="empty">
+
+⚠️ المصدر اشتغل لكن ما بيه تطبيقات قابلة للعرض.
+
+</div>
+
+`;
 
 }
 
 })
 
-.catch(()=>{
+.catch(error => {
+
+console.error(error);
 
 document.getElementById("grid")
-.innerHTML=
+.innerHTML = `
 
-'<div class="empty">تعذر تحميل المصادر حالياً. جرّب تحديث الصفحة.</div>';
+<div class="empty">
+
+❌ تعذر تحميل التطبيقات حالياً.
+
+<br><br>
+
+تأكد أن المصدر يعمل ثم حدّث الصفحة.
+
+</div>
+
+`;
 
 });
-
-/* البحث المباشر */
-
-document
-.getElementById("search")
-.addEventListener("input",render);
 
 </script>
 
