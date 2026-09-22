@@ -166,21 +166,14 @@
       "addedAt": "2026-08-29",
       "updatedAt": "2026-09-02"
     },
-    {
-      "i{
-  "id": "APP-4229526127",
-  "name": "بيكرام",
-  "bundleIdentifier": "com.burbn.instagram",
-  "bundleId": "com.burbn.instagram",
+    { {
+          "id": "APP-4229526127",
+          "name": "بيكرام",
+       "bundleIdentifier": "com.burbn.instagram",
+  ".bundleId": "com.burbn.instagram",
   "iconURL": "https://raw.githubusercontent.com/ikiraplus/ipastore/main/images/app-1773402346513.png",
   "category": "تواصل",
   "versions": [
-    {
-      "version": "447.0.0",
-      "downloadURL": "https://pixeldrain.com/u/uupVCovF",
-      "date": "2026-09-22",
-      "size": 303126473
-    },
     {
       "version": "444.0.0",
       "downloadURL": "https://dl.ikiraplus.workers.dev/dl/beegram_444.0.0-v3.1",
@@ -192,23 +185,16 @@
       "downloadURL": "https://dl.ikiraplus.workers.dev/dl/beegram_2.8"
     }
   ],
-  "version": "447.0.0",
-  "versionDate": "2026-09-22",
-  "downloadURL": "https://pixeldrain.com/u/uupVCovF",
-  "ipaUrl": "https://pixeldrain.com/u/uupVCovF",
-  "size": 303126473,
+  "version": "444.0.0",
+  "versionDate": "2026-09-02",
+  "downloadURL": "https://dl.ikiraplus.workers.dev/dl/beegram_444.0.0-v3.1",
+  "ipaUrl": "https://dl.ikiraplus.workers.dev/dl/beegram_444.0.0-v3.1",
+  "size": 287414681,
   "addedAt": "2026-08-29",
-  "updatedAt": "2026-09-22"
+  "updatedAt": "2026-09-02"
 }
-      ],
-      "version": "444.0.0",
-      "versionDate": "2026-09-02",
-      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/beegram_444.0.0-v3.1",
-      "ipaUrl": "https://dl.ikiraplus.workers.dev/dl/beegram_444.0.0-v3.1",
-      "size": 287414681,
-      "addedAt": "2026-08-29",
-      "updatedAt": "2026-09-02"
-    },
+      
+
     {
       "id": "APP-5013744483",
       "name": "instagram IG",
@@ -24553,8 +24539,4 @@
       "fullDate": "20260911143411",
       "size": 129654596,
       "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/11-09-2026/AlightMotion_6.2.59_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/11-09-2026/AlightMotion_6.2.59_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-      "developerName": "",
-      "localizedDescription": "Injected with Subscription Unlocked",
-      "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.alightcreative.motion.png",
-      "iconURL": "https://raw.githubusercontent.com/a
+      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/11-09-2026/AlightMotion_6.2.59_
