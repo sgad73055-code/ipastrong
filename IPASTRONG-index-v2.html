@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#070812">
+<title>IPASTRONG — متجر التطبيقات</title>
+<style>
+:root{
+  --bg:#05060c;--panel:rgba(18,20,34,.78);--panel2:rgba(25,28,48,.9);
+  --text:#f7f7fb;--muted:#a9aec2;--line:rgba(255,255,255,.09);
+  --a:#7c5cff;--b:#19c8ff;--c:#ff4fd8;--ok:#43e6a0;
+  --shadow:0 20px 70px rgba(0,0,0,.42);--r:24px;
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:
+radial-gradient(900px 500px at 80% -10%,rgba(124,92,255,.22),transparent 60%),
+radial-gradient(700px 500px at 10% 15%,rgba(25,200,255,.13),transparent 60%),var(--bg);
+color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Arial,sans-serif;overflow-x:hidden}
+a{text-decoration:none;color:inherit}button,input{font:inherit}
+.wrap{width:min(1180px,calc(100% - 28px));margin:auto}
+.glow{position:fixed;inset:auto auto -120px -140px;width:340px;height:340px;background:rgba(255,79,216,.12);filter:blur(80px);pointer-events:none}
+header{position:sticky;top:0;z-index:50;background:rgba(5,6,12,.72);backdrop-filter:blur(20px);border-bottom:1px solid var(--line)}
+.nav{height:70px;display:flex;align-items:center;justify-content:space-between;gap:15px}
+.brand{font-weight:900;font-size:22px;letter-spacing:.5px}.brand span{background:linear-gradient(90deg,#fff,#9b8aff,#43d8ff);-webkit-background-clip:text;color:transparent}
+.navlinks{display:flex;gap:8px}.navlinks a{padding:10px 13px;border-radius:14px;color:var(--muted);font-size:14px}.navlinks a:hover{background:rgba(255,255,255,.06);color:#fff}
+.hero{padding:62px 0 30px;position:relative}
+.heroBox{text-align:center;max-width:900px;margin:auto}
+.badge{display:inline-flex;align-items:center;gap:8px;padding:8px 13px;border:1px solid rgba(124,92,255,.35);background:rgba(124,92,255,.1);border-radius:999px;color:#d8d2ff;font-size:13px;box-shadow:0 0 35px rgba(124,92,255,.12)}
+h1{font-size:clamp(42px,8vw,78px);line-height:.98;margin:22px 0 16px;font-weight:950;letter-spacing:-3px}
+.grad{background:linear-gradient(90deg,#fff 15%,#a88fff 48%,#37d9ff 82%);-webkit-background-clip:text;color:transparent}
+.hero p{color:var(--muted);font-size:18px;line-height:1.8;max-width:700px;margin:0 auto}
+.heroActions{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin-top:25px}
+.btn{border:0;border-radius:17px;padding:14px 20px;cursor:pointer;font-weight:800;color:#fff;background:linear-gradient(135deg,var(--a),var(--b));box-shadow:0 12px 35px rgba(64,102,255,.22);transition:.25s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 18px 45px rgba(64,102,255,.32)}
+.btn.ghost{background:rgba(255,255,255,.06);border:1px solid var(--line);box-shadow:none}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:32px auto 10px;max-width:760px}
+.stat{padding:18px;border:1px solid var(--line);background:rgba(255,255,255,.035);border-radius:20px}
+.stat b{display:block;font-size:25px}.stat span{color:var(--muted);font-size:12px}
+.section{padding:35px 0}.sectionHead{display:flex;justify-content:space-between;align-items:end;gap:15px;margin-bottom:17px}
+.sectionHead h2{margin:0;font-size:28px}.sectionHead p{margin:4px 0 0;color:var(--muted);font-size:13px}
+.rail{display:flex;gap:13px;overflow:auto;scroll-snap-type:x mandatory;padding:3px 2px 12px;scrollbar-width:none}.rail::-webkit-scrollbar{display:none}
+.feature{min-width:290px;scroll-snap-align:start;padding:18px;border-radius:24px;border:1px solid var(--line);background:linear-gradient(145deg,rgba(124,92,255,.18),rgba(25,200,255,.06) 45%,rgba(255,255,255,.035));position:relative;overflow:hidden}
+.feature:after{content:"";position:absolute;width:160px;height:160px;border-radius:50%;background:rgba(124,92,255,.17);filter:blur(30px);left:-60px;bottom:-80px}
+.featureTop{display:flex;align-items:center;gap:12px}.feature img{width:62px;height:62px;border-radius:18px;object-fit:cover;background:#111}
+.feature b{font-size:17px}.feature small{color:var(--muted)}.feature .mini{margin-top:15px;color:#d9dded;font-size:13px;line-height:1.6;min-height:42px}
+.categories{display:flex;gap:8px;overflow:auto;padding:3px 2px 12px;scrollbar-width:none}.categories::-webkit-scrollbar{display:none}
+.chip{white-space:nowrap;border:1px solid var(--line);background:rgba(255,255,255,.045);color:#c9cce0;padding:10px 14px;border-radius:999px;cursor:pointer}
+.chip.active,.chip:hover{background:linear-gradient(135deg,rgba(124,92,255,.32),rgba(25,200,255,.13));color:#fff;border-color:rgba(124,92,255,.5)}
+.searchRow{display:flex;gap:10px;margin:14px 0}.search{flex:1;min-width:0;padding:15px 17px;border-radius:18px;border:1px solid var(--line);background:rgba(255,255,255,.045);color:#fff;outline:none}.search:focus{border-color:rgba(124,92,255,.65);box-shadow:0 0 0 4px rgba(124,92,255,.08)}
+.count{align-self:center;color:var(--muted);font-size:13px;white-space:nowrap}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}
+.card{border:1px solid var(--line);background:linear-gradient(160deg,rgba(255,255,255,.065),rgba(255,255,255,.025));border-radius:22px;padding:13px;transition:.25s;min-width:0}
+.card:hover{transform:translateY(-5px);border-color:rgba(124,92,255,.4);box-shadow:var(--shadow)}
+.iconWrap{position:relative}.iconWrap img{width:100%;aspect-ratio:1;border-radius:19px;object-fit:cover;background:#111;display:block}
+.pill{position:absolute;top:8px;right:8px;background:rgba(5,6,12,.78);backdrop-filter:blur(10px);padding:5px 8px;border-radius:10px;font-size:10px;color:#dcd8ff;border:1px solid var(--line)}
+.card h3{font-size:15px;margin:12px 2px 6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.card .desc{color:var(--muted);font-size:11px;line-height:1.55;height:36px;overflow:hidden;margin:0 2px}
+.cardMeta{display:flex;justify-content:space-between;color:#888ea6;font-size:10px;margin:10px 2px}
+.cardBtns{display:grid;grid-template-columns:1fr 1fr;gap:7px}.cardBtns button{border:0;border-radius:13px;padding:10px 5px;cursor:pointer;font-size:12px;font-weight:800}
+.details{background:rgba(255,255,255,.07);color:#fff}.download{background:linear-gradient(135deg,var(--a),var(--b));color:#fff}
+.more{display:block;margin:20px auto 0}
+.packages{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}
+.pkg{position:relative;padding:22px;border:1px solid rgba(255,255,255,.1);border-radius:26px;background:linear-gradient(155deg,rgba(124,92,255,.18),rgba(255,255,255,.035));overflow:hidden;transform:translateY(0);transition:.3s;animation:float 5s ease-in-out infinite}
+.pkg:nth-child(2){animation-delay:.6s}.pkg:nth-child(3){animation-delay:1.2s}.pkg:nth-child(4){animation-delay:1.8s}
+.pkg:hover{transform:translateY(-8px) scale(1.015);border-color:rgba(25,200,255,.45);box-shadow:0 20px 70px rgba(0,0,0,.4)}
+.pkg.hot{border-color:rgba(255,79,216,.55);box-shadow:0 0 45px rgba(255,79,216,.12)}
+.ribbon{position:absolute;top:12px;left:-30px;transform:rotate(-35deg);background:linear-gradient(90deg,var(--c),var(--a));padding:6px 35px;font-size:10px;font-weight:900}
+.pkg .tag{color:#bfc4db;font-size:12px}.pkg h3{font-size:18px;margin:8px 0}.price{font-size:31px;font-weight:950}.price span{font-size:12px;color:var(--muted)}
+.pkg ul{padding:0 18px 0 0;color:#c8ccdd;font-size:12px;line-height:2.05;margin:15px 0}.pkg li::marker{color:#7dffbf}
+.pkg button{width:100%}
+.guarantees{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.guarantee{padding:20px;border-radius:22px;background:rgba(255,255,255,.035);border:1px solid var(--line)}
+.guarantee .ico{font-size:26px}.guarantee b{display:block;margin:10px 0 5px}.guarantee p{margin:0;color:var(--muted);font-size:12px;line-height:1.7}
+.faq{display:grid;gap:9px}.faq details{background:rgba(255,255,255,.035);border:1px solid var(--line);border-radius:18px;padding:15px}.faq summary{cursor:pointer;font-weight:800}.faq p{color:var(--muted);font-size:13px;line-height:1.8}
+footer{padding:45px 0 70px;text-align:center;color:#777d95;font-size:12px}.footerBrand{font-size:20px;font-weight:900;color:#fff;margin-bottom:7px}
+.modal{position:fixed;inset:0;z-index:100;display:none;place-items:center;background:rgba(0,0,0,.72);backdrop-filter:blur(12px);padding:15px}
+.modal.show{display:grid}.modalBox{width:min(680px,100%);max-height:90vh;overflow:auto;border:1px solid var(--line);background:linear-gradient(145deg,#111426,#080910);border-radius:28px;box-shadow:var(--shadow);padding:20px;position:relative}
+.close{position:absolute;top:12px;left:12px;border:1px solid var(--line);background:rgba(255,255,255,.06);color:#fff;border-radius:12px;width:38px;height:38px;cursor:pointer}
+.modalHead{display:flex;gap:15px;align-items:center;padding-left:45px}.modalHead img{width:86px;height:86px;border-radius:22px;object-fit:cover}.modalHead h2{margin:0 0 5px}.modalHead p{margin:0;color:var(--muted);font-size:12px}
+.infoGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:18px 0}.info{padding:12px;border-radius:15px;background:rgba(255,255,255,.045);font-size:11px}.info b{display:block;color:#fff;font-size:13px;margin-top:4px}
+.modalDesc{color:#c5c9d9;line-height:1.8;font-size:13px;white-space:pre-line}.modalActions{display:flex;gap:9px;margin-top:18px}.modalActions .btn{flex:1;text-align:center}
+.toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%) translateY(30px);opacity:0;z-index:200;background:#111525;border:1px solid var(--line);padding:12px 16px;border-radius:15px;color:#fff;transition:.3s;font-size:12px}.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+@media(max-width:950px){.grid{grid-template-columns:repeat(3,1fr)}.packages{grid-template-columns:repeat(2,1fr)}.guarantees{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:650px){.wrap{width:min(100% - 18px,1180px)}.nav{height:62px}.navlinks{display:none}.hero{padding-top:42px}h1{letter-spacing:-2px}.hero p{font-size:15px}.stats{grid-template-columns:repeat(3,1fr)}.stat{padding:13px 7px}.stat b{font-size:20px}.grid{grid-template-columns:repeat(2,1fr);gap:9px}.card{padding:9px;border-radius:19px}.card h3{font-size:13px}.card .desc{font-size:10px}.cardBtns button{padding:9px 2px;font-size:10px}.packages{grid-template-columns:1fr}.guarantees{grid-template-columns:1fr 1fr}.feature{min-width:260px}.searchRow{display:block}.count{display:block;margin-top:8px}.infoGrid{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<div class="glow"></div>
+<header><div class="wrap nav">
+  <a class="brand" href="#"><span>👑 IPASTRONG</span></a>
+  <nav class="navlinks"><a href="#apps">التطبيقات</a><a href="#packages">الباقات</a><a href="#guarantees">الضمانات</a><a href="#faq">الأسئلة</a></nav>
+  <a class="btn" href="https://t.me/ipastrong" target="_blank" rel="noopener">اشترك بالقناة</a>
+</div></header>
+
+<main>
+<section class="hero"><div class="wrap heroBox">
+  <div class="badge">⚡ متجر iOS • تطبيقات معدلة • تحديثات مستمرة</div>
+  <h1>كل تطبيقاتك المعدلة<br><span class="grad">بمكان واحد</span></h1>
+  <p>تصفح مكتبة IPASTRONG واكتشف التطبيقات والألعاب المتوفرة قبل الاشتراك. ابحث، شوف التفاصيل، واعرف الباقات والضمانات.</p>
+  <div class="heroActions">
+    <a class="btn" href="#apps">تصفح التطبيقات</a>
+    <a class="btn ghost" href="#packages">شوف الباقات</a>
+  </div>
+  <div class="stats">
+    <div class="stat"><b id="totalApps">—</b><span>تطبيق متوفر</span></div>
+    <div class="stat"><b>iPhone</b><span>متوافق مع iOS</span></div>
+    <div class="stat"><b>24/7</b><span>دعم ومتابعة</span></div>
+  </div>
+</div></section>
+
+<section class="section"><div class="wrap">
+  <div class="sectionHead"><div><h2>🔥 المميز والأحدث</h2><p>تطبيقات تظهر أولاً حتى تشوف الجديد بسرعة</p></div></div>
+  <div id="featured" class="rail"></div>
+</div></section>
+
+<section id="apps" class="section"><div class="wrap">
+  <div class="sectionHead"><div><h2>📱 مكتبة التطبيقات</h2><p>تصفح المكتبة كاملة بدون ما نحملك كل البطاقات دفعة وحدة</p></div></div>
+  <div id="categories" class="categories"></div>
+  <div class="searchRow"><input id="search" class="search" placeholder="ابحث عن Instagram، Telegram، ألعاب، أدوات..."><span class="count" id="shown">جاري التحميل...</span></div>
+  <div id="grid" class="grid"></div>
+  <button id="more" class="btn more">عرض المزيد</button>
+</div></section>
+
+<section id="packages" class="section"><div class="wrap">
+  <div class="sectionHead"><div><h2>💎 باقات الاشتراك</h2><p>اختار مدة الضمان المناسبة إلك — الباقات تتحرك وتوضح لك شنو تحصل</p></div></div>
+  <div class="packages">
+    <article class="pkg"><span class="tag">البداية</span><h3>ضمان شهر</h3><div class="price">10,000 <span>د.ع</span></div><ul><li>الوصول للتطبيقات المتوفرة</li><li>تحديثات خلال مدة الضمان</li><li>دعم عند الحاجة</li><li>ضمان لمدة 30 يوم</li></ul><button class="btn" onclick="join('باقة شهر')">اختيار الباقة</button></article>
+    <article class="pkg hot"><div class="ribbon">الأكثر طلباً</div><span class="tag">متوازن</span><h3>ضمان 3 أشهر</h3><div class="price">15,000 <span>د.ع</span></div><ul><li>الوصول للتطبيقات المتوفرة</li><li>تحديثات مستمرة</li><li>دعم فني</li><li>ضمان لمدة 3 أشهر</li></ul><button class="btn" onclick="join('باقة 3 أشهر')">اختيار الباقة</button></article>
+    <article class="pkg"><span class="tag">ممتد</span><h3>ضمان 6 أشهر</h3><div class="price">20,000 <span>د.ع</span></div><ul><li>الوصول للمكتبة</li><li>تحديثات خلال الاشتراك</li><li>دعم ومتابعة</li><li>ضمان لمدة 6 أشهر</li></ul><button class="btn" onclick="join('باقة 6 أشهر')">اختيار الباقة</button></article>
+    <article class="pkg"><span class="tag">VIP</span><h3>ضمان 10 أشهر</h3><div class="price">30,000 <span>د.ع</span></div><ul><li>أطول مدة ضمان</li><li>تحديثات مستمرة</li><li>دعم ومتابعة</li><li>ضمان لمدة 10 أشهر</li></ul><button class="btn" onclick="join('باقة 10 أشهر')">اختيار الباقة</button></article>
+  </div>
+</div></section>
+
+<section id="guarantees" class="section"><div class="wrap">
+  <div class="sectionHead"><div><h2>🛡️ شنو يشملك الاشتراك؟</h2><p>تفاصيل واضحة قبل ما تشترك</p></div></div>
+  <div class="guarantees">
+    <div class="guarantee"><div class="ico">🔄</div><b>تحديثات</b><p>التطبيقات الجديدة والتحديثات تنضاف للمكتبة باستمرار.</p></div>
+    <div class="guarantee"><div class="ico">🛡️</div><b>ضمان</b><p>مدة الضمان تختلف حسب الباقة التي تختارها: شهر، 3، 6 أو 10 أشهر.</p></div>
+    <div class="guarantee"><div class="ico">🎧</div><b>دعم</b><p>إذا واجهتك مشكلة بالتطبيق أو التثبيت، تواصل عبر القناة.</p></div>
+    <div class="guarantee"><div class="ico">📚</div><b>مكتبة كبيرة</b><p>الموقع مجرد واجهة تصفح؛ الوصول والتنزيل يكون من خلال قناة IPASTRONG.</p></div>
+  </div>
+</div></section>
+
+<section id="faq" class="section"><div class="wrap">
+  <div class="sectionHead"><div><h2>❓ أسئلة سريعة</h2><p>كلشي واضح قبل الاشتراك</p></div></div>
+  <div class="faq">
+    <details open><summary>هل زر «تنزيل التطبيق» ينزل IPA مباشرة؟</summary><p>لا. الزر يوديك مباشرة إلى قناة IPASTRONG حتى تكمل الاشتراك وتحصل على التطبيق من هناك.</p></details>
+    <details><summary>شنو فائدة الموقع إذن؟</summary><p>الموقع هو واجهة المتجر: تشوف التطبيقات، تبحث عنها، تشوف الوصف والإصدار والحجم والتفاصيل والباقات قبل الاشتراك.</p></details>
+    <details><summary>شنو مدة الضمان؟</summary><p>حسب الباقة: شهر، 3 أشهر، 6 أشهر أو 10 أشهر.</p></details>
+    <details><summary>هل التطبيقات كلها موجودة بالموقع؟</summary><p>الموقع يقرأ المصدر الرئيسي مباشرة، لذلك العدد يتحدث تلقائياً مع تحديث ملف التطبيقات.</p></details>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap"><div class="footerBrand">👑 IPASTRONG</div>متجر التطبيقات المعدلة والخدمات الخاصة بـ iOS<br><br>© IPASTRONG</div></footer>
+
+<div id="modal" class="modal" onclick="if(event.target===this)closeModal()">
+  <div class="modalBox"><button class="close" onclick="closeModal()">✕</button><div id="modalContent"></div></div>
+</div>
+<div id="toast" class="toast"></div>
+
+<script>
+const SOURCE='https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/ipastrong.json';
+const TG='https://t.me/ipastrong';
+let apps=[], filtered=[], category='الكل', visible=48;
+
+const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+const clean=s=>String(s??'').replace(/\\n/g,'\n').trim();
+function size(n){n=Number(n||0);if(!n)return '—';const u=['B','KB','MB','GB'];let i=0;while(n>=1024&&i<3){n/=1024;i++}return n.toFixed(i?1:0)+' '+u[i]}
+function normalize(x,i){
+ const v=Array.isArray(x.versions)&&x.versions.length?x.versions[0]:{};
+ return {id:x.id||x.bundleId||x.bundleIdentifier||('app-'+i),name:x.name||'تطبيق بدون اسم',
+ icon:x.iconURL||x.icon||'',category:x.category||'أخرى',
+ desc:clean(x.localizedDescription||x.description||'تطبيق متوفر ضمن IPASTRONG.'),
+ version:x.version||v.version||'—',date:x.versionDate||x.updatedAt||v.date||'',size:x.size||v.size||0};
+}
+async function load(){
+ try{
+  const r=await fetch(SOURCE,{cache:'no-store'});
+  if(!r.ok)throw Error('source');
+  const d=await r.json();
+  apps=(d.apps||[]).map(normalize).filter(a=>a.name);
+  document.getElementById('totalApps').textContent=apps.length.toLocaleString('ar-IQ');
+  buildCategories(); apply();
+ }catch(e){
+  document.getElementById('shown').textContent='تعذر تحميل المكتبة';
+  document.getElementById('grid').innerHTML='<div style="grid-column:1/-1;text-align:center;color:#a9aec2;padding:40px">تأكد من اتصال الإنترنت ثم أعد فتح الصفحة.</div>';
+ }
+}
+function buildCategories(){
+ const counts={};
+ apps.forEach(a=>counts[a.category]=(counts[a.category]||0)+1);
+ const cats=['الكل',...Object.keys(counts).sort((a,b)=>counts[b]-counts[a]).slice(0,18)];
+ document.getElementById('categories').innerHTML=cats.map(c=>`<button class="chip ${c===category?'active':''}" onclick="setCat(${JSON.stringify(c)})">${esc(c)}${c!=='الكل'?` · ${counts[c]}`:''}</button>`).join('');
+}
+function setCat(c){category=c;visible=48;buildCategories();apply()}
+function apply(){
+ const q=document.getElementById('search').value.trim().toLowerCase();
+ filtered=apps.filter(a=>(category==='الكل'||a.category===category)&&(!q||[a.name,a.category,a.desc,a.version].join(' ').toLowerCase().includes(q)));
+ render();
+ renderFeatured();
+}
+function render(){
+ const slice=filtered.slice(0,visible);
+ document.getElementById('grid').innerHTML=slice.map((a,i)=>card(a,i)).join('');
+ document.getElementById('shown').textContent=`عرض ${slice.length.toLocaleString('ar-IQ')} من ${filtered.length.toLocaleString('ar-IQ')} تطبيق`;
+ document.getElementById('more').style.display=visible<filtered.length?'block':'none';
+}
+function card(a,i){
+ const icon=a.icon?`<img loading="lazy" src="${esc(a.icon)}" alt="">`:`<div style="aspect-ratio:1;border-radius:19px;background:linear-gradient(135deg,#17192a,#292d4d);display:grid;place-items:center;font-size:38px">📱</div>`;
+ return `<article class="card"><div class="iconWrap">${icon}<span class="pill">${esc(a.category)}</span></div>
+ <h3>${esc(a.name)}</h3><p class="desc">${esc(a.desc)}</p>
+ <div class="cardMeta"><span>v ${esc(a.version)}</span><span>${size(a.size)}</span></div>
+ <div class="cardBtns"><button class="details" onclick='openApp(${JSON.stringify(a)})'>التفاصيل</button><button class="download" onclick="goTelegram()">تنزيل التطبيق</button></div></article>`;
+}
+function renderFeatured(){
+ const list=apps.slice().sort((a,b)=>String(b.date).localeCompare(String(a.date))).slice(0,12);
+ document.getElementById('featured').innerHTML=list.map(a=>`<article class="feature"><div class="featureTop">
+ ${a.icon?`<img loading="lazy" src="${esc(a.icon)}" alt="">`:'📱'}<div><b>${esc(a.name)}</b><br><small>${esc(a.category)} · v${esc(a.version)}</small></div></div>
+ <div class="mini">${esc(a.desc)}</div><button class="btn" style="margin-top:12px;width:100%" onclick='openApp(${JSON.stringify(a)})'>عرض التفاصيل</button></article>`).join('');
+}
+function openApp(a){
+ document.getElementById('modalContent').innerHTML=`<div class="modalHead">${a.icon?`<img src="${esc(a.icon)}" alt="">`:'<div style="font-size:60px">📱</div>'}<div><h2>${esc(a.name)}</h2><p>${esc(a.category)} · الإصدار ${esc(a.version)}</p></div></div>
+ <div class="infoGrid"><div class="info">الإصدار<b>${esc(a.version)}</b></div><div class="info">الحجم<b>${size(a.size)}</b></div><div class="info">التحديث<b>${esc(a.date||'—')}</b></div></div>
+ <div class="modalDesc">${esc(a.desc||'لا يوجد وصف إضافي.')}</div>
+ <div class="modalActions"><button class="btn" onclick="goTelegram()">تنزيل التطبيق</button><button class="btn ghost" onclick="closeModal()">إغلاق</button></div>`;
+ document.getElementById('modal').classList.add('show');
+}
+function closeModal(){document.getElementById('modal').classList.remove('show')}
+function goTelegram(){window.open(TG,'_blank','noopener')}
+function join(name){toast('راح نوديك للقناة حتى تختار '+name);setTimeout(goTelegram,350)}
+function toast(t){const x=document.getElementById('toast');x.textContent=t;x.classList.add('show');clearTimeout(window._t);window._t=setTimeout(()=>x.classList.remove('show'),2200)}
+document.getElementById('search').addEventListener('input',()=>{visible=48;apply()});
+document.getElementById('more').addEventListener('click',()=>{visible+=48;render()});
+load();
+</script>
+</body>
+</html>
