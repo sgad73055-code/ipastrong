@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>IPASTRONG Signer</title>
+<style>
+:root{color-scheme:dark;--bg:#07080d;--card:#10131c;--line:#232838;--text:#f5f7ff;--muted:#9ca5ba;--accent:#7c5cff;--accent2:#00d4ff;--ok:#39d98a;--danger:#ff5c77}
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Arial,sans-serif;background:radial-gradient(circle at 50% -10%,#25204d 0,#0b0c14 38%,var(--bg) 75%);color:var(--text);min-height:100vh}
+.wrap{width:min(720px,100%);margin:auto;padding:24px 16px 50px}.top{text-align:center;padding:18px 0 22px}.logo{width:62px;height:62px;border-radius:20px;margin:auto;display:grid;place-items:center;background:linear-gradient(135deg,var(--accent),var(--accent2));box-shadow:0 12px 35px #0008;font-weight:900;font-size:25px}.top h1{margin:14px 0 6px;font-size:29px}.top p{margin:0;color:var(--muted);font-size:14px}
+.card{background:linear-gradient(180deg,#121622ee,#0e1119ee);border:1px solid var(--line);border-radius:24px;padding:16px;margin:12px 0;box-shadow:0 18px 55px #0005;backdrop-filter:blur(16px)}.row{display:flex;align-items:center;gap:13px}.icon{width:48px;height:48px;border-radius:15px;background:#191e2b;display:grid;place-items:center;font-size:23px}.grow{flex:1}.title{font-weight:800;font-size:16px}.sub{font-size:12px;color:var(--muted);margin-top:4px;word-break:break-word}
+input[type=file]{display:none}.pick{margin-top:14px;border:1px dashed #394158;border-radius:17px;padding:14px;text-align:center;background:#0c0f17;color:#cbd2e5;cursor:pointer}.pick b{display:block;color:white;margin-bottom:4px}.pick small{color:var(--muted)}
+.btn{width:100%;border:0;border-radius:17px;padding:15px 18px;font-size:16px;font-weight:800;color:white;background:linear-gradient(135deg,var(--accent),#5c7cff);box-shadow:0 12px 30px #6c5cff33;cursor:pointer}.btn:disabled{opacity:.45;cursor:not-allowed;box-shadow:none}
+.note{font-size:12px;line-height:1.8;color:var(--muted);margin:12px 2px 0}.security{border-color:#254b3c;background:linear-gradient(180deg,#102019,#0d1512)}.security .icon{background:#123022}.progress{display:none;margin-top:15px}.bar{height:9px;background:#1b2130;border-radius:99px;overflow:hidden}.fill{height:100%;width:0;background:linear-gradient(90deg,var(--accent),var(--accent2));transition:width .25s}.status{text-align:center;color:#b8c0d4;font-size:12px;margin-top:8px}.result{display:none;text-align:center}.download{display:block;text-decoration:none;background:var(--ok);color:#06140d;padding:14px;border-radius:16px;font-weight:900;margin-top:12px}.warn{color:#ffcf70}.err{color:var(--danger)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top"><div class="logo">IPA</div><h1>IPASTRONG Signer</h1><p>أداة توقيع IPA — استخدم شهادة التوقيع الخاصة بك</p></header>
+
+<section class="card">
+<div class="row"><div class="icon">📦</div><div class="grow"><div class="title">ملف IPA</div><div id="ipaName" class="sub">ما مختار أي ملف</div></div></div>
+<label class="pick" for="ipa"><b>اختيار ملف IPA</b><small>اختَر التطبيق الذي تملك صلاحية توقيعه</small></label>
+<input id="ipa" type="file" accept=".ipa,application/octet-stream">
+</section>
+
+<section class="card">
+<div class="row"><div class="icon">🔐</div><div class="grow"><div class="title">شهادة التوقيع</div><div id="p12Name" class="sub">ملف .p12 غير مختار</div></div></div>
+<label class="pick" for="p12"><b>اختيار شهادة .p12</b><small>شهادتك الخاصة فقط</small></label>
+<input id="p12" type="file" accept=".p12,application/x-pkcs12">
+<input id="p12Pass" type="password" placeholder="باسورد شهادة .p12" autocomplete="off" style="width:100%;margin-top:12px;padding:14px;border-radius:15px;border:1px solid #2b3244;background:#0b0e15;color:white;font-size:15px;outline:none">
+</section>
+
+<section class="card">
+<div class="row"><div class="icon">📄</div><div class="grow"><div class="title">Provisioning Profile</div><div id="provName" class="sub">ملف .mobileprovision غير مختار</div></div></div>
+<label class="pick" for="prov"><b>اختيار ملف .mobileprovision</b><small>استخدم Profile متوافقاً مع التطبيق والشهادة</small></label>
+<input id="prov" type="file" accept=".mobileprovision,application/octet-stream">
+</section>
+
+<section class="card security">
+<div class="row"><div class="icon">🛡️</div><div class="grow"><div class="title">الخصوصية والأمان</div><div class="note">لا تدخل Apple ID أو كلمة مرور Apple هنا. باسورد الـP12 يستخدم فقط أثناء عملية التوقيع. يجب أن يحذف السيرفر الملفات المؤقتة بعد انتهاء العملية وألا يسجل الباسورد.</div></div></div>
+</section>
+
+<section class="card">
+<button id="signBtn" class="btn" disabled>🚀 بدء التوقيع</button>
+<div id="progress" class="progress"><div class="bar"><div id="fill" class="fill"></div></div><div id="status" class="status">جاري تجهيز الملفات…</div></div>
+<div id="message" class="note"></div>
+<div id="result" class="result"><div style="font-size:42px;margin-top:12px">✅</div><div class="title">تم تجهيز الملف</div><a id="download" class="download" href="#">📥 تحميل IPA الموقّع</a></div>
+</section>
+</div>
+
+<script>
+const $=id=>document.getElementById(id),ipa=$("ipa"),p12=$("p12"),prov=$("prov"),pass=$("p12Pass"),btn=$("signBtn");
+function size(n){return n<1024?n+" B":n<1048576?(n/1024).toFixed(1)+" KB":(n/1048576).toFixed(1)+" MB"}
+function name(input,target){const f=input.files[0];$(target).textContent=f?f.name+" • "+size(f.size):"ما مختار أي ملف"}
+ipa.onchange=()=>{name(ipa,"ipaName");ready()};p12.onchange=()=>{name(p12,"p12Name");ready()};prov.onchange=()=>{name(prov,"provName");ready()};pass.oninput=ready;
+function ready(){btn.disabled=!(ipa.files[0]&&p12.files[0]&&prov.files[0]&&pass.value.trim())}
+btn.onclick=async()=>{
+ const fd=new FormData();fd.append("ipa",ipa.files[0]);fd.append("certificate",p12.files[0]);fd.append("certificate_password",pass.value);fd.append("provisioning_profile",prov.files[0]);
+ $("progress").style.display="block";$("result").style.display="none";$("message").textContent="";$("fill").style.width="15%";$("status").textContent="جاري رفع الملفات…";btn.disabled=true;
+ try{
+  const r=await fetch("/api/sign",{method:"POST",body:fd});$("fill").style.width="75%";if(!r.ok)throw Error("فشل خادم التوقيع");
+  const d=await r.json();if(!d.download_url)throw Error("الخادم لم يرجع رابط التحميل");
+  $("fill").style.width="100%";$("status").textContent="اكتملت عملية التوقيع";$("download").href=d.download_url;$("result").style.display="block";
+ }catch(e){$("fill").style.width="0";$("status").textContent="لم يتم التوقيع";$("message").innerHTML='<span class="err">'+e.message+'</span><br><span class="warn">الواجهة جاهزة، لكن Backend التوقيع لم يتم ربطه بعد.</span>'}
+ finally{btn.disabled=false;ready()}
+};
+</script>
+</body>
+</html>
