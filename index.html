@@ -4,9 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#06070c">
+
 <title>IPASTRONG — متجر التطبيقات</title>
 
 <style>
+
 :root{
   --bg:#06070c;
   --panel:#10121a;
@@ -19,7 +21,9 @@
   --green:#62f7b2;
 }
 
-*{box-sizing:border-box}
+*{
+  box-sizing:border-box;
+}
 
 html{
   scroll-behavior:smooth;
@@ -29,10 +33,31 @@ body{
   margin:0;
   color:var(--text);
   background:
-    radial-gradient(circle at 10% 0%,rgba(155,92,255,.20),transparent 28%),
-    radial-gradient(circle at 90% 12%,rgba(255,61,154,.13),transparent 25%),
-    linear-gradient(180deg,#05060a,#080a11 55%,#05060a);
-  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Arial,sans-serif;
+    radial-gradient(
+      circle at 10% 0%,
+      rgba(155,92,255,.20),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 90% 12%,
+      rgba(255,61,154,.13),
+      transparent 25%
+    ),
+    linear-gradient(
+      180deg,
+      #05060a,
+      #080a11 55%,
+      #05060a
+    );
+
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "SF Pro Display",
+    "Segoe UI",
+    Arial,
+    sans-serif;
+
   overflow-x:hidden;
 }
 
@@ -42,9 +67,18 @@ body:before{
   inset:0;
   pointer-events:none;
   opacity:.025;
+
   background-image:
-    linear-gradient(rgba(255,255,255,.5) 1px,transparent 1px),
-    linear-gradient(90deg,rgba(255,255,255,.5) 1px,transparent 1px);
+    linear-gradient(
+      rgba(255,255,255,.5) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255,255,255,.5) 1px,
+      transparent 1px
+    );
+
   background-size:34px 34px;
 }
 
@@ -53,28 +87,42 @@ a{
   color:inherit;
 }
 
-button,input{
+button,
+input{
   font:inherit;
 }
 
 .container{
-  width:min(1180px,calc(100% - 22px));
+  width:min(
+    1180px,
+    calc(100% - 22px)
+  );
+
   margin:auto;
 }
 
-/* HEADER */
+
+/* =========================
+   HEADER
+========================= */
 
 header{
   position:sticky;
   top:0;
   z-index:80;
-  background:rgba(6,7,12,.78);
+
+  background:
+    rgba(6,7,12,.78);
+
   backdrop-filter:blur(22px);
-  border-bottom:1px solid var(--line);
+
+  border-bottom:
+    1px solid var(--line);
 }
 
 .nav{
   height:62px;
+
   display:flex;
   align-items:center;
   justify-content:space-between;
@@ -84,17 +132,29 @@ header{
   display:flex;
   align-items:center;
   gap:9px;
+
   font-weight:900;
 }
 
 .logo{
   width:38px;
   height:38px;
+
   border-radius:13px;
+
   display:grid;
   place-items:center;
-  background:linear-gradient(135deg,var(--purple),var(--pink));
-  box-shadow:0 0 28px rgba(155,92,255,.28);
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--purple),
+      var(--pink)
+    );
+
+  box-shadow:
+    0 0 28px
+    rgba(155,92,255,.28);
 }
 
 .navlinks{
@@ -105,7 +165,9 @@ header{
 .navlinks a{
   font-size:12px;
   color:#bbbcc7;
+
   padding:9px 12px;
+
   border-radius:11px;
 }
 
@@ -114,7 +176,10 @@ header{
   color:#fff;
 }
 
-/* HERO */
+
+/* =========================
+   HERO
+========================= */
 
 .hero{
   text-align:center;
@@ -125,89 +190,167 @@ header{
   display:inline-flex;
   align-items:center;
   gap:7px;
+
   padding:8px 12px;
-  border:1px solid rgba(155,92,255,.3);
-  background:rgba(155,92,255,.08);
+
+  border:
+    1px solid
+    rgba(155,92,255,.3);
+
+  background:
+    rgba(155,92,255,.08);
+
   border-radius:999px;
+
   color:#dbcaff;
+
   font-size:11px;
 }
 
 .dot{
   width:7px;
   height:7px;
+
   border-radius:50%;
+
   background:var(--green);
-  box-shadow:0 0 12px var(--green);
+
+  box-shadow:
+    0 0 12px
+    var(--green);
 }
 
 .hero h1{
-  font-size:clamp(39px,7vw,72px);
+  font-size:
+    clamp(
+      39px,
+      7vw,
+      72px
+    );
+
   line-height:1.03;
+
   letter-spacing:-2.4px;
-  margin:18px auto 12px;
+
+  margin:
+    18px auto
+    12px;
+
   max-width:850px;
 }
 
 .gradient{
-  background:linear-gradient(90deg,#fff,#d1b4ff,#ff79bf);
+  background:
+    linear-gradient(
+      90deg,
+      #fff,
+      #d1b4ff,
+      #ff79bf
+    );
+
   -webkit-background-clip:text;
   background-clip:text;
+
   color:transparent;
 }
 
 .hero p{
   max-width:650px;
+
   margin:auto;
+
   color:#a4a6b3;
+
   font-size:14px;
+
   line-height:1.9;
 }
 
+
+/* SEARCH */
+
 .search{
   max-width:720px;
-  margin:23px auto 0;
+
+  margin:
+    23px auto
+    0;
+
   position:relative;
 }
 
 .search input{
   width:100%;
   height:56px;
-  border:1px solid var(--line);
+
+  border:
+    1px solid
+    var(--line);
+
   border-radius:17px;
-  background:rgba(17,19,28,.9);
+
+  background:
+    rgba(17,19,28,.9);
+
   color:#fff;
-  padding:0 49px 0 16px;
+
+  padding:
+    0 49px
+    0 16px;
+
   outline:none;
 }
 
 .search input:focus{
-  border-color:rgba(155,92,255,.55);
-  box-shadow:0 0 0 4px rgba(155,92,255,.08);
+  border-color:
+    rgba(155,92,255,.55);
+
+  box-shadow:
+    0 0 0 4px
+    rgba(155,92,255,.08);
 }
 
 .search span{
   position:absolute;
+
   right:17px;
   top:16px;
+
   color:#898b98;
+
   font-size:20px;
 }
 
+
+/* STATS */
+
 .stats{
   display:flex;
+
   justify-content:center;
+
   gap:8px;
+
   flex-wrap:wrap;
+
   margin-top:14px;
 }
 
 .stat{
   font-size:10px;
+
   color:#a9abb7;
-  border:1px solid var(--line);
-  background:rgba(255,255,255,.035);
-  padding:8px 11px;
+
+  border:
+    1px solid
+    var(--line);
+
+  background:
+    rgba(255,255,255,.035);
+
+  padding:
+    8px 11px;
+
   border-radius:999px;
 }
 
@@ -216,23 +359,46 @@ header{
   margin-left:4px;
 }
 
-/* CATEGORIES */
+
+/* =========================
+   TOP CATEGORIES
+========================= */
 
 .categoryTop{
+
   position:sticky;
+
   top:62px;
+
   z-index:70;
-  padding:9px 0 10px;
-  background:rgba(6,7,12,.88);
-  backdrop-filter:blur(22px);
-  border-top:1px solid rgba(255,255,255,.04);
-  border-bottom:1px solid rgba(255,255,255,.08);
+
+  padding:
+    9px 0
+    10px;
+
+  background:
+    rgba(6,7,12,.90);
+
+  backdrop-filter:
+    blur(22px);
+
+  border-top:
+    1px solid
+    rgba(255,255,255,.04);
+
+  border-bottom:
+    1px solid
+    rgba(255,255,255,.08);
 }
 
 .categoryTopHead{
+
   display:flex;
+
   align-items:center;
+
   justify-content:space-between;
+
   margin-bottom:7px;
 }
 
@@ -246,10 +412,15 @@ header{
 }
 
 .chips{
+
   display:flex;
+
   gap:7px;
+
   overflow-x:auto;
+
   scrollbar-width:none;
+
   padding-bottom:2px;
 }
 
@@ -258,185 +429,391 @@ header{
 }
 
 .chip{
+
   white-space:nowrap;
-  border:1px solid var(--line);
+
+  border:
+    1px solid
+    var(--line);
+
   background:#0f1119;
+
   color:#a7a9b5;
+
   border-radius:999px;
-  padding:8px 12px;
+
+  padding:
+    8px 12px;
+
   font-size:11px;
+
   cursor:pointer;
+
+  transition:.2s;
 }
 
 .chip.active{
+
   color:#fff;
-  border-color:rgba(155,92,255,.55);
-  background:linear-gradient(
-    135deg,
-    rgba(155,92,255,.24),
-    rgba(255,61,154,.13)
-  );
+
+  border-color:
+    rgba(155,92,255,.55);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(155,92,255,.24),
+      rgba(255,61,154,.13)
+    );
+
+  box-shadow:
+    0 0 18px
+    rgba(155,92,255,.12);
 }
 
-/* SECTIONS */
+
+/* =========================
+   SECTIONS
+========================= */
 
 section{
   padding:28px 0;
 }
 
 .sectionHead{
+
   display:flex;
+
   align-items:end;
+
   justify-content:space-between;
+
   margin-bottom:14px;
 }
 
 .sectionHead h2{
+
   margin:0;
+
   font-size:21px;
 }
 
 .sectionHead p{
-  margin:5px 0 0;
+
+  margin:
+    5px 0
+    0;
+
   color:#858895;
+
   font-size:11px;
 }
 
-/* APP GRID */
+
+/* =========================
+   APP GRID
+========================= */
 
 .grid{
+
   display:grid;
-  grid-template-columns:repeat(5,minmax(0,1fr));
+
+  grid-template-columns:
+    repeat(
+      5,
+      minmax(0,1fr)
+    );
+
   gap:12px;
 }
 
+
+/* APP CARD */
+
 .card{
+
   min-width:0;
+
   position:relative;
+
   overflow:hidden;
+
   padding:9px;
+
   border-radius:21px;
-  background:linear-gradient(
-    180deg,
-    rgba(20,22,32,.97),
-    rgba(9,10,16,.99)
-  );
-  border:1px solid rgba(255,255,255,.08);
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(20,22,32,.97),
+      rgba(9,10,16,.99)
+    );
+
+  border:
+    1px solid
+    rgba(255,255,255,.08);
+
   cursor:pointer;
+
   transition:
     transform .22s,
     border-color .22s,
     box-shadow .22s;
+
+  -webkit-tap-highlight-color:
+    transparent;
 }
 
 .card:hover{
-  transform:translateY(-5px);
-  border-color:rgba(155,92,255,.45);
-  box-shadow:0 20px 48px rgba(0,0,0,.42);
+
+  transform:
+    translateY(-5px);
+
+  border-color:
+    rgba(155,92,255,.45);
+
+  box-shadow:
+    0 20px 48px
+    rgba(0,0,0,.42);
 }
 
+
+/* ICON */
+
 .iconWrap{
+
   position:relative;
+
   aspect-ratio:1;
+
   border-radius:17px;
+
   overflow:hidden;
+
   display:grid;
+
   place-items:center;
+
   background:
     radial-gradient(
       circle at 50% 28%,
       rgba(155,92,255,.28),
       rgba(20,22,32,.96) 62%
     );
-  border:1px solid rgba(255,255,255,.07);
+
+  border:
+    1px solid
+    rgba(255,255,255,.07);
 }
 
 .icon{
+
   width:70%;
   height:70%;
+
   object-fit:contain;
+
   border-radius:22%;
-  filter:drop-shadow(0 12px 18px rgba(0,0,0,.38));
+
+  filter:
+    drop-shadow(
+      0 12px 18px
+      rgba(0,0,0,.38)
+    );
+
+  transition:
+    transform .25s;
 }
+
+.card:hover .icon{
+
+  transform:
+    scale(1.05);
+}
+
+
+/* CATEGORY BADGE */
 
 .cardBadge{
+
   position:absolute;
+
   top:7px;
   right:7px;
+
   z-index:2;
+
   max-width:78%;
-  padding:5px 7px;
+
+  padding:
+    5px 7px;
+
   border-radius:999px;
-  background:rgba(4,5,9,.68);
-  backdrop-filter:blur(9px);
-  border:1px solid rgba(255,255,255,.08);
+
+  background:
+    rgba(4,5,9,.68);
+
+  backdrop-filter:
+    blur(9px);
+
+  border:
+    1px solid
+    rgba(255,255,255,.08);
+
   font-size:8px;
+
   color:#d9dbe4;
+
   white-space:nowrap;
+
   overflow:hidden;
+
   text-overflow:ellipsis;
 }
+
+
+/* NAME */
 
 .card h3{
-  margin:10px 3px 4px;
+
+  margin:
+    10px 3px
+    4px;
+
   font-size:13px;
+
   white-space:nowrap;
+
   overflow:hidden;
+
   text-overflow:ellipsis;
 }
+
+
+/* META */
 
 .meta{
-  margin:0 3px 9px;
+
+  margin:
+    0 3px
+    9px;
+
   color:#7f8290;
+
   font-size:9px;
+
   white-space:nowrap;
+
   overflow:hidden;
+
   text-overflow:ellipsis;
 }
 
-.download,
-.detailBtn{
+
+/* DOWNLOAD */
+
+.download{
+
   width:100%;
+
   border:0;
+
   border-radius:12px;
+
   height:35px;
+
   color:#fff;
+
   font-size:10px;
+
   font-weight:900;
+
   cursor:pointer;
-  background:linear-gradient(135deg,#9b5cff,#ff3d9a);
+
+  background:
+    linear-gradient(
+      135deg,
+      #9b5cff,
+      #ff3d9a
+    );
+
+  transition:.2s;
 }
 
+.download:active{
+
+  transform:
+    scale(.96);
+}
+
+
+/* MORE */
+
 .more{
+
   text-align:center;
+
   margin-top:18px;
 }
 
 .more button{
-  border:1px solid rgba(155,92,255,.4);
+
+  border:
+    1px solid
+    rgba(155,92,255,.4);
+
   background:#11131c;
+
   color:#fff;
+
   border-radius:12px;
-  padding:10px 19px;
+
+  padding:
+    10px 19px;
+
   cursor:pointer;
 }
 
-/* PACKAGES */
+
+/* =========================
+   PACKAGES
+========================= */
 
 .packages{
+
   display:grid;
-  grid-template-columns:repeat(4,1fr);
+
+  grid-template-columns:
+    repeat(4,1fr);
+
   gap:11px;
 }
 
 .package{
+
   position:relative;
+
   overflow:hidden;
+
   padding:20px;
-  border:1px solid var(--line);
+
+  border:
+    1px solid
+    var(--line);
+
   border-radius:21px;
-  background:linear-gradient(145deg,#141622,#090a10);
-  animation:float 4.6s ease-in-out infinite;
+
+  background:
+    linear-gradient(
+      145deg,
+      #141622,
+      #090a10
+    );
+
+  animation:
+    float 4.6s
+    ease-in-out
+    infinite;
 }
 
 .package:nth-child(2){
@@ -452,50 +829,88 @@ section{
 }
 
 @keyframes float{
+
   50%{
-    transform:translateY(-5px);
+    transform:
+      translateY(-5px);
   }
+
 }
 
 .package h3{
+
   margin:0;
+
   font-size:14px;
 }
 
 .price{
+
   font-size:25px;
+
   font-weight:900;
-  margin:8px 0;
+
+  margin:
+    8px 0;
 }
 
 .package p{
-  margin:5px 0 12px;
+
+  margin:
+    5px 0
+    12px;
+
   color:#9093a1;
+
   font-size:10px;
+
   line-height:1.7;
 }
 
 .guarantee{
-  padding:8px 10px;
+
+  padding:
+    8px 10px;
+
   border-radius:10px;
+
   color:#6effb7;
-  background:rgba(98,247,178,.06);
-  border:1px solid rgba(98,247,178,.14);
+
+  background:
+    rgba(98,247,178,.06);
+
+  border:
+    1px solid
+    rgba(98,247,178,.14);
+
   font-size:10px;
 }
 
-/* INFO */
+
+/* =========================
+   INFO
+========================= */
 
 .infoGrid{
+
   display:grid;
-  grid-template-columns:repeat(3,1fr);
+
+  grid-template-columns:
+    repeat(3,1fr);
+
   gap:11px;
 }
 
 .info{
+
   padding:18px;
-  border:1px solid var(--line);
+
+  border:
+    1px solid
+    var(--line);
+
   border-radius:19px;
+
   background:#0e1018;
 }
 
@@ -504,21 +919,37 @@ section{
 }
 
 .info p{
+
   color:#8f92a0;
+
   font-size:10px;
+
   line-height:1.8;
 }
 
-/* MODAL */
+
+/* =========================
+   MODAL
+========================= */
 
 .modal{
+
   position:fixed;
+
   inset:0;
+
   z-index:100;
-  background:rgba(0,0,0,.76);
-  backdrop-filter:blur(15px);
+
+  background:
+    rgba(0,0,0,.76);
+
+  backdrop-filter:
+    blur(15px);
+
   display:none;
+
   align-items:end;
+
   padding:10px;
 }
 
@@ -527,90 +958,214 @@ section{
 }
 
 .sheet{
-  width:min(690px,100%);
+
+  width:min(
+    690px,
+    100%
+  );
+
   max-height:90vh;
+
   overflow:auto;
+
   padding:19px;
+
   border-radius:24px;
+
   background:#10121b;
-  border:1px solid var(--line);
-  box-shadow:0 30px 100px rgba(0,0,0,.65);
+
+  border:
+    1px solid
+    var(--line);
+
+  box-shadow:
+    0 30px 100px
+    rgba(0,0,0,.65);
+
+  animation:
+    sheetIn .25s
+    ease;
+}
+
+@keyframes sheetIn{
+
+  from{
+    transform:
+      translateY(30px);
+
+    opacity:0;
+  }
+
+  to{
+    transform:
+      translateY(0);
+
+    opacity:1;
+  }
+
 }
 
 .close{
+
   float:left;
+
   width:34px;
   height:34px;
+
   border:0;
+
   border-radius:10px;
+
   background:#1b1e29;
+
   color:#fff;
+
+  cursor:pointer;
 }
 
 .detailTop{
+
   clear:both;
+
   display:flex;
+
   align-items:center;
+
   gap:13px;
+
   padding-top:8px;
 }
 
 .detailTop img{
+
   width:86px;
   height:86px;
+
   border-radius:21px;
+
   object-fit:contain;
+
   background:#181b27;
+
   padding:8px;
 }
 
 .detailTop h2{
-  margin:0 0 6px;
+
+  margin:
+    0 0
+    6px;
+
   font-size:21px;
 }
 
 .detailTop p{
+
   margin:0;
+
   color:#898c99;
+
   font-size:10px;
 }
 
 .desc{
+
   color:#b2b5c0;
+
   font-size:12px;
+
   line-height:1.9;
-  margin:17px 0;
+
+  margin:
+    17px 0;
 }
 
 .detailBtn{
+
+  width:100%;
+
+  border:0;
+
+  border-radius:12px;
+
   height:47px;
+
+  color:#fff;
+
+  font-size:12px;
+
+  font-weight:900;
+
+  cursor:pointer;
+
+  background:
+    linear-gradient(
+      135deg,
+      #9b5cff,
+      #ff3d9a
+    );
 }
 
-/* FOOTER */
+
+/* =========================
+   FOOTER
+========================= */
 
 footer{
-  border-top:1px solid var(--line);
-  padding:25px 0;
+
+  border-top:
+    1px solid
+    var(--line);
+
+  padding:
+    25px 0;
+
   color:#727582;
+
   text-align:center;
+
   font-size:10px;
 }
 
-/* MOBILE */
+
+/* =========================
+   TABLET
+========================= */
 
 @media(max-width:900px){
+
   .grid{
-    grid-template-columns:repeat(4,1fr);
+
+    grid-template-columns:
+      repeat(
+        4,
+        1fr
+      );
   }
 
   .packages{
-    grid-template-columns:repeat(2,1fr);
+
+    grid-template-columns:
+      repeat(
+        2,
+        1fr
+      );
   }
 }
 
+
+/* =========================
+   MOBILE
+========================= */
+
 @media(max-width:620px){
+
   .container{
-    width:calc(100% - 18px);
+
+    width:
+      calc(
+        100% - 18px
+      );
   }
 
   .navlinks{
@@ -618,560 +1173,1463 @@ footer{
   }
 
   .hero{
+
     padding-top:36px;
   }
 
   .hero h1{
+
     font-size:42px;
-    letter-spacing:-1.6px;
+
+    letter-spacing:
+      -1.6px;
   }
 
   .categoryTop{
+
     top:62px;
   }
 
   .categoryTopHead span{
+
     display:none;
   }
 
   .grid{
-    grid-template-columns:repeat(2,1fr);
+
+    grid-template-columns:
+      repeat(
+        2,
+        1fr
+      );
+
     gap:9px;
   }
 
   .card{
+
     padding:8px;
+
     border-radius:18px;
   }
 
   .iconWrap{
+
     border-radius:15px;
   }
 
   .packages{
-    grid-template-columns:1fr 1fr;
+
+    grid-template-columns:
+      1fr 1fr;
+
     gap:8px;
   }
 
   .package{
+
     padding:14px;
+
     border-radius:17px;
   }
 
   .price{
+
     font-size:20px;
   }
 
   .infoGrid{
-    grid-template-columns:1fr;
+
+    grid-template-columns:
+      1fr;
   }
 
   .sectionHead h2{
+
     font-size:19px;
   }
+
 }
+
+
+/* =========================
+   NO RESULTS
+========================= */
+
+.noResults{
+
+  grid-column:
+    1 / -1;
+
+  text-align:center;
+
+  padding:60px 10px;
+
+  color:#888b98;
+
+  font-size:13px;
+}
+
 </style>
 </head>
 
+
 <body>
 
+
+<!-- =========================
+     HEADER
+========================= -->
+
 <header>
+
 <div class="container nav">
 
-<a class="brand" href="#">
-  <span class="logo">IP</span>
-  <span>IPASTRONG</span>
+<a
+  class="brand"
+  href="#"
+>
+
+  <span class="logo">
+    IP
+  </span>
+
+  <span>
+    IPASTRONG
+  </span>
+
 </a>
 
+
 <nav class="navlinks">
-  <a href="#apps">التطبيقات</a>
-  <a href="#packages">الباقات</a>
-  <a href="#faq">المعلومات</a>
-  <a href="https://t.me/ipastrong">القناة</a>
+
+<a href="#apps">
+  التطبيقات
+</a>
+
+<a href="#packages">
+  الباقات
+</a>
+
+<a href="#faq">
+  المعلومات
+</a>
+
+<a href="https://t.me/ipastrong">
+  القناة
+</a>
+
 </nav>
 
 </div>
+
 </header>
+
+
+
+<!-- =========================
+     MAIN
+========================= -->
 
 <main>
 
+
+<!-- HERO -->
+
 <section class="hero">
+
 <div class="container">
 
 <span class="badge">
+
   <i class="dot"></i>
+
   IPASTRONG — مكتبة التطبيقات
+
 </span>
 
+
 <h1>
-كل تطبيقاتك المفضلة<br>
-<span class="gradient">بمكان واحد.</span>
+
+  كل تطبيقاتك المفضلة
+
+  <br>
+
+  <span class="gradient">
+    بمكان واحد.
+  </span>
+
 </h1>
 
+
 <p>
-ابحث عن التطبيق أو اللعبة، شوف التفاصيل والإصدار، وبعدها اضغط تنزيل.
+
+  ابحث عن التطبيق أو اللعبة،
+  شوف التفاصيل والإصدار،
+  وبعدها اضغط تنزيل.
+
 </p>
 
+
 <div class="search">
-  <span>⌕</span>
-  <input id="search" placeholder="ابحث عن تطبيق أو لعبة...">
+
+<span>
+  ⌕
+</span>
+
+<input
+  id="search"
+  type="search"
+  autocomplete="off"
+  placeholder="ابحث عن تطبيق أو لعبة..."
+>
+
 </div>
+
 
 <div class="stats">
-  <span class="stat"><b id="count">—</b> تطبيق</span>
-  <span class="stat">تحديثات مستمرة</span>
-  <span class="stat">واجهة سريعة</span>
+
+<span class="stat">
+
+  <b id="count">
+    —
+  </b>
+
+  تطبيق
+
+</span>
+
+
+<span class="stat">
+  تحديثات مستمرة
+</span>
+
+
+<span class="stat">
+  واجهة سريعة
+</span>
+
 </div>
 
 </div>
+
 </section>
 
-<section class="categoryTop" id="categoryTop">
+
+
+<!-- =========================
+     CATEGORIES
+========================= -->
+
+<section
+  class="categoryTop"
+  id="categoryTop"
+>
+
 <div class="container">
+
 
 <div class="categoryTopHead">
-  <strong>📂 الأقسام</strong>
-  <span>اضغط على القسم حتى تظهر تطبيقاته</span>
+
+<strong>
+  📂 الأقسام
+</strong>
+
+<span>
+  اضغط على القسم حتى تظهر تطبيقاته
+</span>
+
 </div>
 
-<div id="topChips" class="chips"></div>
+
+<div
+  id="topChips"
+  class="chips"
+></div>
+
 
 </div>
+
 </section>
 
+
+
+<!-- =========================
+     PACKAGES
+========================= -->
+
 <section id="packages">
+
 <div class="container">
 
+
 <div class="sectionHead">
+
 <div>
-  <h2>💎 الباقات</h2>
-  <p>اختار مدة الضمان المناسبة إلك</p>
+
+<h2>
+  💎 الباقات
+</h2>
+
+<p>
+  اختار مدة الضمان المناسبة إلك
+</p>
+
 </div>
+
 </div>
+
 
 <div class="packages">
 
-<article class="package">
-  <h3>ضمان شهر</h3>
-  <div class="price">10,000 د.ع</div>
-  <p>نفس الخدمة، الفرق بمدة الضمان.</p>
-  <div class="guarantee">🛡️ 30 يوم</div>
-</article>
 
 <article class="package">
-  <h3>ضمان 3 أشهر</h3>
-  <div class="price">15,000 د.ع</div>
-  <p>نفس الخدمة، ضمان أطول.</p>
-  <div class="guarantee">🛡️ 90 يوم</div>
+
+<h3>
+  ضمان شهر
+</h3>
+
+<div class="price">
+  10,000 د.ع
+</div>
+
+<p>
+  نفس الخدمة، الفرق بمدة الضمان.
+</p>
+
+<div class="guarantee">
+  🛡️ 30 يوم
+</div>
+
 </article>
 
-<article class="package">
-  <h3>ضمان 6 أشهر</h3>
-  <div class="price">20,000 د.ع</div>
-  <p>نفس الخدمة، ضمان أطول.</p>
-  <div class="guarantee">🛡️ 180 يوم</div>
-</article>
+
 
 <article class="package">
-  <h3>ضمان 10 أشهر</h3>
-  <div class="price">30,000 د.ع</div>
-  <p>نفس الخدمة، أطول مدة ضمان.</p>
-  <div class="guarantee">🛡️ 300 يوم</div>
+
+<h3>
+  ضمان 3 أشهر
+</h3>
+
+<div class="price">
+  15,000 د.ع
+</div>
+
+<p>
+  نفس الخدمة، ضمان أطول.
+</p>
+
+<div class="guarantee">
+  🛡️ 90 يوم
+</div>
+
 </article>
+
+
+
+<article class="package">
+
+<h3>
+  ضمان 6 أشهر
+</h3>
+
+<div class="price">
+  20,000 د.ع
+</div>
+
+<p>
+  نفس الخدمة، ضمان أطول.
+</p>
+
+<div class="guarantee">
+  🛡️ 180 يوم
+</div>
+
+</article>
+
+
+
+<article class="package">
+
+<h3>
+  ضمان 10 أشهر
+</h3>
+
+<div class="price">
+  30,000 د.ع
+</div>
+
+<p>
+  نفس الخدمة، أطول مدة ضمان.
+</p>
+
+<div class="guarantee">
+  🛡️ 300 يوم
+</div>
+
+</article>
+
 
 </div>
+
 </div>
+
 </section>
+
+
+
+<!-- =========================
+     APPS
+========================= -->
 
 <section id="apps">
+
 <div class="container">
 
+
 <div class="sectionHead">
+
 <div>
-  <h2>🔥 التطبيقات</h2>
-  <p id="resultText">جاري تحميل المكتبة...</p>
-</div>
+
+<h2>
+  🔥 التطبيقات
+</h2>
+
+<p id="resultText">
+  جاري تحميل المكتبة...
+</p>
+
 </div>
 
-<div id="chips" class="chips"></div>
+</div>
 
-<div id="grid" class="grid" style="margin-top:14px"></div>
+
+<!--
+  هذا الـchips مخفي.
+  الأقسام الرئيسية موجودة فوق فقط.
+-->
+
+<div
+  id="chips"
+  class="chips"
+  style="display:none"
+></div>
+
+
+<div
+  id="grid"
+  class="grid"
+></div>
+
 
 <div class="more">
-  <button id="more">عرض المزيد</button>
-</div>
 
-</div>
-</section>
-
-<section id="faq">
-<div class="container">
-
-<div class="sectionHead">
-<div>
-  <h2>✨ IPASTRONG</h2>
-  <p>معلومات سريعة</p>
-</div>
-</div>
-
-<div class="infoGrid">
-
-<div class="info">
-  <b>🔎 بحث سريع</b>
-  <p>ابحث باسم التطبيق أو اللعبة خلال ثواني.</p>
-</div>
-
-<div class="info">
-  <b>📚 مكتبة كبيرة</b>
-  <p>التطبيقات تُقرأ من ملف المكتبة الرئيسي للموقع.</p>
-</div>
-
-<div class="info">
-  <b>📲 تفاصيل واضحة</b>
-  <p>كل بطاقة تعرض القسم والإصدار والحجم إذا كان متوفراً.</p>
-</div>
-
-</div>
-</div>
-</section>
-
-</main>
-
-<footer>
-IPASTRONG © 2026
-</footer>
-
-<div id="modal" class="modal">
-
-<div class="sheet">
-
-<button class="close" onclick="closeModal()">✕</button>
-
-<div class="detailTop">
-
-<img id="mIcon">
-
-<div>
-<h2 id="mName"></h2>
-<p id="mMeta"></p>
-</div>
-
-</div>
-
-<div id="mDesc" class="desc"></div>
-
-<button class="detailBtn" onclick="goTelegram()">
-📲 تنزيل التطبيق
+<button id="more">
+  عرض المزيد
 </button>
 
 </div>
+
+
 </div>
+
+</section>
+
+
+
+<!-- =========================
+     INFO
+========================= -->
+
+<section id="faq">
+
+<div class="container">
+
+
+<div class="sectionHead">
+
+<div>
+
+<h2>
+  ✨ IPASTRONG
+</h2>
+
+<p>
+  معلومات سريعة
+</p>
+
+</div>
+
+</div>
+
+
+<div class="infoGrid">
+
+
+<div class="info">
+
+<b>
+  🔎 بحث سريع
+</b>
+
+<p>
+  ابحث باسم التطبيق أو اللعبة خلال ثواني.
+</p>
+
+</div>
+
+
+
+<div class="info">
+
+<b>
+  📚 مكتبة كبيرة
+</b>
+
+<p>
+  التطبيقات تُقرأ من ملف المكتبة الرئيسي للموقع.
+</p>
+
+</div>
+
+
+
+<div class="info">
+
+<b>
+  📲 تفاصيل واضحة
+</b>
+
+<p>
+  كل بطاقة تعرض القسم والإصدار والحجم إذا كان متوفراً.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+IPASTRONG © 2026
+
+</footer>
+
+
+
+<!-- =========================
+     MODAL
+========================= -->
+
+<div
+  id="modal"
+  class="modal"
+>
+
+<div class="sheet">
+
+
+<button
+  class="close"
+  id="closeModal"
+>
+
+  ✕
+
+</button>
+
+
+<div class="detailTop">
+
+
+<img
+  id="mIcon"
+  alt=""
+>
+
+
+<div>
+
+<h2
+  id="mName"
+>
+</h2>
+
+<p
+  id="mMeta"
+>
+</p>
+
+</div>
+
+
+</div>
+
+
+<div
+  id="mDesc"
+  class="desc"
+></div>
+
+
+<button
+  id="modalDownload"
+  class="detailBtn"
+>
+
+  📲 تنزيل التطبيق
+
+</button>
+
+
+</div>
+
+</div>
+
+
 
 <script>
 
-const SOURCE='./ipastrong.json';
-const TG='https://t.me/ipastrong';
 
-let apps=[];
-let filtered=[];
-let shown=30;
-let cat='الكل';
+/* =========================
+   SETTINGS
+========================= */
 
-const $=id=>document.getElementById(id);
+const SOURCE =
+  './ipastrong.json';
+
+const TG =
+  'https://t.me/ipastrong';
+
+
+/* =========================
+   STATE
+========================= */
+
+let apps = [];
+
+let filtered = [];
+
+let shown = 30;
+
+let cat = 'الكل';
+
+
+/* =========================
+   HELPERS
+========================= */
+
+const $ =
+  id =>
+  document.getElementById(id);
+
 
 function goTelegram(){
-  location.href=TG;
+
+  window.location.href =
+    TG;
+
 }
 
-function esc(s){
-  return String(s??'').replace(
+
+function esc(value){
+
+  return String(
+    value ?? ''
+  ).replace(
     /[&<>"']/g,
-    m=>({
-      '&':'&amp;',
-      '<':'&lt;',
-      '>':'&gt;',
-      '"':'&quot;',
-      "'":'&#39;'
-    }[m])
+    function(m){
+
+      return {
+
+        '&':'&amp;',
+        '<':'&lt;',
+        '>':'&gt;',
+        '"':'&quot;',
+        "'":'&#39;'
+
+      }[m];
+
+    }
   );
+
 }
+
 
 function fmtSize(n){
 
-  if(!n)return '';
+  if(!n){
+    return '';
+  }
 
-  n=Number(n);
+  n =
+    Number(n);
 
-  if(n>1e9)
-    return (n/1e9).toFixed(1)+' GB';
 
-  if(n>1e6)
-    return (n/1e6).toFixed(0)+' MB';
+  if(
+    n >
+    1000000000
+  ){
 
-  return (n/1e3).toFixed(0)+' KB';
+    return (
+      n /
+      1000000000
+    ).toFixed(1)
+    +
+    ' GB';
+
+  }
+
+
+  if(
+    n >
+    1000000
+  ){
+
+    return (
+      n /
+      1000000
+    ).toFixed(0)
+    +
+    ' MB';
+
+  }
+
+
+  return (
+    n /
+    1000
+  ).toFixed(0)
+  +
+  ' KB';
+
 }
 
-function norm(x){
+
+/* =========================
+   NORMALIZE APP
+========================= */
+
+function normalizeApp(x){
 
   return {
 
-    name:x.name||'تطبيق بدون اسم',
+    name:
+      x.name ||
+      'تطبيق بدون اسم',
 
-    icon:x.iconURL||x.icon||'',
+    icon:
+      x.iconURL ||
+      x.icon ||
+      '',
 
-    category:x.category||'أخرى',
+    category:
+      x.category ||
+      'أخرى',
 
-    version:x.version||x.versions?.[0]?.version||'—',
+    version:
+      x.version ||
+      (
+        x.versions &&
+        x.versions[0] &&
+        x.versions[0].version
+      ) ||
+      '—',
 
-    date:x.updatedAt||x.versionDate||x.addedAt||'',
+    date:
+      x.updatedAt ||
+      x.versionDate ||
+      x.addedAt ||
+      '',
 
-    size:x.size||x.versions?.[0]?.size||0,
+    size:
+      x.size ||
+      (
+        x.versions &&
+        x.versions[0] &&
+        x.versions[0].size
+      ) ||
+      0,
 
-    desc:x.localizedDescription||
-         x.description||
-         'تطبيق متوفر ضمن مكتبة IPASTRONG.'
+    desc:
+      x.localizedDescription ||
+      x.description ||
+      'تطبيق متوفر ضمن مكتبة IPASTRONG.'
+
   };
-}
-function card(a, index){
 
-  return `
-  <article class="card" data-app-index="${index}">
+}
+
+
+/* =========================
+   CREATE CARD
+========================= */
+
+function createCard(app,index){
+
+  const card =
+    document.createElement(
+      'article'
+    );
+
+  card.className =
+    'card';
+
+  card.dataset.index =
+    index;
+
+
+  card.innerHTML = `
 
     <div class="iconWrap">
 
       <span class="cardBadge">
-        ${esc(a.category)}
+        ${esc(app.category)}
       </span>
 
       <img
         class="icon"
         loading="lazy"
-        src="${esc(a.icon)}"
-        onerror="
-          this.onerror=null;
-          this.style.opacity=.16
-        "
+        src="${esc(app.icon)}"
+        alt="${esc(app.name)}"
       >
 
     </div>
 
-    <h3>${esc(a.name)}</h3>
+
+    <h3>
+      ${esc(app.name)}
+    </h3>
+
 
     <p class="meta">
-      إصدار ${esc(a.version)}
-      ${a.size ? ' · '+fmtSize(a.size) : ''}
+
+      إصدار
+      ${esc(app.version)}
+
+      ${
+        app.size
+        ? ' · ' + fmtSize(app.size)
+        : ''
+      }
+
     </p>
 
-    <button class="download">
-      📲 تنزيل التطبيق
-    </button>
-
-  </article>
-  `;
-}
-
-}
-
-function renderCats(){
-
-  const cats=[
-    'الكل',
-    ...new Set(
-      apps
-      .map(a=>a.category)
-      .filter(Boolean)
-    )
-  ];
-
-  const markup=cats.map(c=>`
 
     <button
-      class="chip ${c===cat?'active':''}"
-      onclick="setCat(${JSON.stringify(c)})">
+      class="download"
+      type="button"
+    >
 
-      ${esc(c)}
+      📲 تنزيل التطبيق
 
     </button>
 
-  `).join('');
+  `;
 
-  if($('chips'))
-    $('chips').innerHTML=markup;
 
-  if($('topChips'))
-    $('topChips').innerHTML=markup;
+  /*
+    الضغط على الكارت
+    يفتح التفاصيل.
+  */
+
+  card.addEventListener(
+    'click',
+    function(){
+
+      const appIndex =
+        Number(
+          this.dataset.index
+        );
+
+      const selected =
+        filtered[
+          appIndex
+        ];
+
+      if(selected){
+
+        openModal(
+          selected
+        );
+
+      }
+
+    }
+  );
+
+
+  /*
+    الضغط على زر التنزيل
+    لا يفتح التفاصيل،
+    يروح للرابط.
+  */
+
+  const download =
+    card.querySelector(
+      '.download'
+    );
+
+
+  download.addEventListener(
+    'click',
+    function(event){
+
+      event.preventDefault();
+
+      event.stopPropagation();
+
+      goTelegram();
+
+    }
+  );
+
+
+  return card;
+
 }
 
-function setCat(c){
 
-  cat=c;
-  shown=30;
+/* =========================
+   RENDER CATEGORIES
+========================= */
 
-  renderCats();
-  render();
+function renderCategories(){
 
-  if($('apps'))
-    $('apps').scrollIntoView({
-      behavior:'smooth',
-      block:'start'
-    });
+  const categories = [
+
+    'الكل',
+
+    ...new Set(
+      apps
+      .map(
+        app =>
+          app.category
+      )
+      .filter(Boolean)
+    )
+
+  ];
+
+
+  const top =
+    $('topChips');
+
+
+  top.innerHTML =
+    '';
+
+
+  categories.forEach(
+    function(category){
+
+      const button =
+        document.createElement(
+          'button'
+        );
+
+      button.className =
+        'chip';
+
+
+      if(
+        category === cat
+      ){
+
+        button.classList.add(
+          'active'
+        );
+
+      }
+
+
+      button.textContent =
+        category;
+
+
+      button.addEventListener(
+        'click',
+        function(){
+
+          setCategory(
+            category
+          );
+
+        }
+      );
+
+
+      top.appendChild(
+        button
+      );
+
+    }
+  );
+
 }
 
-function render(){
 
-  const q=$('search')
+/* =========================
+   SET CATEGORY
+========================= */
+
+function setCategory(category){
+
+  cat =
+    category;
+
+  shown =
+    30;
+
+
+  renderCategories();
+
+  renderApps();
+
+
+  const appsSection =
+    $('apps');
+
+
+  if(appsSection){
+
+    setTimeout(
+      function(){
+
+        appsSection.scrollIntoView({
+          behavior:'smooth',
+          block:'start'
+        });
+
+      },
+      50
+    );
+
+  }
+
+}
+
+
+/* =========================
+   RENDER APPS
+========================= */
+
+function renderApps(){
+
+  const search =
+    $('search')
     .value
     .trim()
     .toLowerCase();
 
-  filtered=apps.filter(a=>
 
-    (cat==='الكل'||a.category===cat)
+  filtered =
+    apps.filter(
+      function(app){
 
-    &&
+        const categoryMatch =
+          cat === 'الكل' ||
+          app.category === cat;
 
-    (
-      !q
-      ||
-      (
-        a.name+
-        ' '+
-        a.category+
-        ' '+
-        a.version
-      )
-      .toLowerCase()
-      .includes(q)
-    )
 
-  );
+        const text =
+          (
+            app.name +
+            ' ' +
+            app.category +
+            ' ' +
+            app.version
+          )
+          .toLowerCase();
 
-  $('resultText').textContent=
+
+        const searchMatch =
+          !search ||
+          text.includes(
+            search
+          );
+
+
+        return (
+          categoryMatch &&
+          searchMatch
+        );
+
+      }
+    );
+
+
+  const resultText =
+    $('resultText');
+
+
+  resultText.textContent =
     `عرض ${
-      Math.min(shown,filtered.length)
-      .toLocaleString('ar-IQ')
+      Math.min(
+        shown,
+        filtered.length
+      ).toLocaleString(
+        'ar-IQ'
+      )
     } من ${
       filtered.length
-      .toLocaleString('ar-IQ')
+      .toLocaleString(
+        'ar-IQ'
+      )
     }`;
 
-  $('grid').innerHTML=
-    filtered
-    .slice(0,shown)
-    .map(card)
-    .join('');
 
-  $('more').style.display=
-    shown<filtered.length
-    ?'inline-block'
-    :'none';
+  const grid =
+    $('grid');
+
+
+  grid.innerHTML =
+    '';
+
+
+  const list =
+    filtered.slice(
+      0,
+      shown
+    );
+
+
+  if(!list.length){
+
+    grid.innerHTML = `
+
+      <div class="noResults">
+
+        🔍 ما حصلنا تطبيقات بهالبحث
+
+      </div>
+
+    `;
+
+  }else{
+
+    list.forEach(
+      function(app,index){
+
+        grid.appendChild(
+          createCard(
+            app,
+            index
+          )
+        );
+
+      }
+    );
+
+  }
+
+
+  const more =
+    $('more');
+
+
+  if(
+    shown <
+    filtered.length
+  ){
+
+    more.style.display =
+      'inline-block';
+
+  }else{
+
+    more.style.display =
+      'none';
+
+  }
+
 }
 
-function openModal(a){
 
-  $('mIcon').src=a.icon;
+/* =========================
+   OPEN MODAL
+========================= */
 
-  $('mName').textContent=a.name;
+function openModal(app){
 
-  $('mMeta').textContent=
-    `${a.category} · الإصدار ${a.version}`+
-    (a.size?' · '+fmtSize(a.size):'');
+  const modal =
+    $('modal');
 
-  $('mDesc').textContent=a.desc;
 
-  $('modal').classList.add('show');
+  const icon =
+    $('mIcon');
 
-  document.body.style.overflow='hidden';
+
+  const name =
+    $('mName');
+
+
+  const meta =
+    $('mMeta');
+
+
+  const desc =
+    $('mDesc');
+
+
+  icon.src =
+    app.icon || '';
+
+
+  icon.onerror =
+    function(){
+
+      this.style.opacity =
+        '.2';
+
+    };
+
+
+  name.textContent =
+    app.name;
+
+
+  meta.textContent =
+    `${app.category} · الإصدار ${app.version}` +
+    (
+      app.size
+      ? ' · ' +
+        fmtSize(app.size)
+      : ''
+    );
+
+
+  desc.textContent =
+    app.desc;
+
+
+  modal.classList.add(
+    'show'
+  );
+
+
+  document.body.style.overflow =
+    'hidden';
+
 }
+
+
+/* =========================
+   CLOSE MODAL
+========================= */
 
 function closeModal(){
 
-  $('modal').classList.remove('show');
+  $('modal')
+    .classList.remove(
+      'show'
+    );
 
-  document.body.style.overflow='';
+
+  document.body.style.overflow =
+    '';
+
 }
 
-$('modal').addEventListener(
+
+$('closeModal')
+.addEventListener(
   'click',
-  e=>{
-    if(e.target.id==='modal')
+  closeModal
+);
+
+
+$('modal')
+.addEventListener(
+  'click',
+  function(event){
+
+    if(
+      event.target ===
+      $('modal')
+    ){
+
       closeModal();
+
+    }
+
   }
 );
 
-$('more').onclick=()=>{
 
-  shown+=30;
+/* =========================
+   MODAL DOWNLOAD
+========================= */
 
-  render();
-};
+$('modalDownload')
+.addEventListener(
+  'click',
+  function(){
 
-$('search').oninput=()=>{
+    goTelegram();
 
-  shown=30;
+  }
+);
 
-  render();
-};
+
+/* =========================
+   LOAD MORE
+========================= */
+
+$('more')
+.addEventListener(
+  'click',
+  function(){
+
+    shown +=
+      30;
+
+    renderApps();
+
+  }
+);
+
+
+/* =========================
+   SEARCH
+========================= */
+
+$('search')
+.addEventListener(
+  'input',
+  function(){
+
+    shown =
+      30;
+
+    renderApps();
+
+  }
+);
+
+
+/* =========================
+   LOAD LIBRARY
+========================= */
 
 async function boot(){
 
   try{
 
+    $('resultText')
+      .textContent =
+      'جاري تحميل المكتبة...';
+
+
     /*
-      مهم:
-      الملف الآن يُقرأ من نفس موقع Cloudflare
-      بدل GitHub Raw.
+      نقرأ ipastrong.json
+      من نفس موقع Cloudflare.
     */
 
-    const r=await fetch(
-      SOURCE,
-      {cache:'no-store'}
+    const response =
+      await fetch(
+        SOURCE,
+        {
+          cache:'no-store'
+        }
+      );
+
+
+    if(
+      !response.ok
+    ){
+
+      throw new Error(
+        'فشل تحميل المكتبة'
+      );
+
+    }
+
+
+    const data =
+      await response.json();
+
+
+    const raw =
+      Array.isArray(data)
+      ? data
+      : (
+          data.apps ||
+          []
+        );
+
+
+    apps =
+      raw
+      .map(
+        normalizeApp
+      )
+      .filter(
+        app =>
+          app.name
+      );
+
+
+    $('count')
+      .textContent =
+      apps.length
+      .toLocaleString(
+        'ar-IQ'
+      );
+
+
+    renderCategories();
+
+    renderApps();
+
+
+  }catch(error){
+
+    console.error(
+      error
     );
 
-    if(!r.ok)
-      throw Error('source');
 
-    const d=await r.json();
-
-    const raw=
-      Array.isArray(d)
-      ?d
-      :(d.apps||[]);
-
-    apps=
-      raw
-      .map(norm)
-      .filter(a=>a.name);
-
-    $('count').textContent=
-      apps.length.toLocaleString('ar-IQ');
-
-    renderCats();
-
-    render();
-
-  }catch(e){
-
-    $('resultText').textContent=
+    $('resultText')
+      .textContent =
       'تعذر تحميل مكتبة التطبيقات';
 
-    $('grid').innerHTML=`
 
-      <div style="
-        grid-column:1/-1;
-        text-align:center;
-        padding:45px 10px;
-        color:#aaa;
-      ">
+    $('grid').innerHTML = `
 
-        تعذر تحميل المكتبة حالياً.<br>
-        اسحب الصفحة للأسفل للتحديث.
+      <div class="noResults">
+
+        ⚠️ تعذر تحميل مكتبة التطبيقات حالياً
+
+        <br><br>
+
+        حاول تحديث الصفحة مرة ثانية.
 
       </div>
 
     `;
+
   }
+
 }
+
+
+/* =========================
+   START
+========================= */
 
 boot();
 
