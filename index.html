@@ -3,22 +3,28 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#06070c">
+<meta name="theme-color" content="#07070b">
 
-<title>IPASTRONG — متجر التطبيقات</title>
+<title>IPASTRONG</title>
 
 <style>
 
 :root{
-  --bg:#06070c;
-  --panel:#10121a;
-  --panel2:#151823;
+  --bg:#07070b;
+  --bg2:#0b0a11;
+  --card:#11111a;
+  --card2:#151421;
   --line:rgba(255,255,255,.09);
   --text:#fff;
-  --muted:#989baa;
+  --muted:#92929f;
+
   --purple:#9b5cff;
+  --purple2:#7040ff;
   --pink:#ff3d9a;
-  --green:#62f7b2;
+  --green:#65f7b2;
+
+  --shadow:
+    0 18px 55px rgba(0,0,0,.38);
 }
 
 *{
@@ -32,22 +38,23 @@ html{
 body{
   margin:0;
   color:var(--text);
+
   background:
     radial-gradient(
-      circle at 10% 0%,
+      circle at 10% -5%,
       rgba(155,92,255,.20),
-      transparent 28%
+      transparent 30%
     ),
     radial-gradient(
-      circle at 90% 12%,
-      rgba(255,61,154,.13),
-      transparent 25%
+      circle at 95% 15%,
+      rgba(255,61,154,.12),
+      transparent 28%
     ),
     linear-gradient(
       180deg,
-      #05060a,
-      #080a11 55%,
-      #05060a
+      #07070b 0%,
+      #0b0911 55%,
+      #07070b 100%
     );
 
   font-family:
@@ -61,35 +68,42 @@ body{
   overflow-x:hidden;
 }
 
-body:before{
+body::before{
   content:"";
+
   position:fixed;
   inset:0;
+
   pointer-events:none;
-  opacity:.025;
+
+  opacity:.018;
 
   background-image:
     linear-gradient(
-      rgba(255,255,255,.5) 1px,
+      rgba(255,255,255,.8) 1px,
       transparent 1px
     ),
     linear-gradient(
       90deg,
-      rgba(255,255,255,.5) 1px,
+      rgba(255,255,255,.8) 1px,
       transparent 1px
     );
 
-  background-size:34px 34px;
-}
-
-a{
-  text-decoration:none;
-  color:inherit;
+  background-size:38px 38px;
 }
 
 button,
 input{
   font:inherit;
+}
+
+button{
+  -webkit-tap-highlight-color:transparent;
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
 }
 
 .container{
@@ -109,15 +123,17 @@ input{
 header{
   position:sticky;
   top:0;
-  z-index:80;
+  z-index:90;
 
   background:
-    rgba(6,7,12,.78);
+    rgba(7,7,11,.82);
 
-  backdrop-filter:blur(22px);
+  backdrop-filter:
+    blur(24px);
 
   border-bottom:
-    1px solid var(--line);
+    1px solid
+    var(--line);
 }
 
 .nav{
@@ -131,19 +147,20 @@ header{
 .brand{
   display:flex;
   align-items:center;
-  gap:9px;
+  gap:10px;
 
-  font-weight:900;
+  font-weight:950;
+  letter-spacing:.5px;
 }
 
 .logo{
-  width:38px;
-  height:38px;
-
-  border-radius:13px;
+  width:39px;
+  height:39px;
 
   display:grid;
   place-items:center;
+
+  border-radius:13px;
 
   background:
     linear-gradient(
@@ -153,27 +170,28 @@ header{
     );
 
   box-shadow:
-    0 0 28px
-    rgba(155,92,255,.28);
+    0 0 30px
+    rgba(155,92,255,.25);
 }
 
 .navlinks{
   display:flex;
-  gap:7px;
+  gap:5px;
 }
 
 .navlinks a{
-  font-size:12px;
-  color:#bbbcc7;
-
   padding:9px 12px;
 
   border-radius:11px;
+
+  color:#aaaab6;
+
+  font-size:11px;
 }
 
 .navlinks a:hover{
-  background:#151823;
   color:#fff;
+  background:#15141e;
 }
 
 
@@ -182,8 +200,11 @@ header{
 ========================= */
 
 .hero{
+  padding:
+    38px 0
+    25px;
+
   text-align:center;
-  padding:45px 0 28px;
 }
 
 .badge{
@@ -191,20 +212,21 @@ header{
   align-items:center;
   gap:7px;
 
-  padding:8px 12px;
+  padding:
+    7px 11px;
 
   border:
     1px solid
-    rgba(155,92,255,.3);
-
-  background:
-    rgba(155,92,255,.08);
+    rgba(155,92,255,.28);
 
   border-radius:999px;
 
-  color:#dbcaff;
+  color:#d8c9ff;
 
-  font-size:11px;
+  background:
+    rgba(155,92,255,.07);
+
+  font-size:10px;
 }
 
 .dot{
@@ -213,30 +235,31 @@ header{
 
   border-radius:50%;
 
-  background:var(--green);
+  background:
+    var(--green);
 
   box-shadow:
-    0 0 12px
+    0 0 13px
     var(--green);
 }
 
 .hero h1{
+  margin:
+    16px auto
+    10px;
+
+  max-width:850px;
+
   font-size:
     clamp(
-      39px,
+      40px,
       7vw,
       72px
     );
 
-  line-height:1.03;
+  line-height:1.02;
 
-  letter-spacing:-2.4px;
-
-  margin:
-    18px auto
-    12px;
-
-  max-width:850px;
+  letter-spacing:-2.5px;
 }
 
 .gradient{
@@ -244,8 +267,8 @@ header{
     linear-gradient(
       90deg,
       #fff,
-      #d1b4ff,
-      #ff79bf
+      #cdb3ff,
+      #ff76bb
     );
 
   -webkit-background-clip:text;
@@ -259,104 +282,114 @@ header{
 
   margin:auto;
 
-  color:#a4a6b3;
+  color:#9697a5;
 
-  font-size:14px;
+  font-size:13px;
 
   line-height:1.9;
 }
 
 
-/* SEARCH */
+/* =========================
+   SEARCH
+========================= */
 
-.search{
-  max-width:720px;
+.searchBox{
+  position:relative;
+
+  max-width:760px;
 
   margin:
     23px auto
     0;
-
-  position:relative;
 }
 
-.search input{
+.searchBox input{
   width:100%;
-  height:56px;
+
+  height:60px;
 
   border:
     1px solid
-    var(--line);
+    rgba(255,255,255,.11);
 
-  border-radius:17px;
+  border-radius:19px;
+
+  outline:none;
 
   background:
-    rgba(17,19,28,.9);
+    rgba(17,17,26,.92);
 
   color:#fff;
 
   padding:
-    0 49px
-    0 16px;
+    0 52px
+    0 18px;
 
-  outline:none;
+  font-size:14px;
+
+  box-shadow:
+    0 12px 45px
+    rgba(0,0,0,.22);
+
+  transition:.2s;
 }
 
-.search input:focus{
+.searchBox input:focus{
   border-color:
-    rgba(155,92,255,.55);
+    rgba(155,92,255,.62);
 
   box-shadow:
     0 0 0 4px
-    rgba(155,92,255,.08);
+    rgba(155,92,255,.09),
+    0 15px 50px
+    rgba(0,0,0,.28);
 }
 
-.search span{
+.searchIcon{
   position:absolute;
 
-  right:17px;
-  top:16px;
+  right:18px;
+  top:17px;
 
-  color:#898b98;
+  font-size:21px;
 
-  font-size:20px;
+  color:#888a97;
+}
+
+.clearSearch{
+  position:absolute;
+
+  left:12px;
+  top:12px;
+
+  width:36px;
+  height:36px;
+
+  border:0;
+
+  border-radius:11px;
+
+  background:#1a1924;
+
+  color:#aaa;
+
+  display:none;
+
+  cursor:pointer;
 }
 
 
-/* STATS */
+/* SEARCH STATUS */
 
-.stats{
-  display:flex;
+.searchStatus{
+  min-height:18px;
 
-  justify-content:center;
+  margin-top:9px;
 
-  gap:8px;
+  color:#7f808c;
 
-  flex-wrap:wrap;
-
-  margin-top:14px;
-}
-
-.stat{
   font-size:10px;
-
-  color:#a9abb7;
-
-  border:
-    1px solid
-    var(--line);
-
-  background:
-    rgba(255,255,255,.035);
-
-  padding:
-    8px 11px;
-
-  border-radius:999px;
-}
-
-.stat b{
-  color:#fff;
-  margin-left:4px;
 }
 
 
@@ -364,8 +397,7 @@ header{
    TOP CATEGORIES
 ========================= */
 
-.categoryTop{
-
+.categoryBar{
   position:sticky;
 
   top:62px;
@@ -373,46 +405,43 @@ header{
   z-index:70;
 
   padding:
-    9px 0
-    10px;
+    10px 0
+    11px;
 
   background:
-    rgba(6,7,12,.90);
+    rgba(7,7,11,.91);
 
   backdrop-filter:
-    blur(22px);
+    blur(24px);
 
   border-top:
     1px solid
-    rgba(255,255,255,.04);
+    rgba(255,255,255,.035);
 
   border-bottom:
     1px solid
-    rgba(255,255,255,.08);
+    var(--line);
 }
 
-.categoryTopHead{
-
+.categoryTitle{
   display:flex;
 
   align-items:center;
-
   justify-content:space-between;
 
   margin-bottom:7px;
 }
 
-.categoryTopHead strong{
+.categoryTitle strong{
   font-size:12px;
 }
 
-.categoryTopHead span{
+.categoryTitle span{
+  color:#747683;
   font-size:9px;
-  color:#777b8b;
 }
 
 .chips{
-
   display:flex;
 
   gap:7px;
@@ -429,23 +458,23 @@ header{
 }
 
 .chip{
-
-  white-space:nowrap;
+  flex:0 0 auto;
 
   border:
     1px solid
     var(--line);
 
-  background:#0f1119;
+  background:
+    #101019;
 
-  color:#a7a9b5;
+  color:#9b9ca8;
 
   border-radius:999px;
 
   padding:
-    8px 12px;
+    8px 13px;
 
-  font-size:11px;
+  font-size:10px;
 
   cursor:pointer;
 
@@ -453,60 +482,108 @@ header{
 }
 
 .chip.active{
-
   color:#fff;
 
   border-color:
-    rgba(155,92,255,.55);
+    rgba(155,92,255,.62);
 
   background:
     linear-gradient(
       135deg,
-      rgba(155,92,255,.24),
-      rgba(255,61,154,.13)
+      rgba(155,92,255,.25),
+      rgba(255,61,154,.12)
     );
 
   box-shadow:
-    0 0 18px
+    0 0 22px
     rgba(155,92,255,.12);
 }
 
 
 /* =========================
-   SECTIONS
+   MAIN
 ========================= */
 
+main{
+  padding-bottom:30px;
+}
+
 section{
-  padding:28px 0;
+  padding:
+    30px 0;
 }
 
 .sectionHead{
-
   display:flex;
 
   align-items:end;
-
   justify-content:space-between;
 
-  margin-bottom:14px;
+  margin-bottom:15px;
 }
 
 .sectionHead h2{
-
   margin:0;
 
-  font-size:21px;
+  font-size:22px;
+
+  letter-spacing:-.4px;
 }
 
 .sectionHead p{
-
   margin:
     5px 0
     0;
 
-  color:#858895;
+  color:#777985;
 
-  font-size:11px;
+  font-size:10px;
+}
+
+
+/* =========================
+   SEARCH RESULT HEADER
+========================= */
+
+.resultHeader{
+  display:none;
+
+  margin:
+    10px 0
+    14px;
+
+  padding:
+    13px 15px;
+
+  border-radius:15px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(155,92,255,.10),
+      rgba(255,61,154,.05)
+    );
+
+  border:
+    1px solid
+    rgba(155,92,255,.15);
+}
+
+.resultHeader.show{
+  display:flex;
+
+  align-items:center;
+  justify-content:space-between;
+}
+
+.resultHeader b{
+  font-size:12px;
+}
+
+.resultHeader span{
+  color:#999aa7;
+
+  font-size:10px;
 }
 
 
@@ -515,7 +592,6 @@ section{
 ========================= */
 
 .grid{
-
   display:grid;
 
   grid-template-columns:
@@ -528,10 +604,11 @@ section{
 }
 
 
-/* APP CARD */
+/* =========================
+   CARD
+========================= */
 
 .card{
-
   min-width:0;
 
   position:relative;
@@ -544,9 +621,9 @@ section{
 
   background:
     linear-gradient(
-      180deg,
-      rgba(20,22,32,.97),
-      rgba(9,10,16,.99)
+      145deg,
+      rgba(23,23,34,.98),
+      rgba(10,10,16,.98)
     );
 
   border:
@@ -565,40 +642,42 @@ section{
 }
 
 .card:hover{
-
   transform:
     translateY(-5px);
 
   border-color:
-    rgba(155,92,255,.45);
+    rgba(155,92,255,.43);
 
   box-shadow:
-    0 20px 48px
-    rgba(0,0,0,.42);
+    var(--shadow);
+}
+
+.card:active{
+  transform:
+    scale(.985);
 }
 
 
 /* ICON */
 
 .iconWrap{
-
   position:relative;
 
   aspect-ratio:1;
-
-  border-radius:17px;
-
-  overflow:hidden;
 
   display:grid;
 
   place-items:center;
 
+  overflow:hidden;
+
+  border-radius:17px;
+
   background:
     radial-gradient(
-      circle at 50% 28%,
-      rgba(155,92,255,.28),
-      rgba(20,22,32,.96) 62%
+      circle at 50% 35%,
+      rgba(155,92,255,.22),
+      #151520 66%
     );
 
   border:
@@ -607,18 +686,17 @@ section{
 }
 
 .icon{
-
-  width:70%;
-  height:70%;
+  width:76%;
+  height:76%;
 
   object-fit:contain;
 
-  border-radius:22%;
+  border-radius:23%;
 
   filter:
     drop-shadow(
-      0 12px 18px
-      rgba(0,0,0,.38)
+      0 12px 20px
+      rgba(0,0,0,.42)
     );
 
   transition:
@@ -626,24 +704,22 @@ section{
 }
 
 .card:hover .icon{
-
   transform:
     scale(1.05);
 }
 
 
-/* CATEGORY BADGE */
+/* BADGE */
 
 .cardBadge{
-
   position:absolute;
 
   top:7px;
   right:7px;
 
-  z-index:2;
+  z-index:3;
 
-  max-width:78%;
+  max-width:76%;
 
   padding:
     5px 7px;
@@ -651,18 +727,18 @@ section{
   border-radius:999px;
 
   background:
-    rgba(4,5,9,.68);
+    rgba(5,5,9,.68);
 
   backdrop-filter:
-    blur(9px);
+    blur(10px);
 
   border:
     1px solid
     rgba(255,255,255,.08);
 
-  font-size:8px;
+  color:#d8d8e2;
 
-  color:#d9dbe4;
+  font-size:8px;
 
   white-space:nowrap;
 
@@ -671,11 +747,7 @@ section{
   text-overflow:ellipsis;
 }
 
-
-/* NAME */
-
 .card h3{
-
   margin:
     10px 3px
     4px;
@@ -689,16 +761,12 @@ section{
   text-overflow:ellipsis;
 }
 
-
-/* META */
-
 .meta{
-
   margin:
     0 3px
     9px;
 
-  color:#7f8290;
+  color:#7f808c;
 
   font-size:9px;
 
@@ -713,14 +781,13 @@ section{
 /* DOWNLOAD */
 
 .download{
-
   width:100%;
+
+  height:35px;
 
   border:0;
 
   border-radius:12px;
-
-  height:35px;
 
   color:#fff;
 
@@ -733,43 +800,45 @@ section{
   background:
     linear-gradient(
       135deg,
-      #9b5cff,
-      #ff3d9a
+      #8e52ff,
+      #f53c99
     );
 
-  transition:.2s;
+  box-shadow:
+    0 8px 22px
+    rgba(155,92,255,.12);
 }
 
 .download:active{
-
   transform:
-    scale(.96);
+    scale(.95);
 }
 
 
-/* MORE */
+/* =========================
+   LOAD MORE
+========================= */
 
 .more{
-
   text-align:center;
 
-  margin-top:18px;
+  margin-top:19px;
 }
 
 .more button{
+  padding:
+    10px 20px;
 
   border:
     1px solid
-    rgba(155,92,255,.4);
+    rgba(155,92,255,.35);
 
-  background:#11131c;
+  border-radius:13px;
 
   color:#fff;
 
-  border-radius:12px;
-
-  padding:
-    10px 19px;
+  background:
+    #11111a;
 
   cursor:pointer;
 }
@@ -779,8 +848,17 @@ section{
    PACKAGES
 ========================= */
 
-.packages{
+.packagesSection{
+  margin-top:20px;
 
+  padding-top:38px;
+
+  border-top:
+    1px solid
+    rgba(255,255,255,.06);
+}
+
+.packages{
   display:grid;
 
   grid-template-columns:
@@ -790,77 +868,82 @@ section{
 }
 
 .package{
-
   position:relative;
 
   overflow:hidden;
 
-  padding:20px;
-
-  border:
-    1px solid
-    var(--line);
+  padding:19px;
 
   border-radius:21px;
 
   background:
     linear-gradient(
       145deg,
-      #141622,
-      #090a10
+      #161521,
+      #0c0c13
     );
 
-  animation:
-    float 4.6s
-    ease-in-out
-    infinite;
+  border:
+    1px solid
+    rgba(255,255,255,.09);
+
+  transition:.25s;
 }
 
-.package:nth-child(2){
-  animation-delay:.35s;
+.package:hover{
+  transform:
+    translateY(-4px);
+
+  border-color:
+    rgba(155,92,255,.35);
 }
 
-.package:nth-child(3){
-  animation-delay:.7s;
-}
+.package::before{
+  content:"";
 
-.package:nth-child(4){
-  animation-delay:1.05s;
-}
+  position:absolute;
 
-@keyframes float{
+  width:130px;
+  height:130px;
 
-  50%{
-    transform:
-      translateY(-5px);
-  }
+  top:-70px;
+  left:-50px;
 
+  border-radius:50%;
+
+  background:
+    rgba(155,92,255,.15);
+
+  filter:blur(25px);
 }
 
 .package h3{
-
   margin:0;
 
   font-size:14px;
+
+  position:relative;
 }
 
 .price{
+  position:relative;
+
+  margin:
+    9px 0;
 
   font-size:25px;
 
-  font-weight:900;
-
-  margin:
-    8px 0;
+  font-weight:950;
 }
 
 .package p{
+  position:relative;
 
   margin:
-    5px 0
-    12px;
+    4px 0
+    13px;
 
-  color:#9093a1;
+  color:#858793;
 
   font-size:10px;
 
@@ -868,6 +951,7 @@ section{
 }
 
 .guarantee{
+  position:relative;
 
   padding:
     8px 10px;
@@ -877,11 +961,11 @@ section{
   color:#6effb7;
 
   background:
-    rgba(98,247,178,.06);
+    rgba(98,247,178,.055);
 
   border:
     1px solid
-    rgba(98,247,178,.14);
+    rgba(98,247,178,.13);
 
   font-size:10px;
 }
@@ -892,7 +976,6 @@ section{
 ========================= */
 
 .infoGrid{
-
   display:grid;
 
   grid-template-columns:
@@ -902,7 +985,6 @@ section{
 }
 
 .info{
-
   padding:18px;
 
   border:
@@ -911,7 +993,8 @@ section{
 
   border-radius:19px;
 
-  background:#0e1018;
+  background:
+    rgba(15,15,23,.88);
 }
 
 .info b{
@@ -919,8 +1002,11 @@ section{
 }
 
 .info p{
+  margin:
+    8px 0
+    0;
 
-  color:#8f92a0;
+  color:#898b98;
 
   font-size:10px;
 
@@ -929,28 +1015,56 @@ section{
 
 
 /* =========================
+   NO RESULTS
+========================= */
+
+.noResults{
+  grid-column:
+    1 / -1;
+
+  text-align:center;
+
+  padding:
+    65px 15px;
+
+  color:#858794;
+
+  font-size:13px;
+}
+
+.noResults strong{
+  display:block;
+
+  color:#fff;
+
+  font-size:18px;
+
+  margin-bottom:7px;
+}
+
+
+/* =========================
    MODAL
 ========================= */
 
 .modal{
-
   position:fixed;
 
   inset:0;
 
-  z-index:100;
-
-  background:
-    rgba(0,0,0,.76);
-
-  backdrop-filter:
-    blur(15px);
+  z-index:200;
 
   display:none;
 
   align-items:end;
 
   padding:10px;
+
+  background:
+    rgba(0,0,0,.78);
+
+  backdrop-filter:
+    blur(15px);
 }
 
 .modal.show{
@@ -958,7 +1072,6 @@ section{
 }
 
 .sheet{
-
   width:min(
     690px,
     100%
@@ -970,28 +1083,31 @@ section{
 
   padding:19px;
 
-  border-radius:24px;
+  border-radius:25px;
 
-  background:#10121b;
+  background:
+    linear-gradient(
+      145deg,
+      #151521,
+      #0b0b12
+    );
 
   border:
     1px solid
-    var(--line);
+    rgba(255,255,255,.10);
 
   box-shadow:
     0 30px 100px
-    rgba(0,0,0,.65);
+    rgba(0,0,0,.7);
 
   animation:
-    sheetIn .25s
-    ease;
+    sheetIn .25s ease;
 }
 
 @keyframes sheetIn{
-
   from{
     transform:
-      translateY(30px);
+      translateY(35px);
 
     opacity:0;
   }
@@ -1002,29 +1118,26 @@ section{
 
     opacity:1;
   }
-
 }
 
 .close{
-
   float:left;
 
-  width:34px;
-  height:34px;
+  width:35px;
+  height:35px;
 
   border:0;
 
-  border-radius:10px;
-
-  background:#1b1e29;
+  border-radius:11px;
 
   color:#fff;
+
+  background:#1c1b27;
 
   cursor:pointer;
 }
 
 .detailTop{
-
   clear:both;
 
   display:flex;
@@ -1033,25 +1146,27 @@ section{
 
   gap:13px;
 
-  padding-top:8px;
+  padding-top:9px;
 }
 
 .detailTop img{
+  width:88px;
+  height:88px;
 
-  width:86px;
-  height:86px;
+  padding:8px;
 
-  border-radius:21px;
+  border-radius:22px;
 
   object-fit:contain;
 
-  background:#181b27;
+  background:#181722;
 
-  padding:8px;
+  border:
+    1px solid
+    rgba(255,255,255,.08);
 }
 
 .detailTop h2{
-
   margin:
     0 0
     6px;
@@ -1060,35 +1175,32 @@ section{
 }
 
 .detailTop p{
-
   margin:0;
 
-  color:#898c99;
+  color:#858793;
 
   font-size:10px;
 }
 
 .desc{
+  margin:
+    18px 0;
 
-  color:#b2b5c0;
+  color:#b2b3bf;
 
   font-size:12px;
 
   line-height:1.9;
-
-  margin:
-    17px 0;
 }
 
 .detailBtn{
-
   width:100%;
+
+  height:48px;
 
   border:0;
 
-  border-radius:12px;
-
-  height:47px;
+  border-radius:13px;
 
   color:#fff;
 
@@ -1101,8 +1213,8 @@ section{
   background:
     linear-gradient(
       135deg,
-      #9b5cff,
-      #ff3d9a
+      #8e52ff,
+      #f53c99
     );
 }
 
@@ -1112,45 +1224,18 @@ section{
 ========================= */
 
 footer{
+  padding:
+    28px 0;
 
   border-top:
     1px solid
     var(--line);
 
-  padding:
-    25px 0;
-
-  color:#727582;
-
   text-align:center;
 
+  color:#6f707b;
+
   font-size:10px;
-}
-
-
-/* =========================
-   TABLET
-========================= */
-
-@media(max-width:900px){
-
-  .grid{
-
-    grid-template-columns:
-      repeat(
-        4,
-        1fr
-      );
-  }
-
-  .packages{
-
-    grid-template-columns:
-      repeat(
-        2,
-        1fr
-      );
-  }
 }
 
 
@@ -1158,14 +1243,25 @@ footer{
    MOBILE
 ========================= */
 
+@media(max-width:900px){
+
+  .grid{
+    grid-template-columns:
+      repeat(4,1fr);
+  }
+
+  .packages{
+    grid-template-columns:
+      repeat(2,1fr);
+  }
+}
+
+
 @media(max-width:620px){
 
   .container{
-
     width:
-      calc(
-        100% - 18px
-      );
+      calc(100% - 18px);
   }
 
   .navlinks{
@@ -1173,53 +1269,48 @@ footer{
   }
 
   .hero{
-
-    padding-top:36px;
+    padding:
+      33px 0
+      21px;
   }
 
   .hero h1{
-
     font-size:42px;
 
-    letter-spacing:
-      -1.6px;
+    letter-spacing:-1.7px;
   }
 
-  .categoryTop{
-
+  .categoryBar{
     top:62px;
   }
 
-  .categoryTopHead span{
-
+  .categoryTitle span{
     display:none;
   }
 
   .grid{
-
     grid-template-columns:
-      repeat(
-        2,
-        1fr
-      );
+      repeat(2,1fr);
 
     gap:9px;
   }
 
   .card{
-
     padding:8px;
 
     border-radius:18px;
   }
 
   .iconWrap{
-
     border-radius:15px;
   }
 
-  .packages{
+  .icon{
+    width:78%;
+    height:78%;
+  }
 
+  .packages{
     grid-template-columns:
       1fr 1fr;
 
@@ -1227,47 +1318,26 @@ footer{
   }
 
   .package{
-
     padding:14px;
 
     border-radius:17px;
   }
 
   .price{
-
     font-size:20px;
   }
 
   .infoGrid{
-
-    grid-template-columns:
-      1fr;
+    grid-template-columns:1fr;
   }
 
   .sectionHead h2{
-
-    font-size:19px;
+    font-size:20px;
   }
 
-}
-
-
-/* =========================
-   NO RESULTS
-========================= */
-
-.noResults{
-
-  grid-column:
-    1 / -1;
-
-  text-align:center;
-
-  padding:60px 10px;
-
-  color:#888b98;
-
-  font-size:13px;
+  .searchBox input{
+    height:57px;
+  }
 }
 
 </style>
@@ -1276,10 +1346,6 @@ footer{
 
 <body>
 
-
-<!-- =========================
-     HEADER
-========================= -->
 
 <header>
 
@@ -1290,13 +1356,13 @@ footer{
   href="#"
 >
 
-  <span class="logo">
-    IP
-  </span>
+<span class="logo">
+  IP
+</span>
 
-  <span>
-    IPASTRONG
-  </span>
+<span>
+  IPASTRONG
+</span>
 
 </a>
 
@@ -1311,8 +1377,8 @@ footer{
   الباقات
 </a>
 
-<a href="#faq">
-  المعلومات
+<a href="#info">
+  معلومات
 </a>
 
 <a href="https://t.me/ipastrong">
@@ -1327,14 +1393,12 @@ footer{
 
 
 
-<!-- =========================
-     MAIN
-========================= -->
-
 <main>
 
 
-<!-- HERO -->
+<!-- =========================
+     HERO + SEARCH
+========================= -->
 
 <section class="hero">
 
@@ -1342,74 +1406,68 @@ footer{
 
 <span class="badge">
 
-  <i class="dot"></i>
+<i class="dot"></i>
 
-  IPASTRONG — مكتبة التطبيقات
+مكتبة IPASTRONG
 
 </span>
 
 
 <h1>
 
-  كل تطبيقاتك المفضلة
+كل تطبيقاتك
 
-  <br>
+<br>
 
-  <span class="gradient">
-    بمكان واحد.
-  </span>
+<span class="gradient">
+بمكان واحد.
+</span>
 
 </h1>
 
 
 <p>
 
-  ابحث عن التطبيق أو اللعبة،
-  شوف التفاصيل والإصدار،
-  وبعدها اضغط تنزيل.
+ابحث عن أي تطبيق أو لعبة،
+اختار القسم، واضغط على التطبيق
+حتى تشوف تفاصيله.
 
 </p>
 
 
-<div class="search">
+<div class="searchBox">
 
-<span>
+<span class="searchIcon">
   ⌕
 </span>
+
 
 <input
   id="search"
   type="search"
   autocomplete="off"
-  placeholder="ابحث عن تطبيق أو لعبة..."
+  placeholder="ابحث عن لعبة، تطبيق، أو اسم..."
 >
 
-</div>
 
+<button
+  id="clearSearch"
+  class="clearSearch"
+  type="button"
+>
 
-<div class="stats">
+  ✕
 
-<span class="stat">
-
-  <b id="count">
-    —
-  </b>
-
-  تطبيق
-
-</span>
-
-
-<span class="stat">
-  تحديثات مستمرة
-</span>
-
-
-<span class="stat">
-  واجهة سريعة
-</span>
+</button>
 
 </div>
+
+
+<div
+  id="searchStatus"
+  class="searchStatus"
+></div>
+
 
 </div>
 
@@ -1421,22 +1479,18 @@ footer{
      CATEGORIES
 ========================= -->
 
-<section
-  class="categoryTop"
-  id="categoryTop"
->
+<section class="categoryBar">
 
 <div class="container">
 
-
-<div class="categoryTopHead">
+<div class="categoryTitle">
 
 <strong>
   📂 الأقسام
 </strong>
 
 <span>
-  اضغط على القسم حتى تظهر تطبيقاته
+  اختار القسم
 </span>
 
 </div>
@@ -1455,136 +1509,27 @@ footer{
 
 
 <!-- =========================
-     PACKAGES
-========================= -->
-
-<section id="packages">
-
-<div class="container">
-
-
-<div class="sectionHead">
-
-<div>
-
-<h2>
-  💎 الباقات
-</h2>
-
-<p>
-  اختار مدة الضمان المناسبة إلك
-</p>
-
-</div>
-
-</div>
-
-
-<div class="packages">
-
-
-<article class="package">
-
-<h3>
-  ضمان شهر
-</h3>
-
-<div class="price">
-  10,000 د.ع
-</div>
-
-<p>
-  نفس الخدمة، الفرق بمدة الضمان.
-</p>
-
-<div class="guarantee">
-  🛡️ 30 يوم
-</div>
-
-</article>
-
-
-
-<article class="package">
-
-<h3>
-  ضمان 3 أشهر
-</h3>
-
-<div class="price">
-  15,000 د.ع
-</div>
-
-<p>
-  نفس الخدمة، ضمان أطول.
-</p>
-
-<div class="guarantee">
-  🛡️ 90 يوم
-</div>
-
-</article>
-
-
-
-<article class="package">
-
-<h3>
-  ضمان 6 أشهر
-</h3>
-
-<div class="price">
-  20,000 د.ع
-</div>
-
-<p>
-  نفس الخدمة، ضمان أطول.
-</p>
-
-<div class="guarantee">
-  🛡️ 180 يوم
-</div>
-
-</article>
-
-
-
-<article class="package">
-
-<h3>
-  ضمان 10 أشهر
-</h3>
-
-<div class="price">
-  30,000 د.ع
-</div>
-
-<p>
-  نفس الخدمة، أطول مدة ضمان.
-</p>
-
-<div class="guarantee">
-  🛡️ 300 يوم
-</div>
-
-</article>
-
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- =========================
-     APPS
+     APPLICATIONS
 ========================= -->
 
 <section id="apps">
 
 <div class="container">
+
+
+<div
+  id="resultHeader"
+  class="resultHeader"
+>
+
+<b id="resultTitle">
+  نتائج البحث
+</b>
+
+<span id="resultCount">
+</span>
+
+</div>
 
 
 <div class="sectionHead">
@@ -1604,18 +1549,6 @@ footer{
 </div>
 
 
-<!--
-  هذا الـchips مخفي.
-  الأقسام الرئيسية موجودة فوق فقط.
--->
-
-<div
-  id="chips"
-  class="chips"
-  style="display:none"
-></div>
-
-
 <div
   id="grid"
   class="grid"
@@ -1624,8 +1557,13 @@ footer{
 
 <div class="more">
 
-<button id="more">
+<button
+  id="more"
+  type="button"
+>
+
   عرض المزيد
+
 </button>
 
 </div>
@@ -1638,13 +1576,135 @@ footer{
 
 
 <!-- =========================
-     INFO
+     PACKAGES
 ========================= -->
 
-<section id="faq">
+<section
+  id="packages"
+  class="packagesSection"
+>
 
 <div class="container">
 
+<div class="sectionHead">
+
+<div>
+
+<h2>
+  💎 الباقات
+</h2>
+
+<p>
+  الباقات موجودة بصفحة مستقلة عن تصفح التطبيقات
+</p>
+
+</div>
+
+</div>
+
+
+<div class="packages">
+
+
+<div class="package">
+
+<h3>
+  ضمان شهر
+</h3>
+
+<div class="price">
+  10,000 د.ع
+</div>
+
+<p>
+  نفس الخدمة، الفرق بمدة الضمان.
+</p>
+
+<div class="guarantee">
+  🛡️ 30 يوم
+</div>
+
+</div>
+
+
+<div class="package">
+
+<h3>
+  ضمان 3 أشهر
+</h3>
+
+<div class="price">
+  15,000 د.ع
+</div>
+
+<p>
+  نفس الخدمة، ضمان أطول.
+</p>
+
+<div class="guarantee">
+  🛡️ 90 يوم
+</div>
+
+</div>
+
+
+<div class="package">
+
+<h3>
+  ضمان 6 أشهر
+</h3>
+
+<div class="price">
+  20,000 د.ع
+</div>
+
+<p>
+  نفس الخدمة، ضمان أطول.
+</p>
+
+<div class="guarantee">
+  🛡️ 180 يوم
+</div>
+
+</div>
+
+
+<div class="package">
+
+<h3>
+  ضمان 10 أشهر
+</h3>
+
+<div class="price">
+  30,000 د.ع
+</div>
+
+<p>
+  نفس الخدمة، أطول مدة ضمان.
+</p>
+
+<div class="guarantee">
+  🛡️ 300 يوم
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     INFO
+========================= -->
+
+<section id="info">
+
+<div class="container">
 
 <div class="sectionHead">
 
@@ -1673,35 +1733,36 @@ footer{
 </b>
 
 <p>
-  ابحث باسم التطبيق أو اللعبة خلال ثواني.
+  اكتب اسم التطبيق أو اللعبة،
+  والنتائج تظهر مباشرة قدامك.
 </p>
 
 </div>
 
 
-
 <div class="info">
 
 <b>
-  📚 مكتبة كبيرة
+  📂 أقسام واضحة
 </b>
 
 <p>
-  التطبيقات تُقرأ من ملف المكتبة الرئيسي للموقع.
+  تواصل، ألعاب، أدوات،
+  ترفيه وغيرها.
 </p>
 
 </div>
 
 
-
 <div class="info">
 
 <b>
-  📲 تفاصيل واضحة
+  📱 مناسب للآيفون
 </b>
 
 <p>
-  كل بطاقة تعرض القسم والإصدار والحجم إذا كان متوفراً.
+  الواجهة مصممة حتى تكون
+  مريحة وسريعة على الموبايل.
 </p>
 
 </div>
@@ -1717,10 +1778,6 @@ footer{
 </main>
 
 
-
-<!-- =========================
-     FOOTER
-========================= -->
 
 <footer>
 
@@ -1743,8 +1800,9 @@ IPASTRONG © 2026
 
 
 <button
-  class="close"
   id="closeModal"
+  class="close"
+  type="button"
 >
 
   ✕
@@ -1754,7 +1812,6 @@ IPASTRONG © 2026
 
 <div class="detailTop">
 
-
 <img
   id="mIcon"
   alt=""
@@ -1763,18 +1820,13 @@ IPASTRONG © 2026
 
 <div>
 
-<h2
-  id="mName"
->
+<h2 id="mName">
 </h2>
 
-<p
-  id="mMeta"
->
+<p id="mMeta">
 </p>
 
 </div>
-
 
 </div>
 
@@ -1788,6 +1840,7 @@ IPASTRONG © 2026
 <button
   id="modalDownload"
   class="detailBtn"
+  type="button"
 >
 
   📲 تنزيل التطبيق
@@ -1804,9 +1857,9 @@ IPASTRONG © 2026
 <script>
 
 
-/* =========================
+/* =================================
    SETTINGS
-========================= */
+================================= */
 
 const SOURCE =
   './ipastrong.json';
@@ -1815,43 +1868,43 @@ const TG =
   'https://t.me/ipastrong';
 
 
-/* =========================
-   STATE
-========================= */
+/* =================================
+   DATA
+================================= */
 
 let apps = [];
 
 let filtered = [];
 
-let shown = 30;
+let shown = 40;
 
-let cat = 'الكل';
+let category =
+  'الكل';
+
+let searchMode =
+  false;
 
 
-/* =========================
+/* =================================
    HELPERS
-========================= */
+================================= */
 
-const $ =
-  id =>
-  document.getElementById(id);
+function $(id){
 
-
-function goTelegram(){
-
-  window.location.href =
-    TG;
+  return document.getElementById(
+    id
+  );
 
 }
 
 
-function esc(value){
+function escapeHTML(value){
 
   return String(
     value ?? ''
   ).replace(
     /[&<>"']/g,
-    function(m){
+    function(char){
 
       return {
 
@@ -1861,7 +1914,7 @@ function esc(value){
         '"':'&quot;',
         "'":'&#39;'
 
-      }[m];
+      }[char];
 
     }
   );
@@ -1869,18 +1922,18 @@ function esc(value){
 }
 
 
-function fmtSize(n){
+function sizeText(bytes){
 
-  if(!n){
+  if(!bytes){
     return '';
   }
 
-  n =
-    Number(n);
+  const n =
+    Number(bytes);
 
 
   if(
-    n >
+    n >=
     1000000000
   ){
 
@@ -1895,7 +1948,7 @@ function fmtSize(n){
 
 
   if(
-    n >
+    n >=
     1000000
   ){
 
@@ -1919,54 +1972,56 @@ function fmtSize(n){
 }
 
 
-/* =========================
-   NORMALIZE APP
-========================= */
+function telegram(){
 
-function normalizeApp(x){
+  window.location.href =
+    TG;
+
+}
+
+
+/* =================================
+   NORMALIZE
+================================= */
+
+function normalize(item){
 
   return {
 
     name:
-      x.name ||
+      item.name ||
       'تطبيق بدون اسم',
 
     icon:
-      x.iconURL ||
-      x.icon ||
+      item.iconURL ||
+      item.icon ||
       '',
 
     category:
-      x.category ||
+      item.category ||
       'أخرى',
 
     version:
-      x.version ||
+      item.version ||
       (
-        x.versions &&
-        x.versions[0] &&
-        x.versions[0].version
+        item.versions &&
+        item.versions[0] &&
+        item.versions[0].version
       ) ||
       '—',
 
-    date:
-      x.updatedAt ||
-      x.versionDate ||
-      x.addedAt ||
-      '',
-
     size:
-      x.size ||
+      item.size ||
       (
-        x.versions &&
-        x.versions[0] &&
-        x.versions[0].size
+        item.versions &&
+        item.versions[0] &&
+        item.versions[0].size
       ) ||
       0,
 
-    desc:
-      x.localizedDescription ||
-      x.description ||
+    description:
+      item.localizedDescription ||
+      item.description ||
       'تطبيق متوفر ضمن مكتبة IPASTRONG.'
 
   };
@@ -1974,55 +2029,273 @@ function normalizeApp(x){
 }
 
 
-/* =========================
-   CREATE CARD
-========================= */
+/* =================================
+   CATEGORIES
+================================= */
 
-function createCard(app,index){
+function renderCategories(){
 
-  const card =
+  const list = [
+
+    'الكل',
+
+    ...new Set(
+
+      apps
+      .map(
+        item =>
+          item.category
+      )
+      .filter(Boolean)
+
+    )
+
+  ];
+
+
+  const box =
+    $('topChips');
+
+
+  box.innerHTML =
+    '';
+
+
+  list.forEach(
+    function(item){
+
+      const button =
+        document.createElement(
+          'button'
+        );
+
+
+      button.className =
+        'chip';
+
+
+      if(
+        item === category
+      ){
+
+        button.classList.add(
+          'active'
+        );
+
+      }
+
+
+      button.textContent =
+        item;
+
+
+      button.addEventListener(
+        'click',
+        function(){
+
+          category =
+            item;
+
+          searchMode =
+            false;
+
+          shown =
+            40;
+
+          $('search').value =
+            '';
+
+          $('clearSearch').style.display =
+            'none';
+
+          renderCategories();
+
+          renderApps();
+
+        }
+      );
+
+
+      box.appendChild(
+        button
+      );
+
+    }
+  );
+
+}
+
+
+/* =================================
+   SEARCH
+================================= */
+
+function doSearch(){
+
+  const value =
+    $('search')
+    .value
+    .trim()
+    .toLowerCase();
+
+
+  searchMode =
+    value.length > 0;
+
+
+  if(searchMode){
+
+    /*
+      أثناء البحث:
+      نعرض كل النتائج المطابقة
+      بدون حد 40.
+    */
+
+    shown =
+      999999;
+
+  }else{
+
+    shown =
+      40;
+
+  }
+
+
+  $('clearSearch').style.display =
+    searchMode
+    ? 'block'
+    : 'none';
+
+
+  renderApps();
+
+}
+
+
+/* =================================
+   FILTER
+================================= */
+
+function getFiltered(){
+
+  const value =
+    $('search')
+    .value
+    .trim()
+    .toLowerCase();
+
+
+  return apps.filter(
+    function(app){
+
+      const categoryOK =
+        category === 'الكل' ||
+        app.category === category;
+
+
+      if(!categoryOK){
+
+        return false;
+
+      }
+
+
+      if(!value){
+
+        return true;
+
+      }
+
+
+      const text = (
+
+        app.name +
+        ' ' +
+        app.category +
+        ' ' +
+        app.version
+
+      ).toLowerCase();
+
+
+      return text.includes(
+        value
+      );
+
+    }
+  );
+
+}
+
+
+/* =================================
+   CARD
+================================= */
+
+function createCard(
+  app,
+  index
+){
+
+  const article =
     document.createElement(
       'article'
     );
 
-  card.className =
+
+  article.className =
     'card';
 
-  card.dataset.index =
+
+  article.dataset.index =
     index;
 
 
-  card.innerHTML = `
+  article.innerHTML = `
 
     <div class="iconWrap">
 
       <span class="cardBadge">
-        ${esc(app.category)}
+        ${escapeHTML(
+          app.category
+        )}
       </span>
 
       <img
         class="icon"
         loading="lazy"
-        src="${esc(app.icon)}"
-        alt="${esc(app.name)}"
+        src="${escapeHTML(
+          app.icon
+        )}"
+        alt="${escapeHTML(
+          app.name
+        )}"
       >
 
     </div>
 
 
     <h3>
-      ${esc(app.name)}
+      ${escapeHTML(
+        app.name
+      )}
     </h3>
 
 
     <p class="meta">
 
       إصدار
-      ${esc(app.version)}
+      ${escapeHTML(
+        app.version
+      )}
 
       ${
         app.size
-        ? ' · ' + fmtSize(app.size)
+        ? ' · ' +
+          sizeText(
+            app.size
+          )
         : ''
       }
 
@@ -2041,24 +2314,41 @@ function createCard(app,index){
   `;
 
 
-  /*
-    الضغط على الكارت
-    يفتح التفاصيل.
-  */
+  const image =
+    article.querySelector(
+      '.icon'
+    );
 
-  card.addEventListener(
+
+  image.addEventListener(
+    'error',
+    function(){
+
+      /*
+        إذا الأيقونة ما تشتغل،
+        نخلي الكرت مرتب بدل صورة مكسورة.
+      */
+
+      this.style.display =
+        'none';
+
+    }
+  );
+
+
+  article.addEventListener(
     'click',
     function(){
 
-      const appIndex =
+      const i =
         Number(
-          this.dataset.index
+          article.dataset.index
         );
 
+
       const selected =
-        filtered[
-          appIndex
-        ];
+        filtered[i];
+
 
       if(selected){
 
@@ -2072,14 +2362,8 @@ function createCard(app,index){
   );
 
 
-  /*
-    الضغط على زر التنزيل
-    لا يفتح التفاصيل،
-    يروح للرابط.
-  */
-
   const download =
-    card.querySelector(
+    article.querySelector(
       '.download'
     );
 
@@ -2092,204 +2376,25 @@ function createCard(app,index){
 
       event.stopPropagation();
 
-      goTelegram();
+      telegram();
 
     }
   );
 
 
-  return card;
+  return article;
 
 }
 
 
-/* =========================
-   RENDER CATEGORIES
-========================= */
-
-function renderCategories(){
-
-  const categories = [
-
-    'الكل',
-
-    ...new Set(
-      apps
-      .map(
-        app =>
-          app.category
-      )
-      .filter(Boolean)
-    )
-
-  ];
-
-
-  const top =
-    $('topChips');
-
-
-  top.innerHTML =
-    '';
-
-
-  categories.forEach(
-    function(category){
-
-      const button =
-        document.createElement(
-          'button'
-        );
-
-      button.className =
-        'chip';
-
-
-      if(
-        category === cat
-      ){
-
-        button.classList.add(
-          'active'
-        );
-
-      }
-
-
-      button.textContent =
-        category;
-
-
-      button.addEventListener(
-        'click',
-        function(){
-
-          setCategory(
-            category
-          );
-
-        }
-      );
-
-
-      top.appendChild(
-        button
-      );
-
-    }
-  );
-
-}
-
-
-/* =========================
-   SET CATEGORY
-========================= */
-
-function setCategory(category){
-
-  cat =
-    category;
-
-  shown =
-    30;
-
-
-  renderCategories();
-
-  renderApps();
-
-
-  const appsSection =
-    $('apps');
-
-
-  if(appsSection){
-
-    setTimeout(
-      function(){
-
-        appsSection.scrollIntoView({
-          behavior:'smooth',
-          block:'start'
-        });
-
-      },
-      50
-    );
-
-  }
-
-}
-
-
-/* =========================
-   RENDER APPS
-========================= */
+/* =================================
+   RENDER
+================================= */
 
 function renderApps(){
 
-  const search =
-    $('search')
-    .value
-    .trim()
-    .toLowerCase();
-
-
   filtered =
-    apps.filter(
-      function(app){
-
-        const categoryMatch =
-          cat === 'الكل' ||
-          app.category === cat;
-
-
-        const text =
-          (
-            app.name +
-            ' ' +
-            app.category +
-            ' ' +
-            app.version
-          )
-          .toLowerCase();
-
-
-        const searchMatch =
-          !search ||
-          text.includes(
-            search
-          );
-
-
-        return (
-          categoryMatch &&
-          searchMatch
-        );
-
-      }
-    );
-
-
-  const resultText =
-    $('resultText');
-
-
-  resultText.textContent =
-    `عرض ${
-      Math.min(
-        shown,
-        filtered.length
-      ).toLocaleString(
-        'ar-IQ'
-      )
-    } من ${
-      filtered.length
-      .toLocaleString(
-        'ar-IQ'
-      )
-    }`;
+    getFiltered();
 
 
   const grid =
@@ -2300,20 +2405,69 @@ function renderApps(){
     '';
 
 
-  const list =
-    filtered.slice(
-      0,
-      shown
-    );
+  const total =
+    filtered.length;
 
 
-  if(!list.length){
+  /*
+    إذا بحث المستخدم:
+    نعرض كل النتائج.
+  */
+
+  const visible =
+    searchMode
+    ? filtered
+    : filtered.slice(
+        0,
+        shown
+      );
+
+
+  if(
+    searchMode
+    && total > 0
+  ){
+
+    $('resultHeader')
+      .classList.add(
+        'show'
+      );
+
+
+    $('resultTitle')
+      .textContent =
+      '🔎 نتائج البحث';
+
+
+    $('resultCount')
+      .textContent =
+      `${total.toLocaleString(
+        'ar-IQ'
+      )} نتيجة`;
+
+  }else{
+
+    $('resultHeader')
+      .classList.remove(
+        'show'
+      );
+
+  }
+
+
+  if(
+    visible.length === 0
+  ){
 
     grid.innerHTML = `
 
       <div class="noResults">
 
-        🔍 ما حصلنا تطبيقات بهالبحث
+        <strong>
+          🔍 ما حصلنا شي
+        </strong>
+
+        جرّب اسم ثاني أو قسم ثاني.
 
       </div>
 
@@ -2321,14 +2475,16 @@ function renderApps(){
 
   }else{
 
-    list.forEach(
+    visible.forEach(
       function(app,index){
 
         grid.appendChild(
+
           createCard(
             app,
             index
           )
+
         );
 
       }
@@ -2337,21 +2493,33 @@ function renderApps(){
   }
 
 
-  const more =
-    $('more');
+  $('resultText')
+    .textContent = searchMode
 
+      ? `كل النتائج المطابقة للبحث`
+
+      : `${total.toLocaleString(
+          'ar-IQ'
+        )} تطبيق`;
+
+
+
+  /*
+    زر عرض المزيد يظهر فقط
+    عندما لا يوجد بحث.
+  */
 
   if(
-    shown <
-    filtered.length
+    !searchMode &&
+    shown < total
   ){
 
-    more.style.display =
+    $('more').style.display =
       'inline-block';
 
   }else{
 
-    more.style.display =
+    $('more').style.display =
       'none';
 
   }
@@ -2359,66 +2527,49 @@ function renderApps(){
 }
 
 
-/* =========================
-   OPEN MODAL
-========================= */
+/* =================================
+   MODAL
+================================= */
 
 function openModal(app){
 
-  const modal =
-    $('modal');
-
-
-  const icon =
-    $('mIcon');
-
-
-  const name =
-    $('mName');
-
-
-  const meta =
-    $('mMeta');
-
-
-  const desc =
-    $('mDesc');
-
-
-  icon.src =
+  $('mIcon').src =
     app.icon || '';
 
 
-  icon.onerror =
+  $('mIcon').onerror =
     function(){
 
-      this.style.opacity =
-        '.2';
+      this.style.display =
+        'none';
 
     };
 
 
-  name.textContent =
+  $('mName').textContent =
     app.name;
 
 
-  meta.textContent =
+  $('mMeta').textContent =
     `${app.category} · الإصدار ${app.version}` +
     (
       app.size
       ? ' · ' +
-        fmtSize(app.size)
+        sizeText(
+          app.size
+        )
       : ''
     );
 
 
-  desc.textContent =
-    app.desc;
+  $('mDesc').textContent =
+    app.description;
 
 
-  modal.classList.add(
-    'show'
-  );
+  $('modal')
+    .classList.add(
+      'show'
+    );
 
 
   document.body.style.overflow =
@@ -2426,10 +2577,6 @@ function openModal(app){
 
 }
 
-
-/* =========================
-   CLOSE MODAL
-========================= */
 
 function closeModal(){
 
@@ -2470,24 +2617,16 @@ $('modal')
 );
 
 
-/* =========================
-   MODAL DOWNLOAD
-========================= */
-
 $('modalDownload')
 .addEventListener(
   'click',
-  function(){
-
-    goTelegram();
-
-  }
+  telegram
 );
 
 
-/* =========================
-   LOAD MORE
-========================= */
+/* =================================
+   MORE
+================================= */
 
 $('more')
 .addEventListener(
@@ -2495,7 +2634,7 @@ $('more')
   function(){
 
     shown +=
-      30;
+      40;
 
     renderApps();
 
@@ -2503,48 +2642,70 @@ $('more')
 );
 
 
-/* =========================
-   SEARCH
-========================= */
+/* =================================
+   SEARCH EVENTS
+================================= */
 
 $('search')
 .addEventListener(
   'input',
+  doSearch
+);
+
+
+$('clearSearch')
+.addEventListener(
+  'click',
   function(){
 
+    $('search').value =
+      '';
+
+    category =
+      'الكل';
+
+    searchMode =
+      false;
+
     shown =
-      30;
+      40;
+
+    $('clearSearch').style.display =
+      'none';
+
+    renderCategories();
 
     renderApps();
+
+    $('search').focus();
 
   }
 );
 
 
-/* =========================
-   LOAD LIBRARY
-========================= */
+/* =================================
+   LOAD JSON
+================================= */
 
-async function boot(){
+async function loadApps(){
 
   try{
 
     $('resultText')
       .textContent =
-      'جاري تحميل المكتبة...';
+      'جاري تحميل التطبيقات...';
 
 
     /*
-      نقرأ ipastrong.json
-      من نفس موقع Cloudflare.
+      مهم:
+      الموقع يقرأ JSON كبيانات فقط.
     */
 
     const response =
       await fetch(
-        SOURCE,
-        {
-          cache:'no-store'
-        }
+        SOURCE +
+        '?v=' +
+        Date.now()
       );
 
 
@@ -2553,7 +2714,7 @@ async function boot(){
     ){
 
       throw new Error(
-        'فشل تحميل المكتبة'
+        'JSON request failed'
       );
 
     }
@@ -2565,9 +2726,12 @@ async function boot(){
 
     const raw =
       Array.isArray(data)
+
       ? data
+
       : (
           data.apps ||
+          data.data ||
           []
         );
 
@@ -2575,20 +2739,19 @@ async function boot(){
     apps =
       raw
       .map(
-        normalizeApp
+        normalize
       )
       .filter(
-        app =>
-          app.name
+        item =>
+          item.name
       );
 
 
-    $('count')
+    $('resultText')
       .textContent =
-      apps.length
-      .toLocaleString(
+      `${apps.length.toLocaleString(
         'ar-IQ'
-      );
+      )} تطبيق متوفر`;
 
 
     renderCategories();
@@ -2605,18 +2768,19 @@ async function boot(){
 
     $('resultText')
       .textContent =
-      'تعذر تحميل مكتبة التطبيقات';
+      'تعذر تحميل المكتبة';
 
 
     $('grid').innerHTML = `
 
       <div class="noResults">
 
-        ⚠️ تعذر تحميل مكتبة التطبيقات حالياً
+        <strong>
+          ⚠️ تعذر تحميل التطبيقات
+        </strong>
 
-        <br><br>
-
-        حاول تحديث الصفحة مرة ثانية.
+        تأكد من اتصال الإنترنت
+        وحاول تحديث الصفحة.
 
       </div>
 
@@ -2627,11 +2791,11 @@ async function boot(){
 }
 
 
-/* =========================
+/* =================================
    START
-========================= */
+================================= */
 
-boot();
+loadApps();
 
 </script>
 
