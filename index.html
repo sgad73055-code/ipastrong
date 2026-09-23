@@ -932,16 +932,10 @@ function norm(x){
          'تطبيق متوفر ضمن مكتبة IPASTRONG.'
   };
 }
-
-function card(a){
-
-  const safe=JSON.stringify(a)
-    .replace(/'/g,"&#39;");
+function card(a, index){
 
   return `
-
-  <article class="card"
-    onclick='openModal(${safe})'>
+  <article class="card" data-app-index="${index}">
 
     <div class="iconWrap">
 
@@ -961,26 +955,21 @@ function card(a){
 
     </div>
 
-    <h3>
-      ${esc(a.name)}
-    </h3>
+    <h3>${esc(a.name)}</h3>
 
     <p class="meta">
       إصدار ${esc(a.version)}
-      ${a.size?' · '+fmtSize(a.size):''}
+      ${a.size ? ' · '+fmtSize(a.size) : ''}
     </p>
 
-    <button
-      class="download"
-      onclick="event.stopPropagation();goTelegram()">
-
+    <button class="download">
       📲 تنزيل التطبيق
-
     </button>
 
   </article>
-
   `;
+}
+
 }
 
 function renderCats(){
