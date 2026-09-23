@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#07070b">
+<title>IPASTRONG — متجر التطبيقات</title>
+<style>
+:root{
+  --bg:#050509;--panel:#0d0d14;--panel2:#11111a;--line:rgba(255,255,255,.09);
+  --text:#fff;--muted:#9b9baa;--purple:#9b5cff;--pink:#ff3d9a;--cyan:#35d7ff;
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:
+radial-gradient(circle at 15% 5%,rgba(155,92,255,.20),transparent 28%),
+radial-gradient(circle at 85% 18%,rgba(255,61,154,.14),transparent 25%),
+linear-gradient(180deg,#050509 0%,#080810 55%,#050509 100%);
+color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Arial,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.035;background-image:linear-gradient(rgba(255,255,255,.5) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.5) 1px,transparent 1px);background-size:32px 32px}
+a{text-decoration:none;color:inherit}button,input{font:inherit}
+.container{width:min(1180px,calc(100% - 28px));margin:auto}
+header{position:sticky;top:0;z-index:50;background:rgba(5,5,9,.72);backdrop-filter:blur(22px);border-bottom:1px solid var(--line)}
+.nav{height:68px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:.3px}
+.logo{width:40px;height:40px;border-radius:13px;display:grid;place-items:center;background:linear-gradient(135deg,var(--purple),var(--pink));box-shadow:0 0 28px rgba(155,92,255,.35);font-size:19px}
+.navlinks{display:flex;gap:8px}.navlinks a{padding:10px 13px;border-radius:12px;color:#cfcfd8;font-size:13px}.navlinks a:hover{background:#15151e;color:#fff}
+.hero{padding:62px 0 36px;text-align:center;position:relative}
+.badge{display:inline-flex;align-items:center;gap:7px;border:1px solid rgba(155,92,255,.3);background:rgba(155,92,255,.08);color:#d9c7ff;padding:8px 13px;border-radius:999px;font-size:12px}
+.dot{width:7px;height:7px;background:#5dff9b;border-radius:50%;box-shadow:0 0 12px #5dff9b}
+.hero h1{font-size:clamp(38px,7vw,76px);line-height:1.02;margin:20px auto 14px;max-width:850px;letter-spacing:-2.5px}
+.gradient{background:linear-gradient(90deg,#fff,#cdaeff 42%,#ff74bd);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{max-width:650px;margin:auto;color:#aaa9b6;font-size:15px;line-height:1.9}
+.search{margin:28px auto 0;max-width:690px;position:relative}
+.search input{width:100%;height:58px;border-radius:18px;border:1px solid var(--line);background:rgba(17,17,26,.82);color:#fff;padding:0 52px 0 18px;outline:none;box-shadow:0 18px 55px rgba(0,0,0,.3)}
+.search input:focus{border-color:rgba(155,92,255,.6);box-shadow:0 0 0 4px rgba(155,92,255,.08),0 18px 55px rgba(0,0,0,.35)}
+.search span{position:absolute;right:18px;top:17px;color:#8f8f9c;font-size:21px}
+.stats{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:18px}
+.stat{background:rgba(255,255,255,.045);border:1px solid var(--line);padding:9px 13px;border-radius:12px;color:#bbb;font-size:12px}
+.stat b{color:#fff;margin-left:4px}
+section{padding:34px 0}
+.sectionHead{display:flex;align-items:end;justify-content:space-between;gap:15px;margin-bottom:16px}
+.sectionHead h2{margin:0;font-size:23px}.sectionHead p{margin:5px 0 0;color:#858592;font-size:12px}
+.rail{display:flex;gap:14px;overflow-x:auto;padding:5px 2px 14px;scroll-snap-type:x mandatory;scrollbar-width:none}
+.rail::-webkit-scrollbar{display:none}
+.feature{min-width:310px;max-width:310px;height:185px;position:relative;overflow:hidden;border-radius:22px;border:1px solid var(--line);background:#101017;scroll-snap-align:start;box-shadow:0 18px 50px rgba(0,0,0,.3)}
+.feature img{width:100%;height:100%;object-fit:cover;opacity:.55;filter:saturate(1.1)}
+.feature:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 15%,rgba(4,4,8,.95) 100%)}
+.featureInfo{position:absolute;z-index:2;bottom:15px;right:16px;left:16px}.featureInfo strong{font-size:17px}.featureInfo small{display:block;color:#aaa;margin-top:5px}
+.chips{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding-bottom:5px}.chips::-webkit-scrollbar{display:none}
+.chip{white-space:nowrap;border:1px solid var(--line);background:#0d0d14;color:#a9a9b3;border-radius:999px;padding:9px 14px;font-size:12px;cursor:pointer}.chip.active,.chip:hover{background:linear-gradient(135deg,rgba(155,92,255,.2),rgba(255,61,154,.12));border-color:rgba(155,92,255,.45);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}
+.card{min-width:0;background:linear-gradient(180deg,#11111a,#0b0b11);border:1px solid var(--line);border-radius:20px;padding:11px;cursor:pointer;transition:.25s transform,.25s border-color,.25s box-shadow;position:relative;overflow:hidden}
+.card:hover{transform:translateY(-5px);border-color:rgba(155,92,255,.42);box-shadow:0 20px 50px rgba(0,0,0,.4),0 0 30px rgba(155,92,255,.08)}
+.icon{width:100%;aspect-ratio:1;border-radius:17px;object-fit:cover;background:#181820;display:block}
+.card h3{font-size:13px;margin:10px 3px 4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.meta{font-size:10px;color:#858592;margin:0 3px 9px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.download{width:100%;border:0;border-radius:12px;height:35px;background:linear-gradient(135deg,#9b5cff,#ff3d9a);color:#fff;font-size:11px;font-weight:800;cursor:pointer}
+.more{display:flex;justify-content:center;margin-top:22px}.more button{border:1px solid rgba(155,92,255,.35);background:#11111a;color:#fff;border-radius:13px;padding:11px 20px;cursor:pointer}
+.packages{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}
+.package{position:relative;padding:22px;border-radius:23px;border:1px solid var(--line);background:linear-gradient(145deg,#12121b,#09090e);overflow:hidden;animation:float 4.5s ease-in-out infinite}
+.package:nth-child(2){animation-delay:.5s}.package:nth-child(3){animation-delay:1s}.package:nth-child(4){animation-delay:1.5s}
+.package:before{content:"";position:absolute;width:160px;height:160px;right:-80px;top:-80px;background:var(--purple);filter:blur(65px);opacity:.16}
+@keyframes float{50%{transform:translateY(-5px)}}.price{font-size:28px;font-weight:900;margin:9px 0}.package h3{margin:0;font-size:16px}.package p{color:#9898a5;font-size:11px;line-height:1.7;margin:6px 0 14px}.guarantee{font-size:11px;color:#71ffc0;background:rgba(113,255,192,.07);border:1px solid rgba(113,255,192,.16);padding:8px 10px;border-radius:11px}
+.infoGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.info{padding:20px;border:1px solid var(--line);border-radius:20px;background:#0d0d14}.info b{font-size:15px}.info p{color:#92929e;font-size:12px;line-height:1.8}
+footer{margin-top:35px;border-top:1px solid var(--line);padding:28px 0;color:#777783;text-align:center;font-size:11px}
+.modal{position:fixed;inset:0;z-index:100;background:rgba(0,0,0,.76);backdrop-filter:blur(16px);display:none;align-items:end;justify-content:center;padding:12px}.modal.show{display:flex}
+.sheet{width:min(700px,100%);max-height:90vh;overflow:auto;background:#101018;border:1px solid var(--line);border-radius:26px;padding:20px;box-shadow:0 30px 100px rgba(0,0,0,.65);animation:up .25s ease}
+@keyframes up{from{transform:translateY(25px);opacity:0}to{transform:none;opacity:1}}
+.close{float:left;border:0;background:#1b1b25;color:#fff;width:35px;height:35px;border-radius:11px;cursor:pointer}
+.detailTop{display:flex;align-items:center;gap:15px;clear:both;padding-top:8px}.detailTop img{width:92px;height:92px;border-radius:22px;object-fit:cover}.detailTop h2{margin:0 0 7px;font-size:22px}.detailTop p{margin:0;color:#8f8f9b;font-size:11px}
+.desc{color:#b5b5bf;font-size:13px;line-height:1.9;margin:18px 0}
+.detailBtn{width:100%;height:48px;border:0;border-radius:15px;background:linear-gradient(135deg,#9b5cff,#ff3d9a);color:#fff;font-weight:900;cursor:pointer}
+@media(max-width:900px){.grid{grid-template-columns:repeat(4,1fr)}.packages{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.container{width:min(100% - 20px,1180px)}.navlinks{display:none}.hero{padding-top:42px}.hero h1{font-size:43px;letter-spacing:-1.5px}.feature{min-width:275px;max-width:275px;height:165px}.grid{grid-template-columns:repeat(2,1fr);gap:10px}.card{border-radius:17px;padding:8px}.icon{border-radius:14px}.packages{grid-template-columns:1fr 1fr;gap:9px}.package{padding:15px;border-radius:18px}.price{font-size:21px}.infoGrid{grid-template-columns:1fr}.sectionHead h2{font-size:20px}}
+
+.categoryBlock{margin-top:30px;padding:18px 0}
+.categoryTitle{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:13px}
+.categoryTitle h3{margin:0;font-size:20px}
+.categoryTitle span{font-size:11px;color:#858592}
+.categoryRail{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:12px}
+@media(max-width:900px){.categoryRail{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:620px){.categoryRail{grid-template-columns:repeat(2,minmax(0,1fr))}.categoryBlock{padding:12px 0}}
+
+/* Premium category layout */
+.categoryBlock{
+  margin-top:34px;
+  padding:22px 0 26px;
+  border-top:1px solid rgba(255,255,255,.07);
+  position:relative;
+}
+.categoryBlock:after{
+  content:"";
+  position:absolute;top:0;right:0;width:180px;height:1px;
+  background:linear-gradient(90deg,transparent,#9b5cff,transparent);
+  opacity:.8;
+}
+.categoryTitle{align-items:center;margin-bottom:16px}
+.categoryKicker{display:block;color:#8f72c8;font-size:10px;margin-bottom:4px}
+.categoryTitle h3{font-size:22px;margin:0}
+.categoryCount{
+  color:#a9a9b4;background:rgba(255,255,255,.045);
+  border:1px solid rgba(255,255,255,.08);
+  padding:8px 11px;border-radius:999px;font-size:10px;
+}
+.categoryRail{
+  display:grid;
+  grid-template-columns:repeat(8,minmax(0,1fr));
+  gap:12px;
+}
+.categoryRail .card{min-width:0}
+
+.categoryTop{position:sticky;top:68px;z-index:40;padding:10px 0 12px;background:rgba(5,5,9,.84);backdrop-filter:blur(20px);border-top:1px solid rgba(255,255,255,.05);border-bottom:1px solid rgba(255,255,255,.08)}
+.categoryTopHead{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:7px}.categoryTopHead strong{font-size:13px}.categoryTopHead span{font-size:10px;color:#858592}.categoryTop .chips{padding:0}
+@media(max-width:620px){.categoryTop{top:60px;padding:8px 0 9px}.categoryTopHead span{display:none}}
+/* Packages near the top, clearly separated */
+#packages{padding-top:10px}
+#packages .packages{position:relative}
+#packages .package{
+  min-height:175px;
+  display:flex;flex-direction:column;justify-content:center;
+  transform:translateY(0);
+  transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;
+}
+#packages .package:hover{
+  transform:translateY(-7px) scale(1.015);
+  border-color:rgba(155,92,255,.5);
+  box-shadow:0 22px 60px rgba(0,0,0,.45),0 0 35px rgba(155,92,255,.10);
+}
+#packages .package:nth-child(1){animation:packageFloat 4.6s ease-in-out infinite}
+#packages .package:nth-child(2){animation:packageFloat 4.6s ease-in-out .35s infinite}
+#packages .package:nth-child(3){animation:packageFloat 4.6s ease-in-out .7s infinite}
+#packages .package:nth-child(4){animation:packageFloat 4.6s ease-in-out 1.05s infinite}
+@keyframes packageFloat{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-5px)}
+}
+@media(max-width:1050px){.categoryRail{grid-template-columns:repeat(5,minmax(0,1fr))}}
+@media(max-width:760px){.categoryRail{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:620px){
+  .categoryRail{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+  #packages .packages{grid-template-columns:1fr 1fr}
+  #packages .package{min-height:155px}
+}
+</style>
+</head>
+<body>
+<header><div class="container nav">
+  <a class="brand" href="#"><span class="logo">IP</span><span>IPASTRONG</span></a>
+  <nav class="navlinks"><a href="#apps">التطبيقات</a><a href="#packages">الباقات</a><a href="#faq">الضمان</a><a href="https://t.me/ipastrong">القناة</a></nav>
+</div></header>
+
+<main>
+<section class="hero"><div class="container">
+  <span class="badge"><i class="dot"></i> متجر IPASTRONG — محدث باستمرار</span>
+  <h1>كل تطبيقاتك المفضلة<br><span class="gradient">بمكان واحد.</span></h1>
+  <p>اكتشف مكتبة ضخمة من التطبيقات المعدلة والمميزة. ابحث، شوف التفاصيل، وبعدها روح مباشرة لقناتنا حتى تحصل على التطبيق.</p>
+  <div class="search"><span>⌕</span><input id="search" placeholder="ابحث عن تطبيق، لعبة، أو قسم..."></div>
+  <div class="stats"><span class="stat"><b id="count">—</b> تطبيق</span><span class="stat">تحديثات مستمرة</span><span class="stat">دعم عبر القناة</span></div>
+</div></section>
+
+<section id="packages"><div class="container">
+  <div class="sectionHead"><div><h2>💎 الباقات</h2><p>اختر المدة المناسبة إلك</p></div></div>
+  <div class="packages">
+    <article class="package"><h3>ضمان شهر</h3><div class="price">10,000 د.ع</div><p>نفس الخدمة — الفرق فقط بمدة الضمان.</p><div class="guarantee">🛡️ 30 يوم ضمان</div></article>
+    <article class="package"><h3>ضمان 3 أشهر</h3><div class="price">15,000 د.ع</div><p>نفس الخدمة — مدة ضمان أطول.</p><div class="guarantee">🛡️ 90 يوم ضمان</div></article>
+    <article class="package"><h3>ضمان 6 أشهر</h3><div class="price">20,000 د.ع</div><p>نفس الخدمة — مدة ضمان أطول.</p><div class="guarantee">🛡️ 180 يوم ضمان</div></article>
+    <article class="package"><h3>ضمان 10 أشهر</h3><div class="price">30,000 د.ع</div><p>نفس الخدمة — أطول مدة ضمان.</p><div class="guarantee">🛡️ 300 يوم ضمان</div></article>
+  </div>
+</div></section>
+
+<section><div class="container">
+  <div class="sectionHead"><div><h2>✨ IPASTRONG</h2><p>تصفح المكتبة وخلي الباقي علينا</p></div></div>
+  <div class="infoGrid" style="grid-template-columns:repeat(3,1fr)">
+    <div class="info"><b>🔎 ابحث بسهولة</b><p>اكتب اسم التطبيق أو اللعبة ووصل للنتيجة بسرعة.</p></div>
+    <div class="info"><b>📚 مكتبة كبيرة</b><p>مكتبة التطبيقات تظهر من المصدر الرئيسي مباشرة.</p></div>
+    
+  </div>
+</div></section>
+
+<section id="apps"><div class="container">
+  <div class="sectionHead"><div><h2>🔥 التطبيقات</h2><p id="resultText">جاري تحميل المكتبة...</p></div></div>
+  <div id="chips" class="chips"></div>
+  <div id="grid" class="grid" style="margin-top:15px"></div>
+  <div class="more"><button id="more">عرض المزيد</button></div>
+  <div id="categorySections" style="margin-top:42px"></div>
+
+</div></section>
+
+
+
+<section id="faq"><div class="container">
+  <div class="sectionHead"><div><h2>🛡️ شنو يميز IPASTRONG؟</h2><p>معلومات سريعة</p></div></div>
+  <div class="infoGrid">
+    <div class="info"><b>🚀 مكتبة كبيرة</b><p>تصفح آلاف التطبيقات من المصدر الرئيسي بدون ما نغير بياناته.</p></div>
+    <div class="info"><b>🔎 بحث سريع</b><p>اكتب اسم التطبيق أو القسم ووصل له بسرعة من نفس الصفحة.</p></div>
+    
+  </div>
+</div></section>
+</main>
+
+<footer><div class="container">IPASTRONG © 2026 — التطبيقات والروابط تخضع للمصدر الرئيسي.</div></footer>
+
+<div id="modal" class="modal"><div class="sheet">
+  <button class="close" onclick="closeModal()">✕</button>
+  <div class="detailTop"><img id="mIcon"><div><h2 id="mName"></h2><p id="mMeta"></p></div></div>
+  <div id="mDesc" class="desc"></div>
+  <button class="detailBtn" onclick="goTelegram()">📲 تنزيل التطبيق</button>
+</div></div>
+
+<script>
+const SOURCE='https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/ipastrong.json';
+const TG='https://t.me/ipastrong';
+let apps=[], filtered=[], shown=30, cat='الكل';
+
+const $=id=>document.getElementById(id);
+function goTelegram(){window.open(TG,'_blank')}
+function esc(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
+function fmtSize(n){if(!n)return '';n=Number(n);if(n>1e9)return (n/1e9).toFixed(1)+' GB';if(n>1e6)return (n/1e6).toFixed(0)+' MB';return (n/1e3).toFixed(0)+' KB'}
+function norm(x){
+  return {
+    name:x.name||'تطبيق بدون اسم',
+    icon:x.iconURL||x.icon||'',
+    category:x.category||'أخرى',
+    version:x.version||x.versions?.[0]?.version||'—',
+    date:x.updatedAt||x.versionDate||x.addedAt||'',
+    size:x.size||x.versions?.[0]?.size||0,
+    desc:x.localizedDescription||x.description||'تطبيق متوفر ضمن مكتبة IPASTRONG.',
+    id:x.id||''
+  }
+}
+function card(a){
+  return `<article class="card" onclick='openModal(${JSON.stringify(a).replace(/'/g,"&#39;")})'>
+    <img class="icon" loading="lazy" src="${esc(a.icon)}" onerror="this.style.opacity=.18">
+    <h3>${esc(a.name)}</h3>
+    <p class="meta">${esc(a.category)} · ${esc(a.version)}</p>
+    <button class="download" onclick="event.stopPropagation();goTelegram()">تنزيل التطبيق</button>
+  </article>`
+}
+
+function renderCategorySections(){
+  const holder=$('categorySections');
+  const cats=[...new Set(apps.map(a=>a.category).filter(Boolean))];
+  holder.innerHTML=cats.map(c=>{
+    const all=apps.filter(a=>a.category===c);
+    const list=all.slice(0,8);
+    if(!list.length)return '';
+    return `<section class="categoryBlock">
+      <div class="categoryTitle">
+        <div>
+          <span class="categoryKicker">قسم التطبيقات</span>
+          <h3>${esc(c)}</h3>
+        </div>
+        <span class="categoryCount">${all.length.toLocaleString('ar-IQ')} تطبيق</span>
+      </div>
+      <div class="categoryRail">${list.map(card).join('')}</div>
+    </section>`;
+  }).join('');
+}
+
+function render(){
+  const q=$('search').value.trim().toLowerCase();
+  filtered=apps.filter(a=>(cat==='الكل'||a.category===cat)&&(!q||(a.name+' '+a.category+' '+a.version).toLowerCase().includes(q)));
+  $('resultText').textContent=`عرض ${Math.min(shown,filtered.length).toLocaleString('ar-IQ')} من ${filtered.length.toLocaleString('ar-IQ')}`;
+  $('grid').innerHTML=filtered.slice(0,shown).map(card).join('');
+  $('more').style.display=shown<filtered.length?'inline-block':'none';
+}
+function renderCats(){
+  const cats=['الكل',...new Set(apps.map(a=>a.category).filter(Boolean))];
+  const markup=cats.map(c=>`<button class="chip ${c===cat?'active':''}" onclick="setCat(${JSON.stringify(c)})">${esc(c)}</button>`).join('');
+  $('chips').innerHTML=markup;
+  $('topChips').innerHTML=markup;
+}
+function setCat(c){cat=c;shown=30;renderCats();render();$('apps').scrollIntoView({behavior:'smooth',block:'start'})}
+function renderFeatured(){
+  const picks=[...apps].sort((a,b)=>(b.date||'').localeCompare(a.date||'')).slice(0,12);
+  $('featured').innerHTML=picks.map(a=>`<article class="feature" onclick='openModal(${JSON.stringify(a).replace(/'/g,"&#39;")})">
+    <img loading="lazy" src="${esc(a.icon)}" onerror="this.style.opacity=.1">
+    <div class="featureInfo"><strong>${esc(a.name)}</strong><small>${esc(a.category)} · إصدار ${esc(a.version)}</small></div>
+  </article>`).join('');
+}
+function openModal(a){
+  $('mIcon').src=a.icon;$('mName').textContent=a.name;$('mMeta').textContent=`${a.category} · الإصدار ${a.version}${a.size?' · '+fmtSize(a.size):''}`;
+  $('mDesc').textContent=a.desc||'تطبيق متوفر ضمن مكتبة IPASTRONG.';
+  $('modal').classList.add('show');document.body.style.overflow='hidden'
+}
+function closeModal(){$('modal').classList.remove('show');document.body.style.overflow=''}
+$('modal').addEventListener('click',e=>{if(e.target.id==='modal')closeModal()});
+$('more').onclick=()=>{shown+=30;render()};
+$('search').oninput=()=>{shown=30;render()};
+
+async function boot(){
+  try{
+    const r=await fetch(SOURCE,{cache:'no-store'}); if(!r.ok)throw Error('source');
+    const d=await r.json();
+    const raw=Array.isArray(d)?d:(d.apps||[]);
+    apps=raw.map(norm).filter(a=>a.name);
+    $('count').textContent=apps.length.toLocaleString('ar-IQ');
+    renderCats();renderCategorySections();render();
+  }catch(e){
+    $('resultText').textContent='تعذر تحميل مكتبة التطبيقات حالياً';
+    $('grid').innerHTML='<div style="grid-column:1/-1;text-align:center;padding:40px;color:#999">تأكد من اتصال الإنترنت ثم أعد تحميل الصفحة.</div>';
+  }
+}
+boot();
+</script>
+</body>
+</html>
