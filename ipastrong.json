@@ -24527,29 +24527,4 @@
       "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.grailr.CARROTweather.png",
       "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.grailr.CARROTweather.png"
     },
-    {
-  "id": "APP-KURD4U-PUBG-46",
-  "name": "PUBG Mobile KURD4U",
-  "bundleIdentifier": "com.tencent.ig",
-  "bundleId": "com.tencent.ig",
-  "category": "ألعاب",
-  "description": "🔥 PUBG Mobile – Global | KURD4U V1.1\n\n🎮 الإصدار: 4.6\n📱 يدعم iPhone و iPad\n\n⭐ المميزات:\n• ESP – كاشف الأعداء\n• ESP Item & Car – كاشف اللوت والسيارات\n• Aimbot – مساعد الاستهداف\n• Skin & Lobby Skin\n• Gun Bag Skin & Kill Message\n• iPad View\n• 120 FPS\n\n⚠️ تنبيه:\nبعض الميزات قد تعرض الحساب للحظر، لذلك يُنصح باستخدام الميزات الآمنة فقط.\n\n📦 حجم الملف: 3.5 GB",
-  "version": "4.6",
-  "versionDate": "2026-09-24",
-  "downloadURL": "https://download2268.mediafire.com/9ccsj4oamywgrc-rP9MMwK4kG-IX_zY__JtBoHXkR-mgiu7v5478tWJYaMBgPteyOMDF6j58phEB6kqk3FOXHgYTRaMGHfZ8akVHKoUls-TL5kiOM6xv6v4OpTLcUDaS8yj2ZN-pgsfQSrRi1P7FMRYxXf-BB8tlbSl6LG8IxnrJ8KW8/kpgxo5p6wq40ttn/KURD4U+GL+V1+%284.6%29.ipa",
-  "ipaUrl": "https://download2268.mediafire.com/9ccsj4oamywgrc-rP9MMwK4kG-IX_zY__JtBoHXkR-mgiu7v5478tWJYaMBgPteyOMDF6j58phEB6kqk3FOXHgYTRaMGHfZ8akVHKoUls-TL5kiOM6xv6v4OpTLcUDaS8yj2ZN-pgsfQSrRi1P7FMRYxXf-BB8tlbSl6LG8IxnrJ8KW8/kpgxo5p6wq40ttn/KURD4U+GL+V1+%284.6%29.ipa",
-  "size": 3500000000,
-  "addedAt": "2026-09-24",
-  "updatedAt": "2026-09-24"
-}
-    {
-      "name": "SquareDude",
-      "type": 1,
-      "bundleID": "tech.miidii.SquareDude",
-      "bundleIdentifier": "tech.miidii.SquareDude",
-      "version": "1.6",
-      "versionDate": "2026-09-14",
-      "fullDate": "20260914082640",
-      "size": 24017544,
-      "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-09-2026/SquareDude_1.6_IAP_%40thisismanpreets_apptesters.org.ipa",
-      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-09-2026/Squ
+ 
