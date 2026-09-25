@@ -20720,6 +20720,38 @@
       "updatedAt": "2026-09-07"
     },
     {
+      "name": "Crsel",
+      "type": 1,
+      "bundleID": "com.frameoneapps.Crsel",
+      "bundleIdentifier": "com.frameoneapps.Crsel",
+      "version": "1.5.4",
+      "versionDate": "2026-09-25",
+      "fullDate": "20260925151347",
+      "size": 148240842,
+      "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/25-09-2026/Crsel_1.5.4_Pro_%40thisismanpreets_apptesters.org.ipa",
+      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/25-09-2026/Crsel_1.5.4_Pro_%40thisismanpreets_apptesters.org.ipa",
+      "developerName": "",
+      "localizedDescription": "Injected with Pro",
+      "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.frameoneapps.Crsel.png",
+      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.frameoneapps.Crsel.png"
+    },
+    {
+      "name": "PDFExpert",
+      "type": 1,
+      "bundleID": "com.readdle.PDFExpert5",
+      "bundleIdentifier": "com.readdle.PDFExpert5",
+      "version": "7.26.1",
+      "versionDate": "2026-09-25",
+      "fullDate": "20260925132323",
+      "size": 183710991,
+      "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/25-09-2026/PDFExpert_7.26.1_Premium_%40thisismanpreets_apptesters.org.ipa",
+      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/25-09-2026/PDFExpert_7.26.1_Premium_%40thisismanpreets_apptesters.org.ipa",
+      "developerName": "",
+      "localizedDescription": "Injected with Premium",
+      "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.readdle.PDFExpert5.png",
+      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.readdle.PDFExpert5.png"
+    },
+    {
       "name": "Mockup",
       "type": 1,
       "bundleID": "com.hasankassem.mockup",
@@ -151182,42 +151214,10 @@
       "localizedDescription": "Injected with Subscription Unlocked",
       "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.internet-rocks.codescanner.png",
       "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.internet-rocks.codescanner.png"
-    },
-    {
-      "name": "PlantApp",
-      "type": 1,
-      "bundleID": "com.scaleup.plantid",
-      "bundleIdentifier": "com.scaleup.plantid",
-      "version": "3.2.0",
-      "versionDate": "2025-09-23",
-      "fullDate": "20250923152105",
-      "size": 85731518,
-      "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-09-2025/PlantApp_3.2.0_Pro_%40thisismanpreets_apptesters.org.ipa",
-      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-09-2025/PlantApp_3.2.0_Pro_%40thisismanpreets_apptesters.org.ipa",
-      "developerName": "",
-      "localizedDescription": "Injected with Pro",
-      "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.scaleup.plantid.png",
-      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.scaleup.plantid.png"
-    },
-    {
-      "name": "LingoDeer",
-      "type": 1,
-      "bundleID": "com.lingodeer",
-      "bundleIdentifier": "com.lingodeer",
-      "version": "3.0.12",
-      "versionDate": "2025-09-23",
-      "fullDate": "20250923130551",
-      "size": 138426479,
-      "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-09-2025/LingoDeer_3.0.12_Premium_%40thisismanpreets_apptesters.org.ipa",
-      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-09-2025/LingoDeer_3.0.12_Premium_%40thisismanpreets_apptesters.org.ipa",
-      "developerName": "",
-      "localizedDescription": "Injected with Premium",
-      "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.lingodeer.png",
-      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.lingodeer.png"
     }
   ],
   "subtitle": "ipastrong",
   "description": "Merged IPA sources",
   "permissions": [],
-  "lastUpdated": "2026-09-25T06:33:28.944754+00:00"
+  "lastUpdated": "2026-09-25T12:33:24.529233+00:00"
 }
