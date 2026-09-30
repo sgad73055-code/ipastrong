@@ -20720,6 +20720,38 @@
       "updatedAt": "2026-09-07"
     },
     {
+      "name": "DiamondFinder",
+      "type": 1,
+      "bundleID": "com.mcdiamondfinder.app",
+      "bundleIdentifier": "com.mcdiamondfinder.app",
+      "version": "9.2.5",
+      "versionDate": "2026-09-30",
+      "fullDate": "20260930111655",
+      "size": 59843486,
+      "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-09-2026/DiamondFinder_9.2.5_Pro_%40thisismanpreets_apptesters.org.ipa",
+      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-09-2026/DiamondFinder_9.2.5_Pro_%40thisismanpreets_apptesters.org.ipa",
+      "developerName": "",
+      "localizedDescription": "Injected with Pro",
+      "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mcdiamondfinder.app.png",
+      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mcdiamondfinder.app.png"
+    },
+    {
+      "name": "PureStatus",
+      "type": 1,
+      "bundleID": "com.damtechdesigns.wa.story",
+      "bundleIdentifier": "com.damtechdesigns.wa.story",
+      "version": "2026.06",
+      "versionDate": "2026-09-30",
+      "fullDate": "20260930071620",
+      "size": 68241344,
+      "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-09-2026/PureStatus_2026.06_Pro_%40thisismanpreets_apptesters.org.ipa",
+      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-09-2026/PureStatus_2026.06_Pro_%40thisismanpreets_apptesters.org.ipa",
+      "developerName": "",
+      "localizedDescription": "Injected with Pro",
+      "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.damtechdesigns.wa.story.png",
+      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.damtechdesigns.wa.story.png"
+    },
+    {
       "name": "Foodie",
       "type": 1,
       "bundleID": "com.linecorp.Foodie",
@@ -151182,42 +151214,10 @@
       "localizedDescription": "Injected with Subscription Unlocked",
       "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.sbs.diet.png",
       "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.sbs.diet.png"
-    },
-    {
-      "name": "Fonts",
-      "type": 1,
-      "bundleID": "fontskeyboard.fonts",
-      "bundleIdentifier": "fontskeyboard.fonts",
-      "version": "8.4.42",
-      "versionDate": "2025-09-26",
-      "fullDate": "20250926032134",
-      "size": 55416451,
-      "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/26-09-2025/Fonts_8.4.42_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/26-09-2025/Fonts_8.4.42_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-      "developerName": "",
-      "localizedDescription": "Injected with Subscription Unlocked",
-      "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/fontskeyboard.fonts.png",
-      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/fontskeyboard.fonts.png"
-    },
-    {
-      "name": "NOAARadar",
-      "type": 1,
-      "bundleID": "com.itwcalculator.worldradarfree",
-      "bundleIdentifier": "com.itwcalculator.worldradarfree",
-      "version": "5.15.0",
-      "versionDate": "2025-09-26",
-      "fullDate": "20250926032129",
-      "size": 134283100,
-      "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/26-09-2025/NOAARadar_5.15.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/26-09-2025/NOAARadar_5.15.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-      "developerName": "",
-      "localizedDescription": "Injected with Subscription Unlocked",
-      "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.itwcalculator.worldradarfree.png",
-      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.itwcalculator.worldradarfree.png"
     }
   ],
   "subtitle": "ipastrong",
   "description": "Merged IPA sources",
   "permissions": [],
-  "lastUpdated": "2026-09-30T00:37:36.281388+00:00"
+  "lastUpdated": "2026-09-30T06:35:19.462460+00:00"
 }
