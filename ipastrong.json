@@ -20720,6 +20720,38 @@
       "updatedAt": "2026-09-07"
     },
     {
+      "name": "VlogNow",
+      "type": 1,
+      "bundleID": "com.frontrow.vlog",
+      "bundleIdentifier": "com.frontrow.vlog",
+      "version": "2.22.0",
+      "versionDate": "2026-10-01",
+      "fullDate": "20261001171551",
+      "size": 469751907,
+      "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-10-2026/VlogNow_2.22.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-10-2026/VlogNow_2.22.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+      "developerName": "",
+      "localizedDescription": "Injected with Subscription Unlocked",
+      "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.frontrow.vlog.png",
+      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.frontrow.vlog.png"
+    },
+    {
+      "name": "UnifiedDictionary",
+      "type": 1,
+      "bundleID": "com.bravolol.bravoLang.chineseDictionary",
+      "bundleIdentifier": "com.bravolol.bravoLang.chineseDictionary",
+      "version": "36.1",
+      "versionDate": "2026-10-01",
+      "fullDate": "20261001170545",
+      "size": 11967430,
+      "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-10-2026/UnifiedDictionary_36.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-10-2026/UnifiedDictionary_36.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+      "developerName": "",
+      "localizedDescription": "Injected with Subscription Unlocked",
+      "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.bravolol.bravoLang.chineseDictionary.png",
+      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.bravolol.bravoLang.chineseDictionary.png"
+    },
+    {
       "name": "StressWatch",
       "type": 1,
       "bundleID": "com.ideation.Stress",
@@ -151182,42 +151214,10 @@
       "localizedDescription": "Injected with Premium",
       "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/health.sleep.sounds.tracker.alarm.calm.png",
       "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/health.sleep.sounds.tracker.alarm.calm.png"
-    },
-    {
-      "name": "Fitia",
-      "type": 1,
-      "bundleID": "com.ulisesolave.Fitia",
-      "bundleIdentifier": "com.ulisesolave.Fitia",
-      "version": "19.8.4",
-      "versionDate": "2025-09-27",
-      "fullDate": "20250927222103",
-      "size": 102012750,
-      "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-09-2025/Fitia_19.8.4_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-09-2025/Fitia_19.8.4_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-      "developerName": "",
-      "localizedDescription": "Injected with Subscription Unlocked",
-      "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ulisesolave.Fitia.png",
-      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ulisesolave.Fitia.png"
-    },
-    {
-      "name": "Headway",
-      "type": 1,
-      "bundleID": "com.headway.books",
-      "bundleIdentifier": "com.headway.books",
-      "version": "349.2",
-      "versionDate": "2025-09-27",
-      "fullDate": "20250927222052",
-      "size": 318288932,
-      "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-09-2025/Headway_349.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-09-2025/Headway_349.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-      "developerName": "",
-      "localizedDescription": "Injected with Subscription Unlocked",
-      "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.headway.books.png",
-      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.headway.books.png"
     }
   ],
   "subtitle": "ipastrong",
   "description": "Merged IPA sources",
   "permissions": [],
-  "lastUpdated": "2026-10-01T06:37:04.082186+00:00"
+  "lastUpdated": "2026-10-01T12:37:38.136523+00:00"
 }
