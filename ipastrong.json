@@ -20720,6 +20720,38 @@
       "updatedAt": "2026-09-07"
     },
     {
+      "name": "CodeSnackIDE",
+      "type": 1,
+      "bundleID": "com.cloud-compiler",
+      "bundleIdentifier": "com.cloud-compiler",
+      "version": "6.3.0",
+      "versionDate": "2026-10-05",
+      "fullDate": "20261005010558",
+      "size": 22208801,
+      "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-10-2026/CodeSnackIDE_6.3.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-10-2026/CodeSnackIDE_6.3.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+      "developerName": "",
+      "localizedDescription": "Injected with Subscription Unlocked",
+      "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.cloud-compiler.png",
+      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.cloud-compiler.png"
+    },
+    {
+      "name": "Busuu",
+      "type": 1,
+      "bundleID": "com.busuu.english.app",
+      "bundleIdentifier": "com.busuu.english.app",
+      "version": "30.29.0",
+      "versionDate": "2026-10-04",
+      "fullDate": "20261004233537",
+      "size": 194628280,
+      "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-10-2026/Busuu_30.29.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-10-2026/Busuu_30.29.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+      "developerName": "",
+      "localizedDescription": "Injected with Premium",
+      "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.busuu.english.app.png",
+      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.busuu.english.app.png"
+    },
+    {
       "name": "Stndrd",
       "type": 1,
       "bundleID": "uni.cbum",
@@ -151182,42 +151214,10 @@
       "localizedDescription": "Injected with Subscription Unlocked",
       "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.codeway.cleanerplus.png",
       "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.codeway.cleanerplus.png"
-    },
-    {
-      "name": "Edith",
-      "type": 1,
-      "bundleID": "com.thenovik.Presets",
-      "bundleIdentifier": "com.thenovik.Presets",
-      "version": "2.4.6",
-      "versionDate": "2025-09-29",
-      "fullDate": "20250929141334",
-      "size": 245020812,
-      "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/29-09-2025/Edith_2.4.6_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/29-09-2025/Edith_2.4.6_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-      "developerName": "",
-      "localizedDescription": "Injected with Subscription Unlocked",
-      "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.thenovik.Presets.png",
-      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.thenovik.Presets.png"
-    },
-    {
-      "name": "YAZIO",
-      "type": 1,
-      "bundleID": "com.yazio.ios.YAZIO",
-      "bundleIdentifier": "com.yazio.ios.YAZIO",
-      "version": "12.52.0",
-      "versionDate": "2025-09-29",
-      "fullDate": "20250929132327",
-      "size": 103049411,
-      "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/29-09-2025/YAZIO_12.52.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/29-09-2025/YAZIO_12.52.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-      "developerName": "",
-      "localizedDescription": "Injected with Subscription Unlocked",
-      "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.yazio.ios.YAZIO.png",
-      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.yazio.ios.YAZIO.png"
     }
   ],
   "subtitle": "ipastrong",
   "description": "Merged IPA sources",
   "permissions": [],
-  "lastUpdated": "2026-10-04T13:39:44.383476+00:00"
+  "lastUpdated": "2026-10-04T21:15:24.223327+00:00"
 }
