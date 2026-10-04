@@ -20720,6 +20720,38 @@
       "updatedAt": "2026-09-07"
     },
     {
+      "name": "Stndrd",
+      "type": 1,
+      "bundleID": "uni.cbum",
+      "bundleIdentifier": "uni.cbum",
+      "version": "4.1.61",
+      "versionDate": "2026-10-04",
+      "fullDate": "20261004165436",
+      "size": 144941417,
+      "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-10-2026/Stndrd_4.1.61_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-10-2026/Stndrd_4.1.61_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+      "developerName": "",
+      "localizedDescription": "Injected with Subscription Unlocked",
+      "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/uni.cbum.png",
+      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/uni.cbum.png"
+    },
+    {
+      "name": "SimplyPiano",
+      "type": 1,
+      "bundleID": "com.joytunes.asla",
+      "bundleIdentifier": "com.joytunes.asla",
+      "version": "9.10.95",
+      "versionDate": "2026-10-04",
+      "fullDate": "20261004144412",
+      "size": 164604912,
+      "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-10-2026/SimplyPiano_9.10.95_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-10-2026/SimplyPiano_9.10.95_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+      "developerName": "",
+      "localizedDescription": "Injected with Subscription Unlocked",
+      "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.joytunes.asla.png",
+      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.joytunes.asla.png"
+    },
+    {
       "name": "NoFusion",
       "type": 1,
       "bundleID": "com.grey.swiftcamera",
@@ -151182,42 +151214,10 @@
       "localizedDescription": "Injected with Subscription Unlocked",
       "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.yazio.ios.YAZIO.png",
       "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.yazio.ios.YAZIO.png"
-    },
-    {
-      "name": "QrCode",
-      "type": 1,
-      "bundleID": "com.internet-rocks.codescanner",
-      "bundleIdentifier": "com.internet-rocks.codescanner",
-      "version": "2025.9.2",
-      "versionDate": "2025-09-29",
-      "fullDate": "20250929130820",
-      "size": 113807099,
-      "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/29-09-2025/QrCode_2025.9.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/29-09-2025/QrCode_2025.9.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-      "developerName": "",
-      "localizedDescription": "Injected with Subscription Unlocked",
-      "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.internet-rocks.codescanner.png",
-      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.internet-rocks.codescanner.png"
-    },
-    {
-      "name": "MyScriptNotes",
-      "type": 1,
-      "bundleID": "com.myscript.nebo",
-      "bundleIdentifier": "com.myscript.nebo",
-      "version": "7.0.4",
-      "versionDate": "2025-09-29",
-      "fullDate": "20250929123312",
-      "size": 169984335,
-      "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/29-09-2025/MyScriptNotes_7.0.4_Pro_%40thisismanpreets_apptesters.org.ipa",
-      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/29-09-2025/MyScriptNotes_7.0.4_Pro_%40thisismanpreets_apptesters.org.ipa",
-      "developerName": "",
-      "localizedDescription": "Injected with Pro",
-      "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.myscript.nebo.png",
-      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.myscript.nebo.png"
     }
   ],
   "subtitle": "ipastrong",
   "description": "Merged IPA sources",
   "permissions": [],
-  "lastUpdated": "2026-10-04T03:51:44.319718+00:00"
+  "lastUpdated": "2026-10-04T13:39:44.383476+00:00"
 }
