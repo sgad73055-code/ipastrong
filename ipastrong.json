@@ -20720,6 +20720,22 @@
       "updatedAt": "2026-09-07"
     },
     {
+      "name": "foriOS",
+      "type": 1,
+      "bundleID": "com.tapinfinity.HdjcXcode7",
+      "bundleIdentifier": "com.tapinfinity.HdjcXcode7",
+      "version": "13.2",
+      "versionDate": "2026-10-05",
+      "fullDate": "20261005051134",
+      "size": 43616507,
+      "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-10-2026/foriOS_13.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-10-2026/foriOS_13.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+      "developerName": "",
+      "localizedDescription": "Injected with Pro",
+      "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.tapinfinity.HdjcXcode7.png",
+      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.tapinfinity.HdjcXcode7.png"
+    },
+    {
       "name": "CodeSnackIDE",
       "type": 1,
       "bundleID": "com.cloud-compiler",
@@ -151198,26 +151214,10 @@
       "localizedDescription": "Injected with Pro",
       "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mwm.stems.png",
       "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mwm.stems.png"
-    },
-    {
-      "name": "Cleanup",
-      "type": 1,
-      "bundleID": "com.codeway.cleanerplus",
-      "bundleIdentifier": "com.codeway.cleanerplus",
-      "version": "6.2.0",
-      "versionDate": "2025-09-29",
-      "fullDate": "20250929145847",
-      "size": 127398383,
-      "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/29-09-2025/Cleanup_6.2.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/29-09-2025/Cleanup_6.2.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-      "developerName": "",
-      "localizedDescription": "Injected with Subscription Unlocked",
-      "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.codeway.cleanerplus.png",
-      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.codeway.cleanerplus.png"
     }
   ],
   "subtitle": "ipastrong",
   "description": "Merged IPA sources",
   "permissions": [],
-  "lastUpdated": "2026-10-04T21:15:24.223327+00:00"
+  "lastUpdated": "2026-10-05T00:39:56.579555+00:00"
 }
