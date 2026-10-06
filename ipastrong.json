@@ -20720,6 +20720,38 @@
       "updatedAt": "2026-09-07"
     },
     {
+      "name": "Athlytic",
+      "type": 1,
+      "bundleID": "myndarc.newFitnessApp",
+      "bundleIdentifier": "myndarc.newFitnessApp",
+      "version": "27.0.4",
+      "versionDate": "2026-10-06",
+      "fullDate": "20261006214735",
+      "size": 44399875,
+      "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-10-2026/Athlytic_27.0.4_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-10-2026/Athlytic_27.0.4_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+      "developerName": "",
+      "localizedDescription": "Injected with Subscription Unlocked",
+      "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/myndarc.newFitnessApp.png",
+      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/myndarc.newFitnessApp.png"
+    },
+    {
+      "name": "swipewipe",
+      "type": 1,
+      "bundleID": "com.aoklab.fewerphotos",
+      "bundleIdentifier": "com.aoklab.fewerphotos",
+      "version": "3.5.0",
+      "versionDate": "2026-10-06",
+      "fullDate": "20261006193709",
+      "size": 159883458,
+      "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-10-2026/swipewipe_3.5.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-10-2026/swipewipe_3.5.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+      "developerName": "",
+      "localizedDescription": "Injected with Pro",
+      "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.aoklab.fewerphotos.png",
+      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.aoklab.fewerphotos.png"
+    },
+    {
       "name": "Yazio",
       "type": 1,
       "bundleID": "com.yazio.ios.YAZIO",
@@ -151182,42 +151214,10 @@
       "localizedDescription": "Injected with Subscription Unlocked",
       "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.khanov.BlockerX.png",
       "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.khanov.BlockerX.png"
-    },
-    {
-      "name": "X",
-      "type": 1,
-      "bundleID": "com.atebits.Tweetie2",
-      "bundleIdentifier": "com.atebits.Tweetie2",
-      "version": "11.26.1",
-      "versionDate": "2025-09-30",
-      "fullDate": "20250930053323",
-      "size": 163717416,
-      "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-09-2025/X_11.26.1_Premium_%40thisismanpreets_apptesters.org.ipa",
-      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-09-2025/X_11.26.1_Premium_%40thisismanpreets_apptesters.org.ipa",
-      "developerName": "",
-      "localizedDescription": "Injected with Premium",
-      "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.atebits.Tweetie2.png",
-      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.atebits.Tweetie2.png"
-    },
-    {
-      "name": "KeyLifts",
-      "type": 1,
-      "bundleID": "org.borrowedcache.ultimate531",
-      "bundleIdentifier": "org.borrowedcache.ultimate531",
-      "version": "5.16.12",
-      "versionDate": "2025-09-30",
-      "fullDate": "20250930043817",
-      "size": 27407401,
-      "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-09-2025/KeyLifts_5.16.12_Pro_%40thisismanpreets_apptesters.org.ipa",
-      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-09-2025/KeyLifts_5.16.12_Pro_%40thisismanpreets_apptesters.org.ipa",
-      "developerName": "",
-      "localizedDescription": "Injected with Pro",
-      "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/org.borrowedcache.ultimate531.png",
-      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/org.borrowedcache.ultimate531.png"
     }
   ],
   "subtitle": "ipastrong",
   "description": "Merged IPA sources",
   "permissions": [],
-  "lastUpdated": "2026-10-06T12:36:57.577385+00:00"
+  "lastUpdated": "2026-10-06T18:33:47.804983+00:00"
 }
