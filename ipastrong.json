@@ -373868,5 +373868,9 @@
   "description": "Merged IPA sources",
   "permissions": [],
   "lastUpdated": "2026-10-11T23:09:07.294365+00:00",
-  "iconURL": "https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/source-icon.jpeg"
+  "iconURL": "https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/source-icon.jpeg",
+  "META": {
+    "repoName": "ipastrong",
+    "repoIcon": "https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/source-icon.jpeg"
+  }
 }

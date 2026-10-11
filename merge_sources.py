@@ -211,6 +211,12 @@ def build(base, responses):
     apps = expand_social(apps)
     output["apps"] = apps
     output["iconURL"] = 'https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/source-icon.jpeg'
+    metadata = output.get("META")
+    if not isinstance(metadata, dict):
+        metadata = {}
+    metadata["repoName"] = output["name"]
+    metadata["repoIcon"] = output["iconURL"]
+    output["META"] = metadata
     output["lastUpdated"] = datetime.now(timezone.utc).isoformat()
     return output, {"sources": status, "inputRecords": len(records), "outputApps": len(apps), "rejectedRecords": rejected}
 
