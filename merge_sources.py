@@ -68,8 +68,21 @@ def normalize(raw, source):
             if field in app:
                 current[field] = app[field]
         # Keep the richer upstream entry when URL and version already match.
-        if not any(v["downloadURL"] == link and v["version"] == current["version"] for v in versions):
+        if not any(v["downloadURL"] == link and v["version"] == current["version"] and date_key(v.get("date")) for v in versions):
             versions.append(current)
+    # Strict source readers require a real date and an integer size on every version.
+    valid_versions = []
+    for item in versions:
+        item["version"] = text(item.get("version"))
+        item["date"] = text(item.get("date"))
+        if not date_key(item["date"]):
+            continue
+        try:
+            item["size"] = max(0, int(item.get("size") or 0))
+        except (ValueError, TypeError):
+            item["size"] = 0
+        valid_versions.append(item)
+    versions = valid_versions
     if not versions:
         return None
     versions.sort(key=lambda v: (date_key(v.get("date")), version_key(v.get("version"))), reverse=True)
