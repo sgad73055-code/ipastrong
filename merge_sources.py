@@ -1,576 +1,220 @@
-
-import json
-import urllib.request
-from pathlib import Path
+"""IPA Strong merger. Python standard library only."""
+import argparse, copy, json, re, urllib.request
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
+from pathlib import Path
+from urllib.parse import urlsplit, urljoin
 
+SOURCES = ['https://repository.apptesters.org', 'https://ipa.cypwn.xyz/cypwn.json', 'https://wuxu1.github.io/wuxu-complete.json', 'https://wuxu1.github.io/wuxu-complete-plus.json', 'https://repo.ikghd.me/repo.json', 'https://check0ver.site/repo.json', 'https://quarksources.github.io/dist/quantumsource%2B%2B.min.json', 'https://cdn.altstore.io/file/altstore/apps.json', 'https://alts.lao.sb/source.json', 'https://apps.nabzclan.vip/repos/altstore.php', 'https://ipa.thuthuatjb.com/repo', 'https://repo.ethsign.fyi', 'https://fastsign.dev/repo.json']
+OUTPUT = Path("ipastrong.json")
+BLOCKLIST = Path(__file__).with_name("excluded-downloads.json")
+BLOCKED = set(json.loads(BLOCKLIST.read_text()).get("urls", [])) if BLOCKLIST.exists() else set()
+CURATED_FILE = Path(__file__).with_name("curated-sources.json")
+CURATED = json.loads(CURATED_FILE.read_text()).get("sources", {}) if CURATED_FILE.exists() else {}
+SOURCES = list(dict.fromkeys(SOURCES + list(CURATED)))
 
-# =========================
-# SETTINGS
-# =========================
+def text(value):
+    return str(value or "").strip()
 
-FILE = "ipastrong.json"
-
-MAX_APPS = 9000
-
-BACKUP_FILES = [
-    "IPA-STORE.json",
-    "ipa-store.json",
-    "IPA-AR.json",
-    "ipastrong-base.json",
-]
-
-
-SOURCES = [
-    "https://repository.apptesters.org",
-    "https://repo.apptesters.org",
-    "https://ipa.cypwn.xyz/cypwn.json",
-    "https://wuxu1.github.io/wuxu-complete.json",
-    "https://wuxu1.github.io/wuxu-complete-plus.json",
-    "https://repo.ikghd.me/repo.json",
-    "https://check0ver.site/repo.json",
-    "https://quarksources.github.io/dist/quantumsource%2B%2B.min.json",
-    "https://cdn.altstore.io/file/altstore/apps.json",
-    "https://alts.lao.sb/source.json",
-    "https://apps.nabzclan.vip/repos/altstore.php",
-    "https://ipa.thuthuatjb.com/repo",
-    "https://repo.ethsign.fyi",
-    "https://fastsign.dev/repo.json",
-    "https://fastsign.dev/repo.lite.json",
-]
-
-
-STORE_INFO = {
-    "name": "ipastrong",
-    "identifier": "com.ipastrong.store",
-    "subtitle": "ipastrong",
-    "description": "Merged IPA sources",
-    "website": "https://t.me/ipastrong",
-    "sourceURL": (
-        "https://raw.githubusercontent.com/"
-        "sgad73055-code/ipastrong/main/ipastrong.json"
-    ),
-}
-
-
-# =========================
-# LOAD JSON FILE
-# =========================
-
-def load_json_file(path):
-    try:
-        with open(path, "r", encoding="utf-8") as file:
-            return json.load(file)
-
-    except Exception as error:
-        print(f"Could not read {path}: {error}")
-        return None
-
-
-def load_base_data():
-    for filename in BACKUP_FILES:
-        path = Path(filename)
-
-        if not path.exists():
-            continue
-
-        data = load_json_file(path)
-
-        if (
-            isinstance(data, dict)
-            and isinstance(data.get("apps"), list)
-        ):
-            print(f"Using base file: {filename}")
-            return data
-
-    if Path(FILE).exists():
-        data = load_json_file(FILE)
-
-        if isinstance(data, dict):
-            print(f"Using existing file: {FILE}")
-            return data
-
-    print("No valid base file found.")
-
-    return dict(STORE_INFO)
-
-
-# =========================
-# APP HELPERS
-# =========================
-
-def get_apps(data):
-    if not isinstance(data, dict):
-        return []
-
-    apps = data.get("apps", [])
-
-    if isinstance(apps, list):
-        return apps
-
-    return []
-
-
-def fetch_json(url):
-    try:
-        request = urllib.request.Request(
-            url,
-            headers={
-                "User-Agent": "Mozilla/5.0"
-            }
-        )
-
-        with urllib.request.urlopen(
-            request,
-            timeout=30
-        ) as response:
-            content = response.read().decode("utf-8")
-
-        data = json.loads(content)
-
-        if isinstance(data, dict):
-            return data
-
-        print(f"Invalid data format: {url}")
-        return None
-
-    except Exception as error:
-        print(f"Failed source: {url}")
-        print(error)
-        return None
-
-
-def clean_text(value):
-    if value is None:
+def url(value, source):
+    value = text(value)
+    if not value:
         return ""
+    value = urljoin(source, value)
+    return value if urlsplit(value).scheme in ("http", "https") and urlsplit(value).netloc else ""
 
-    if isinstance(value, list):
-        return " ".join(str(item) for item in value)
+def version_key(v):
+    numbers = [int(n) for n in re.findall(r"\d+", text(v))][:12]
+    return tuple(numbers + [0] * (12 - len(numbers)))
 
-    return str(value).strip()
+def date_key(v):
+    try:
+        parsed = datetime.fromisoformat(text(v).replace("Z", "+00:00"))
+        if parsed.tzinfo is None:
+            parsed = parsed.replace(tzinfo=timezone.utc)
+        return parsed.timestamp()
+    except (ValueError, OverflowError):
+        return 0
 
-
-def get_bundle_id(app):
-    return clean_text(
-        app.get("bundleIdentifier")
-        or app.get("bundleId")
-        or ""
-    )
-
-
-def get_name(app):
-    return clean_text(
-        app.get("name")
-        or app.get("title")
-        or ""
-    )
-
-
-def get_version(app):
-    return clean_text(
-        app.get("version")
-        or app.get("versionName")
-        or app.get("currentVersion")
-        or ""
-    )
-
-
-def get_download_url(app):
-    return clean_text(
-        app.get("downloadURL")
-        or app.get("ipaUrl")
-        or app.get("ipaURL")
-        or app.get("downloadUrl")
-        or ""
-    )
-
-
-def get_version_date(app):
-    return clean_text(
-        app.get("versionDate")
-        or app.get("date")
-        or app.get("updatedDate")
-        or app.get("lastUpdated")
-        or ""
-    )
-
-
-# =========================
-# APP KEY
-# =========================
-
-def app_key(app):
-    """
-    يحافظ على النسخ المختلفة.
-
-    نفس Bundle ID + نفس رابط التحميل
-    = نفس التطبيق.
-
-    إذا اختلف رابط التحميل:
-    تبقى النسخة منفصلة.
-
-    هذا يمنع دمج النسخ المعدلة
-    المختلفة بالغلط.
-    """
-
-    if not isinstance(app, dict):
+def normalize(raw, source):
+    if not isinstance(raw, dict):
         return None
+    app = copy.deepcopy(raw)
+    primary_url = url(app.get("downloadURL") or app.get("ipaUrl") or app.get("down"), source)
+    if primary_url in BLOCKED:
+        return None
+    name = text(app.get("name") or app.get("title"))
+    bundle = text(app.get("bundleIdentifier") or app.get("bundleId") or app.get("bundleID") or app.get("bundleid"))
+    if not name or not bundle:
+        return None
+    versions = []
+    candidates = app.get("versions", [])
+    if not isinstance(candidates, list):
+        candidates = []
+    for item in candidates:
+        if not isinstance(item, dict):
+            continue
+        item = copy.deepcopy(item)
+        link = url(item.get("downloadURL") or item.get("ipaUrl") or item.get("down"), source)
+        if link and link not in BLOCKED and text(item.get("version")):
+            item["downloadURL"] = link
+            item["date"] = text(item.get("date") or item.get("versionDate"))
+            versions.append(item)
+    link = url(app.get("downloadURL") or app.get("ipaUrl") or app.get("ipaURL") or app.get("downloadUrl") or app.get("down"), source)
+    if link and link not in BLOCKED and text(app.get("version")):
+        current = {"version": text(app["version"]), "downloadURL": link,
+                   "date": text(app.get("versionDate") or app.get("date")), "size": app.get("size", 0)}
+        for field in ("minOSVersion", "maxOSVersion", "sha256", "absoluteVersion"):
+            if field in app:
+                current[field] = app[field]
+        # Keep the richer upstream entry when URL and version already match.
+        if not any(v["downloadURL"] == link and v["version"] == current["version"] for v in versions):
+            versions.append(current)
+    if not versions:
+        return None
+    versions.sort(key=lambda v: (date_key(v.get("date")), version_key(v.get("version"))), reverse=True)
+    unique = {}
+    for v in versions:
+        unique.setdefault((v["version"], v["downloadURL"]), v)
+    versions = list(unique.values())
+    latest = versions[0]
+    app.update(name=name, bundleIdentifier=bundle, version=latest["version"],
+               versionDate=latest.get("date", ""), downloadURL=latest["downloadURL"],
+               versions=versions, _sourceURL=source)
+    for field in ("minOSVersion", "maxOSVersion", "sha256", "absoluteVersion"):
+        app.pop(field, None)
+        if field in latest:
+            app[field] = latest[field]
+    try:
+        app["size"] = max(0, int(latest.get("size", 0)))
+    except (ValueError, TypeError):
+        app["size"] = 0
+    app["iconURL"] = url(app.get("iconURL") or app.get("icon"), source)
+    app["localizedDescription"] = text(app.get("localizedDescription") or app.get("description"))
+    # Synchronize legacy fields consumed by existing storefronts.
+    for field in ("ipaUrl", "ipaURL", "downloadUrl", "down"):
+        if field in app:
+            app[field] = app["downloadURL"]
+    return app
 
-    bundle_id = get_bundle_id(app).lower()
-    name = get_name(app).lower()
-    version = get_version(app).lower()
-    download_url = get_download_url(app).lower()
+def identity(app):
+    source = app.get("_sourceURL", "")
+    name = app["name"].casefold()
+    # CyPwn embeds the app version in some display names.
+    if "cypwn" in source:
+        name = re.sub(r"[-_ ]v?" + re.escape(app["version"]) + r"$", "", name)
+    variant = app["localizedDescription"].casefold() if "apptesters" in source else ""
+    return source, app["bundleIdentifier"].casefold(), name, variant, text(app.get("developerName")).casefold()
 
-    # المفتاح الأساسي:
-    # Bundle ID + رابط التحميل
-    if bundle_id and download_url:
-        return (
-            "bundle:"
-            + bundle_id
-            + "|url:"
-            + download_url
-        )
+def merge(records):
+    groups = {}
+    rejected = 0
+    for raw, source in records:
+        app = normalize(raw, source)
+        if app is None:
+            rejected += 1
+            continue
+        key = identity(app)
+        if key not in groups:
+            groups[key] = app
+            continue
+        old = groups[key]
+        winner = max((old, app), key=lambda a: (date_key(a["versionDate"]), version_key(a["version"])))
+        combined = copy.deepcopy(winner)
+        combined["versions"] = old["versions"] + app["versions"]
+        groups[key] = normalize(combined, source)
+    result = []
+    for app in groups.values():
+        app["versions"] = app["versions"][:20]
+        result.append(app)
+    result.sort(key=lambda a: (a.get("_sourceURL") != "local", -date_key(a["versionDate"]), a["name"].casefold()))
+    return result, rejected
 
-    # إذا ماكو رابط تحميل
-    if bundle_id:
-        return (
-            "bundle:"
-            + bundle_id
-            + "|name:"
-            + name
-            + "|version:"
-            + version
-        )
+def selection_key(app):
+    return app["bundleIdentifier"].casefold() + "|" + app["name"].casefold()
 
-    # إذا ماكو Bundle ID
-    if name and download_url:
-        return (
-            "name:"
-            + name
-            + "|url:"
-            + download_url
-        )
+def filter_curated(apps, source):
+    if source not in CURATED:
+        return apps
+    allowed = set(CURATED[source])
+    return [raw for raw in apps if (app := normalize(raw, source)) is not None and selection_key(app) in allowed]
 
-    if name:
-        return (
-            "name:"
-            + name
-            + "|version:"
-            + version
-        )
+def fetch(source):
+    try:
+        request = urllib.request.Request(source, headers={"User-Agent": "IPA-Strong/2.0"})
+        with urllib.request.urlopen(request, timeout=25) as response:
+            data = json.load(response)
+        apps = data.get("apps") if isinstance(data, dict) else data
+        if not isinstance(apps, list) or not apps or not any(normalize(a, source) for a in apps):
+            raise ValueError("Source returned no usable apps")
+        return source, apps, None
+    except Exception as error:
+        return source, None, str(error)
 
-    return None
-
-
-# =========================
-# VERSION COMPARISON
-# =========================
-
-def version_numbers(version):
-    """
-    يحول رقم الإصدار إلى قائمة أرقام.
-
-    1.2.3 -> [1, 2, 3]
-    2.0   -> [2, 0]
-    """
-
-    if not version:
-        return [0]
-
-    numbers = []
-
-    current_number = ""
-
-    for character in str(version):
-        if character.isdigit():
-            current_number += character
-
-        else:
-            if current_number:
-                numbers.append(int(current_number))
-                current_number = ""
-
-    if current_number:
-        numbers.append(int(current_number))
-
-    return numbers or [0]
-
-
-def compare_versions(first, second):
-    first_numbers = version_numbers(first)
-    second_numbers = version_numbers(second)
-
-    max_length = max(
-        len(first_numbers),
-        len(second_numbers)
-    )
-
-    first_numbers += [0] * (
-        max_length - len(first_numbers)
-    )
-
-    second_numbers += [0] * (
-        max_length - len(second_numbers)
-    )
-
-    if first_numbers > second_numbers:
-        return 1
-
-    if first_numbers < second_numbers:
-        return -1
-
-    return 0
-
-
-# =========================
-# CHOOSE APP
-# =========================
-
-def choose_newest(existing, incoming):
-    """
-    إذا كانت الهوية نفسها، نختار الإصدار الأحدث.
-
-    إذا الإصدار متساوي:
-    نفضل البيانات التي تحتوي رابط تحميل.
-    """
-
-    existing_version = get_version(existing)
-    incoming_version = get_version(incoming)
-
-    comparison = compare_versions(
-        incoming_version,
-        existing_version
-    )
-
-    if comparison > 0:
-        print(
-            "Updated: "
-            + get_name(incoming)
-            + " "
-            + incoming_version
-        )
-
-        return incoming
-
-    if comparison < 0:
-        return existing
-
-    existing_date = get_version_date(existing)
-    incoming_date = get_version_date(incoming)
-
-    if incoming_date > existing_date:
-        return incoming
-
-    existing_url = get_download_url(existing)
-    incoming_url = get_download_url(incoming)
-
-    if incoming_url and not existing_url:
-        return incoming
-
-    return existing
-
-
-# =========================
-# MERGE APPS
-# =========================
-
-def merge_apps(base_apps, external_apps):
-    """
-    دمج آمن:
-
-    - تطبيقاتك الأساسية أولاً.
-    - النسخ المختلفة تبقى منفصلة.
-    - نفس الرابط لا يتكرر.
-    - الإصدارات الأحدث تحل محل القديمة
-      عندما تكون الهوية نفسها.
-    """
-
-    merged = []
-    positions = {}
-    selected_apps = {}
-
-    # -------------------------
-    # BASE APPS
-    # -------------------------
-
-    for app in base_apps:
+def build(base, responses):
+    records, status = [], []
+    filtered = []
+    for source, apps, error in responses:
+        if apps is not None and source in CURATED:
+            apps = filter_curated(apps, source)
+            if not apps:
+                apps, error = None, "Selected apps unavailable; retaining previous entries"
+        filtered.append((source, apps, error))
+    responses = filtered
+    successful = {source for source, apps, error in responses if apps is not None}
+    for app in base.get("apps", []):
         if not isinstance(app, dict):
             continue
-
-        key = app_key(app)
-
-        if not key:
-            continue
-
-        if key not in positions:
-            positions[key] = len(merged)
-            selected_apps[key] = app
-            merged.append(app)
-
-        else:
-            index = positions[key]
-
-            selected = choose_newest(
-                selected_apps[key],
-                app
-            )
-
-            selected_apps[key] = selected
-            merged[index] = selected
-
-    # -------------------------
-    # EXTERNAL APPS
-    # -------------------------
-
-    for app in external_apps:
-        if not isinstance(app, dict):
-            continue
-
-        key = app_key(app)
-
-        if not key:
-            continue
-
-        if key not in positions:
-            positions[key] = len(merged)
-            selected_apps[key] = app
-            merged.append(app)
-
-        else:
-            index = positions[key]
-
-            selected = choose_newest(
-                selected_apps[key],
-                app
-            )
-
-            selected_apps[key] = selected
-            merged[index] = selected
-
-    return merged
-
-
-# =========================
-# LIMIT
-# =========================
-
-def limit_apps(apps):
-    return apps[:MAX_APPS]
-
-
-# =========================
-# STORE METADATA
-# =========================
-
-def preserve_store_metadata(data):
-    result = {}
-
-    if isinstance(data, dict):
-        result.update(data)
-
-    for key, value in STORE_INFO.items():
-        result[key] = value
-
-    return result
-
-
-# =========================
-# SAVE
-# =========================
-
-def save_json_file(data):
-    with open(FILE, "w", encoding="utf-8") as file:
-        json.dump(
-            data,
-            file,
-            ensure_ascii=False,
-            indent=2,
-            allow_nan=False
-        )
-
-    print(f"Saved {FILE}")
-
-
-# =========================
-# MAIN
-# =========================
+        source = app.get("_sourceURL", "local")
+        # Migrate old imported AppTesters records to their canonical source.
+        if "github.com/apptesters-org/" in text(app.get("downloadURL")):
+            source = SOURCES[0]
+        if source not in successful:
+            records.append((app, source))
+    for source, apps, error in responses:
+        status.append({"source": source, "apps": len(apps or []), "error": error})
+        records.extend((app, source) for app in (apps or []))
+    apps, rejected = merge(records)
+    if not apps:
+        raise ValueError("Refusing to replace source with an empty result")
+    output = copy.deepcopy(base)
+    # Put selected additions ahead of the large imported catalog, after owner entries.
+    for app in apps:
+        if app.get("_sourceURL") in CURATED:
+            app["_featured"] = True
+    # A mirrored download is the same package. Keep owner metadata first, then curated metadata.
+    apps.sort(key=lambda a: (a.get("_sourceURL") != "local", not a.get("_featured", False), -date_key(a["versionDate"]), a["name"].casefold()))
+    unique = {}
+    for app in apps:
+        key = (app["bundleIdentifier"].casefold(), app["downloadURL"])
+        if key not in unique:
+            unique[key] = app
+        elif app.get("_featured"):
+            unique[key]["_featured"] = True
+    apps = list(unique.values())
+    output["apps"] = apps
+    output["lastUpdated"] = datetime.now(timezone.utc).isoformat()
+    return output, {"sources": status, "inputRecords": len(records), "outputApps": len(apps), "rejectedRecords": rejected}
 
 def main():
-    print("Starting IPA source merger...")
-    print(f"Maximum apps: {MAX_APPS}")
-
-    base_data = load_base_data()
-    base_apps = get_apps(base_data)
-
-    print(
-        f"Base apps collected: "
-        f"{len(base_apps)}"
-    )
-
-    external_apps = []
-
-    for source in SOURCES:
-        print(f"Loading source: {source}")
-
-        data = fetch_json(source)
-
-        if not data:
-            continue
-
-        apps = get_apps(data)
-
-        print(
-            f"Found {len(apps)} apps from source"
-        )
-
-        external_apps.extend(apps)
-
-    print(
-        f"External apps collected: "
-        f"{len(external_apps)}"
-    )
-
-    merged_apps = merge_apps(
-        base_apps,
-        external_apps
-    )
-
-    print(
-        f"Apps after merging: "
-        f"{len(merged_apps)}"
-    )
-
-    merged_apps = limit_apps(merged_apps)
-
-    output = preserve_store_metadata(base_data)
-
-    output["apps"] = merged_apps
-
-    if not isinstance(
-        output.get("news"),
-        list
-    ):
-        output["news"] = []
-
-    if not isinstance(
-        output.get("permissions"),
-        list
-    ):
-        output["permissions"] = []
-
-    output["lastUpdated"] = datetime.now(
-        timezone.utc
-    ).isoformat()
-
-    save_json_file(output)
-
-    print(
-        f"Final apps count: "
-        f"{len(merged_apps)}"
-    )
-
-    print("Merge completed successfully.")
-
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--offline-dir", type=Path, help="Directory containing snapshots named 0.json, 1.json, etc. in SOURCES order")
+    args = parser.parse_args()
+    base = json.loads(OUTPUT.read_text(encoding="utf-8"))
+    if args.offline_dir:
+        responses = []
+        for i, source in enumerate(SOURCES):
+            path = args.offline_dir / (str(i) + ".json")
+            responses.append((source, json.loads(path.read_text()).get("apps", []), None) if path.exists() else (source, None, "Snapshot unavailable"))
+    else:
+        with ThreadPoolExecutor(max_workers=6) as pool:
+            responses = list(pool.map(fetch, SOURCES))
+    output, report = build(base, responses)
+    temp = OUTPUT.with_suffix(".json.tmp")
+    temp.write_text(json.dumps(output, ensure_ascii=False, indent=2, allow_nan=False) + "\n", encoding="utf-8")
+    temp.replace(OUTPUT)
+    Path("merge-report.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(json.dumps(report, ensure_ascii=False))
 
 if __name__ == "__main__":
     main()

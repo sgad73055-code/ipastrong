@@ -1,0 +1,82 @@
+{
+  "note": "Selected apps only. Bundle identifiers remain unchanged. Unknown/broken/non-ZIP and clearly incompatible additions were not imported.",
+  "sources": {
+    "https://pokemmo.eu/altstore/": [
+      "eu.pokemmo.client|pokemmo"
+    ],
+    "https://tiny.one/SpotC": [
+      "com.yodaluca23.spotcplusplus|spotc++",
+      "com.yodaluca23.spotveec|spotveec"
+    ],
+    "https://xitrix.github.io/iTorrent/AltStore.json": [
+      "com.xitrix.itorrent2|itorrent"
+    ],
+    "https://ish.app/altstore.json": [
+      "app.ish.ish|ish"
+    ],
+    "https://repo.madari.media/nightly/repo.json": [
+      "media.madari.madariclient|madari media"
+    ],
+    "https://github.com/dvntm0/AltStore/raw/refs/heads/main/feather.json": [
+      "com.google.ios.youtube|youtube plus (ios16+)",
+      "com.google.ios.youtube|youtube plus (ios15+)",
+      "com.google.ios.youtube|youtube plus (ios14+)",
+      "com.google.ios.youtubemusic|youtube music ultimate (ios16+)",
+      "com.google.ios.youtubemusic|youtube music ultimate (ios14+)",
+      "com.firecore.infuse|infuse plus (ios18+)",
+      "com.firecore.infuse|infuse plus (ios16+)",
+      "com.firecore.infuse|infuse plus (ios14+)"
+    ],
+    "https://raw.githubusercontent.com/notrifty1/riftysrepo/refs/heads/main/reposource.json": [
+      "com.snowman.altos-adventure.the-spirit-of-the-mountian|altos adventure",
+      "com.atebits.tweetie2|twitter",
+      "kh.crysailis.feather|feather",
+      "com.example.mirarr|mirarr",
+      "com.example.mirarr|mirarr"
+    ],
+    "https://raw.githubusercontent.com/driftywinds/driftywinds.github.io/master/AltStore/apps.json": [
+      "com.google.ios.youtube|youmod + tweaks (driftywinds)",
+      "com.spotify.client|spotify (eeveespotifyreincarnated)",
+      "com.mojang.minecraftpe|minecraft",
+      "com.burbn.instagram|instagram (ryukgram)",
+      "com.atebits.tweetie2|twitter bhx",
+      "com.unofficial.balatro|balatro",
+      "com.google.ios.youtubemusic|yt music ultimate",
+      "kh.crysalis.feather|feather"
+    ],
+    "https://enmity-mod.github.io/repo/altstore.json": [
+      "com.hammerandchisel.discord|enmity"
+    ],
+    "https://github.com/khcrysalis/Feather/raw/main/app-repo.json": [
+      "thewonderofyou.feather|feather"
+    ],
+    "https://raw.githubusercontent.com/Nyasami/Ksign/refs/heads/main/repo.json": [
+      "nya.asami.ksign|ksign"
+    ],
+    "https://buildbot.libretro.com/stable/altstore.json": [
+      "com.libretro.retroarchios11|retroarch"
+    ],
+    "https://provenance-emu.com/apps.json": [
+      "com.provenance-emu.provenance|provenance"
+    ],
+    "https://alt.getutm.app": [
+      "com.utmapp.utm-se|utm se"
+    ],
+    "https://azu0609.github.io/repo/altstore_repo.json": [
+      "com.hammerandchisel.discord|enmity"
+    ],
+    "https://raw.githubusercontent.com/driftywinds/driftywinds.github.io/master/AltStore/nyx.json": [
+      "com.burbn.instagram|instagram (nyx)"
+    ],
+    "https://raw.githubusercontent.com/driftywinds/driftywinds.github.io/master/AltStore/theta.json": [
+      "com.burbn.instagram|instagram (theta)"
+    ],
+    "https://raw.githubusercontent.com/lo-cafe/winston-altstore/main/apps.json": [
+      "lo.cafe.winston|winston for reddit"
+    ],
+    "https://connect.sidestore.io/apps.json": [
+      "me.kingbri.ferrite|ferrite",
+      "io.anuke.mindustry.be|mindustry"
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "note": "Returned HTTP 404 during sample check on 2026-10-11 UTC. Remove a URL from this list after verifying it has been restored.",
+  "urls": [
+    "https://github.com/LiveContainer/LiveContainer/releases/download/3.8.0/LiveContainer.ipa",
+    "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Spotify.v8.9.38.+.Eevee.v3.0.ipa",
+    "https://github.com/TherionRO/YouTubeiVanced/releases/download/release19.08.2/iVanced_19.08.2.ipa"
+  ]
+}
