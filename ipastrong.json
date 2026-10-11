@@ -23,6 +23,32 @@
   ],
   "apps": [
     {
+      "name": "TikTok — البانر (gTok Kitsune)",
+      "bundleIdentifier": "com.zhiliaoapp.musically",
+      "developerName": "IPA Strong",
+      "iconURL": "https://fastsign.dev/tg-icon/scholars-lounge/79219.png",
+      "version": "46.7.0",
+      "versionDate": "2026-10-11T23:43:01Z",
+      "downloadURL": "https://github.com/sgad73055-code/ipastrong/releases/download/tiktok-banner-v1/gtok-kitsune-banners-trollstore-fixed.ipa",
+      "size": 439226933,
+      "minOSVersion": "14.0",
+      "localizedDescription": "نسخة تيك توك تدعم ميزة البانر، حسب وصف صاحب الملف.\nالنسخة المرفوعة: gTok Kitsune.\nاسم الملف يشير إلى TrollStore؛ توافق هذه الحزمة مع التوقيع بشهادة عادية لم يُختبر.",
+      "category": "تواصل",
+      "versions": [
+        {
+          "version": "46.7.0",
+          "buildVersion": "467038",
+          "date": "2026-10-11T23:43:01Z",
+          "downloadURL": "https://github.com/sgad73055-code/ipastrong/releases/download/tiktok-banner-v1/gtok-kitsune-banners-trollstore-fixed.ipa",
+          "size": 439226933,
+          "minOSVersion": "14.0",
+          "sha256": "c4ba989f7e28676ba6698af8074c01c10c5a00ad41cb4a3635aded41896a10c3"
+        }
+      ],
+      "sha256": "c4ba989f7e28676ba6698af8074c01c10c5a00ad41cb4a3635aded41896a10c3",
+      "_sourceURL": "local"
+    },
+    {
       "name": "Instagram (BE)",
       "bundleIdentifier": "com.burbn.instagram",
       "developerName": "iOSDecrypted",
