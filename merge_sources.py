@@ -12,6 +12,7 @@ BLOCKED = set(json.loads(BLOCKLIST.read_text()).get("urls", [])) if BLOCKLIST.ex
 CURATED_FILE = Path(__file__).with_name("curated-sources.json")
 CURATED = json.loads(CURATED_FILE.read_text()).get("sources", {}) if CURATED_FILE.exists() else {}
 SOURCES = list(dict.fromkeys(SOURCES + list(CURATED)))
+SOURCES = list(dict.fromkeys(SOURCES + ['https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json']))
 
 def text(value):
     return str(value or "").strip()
@@ -176,6 +177,8 @@ def build(base, responses):
     responses = filtered
     successful = {source for source, apps, error in responses if apps is not None}
     for app in base.get("apps", []):
+        if isinstance(app, dict) and app.get("_expandedSocial"):
+            continue
         if not isinstance(app, dict):
             continue
         source = app.get("_sourceURL", "local")
@@ -205,9 +208,63 @@ def build(base, responses):
         elif app.get("_featured"):
             unique[key]["_featured"] = True
     apps = list(unique.values())
+    apps = expand_social(apps)
     output["apps"] = apps
+    output["iconURL"] = 'https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/source-icon.jpeg'
     output["lastUpdated"] = datetime.now(timezone.utc).isoformat()
     return output, {"sources": status, "inputRecords": len(records), "outputApps": len(apps), "rejectedRecords": rejected}
+
+def social_kind(app):
+    name = text(app.get("name"))
+    if re.search(r"tiktok|tik tok", name, re.I):
+        return "tiktok"
+    if re.search(r"instagram|^insta|regram|igrocket|ryukgram|ريكرام|بيكرام", name, re.I) and not re.search(r"reels maker|followers|unfollowers|tracker|analytics|install", name, re.I):
+        return "instagram"
+    return None
+
+def expand_social(apps, limit_per_kind=60):
+    # Keep the true bundle ID. Only expose genuine upstream release URLs.
+    existing = {a["downloadURL"] for a in apps}
+    candidates = []
+    for app in apps:
+        kind = social_kind(app)
+        if kind is None or app.get("_expandedSocial"):
+            continue
+        for version in app.get("versions", [])[1:]:
+            if version.get("downloadURL") in existing or date_key(version.get("date")) < date_key("2024-01-01"):
+                continue
+            candidates.append((date_key(version.get("date")), kind, app, version))
+    candidates.sort(key=lambda entry: entry[0], reverse=True)
+    counts = {"instagram": 0, "tiktok": 0}
+    additions = []
+    for _, kind, parent, release in candidates:
+        link = release["downloadURL"]
+        if link in existing or counts[kind] >= limit_per_kind:
+            continue
+        clone = copy.deepcopy(parent)
+        clone["name"] = parent["name"] + " — " + text(release["version"])
+        clone["versions"] = [copy.deepcopy(release)]
+        clone["version"] = text(release["version"])
+        clone["versionDate"] = release["date"]
+        clone["downloadURL"] = link
+        clone["size"] = release.get("size", 0)
+        for field in ("minOSVersion", "maxOSVersion", "sha256", "absoluteVersion"):
+            clone.pop(field, None)
+            if field in release:
+                clone[field] = release[field]
+        for field in ("id", "_rowKey", "fullDate", "addedAt", "updatedAt"):
+            clone.pop(field, None)
+        for field in ("ipaUrl", "ipaURL", "downloadUrl", "down"):
+            if field in clone:
+                clone[field] = link
+        clone["_expandedSocial"] = True
+        additions.append(clone)
+        existing.add(link)
+        counts[kind] += 1
+    output = apps + additions
+    output.sort(key=lambda a: (social_kind(a) is None, -date_key(a.get("versionDate")), a["name"].casefold()))
+    return output
+
 
 def main():
     parser = argparse.ArgumentParser()
