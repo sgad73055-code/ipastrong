@@ -12461,7 +12461,7 @@
       "bundleIdentifier": "me.imgbase.videoday",
       "version": "4.3.1",
       "versionDate": "2026-10-12",
-      "fullDate": "20261012181648",
+      "fullDate": "20261012235304",
       "size": 223535643,
       "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
       "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
@@ -13024,6 +13024,50 @@
       "type": 1,
       "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
+    },
+    {
+      "beta": false,
+      "bundleIdentifier": "com.google.ios.youtube",
+      "developerName": "Tonwalter888",
+      "META": {
+        "repoName": "driftywinds' AltStore Repo"
+      },
+      "contact": {
+        "web": "https://github.com/driftywinds/"
+      },
+      "downloadURL": "https://github.com/ramramzz/descfsr/releases/download/v0.35/746c2efd-a33d-401f-8dc6-a1bc68461YM2.ipa",
+      "iconURL": "https://raw.githubusercontent.com/YTLitePlus/YTLitePlus-Altstore/main/Youtube_logo-512.png",
+      "localizedDescription": "https://t.me/+rvcObIvOpctiMDI9\n\nA modified version of Youtube",
+      "name": "YouMod + Tweaks (driftywinds)",
+      "screenshotURLs": [
+        "https://raw.githubusercontent.com/dayanch96/YTLite/refs/heads/main/Resources/scr1.jpg",
+        "https://raw.githubusercontent.com/dayanch96/YTLite/refs/heads/main/Resources/scr2.jpg",
+        "https://raw.githubusercontent.com/dayanch96/YTLite/refs/heads/main/Resources/scr3.jpg"
+      ],
+      "size": 130097628,
+      "subtitle": "A flexible enhancer for YouTube on iOS | If you want to donate: - https://ko-fi.com/driftywinds",
+      "tintColor": "e22a41",
+      "version": "21.41.5",
+      "versionDate": "2026-10-12",
+      "versionDescription": "• Updated YouTube to 21.41.5\n • Tweak is using 2.0.0",
+      "appPermissions": {
+        "entitlements": [
+          "com.apple.developer.siri"
+        ],
+        "privacy": {
+          "NSUserTrackingUsageDescription": "This app requires tracking permission to deliver personalized content and advertisements."
+        }
+      },
+      "versions": [
+        {
+          "version": "21.41.5",
+          "downloadURL": "https://github.com/ramramzz/descfsr/releases/download/v0.35/746c2efd-a33d-401f-8dc6-a1bc68461YM2.ipa",
+          "date": "2026-10-12",
+          "size": 130097628
+        }
+      ],
+      "_sourceURL": "https://raw.githubusercontent.com/driftywinds/driftywinds.github.io/master/AltStore/apps.json",
+      "_featured": true
     },
     {
       "name": "YouTube",
@@ -38486,6 +38530,35 @@
       "minOSVersion": "14.0"
     },
     {
+      "name": "YouMod + Tweaks (driftywinds)",
+      "bundleIdentifier": "com.google.ios.youtube",
+      "developerName": "Tonwalter888",
+      "version": "21.40.5",
+      "versionDate": "2026-10-06",
+      "size": 130097628,
+      "localizedDescription": "https://t.me/+rvcObIvOpctiMDI9  A modified version of Youtube\n\nFastSign is operated by CertFish.\nThe easy way to sideload: https://cert.fish/",
+      "iconURL": "https://raw.githubusercontent.com/YTLitePlus/YTLitePlus-Altstore/main/Youtube_logo-512.png",
+      "downloadURL": "https://github.com/ramramzz/descfsr/releases/download/v0.35/dca9895e-50a3-49a6-b4fb-afd10174a2YM.ipa",
+      "versions": [
+        {
+          "version": "21.40.5",
+          "date": "2026-10-06",
+          "localizedDescription": "https://t.me/+rvcObIvOpctiMDI9  A modified version of Youtube",
+          "downloadURL": "https://github.com/ramramzz/descfsr/releases/download/v0.35/dca9895e-50a3-49a6-b4fb-afd10174a2YM.ipa",
+          "size": 130097628,
+          "minOSVersion": "14.0"
+        }
+      ],
+      "subtitle": "https://t.me/+rvcObIvOpctiMDI9  A modified version of Youtube",
+      "tintColor": "000000",
+      "icon": "https://raw.githubusercontent.com/YTLitePlus/YTLitePlus-Altstore/main/Youtube_logo-512.png",
+      "bundleID": "com.google.ios.youtube",
+      "fullDate": "20261006030035",
+      "type": 1,
+      "_sourceURL": "https://fastsign.dev/repo.json",
+      "minOSVersion": "14.0"
+    },
+    {
       "name": "YTKACE (1.1.2) - Bonus Tweaks (mrdrvt99)",
       "bundleIdentifier": "com.google.ios.youtube.ytkace.1.1.2.bonus.mrdrvt99",
       "developerName": "YouTube",
@@ -42172,50 +42245,6 @@
       "type": 1,
       "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
-    },
-    {
-      "beta": false,
-      "bundleIdentifier": "com.google.ios.youtube",
-      "developerName": "Tonwalter888",
-      "META": {
-        "repoName": "driftywinds' AltStore Repo"
-      },
-      "contact": {
-        "web": "https://github.com/driftywinds/"
-      },
-      "downloadURL": "https://github.com/ramramzz/descfsr/releases/download/v0.35/dca9895e-50a3-49a6-b4fb-afd10174a2YM.ipa",
-      "iconURL": "https://raw.githubusercontent.com/YTLitePlus/YTLitePlus-Altstore/main/Youtube_logo-512.png",
-      "localizedDescription": "https://t.me/+rvcObIvOpctiMDI9\n\nA modified version of Youtube",
-      "name": "YouMod + Tweaks (driftywinds)",
-      "screenshotURLs": [
-        "https://raw.githubusercontent.com/dayanch96/YTLite/refs/heads/main/Resources/scr1.jpg",
-        "https://raw.githubusercontent.com/dayanch96/YTLite/refs/heads/main/Resources/scr2.jpg",
-        "https://raw.githubusercontent.com/dayanch96/YTLite/refs/heads/main/Resources/scr3.jpg"
-      ],
-      "size": 130097628,
-      "subtitle": "A flexible enhancer for YouTube on iOS | If you want to donate: - https://ko-fi.com/driftywinds",
-      "tintColor": "e22a41",
-      "version": "21.40.5",
-      "versionDate": "2026-10-05",
-      "versionDescription": "• Updated YouTube to 21.40.5\n • Tweak is using 2.0.0",
-      "appPermissions": {
-        "entitlements": [
-          "com.apple.developer.siri"
-        ],
-        "privacy": {
-          "NSUserTrackingUsageDescription": "This app requires tracking permission to deliver personalized content and advertisements."
-        }
-      },
-      "versions": [
-        {
-          "version": "21.40.5",
-          "downloadURL": "https://github.com/ramramzz/descfsr/releases/download/v0.35/dca9895e-50a3-49a6-b4fb-afd10174a2YM.ipa",
-          "date": "2026-10-05",
-          "size": 130097628
-        }
-      ],
-      "_sourceURL": "https://raw.githubusercontent.com/driftywinds/driftywinds.github.io/master/AltStore/apps.json",
-      "_featured": true
     },
     {
       "name": "YTPlus/YTLite Cracked (6.0 BETA 2)",
@@ -374620,7 +374649,7 @@
   "subtitle": "ipastrong",
   "description": "Merged IPA sources",
   "permissions": [],
-  "lastUpdated": "2026-10-12T12:54:23.799823+00:00",
+  "lastUpdated": "2026-10-12T18:36:44.844152+00:00",
   "iconURL": "https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/source-icon.jpeg",
   "META": {
     "repoName": "ipastrong",
