@@ -23,6 +23,32 @@
   ],
   "apps": [
     {
+      "name": "TikTok — VibeTok 1.77",
+      "bundleIdentifier": "com.zhiliaoapp.musically",
+      "developerName": "IPA Strong",
+      "iconURL": "https://fastsign.dev/tg-icon/scholars-lounge/79219.png",
+      "version": "47.1.0",
+      "versionDate": "2026-10-12T12:41:35Z",
+      "downloadURL": "https://github.com/sgad73055-code/ipastrong/releases/download/Vibetok-1.77/VibeTokV1.77.ipa",
+      "size": 513953686,
+      "localizedDescription": "تيك توك VibeTok V1.77 بميزة البانر ووضع الشبح: مشاهدة الستوري وزيارة الملفات الشخصية وقراءة الرسائل بشكل مخفي. يدعم إرسال الفيديوهات والملفات كرسائل صوتية داخل الرسائل والتعليقات، وسجل الزوار، وحسابات غير محدودة، وتنزيل الفيديو بأفضل جودة متاحة حتى 1080p/60fps، وتنزيل الصوت من الفيديوهات.",
+      "category": "تواصل",
+      "versions": [
+        {
+          "version": "47.1.0",
+          "buildVersion": "471044",
+          "date": "2026-10-12T12:41:35Z",
+          "downloadURL": "https://github.com/sgad73055-code/ipastrong/releases/download/Vibetok-1.77/VibeTokV1.77.ipa",
+          "size": 513953686,
+          "minOSVersion": "14.0",
+          "sha256": "990032cef0f29f13840493a744838b958dafe30cc2a076a7b7e7b7ba3bb7356c"
+        }
+      ],
+      "_sourceURL": "local",
+      "minOSVersion": "14.0",
+      "sha256": "990032cef0f29f13840493a744838b958dafe30cc2a076a7b7e7b7ba3bb7356c"
+    },
+    {
       "name": "TikTok — البانر (gTok Kitsune)",
       "bundleIdentifier": "com.zhiliaoapp.musically",
       "developerName": "IPA Strong",
