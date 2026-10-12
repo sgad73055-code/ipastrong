@@ -31,7 +31,6 @@
       "versionDate": "2026-10-11T23:43:01Z",
       "downloadURL": "https://github.com/sgad73055-code/ipastrong/releases/download/tiktok-banner-v1/gtok-kitsune-banners-trollstore-fixed.ipa",
       "size": 439226933,
-      "minOSVersion": "14.0",
       "localizedDescription": "نسخة تيك توك معدّلة بميزة البانر — gTok Kitsune.",
       "category": "تواصل",
       "versions": [
@@ -45,8 +44,9 @@
           "sha256": "c4ba989f7e28676ba6698af8074c01c10c5a00ad41cb4a3635aded41896a10c3"
         }
       ],
-      "sha256": "c4ba989f7e28676ba6698af8074c01c10c5a00ad41cb4a3635aded41896a10c3",
-      "_sourceURL": "local"
+      "_sourceURL": "local",
+      "minOSVersion": "14.0",
+      "sha256": "c4ba989f7e28676ba6698af8074c01c10c5a00ad41cb4a3635aded41896a10c3"
     },
     {
       "name": "Instagram (BE)",
@@ -1364,7 +1364,7 @@
       "bundleID": "com.zhiliaoapp.musically",
       "fullDate": "20261004030203",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -2902,7 +2902,7 @@
       "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.zhiliaoapp.musically.png",
       "bundleID": "com.zhiliaoapp.musically",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0",
       "_expandedSocial": true
     },
@@ -2956,7 +2956,7 @@
       "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.zhiliaoapp.musically.png",
       "bundleID": "com.zhiliaoapp.musically",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0",
       "_expandedSocial": true
     },
@@ -2985,7 +2985,7 @@
       "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.zhiliaoapp.musically.png",
       "bundleID": "com.zhiliaoapp.musically",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0",
       "_expandedSocial": true
     },
@@ -4311,7 +4311,7 @@
       "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.zhiliaoapp.musically.png",
       "bundleID": "com.zhiliaoapp.musically",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0",
       "_expandedSocial": true
     },
@@ -4493,7 +4493,7 @@
       "bundleID": "com.burbn.instagram",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -4699,7 +4699,7 @@
       "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.burbn.instagram.png",
       "bundleID": "com.burbn.instagram",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0",
       "_expandedSocial": true
     },
@@ -6699,7 +6699,7 @@
       "bundleID": "com.zhiliaoapp.musically",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -10006,9 +10006,9 @@
       "versionDate": "2023-03-29",
       "downloadURL": "https://github.com/WuXu1/wuxuslibrary/releases/download/Latest/TikTok.v28.2.0.+.LRD+.ipa",
       "_sourceURL": "https://quarksources.github.io/dist/quantumsource%2B%2B.min.json",
-      "size": 202000000,
       "minOSVersion": "10.0",
-      "sha256": "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+      "sha256": "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5",
+      "size": 202000000
     },
     {
       "name": "Instagram",
@@ -10046,7 +10046,7 @@
       "bundleIdentifier": "me.imgbase.videoday",
       "version": "4.3.1",
       "versionDate": "2026-10-12",
-      "fullDate": "20261012041013",
+      "fullDate": "20261012060154",
       "size": 223535643,
       "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
       "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
@@ -12732,6 +12732,70 @@
       "type": 1,
       "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
+    },
+    {
+      "name": "YouTube",
+      "bundleIdentifier": "com.google.ios.youtube",
+      "developerName": "iKarwan",
+      "subtitle": "A whole new YouTube experience!",
+      "version": "21.41.5",
+      "versions": [
+        {
+          "version": "21.41.5",
+          "date": "2026-10-11",
+          "localizedDescription": "• Add missing localization and Japanese language.\n- Fixes short FS option.\n- Fixes MDX cast Button to show origin YT one.\n- Fixes PiP ABR buffering in some cases.\n- Fixes auto skip for SPB that may not skip in some cases.\n- Improves Backup spacing.\n- Improves loading audio and video player.\n- Other improvements.\n- Updated iPA to YouTube v21.41",
+          "downloadURL": "https://ikghd.site/ipa/YouTube_21.41_YTKillerPlus_6.7.ipa",
+          "size": 142785533,
+          "minOSVersion": "17.0"
+        }
+      ],
+      "versionDate": "2026-10-11",
+      "downloadURL": "https://ikghd.site/ipa/YouTube_21.41_YTKillerPlus_6.7.ipa",
+      "localizedDescription": "• Download videos, audio, Shorts, and post images.\r\n• Enjoy full-speed 🚀 downloads with a built-in Download Manager.\r\n• Built in a modern Video and Audio player.\r\n• Built in custom Sleeptimer.\r\n• Import videos to Photos or directly into the YTKPlus library.\r\n• Block all advertisements for a clean experience.\r\n• 🎯 Fixes Playback 'Something went wrong' Exclusive.\r\n• Play media in the background.\r\n• Stream HD videos over Wi-Fi, 3G, 4G, or 5G.\r\n• Streaming and downloading 2k-4k videos on Supported Device ip15 and later.\r\n• Set default playback quality for Wi-Fi and Cellular.\r\n• Customize or hide tab bar icons and layouts.\r\n• Includes built-in SponsorBlock integration.\r\n• Picture in Picture (PiP).\r\n• And many more settings…\r\n• Supports iPadOS.",
+      "iconURL": "https://repo.ikghd.me/assets/icons/me.ikghd.ytkplus.png",
+      "tintColor": "fa2942",
+      "size": 142785533,
+      "screenshotURLs": [
+        "https://repo.ikghd.me/depictions/me.ikghd.ytkplus/screenshots/1.PNG",
+        "https://repo.ikghd.me/depictions/me.ikghd.ytkplus/screenshots/2.PNG",
+        "https://repo.ikghd.me/depictions/me.ikghd.ytkplus/screenshots/3.PNG",
+        "https://repo.ikghd.me/depictions/me.ikghd.ytkplus/screenshots/4.PNG",
+        "https://repo.ikghd.me/depictions/me.ikghd.ytkplus/screenshots/5.PNG",
+        "https://repo.ikghd.me/depictions/me.ikghd.ytkplus/screenshots/6.PNG",
+        "https://repo.ikghd.me/depictions/me.ikghd.ytkplus/screenshots/7.PNG",
+        "https://repo.ikghd.me/depictions/me.ikghd.ytkplus/screenshots/8.PNG",
+        "https://repo.ikghd.me/depictions/me.ikghd.ytkplus/screenshots/9.PNG",
+        "https://repo.ikghd.me/depictions/me.ikghd.ytkplus/screenshots/10.PNG",
+        "https://repo.ikghd.me/depictions/me.ikghd.ytkplus/screenshots/11.PNG",
+        "https://repo.ikghd.me/depictions/me.ikghd.ytkplus/screenshots/12.PNG",
+        "https://repo.ikghd.me/depictions/me.ikghd.ytkplus/screenshots/13.PNG"
+      ],
+      "appPermissions": {
+        "entitlements": [
+          "application-identifier",
+          "aps-environment",
+          "com.apple.developer.associated-domains",
+          "com.apple.security.application-groups",
+          "com.apple.developer.usernotifications.communication",
+          "com.apple.developer.usernotifications.time-sensitive",
+          "keychain-access-groups",
+          "com.apple.developer.team-identifier"
+        ],
+        "privacy": {
+          "NSAppleMusicUsageDescription": "This lets you add your own audio files to your videos.",
+          "NSBluetoothPeripheralUsageDescription": "YouTube needs bluetooth access to scan for nearby Cast devices.",
+          "NSCameraUsageDescription": "This lets you create videos using the app.",
+          "NSLocalNetworkUsageDescription": "Access to your network allows YouTube to discover and connect to devices such as your TV.",
+          "NSLocationWhenInUseUsageDescription": "Makes it easier for you to attach location information to your videos and live streams and allows for features such as improved recommendations and ads.",
+          "NSMicrophoneUsageDescription": "This lets you include audio with your videos and search using your voice.",
+          "NSPhotoLibraryUsageDescription": "This lets you upload media you've already created.",
+          "NSPhotoLibraryAddUsageDescription": "This lets you save downloaded media to the Photos app.",
+          "NSContactsUsageDescription": "Your contacts will be sent to YouTube servers to help you find friends to share videos with.",
+          "NSUserTrackingUsageDescription": "To personalize ads and provide ad measurement, YouTube will link activity from this app with activity from non-Google apps and websites."
+        }
+      },
+      "_sourceURL": "https://repo.ikghd.me/repo.json",
+      "minOSVersion": "17.0"
     },
     {
       "name": "YouTube Music Ultimate Enchanced",
@@ -18527,7 +18591,7 @@
       "bundleID": "com.khanov.BlockerX",
       "fullDate": "20261008030027",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -18824,7 +18888,7 @@
       "bundleID": "com.alohabrowser.alohabrowser",
       "fullDate": "20261008030027",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -19005,7 +19069,7 @@
       "bundleID": "co.codeleap.bearable",
       "fullDate": "20261008030027",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -19318,7 +19382,7 @@
       "bundleID": "com.andyworks.camera",
       "fullDate": "20261008030027",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -19552,7 +19616,7 @@
       "bundleID": "boomer.Smart-Video",
       "fullDate": "20261008030027",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -19637,7 +19701,7 @@
       "bundleID": "com.apalonapps.radarfree",
       "fullDate": "20261008030027",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -19957,7 +20021,7 @@
       "bundleID": "com.mwm.procolor",
       "fullDate": "20261008030027",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -20249,7 +20313,7 @@
       "bundleID": "com.frameoneapps.Crsel",
       "fullDate": "20261008030027",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -20358,7 +20422,7 @@
       "bundleID": "com.kairos.duet",
       "fullDate": "20261008030027",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -20618,7 +20682,7 @@
       "bundleID": "com.lyrebirdstudio.facelab",
       "fullDate": "20261008030027",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -20799,7 +20863,7 @@
       "bundleID": "com.lightricks.Facetune2",
       "fullDate": "20261008030027",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -21228,7 +21292,7 @@
       "bundleID": "com.ahaf.mshion",
       "fullDate": "20261008030027",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -21273,7 +21337,7 @@
       "bundleID": "com.lappir.keto",
       "fullDate": "20261008030027",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -21454,7 +21518,7 @@
       "bundleID": "com.kinemaster.kios",
       "fullDate": "20261008030027",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -21899,7 +21963,7 @@
       "bundleID": "com.moonly.Moonly",
       "fullDate": "20261008030027",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -22974,7 +23038,7 @@
       "bundleID": "com.impalastudios.pianofree",
       "fullDate": "20261008030027",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -23272,7 +23336,7 @@
       "bundleID": "me.imgbase.videoday",
       "fullDate": "20261008030027",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -23476,70 +23540,6 @@
       "type": 1,
       "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
-    },
-    {
-      "name": "YouTube",
-      "bundleIdentifier": "com.google.ios.youtube",
-      "developerName": "iKarwan",
-      "subtitle": "A whole new YouTube experience!",
-      "version": "21.40.5",
-      "versions": [
-        {
-          "version": "21.40.5",
-          "date": "2026-10-08",
-          "localizedDescription": "• Add missing localization and Japanese language.\n- Fixes short FS option.\n- Fixes MDX cast Button to show origin YT one.\n- Fixes PiP ABR buffering in some cases.\n- Fixes auto skip for SPB that may not skip in some cases.\n- Improves Backup spacing.\n- Improves loading audio and video player.\n- Other improvements.\n- Updated iPA to YouTube v21.40",
-          "downloadURL": "https://ikghd.site/ipa/YouTube_21.40_YTKillerPlus_6.7.ipa",
-          "size": 142016040,
-          "minOSVersion": "17.0"
-        }
-      ],
-      "versionDate": "2026-10-08",
-      "downloadURL": "https://ikghd.site/ipa/YouTube_21.40_YTKillerPlus_6.7.ipa",
-      "localizedDescription": "• Download videos, audio, Shorts, and post images.\r\n• Enjoy full-speed 🚀 downloads with a built-in Download Manager.\r\n• Built in a modern Video and Audio player.\r\n• Built in custom Sleeptimer.\r\n• Import videos to Photos or directly into the YTKPlus library.\r\n• Block all advertisements for a clean experience.\r\n• 🎯 Fixes Playback 'Something went wrong' Exclusive.\r\n• Play media in the background.\r\n• Stream HD videos over Wi-Fi, 3G, 4G, or 5G.\r\n• Streaming and downloading 2k-4k videos on Supported Device ip15 and later.\r\n• Set default playback quality for Wi-Fi and Cellular.\r\n• Customize or hide tab bar icons and layouts.\r\n• Includes built-in SponsorBlock integration.\r\n• Picture in Picture (PiP).\r\n• And many more settings…\r\n• Supports iPadOS.",
-      "iconURL": "https://repo.ikghd.me/assets/icons/me.ikghd.ytkplus.png",
-      "tintColor": "fa2942",
-      "size": 142016040,
-      "screenshotURLs": [
-        "https://repo.ikghd.me/depictions/me.ikghd.ytkplus/screenshots/1.PNG",
-        "https://repo.ikghd.me/depictions/me.ikghd.ytkplus/screenshots/2.PNG",
-        "https://repo.ikghd.me/depictions/me.ikghd.ytkplus/screenshots/3.PNG",
-        "https://repo.ikghd.me/depictions/me.ikghd.ytkplus/screenshots/4.PNG",
-        "https://repo.ikghd.me/depictions/me.ikghd.ytkplus/screenshots/5.PNG",
-        "https://repo.ikghd.me/depictions/me.ikghd.ytkplus/screenshots/6.PNG",
-        "https://repo.ikghd.me/depictions/me.ikghd.ytkplus/screenshots/7.PNG",
-        "https://repo.ikghd.me/depictions/me.ikghd.ytkplus/screenshots/8.PNG",
-        "https://repo.ikghd.me/depictions/me.ikghd.ytkplus/screenshots/9.PNG",
-        "https://repo.ikghd.me/depictions/me.ikghd.ytkplus/screenshots/10.PNG",
-        "https://repo.ikghd.me/depictions/me.ikghd.ytkplus/screenshots/11.PNG",
-        "https://repo.ikghd.me/depictions/me.ikghd.ytkplus/screenshots/12.PNG",
-        "https://repo.ikghd.me/depictions/me.ikghd.ytkplus/screenshots/13.PNG"
-      ],
-      "appPermissions": {
-        "entitlements": [
-          "application-identifier",
-          "aps-environment",
-          "com.apple.developer.associated-domains",
-          "com.apple.security.application-groups",
-          "com.apple.developer.usernotifications.communication",
-          "com.apple.developer.usernotifications.time-sensitive",
-          "keychain-access-groups",
-          "com.apple.developer.team-identifier"
-        ],
-        "privacy": {
-          "NSAppleMusicUsageDescription": "This lets you add your own audio files to your videos.",
-          "NSBluetoothPeripheralUsageDescription": "YouTube needs bluetooth access to scan for nearby Cast devices.",
-          "NSCameraUsageDescription": "This lets you create videos using the app.",
-          "NSLocalNetworkUsageDescription": "Access to your network allows YouTube to discover and connect to devices such as your TV.",
-          "NSLocationWhenInUseUsageDescription": "Makes it easier for you to attach location information to your videos and live streams and allows for features such as improved recommendations and ads.",
-          "NSMicrophoneUsageDescription": "This lets you include audio with your videos and search using your voice.",
-          "NSPhotoLibraryUsageDescription": "This lets you upload media you've already created.",
-          "NSPhotoLibraryAddUsageDescription": "This lets you save downloaded media to the Photos app.",
-          "NSContactsUsageDescription": "Your contacts will be sent to YouTube servers to help you find friends to share videos with.",
-          "NSUserTrackingUsageDescription": "To personalize ads and provide ad measurement, YouTube will link activity from this app with activity from non-Google apps and websites."
-        }
-      },
-      "_sourceURL": "https://repo.ikghd.me/repo.json",
-      "minOSVersion": "17.0"
     },
     {
       "name": "YouTube",
@@ -24215,7 +24215,7 @@
       "bundleID": "myndarc.newFitnessApp",
       "fullDate": "20261007030027",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -24950,7 +24950,7 @@
       "bundleID": "com.cloud-compiler",
       "fullDate": "20261007030027",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -25166,7 +25166,7 @@
       "bundleID": "net.mkswap.Dropshare-iOS",
       "fullDate": "20261007030027",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -25450,7 +25450,7 @@
       "bundleID": "com.edjing.edjingdjturntable",
       "fullDate": "20261007030027",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -25846,7 +25846,7 @@
       "bundleID": "fontskeyboard.fonts",
       "fullDate": "20261007030027",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -26896,7 +26896,7 @@
       "bundleID": "com.myfitnesspal.mfp",
       "fullDate": "20261007030027",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -27192,7 +27192,7 @@
       "bundleID": "com.offlinemusic",
       "fullDate": "20261007030027",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -27426,7 +27426,7 @@
       "bundleID": "com.picsart.studio",
       "fullDate": "20261007030027",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -28026,7 +28026,7 @@
       "bundleID": "com.risesci.nyx",
       "fullDate": "20261007030027",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -28188,7 +28188,7 @@
       "bundleID": "app.chudo",
       "fullDate": "20261007030027",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -28369,7 +28369,7 @@
       "bundleID": "com.joytunes.Draw",
       "fullDate": "20261007030027",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -28837,7 +28837,7 @@
       "bundleID": "com.path36.SpliceFree",
       "fullDate": "20261007030027",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -29047,7 +29047,7 @@
       "bundleID": "com.aoklab.fewerphotos",
       "fullDate": "20261007030027",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -29491,7 +29491,7 @@
       "bundleID": "com.yazio.ios.YAZIO",
       "fullDate": "20261007030027",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -30476,7 +30476,7 @@
       "bundleID": "com.codeway.cleanerplus",
       "fullDate": "20261006030035",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -31195,7 +31195,7 @@
       "bundleID": "com.elevateapp.elevate",
       "fullDate": "20261006030035",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -31639,7 +31639,7 @@
       "bundleID": "com.ulisesolave.Fitia",
       "fullDate": "20261006030035",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -31843,7 +31843,7 @@
       "bundleID": "com.roehl.habitkit",
       "fullDate": "20261006030035",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -31897,7 +31897,7 @@
       "bundleID": "com.chromanoir.Zeit",
       "fullDate": "20261006030035",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -32159,7 +32159,7 @@
       "bundleID": "com.outerspaceapps.itranslate",
       "fullDate": "20261006030035",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -32414,7 +32414,7 @@
       "bundleID": "com.sillens.iShape",
       "fullDate": "20261006030035",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -32779,7 +32779,7 @@
       "bundleID": "com.skylum.luminaripad",
       "fullDate": "20261006030035",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -33026,7 +33026,7 @@
       "bundleID": "com.getmimo.mimo",
       "fullDate": "20261006030035",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -33302,7 +33302,7 @@
       "bundleID": "com.tranzmate.tranzmate1",
       "fullDate": "20261006030035",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -33549,7 +33549,7 @@
       "bundleID": "com.gingerlabs.Notability",
       "fullDate": "20261006030035",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -33869,7 +33869,7 @@
       "bundleID": "ru.routes.peakvisor",
       "fullDate": "20261006030035",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -34175,7 +34175,7 @@
       "bundleID": "com.sugarmo.ScrollClip",
       "fullDate": "20261006030035",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -34385,7 +34385,7 @@
       "bundleID": "com.ADPTVLTD.push",
       "fullDate": "20261006030035",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -34664,7 +34664,7 @@
       "bundleID": "com.apalonapps.pdffree",
       "fullDate": "20261006030035",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -34935,7 +34935,7 @@
       "bundleID": "com.dopedevelopment.Panels",
       "fullDate": "20261006030035",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -35412,7 +35412,7 @@
       "bundleID": "com.revivasoftworks.Snore-Lab",
       "fullDate": "20261006030035",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -36001,7 +36001,7 @@
       "bundleID": "com.mwm.guitartuner",
       "fullDate": "20261006030035",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -36182,7 +36182,7 @@
       "bundleID": "com.wikiloc.wikiloc",
       "fullDate": "20261006030035",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -36998,7 +36998,7 @@
       "bundleID": "com.busuu.english.app",
       "fullDate": "20261005030133",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -37404,7 +37404,7 @@
       "bundleID": "com.tapinfinity.HdjcXcode7",
       "fullDate": "20261005030133",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -39392,7 +39392,7 @@
       "bundleID": "com.joytunes.asla",
       "fullDate": "20261005030133",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -39839,7 +39839,7 @@
       "bundleID": "uni.cbum",
       "fullDate": "20261005030133",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -40787,7 +40787,7 @@
       "bundleID": "club.boxbox.widgets-ios",
       "fullDate": "20261004030203",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -41291,7 +41291,7 @@
       "bundleID": "com.grey.swiftcamera",
       "fullDate": "20261004030203",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -41882,7 +41882,7 @@
       "bundleID": "com.agent.super.extension.safari",
       "fullDate": "20261004030203",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -42434,7 +42434,7 @@
       "bundleID": "com.adobe.fresco.ios",
       "fullDate": "20261003030048",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -42543,7 +42543,7 @@
       "bundleID": "com.alightcreative.motion",
       "fullDate": "20261003030048",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -43024,7 +43024,7 @@
       "bundleID": "net.quochuywdm.collanote496",
       "fullDate": "20261003030048",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -43191,7 +43191,7 @@
       "bundleID": "com.aiti.FitnessOnline",
       "fullDate": "20261003030048",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -43361,7 +43361,7 @@
       "bundleID": "io.stampapp.Stamp",
       "fullDate": "20261003030048",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -43571,7 +43571,7 @@
       "bundleID": "com.hevyapp.hevy",
       "fullDate": "20261003030048",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -43782,7 +43782,7 @@
       "bundleID": "com.lampa.photo",
       "fullDate": "20261003030048",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -43963,7 +43963,7 @@
       "bundleID": "com.locket.Locket",
       "fullDate": "20261003030048",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -44149,7 +44149,7 @@
       "bundleID": "com.kavsoft.MockviewApp",
       "fullDate": "20261003030048",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -44463,7 +44463,7 @@
       "bundleID": "com.neybox.Pillow",
       "fullDate": "20261003030048",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -44687,7 +44687,7 @@
       "bundleID": "com.damtechdesigns.wa.story",
       "fullDate": "20261003030048",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -45044,7 +45044,7 @@
       "bundleID": "com.evolve.helm",
       "fullDate": "20261003030048",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -45393,7 +45393,7 @@
       "bundleID": "com.lexwarelabs.goodmorning",
       "fullDate": "20261003030048",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -45802,7 +45802,7 @@
       "bundleID": "solutions.wzp.translator",
       "fullDate": "20261003030048",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -45950,7 +45950,7 @@
       "bundleID": "com.cuilingshi.fileextract",
       "fullDate": "20261003030048",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -46254,7 +46254,7 @@
       "bundleID": "com.videobrowser.ios",
       "fullDate": "20261003030048",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -46852,7 +46852,7 @@
       "bundleID": "com.wellocution.iosapp",
       "fullDate": "20261002030029",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -47046,7 +47046,7 @@
       "bundleID": "com.bpmhealth.boostfitness",
       "fullDate": "20261002030029",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -47256,7 +47256,7 @@
       "bundleID": "com.readdle.CalendarsLite",
       "fullDate": "20261002030029",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -47466,7 +47466,7 @@
       "bundleID": "com.calm.calmapp",
       "fullDate": "20261002030029",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -47952,7 +47952,7 @@
       "bundleID": "com.endel.endel",
       "fullDate": "20261002030029",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -48554,7 +48554,7 @@
       "bundleID": "app.gentler.activity",
       "fullDate": "20261002030029",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -49055,7 +49055,7 @@
       "bundleID": "com.camerasideas.InstaShot",
       "fullDate": "20261002030029",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -49577,7 +49577,7 @@
       "bundleID": "com.lyftaios",
       "fullDate": "20261002030029",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -50330,7 +50330,7 @@
       "bundleID": "com.wiheads.paste",
       "fullDate": "20261002030029",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -50689,7 +50689,7 @@
       "bundleID": "com.adobe.PSMobile",
       "fullDate": "20261002030029",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -50917,7 +50917,7 @@
       "bundleID": "com.fifthstarlabs.skyguide",
       "fullDate": "20261002030029",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -51237,7 +51237,7 @@
       "bundleID": "com.snowcorp.soda",
       "fullDate": "20261002030029",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -51626,7 +51626,7 @@
       "bundleID": "com.codeway.AIKeyboard",
       "fullDate": "20261002030029",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -51687,7 +51687,7 @@
       "bundleID": "com.bravolol.bravoLang.chineseDictionary",
       "fullDate": "20261002030029",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -52007,7 +52007,7 @@
       "bundleID": "com.getupnote.ios",
       "fullDate": "20261002030029",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -52188,7 +52188,7 @@
       "bundleID": "com.frontrow.vlog",
       "fullDate": "20261002030029",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -52581,7 +52581,7 @@
       "bundleID": "com.mwm.sampler-app",
       "fullDate": "20261001030045",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -53180,7 +53180,7 @@
       "bundleID": "com.apperto.piclabhd",
       "fullDate": "20261001030045",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -53289,7 +53289,7 @@
       "bundleID": "com.mcdiamondfinder.app",
       "fullDate": "20261001030045",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -53835,7 +53835,7 @@
       "bundleID": "com.jakemor.firness-ai",
       "fullDate": "20261001030045",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -54143,7 +54143,7 @@
       "bundleID": "com.opentechiz.heavybagpro",
       "fullDate": "20261001030045",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -54345,7 +54345,7 @@
       "bundleID": "com.firecore.infuse",
       "fullDate": "20261001030045",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -54592,7 +54592,7 @@
       "bundleID": "com.adobe.lrmobilephone",
       "fullDate": "20261001030045",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -54773,7 +54773,7 @@
       "bundleID": "jp.naver.linecamera",
       "fullDate": "20261001030045",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -54991,7 +54991,7 @@
       "bundleID": "com.solveit.lut-studio",
       "fullDate": "20261001030045",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -55402,7 +55402,7 @@
       "bundleID": "com.hasankassem.mockup",
       "fullDate": "20261001030045",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -55612,7 +55612,7 @@
       "bundleID": "nutrition.coach",
       "fullDate": "20261001030045",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -55713,7 +55713,7 @@
       "bundleID": "com.itwcalculator.worldradarfree",
       "fullDate": "20261001030045",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -55944,7 +55944,7 @@
       "bundleID": "com.djitlabs.pixelcolor",
       "fullDate": "20261001030045",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -56125,7 +56125,7 @@
       "bundleID": "com.adobe.premiere.ios",
       "fullDate": "20261001030045",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -56711,7 +56711,7 @@
       "bundleID": "com.campmobile.snow",
       "fullDate": "20261001030045",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -57089,7 +57089,7 @@
       "bundleID": "com.ideation.Stress",
       "fullDate": "20261001030045",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -57838,7 +57838,7 @@
       "bundleID": "com.dehancer.film.ios-app",
       "fullDate": "20260930030048",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -58268,7 +58268,7 @@
       "bundleID": "com.linecorp.Foodie",
       "fullDate": "20260930030048",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -58588,7 +58588,7 @@
       "bundleID": "com.book.summaries.reading",
       "fullDate": "20260930030048",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -58764,7 +58764,7 @@
       "bundleID": "com.zerone.hidesktop",
       "fullDate": "20260930030048",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -59258,7 +59258,7 @@
       "bundleID": "com.maplepop.bmcx",
       "fullDate": "20260930030048",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -59929,7 +59929,7 @@
       "bundleID": "com.aiarlabs.prequel",
       "fullDate": "20260930030048",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -60213,7 +60213,7 @@
       "bundleID": "app.uplens",
       "fullDate": "20260930030048",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -60335,7 +60335,7 @@
       "bundleID": "com.apalonapps.wallpaperspys",
       "fullDate": "20260930030048",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -60536,7 +60536,7 @@
       "bundleID": "com.adguard.AdguardExtension",
       "fullDate": "20260929030205",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -60943,7 +60943,7 @@
       "bundleID": "com.iPwners.Plonkan",
       "fullDate": "20260929030205",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -61150,7 +61150,7 @@
       "bundleID": "com.bbauman.Scripty",
       "fullDate": "20260929030205",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -61468,7 +61468,7 @@
       "bundleID": "com.readdle.ReaddleDocsIPad",
       "fullDate": "20260929030205",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -61817,7 +61817,7 @@
       "bundleID": "com.duolingo.DuolingoMobile",
       "fullDate": "20260929030205",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -61982,7 +61982,7 @@
       "bundleID": "com.leshko.flap",
       "fullDate": "20260929030205",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -62294,7 +62294,7 @@
       "bundleID": "se.resenatverket.FlightRadar24-Free",
       "fullDate": "20260929030205",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -62400,7 +62400,7 @@
       "bundleID": "instapreview",
       "fullDate": "20260929030205",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -62756,7 +62756,7 @@
       "bundleID": "in.muditbhargava.LookUp",
       "fullDate": "20260929030205",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -63172,7 +63172,7 @@
       "bundleID": "com.wakdev.wdnfc",
       "fullDate": "20260929030205",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -63649,7 +63649,7 @@
       "bundleID": "com.yengshine.proccd",
       "fullDate": "20260929030205",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -63998,7 +63998,7 @@
       "bundleID": "health.sleep.sounds.tracker.alarm.calm",
       "fullDate": "20260929030205",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -64178,7 +64178,7 @@
       "bundleID": "app.swiftgram.ios",
       "fullDate": "20260929030205",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -64343,7 +64343,7 @@
       "bundleID": "com.calisthenics.thenx",
       "fullDate": "20260929030205",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -64708,7 +64708,7 @@
       "bundleID": "com.moonlab.unfoldstories",
       "fullDate": "20260929030205",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -65146,7 +65146,7 @@
       "bundleID": "com.crossforward.WidgetSmith",
       "fullDate": "20260929030205",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -65712,7 +65712,7 @@
       "bundleID": "co.bazaart.app",
       "fullDate": "20260928030148",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -66099,7 +66099,7 @@
       "bundleID": "com.zeus.EasyCopy",
       "fullDate": "20260928030148",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -66419,7 +66419,7 @@
       "bundleID": "co.detail.duo",
       "fullDate": "20260928030148",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -66862,7 +66862,7 @@
       "bundleID": "com.agiletortoise.Drafts5",
       "fullDate": "20260928030148",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -67353,7 +67353,7 @@
       "bundleID": "com.readdle.Scanner",
       "fullDate": "20260928030148",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -67518,7 +67518,7 @@
       "bundleID": "com.joytunes.SimplyGuitar",
       "fullDate": "20260928030148",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -68062,7 +68062,7 @@
       "bundleID": "com.vgfit.waterreminder",
       "fullDate": "20260928030148",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -69367,7 +69367,7 @@
       "bundleID": "com.adobe.post",
       "fullDate": "20260926030044",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -69992,7 +69992,7 @@
       "bundleID": "dazz.camera.vintagecamera",
       "fullDate": "20260926030044",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -70321,7 +70321,7 @@
       "bundleID": "com.mobisystems.OxfordDictionaryOfEnglishFree",
       "fullDate": "20260926030044",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -70666,7 +70666,7 @@
       "bundleID": "com.upskew.encode.ios",
       "fullDate": "20260926030044",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -71090,7 +71090,7 @@
       "bundleID": "PhotoEditor.PhotoCollage.inCollage",
       "fullDate": "20260926030044",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -71470,7 +71470,7 @@
       "bundleID": "com.most.stories",
       "fullDate": "20260926030044",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -71645,7 +71645,7 @@
       "bundleID": "com.readdle.PDFExpert5",
       "fullDate": "20260926030044",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -73067,7 +73067,7 @@
       "bundleID": "com.leshko.cloudplayer",
       "fullDate": "20260925030050",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -74418,7 +74418,7 @@
       "bundleID": "com.photoeditor.polish",
       "fullDate": "20260925030050",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -74967,7 +74967,7 @@
       "bundleID": "com.hassantaleb.mockup",
       "fullDate": "20260924183518",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -75433,7 +75433,7 @@
       "bundleID": "com.linecorp.b612",
       "fullDate": "20260924030118",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -75894,7 +75894,7 @@
       "bundleID": "com.elevateapp.kamino.kamino",
       "fullDate": "20260924030118",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -76294,7 +76294,7 @@
       "bundleID": "com.snowcorp.epik",
       "fullDate": "20260924030118",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -76630,7 +76630,7 @@
       "bundleID": "com.penguinbit.fastdownload",
       "fullDate": "20260924183518",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -77149,7 +77149,7 @@
       "bundleID": "eu.gowod",
       "fullDate": "20260924183518",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -77972,7 +77972,7 @@
       "bundleID": "com.apalonapps.planesfree",
       "fullDate": "20260924030118",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -78779,7 +78779,7 @@
       "bundleID": "com.joytunes.Sing",
       "fullDate": "20260924183518",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -79682,7 +79682,7 @@
       "bundleID": "com.apalonapps.wlf",
       "fullDate": "20260924030118",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -79839,7 +79839,7 @@
       "bundleID": "com.kingsoft.office.g.wpsoffice",
       "fullDate": "20260924030118",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -81480,7 +81480,7 @@
       "bundleID": "app.labbet.labbet",
       "fullDate": "20260923030221",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -82253,7 +82253,7 @@
       "bundleID": "com.tripleglazedstudios.Weather",
       "fullDate": "20260923030221",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -82434,7 +82434,7 @@
       "bundleID": "archery.storify",
       "fullDate": "20260923030221",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -83529,7 +83529,7 @@
       "bundleID": "com.shred.shredlabs",
       "fullDate": "20260923030221",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -83662,7 +83662,7 @@
       "bundleID": "tech.sketchar.ios",
       "fullDate": "20260923030221",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -83930,7 +83930,7 @@
       "bundleID": "com.andyworks.vibes",
       "fullDate": "20260923030221",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -85000,7 +85000,7 @@
       "bundleID": "com.apalonapps.clrbook",
       "fullDate": "20260922030132",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -88044,7 +88044,7 @@
       "bundleID": "com.astrio.Sofa",
       "fullDate": "20260922030132",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -88488,7 +88488,7 @@
       "bundleID": "com.apalonapps.wlf",
       "fullDate": "20260922030132",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -89651,7 +89651,7 @@
       "bundleID": "co.noteplan.NotePlan3",
       "fullDate": "20260921030035",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -91333,7 +91333,7 @@
       "bundleID": "Cristian-Teichner.Analogue",
       "fullDate": "20260920230737",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -91442,7 +91442,7 @@
       "bundleID": "com.hubx.imagination",
       "fullDate": "20260920030037",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -91935,7 +91935,7 @@
       "bundleID": "com.glority.everlens",
       "fullDate": "20260920230737",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -92097,7 +92097,7 @@
       "bundleID": "com.camerasideas.Peachy",
       "fullDate": "20260920030037",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -92278,7 +92278,7 @@
       "bundleID": "app.tripsy.ios",
       "fullDate": "20260920030037",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -93399,7 +93399,7 @@
       "bundleID": "com.grailr.CARROTweather",
       "fullDate": "20260919030043",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -93852,7 +93852,7 @@
       "bundleID": "com.vitalii.mind",
       "fullDate": "20260919030043",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -94259,7 +94259,7 @@
       "bundleID": "com.ahmetserdarkaradeniz.Phocus",
       "fullDate": "20260919030043",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -94688,7 +94688,7 @@
       "bundleID": "com.pixite.pigment",
       "fullDate": "20260919030043",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -95594,7 +95594,7 @@
       "bundleID": "com.bing.lyrics",
       "fullDate": "20260918030115",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -96196,7 +96196,7 @@
       "bundleID": "com.zerone.hidesktop",
       "fullDate": "20260918030115",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -96349,7 +96349,7 @@
       "bundleID": "com.LEMO.LemoFM",
       "fullDate": "20260918030115",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -96402,7 +96402,7 @@
       "bundleID": "com.verycoolapp.mediaconvert",
       "fullDate": "20260918030115",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -96807,7 +96807,7 @@
       "bundleID": "ventures.slam.minutes",
       "fullDate": "20260918030115",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -97336,7 +97336,7 @@
       "bundleID": "com.leapingcoyote.rungo",
       "fullDate": "20260918030115",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -97461,7 +97461,7 @@
       "bundleID": "com.consumedbycode.slopes",
       "fullDate": "20260918030115",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -97677,7 +97677,7 @@
       "bundleID": "com.wallpaperscraft.wallpapers",
       "fullDate": "20260918030115",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -97820,7 +97820,7 @@
       "bundleID": "boomer.Smart-Video",
       "fullDate": "20260918030115",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -100528,7 +100528,7 @@
       "bundleID": "com.fujixweekly.fujixweeklyrecipes",
       "fullDate": "20260916030021",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -101271,7 +101271,7 @@
       "bundleID": "com.sfun.snapedit",
       "fullDate": "20260916030021",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -101396,7 +101396,7 @@
       "bundleID": "com.youssef.developer.Full-Browser",
       "fullDate": "20260916030021",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -101838,7 +101838,7 @@
       "bundleID": "com.lightricks.Enlight-Video",
       "fullDate": "20260916030021",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -102312,7 +102312,7 @@
       "bundleID": "com.ilovepdf.www",
       "fullDate": "20260915030031",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -102514,7 +102514,7 @@
       "bundleID": "com.icandiapps.nightsky",
       "fullDate": "20260915030031",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -102684,7 +102684,7 @@
       "bundleID": "tech.miidii.SquareDude",
       "fullDate": "20260915030031",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -103538,7 +103538,7 @@
       "bundleID": "com.moodtools.thoughtdiary",
       "fullDate": "20260914030024",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -103911,7 +103911,7 @@
       "bundleID": "com.frontpocketsoftware.happyscale",
       "fullDate": "20260914030024",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -104205,7 +104205,7 @@
       "bundleID": "tech.miidii.AlbumManager",
       "fullDate": "20260914030024",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -104650,7 +104650,7 @@
       "bundleID": "tech.miidii.MDClock",
       "fullDate": "20260914030024",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -105130,7 +105130,7 @@
       "bundleID": "com.mwm.stems",
       "fullDate": "20260914030024",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -105517,7 +105517,7 @@
       "bundleID": "com.dtd.aroundu",
       "fullDate": "20260913030030",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -105626,7 +105626,7 @@
       "bundleID": "com.oribot.origami",
       "fullDate": "20260913030030",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -105663,7 +105663,7 @@
       "bundleID": "com.mwm.moments",
       "fullDate": "20260913030030",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -106545,7 +106545,7 @@
       "bundleID": "com.future.kapi",
       "fullDate": "20260912030113",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -106590,7 +106590,7 @@
       "bundleID": "com.andyworks.calculator",
       "fullDate": "20260912030113",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -106667,7 +106667,7 @@
       "bundleID": "reels-maker-one",
       "fullDate": "20260912030113",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -106744,7 +106744,7 @@
       "bundleID": "overlook.fing",
       "fullDate": "20260912030113",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -106905,7 +106905,7 @@
       "bundleID": "com.dreamer.Habits",
       "fullDate": "20260912030113",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -107339,7 +107339,7 @@
       "bundleID": "com.andyworks.timer",
       "fullDate": "20260912030113",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -107540,7 +107540,7 @@
       "bundleID": "com.andyworks.weather",
       "fullDate": "20260912030113",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -108034,7 +108034,7 @@
       "bundleID": "com.picretouch.photoeditor",
       "fullDate": "20260911030042",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -109197,7 +109197,7 @@
       "bundleID": "com.neo.NeoMan",
       "fullDate": "20260911030042",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -109298,7 +109298,7 @@
       "bundleID": "dk.simonbs.RunestoneEditor",
       "fullDate": "20260911030042",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -109678,7 +109678,7 @@
       "bundleID": "com.caliberfitness.app",
       "fullDate": "20260909030043",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -109747,7 +109747,7 @@
       "bundleID": "com.cinegenix.filmic.pro",
       "fullDate": "20260909030043",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -109880,7 +109880,7 @@
       "bundleID": "xyz.gingertech.fitnotes",
       "fullDate": "20260909030043",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -110348,7 +110348,7 @@
       "bundleID": "com.mwm.piano-app",
       "fullDate": "20260908030041",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -110521,7 +110521,7 @@
       "bundleID": "com.maxty.gofitness",
       "fullDate": "20260908030041",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -113236,7 +113236,7 @@
       "bundleID": "com.jps.gpspeedhud",
       "fullDate": "20260906203103",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -113553,7 +113553,7 @@
       "bundleID": "com.mangacrush.ios",
       "fullDate": "20260906203103",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -113902,7 +113902,7 @@
       "bundleID": "com.textasticapp.textastic-universal",
       "fullDate": "20260906030100",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -114558,7 +114558,7 @@
       "bundleID": "com.podfactor.pod",
       "fullDate": "20260905030102",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -114696,7 +114696,7 @@
       "bundleID": "com.touchbyte.PhotoSync",
       "fullDate": "20260905030102",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -115598,7 +115598,7 @@
       "bundleID": "com.castpeer.audioroom.ios",
       "fullDate": "20260904030047",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -115692,7 +115692,7 @@
       "bundleID": "com.museworks.swipemix",
       "fullDate": "20260904030047",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -116011,7 +116011,7 @@
       "bundleID": "com.calculated.laurene",
       "fullDate": "20260903030047",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -116230,7 +116230,7 @@
       "bundleID": "rw.sp.flitsmeister",
       "fullDate": "20260903030047",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -119656,7 +119656,7 @@
       "bundleID": "com.osmose-it.osmosis",
       "fullDate": "20260901030043",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -119693,7 +119693,7 @@
       "bundleID": "com.microblink.PhotoMath",
       "fullDate": "20260901030043",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -119960,7 +119960,7 @@
       "bundleID": "com.dajiu.stay.pro",
       "fullDate": "20260901030043",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -122469,7 +122469,7 @@
       "bundleID": "com.aiby.wtcoin",
       "fullDate": "20260829030021",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -124151,7 +124151,7 @@
       "bundleID": "com.iaftt.flightplusfree",
       "fullDate": "20260828030033",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -124594,7 +124594,7 @@
       "bundleID": "com.lappir.keto",
       "fullDate": "20260828030033",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -125764,7 +125764,7 @@
       "bundleID": "com.snowcorp.glowup",
       "fullDate": "20260827030121",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -126960,7 +126960,7 @@
       "bundleID": "com.adobe.photoshop.ios",
       "fullDate": "20260826030042",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -127525,7 +127525,7 @@
       "bundleID": "com.nextgen.reelsapp",
       "fullDate": "20260825030020",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -127656,7 +127656,7 @@
       "bundleID": "io.veed.appstore",
       "fullDate": "20260825030020",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -138709,7 +138709,7 @@
       "bundleID": "com.shantanu.YouCut",
       "fullDate": "20260820030022",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -138754,7 +138754,7 @@
       "bundleID": "com.apalonapps.alarmclockfree",
       "fullDate": "20260819030019",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -138847,7 +138847,7 @@
       "bundleID": "com.leapfitness.gym",
       "fullDate": "20260819030019",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -138988,7 +138988,7 @@
       "bundleID": "com.shapr3d.shapr",
       "fullDate": "20260819030019",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -139694,7 +139694,7 @@
       "bundleID": "com.peoplefun.wordcross",
       "fullDate": "20260815030041",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -140171,7 +140171,7 @@
       "bundleID": "PHCXZHD53T.com.enki.insights",
       "fullDate": "20260813030039",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -140232,7 +140232,7 @@
       "bundleID": "org.powerthesaurus.powerthesaurus",
       "fullDate": "20260813030039",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -140333,7 +140333,7 @@
       "bundleID": "com.thenovik.Presets",
       "fullDate": "20260812030031",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -140530,7 +140530,7 @@
       "bundleID": "com.appicfun.translatorfree",
       "fullDate": "20260812030031",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -141636,7 +141636,7 @@
       "bundleID": "com.nixwang.decision",
       "fullDate": "20260807030105",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -141697,7 +141697,7 @@
       "bundleID": "com.lightricks.Enlight-Editor",
       "fullDate": "20260806030056",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -141734,7 +141734,7 @@
       "bundleID": "com.thirteenleafclover.art.generator",
       "fullDate": "20260806030056",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -142221,7 +142221,7 @@
       "bundleID": "com.lightricks.Enlight-Photos",
       "fullDate": "20260803030026",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -142418,7 +142418,7 @@
       "bundleID": "com.lightricks.Enlight-Phoenix",
       "fullDate": "20260803030026",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -143290,7 +143290,7 @@
       "bundleID": "com.abishkking.maleworkout",
       "fullDate": "20260725030021",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -143680,7 +143680,7 @@
       "bundleID": "com.newmarketinglab.ImageCompressor",
       "fullDate": "20260723030137",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -143733,7 +143733,7 @@
       "bundleID": "com.spotify.client",
       "fullDate": "20260723030136",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -143786,7 +143786,7 @@
       "bundleID": "com.leshko.tagseditor",
       "fullDate": "20260723030136",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -143935,7 +143935,7 @@
       "bundleID": "com.facebook.Facebook",
       "fullDate": "20260723030136",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -143964,7 +143964,7 @@
       "bundleID": "com.degisner.fivecents",
       "fullDate": "20260723030137",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -144056,7 +144056,7 @@
       "bundleID": "ventures.bench.linkjar-ios",
       "fullDate": "20260723030136",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -144205,7 +144205,7 @@
       "bundleID": "com.facebook.Messenger",
       "fullDate": "20260723030136",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -144322,7 +144322,7 @@
       "bundleID": "uk.co.leeus.planefinderfree",
       "fullDate": "20260723030136",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -144503,7 +144503,7 @@
       "bundleID": "com.google.ios.youtube",
       "fullDate": "20260723030136",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -173100,9 +173100,9 @@
       "version": "2.2.0",
       "versionDate": "2026-07-19T09:59:41Z",
       "_sourceURL": "https://xitrix.github.io/iTorrent/AltStore.json",
+      "minOSVersion": "16.0",
       "size": 24288935,
-      "_featured": true,
-      "minOSVersion": "16.0"
+      "_featured": true
     },
     {
       "name": "30DayFitness",
@@ -173243,7 +173243,7 @@
       "bundleID": "com.miniclip.8ballpoolmult",
       "fullDate": "20260719030047",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -180918,7 +180918,7 @@
       "bundleID": "AB.iOsteology",
       "fullDate": "20260718000827",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -182743,7 +182743,7 @@
       "bundleID": "nt.nb.ios",
       "fullDate": "20260718000827",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -184683,8 +184683,8 @@
       "versionDate": "2026-07-17T07:00:00+03:00",
       "downloadURL": "https://github.com/dvntm0/AltStore/releases/download/0.0.1/ytp_5.2.2+19.20.2.ipa",
       "_sourceURL": "https://github.com/dvntm0/AltStore/raw/refs/heads/main/feather.json",
-      "_featured": true,
-      "minOSVersion": "14.0"
+      "minOSVersion": "14.0",
+      "_featured": true
     },
     {
       "name": "YouTube Plus (iOS15+)",
@@ -184748,8 +184748,8 @@
       "versionDate": "2026-07-17T07:00:00+03:00",
       "downloadURL": "https://github.com/dvntm0/AltStore/releases/download/0.0.1/ytp_5.2.2+20.21.6.ipa",
       "_sourceURL": "https://github.com/dvntm0/AltStore/raw/refs/heads/main/feather.json",
-      "_featured": true,
-      "minOSVersion": "15.0"
+      "minOSVersion": "15.0",
+      "_featured": true
     },
     {
       "name": "YouTube Plus (iOS16+)",
@@ -184815,8 +184815,8 @@
       "versionDate": "2026-07-17T07:00:00+03:00",
       "downloadURL": "https://github.com/dvntm0/AltStore/releases/download/0.0.1/ytp_5.2.2+21.16.2.ipa",
       "_sourceURL": "https://github.com/dvntm0/AltStore/raw/refs/heads/main/feather.json",
-      "_featured": true,
-      "minOSVersion": "16.0"
+      "minOSVersion": "16.0",
+      "_featured": true
     },
     {
       "name": "EasyAnatomy3D",
@@ -185856,7 +185856,7 @@
       "bundleID": "com.alevioos.app",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -185962,7 +185962,7 @@
       "bundleID": "com.alphaprogression.alphaprogression",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -186028,7 +186028,7 @@
       "bundleID": "com.picspacehd.anilistclient",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -186081,7 +186081,7 @@
       "bundleID": "com.wallpapershub.anime",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -186533,7 +186533,7 @@
       "bundleID": "com.mwm.bananai",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -186687,7 +186687,7 @@
       "bundleID": "com.bowery-digital.bend",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -187224,7 +187224,7 @@
       "bundleID": "com.blockpuzzle.us.ios",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -187634,7 +187634,7 @@
       "bundleID": "com.beauchamp.Messenger.external",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -187758,7 +187758,7 @@
       "bundleID": "com.markodevcic.code-runner",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -187864,7 +187864,7 @@
       "bundleID": "com.coinidentifier.identifycoins",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -187909,7 +187909,7 @@
       "bundleID": "com.apalonapps.clrbook",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -188408,7 +188408,7 @@
       "bundleID": "co.bergen.Darkroom",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -188609,7 +188609,7 @@
       "bundleID": "co.airapps.dictionary",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -189818,7 +189818,7 @@
       "bundleID": "com.cuilingshi.flipclock",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -189900,7 +189900,7 @@
       "bundleID": "com.imageline.FLStudioMobileHD",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -190038,7 +190038,7 @@
       "bundleID": "com.mobilefootie.fotmobpro",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -190570,7 +190570,7 @@
       "bundleID": "com.headway.books",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -190636,7 +190636,7 @@
       "bundleID": "com.fingersoft.hillclimbracing",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -191594,7 +191594,7 @@
       "bundleID": "com.elf-audio.koala",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -191844,7 +191844,7 @@
       "bundleID": "de.komoot.berlinbikeapp",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -192035,7 +192035,7 @@
       "bundleID": "es.monkimun.lingokids",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -192072,7 +192072,7 @@
       "bundleID": "ee.keel24.Lingvist",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -192228,7 +192228,7 @@
       "bundleID": "com.sbs.diet",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -192890,7 +192890,7 @@
       "bundleID": "com.merge.cooking.theme.restaurant.food",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -193110,7 +193110,7 @@
       "bundleID": "com.monokaitoolkit.pro",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -193524,7 +193524,7 @@
       "bundleID": "com.myscript.nebo",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -193577,7 +193577,7 @@
       "bundleID": "com.rickharrison.narwhal",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -193699,7 +193699,7 @@
       "bundleID": "com.mindsethealth.ibs",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -194198,7 +194198,7 @@
       "bundleID": "com.fluidtouch.noteshelf3",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -194482,7 +194482,7 @@
       "bundleID": "com.zijayrate.analogcam",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -194908,7 +194908,7 @@
       "bundleID": "com.crossforward.pedometer",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -195336,7 +195336,7 @@
       "bundleID": "com.dr1ven.eraser",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -195599,7 +195599,7 @@
       "bundleID": "com.dsrtech.colorsplash",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -195907,7 +195907,7 @@
       "bundleID": "com.mobivalley.LookAroundApp",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -195960,7 +195960,7 @@
       "bundleID": "net.plantsnap.freemium",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -196092,7 +196092,7 @@
       "bundleID": "co.polarr.ppe",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -196301,7 +196301,7 @@
       "bundleID": "com.parallaxlabs.ShiftCalendar",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -196744,7 +196744,7 @@
       "bundleID": "com.neocortext.doublicatapp",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -196954,7 +196954,7 @@
       "bundleID": "app.renovateai",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -197251,7 +197251,7 @@
       "bundleID": "com.wangyuehuan.vrtef",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -197394,7 +197394,7 @@
       "bundleID": "co.airapps.scannerapp",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -197439,7 +197439,7 @@
       "bundleID": "com.edwinchan.Scoreboard",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -197558,7 +197558,7 @@
       "bundleID": "com.abishkking.sixpack",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -198116,7 +198116,7 @@
       "bundleID": "app.mmap.mobile",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -198389,7 +198389,7 @@
       "bundleID": "com.spotify.client",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -198753,7 +198753,7 @@
       "bundleID": "com.gunthermarktl.stepapp",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -199312,7 +199312,7 @@
       "bundleID": "com.iqraapp.Iqra",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -199582,7 +199582,7 @@
       "bundleID": "com.impalastudios.theweatherfree",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -199776,7 +199776,7 @@
       "bundleID": "com.TickTick.task",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -200145,7 +200145,7 @@
       "bundleID": "com.travelboast.travelboast",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -201327,7 +201327,7 @@
       "bundleID": "com.ibit.UNPOSED",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -201589,7 +201589,7 @@
       "bundleID": "viral.vision.vids",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -201796,7 +201796,7 @@
       "bundleID": "com.vivacut.videoeditor",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -201960,7 +201960,7 @@
       "bundleID": "com.waterminder.waterminder",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -202842,7 +202842,7 @@
       "bundleID": "com.sbs.train",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -203012,7 +203012,7 @@
       "bundleID": "com.atebits.Tweetie2",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -203081,7 +203081,7 @@
       "bundleID": "io.yogger.Yogger",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -203320,7 +203320,7 @@
       "bundleID": "com.google.ios.youtubemusic",
       "fullDate": "20260712133555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -205159,7 +205159,7 @@
       "bundleID": "org.fastdevsproject.altervista.Device-Monitor",
       "fullDate": "20260710193557",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -210851,8 +210851,8 @@
       "versionDate": "2026-07-09T08:00:00+03:00",
       "downloadURL": "https://github.com/dvntm0/AltStore/releases/download/0.0.1/infp_2.6+7.8.4.ipa",
       "_sourceURL": "https://github.com/dvntm0/AltStore/raw/refs/heads/main/feather.json",
-      "_featured": true,
-      "minOSVersion": "14.0"
+      "minOSVersion": "14.0",
+      "_featured": true
     },
     {
       "name": "Infuse Plus (iOS16+)",
@@ -210911,8 +210911,8 @@
       "versionDate": "2026-07-09T08:00:00+03:00",
       "downloadURL": "https://github.com/dvntm0/AltStore/releases/download/0.0.1/infp_2.6+8.2.4.ipa",
       "_sourceURL": "https://github.com/dvntm0/AltStore/raw/refs/heads/main/feather.json",
-      "_featured": true,
-      "minOSVersion": "16.0"
+      "minOSVersion": "16.0",
+      "_featured": true
     },
     {
       "name": "Infuse Plus (iOS18+)",
@@ -210971,8 +210971,8 @@
       "versionDate": "2026-07-09T08:00:00+03:00",
       "downloadURL": "https://github.com/dvntm0/AltStore/releases/download/0.0.1/infp_2.6+8.4.8.ipa",
       "_sourceURL": "https://github.com/dvntm0/AltStore/raw/refs/heads/main/feather.json",
-      "_featured": true,
-      "minOSVersion": "18.0"
+      "minOSVersion": "18.0",
+      "_featured": true
     },
     {
       "name": "AppLockPro",
@@ -213009,7 +213009,7 @@
       "bundleID": "com.phantom.fantengmu",
       "fullDate": "20260708163551",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -215132,7 +215132,7 @@
       "bundleID": "com.fitbod",
       "fullDate": "20260707140553",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -216944,7 +216944,7 @@
       "bundleID": "com.feelty",
       "fullDate": "20260706160617",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -217010,7 +217010,7 @@
       "bundleID": "com.iptv.player",
       "fullDate": "20260706200602",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -217385,7 +217385,7 @@
       "bundleID": "com.abishkking.stretching",
       "fullDate": "20260706200602",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -217566,7 +217566,7 @@
       "bundleID": "com.burbn.barcelona",
       "fullDate": "20260706200602",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -217699,7 +217699,7 @@
       "bundleID": "com.tiimo.app",
       "fullDate": "20260706200602",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -218150,7 +218150,7 @@
       "bundleID": "com.kalavision.alfred",
       "fullDate": "20260702063552",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -218263,7 +218263,7 @@
       "bundleID": "com.eifrig.blitzerdepro",
       "fullDate": "20260702063552",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -218684,7 +218684,7 @@
       "bundleID": "com.tickettothemoon.video.persona",
       "fullDate": "20260702063552",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -218897,7 +218897,7 @@
       "bundleID": "com.ocho.SudokuaDay",
       "fullDate": "20260702063552",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -219387,7 +219387,7 @@
       "bundleID": "com.alltrails.AllTrails",
       "fullDate": "20260701060556",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -219560,7 +219560,7 @@
       "bundleID": "ovz.Car-Scanner",
       "fullDate": "20260701070550",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -219641,7 +219641,7 @@
       "bundleID": "games.calico.mantracker",
       "fullDate": "20260701063550",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -219722,7 +219722,7 @@
       "bundleID": "nt.nc.ios",
       "fullDate": "20260701060556",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -219863,7 +219863,7 @@
       "bundleID": "com.diagnostics.ios",
       "fullDate": "20260701060556",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -220160,7 +220160,7 @@
       "bundleID": "com.damienelledge.Dual-Shot-Camera",
       "fullDate": "20260701070550",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -220321,7 +220321,7 @@
       "bundleID": "videoeditor.app",
       "fullDate": "20260701083554",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -220670,7 +220670,7 @@
       "bundleID": "com.beelinguapp.beelinguapp",
       "fullDate": "20260629130552",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -220817,7 +220817,7 @@
       "bundleID": "com.weather.overdrop",
       "fullDate": "20260626190614",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -220918,7 +220918,7 @@
       "bundleID": "com.bigwinepot.nwdn.international",
       "fullDate": "20260625140551",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -221516,7 +221516,7 @@
       "bundleID": "com.spacegab.slideshow",
       "fullDate": "20260624083612",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -221831,7 +221831,7 @@
       "bundleID": "nt.nr.ios",
       "fullDate": "20260622210552",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -222031,7 +222031,7 @@
       "bundleID": "com.adobe.scan.ios",
       "fullDate": "20260621133559",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -222124,7 +222124,7 @@
       "bundleID": "org.iggymedia.periodtracker",
       "fullDate": "20260621190607",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -222385,7 +222385,7 @@
       "bundleID": "com.christianselig.Apollo",
       "fullDate": "20260616070554",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -222937,7 +222937,7 @@
       "bundleID": "io.veed.appstore",
       "fullDate": "20260615103549",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -223270,7 +223270,7 @@
       "bundleID": "com.macpaw.iosgemini",
       "fullDate": "20260612093607",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -223469,7 +223469,7 @@
       "bundleID": "com.soundcloud.TouchApp",
       "fullDate": "20260612063604",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -226880,7 +226880,7 @@
       "bundleID": "com.zynga.FarmVille2CountryEscape",
       "fullDate": "20260610070550",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -230018,7 +230018,7 @@
       "bundleID": "com.noteful-technologies.noteful",
       "fullDate": "20260610063555",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -235767,7 +235767,7 @@
       "bundleID": "com.app.BXNGApp",
       "fullDate": "20260608140645",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -235812,7 +235812,7 @@
       "bundleID": "com.inakitajes.Calisthenial",
       "fullDate": "20260608140645",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -236471,7 +236471,7 @@
       "bundleID": "com.kwalee.drawit",
       "fullDate": "20260608183626",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -238227,7 +238227,7 @@
       "bundleID": "com.letterboxd.LetterboxdApp",
       "fullDate": "20260608180637",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -238584,7 +238584,7 @@
       "bundleID": "com.lingodeer",
       "fullDate": "20260608183626",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -239602,7 +239602,7 @@
       "bundleID": "ch.b-eng.tor",
       "fullDate": "20260608140645",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -239999,7 +239999,7 @@
       "bundleID": "io.betterhalf.app",
       "fullDate": "20260608183626",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -240163,7 +240163,7 @@
       "bundleID": "com.iteration-mobile.radarbot-free-ww",
       "fullDate": "20260608140645",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -240406,7 +240406,7 @@
       "bundleID": "com.apalonapps.pdffree",
       "fullDate": "20260608093615",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -240801,7 +240801,7 @@
       "bundleID": "com.morpholioapps.trace",
       "fullDate": "20260608190615",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -241154,7 +241154,7 @@
       "bundleID": "com.hitpaw.photoenhancer",
       "fullDate": "20260607160618",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -241292,7 +241292,7 @@
       "bundleID": "com.commsource.BeautyPlus",
       "fullDate": "20260607160618",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -241395,7 +241395,7 @@
       "bundleID": "com.iViNi.BMWhatLite2",
       "fullDate": "20260607160618",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -241469,7 +241469,7 @@
       "bundleID": "hd.clear.status.app.clearstatus",
       "fullDate": "20260607160618",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -241681,7 +241681,7 @@
       "bundleID": "gen.tech.impulse",
       "fullDate": "20260607160618",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -241824,7 +241824,7 @@
       "bundleID": "com.amanotes.magictiles",
       "fullDate": "20260607160618",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -241882,7 +241882,7 @@
       "bundleID": "com.goodturn.memorize",
       "fullDate": "20260607160618",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -241940,7 +241940,7 @@
       "bundleID": "nl.jeffreykuiken.NoirApp",
       "fullDate": "20260607160618",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -242083,7 +242083,7 @@
       "bundleID": "com.sleepmonitor.aio",
       "fullDate": "20260607133617",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -242149,7 +242149,7 @@
       "bundleID": "com.spycamera.app",
       "fullDate": "20260607160618",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -242186,7 +242186,7 @@
       "bundleID": "com.noctuasoftware.stellarium-mobile-plus",
       "fullDate": "20260607223615",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -242231,7 +242231,7 @@
       "bundleID": "com.youssef.developer.Full-Browser",
       "fullDate": "20260607160618",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -242385,7 +242385,7 @@
       "bundleID": "com.truesoftware.TrueCallerOther",
       "fullDate": "20260607160618",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -242475,7 +242475,7 @@
       "bundleID": "com.instantbits.cast.webvideo",
       "fullDate": "20260607220620",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -242504,7 +242504,7 @@
       "bundleID": "com.wolframalpha.wolframalphaviewer",
       "fullDate": "20260607160618",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -242987,7 +242987,7 @@
       "bundleID": "com.unicostudio.braintest",
       "fullDate": "20260605083608",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -243440,7 +243440,7 @@
       "bundleID": "com.keiwando.toonsquid",
       "fullDate": "20260605083608",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -243493,7 +243493,7 @@
       "bundleID": "com.badoo.BadooSPP",
       "fullDate": "20260604080609",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -243574,7 +243574,7 @@
       "bundleID": "com.aidana.ovx-btiv.ios",
       "fullDate": "20260604113558",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -243693,7 +243693,7 @@
       "bundleID": "com.hhp.magicEraser",
       "fullDate": "20260602013608",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -244658,7 +244658,7 @@
       "bundleID": "co.lovetap.Female-by-Design",
       "fullDate": "20260531093549",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -244931,7 +244931,7 @@
       "bundleID": "com.realbyteapps.MoneyManager2",
       "fullDate": "20260531203548",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -245248,7 +245248,7 @@
       "bundleID": "com.bitsmedia.muslimpro",
       "fullDate": "20260531120559",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -245583,7 +245583,7 @@
       "bundleID": "com.timeshifter.timeshifter",
       "fullDate": "20260531203548",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -246337,7 +246337,7 @@
       "bundleID": "app.benkyo.Benkyo",
       "fullDate": "20260529073548",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -246466,7 +246466,7 @@
       "bundleID": "pinterest",
       "fullDate": "20260529213547",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -246547,7 +246547,7 @@
       "bundleID": "com.todoist.ios",
       "fullDate": "20260529070548",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -246744,7 +246744,7 @@
       "bundleID": "com.enjoy.VideoShow",
       "fullDate": "20260529073548",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -246873,7 +246873,7 @@
       "bundleID": "com.paha.LoFiCam",
       "fullDate": "20260528100548",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -247586,8 +247586,8 @@
       "size": 14000000,
       "downloadURL": "https://github.com/Nyasami/Ksign/releases/download/v1.6/Ksign.ipa",
       "_sourceURL": "https://raw.githubusercontent.com/Nyasami/Ksign/refs/heads/main/repo.json",
-      "_featured": true,
-      "minOSVersion": "16.0"
+      "minOSVersion": "16.0",
+      "_featured": true
     },
     {
       "name": "TheAtlantic",
@@ -247667,7 +247667,7 @@
       "bundleID": "com.rarewire.TheAtlanticNewstand",
       "fullDate": "20260525183548",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -251413,7 +251413,7 @@
       "bundleID": "SimpleTools.Wallpaper-Workshop",
       "fullDate": "20260523023612",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -253772,7 +253772,7 @@
       "bundleID": "de.BodyFast.BodyFast2",
       "fullDate": "20260522000548",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -253917,7 +253917,7 @@
       "bundleID": "com.unicostudio.braintest3",
       "fullDate": "20260522000548",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -254395,7 +254395,7 @@
       "bundleID": "com.theclashsoft.tvsofa3",
       "fullDate": "20260522000548",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -254461,7 +254461,7 @@
       "bundleID": "com.hemin.mp3editor",
       "fullDate": "20260521230548",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -254887,7 +254887,7 @@
       "bundleID": "com.bandlab.bandlab.iphone",
       "fullDate": "20260520080552",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -255288,7 +255288,7 @@
       "bundleID": "com.mind.quiz.brain.out",
       "fullDate": "20260520083549",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -255805,7 +255805,7 @@
       "bundleID": "ideastudio.Weather-on-the-Way",
       "fullDate": "20260520080552",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -256166,7 +256166,7 @@
       "bundleID": "com.calimoto.calimoto",
       "fullDate": "20260519120550",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -257503,7 +257503,7 @@
       "bundleID": "com.getmotobit.motobit",
       "fullDate": "20260518224531",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -257956,7 +257956,7 @@
       "bundleID": "app.soulver.appstore.mac",
       "fullDate": "20260518234533",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -258054,7 +258054,7 @@
       "bundleID": "com.frontierdesign.videostar",
       "fullDate": "20260518231532",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -258115,7 +258115,7 @@
       "bundleID": "biser.stories",
       "fullDate": "20260517214539",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -258144,7 +258144,7 @@
       "bundleID": "com.orange.telephone",
       "fullDate": "20260517204627",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -258237,7 +258237,7 @@
       "bundleID": "com.TetianaKolomiichuk.Reel-Templates",
       "fullDate": "20260517214539",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -258791,7 +258791,7 @@
       "bundleID": "co.windyapp.Windy",
       "fullDate": "20260516014550",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -259008,7 +259008,7 @@
       "bundleID": "cc.relive.reliveapp",
       "fullDate": "20260515094531",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -259133,7 +259133,7 @@
       "bundleID": "com.photomyne.photomyneapplite",
       "fullDate": "20260514201533",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -259834,7 +259834,7 @@
       "bundleID": "ylee.studio.instories",
       "fullDate": "20260513184549",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -259967,7 +259967,7 @@
       "bundleID": "com.laubrothersllc.BabyArt",
       "fullDate": "20260513204618",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -260048,7 +260048,7 @@
       "bundleID": "tech.calstephens.Window",
       "fullDate": "20260513081532",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -260117,7 +260117,7 @@
       "bundleID": "fi.twomenandadog.zombiecatchers",
       "fullDate": "20260513201601",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -260194,7 +260194,7 @@
       "bundleID": "com.stanga.projectKu",
       "fullDate": "20260512071550",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -260299,7 +260299,7 @@
       "bundleID": "com.hassantaleb.SwiftCompiler",
       "fullDate": "20260511181541",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -260892,7 +260892,7 @@
       "bundleID": "pilotpro",
       "fullDate": "20260510174530",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -261297,7 +261297,7 @@
       "bundleID": "com.bcanada.weedfirm2",
       "fullDate": "20260510004533",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -261707,7 +261707,7 @@
       "bundleID": "com.flyingnayeem.nmVideoMergerJune",
       "fullDate": "20260508221531",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -262218,7 +262218,7 @@
       "bundleID": "com.coach.zing",
       "fullDate": "20260507231551",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -262601,7 +262601,7 @@
       "bundleID": "de.my-fit-coach.myfitcoach-ios",
       "fullDate": "20260506164544",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -262794,7 +262794,7 @@
       "bundleID": "com.softissimo.ReversoContext",
       "fullDate": "20260506164544",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -263309,7 +263309,7 @@
       "bundleID": "com.funnmedia.calory",
       "fullDate": "20260505131541",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -264566,7 +264566,7 @@
       "bundleID": "com.avntech.ar-drawing",
       "fullDate": "20260504114544",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -264647,7 +264647,7 @@
       "bundleID": "club.pitwall.app.ios",
       "fullDate": "20260504114544",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -264798,7 +264798,7 @@
       "bundleID": "com.untitledinbrackets.untitled-ios",
       "fullDate": "20260504114544",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -266171,7 +266171,7 @@
       "bundleID": "com.puzzle1studio.ap.brickoutshoottheball",
       "fullDate": "20260502211535",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -266343,7 +266343,7 @@
       "bundleID": "org.borrowedcache.ultimate531",
       "fullDate": "20260502211535",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -266372,7 +266372,7 @@
       "bundleID": "com.photoclean.videocompress",
       "fullDate": "20260502211535",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -267079,7 +267079,7 @@
       "bundleID": "com.itimeteo.webssh",
       "fullDate": "20260501184237",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -267725,7 +267725,7 @@
       "bundleID": "com.genau.MemoryCircle",
       "fullDate": "20260430053445",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -267791,7 +267791,7 @@
       "bundleID": "com.andrespizabuckmann.MetadataEditor",
       "fullDate": "20260429213443",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -267852,7 +267852,7 @@
       "bundleID": "com.ookla.speedtest",
       "fullDate": "20260429220445",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -268608,7 +268608,7 @@
       "bundleID": "com.br.12min.mobile",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -268637,7 +268637,7 @@
       "bundleID": "com.vigorapps.30DayFitness",
       "fullDate": "20260427191824",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -268674,7 +268674,7 @@
       "bundleID": "com.daymore.Across",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -268740,7 +268740,7 @@
       "bundleID": "com.alohabrowser.vpn",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -268769,7 +268769,7 @@
       "bundleID": "com.benchu.ARMCPUZ",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -268806,7 +268806,7 @@
       "bundleID": "com.autodesk.autocadws",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -268835,7 +268835,7 @@
       "bundleID": "com.dawinstone.b2ba",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -268864,7 +268864,7 @@
       "bundleID": "com.flyingnayeem.nmVideoMergerJune",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -268901,7 +268901,7 @@
       "bundleID": "com.unofficialcalculators.payplan",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -268930,7 +268930,7 @@
       "bundleID": "com.bloomberg.Bloomberg",
       "fullDate": "20260427191824",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -268991,7 +268991,7 @@
       "bundleID": "com.ninjakiwi.bloonstd6",
       "fullDate": "20260427191824",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -269020,7 +269020,7 @@
       "bundleID": "com.apalonapps.plants",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -269049,7 +269049,7 @@
       "bundleID": "com.pinguo.msgAries",
       "fullDate": "20260427191824",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -269094,7 +269094,7 @@
       "bundleID": "com.unicostudio.braintest2",
       "fullDate": "20260427191824",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -269139,7 +269139,7 @@
       "bundleID": "com.unicostudio.braintest4",
       "fullDate": "20260427191824",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -269252,7 +269252,7 @@
       "bundleID": "com.lappir.carnivore",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -269289,7 +269289,7 @@
       "bundleID": "com.aidana.cardriving.ios",
       "fullDate": "20260427191824",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -269318,7 +269318,7 @@
       "bundleID": "com.clearmindshypnotherapy.app",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -269376,7 +269376,7 @@
       "bundleID": "com.steinberg.cubasis3",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -269421,7 +269421,7 @@
       "bundleID": "app.cranberry.cure",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -269450,7 +269450,7 @@
       "bundleID": "com.saltycrackers.daygram",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -269479,7 +269479,7 @@
       "bundleID": "com.bloombuilt.dayone-ios",
       "fullDate": "20260427191824",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -269508,7 +269508,7 @@
       "bundleID": "com.superplaystudios.dicedreams",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -269553,7 +269553,7 @@
       "bundleID": "com.algoriddim.djay-iphone-free",
       "fullDate": "20260427191824",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -269590,7 +269590,7 @@
       "bundleID": "us.electronic.docast",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -269619,7 +269619,7 @@
       "bundleID": "com.darkmat13r.gestureDrawing",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -269720,7 +269720,7 @@
       "bundleID": "com.planblabs.drops.italian",
       "fullDate": "20260427191824",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -269778,7 +269778,7 @@
       "bundleID": "com.kevinquisquater.Habits",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -269807,7 +269807,7 @@
       "bundleID": "com.moymer.falou",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -269836,7 +269836,7 @@
       "bundleID": "com.vgfit.fitnessvip",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -269865,7 +269865,7 @@
       "bundleID": "filmcamera.vintagecamera.retro.cam.analog",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -269894,7 +269894,7 @@
       "bundleID": "co.airapps.finderbot",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -269923,7 +269923,7 @@
       "bundleID": "com.bickster.myFitnessSync",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -269960,7 +269960,7 @@
       "bundleID": "fitnessworkout.app",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -269989,7 +269989,7 @@
       "bundleID": "com.funlabsoft.iptv",
       "fullDate": "20260427191824",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -270018,7 +270018,7 @@
       "bundleID": "com.dny.flmccam",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -270055,7 +270055,7 @@
       "bundleID": "design.yugen.Flow",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -270084,7 +270084,7 @@
       "bundleID": "com.focos",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -270113,7 +270113,7 @@
       "bundleID": "com.footballaddicts.livescoreaddicts",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -270142,7 +270142,7 @@
       "bundleID": "games.urmobi.found.it",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -270171,7 +270171,7 @@
       "bundleID": "com.ntosport.app",
       "fullDate": "20260427191824",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -270208,7 +270208,7 @@
       "bundleID": "com.howoo.jang.expofirebase",
       "fullDate": "20260427191824",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -270237,7 +270237,7 @@
       "bundleID": "com.northstar.gratitude",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -270282,7 +270282,7 @@
       "bundleID": "com.igliverec.app",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -270311,7 +270311,7 @@
       "bundleID": "gronda.gmbh",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -270340,7 +270340,7 @@
       "bundleID": "com.dreamaichatbot.dreameai",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -270369,7 +270369,7 @@
       "bundleID": "com.heartify",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -270430,7 +270430,7 @@
       "bundleID": "com.eup.heyjapan",
       "fullDate": "20260427191824",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -270467,7 +270467,7 @@
       "bundleID": "pro.writer",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -270496,7 +270496,7 @@
       "bundleID": "com.idevtal.Wallpapers",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -270525,7 +270525,7 @@
       "bundleID": "com.polywise.weekly",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -270554,7 +270554,7 @@
       "bundleID": "com.genau.JournalCircle",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -270607,7 +270607,7 @@
       "bundleID": "com.markodevcic.js-code-pad",
       "fullDate": "20260427191824",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -270652,7 +270652,7 @@
       "bundleID": "camera.lux.kino",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -270681,7 +270681,7 @@
       "bundleID": "com.ToweringTower.KnightLancer",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -270710,7 +270710,7 @@
       "bundleID": "org.skydomain.foodcamera",
       "fullDate": "20260427191824",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -270747,7 +270747,7 @@
       "bundleID": "com.playgendary.ktbremaster",
       "fullDate": "20260427191824",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -270776,7 +270776,7 @@
       "bundleID": "com.ladder.bootcamp",
       "fullDate": "20260427191824",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -270805,7 +270805,7 @@
       "bundleID": "com.gamelegendstudio.lavasurvival",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -270834,7 +270834,7 @@
       "bundleID": "com.luma-touch.LumaFusion",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -270863,7 +270863,7 @@
       "bundleID": "com.nibbleapps.MealPrepPro",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -270900,7 +270900,7 @@
       "bundleID": "com.momentinc.procamera",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -270945,7 +270945,7 @@
       "bundleID": "com.moneycontrol.mc",
       "fullDate": "20260427191824",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -270974,7 +270974,7 @@
       "bundleID": "app.getmoshi.ios",
       "fullDate": "20260427191824",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -271003,7 +271003,7 @@
       "bundleID": "com.forex.Myfxbook",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -271032,7 +271032,7 @@
       "bundleID": "nt.nb.ios",
       "fullDate": "20260427191824",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -271085,7 +271085,7 @@
       "bundleID": "com.itwcalculator.worldradarfree",
       "fullDate": "20260427191824",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -271138,7 +271138,7 @@
       "bundleID": "com.hubx.noteai",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -271167,7 +271167,7 @@
       "bundleID": "com.thegenau.NoteCircle",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -271196,7 +271196,7 @@
       "bundleID": "com.withopal.opal",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -271241,7 +271241,7 @@
       "bundleID": "com.mutaeb.OVF-Editor",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -271270,7 +271270,7 @@
       "bundleID": "com.flipline.papascluckeriatogo",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -271299,7 +271299,7 @@
       "bundleID": "com.flipline.papasdonuteriatogo",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -271328,7 +271328,7 @@
       "bundleID": "com.flipline.papasfreezeriatogo",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -271357,7 +271357,7 @@
       "bundleID": "com.flipline.papashotdoggeriatogo",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -271386,7 +271386,7 @@
       "bundleID": "com.flipline.papaspancakeriatogo",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -271415,7 +271415,7 @@
       "bundleID": "com.flipline.papaspizzeriatogo",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -271444,7 +271444,7 @@
       "bundleID": "com.flipline.papasscooperiatogo",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -271473,7 +271473,7 @@
       "bundleID": "com.flipline.papassushiriatogo",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -271502,7 +271502,7 @@
       "bundleID": "com.tr.paraphrasingtool.rewritertool.textrewriter",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -271531,7 +271531,7 @@
       "bundleID": "com.ideation.Peak",
       "fullDate": "20260427191824",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -271560,7 +271560,7 @@
       "bundleID": "com.mwm.nota",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -271589,7 +271589,7 @@
       "bundleID": "cn.danatech.xingseus",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -271618,7 +271618,7 @@
       "bundleID": "us.pixomaticpro.PixomaticPro",
       "fullDate": "20260427191824",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -271647,7 +271647,7 @@
       "bundleID": "com.evolve.podcast",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -271676,7 +271676,7 @@
       "bundleID": "com.ketchapp.pop2",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -271713,7 +271713,7 @@
       "bundleID": "com.cocologics.ProCamera",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -271742,7 +271742,7 @@
       "bundleID": "com.beHappy.Productive",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -271771,7 +271771,7 @@
       "bundleID": "com.tonymasek.Purgo",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -271848,7 +271848,7 @@
       "bundleID": "com.internet-rocks.codescanner",
       "fullDate": "20260427191824",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -271877,7 +271877,7 @@
       "bundleID": "org.quiche.Browser",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -271914,7 +271914,7 @@
       "bundleID": "com.glucobit.cravingBuster.CravingBuster",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -271972,7 +271972,7 @@
       "bundleID": "com.blake.femalefitness",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -272001,7 +272001,7 @@
       "bundleID": "jp.ebisusoft.shiftworkcallite",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -272030,7 +272030,7 @@
       "bundleID": "com.silverai.magiccut",
       "fullDate": "20260427191824",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -272059,7 +272059,7 @@
       "bundleID": "uk.co.snappy-code.snappierIPTV",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -272088,7 +272088,7 @@
       "bundleID": "com.fifteenjugglers.solarwatch",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -272117,7 +272117,7 @@
       "bundleID": "ai.mindveil.musicai",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -272146,7 +272146,7 @@
       "bundleID": "io.fadel.Spiik",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -272175,7 +272175,7 @@
       "bundleID": "com.limepresso.shiftworkcalendar",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -272212,7 +272212,7 @@
       "bundleID": "com.visualhype.pedometer",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -272241,7 +272241,7 @@
       "bundleID": "com.mlobodzinski.Stoic",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -272278,7 +272278,7 @@
       "bundleID": "com.streaksapp.streak",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -272307,7 +272307,7 @@
       "bundleID": "com.kiloo.subwaysurfers",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -272336,7 +272336,7 @@
       "bundleID": "nz.digitaltools.Tube-GPT",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -272397,7 +272397,7 @@
       "bundleID": "com.dubox.drive",
       "fullDate": "20260427191824",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -272434,7 +272434,7 @@
       "bundleID": "com.innothenics.thenics",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -272495,7 +272495,7 @@
       "bundleID": "com.culturedcode.ThingsiPad",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -272524,7 +272524,7 @@
       "bundleID": "com.eynpa.tivimaxlite",
       "fullDate": "20260427191824",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -272561,7 +272561,7 @@
       "bundleID": "com.informelab.toonme",
       "fullDate": "20260427191824",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -272659,7 +272659,7 @@
       "bundleID": "com.alexanderben.RadioIn",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -272725,7 +272725,7 @@
       "bundleID": "com.auramarker.varlens",
       "fullDate": "20260427191824",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -272754,7 +272754,7 @@
       "bundleID": "com.vixerapp.Vixer",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -272791,7 +272791,7 @@
       "bundleID": "net.whatsapp.WhatsAppSMB",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -272849,7 +272849,7 @@
       "bundleID": "de.wetteronline.WetterApppro",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -272886,7 +272886,7 @@
       "bundleID": "net.whatsapp.WhatsApp",
       "fullDate": "20260427204853",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -272923,7 +272923,7 @@
       "bundleID": "com.actowise.browser",
       "fullDate": "20260427191824",
       "type": 1,
-      "_sourceURL": "https://repository.apptesters.org",
+      "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
     },
     {
@@ -287529,8 +287529,8 @@
       "versionDate": "2026-03-19T10:30:00+03:00",
       "downloadURL": "https://github.com/dvntm0/AltStore/releases/download/0.0.1/ytmu_7.02.2.ipa",
       "_sourceURL": "https://github.com/dvntm0/AltStore/raw/refs/heads/main/feather.json",
-      "_featured": true,
-      "minOSVersion": "14.0"
+      "minOSVersion": "14.0",
+      "_featured": true
     },
     {
       "name": "YouTube Music Ultimate (iOS16+)",
@@ -287587,8 +287587,8 @@
       "versionDate": "2026-03-19T10:30:00+03:00",
       "downloadURL": "https://github.com/dvntm0/AltStore/releases/download/0.0.1/ytmu_9.11.2.ipa",
       "_sourceURL": "https://github.com/dvntm0/AltStore/raw/refs/heads/main/feather.json",
-      "_featured": true,
-      "minOSVersion": "16.0"
+      "minOSVersion": "16.0",
+      "_featured": true
     },
     {
       "name": "Aweme",
@@ -292811,6 +292811,35 @@
       "icon": "https://ipaomtk.com/wp-content/uploads/2026/02/Gunslugs-IPA-v3.3.4-For-iOS-150x150.webp",
       "bundleID": "com.orangepixel.gunslugs",
       "fullDate": "20260227194323",
+      "type": 1,
+      "_sourceURL": "https://fastsign.dev/repo.json",
+      "minOSVersion": "14.0"
+    },
+    {
+      "name": "Madari Media",
+      "bundleIdentifier": "media.madari.madariClient",
+      "developerName": "0HexE",
+      "version": "1.0.0",
+      "versionDate": "2026-02-27",
+      "size": 0,
+      "localizedDescription": "Madari is a modular media center for all platforms with support for Stremio Addons.\n\nFastSign is operated by CertFish.\nThe easy way to sideload: https://cert.fish/",
+      "iconURL": "https://downloads.madari.media/icon_new.jpg",
+      "downloadURL": "https://downloads.madari.media/nightly/12626708682/ios/app.ipa",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "date": "2026-02-27",
+          "localizedDescription": "Madari is a modular media center for all platforms with support for Stremio Addons.",
+          "downloadURL": "https://downloads.madari.media/nightly/12626708682/ios/app.ipa",
+          "size": 0,
+          "minOSVersion": "14.0"
+        }
+      ],
+      "subtitle": "Madari is a modular media center for all platforms with support for Stremio Addons.",
+      "tintColor": "000000",
+      "icon": "https://downloads.madari.media/icon_new.jpg",
+      "bundleID": "media.madari.madariClient",
+      "fullDate": "20260227084428",
       "type": 1,
       "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
@@ -305128,9 +305157,9 @@
       "versionDate": "2026-01-03T17:51:54Z",
       "downloadURL": "https://github.com/utmapp/UTM/releases/download/v4.7.5/UTM-SE.ipa",
       "_sourceURL": "https://alt.getutm.app",
+      "minOSVersion": "14.0",
       "size": 213878374,
-      "_featured": true,
-      "minOSVersion": "14.0"
+      "_featured": true
     },
     {
       "name": "Backpack Hero",
@@ -318191,8 +318220,8 @@
         }
       ],
       "_sourceURL": "https://tiny.one/SpotC",
-      "_featured": true,
-      "minOSVersion": "16.1"
+      "minOSVersion": "16.1",
+      "_featured": true
     },
     {
       "name": "SpotveeC",
@@ -318458,8 +318487,8 @@
         }
       ],
       "_sourceURL": "https://tiny.one/SpotC",
-      "_featured": true,
-      "minOSVersion": "16.1"
+      "minOSVersion": "16.1",
+      "_featured": true
     },
     {
       "name": "RetroArch",
@@ -318502,9 +318531,9 @@
       "version": "1.22.2",
       "versionDate": "2025-11-20T02:39:19Z",
       "_sourceURL": "https://buildbot.libretro.com/stable/altstore.json",
+      "minOSVersion": "12.0",
       "size": 461036714,
-      "_featured": true,
-      "minOSVersion": "12.0"
+      "_featured": true
     },
     {
       "name": "Dice Lords",
@@ -334770,9 +334799,9 @@
       "versionDate": "2025-05-20T13:55:37Z",
       "downloadURL": "https://github.com/Paperback-iOS/app/releases/download/v0.8.11-r2/Paperback.ipa",
       "_sourceURL": "https://quarksources.github.io/dist/quantumsource%2B%2B.min.json",
-      "size": 13597210,
       "sha256": "20c2f2ee6f0e51128cf639199fbbbf2009398b74d9671971428ac1ce10c48eaa",
-      "absoluteVersion": "0.8.11.2"
+      "absoluteVersion": "0.8.11.2",
+      "size": 13597210
     },
     {
       "name": "EGGRYPTO",
@@ -350387,9 +350416,9 @@
       "versionDate": "2025-01-08T15:30:00-04:00",
       "downloadURL": "https://github.com/enmity-mod/tweak/releases/latest/download/Enmity.ipa",
       "_sourceURL": "https://enmity-mod.github.io/repo/altstore.json",
+      "minOSVersion": "15.0",
       "size": 101315549,
-      "_featured": true,
-      "minOSVersion": "15.0"
+      "_featured": true
     },
     {
       "name": "CapCut Hack",
@@ -352708,9 +352737,9 @@
       "versionDate": "2024-12-21T03:22:55Z",
       "downloadURL": "https://github.com/EhPanda-Team/EhPanda/releases/download/v2.7.10/EhPanda.ipa",
       "_sourceURL": "https://quarksources.github.io/dist/quantumsource%2B%2B.min.json",
-      "size": 7231227,
       "sha256": "91980fdc3efb8a5aceb9fcaacc6ef4f19e1637793f8e4e717afe415fd2678c67",
-      "absoluteVersion": "2.7.10"
+      "absoluteVersion": "2.7.10",
+      "size": 7231227
     },
     {
       "name": "Bloons TD 6 NETFLIX",
@@ -361792,8 +361821,8 @@
       "versionDate": "2024-05-08",
       "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Spotify.v8.9.36.+.Eevee.v2.1.ipa",
       "_sourceURL": "https://quarksources.github.io/dist/quantumsource%2B%2B.min.json",
-      "size": 69100000,
-      "sha256": "365ab5551a5c27181e6d5c3be262cc5bc4a80bf48f4cfef331180082ddb16a8e"
+      "sha256": "365ab5551a5c27181e6d5c3be262cc5bc4a80bf48f4cfef331180082ddb16a8e",
+      "size": 69100000
     },
     {
       "name": "Lightleap",
@@ -363692,9 +363721,9 @@
       "versionDate": "2024-02-12T17:27:29Z",
       "downloadURL": "https://github.com/TherionRO/YouTubeiVanced/releases/download/release19.06.2/iVanced_19.06.2.ipa",
       "_sourceURL": "https://quarksources.github.io/dist/quantumsource%2B%2B.min.json",
-      "size": 126381167,
       "sha256": "345a5e7c665380bbd1ae86da9fa7434acdb01bf3f7e938773d9390620c7c0f18",
-      "absoluteVersion": "19.06.2"
+      "absoluteVersion": "19.06.2",
+      "size": 126381167
     },
     {
       "name": "Spell Arena",
@@ -368621,9 +368650,9 @@
       "versionDate": "2023-05-30T13:58:02Z",
       "downloadURL": "https://github.com/SuperMarcus/NineAnimator/releases/download/1.3.0-3/NineAnimator_1.3.0_Build_3.iOS.ipa",
       "_sourceURL": "https://quarksources.github.io/dist/quantumsource%2B%2B.min.json",
-      "size": 8144665,
       "sha256": "630ab14af707331e81275194d663abe847b8032c3fc362fa649143d9798784e5",
-      "absoluteVersion": "1.3.0-3"
+      "absoluteVersion": "1.3.0-3",
+      "size": 8144665
     },
     {
       "name": "Airport Simulator",
@@ -369538,9 +369567,9 @@
       "versionDate": "2023-03-29",
       "downloadURL": "https://github.com/WuXu1/wuxuslibrary/releases/download/Latest/Anime.Now.v1.0.0-b3.ipa",
       "_sourceURL": "https://quarksources.github.io/dist/quantumsource%2B%2B.min.json",
-      "size": 6870000,
       "minOSVersion": "14.0",
-      "sha256": "fc2b5c61eaa67161a69e54e9dfb0bc026f30bc56960a8c4df56144e01b2f70e5"
+      "sha256": "fc2b5c61eaa67161a69e54e9dfb0bc026f30bc56960a8c4df56144e01b2f70e5",
+      "size": 6870000
     },
     {
       "name": "Fallout Shelter",
@@ -369697,9 +369726,9 @@
       "versionDate": "2023-03-29",
       "downloadURL": "https://github.com/WuXu1/wuxuslibrary/releases/download/Latest/Photomath.Cracked.v8.21.0.ipa",
       "_sourceURL": "https://quarksources.github.io/dist/quantumsource%2B%2B.min.json",
-      "size": 13700000,
       "minOSVersion": "13.0",
-      "sha256": "bbe3184e0f934a058f36a30c1e83f671227a666c12abcfbd5bb297e67ade97dc"
+      "sha256": "bbe3184e0f934a058f36a30c1e83f671227a666c12abcfbd5bb297e67ade97dc",
+      "size": 13700000
     },
     {
       "name": "PS Express",
@@ -370036,9 +370065,9 @@
       "versionDate": "2023-03-19",
       "downloadURL": "https://github.com/WuXu1/wuxuslibrary/releases/download/Latest/SoundCloud.v6.20.0.+.DarkCloud.v1.4.ipa",
       "_sourceURL": "https://quarksources.github.io/dist/quantumsource%2B%2B.min.json",
-      "size": 58500000,
       "minOSVersion": "14.0",
-      "sha256": "fa0183d33a6c1b92f61d84b5c5cf4f2a062872193039f81383e60dffc62a1d97"
+      "sha256": "fa0183d33a6c1b92f61d84b5c5cf4f2a062872193039f81383e60dffc62a1d97",
+      "size": 58500000
     },
     {
       "name": "Grim Soul",
@@ -370539,9 +370568,9 @@
       "versionDate": "2023-02-20",
       "downloadURL": "https://github.com/WuXu1/wuxuslibrary/releases/download/Latest/Snapchat.v11.80.0.+.Shadow.X.ipa",
       "_sourceURL": "https://quarksources.github.io/dist/quantumsource%2B%2B.min.json",
-      "size": 80600000,
       "minOSVersion": "12.0",
-      "sha256": "c490af4452a6b217653cd6ba241e62d37c2d80a2b98db1dace0e86ba74933f49"
+      "sha256": "c490af4452a6b217653cd6ba241e62d37c2d80a2b98db1dace0e86ba74933f49",
+      "size": 80600000
     },
     {
       "name": "LumaFusion",
@@ -372515,9 +372544,9 @@
       "versionDate": "2023-02-15",
       "downloadURL": "https://github.com/WuXu1/wuxuslibrary/releases/download/Latest/ZiniTevi+.v1.5.0.ipa",
       "_sourceURL": "https://quarksources.github.io/dist/quantumsource%2B%2B.min.json",
-      "size": 7580000,
       "minOSVersion": "14.0",
-      "sha256": "88608b7a46821c63f6e92ed9fd42ccce2cd730d8603cbf00627155032d29ae54"
+      "sha256": "88608b7a46821c63f6e92ed9fd42ccce2cd730d8603cbf00627155032d29ae54",
+      "size": 7580000
     },
     {
       "name": "Delta",
@@ -372837,8 +372866,8 @@
       "versionDate": "2022-11-06T16:00:00-01:00",
       "downloadURL": "https://github.com/qnblackcat/CercubePlus/releases/download/v17.43.1-5.3.11/CercubePlus_17.43.1_5.3.11.ipa",
       "_sourceURL": "https://quarksources.github.io/dist/quantumsource%2B%2B.min.json",
-      "size": 101187584,
-      "sha256": "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+      "sha256": "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5",
+      "size": 101187584
     },
     {
       "name": "Yattee",
@@ -372868,8 +372897,8 @@
       "versionDate": "2022-08-17",
       "downloadURL": "https://github.com/yattee/yattee/releases/download/v1.3.5/Yattee-1.3.5-iOS.ipa",
       "_sourceURL": "https://quarksources.github.io/dist/quantumsource%2B%2B.min.json",
-      "size": 2522502,
-      "sha256": "459462a7cc3fb009d33a7b52aca756f536555a31f79acfaba0586eea47698c8b"
+      "sha256": "459462a7cc3fb009d33a7b52aca756f536555a31f79acfaba0586eea47698c8b",
+      "size": 2522502
     },
     {
       "name": "ScummVM",
@@ -372960,8 +372989,8 @@
       "versionDate": "2022-03-07T14:00:00-07:00",
       "downloadURL": "https://github.com/qnblackcat/BHTwitter-Plus_Sideloaded/releases/download/v9.2-2.9.2/BHTwitterPlus_9.2-2.9.2.ipa",
       "_sourceURL": "https://quarksources.github.io/dist/quantumsource%2B%2B.min.json",
-      "size": 78643200,
-      "sha256": "4f47ee0be8c88f49e85e33f579072d7df705861c8474baf47fe411a3f6e39722"
+      "sha256": "4f47ee0be8c88f49e85e33f579072d7df705861c8474baf47fe411a3f6e39722",
+      "size": 78643200
     },
     {
       "name": "RetroArch",
@@ -373144,8 +373173,8 @@
       "versionDate": "2021-10-30T16:25:00",
       "downloadURL": "https://github.com/ytjailed/ytjailed.github.io/releases/download/0.1/Cercube_5-3-3_16-42-3.ipa",
       "_sourceURL": "https://quarksources.github.io/dist/quantumsource%2B%2B.min.json",
-      "size": 103228234,
-      "sha256": "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+      "sha256": "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5",
+      "size": 103228234
     },
     {
       "name": "ActiveGS iOS",
@@ -373303,8 +373332,8 @@
       "versionDate": "2020-12-18",
       "downloadURL": "https://github.com/QuarkSources/quarksources.github.io/releases/download/v1.0/Infuse-Pro-6.ipa",
       "_sourceURL": "https://quarksources.github.io/dist/quantumsource%2B%2B.min.json",
-      "size": 41222899,
-      "sha256": "e43c84d898f208afd1808386a23bcabf1a3ded57f9c446adcef115ab9c66bcd0"
+      "sha256": "e43c84d898f208afd1808386a23bcabf1a3ded57f9c446adcef115ab9c66bcd0",
+      "size": 41222899
     },
     {
       "name": "Filmr Pro",
@@ -373340,8 +373369,8 @@
       "versionDate": "2020-12-17",
       "downloadURL": "https://github.com/QuarkSources/quarksources.github.io/releases/download/v1.0/Filmr-Pro.ipa",
       "_sourceURL": "https://quarksources.github.io/dist/quantumsource%2B%2B.min.json",
-      "size": 219640035,
-      "sha256": "61fd1589b46017404a6c3a4d65e69ea76ae88b33c867945bb53ca13bd93ccba4"
+      "sha256": "61fd1589b46017404a6c3a4d65e69ea76ae88b33c867945bb53ca13bd93ccba4",
+      "size": 219640035
     },
     {
       "name": "Deezer++",
@@ -373377,8 +373406,8 @@
       "versionDate": "2020-10-15",
       "downloadURL": "https://github.com/QuarkSources/quarksources.github.io/releases/download/v1.0/Deezer++.ipa",
       "_sourceURL": "https://quarksources.github.io/dist/quantumsource%2B%2B.min.json",
-      "size": 99126030,
-      "sha256": "49b85132a6cf710a3b63a668ffef1d6e14df1c57f011dad563ab1115e1bcb407"
+      "sha256": "49b85132a6cf710a3b63a668ffef1d6e14df1c57f011dad563ab1115e1bcb407",
+      "size": 99126030
     },
     {
       "name": "Twitch++",
@@ -373411,8 +373440,8 @@
       "versionDate": "2020-07-15",
       "downloadURL": "https://github.com/QuarkSources/quarksources.github.io/releases/download/v1.0/Twitch++.ipa",
       "_sourceURL": "https://quarksources.github.io/dist/quantumsource%2B%2B.min.json",
-      "size": 36594109,
-      "sha256": "5f45ee9d3dcec284721e30d151114a4a349942d02c3c3361248ecfc825dfd8d9"
+      "sha256": "5f45ee9d3dcec284721e30d151114a4a349942d02c3c3361248ecfc825dfd8d9",
+      "size": 36594109
     },
     {
       "name": "Ready",
@@ -373532,8 +373561,8 @@
       "versionDate": "2020-01-12",
       "downloadURL": "https://github.com/QuarkSources/quarksources.github.io/releases/download/v1.0/Reddit%2B%2B.ipa",
       "_sourceURL": "https://quarksources.github.io/dist/quantumsource%2B%2B.min.json",
-      "size": 55538241,
-      "sha256": "9c46e0817678f84f2362d40f5ae9b1527cdabf7d98286fd65c381d86ca00038b"
+      "sha256": "9c46e0817678f84f2362d40f5ae9b1527cdabf7d98286fd65c381d86ca00038b",
+      "size": 55538241
     },
     {
       "name": "Reddit++",
@@ -373626,8 +373655,8 @@
       "versionDate": "2019-12-06",
       "downloadURL": "https://github.com/QuarkSources/quarksources.github.io/releases/download/v1.0/CARROT-Weather.ipa",
       "_sourceURL": "https://quarksources.github.io/dist/quantumsource%2B%2B.min.json",
-      "size": 102825374,
-      "sha256": "1cfe8c66fd5b8d5369673effe57c42a22803375aea21c7b11bcec60ac1567659"
+      "sha256": "1cfe8c66fd5b8d5369673effe57c42a22803375aea21c7b11bcec60ac1567659",
+      "size": 102825374
     },
     {
       "name": "WolframAlpha",
@@ -373659,8 +373688,8 @@
       "versionDate": "2019-11-26",
       "downloadURL": "https://github.com/QuarkSources/quarksources.github.io/releases/download/v1.0/WolframAlpha.ipa?dl=1",
       "_sourceURL": "https://quarksources.github.io/dist/quantumsource%2B%2B.min.json",
-      "size": 39855086,
-      "sha256": "17a2d714eeaea435bcc927800a4aab164747eed588d850bf1c6de19da20791a9"
+      "sha256": "17a2d714eeaea435bcc927800a4aab164747eed588d850bf1c6de19da20791a9",
+      "size": 39855086
     },
     {
       "name": "LumaFusion",
@@ -373693,8 +373722,8 @@
       "versionDate": "2019-10-27T14:00:00-07:00",
       "downloadURL": "https://github.com/QuarkSources/quarksources.github.io/releases/download/v1.0/LumaFusion.ipa",
       "_sourceURL": "https://quarksources.github.io/dist/quantumsource%2B%2B.min.json",
-      "size": 153279738,
-      "sha256": "d1d765789b5ea6f492dfcda94fc59f707e337680d4f8276665f7ac35213b96b2"
+      "sha256": "d1d765789b5ea6f492dfcda94fc59f707e337680d4f8276665f7ac35213b96b2",
+      "size": 153279738
     },
     {
       "name": "Crunchyroll++",
@@ -373726,8 +373755,8 @@
       "versionDate": "2019-10-01",
       "downloadURL": "https://github.com/QuarkSources/quarksources.github.io/releases/download/v1.0/Crunchyroll++.ipa",
       "_sourceURL": "https://quarksources.github.io/dist/quantumsource%2B%2B.min.json",
-      "size": 11688173,
-      "sha256": "2a6a8910501ef6a0e31d3083acacd1276701d8a95b0083b7a6ca5066be9abdd9"
+      "sha256": "2a6a8910501ef6a0e31d3083acacd1276701d8a95b0083b7a6ca5066be9abdd9",
+      "size": 11688173
     },
     {
       "name": "WhatsApp++",
@@ -373757,8 +373786,8 @@
       "versionDate": "2019-08-14",
       "downloadURL": "https://github.com/QuarkSources/quarksources.github.io/releases/download/v1.0/WhatsApp%2B%2B.ipa?dl=1",
       "_sourceURL": "https://quarksources.github.io/dist/quantumsource%2B%2B.min.json",
-      "size": 119535189,
-      "sha256": "88096f27900fa0ba9a5efcbb1b23e1969f3080798e14db9c4937c8eff426b4f8"
+      "sha256": "88096f27900fa0ba9a5efcbb1b23e1969f3080798e14db9c4937c8eff426b4f8",
+      "size": 119535189
     },
     {
       "name": "WhatsApp++",
@@ -373820,8 +373849,8 @@
       "versionDate": "2019-01-22",
       "downloadURL": "https://github.com/QuarkSources/quarksources.github.io/releases/download/v1.0/Duolingo++.ipa",
       "_sourceURL": "https://quarksources.github.io/dist/quantumsource%2B%2B.min.json",
-      "size": 92016431,
-      "sha256": "deca2bed643c2f71c46c87b3d5ba5b8d426ceb71369cbdd2669e9e26dba9c92c"
+      "sha256": "deca2bed643c2f71c46c87b3d5ba5b8d426ceb71369cbdd2669e9e26dba9c92c",
+      "size": 92016431
     },
     {
       "beta": false,
@@ -373893,7 +373922,7 @@
   "subtitle": "ipastrong",
   "description": "Merged IPA sources",
   "permissions": [],
-  "lastUpdated": "2026-10-11T23:09:07.294365+00:00",
+  "lastUpdated": "2026-10-12T00:43:52.452452+00:00",
   "iconURL": "https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/source-icon.jpeg",
   "META": {
     "repoName": "ipastrong",
