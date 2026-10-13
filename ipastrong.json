@@ -10037,6 +10037,145 @@
       "minOSVersion": "14.0"
     },
     {
+      "name": "VDIT",
+      "type": 1,
+      "bundleID": "me.imgbase.videoday",
+      "bundleIdentifier": "me.imgbase.videoday",
+      "version": "4.3.1",
+      "versionDate": "2026-10-13",
+      "fullDate": "20261013060000",
+      "size": 223535643,
+      "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+      "developerName": "",
+      "localizedDescription": "Injected with Subscription Unlocked",
+      "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/me.imgbase.videoday.png",
+      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/me.imgbase.videoday.png",
+      "versions": [
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-13",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-12",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/11-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-11",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/10-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-10",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-09",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/08-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-08",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.0",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-09-2026/VDIT_4.3.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-09-16",
+          "size": 222157348
+        },
+        {
+          "version": "4.2.2",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-08-2026/VDIT_4.2.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-08-28",
+          "size": 229561371
+        },
+        {
+          "version": "4.2.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-08-2026/VDIT_4.2.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-08-20",
+          "size": 229498501
+        },
+        {
+          "version": "4.2.0",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-08-2026/VDIT_4.2.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-08-04",
+          "size": 222444453
+        },
+        {
+          "version": "4.1.4",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-07-2026/VDIT_4.1.4_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-07-16",
+          "size": 225775085
+        },
+        {
+          "version": "4.1.3",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-07-2026/VDIT_4.1.3_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-07-15",
+          "size": 225775529
+        },
+        {
+          "version": "4.1.2",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-06-2026/VDIT_4.1.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-06-27",
+          "size": 225188337
+        },
+        {
+          "version": "4.1.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-06-2026/VDIT_4.1.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-06-15",
+          "size": 224955813
+        },
+        {
+          "version": "4.1.0",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/10-06-2026/VDIT_4.1.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-06-10",
+          "size": 203318495
+        },
+        {
+          "version": "4.0.2",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-05-2026/VDIT_4.0.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-05-21",
+          "size": 222954612
+        },
+        {
+          "version": "4.0.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/08-05-2026/VDIT_4.0.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-05-08",
+          "size": 223933102
+        },
+        {
+          "version": "4.0.0",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-05-2026/VDIT_4.0.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-05-03",
+          "size": 222802482
+        },
+        {
+          "version": "3.8.0",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/31-03-2026/VDIT_3.8.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-03-31",
+          "size": 215449803
+        },
+        {
+          "version": "3.7.2",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/10-03-2026/VDIT_3.7.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-03-10",
+          "size": 229184588
+        }
+      ],
+      "_sourceURL": "https://repository.apptesters.org"
+    },
+    {
       "name": "365Scores",
       "bundleIdentifier": "com.365scores.365scroesapp",
       "developerName": "@riftysIPAlibrary",
@@ -12453,145 +12592,6 @@
       "type": 1,
       "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
-    },
-    {
-      "name": "VDIT",
-      "type": 1,
-      "bundleID": "me.imgbase.videoday",
-      "bundleIdentifier": "me.imgbase.videoday",
-      "version": "4.3.1",
-      "versionDate": "2026-10-12",
-      "fullDate": "20261012235304",
-      "size": 223535643,
-      "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-      "developerName": "",
-      "localizedDescription": "Injected with Subscription Unlocked",
-      "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/me.imgbase.videoday.png",
-      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/me.imgbase.videoday.png",
-      "versions": [
-        {
-          "version": "4.3.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-10-12",
-          "size": 223535643
-        },
-        {
-          "version": "4.3.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/11-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-10-11",
-          "size": 223535643
-        },
-        {
-          "version": "4.3.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/10-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-10-10",
-          "size": 223535643
-        },
-        {
-          "version": "4.3.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-10-09",
-          "size": 223535643
-        },
-        {
-          "version": "4.3.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/08-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-10-08",
-          "size": 223535643
-        },
-        {
-          "version": "4.3.0",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-09-2026/VDIT_4.3.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-09-16",
-          "size": 222157348
-        },
-        {
-          "version": "4.2.2",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-08-2026/VDIT_4.2.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-08-28",
-          "size": 229561371
-        },
-        {
-          "version": "4.2.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-08-2026/VDIT_4.2.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-08-20",
-          "size": 229498501
-        },
-        {
-          "version": "4.2.0",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-08-2026/VDIT_4.2.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-08-04",
-          "size": 222444453
-        },
-        {
-          "version": "4.1.4",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-07-2026/VDIT_4.1.4_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-07-16",
-          "size": 225775085
-        },
-        {
-          "version": "4.1.3",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-07-2026/VDIT_4.1.3_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-07-15",
-          "size": 225775529
-        },
-        {
-          "version": "4.1.2",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-06-2026/VDIT_4.1.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-06-27",
-          "size": 225188337
-        },
-        {
-          "version": "4.1.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-06-2026/VDIT_4.1.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-06-15",
-          "size": 224955813
-        },
-        {
-          "version": "4.1.0",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/10-06-2026/VDIT_4.1.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-06-10",
-          "size": 203318495
-        },
-        {
-          "version": "4.0.2",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-05-2026/VDIT_4.0.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-05-21",
-          "size": 222954612
-        },
-        {
-          "version": "4.0.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/08-05-2026/VDIT_4.0.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-05-08",
-          "size": 223933102
-        },
-        {
-          "version": "4.0.0",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-05-2026/VDIT_4.0.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-05-03",
-          "size": 222802482
-        },
-        {
-          "version": "3.8.0",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/31-03-2026/VDIT_3.8.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-03-31",
-          "size": 215449803
-        },
-        {
-          "version": "3.7.2",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/10-03-2026/VDIT_3.7.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-03-10",
-          "size": 229184588
-        },
-        {
-          "version": "3.7.0",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/08-02-2026/VDIT_3.7.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-02-08",
-          "size": 226378593
-        }
-      ],
-      "_sourceURL": "https://repository.apptesters.org"
     },
     {
       "name": "Vitrine (v1.0.0 Beta 12 - Not Patched) IPAVault",
@@ -221519,6 +221519,30 @@
       "_sourceURL": "https://ipa.thuthuatjb.com/repo"
     },
     {
+      "name": "Power Warriors 18.0",
+      "bundleIdentifier": "com.ZombiAriel.Power-Warriors",
+      "developerName": "Power Warriors 18.0 x CyPwn",
+      "version": "18",
+      "versionDate": "2026-06-27",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Power Warriors 18.0.ipa",
+      "localizedDescription": "Power Warriors iOS port by mancha",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Power Warriors 18.0.png",
+      "tintColor": "FFC300",
+      "size": 174126530,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/Power Warriors 18.0/Power Warriors 18.0-0.png"
+      ],
+      "versions": [
+        {
+          "version": "18",
+          "downloadURL": "https://ipa.cypwn.xyz/ipas/Power Warriors 18.0.ipa",
+          "date": "2026-06-27",
+          "size": 174126530
+        }
+      ],
+      "_sourceURL": "https://ipa.cypwn.xyz/cypwn.json"
+    },
+    {
       "name": "Overdrop",
       "bundleIdentifier": "com.weather.overdrop",
       "developerName": "AppTesters IPA Repo",
@@ -278672,6 +278696,34 @@
       "type": 1,
       "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
+    },
+    {
+      "name": "CloverPit-1.4.3",
+      "bundleIdentifier": "com.PanikArcade.CloverPit",
+      "developerName": "CloverPit-1.4.3 x CyPwn",
+      "version": "1.4.3",
+      "versionDate": "2026-04-17",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/CloverPit-1.4.3.ipa",
+      "localizedDescription": "A rogue-lite slot machine nightmare",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/CloverPit-1.4.3.png",
+      "tintColor": "FFC300",
+      "size": 145888378,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/CloverPit-1.4.3/CloverPit-1.4.3-0.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/CloverPit-1.4.3/CloverPit-1.4.3-1.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/CloverPit-1.4.3/CloverPit-1.4.3-2.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/CloverPit-1.4.3/CloverPit-1.4.3-3.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/CloverPit-1.4.3/CloverPit-1.4.3-4.png"
+      ],
+      "versions": [
+        {
+          "version": "1.4.3",
+          "downloadURL": "https://ipa.cypwn.xyz/ipas/CloverPit-1.4.3.ipa",
+          "date": "2026-04-17",
+          "size": 145888378
+        }
+      ],
+      "_sourceURL": "https://ipa.cypwn.xyz/cypwn.json"
     },
     {
       "name": "Motor World",
@@ -374649,7 +374701,7 @@
   "subtitle": "ipastrong",
   "description": "Merged IPA sources",
   "permissions": [],
-  "lastUpdated": "2026-10-12T18:36:44.844152+00:00",
+  "lastUpdated": "2026-10-13T00:45:30.428928+00:00",
   "iconURL": "https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/source-icon.jpeg",
   "META": {
     "repoName": "ipastrong",
