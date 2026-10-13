@@ -204,6 +204,214 @@
       "minOSVersion": "14.0"
     },
     {
+      "name": "Instagram (Regram 6.4)",
+      "bundleIdentifier": "com.burbn.instagram.regram",
+      "developerName": "IPA Vault",
+      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Instagram-451.0.0-Regram.ipa",
+      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Instagram-Icons/Instagram-AppStore-1024x1024.png",
+      "localizedDescription": "Instagram 451.0.0 with Regram 6.4 cracked",
+      "size": 330328160,
+      "subtitle": "Instagram 451.0.0 with Regram 6.4 cracked",
+      "tintColor": "#000000",
+      "version": "451.0.0",
+      "versionDate": "2026-10-13",
+      "versionDescription": "IPA Vault build for Instagram (Regram), version 451.0.0",
+      "versions": [
+        {
+          "version": "451.0.0",
+          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Instagram-451.0.0-Regram.ipa",
+          "date": "2026-10-13",
+          "size": 330328160
+        }
+      ],
+      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
+    },
+    {
+      "name": "Instagram (Regram 6.4) (No Plugins)",
+      "bundleIdentifier": "com.burbn.instagram.regram.noplugins",
+      "developerName": "IPA Vault",
+      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Instagram-451.0.0-Regram-No-Plugins.ipa",
+      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Instagram-Icons/Instagram-AppStore-1024x1024.png",
+      "localizedDescription": "Instagram 451.0.0 with Regram 6.4 cracked (No Plugins)",
+      "size": 277000750,
+      "subtitle": "IG 451.0.0 (Regram 6.4 cracked) (No Plugins)",
+      "tintColor": "#000000",
+      "version": "451.0.0",
+      "versionDate": "2026-10-13",
+      "versionDescription": "IPA Vault build for Instagram (Regram 6.4) (No Plugins), version 451.0.0",
+      "versions": [
+        {
+          "version": "451.0.0",
+          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Instagram-451.0.0-Regram-No-Plugins.ipa",
+          "date": "2026-10-13",
+          "size": 277000750
+        }
+      ],
+      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
+    },
+    {
+      "name": "Instagram (RyukGram No Plugins)",
+      "bundleIdentifier": "com.burbn.instagram.ryukgram.noplugins",
+      "developerName": "faroukbmiled & IPA Vault",
+      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Instagram-451.0.0-RyukGram-No-Plugins.ipa",
+      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Instagram-Icons/Instagram-AppStore-1024x1024.png",
+      "localizedDescription": "Instagram 451.0.0 with RyukGram 1.4.5 (No Plugins)",
+      "size": 277250463,
+      "subtitle": "Instagram 451.0.0 with RyukGram 1.4.5 (No Plugins)",
+      "tintColor": "#000000",
+      "version": "451.0.0",
+      "versionDate": "2026-10-13",
+      "versionDescription": "IPA Vault build for Instagram (RyukGram No Plugins), version 451.0.0",
+      "versions": [
+        {
+          "version": "451.0.0",
+          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Instagram-451.0.0-RyukGram-No-Plugins.ipa",
+          "date": "2026-10-13",
+          "size": 277250463
+        }
+      ],
+      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
+    },
+    {
+      "beta": false,
+      "bundleIdentifier": "com.burbn.instagram",
+      "developerName": "Ryuk",
+      "downloadURL": "https://github.com/ramramzz/descfsr/releases/download/v0.35/7843d00a-e2fb-4d34-948a-fb02d8d528R2.ipa",
+      "iconURL": "https://raw.githubusercontent.com/qnblackcat/AltStore/main/ScreenShot/800px-Instagram_logo_2016.svg.png",
+      "localizedDescription": "Just look up information for SCInsta if you're confused about usage",
+      "name": "Instagram (RyukGram)",
+      "screenshotURLs": [
+        "https://apt.alfhaily.me/cdn/assets/rocket-screenshot1.jpg",
+        "https://apt.alfhaily.me/cdn/assets/rocket-screenshot2.jpg",
+        "https://apt.alfhaily.me/cdn/assets/rocket-screenshot3.jpg",
+        "https://apt.alfhaily.me/cdn/assets/rocket-screenshot4.jpg"
+      ],
+      "size": 91750400,
+      "subtitle": "Additional features and fixes by Ryuk based on SCInsta | If you want to donate: - https://ko-fi.com/driftywinds",
+      "tintColor": "C13584",
+      "version": "451.0.0",
+      "versionDate": "2026-10-13",
+      "versionDescription": "Updated to v451.0.0, RyukGram v1.4.5",
+      "appPermissions": {
+        "entitlements": [
+          "com.apple.developer.associated-appclip-app-identifiers",
+          "com.apple.security.application-groups",
+          "com.apple.developer.associated-domains",
+          "com.apple.developer.storekit.request-data",
+          "com.apple.developer.ubiquity-container-identifiers",
+          "com.apple.developer.usernotifications.communication",
+          "com.apple.developer.usernotifications.time-sensitive",
+          "get-task-allow",
+          "com.apple.developer.kernel.extended-virtual-addressing",
+          "com.apple.developer.networking.HotspotConfiguration",
+          "com.apple.developer.icloud-container-environment",
+          "com.apple.developer.icloud-container-identifiers",
+          "com.apple.developer.ubiquity-kvstore-identifier",
+          "com.apple.developer.icloud-services",
+          "com.apple.developer.kernel.increased-memory-limit",
+          "keychain-access-groups",
+          "com.apple.developer.avfoundation.multitasking-camera-access",
+          "com.apple.developer.usernotifications.filtering",
+          "aps-environment",
+          "com.apple.developer.networking.wifi-info"
+        ],
+        "privacy": {
+          "NSBluetoothAlwaysUsageDescription": "This app requires Bluetooth access for connecting to nearby devices.",
+          "NSCalendarsUsageDescription": "This app requires access to your calendars for social event integration.",
+          "NSCameraUsageDescription": "This app requires camera access to capture photos and videos.",
+          "NSContactsUsageDescription": "This app requires access to your contacts for enhanced social features.",
+          "NSFaceIDUsageDescription": "This app requires Face ID for secure authentication.",
+          "NSLocationAlwaysAndWhenInUseUsageDescription": "This app requires location access even when in the background for geotagging.",
+          "NSLocationUsageDescription": "This app requires location access to provide local content.",
+          "NSLocationWhenInUseUsageDescription": "This app requires location access while using the app.",
+          "NSMicrophoneUsageDescription": "This app requires microphone access for recording audio and videos.",
+          "NSFocusStatusUsageDescription": "This app uses focus status to optimize notifications.",
+          "NSPhotoLibraryAddUsageDescription": "This app requires access to add photos to your library.",
+          "NSPhotoLibraryUsageDescription": "This app requires access to your photo library.",
+          "NSUserTrackingUsageDescription": "This app uses tracking to deliver personalized content."
+        }
+      },
+      "versions": [
+        {
+          "version": "451.0.0",
+          "downloadURL": "https://github.com/ramramzz/descfsr/releases/download/v0.35/7843d00a-e2fb-4d34-948a-fb02d8d528R2.ipa",
+          "date": "2026-10-13",
+          "size": 91750400
+        }
+      ],
+      "_sourceURL": "https://raw.githubusercontent.com/driftywinds/driftywinds.github.io/master/AltStore/apps.json",
+      "_featured": true
+    },
+    {
+      "name": "Instagram (RyukGram)",
+      "bundleIdentifier": "com.burbn.instagram",
+      "developerName": "faroukbmiled & IPA Vault",
+      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Instagram-451.0.0-RyukGram.ipa",
+      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Instagram-Icons/Instagram-AppStore-1024x1024.png",
+      "localizedDescription": "Instagram 451.0.0 with RyukGram 1.4.5",
+      "size": 345086224,
+      "subtitle": "Instagram 451.0.0 with RyukGram 1.4.5",
+      "tintColor": "#000000",
+      "version": "451.0.0",
+      "versionDate": "2026-10-13",
+      "versionDescription": "IPA Vault build for Instagram (RyukGram), version 451.0.0",
+      "versions": [
+        {
+          "version": "451.0.0",
+          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Instagram-451.0.0-RyukGram.ipa",
+          "date": "2026-10-13",
+          "size": 345086224
+        }
+      ],
+      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
+    },
+    {
+      "name": "Instagram (Sparkle No Plugins)",
+      "bundleIdentifier": "com.burbn.instagram.sparkle.noplugins",
+      "developerName": "efibalogh & CieLogic & IPA Vault",
+      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Instagram-451.0.0-Sparkle-No-Plugins.ipa",
+      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Instagram-Icons/Instagram-AppStore-1024x1024.png",
+      "localizedDescription": "Instagram 451.0.0 with Sparkle 1.5.1 (No Plugins)",
+      "size": 280423332,
+      "subtitle": "Instagram 451.0.0 with Sparkle 1.5.1 (No Plugins)",
+      "tintColor": "#000000",
+      "version": "451.0.0",
+      "versionDate": "2026-10-13",
+      "versionDescription": "IPA Vault build for Instagram (Sparkle No Plugins), version 451.0.0",
+      "versions": [
+        {
+          "version": "451.0.0",
+          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Instagram-451.0.0-Sparkle-No-Plugins.ipa",
+          "date": "2026-10-13",
+          "size": 280423332
+        }
+      ],
+      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
+    },
+    {
+      "name": "Instagram (Sparkle)",
+      "bundleIdentifier": "com.burbn.instagram.sparkle",
+      "developerName": "efibalogh & CieLogic & IPA Vault",
+      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Instagram-451.0.0-Sparkle.ipa",
+      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Instagram-Icons/Instagram-AppStore-1024x1024.png",
+      "localizedDescription": "Instagram 451.0.0 with Sparkle 1.5.1",
+      "size": 338667077,
+      "subtitle": "Instagram 451.0.0 with Sparkle 1.5.1",
+      "tintColor": "#000000",
+      "version": "451.0.0",
+      "versionDate": "2026-10-13",
+      "versionDescription": "IPA Vault build for Instagram (Sparkle), version 451.0.0",
+      "versions": [
+        {
+          "version": "451.0.0",
+          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Instagram-451.0.0-Sparkle.ipa",
+          "date": "2026-10-13",
+          "size": 338667077
+        }
+      ],
+      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
+    },
+    {
       "name": "Instagram — 451.0.0",
       "bundleIdentifier": "com.burbn.instagram",
       "developerName": "@ipavault",
@@ -703,144 +911,6 @@
       "minOSVersion": "14.0"
     },
     {
-      "name": "Instagram (Regram 6.3 Cracked)",
-      "bundleIdentifier": "com.burbn.instagram.regram",
-      "developerName": "Spy_0G & IPAVault",
-      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Instagram-450.1.0-Regram.ipa",
-      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Instagram-Icons/Instagram-AppStore-1024x1024.png",
-      "localizedDescription": "Instagram 450.1.0 with Regram 6.3 cracked",
-      "size": 322788009,
-      "subtitle": "Instagram 450.1.0 with Regram 6.3 cracked",
-      "tintColor": "#000000",
-      "version": "450.1.0",
-      "versionDate": "2026-10-07",
-      "versionDescription": "IPA Vault build for Instagram (Regram), version 450.1.0",
-      "versions": [
-        {
-          "version": "450.1.0",
-          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Instagram-450.1.0-Regram.ipa",
-          "date": "2026-10-07",
-          "size": 322788009
-        }
-      ],
-      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
-    },
-    {
-      "name": "Instagram (Regram 6.3) (No Plugins)",
-      "bundleIdentifier": "com.burbn.instagram.regram.noplugins",
-      "developerName": "Spy_0G & IPAVault",
-      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Instagram-450.1.0-Regram-No-Plugins.ipa",
-      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Instagram-Icons/Instagram-AppStore-1024x1024.png",
-      "localizedDescription": "Instagram 450.1.0 with Regram 6.3 cracked (No Plugins)",
-      "size": 269698071,
-      "subtitle": "IG 450.1.0 (Regram 6.3 cracked) (No Plugins)",
-      "tintColor": "#000000",
-      "version": "450.1.0",
-      "versionDate": "2026-10-07",
-      "versionDescription": "IPA Vault build for Instagram (Regram 6.3) (No Plugins), version 450.1.0",
-      "versions": [
-        {
-          "version": "450.1.0",
-          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Instagram-450.1.0-Regram-No-Plugins.ipa",
-          "date": "2026-10-07",
-          "size": 269698071
-        }
-      ],
-      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
-    },
-    {
-      "name": "Instagram (RyukGram No Plugins)",
-      "bundleIdentifier": "com.burbn.instagram.ryukgram.noplugins",
-      "developerName": "faroukbmiled & IPA Vault",
-      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Instagram-450.1.0-RyukGram-No-Plugins.ipa",
-      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Instagram-Icons/Instagram-AppStore-1024x1024.png",
-      "localizedDescription": "Instagram 450.1.0 with RyukGram 1.4.5 (No Plugins)",
-      "size": 270156977,
-      "subtitle": "Instagram 450.1.0 with RyukGram 1.4.5 (No Plugins)",
-      "tintColor": "#000000",
-      "version": "450.1.0",
-      "versionDate": "2026-10-07",
-      "versionDescription": "IPA Vault build for Instagram (RyukGram No Plugins), version 450.1.0",
-      "versions": [
-        {
-          "version": "450.1.0",
-          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Instagram-450.1.0-RyukGram-No-Plugins.ipa",
-          "date": "2026-10-07",
-          "size": 270156977
-        }
-      ],
-      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
-    },
-    {
-      "name": "Instagram (RyukGram)",
-      "bundleIdentifier": "com.burbn.instagram",
-      "developerName": "faroukbmiled & IPA Vault",
-      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Instagram-450.1.0-RyukGram.ipa",
-      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Instagram-Icons/Instagram-AppStore-1024x1024.png",
-      "localizedDescription": "Instagram 450.1.0 with RyukGram 1.4.5",
-      "size": 337114395,
-      "subtitle": "Instagram 450.1.0 with RyukGram 1.4.5",
-      "tintColor": "#000000",
-      "version": "450.1.0",
-      "versionDate": "2026-10-07",
-      "versionDescription": "IPA Vault build for Instagram (RyukGram), version 450.1.0",
-      "versions": [
-        {
-          "version": "450.1.0",
-          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Instagram-450.1.0-RyukGram.ipa",
-          "date": "2026-10-07",
-          "size": 337114395
-        }
-      ],
-      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
-    },
-    {
-      "name": "Instagram (Sparkle No Plugins)",
-      "bundleIdentifier": "com.burbn.instagram.sparkle.noplugins",
-      "developerName": "efibalogh & CieLogic & IPA Vault",
-      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Instagram-450.1.0-Sparkle-No-Plugins.ipa",
-      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Instagram-Icons/Instagram-AppStore-1024x1024.png",
-      "localizedDescription": "Instagram 450.1.0 with Sparkle 1.4.0 (No Plugins)",
-      "size": 265782540,
-      "subtitle": "Instagram 450.1.0 with Sparkle 1.4.0 (No Plugins)",
-      "tintColor": "#000000",
-      "version": "450.1.0",
-      "versionDate": "2026-10-07",
-      "versionDescription": "IPA Vault build for Instagram (Sparkle No Plugins), version 450.1.0",
-      "versions": [
-        {
-          "version": "450.1.0",
-          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Instagram-450.1.0-Sparkle-No-Plugins.ipa",
-          "date": "2026-10-07",
-          "size": 265782540
-        }
-      ],
-      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
-    },
-    {
-      "name": "Instagram (Sparkle)",
-      "bundleIdentifier": "com.burbn.instagram.sparkle",
-      "developerName": "efibalogh & CieLogic & IPA Vault",
-      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Instagram-450.1.0-Sparkle.ipa",
-      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Instagram-Icons/Instagram-AppStore-1024x1024.png",
-      "localizedDescription": "Instagram 450.1.0 with Sparkle 1.4.0",
-      "size": 322655738,
-      "subtitle": "Instagram 450.1.0 with Sparkle 1.4.0",
-      "tintColor": "#000000",
-      "version": "450.1.0",
-      "versionDate": "2026-10-07",
-      "versionDescription": "IPA Vault build for Instagram (Sparkle), version 450.1.0",
-      "versions": [
-        {
-          "version": "450.1.0",
-          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Instagram-450.1.0-Sparkle.ipa",
-          "date": "2026-10-07",
-          "size": 322655738
-        }
-      ],
-      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
-    },
-    {
       "name": "Instagram — 450.1.0",
       "bundleIdentifier": "com.burbn.instagram",
       "developerName": "@ipavault",
@@ -1018,6 +1088,35 @@
       "subtitle": "@kamohacks | Instagram 🆕⬆️⬆️  🔩Hack Features🔩 ✅Ryukgram tool Added   📄Buy Your Own Certificate Tap Here 🛒Apple ID With Paid Games Tap here 💙Group Chat",
       "tintColor": "000000",
       "icon": "https://fastsign.dev/tg-icon/kamohacks/16718.png",
+      "bundleID": "com.burbn.instagram",
+      "fullDate": "20261006030035",
+      "type": 1,
+      "_sourceURL": "https://fastsign.dev/repo.json",
+      "minOSVersion": "14.0"
+    },
+    {
+      "name": "Instagram (RyukGram)",
+      "bundleIdentifier": "com.burbn.instagram",
+      "developerName": "Ryuk",
+      "version": "450.0.0",
+      "versionDate": "2026-10-06",
+      "size": 91750400,
+      "localizedDescription": "Just look up information for SCInsta if you're confused about usage\n\nFastSign is operated by CertFish.\nThe easy way to sideload: https://cert.fish/",
+      "iconURL": "https://raw.githubusercontent.com/qnblackcat/AltStore/main/ScreenShot/800px-Instagram_logo_2016.svg.png",
+      "downloadURL": "https://github.com/ramramzz/descfsr/releases/download/v0.35/df4685bb-4a2f-4c5d-acf4-b0b5f301172R.ipa",
+      "versions": [
+        {
+          "version": "450.0.0",
+          "date": "2026-10-06",
+          "localizedDescription": "Just look up information for SCInsta if you're confused about usage",
+          "downloadURL": "https://github.com/ramramzz/descfsr/releases/download/v0.35/df4685bb-4a2f-4c5d-acf4-b0b5f301172R.ipa",
+          "size": 91750400,
+          "minOSVersion": "14.0"
+        }
+      ],
+      "subtitle": "Just look up information for SCInsta if you're confused about usage",
+      "tintColor": "000000",
+      "icon": "https://raw.githubusercontent.com/qnblackcat/AltStore/main/ScreenShot/800px-Instagram_logo_2016.svg.png",
       "bundleID": "com.burbn.instagram",
       "fullDate": "20261006030035",
       "type": 1,
@@ -1226,76 +1325,6 @@
       "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0",
       "_expandedSocial": true
-    },
-    {
-      "beta": false,
-      "bundleIdentifier": "com.burbn.instagram",
-      "developerName": "Ryuk",
-      "downloadURL": "https://github.com/ramramzz/descfsr/releases/download/v0.35/df4685bb-4a2f-4c5d-acf4-b0b5f301172R.ipa",
-      "iconURL": "https://raw.githubusercontent.com/qnblackcat/AltStore/main/ScreenShot/800px-Instagram_logo_2016.svg.png",
-      "localizedDescription": "Just look up information for SCInsta if you're confused about usage",
-      "name": "Instagram (RyukGram)",
-      "screenshotURLs": [
-        "https://apt.alfhaily.me/cdn/assets/rocket-screenshot1.jpg",
-        "https://apt.alfhaily.me/cdn/assets/rocket-screenshot2.jpg",
-        "https://apt.alfhaily.me/cdn/assets/rocket-screenshot3.jpg",
-        "https://apt.alfhaily.me/cdn/assets/rocket-screenshot4.jpg"
-      ],
-      "size": 91750400,
-      "subtitle": "Additional features and fixes by Ryuk based on SCInsta | If you want to donate: - https://ko-fi.com/driftywinds",
-      "tintColor": "C13584",
-      "version": "450.0.0",
-      "versionDate": "2026-10-05",
-      "versionDescription": "Updated to v450.0.0, RyukGram v1.4.5",
-      "appPermissions": {
-        "entitlements": [
-          "com.apple.developer.associated-appclip-app-identifiers",
-          "com.apple.security.application-groups",
-          "com.apple.developer.associated-domains",
-          "com.apple.developer.storekit.request-data",
-          "com.apple.developer.ubiquity-container-identifiers",
-          "com.apple.developer.usernotifications.communication",
-          "com.apple.developer.usernotifications.time-sensitive",
-          "get-task-allow",
-          "com.apple.developer.kernel.extended-virtual-addressing",
-          "com.apple.developer.networking.HotspotConfiguration",
-          "com.apple.developer.icloud-container-environment",
-          "com.apple.developer.icloud-container-identifiers",
-          "com.apple.developer.ubiquity-kvstore-identifier",
-          "com.apple.developer.icloud-services",
-          "com.apple.developer.kernel.increased-memory-limit",
-          "keychain-access-groups",
-          "com.apple.developer.avfoundation.multitasking-camera-access",
-          "com.apple.developer.usernotifications.filtering",
-          "aps-environment",
-          "com.apple.developer.networking.wifi-info"
-        ],
-        "privacy": {
-          "NSBluetoothAlwaysUsageDescription": "This app requires Bluetooth access for connecting to nearby devices.",
-          "NSCalendarsUsageDescription": "This app requires access to your calendars for social event integration.",
-          "NSCameraUsageDescription": "This app requires camera access to capture photos and videos.",
-          "NSContactsUsageDescription": "This app requires access to your contacts for enhanced social features.",
-          "NSFaceIDUsageDescription": "This app requires Face ID for secure authentication.",
-          "NSLocationAlwaysAndWhenInUseUsageDescription": "This app requires location access even when in the background for geotagging.",
-          "NSLocationUsageDescription": "This app requires location access to provide local content.",
-          "NSLocationWhenInUseUsageDescription": "This app requires location access while using the app.",
-          "NSMicrophoneUsageDescription": "This app requires microphone access for recording audio and videos.",
-          "NSFocusStatusUsageDescription": "This app uses focus status to optimize notifications.",
-          "NSPhotoLibraryAddUsageDescription": "This app requires access to add photos to your library.",
-          "NSPhotoLibraryUsageDescription": "This app requires access to your photo library.",
-          "NSUserTrackingUsageDescription": "This app uses tracking to deliver personalized content."
-        }
-      },
-      "versions": [
-        {
-          "version": "450.0.0",
-          "downloadURL": "https://github.com/ramramzz/descfsr/releases/download/v0.35/df4685bb-4a2f-4c5d-acf4-b0b5f301172R.ipa",
-          "date": "2026-10-05",
-          "size": 91750400
-        }
-      ],
-      "_sourceURL": "https://raw.githubusercontent.com/driftywinds/driftywinds.github.io/master/AltStore/apps.json",
-      "_featured": true
     },
     {
       "name": "BHTikTokPlus",
@@ -9981,6 +10010,145 @@
       "minOSVersion": "14.0"
     },
     {
+      "name": "VDIT",
+      "type": 1,
+      "bundleID": "me.imgbase.videoday",
+      "bundleIdentifier": "me.imgbase.videoday",
+      "version": "4.3.1",
+      "versionDate": "2026-10-14",
+      "fullDate": "20261014000135",
+      "size": 223535643,
+      "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+      "developerName": "",
+      "localizedDescription": "Injected with Subscription Unlocked",
+      "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/me.imgbase.videoday.png",
+      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/me.imgbase.videoday.png",
+      "versions": [
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-14",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-13",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-12",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/11-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-11",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/10-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-10",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-09",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/08-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-08",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.0",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-09-2026/VDIT_4.3.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-09-16",
+          "size": 222157348
+        },
+        {
+          "version": "4.2.2",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-08-2026/VDIT_4.2.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-08-28",
+          "size": 229561371
+        },
+        {
+          "version": "4.2.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-08-2026/VDIT_4.2.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-08-20",
+          "size": 229498501
+        },
+        {
+          "version": "4.2.0",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-08-2026/VDIT_4.2.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-08-04",
+          "size": 222444453
+        },
+        {
+          "version": "4.1.4",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-07-2026/VDIT_4.1.4_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-07-16",
+          "size": 225775085
+        },
+        {
+          "version": "4.1.3",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-07-2026/VDIT_4.1.3_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-07-15",
+          "size": 225775529
+        },
+        {
+          "version": "4.1.2",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-06-2026/VDIT_4.1.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-06-27",
+          "size": 225188337
+        },
+        {
+          "version": "4.1.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-06-2026/VDIT_4.1.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-06-15",
+          "size": 224955813
+        },
+        {
+          "version": "4.1.0",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/10-06-2026/VDIT_4.1.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-06-10",
+          "size": 203318495
+        },
+        {
+          "version": "4.0.2",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-05-2026/VDIT_4.0.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-05-21",
+          "size": 222954612
+        },
+        {
+          "version": "4.0.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/08-05-2026/VDIT_4.0.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-05-08",
+          "size": 223933102
+        },
+        {
+          "version": "4.0.0",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-05-2026/VDIT_4.0.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-05-03",
+          "size": 222802482
+        },
+        {
+          "version": "3.8.0",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/31-03-2026/VDIT_3.8.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-03-31",
+          "size": 215449803
+        }
+      ],
+      "_sourceURL": "https://repository.apptesters.org"
+    },
+    {
       "name": "1 2 3 4 Player Games",
       "bundleIdentifier": "com.JindoBlu.FourPlayersIOS",
       "developerName": "@riftysIPAlibrary",
@@ -11605,6 +11773,29 @@
       "minOSVersion": "14.0"
     },
     {
+      "name": "Infuse Plus (8.5.7)",
+      "bundleIdentifier": "com.firecore.infuse",
+      "developerName": "dvntms & IPA Vault",
+      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Infuse-8.5.7-Infuse-Plus.ipa",
+      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Infuse-icons/Infuse-AppStore-1024x1024.png",
+      "localizedDescription": "Infuse 8.5.7 with Infuse Plus 2.6",
+      "size": 97173009,
+      "subtitle": "Infuse 8.5.7 with Infuse Plus 2.6",
+      "tintColor": "#000000",
+      "version": "8.5.7",
+      "versionDate": "2026-10-13",
+      "versionDescription": "IPA Vault build for Infuse Plus (8.5.7), version 8.5.7",
+      "versions": [
+        {
+          "version": "8.5.7",
+          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Infuse-8.5.7-Infuse-Plus.ipa",
+          "date": "2026-10-13",
+          "size": 97173009
+        }
+      ],
+      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
+    },
+    {
       "name": "JournalCircle",
       "bundleIdentifier": "com.genau.JournalCircle",
       "developerName": "@riftysIPAlibrary",
@@ -12233,6 +12424,75 @@
       "type": 1,
       "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
+    },
+    {
+      "name": "Nagram (iQTele)",
+      "bundleIdentifier": "xyz.nextalone.nagram",
+      "developerName": "7MD & IPA Vault",
+      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Nagram-13.0-iQTele.ipa",
+      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Nagram-Icons/Nagram-AppStore-1024x1024.png",
+      "localizedDescription": "Nagram 13.0 with iQTele 1.4",
+      "size": 135165722,
+      "subtitle": "Nagram 13.0 with iQTele 1.4",
+      "tintColor": "#0088CC",
+      "version": "13.0",
+      "versionDate": "2026-10-13",
+      "versionDescription": "IPA Vault build for Nagram (iQTele), version 13.0",
+      "versions": [
+        {
+          "version": "13.0",
+          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Nagram-13.0-iQTele.ipa",
+          "date": "2026-10-13",
+          "size": 135165722
+        }
+      ],
+      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
+    },
+    {
+      "name": "Nagram (MxGram)",
+      "bundleIdentifier": "xyz.nextalone.nagram.mxgram",
+      "developerName": "m1ronx1412 & IPA Vault",
+      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Nagram-13.0-MxGram.ipa",
+      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Nagram-Icons/Nagram-AppStore-1024x1024.png",
+      "localizedDescription": "Nagram 13.0 with MxGram 1.0.0",
+      "size": 142852093,
+      "subtitle": "Nagram 13.0 with MxGram 1.0.0",
+      "tintColor": "#0088CC",
+      "version": "13.0",
+      "versionDate": "2026-10-13",
+      "versionDescription": "IPA Vault build for Nagram (MxGram), version 13.0",
+      "versions": [
+        {
+          "version": "13.0",
+          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Nagram-13.0-MxGram.ipa",
+          "date": "2026-10-13",
+          "size": 142852093
+        }
+      ],
+      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
+    },
+    {
+      "name": "Nagram (TGExtra)",
+      "bundleIdentifier": "xyz.nextalone.nagram.tgextra",
+      "developerName": "swiftleopard & IPA Vault",
+      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Nagram-13.0-TGExtra.ipa",
+      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Nagram-Icons/Nagram-AppStore-1024x1024.png",
+      "localizedDescription": "Nagram 13.0 with TGExtra 1.7.7",
+      "size": 134546020,
+      "subtitle": "Nagram 13.0 with TGExtra 1.7.7",
+      "tintColor": "#0088CC",
+      "version": "13.0",
+      "versionDate": "2026-10-13",
+      "versionDescription": "IPA Vault build for Nagram (TGExtra), version 13.0",
+      "versions": [
+        {
+          "version": "13.0",
+          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Nagram-13.0-TGExtra.ipa",
+          "date": "2026-10-13",
+          "size": 134546020
+        }
+      ],
+      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
     },
     {
       "name": "Notability",
@@ -12986,6 +13246,29 @@
       "minOSVersion": "14.0"
     },
     {
+      "name": "Reddit (RedditFilter)",
+      "bundleIdentifier": "com.reddit.Reddit",
+      "developerName": "Moe & IPA Vault",
+      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Reddit-2026.41.0-RedditFilter.ipa",
+      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Reddit-Icons/Reddit-AppStore-1024x1024.png",
+      "localizedDescription": "Reddit 2026.41.0 with RedditFilter 4.6.1",
+      "size": 147412514,
+      "subtitle": "Reddit 2026.41.0 with RedditFilter 4.6.1",
+      "tintColor": "#FF4500",
+      "version": "2026.41.0",
+      "versionDate": "2026-10-13",
+      "versionDescription": "IPA Vault build for Reddit (RedditFilter), version 2026.41.0",
+      "versions": [
+        {
+          "version": "2026.41.0",
+          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Reddit-2026.41.0-RedditFilter.ipa",
+          "date": "2026-10-13",
+          "size": 147412514
+        }
+      ],
+      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
+    },
+    {
       "name": "Rise Sleep",
       "bundleIdentifier": "com.risesci.nyx",
       "developerName": "@blatants",
@@ -13651,6 +13934,52 @@
       "minOSVersion": "14.0"
     },
     {
+      "name": "Spotify (Vitrine)",
+      "bundleIdentifier": "com.spotify.client",
+      "developerName": "MyNameIsJeff & skopevoj & IPA Vault",
+      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Spotify-Icons/Spotify-AppStore-1024x1024.png",
+      "tintColor": "#1DB954",
+      "version": "9.1.90",
+      "versionDate": "2026-10-13",
+      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Spotify-9.1.90-Vitrine.ipa",
+      "localizedDescription": "Spotify 9.1.90 with Vitrine 1.0.0-b13",
+      "size": 131327168,
+      "subtitle": "Spotify 9.1.90 with Vitrine 1.0.0-b13",
+      "versionDescription": "IPA Vault build for Spotify (Vitrine 1.0.0-b13), version 9.1.90",
+      "versions": [
+        {
+          "version": "9.1.90",
+          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Spotify-9.1.90-Vitrine.ipa",
+          "date": "2026-10-13",
+          "size": 131327168
+        }
+      ],
+      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
+    },
+    {
+      "name": "Spotify (Vitrine) (No Plugins)",
+      "bundleIdentifier": "com.spotify.client.vitrine.noplugins",
+      "developerName": "MyNameIsJeff & skopevoj & IPA Vault",
+      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Spotify-Icons/Spotify-AppStore-1024x1024.png",
+      "tintColor": "#1DB954",
+      "version": "9.1.90",
+      "versionDate": "2026-10-13",
+      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Spotify-9.1.90-Vitrine-No-Plugins.ipa",
+      "localizedDescription": "Spotify 9.1.90 with Vitrine 1.0.0-b13 (No Plugins)",
+      "size": 130219610,
+      "subtitle": "Spotify 9.1.90 with Vitrine 1.0.0-b13 (No Plugins)",
+      "versionDescription": "IPA Vault build for Spotify (Vitrine 1.0.0-b13) (No Plugins), version 9.1.90",
+      "versions": [
+        {
+          "version": "9.1.90",
+          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Spotify-9.1.90-Vitrine-No-Plugins.ipa",
+          "date": "2026-10-13",
+          "size": 130219610
+        }
+      ],
+      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
+    },
+    {
       "name": "Stick War Legacy",
       "bundleIdentifier": "com.stickpage.stickwar",
       "developerName": "@riftysIPAlibrary",
@@ -13746,6 +14075,52 @@
       "minOSVersion": "14.0"
     },
     {
+      "name": "Swiftgram (MxGram)",
+      "bundleIdentifier": "app.swiftgram.ios.mxgram",
+      "developerName": "m1ronx1412 & IPA Vault",
+      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Swiftgram-13.0-MxGram.ipa",
+      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Swiftgram-Icons/Swiftgram-AppStore-1024x1024.png",
+      "localizedDescription": "Swiftgram 13.0 with MxGram 1.0.0",
+      "size": 97568937,
+      "subtitle": "Swiftgram 13.0 with MxGram 1.0.0",
+      "tintColor": "#F85C2C",
+      "version": "13.0",
+      "versionDate": "2026-10-13",
+      "versionDescription": "IPA Vault build for Swiftgram (MxGram), version 13.0",
+      "versions": [
+        {
+          "version": "13.0",
+          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Swiftgram-13.0-MxGram.ipa",
+          "date": "2026-10-13",
+          "size": 97568937
+        }
+      ],
+      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
+    },
+    {
+      "name": "Swiftgram (TGExtra)",
+      "bundleIdentifier": "app.swiftgram.ios.tgextra",
+      "developerName": "swiftleopard & IPA Vault",
+      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Swiftgram-13.0-TGExtra.ipa",
+      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Swiftgram-Icons/Swiftgram-AppStore-1024x1024.png",
+      "localizedDescription": "Swiftgram 13.0 with TGExtra 1.7.7",
+      "size": 89262870,
+      "subtitle": "Swiftgram 13.0 with TGExtra 1.7.7",
+      "tintColor": "#F85C2C",
+      "version": "13.0",
+      "versionDate": "2026-10-13",
+      "versionDescription": "IPA Vault build for Swiftgram (TGExtra), version 13.0",
+      "versions": [
+        {
+          "version": "13.0",
+          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Swiftgram-13.0-TGExtra.ipa",
+          "date": "2026-10-13",
+          "size": 89262870
+        }
+      ],
+      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
+    },
+    {
       "name": "Tappy",
       "bundleIdentifier": "cameronnazemi.Tappy",
       "developerName": "@riftysIPAlibrary",
@@ -13818,6 +14193,29 @@
       "type": 1,
       "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
+    },
+    {
+      "name": "Threads (ThreadSaver)",
+      "bundleIdentifier": "com.burbn.barcelona",
+      "developerName": "swiftleopard & IPA Vault",
+      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Threads-451.0-ThreadSaver.ipa",
+      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Threads-Icons/Threads-AppStore-1024x1024.png",
+      "localizedDescription": "Threads 451.0 with ThreadSaver",
+      "size": 112995145,
+      "subtitle": "Threads 451.0 with ThreadSaver",
+      "tintColor": "#000000",
+      "version": "451.0",
+      "versionDate": "2026-10-13",
+      "versionDescription": "IPA Vault build for Threads (ThreadSaver), version 451.0",
+      "versions": [
+        {
+          "version": "451.0",
+          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Threads-451.0-ThreadSaver.ipa",
+          "date": "2026-10-13",
+          "size": 112995145
+        }
+      ],
+      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
     },
     {
       "name": "TickTick",
@@ -14139,145 +14537,6 @@
       "type": 1,
       "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
-    },
-    {
-      "name": "VDIT",
-      "type": 1,
-      "bundleID": "me.imgbase.videoday",
-      "bundleIdentifier": "me.imgbase.videoday",
-      "version": "4.3.1",
-      "versionDate": "2026-10-13",
-      "fullDate": "20261013175757",
-      "size": 223535643,
-      "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-      "developerName": "",
-      "localizedDescription": "Injected with Subscription Unlocked",
-      "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/me.imgbase.videoday.png",
-      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/me.imgbase.videoday.png",
-      "versions": [
-        {
-          "version": "4.3.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-10-13",
-          "size": 223535643
-        },
-        {
-          "version": "4.3.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-10-12",
-          "size": 223535643
-        },
-        {
-          "version": "4.3.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/11-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-10-11",
-          "size": 223535643
-        },
-        {
-          "version": "4.3.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/10-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-10-10",
-          "size": 223535643
-        },
-        {
-          "version": "4.3.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-10-09",
-          "size": 223535643
-        },
-        {
-          "version": "4.3.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/08-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-10-08",
-          "size": 223535643
-        },
-        {
-          "version": "4.3.0",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-09-2026/VDIT_4.3.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-09-16",
-          "size": 222157348
-        },
-        {
-          "version": "4.2.2",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-08-2026/VDIT_4.2.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-08-28",
-          "size": 229561371
-        },
-        {
-          "version": "4.2.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-08-2026/VDIT_4.2.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-08-20",
-          "size": 229498501
-        },
-        {
-          "version": "4.2.0",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-08-2026/VDIT_4.2.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-08-04",
-          "size": 222444453
-        },
-        {
-          "version": "4.1.4",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-07-2026/VDIT_4.1.4_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-07-16",
-          "size": 225775085
-        },
-        {
-          "version": "4.1.3",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-07-2026/VDIT_4.1.3_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-07-15",
-          "size": 225775529
-        },
-        {
-          "version": "4.1.2",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-06-2026/VDIT_4.1.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-06-27",
-          "size": 225188337
-        },
-        {
-          "version": "4.1.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-06-2026/VDIT_4.1.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-06-15",
-          "size": 224955813
-        },
-        {
-          "version": "4.1.0",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/10-06-2026/VDIT_4.1.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-06-10",
-          "size": 203318495
-        },
-        {
-          "version": "4.0.2",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-05-2026/VDIT_4.0.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-05-21",
-          "size": 222954612
-        },
-        {
-          "version": "4.0.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/08-05-2026/VDIT_4.0.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-05-08",
-          "size": 223933102
-        },
-        {
-          "version": "4.0.0",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-05-2026/VDIT_4.0.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-05-03",
-          "size": 222802482
-        },
-        {
-          "version": "3.8.0",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/31-03-2026/VDIT_3.8.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-03-31",
-          "size": 215449803
-        },
-        {
-          "version": "3.7.2",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/10-03-2026/VDIT_3.7.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-03-10",
-          "size": 229184588
-        }
-      ],
-      "_sourceURL": "https://repository.apptesters.org"
     },
     {
       "name": "Vesper",
@@ -18253,75 +18512,6 @@
       "minOSVersion": "14.0"
     },
     {
-      "name": "Nagram (iQTele)",
-      "bundleIdentifier": "xyz.nextalone.nagram",
-      "developerName": "7MD & IPA Vault",
-      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Nagram-13.0-iQTele.ipa",
-      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Nagram-Icons/Nagram-AppStore-1024x1024.png",
-      "localizedDescription": "Nagram 13.0 with iQTele 1.4",
-      "size": 105204197,
-      "subtitle": "Nagram 13.0 with iQTele 1.4",
-      "tintColor": "#0088CC",
-      "version": "13.0",
-      "versionDate": "2026-10-11",
-      "versionDescription": "IPA Vault build for Nagram (iQTele), version 13.0",
-      "versions": [
-        {
-          "version": "13.0",
-          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Nagram-13.0-iQTele.ipa",
-          "date": "2026-10-11",
-          "size": 105204197
-        }
-      ],
-      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
-    },
-    {
-      "name": "Nagram (MxGram)",
-      "bundleIdentifier": "xyz.nextalone.nagram.mxgram",
-      "developerName": "m1ronx1412 & IPA Vault",
-      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Nagram-13.0-MxGram.ipa",
-      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Nagram-Icons/Nagram-AppStore-1024x1024.png",
-      "localizedDescription": "Nagram 13.0 with MxGram 1.0.0",
-      "size": 112890567,
-      "subtitle": "Nagram 13.0 with MxGram 1.0.0",
-      "tintColor": "#0088CC",
-      "version": "13.0",
-      "versionDate": "2026-10-11",
-      "versionDescription": "IPA Vault build for Nagram (MxGram), version 13.0",
-      "versions": [
-        {
-          "version": "13.0",
-          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Nagram-13.0-MxGram.ipa",
-          "date": "2026-10-11",
-          "size": 112890567
-        }
-      ],
-      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
-    },
-    {
-      "name": "Nagram (TGExtra)",
-      "bundleIdentifier": "xyz.nextalone.nagram.tgextra",
-      "developerName": "swiftleopard & IPA Vault",
-      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Nagram-13.0-TGExtra.ipa",
-      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Nagram-Icons/Nagram-AppStore-1024x1024.png",
-      "localizedDescription": "Nagram 13.0 with TGExtra 1.7.9",
-      "size": 104584492,
-      "subtitle": "Nagram 13.0 with TGExtra 1.7.9",
-      "tintColor": "#0088CC",
-      "version": "13.0",
-      "versionDate": "2026-10-11",
-      "versionDescription": "IPA Vault build for Nagram (TGExtra), version 13.0",
-      "versions": [
-        {
-          "version": "13.0",
-          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Nagram-13.0-TGExtra.ipa",
-          "date": "2026-10-11",
-          "size": 104584492
-        }
-      ],
-      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
-    },
-    {
       "name": "Nuvio",
       "bundleIdentifier": "com.nuvio.media",
       "developerName": "scholars lounge",
@@ -19230,52 +19420,6 @@
       "minOSVersion": "14.0"
     },
     {
-      "name": "Spotify (Vitrine)",
-      "bundleIdentifier": "com.spotify.client",
-      "developerName": "MyNameIsJeff & skopevoj & IPA Vault",
-      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Spotify-Icons/Spotify-AppStore-1024x1024.png",
-      "tintColor": "#1DB954",
-      "version": "9.1.90",
-      "versionDate": "2026-10-11",
-      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Spotify-9.1.90-Vitrine.ipa",
-      "localizedDescription": "Spotify 9.1.90 with Vitrine 1.0.0-b12",
-      "size": 131294878,
-      "subtitle": "Spotify 9.1.90 with Vitrine 1.0.0-b12",
-      "versionDescription": "IPA Vault build for Spotify (Vitrine 1.0.0-b12), version 9.1.90",
-      "versions": [
-        {
-          "version": "9.1.90",
-          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Spotify-9.1.90-Vitrine.ipa",
-          "date": "2026-10-11",
-          "size": 131294878
-        }
-      ],
-      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
-    },
-    {
-      "name": "Spotify (Vitrine) (No Plugins)",
-      "bundleIdentifier": "com.spotify.client.vitrine.noplugins",
-      "developerName": "MyNameIsJeff & skopevoj & IPA Vault",
-      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Spotify-Icons/Spotify-AppStore-1024x1024.png",
-      "tintColor": "#1DB954",
-      "version": "9.1.90",
-      "versionDate": "2026-10-11",
-      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Spotify-9.1.90-Vitrine-No-Plugins.ipa",
-      "localizedDescription": "Spotify 9.1.90 with Vitrine 1.0.0-b12 (No Plugins)",
-      "size": 129758834,
-      "subtitle": "Spotify 9.1.90 with Vitrine 1.0.0-b12 (No Plugins)",
-      "versionDescription": "IPA Vault build for Spotify (Vitrine 1.0.0-b12) (No Plugins), version 9.1.90",
-      "versions": [
-        {
-          "version": "9.1.90",
-          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Spotify-9.1.90-Vitrine-No-Plugins.ipa",
-          "date": "2026-10-11",
-          "size": 129758834
-        }
-      ],
-      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
-    },
-    {
       "name": "Swiftgram (LD)",
       "bundleIdentifier": "app.swiftgram.ios",
       "developerName": "iOSDecrypted",
@@ -19334,29 +19478,6 @@
       "minOSVersion": "14.0"
     },
     {
-      "name": "Swiftgram (MxGram)",
-      "bundleIdentifier": "app.swiftgram.ios.mxgram",
-      "developerName": "m1ronx1412 & IPA Vault",
-      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Swiftgram-12.9.4-MxGram.ipa",
-      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Swiftgram-Icons/Swiftgram-AppStore-1024x1024.png",
-      "localizedDescription": "Swiftgram 12.9.4 with MxGram 1.0.0",
-      "size": 90653138,
-      "subtitle": "Swiftgram 12.9.4 with MxGram 1.0.0",
-      "tintColor": "#F85C2C",
-      "version": "12.9.4",
-      "versionDate": "2026-10-11",
-      "versionDescription": "IPA Vault build for Swiftgram (MxGram), version 12.9.4",
-      "versions": [
-        {
-          "version": "12.9.4",
-          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Swiftgram-12.9.4-MxGram.ipa",
-          "date": "2026-10-11",
-          "size": 90653138
-        }
-      ],
-      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
-    },
-    {
       "name": "Swiftgram (TE)",
       "bundleIdentifier": "app.swiftgram.ios",
       "developerName": "iOSDecrypted",
@@ -19384,29 +19505,6 @@
       "type": 1,
       "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
-    },
-    {
-      "name": "Swiftgram (TGExtra)",
-      "bundleIdentifier": "app.swiftgram.ios.tgextra",
-      "developerName": "swiftleopard & IPA Vault",
-      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Swiftgram-12.9.4-TGExtra.ipa",
-      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Swiftgram-Icons/Swiftgram-AppStore-1024x1024.png",
-      "localizedDescription": "Swiftgram 12.9.4 with TGExtra 1.7.9",
-      "size": 82347070,
-      "subtitle": "Swiftgram 12.9.4 with TGExtra 1.7.9",
-      "tintColor": "#F85C2C",
-      "version": "12.9.4",
-      "versionDate": "2026-10-11",
-      "versionDescription": "IPA Vault build for Swiftgram (TGExtra), version 12.9.4",
-      "versions": [
-        {
-          "version": "12.9.4",
-          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Swiftgram-12.9.4-TGExtra.ipa",
-          "date": "2026-10-11",
-          "size": 82347070
-        }
-      ],
-      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
     },
     {
       "name": "Taurus (v0.50.1 - Not Patched) IPAVault",
@@ -23588,9 +23686,9 @@
       "developerName": "swiftleopard & IPA Vault",
       "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Telegram-13.0-TGExtra.ipa",
       "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Telegram-Icons/Telegram-AppStore-1024x1024.png",
-      "localizedDescription": "Telegram 13.0 with TGExtra 1.7.9",
+      "localizedDescription": "Telegram 13.0 with TGExtra 1.7.8",
       "size": 83391380,
-      "subtitle": "Telegram 13.0 with TGExtra 1.7.9",
+      "subtitle": "Telegram 13.0 with TGExtra 1.7.8",
       "tintColor": "#0088CC",
       "version": "13.0",
       "versionDate": "2026-10-09",
@@ -42722,29 +42820,6 @@
       "minOSVersion": "14.0"
     },
     {
-      "name": "Reddit (RedditFilter)",
-      "bundleIdentifier": "com.reddit.Reddit",
-      "developerName": "Moe & IPA Vault",
-      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Reddit-2026.40.0-RedditFilter.ipa",
-      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Reddit-Icons/Reddit-AppStore-1024x1024.png",
-      "localizedDescription": "Reddit 2026.40.0 with RedditFilter 4.5.1",
-      "size": 146909463,
-      "subtitle": "Reddit 2026.40.0 with RedditFilter 4.5.1",
-      "tintColor": "#FF4500",
-      "version": "2026.40.0",
-      "versionDate": "2026-10-05",
-      "versionDescription": "IPA Vault build for Reddit (RedditFilter), version 2026.40.0",
-      "versions": [
-        {
-          "version": "2026.40.0",
-          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Reddit-2026.40.0-RedditFilter.ipa",
-          "date": "2026-10-05",
-          "size": 146909463
-        }
-      ],
-      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
-    },
-    {
       "name": "Reframe",
       "bundleIdentifier": "com.glucobit.cravingBuster.CravingBuster",
       "developerName": "@riftysIPAlibrary",
@@ -43766,29 +43841,6 @@
       "type": 1,
       "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
-    },
-    {
-      "name": "Threads (ThreadSaver)",
-      "bundleIdentifier": "com.burbn.barcelona",
-      "developerName": "swiftleopard & IPA Vault",
-      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Threads-450.0-ThreadSaver.ipa",
-      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Threads-Icons/Threads-AppStore-1024x1024.png",
-      "localizedDescription": "Threads 450.0 with ThreadSaver",
-      "size": 113110827,
-      "subtitle": "Threads 450.0 with ThreadSaver",
-      "tintColor": "#000000",
-      "version": "450.0",
-      "versionDate": "2026-10-05",
-      "versionDescription": "IPA Vault build for Threads (ThreadSaver), version 450.0",
-      "versions": [
-        {
-          "version": "450.0",
-          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Threads-450.0-ThreadSaver.ipa",
-          "date": "2026-10-05",
-          "size": 113110827
-        }
-      ],
-      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
     },
     {
       "name": "TunerPro",
@@ -46589,29 +46641,6 @@
       "type": 1,
       "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
-    },
-    {
-      "name": "Infuse Plus (8.5.6)",
-      "bundleIdentifier": "com.firecore.infuse",
-      "developerName": "dvntms & IPA Vault",
-      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Infuse-8.5.6-Infuse-Plus.ipa",
-      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Infuse-icons/Infuse-AppStore-1024x1024.png",
-      "localizedDescription": "Infuse 8.5.6 with Infuse Plus 2.6",
-      "size": 97789883,
-      "subtitle": "Infuse 8.5.6 with Infuse Plus 2.6",
-      "tintColor": "#000000",
-      "version": "8.5.6",
-      "versionDate": "2026-10-03",
-      "versionDescription": "IPA Vault build for Infuse Plus (8.5.6), version 8.5.6",
-      "versions": [
-        {
-          "version": "8.5.6",
-          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Infuse-8.5.6-Infuse-Plus.ipa",
-          "date": "2026-10-03",
-          "size": 97789883
-        }
-      ],
-      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
     },
     {
       "name": "Lampa",
@@ -375174,7 +375203,7 @@
   "subtitle": "ipastrong",
   "description": "Merged IPA sources",
   "permissions": [],
-  "lastUpdated": "2026-10-13T12:42:38.129893+00:00",
+  "lastUpdated": "2026-10-13T18:40:15.233912+00:00",
   "iconURL": "https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/source-icon.jpeg",
   "META": {
     "repoName": "ipastrong",
