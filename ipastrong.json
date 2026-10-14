@@ -10242,6 +10242,145 @@
       "minOSVersion": "14.0"
     },
     {
+      "name": "VDIT",
+      "type": 1,
+      "bundleID": "me.imgbase.videoday",
+      "bundleIdentifier": "me.imgbase.videoday",
+      "version": "4.3.1",
+      "versionDate": "2026-10-15",
+      "fullDate": "20261015000755",
+      "size": 223535643,
+      "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+      "developerName": "",
+      "localizedDescription": "Injected with Subscription Unlocked",
+      "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/me.imgbase.videoday.png",
+      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/me.imgbase.videoday.png",
+      "versions": [
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-15",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-14",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-13",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-12",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/11-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-11",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/10-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-10",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-09",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/08-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-08",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.0",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-09-2026/VDIT_4.3.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-09-16",
+          "size": 222157348
+        },
+        {
+          "version": "4.2.2",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-08-2026/VDIT_4.2.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-08-28",
+          "size": 229561371
+        },
+        {
+          "version": "4.2.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-08-2026/VDIT_4.2.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-08-20",
+          "size": 229498501
+        },
+        {
+          "version": "4.2.0",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-08-2026/VDIT_4.2.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-08-04",
+          "size": 222444453
+        },
+        {
+          "version": "4.1.4",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-07-2026/VDIT_4.1.4_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-07-16",
+          "size": 225775085
+        },
+        {
+          "version": "4.1.3",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-07-2026/VDIT_4.1.3_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-07-15",
+          "size": 225775529
+        },
+        {
+          "version": "4.1.2",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-06-2026/VDIT_4.1.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-06-27",
+          "size": 225188337
+        },
+        {
+          "version": "4.1.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-06-2026/VDIT_4.1.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-06-15",
+          "size": 224955813
+        },
+        {
+          "version": "4.1.0",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/10-06-2026/VDIT_4.1.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-06-10",
+          "size": 203318495
+        },
+        {
+          "version": "4.0.2",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-05-2026/VDIT_4.0.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-05-21",
+          "size": 222954612
+        },
+        {
+          "version": "4.0.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/08-05-2026/VDIT_4.0.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-05-08",
+          "size": 223933102
+        },
+        {
+          "version": "4.0.0",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-05-2026/VDIT_4.0.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-05-03",
+          "size": 222802482
+        }
+      ],
+      "_sourceURL": "https://repository.apptesters.org"
+    },
+    {
       "name": "2 Ship 2 Harkinian",
       "bundleIdentifier": "com.rebelancap.2ship",
       "developerName": "rebelancap",
@@ -10886,6 +11025,145 @@
       "type": 1,
       "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
+    },
+    {
+      "name": "CollaNote",
+      "type": 1,
+      "bundleID": "net.quochuywdm.collanote496",
+      "bundleIdentifier": "net.quochuywdm.collanote496",
+      "version": "5.0.6",
+      "versionDate": "2026-10-14",
+      "fullDate": "20261014203102",
+      "size": 122347328,
+      "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-10-2026/CollaNote_5.0.6_Pro_%40thisismanpreets_apptesters.org.ipa",
+      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-10-2026/CollaNote_5.0.6_Pro_%40thisismanpreets_apptesters.org.ipa",
+      "developerName": "",
+      "localizedDescription": "Injected with Pro",
+      "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/net.quochuywdm.collanote496.png",
+      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/net.quochuywdm.collanote496.png",
+      "versions": [
+        {
+          "version": "5.0.6",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-10-2026/CollaNote_5.0.6_Pro_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-14",
+          "size": 122347328
+        },
+        {
+          "version": "5.0.5",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-10-2026/CollaNote_5.0.5_Pro_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-02",
+          "size": 121576572
+        },
+        {
+          "version": "5.0.4",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-09-2026/CollaNote_5.0.4_Pro_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-09-28",
+          "size": 132951134
+        },
+        {
+          "version": "5.0.3",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-09-2026/CollaNote_5.0.3_Pro_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-09-17",
+          "size": 132290399
+        },
+        {
+          "version": "5.0.2",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/11-09-2026/CollaNote_5.0.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-09-11",
+          "size": 130792537
+        },
+        {
+          "version": "5.0.0",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/08-09-2026/CollaNote_5.0.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-09-08",
+          "size": 130446757
+        },
+        {
+          "version": "4.3.3",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-08-2026/CollaNote_4.3.3_Pro_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-08-28",
+          "size": 115695349
+        },
+        {
+          "version": "4.3.2",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-08-2026/CollaNote_4.3.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-08-27",
+          "size": 128203525
+        },
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-08-2026/CollaNote_4.3.1_Pro_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-08-24",
+          "size": 128213440
+        },
+        {
+          "version": "4.3.0",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-08-2026/CollaNote_4.3.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-08-18",
+          "size": 128205965
+        },
+        {
+          "version": "4.1.2",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-05-2026/CollaNote_4.1.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-05-14",
+          "size": 132800335
+        },
+        {
+          "version": "4.1.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-05-2026/CollaNote_4.1.1_Pro_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-05-09",
+          "size": 134536162
+        },
+        {
+          "version": "4.1.0",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-04-2026/CollaNote_4.1.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-04-09",
+          "size": 132586350
+        },
+        {
+          "version": "4.0.9",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-04-2026/CollaNote_4.0.9_Pro_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-04-06",
+          "size": 132504059
+        },
+        {
+          "version": "4.0.6",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-02-2026/CollaNote_4.0.6_Pro_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-02-24",
+          "size": 123736186
+        },
+        {
+          "version": "4.0.5",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-01-2026/CollaNote_4.0.5_Pro_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-01-09",
+          "size": 130202881
+        },
+        {
+          "version": "4.0.4",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-01-2026/CollaNote_4.0.4_Pro_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-01-03",
+          "size": 130189248
+        },
+        {
+          "version": "4.0.3",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-12-2025/CollaNote_4.0.3_Pro_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2025-12-23",
+          "size": 130003270
+        },
+        {
+          "version": "4.0.2",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-12-2025/CollaNote_4.0.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2025-12-02",
+          "size": 134586725
+        },
+        {
+          "version": "4.0.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-10-2025/CollaNote_4.0.1_Pro_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2025-10-30",
+          "size": 128007194
+        }
+      ],
+      "_sourceURL": "https://repository.apptesters.org"
     },
     {
       "name": "CrisperWeaver",
@@ -15680,145 +15958,6 @@
       "type": 1,
       "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
-    },
-    {
-      "name": "VDIT",
-      "type": 1,
-      "bundleID": "me.imgbase.videoday",
-      "bundleIdentifier": "me.imgbase.videoday",
-      "version": "4.3.1",
-      "versionDate": "2026-10-14",
-      "fullDate": "20261014180943",
-      "size": 223535643,
-      "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-      "developerName": "",
-      "localizedDescription": "Injected with Subscription Unlocked",
-      "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/me.imgbase.videoday.png",
-      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/me.imgbase.videoday.png",
-      "versions": [
-        {
-          "version": "4.3.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-10-14",
-          "size": 223535643
-        },
-        {
-          "version": "4.3.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-10-13",
-          "size": 223535643
-        },
-        {
-          "version": "4.3.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-10-12",
-          "size": 223535643
-        },
-        {
-          "version": "4.3.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/11-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-10-11",
-          "size": 223535643
-        },
-        {
-          "version": "4.3.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/10-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-10-10",
-          "size": 223535643
-        },
-        {
-          "version": "4.3.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-10-09",
-          "size": 223535643
-        },
-        {
-          "version": "4.3.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/08-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-10-08",
-          "size": 223535643
-        },
-        {
-          "version": "4.3.0",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-09-2026/VDIT_4.3.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-09-16",
-          "size": 222157348
-        },
-        {
-          "version": "4.2.2",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-08-2026/VDIT_4.2.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-08-28",
-          "size": 229561371
-        },
-        {
-          "version": "4.2.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-08-2026/VDIT_4.2.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-08-20",
-          "size": 229498501
-        },
-        {
-          "version": "4.2.0",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-08-2026/VDIT_4.2.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-08-04",
-          "size": 222444453
-        },
-        {
-          "version": "4.1.4",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-07-2026/VDIT_4.1.4_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-07-16",
-          "size": 225775085
-        },
-        {
-          "version": "4.1.3",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-07-2026/VDIT_4.1.3_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-07-15",
-          "size": 225775529
-        },
-        {
-          "version": "4.1.2",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-06-2026/VDIT_4.1.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-06-27",
-          "size": 225188337
-        },
-        {
-          "version": "4.1.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-06-2026/VDIT_4.1.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-06-15",
-          "size": 224955813
-        },
-        {
-          "version": "4.1.0",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/10-06-2026/VDIT_4.1.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-06-10",
-          "size": 203318495
-        },
-        {
-          "version": "4.0.2",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-05-2026/VDIT_4.0.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-05-21",
-          "size": 222954612
-        },
-        {
-          "version": "4.0.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/08-05-2026/VDIT_4.0.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-05-08",
-          "size": 223933102
-        },
-        {
-          "version": "4.0.0",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-05-2026/VDIT_4.0.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-05-03",
-          "size": 222802482
-        },
-        {
-          "version": "3.8.0",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/31-03-2026/VDIT_3.8.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-03-31",
-          "size": 215449803
-        }
-      ],
-      "_sourceURL": "https://repository.apptesters.org"
     },
     {
       "name": "Veeb",
@@ -57984,145 +58123,6 @@
       "type": 1,
       "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
-    },
-    {
-      "name": "CollaNote",
-      "type": 1,
-      "bundleID": "net.quochuywdm.collanote496",
-      "bundleIdentifier": "net.quochuywdm.collanote496",
-      "version": "5.0.5",
-      "versionDate": "2026-10-02",
-      "fullDate": "20261002100718",
-      "size": 121576572,
-      "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-10-2026/CollaNote_5.0.5_Pro_%40thisismanpreets_apptesters.org.ipa",
-      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-10-2026/CollaNote_5.0.5_Pro_%40thisismanpreets_apptesters.org.ipa",
-      "developerName": "",
-      "localizedDescription": "Injected with Pro",
-      "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/net.quochuywdm.collanote496.png",
-      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/net.quochuywdm.collanote496.png",
-      "versions": [
-        {
-          "version": "5.0.5",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-10-2026/CollaNote_5.0.5_Pro_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-10-02",
-          "size": 121576572
-        },
-        {
-          "version": "5.0.4",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-09-2026/CollaNote_5.0.4_Pro_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-09-28",
-          "size": 132951134
-        },
-        {
-          "version": "5.0.3",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-09-2026/CollaNote_5.0.3_Pro_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-09-17",
-          "size": 132290399
-        },
-        {
-          "version": "5.0.2",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/11-09-2026/CollaNote_5.0.2_Pro_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-09-11",
-          "size": 130792537
-        },
-        {
-          "version": "5.0.0",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/08-09-2026/CollaNote_5.0.0_Pro_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-09-08",
-          "size": 130446757
-        },
-        {
-          "version": "4.3.3",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-08-2026/CollaNote_4.3.3_Pro_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-08-28",
-          "size": 115695349
-        },
-        {
-          "version": "4.3.2",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-08-2026/CollaNote_4.3.2_Pro_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-08-27",
-          "size": 128203525
-        },
-        {
-          "version": "4.3.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-08-2026/CollaNote_4.3.1_Pro_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-08-24",
-          "size": 128213440
-        },
-        {
-          "version": "4.3.0",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-08-2026/CollaNote_4.3.0_Pro_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-08-18",
-          "size": 128205965
-        },
-        {
-          "version": "4.1.2",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-05-2026/CollaNote_4.1.2_Pro_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-05-14",
-          "size": 132800335
-        },
-        {
-          "version": "4.1.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-05-2026/CollaNote_4.1.1_Pro_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-05-09",
-          "size": 134536162
-        },
-        {
-          "version": "4.1.0",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-04-2026/CollaNote_4.1.0_Pro_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-04-09",
-          "size": 132586350
-        },
-        {
-          "version": "4.0.9",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-04-2026/CollaNote_4.0.9_Pro_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-04-06",
-          "size": 132504059
-        },
-        {
-          "version": "4.0.6",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-02-2026/CollaNote_4.0.6_Pro_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-02-24",
-          "size": 123736186
-        },
-        {
-          "version": "4.0.5",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-01-2026/CollaNote_4.0.5_Pro_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-01-09",
-          "size": 130202881
-        },
-        {
-          "version": "4.0.4",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-01-2026/CollaNote_4.0.4_Pro_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-01-03",
-          "size": 130189248
-        },
-        {
-          "version": "4.0.3",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-12-2025/CollaNote_4.0.3_Pro_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2025-12-23",
-          "size": 130003270
-        },
-        {
-          "version": "4.0.2",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-12-2025/CollaNote_4.0.2_Pro_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2025-12-02",
-          "size": 134586725
-        },
-        {
-          "version": "4.0.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-10-2025/CollaNote_4.0.1_Pro_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2025-10-30",
-          "size": 128007194
-        },
-        {
-          "version": "4.0.0",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/10-10-2025/CollaNote_4.0.0_Pro_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2025-10-10",
-          "size": 146316372
-        }
-      ],
-      "_sourceURL": "https://repository.apptesters.org"
     },
     {
       "name": "Colourtone",
@@ -393470,7 +393470,7 @@
   "subtitle": "ipastrong",
   "description": "Merged IPA sources",
   "permissions": [],
-  "lastUpdated": "2026-10-14T12:53:44.685568+00:00",
+  "lastUpdated": "2026-10-14T18:52:42.304030+00:00",
   "iconURL": "https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/source-icon.jpeg",
   "META": {
     "repoName": "ipastrong",
