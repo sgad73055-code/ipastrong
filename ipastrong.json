@@ -23,6 +23,27 @@
   ],
   "apps": [
     {
+      "name": "Sifu",
+      "bundleIdentifier": "com.keplerinteractive.sifu",
+      "developerName": "Kepler Interactive",
+      "version": "1.0",
+      "versionDate": "2026-10-14T14:10:30Z",
+      "downloadURL": "https://github.com/sgad73055-code/ipastrong/releases/download/sifu/Sifu_1.0.ipa",
+      "size": 1170105844,
+      "localizedDescription": "لعبة قتال وفنون قتالية تتابع فيها رحلة مقاتل شاب يسعى للانتقام.",
+      "category": "ألعاب",
+      "_sourceURL": "local",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/bd/84/0b/bd840b0a-99c9-9ad8-ea78-c0ce9f853621/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-10-14T14:10:30Z",
+          "downloadURL": "https://github.com/sgad73055-code/ipastrong/releases/download/sifu/Sifu_1.0.ipa",
+          "size": 1170105844
+        }
+      ]
+    },
+    {
       "name": "Regram (Duplicate)",
       "bundleIdentifier": "com.fouadraheb.regram",
       "developerName": "Fouad Raheb",
