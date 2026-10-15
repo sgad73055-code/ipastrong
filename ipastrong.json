@@ -23,25 +23,67 @@
   ],
   "apps": [
     {
-      "name": "Sifu",
-      "bundleIdentifier": "com.keplerinteractive.sifu",
-      "developerName": "Kepler Interactive",
-      "version": "1.0",
-      "versionDate": "2026-10-14T14:10:30Z",
-      "downloadURL": "https://github.com/sgad73055-code/ipastrong/releases/download/sifu/Sifu_1.0.ipa",
-      "size": 1170105844,
-      "localizedDescription": "لعبة قتال وفنون قتالية تتابع فيها رحلة مقاتل شاب يسعى للانتقام.",
-      "category": "ألعاب",
-      "_sourceURL": "local",
-      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/bd/84/0b/bd840b0a-99c9-9ad8-ea78-c0ce9f853621/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "name": "Instagram",
+      "bundleIdentifier": "com.burbn.instagram",
+      "developerName": "iKarwan",
+      "subtitle": "A whole new Instagram experience!",
+      "version": "451.0.0",
       "versions": [
         {
-          "version": "1.0",
-          "date": "2026-10-14T14:10:30Z",
-          "downloadURL": "https://github.com/sgad73055-code/ipastrong/releases/download/sifu/Sifu_1.0.ipa",
-          "size": 1170105844
+          "version": "451.0.0",
+          "date": "2026-10-14",
+          "localizedDescription": "• Fixes Grid mode may crashes in v450+\n- Add full compatibility with IG v445+\n- Updated base IPA to Instagram v451",
+          "downloadURL": "https://ikghd.site/ipa/Instagram_451.0_iNKillerPlus_5.3.ipa",
+          "size": 265550574,
+          "minOSVersion": "16.3"
         }
-      ]
+      ],
+      "versionDate": "2026-10-14",
+      "downloadURL": "https://ikghd.site/ipa/Instagram_451.0_iNKillerPlus_5.3.ipa",
+      "localizedDescription": "• To enter the settings, go to Profile tab and click the ⚙️ Gear icon next to your Instagram name, or long-press on the Home button / Instagram logo\n- Download videos from Posts, IGTV, Reels, and DMs (HD / SD).\r\n• Save images from Posts, Stories, private DMs, and Profiles.\r\n• Save and merge photos with music as Slideshow.\r\n• Block all promo ads in Feed, Stories, and Reels.\r\n• Quick Seen/Unseen toggle for Stories and DMs.\r\n• Ghost Typing mode.\r\n• Hide tabs like Explore, Reels, and Create.\r\n• Keep unsent messages + storing it in logs.\r\n• Alternative Icon theme change.\r\n• Profile analyzer (analyze fully your profile following status).\r\n• Feed Grid & list View.\r\n• Fake location.\r\n• Copy text such as Comments, Descriptions, or Bio.\r\n• Confirmation prompts before liking, commenting, calling, or reposting.\r\n• And many more settings...\r\n• Supports iPadOS.",
+      "iconURL": "https://repo.ikghd.me/assets/icons/me.ikghd.inkplus.png",
+      "tintColor": "ff7c9f",
+      "size": 265550574,
+      "screenshotURLs": [
+        "https://repo.ikghd.me/depictions/me.ikghd.inkplus/screenshots/1.PNG",
+        "https://repo.ikghd.me/depictions/me.ikghd.inkplus/screenshots/2.PNG",
+        "https://repo.ikghd.me/depictions/me.ikghd.inkplus/screenshots/3.PNG",
+        "https://repo.ikghd.me/depictions/me.ikghd.inkplus/screenshots/4.PNG",
+        "https://repo.ikghd.me/depictions/me.ikghd.inkplus/screenshots/5.PNG",
+        "https://repo.ikghd.me/depictions/me.ikghd.inkplus/screenshots/6.PNG",
+        "https://repo.ikghd.me/depictions/me.ikghd.inkplus/screenshots/7.PNG",
+        "https://repo.ikghd.me/depictions/me.ikghd.inkplus/screenshots/8.PNG"
+      ],
+      "appPermissions": {
+        "entitlements": [
+          "application-identifier",
+          "aps-environment",
+          "com.apple.developer.associated-domains",
+          "com.apple.security.application-groups",
+          "com.apple.developer.usernotifications.communication",
+          "com.apple.developer.usernotifications.time-sensitive",
+          "keychain-access-groups",
+          "com.apple.developer.team-identifier"
+        ],
+        "privacy": {
+          "NSBluetoothAlwaysUsageDescription": "This allows your phone to find and connect to the glasses using a Bluetooth connection.",
+          "NSCalendarsUsageDescription": "This will let Instagram sync events to your calendar.",
+          "NSCalendarsWriteOnlyAccessUsageDescription": "This will let Instagram sync events to your calendar.",
+          "NSCameraUsageDescription": "Instagram uses your device's camera to do things like help you take photos, record videos and use effects.",
+          "NSContactsUsageDescription": "Instagram will use your contacts to suggest people and things you care about, and offer a better service. Your contacts will be periodically synced and securely stored on Instagram's servers.",
+          "NSFaceIDUsageDescription": "Enable Face ID for quick and secure authentication on Instagram.",
+          "NSFocusStatusUsageDescription": "This allows Instagram to check to see if you've been missing notifications from friends. You can always change this later in settings.",
+          "NSLocationAlwaysAndWhenInUseUsageDescription": "Instagram uses this to make some features work, personalize content and help people find places. You can change your preferences at any time in your device settings.",
+          "NSLocationUsageDescription": "Instagram uses this to make some features work, personalize content and help people find places. You can change your preferences at any time in your device settings.",
+          "NSLocationWhenInUseUsageDescription": "Instagram uses this to make some features work, personalize content and help people find places. You can change your preferences at any time in your device settings.",
+          "NSMicrophoneUsageDescription": "Instagram uses your device's microphone to do things like help you record videos and preview audio effects.",
+          "NSPhotoLibraryAddUsageDescription": "This lets you save photos and videos to your Camera Roll.",
+          "NSPhotoLibraryUsageDescription": "Instagram uses access to your camera roll to do things like help you share photos and videos to Instagram, apply effects and suggest photos and videos to share.",
+          "NSUserTrackingUsageDescription": "This helps Instagram personalize ads we show you."
+        }
+      },
+      "_sourceURL": "https://repo.ikghd.me/repo.json",
+      "minOSVersion": "16.3"
     },
     {
       "name": "Regram (Duplicate)",
@@ -1102,69 +1144,6 @@
       "minOSVersion": "14.0"
     },
     {
-      "name": "Instagram",
-      "bundleIdentifier": "com.burbn.instagram",
-      "developerName": "iKarwan",
-      "subtitle": "A whole new Instagram experience!",
-      "version": "449.0.0",
-      "versions": [
-        {
-          "version": "449.0.0",
-          "date": "2026-10-08",
-          "localizedDescription": "• Fixes a possible crash on rootless JB\n- Add alternative icon to jailbreak since iG include the icon inside the app\n- Fixes show app icon in settings for ios 26 - 27 as was disabled in previous versions\n- Fixes show email open in profiles or copied text to detect emails automaticlly\n- Fixes profile bio long press to copy detect email and links\n- Fixes read DM icon\n- Fixes user exception for direct message\n- Add full compatibility with IG v445+\n- Updated base IPA to Instagram v449.0",
-          "downloadURL": "https://ikghd.site/ipa/Instagram_449.0_iNKillerPlus_5.3.ipa",
-          "size": 256829089,
-          "minOSVersion": "16.3"
-        }
-      ],
-      "versionDate": "2026-10-08",
-      "downloadURL": "https://ikghd.site/ipa/Instagram_449.0_iNKillerPlus_5.3.ipa",
-      "localizedDescription": "• To enter the settings, go to Profile tab and click the ⚙️ Gear icon next to your Instagram name, or long-press on the Home button / Instagram logo.\r\n• Download videos from Posts, IGTV, Reels, and DMs (HD / SD).\r\n• Save images from Posts, Stories, private DMs, and Profiles.\r\n• Save and merge photos with music as Slideshow.\r\n• Block all promo ads in Feed, Stories, and Reels.\r\n• Quick Seen/Unseen toggle for Stories and DMs.\r\n• Ghost Typing mode.\r\n• Hide tabs like Explore, Reels, and Create.\r\n• Keep unsent messages + storing it in logs.\r\n• Alternative Icon theme change.\r\n• Profile analyzer (analyze fully your profile following status).\r\n• Feed Grid & list View.\r\n• Fake location.\r\n• Copy text such as Comments, Descriptions, or Bio.\r\n• Confirmation prompts before liking, commenting, calling, or reposting.\r\n• And many more settings...\r\n• Supports iPadOS.",
-      "iconURL": "https://repo.ikghd.me/assets/icons/me.ikghd.inkplus.png",
-      "tintColor": "ff7c9f",
-      "size": 256829089,
-      "screenshotURLs": [
-        "https://repo.ikghd.me/depictions/me.ikghd.inkplus/screenshots/1.PNG",
-        "https://repo.ikghd.me/depictions/me.ikghd.inkplus/screenshots/2.PNG",
-        "https://repo.ikghd.me/depictions/me.ikghd.inkplus/screenshots/3.PNG",
-        "https://repo.ikghd.me/depictions/me.ikghd.inkplus/screenshots/4.PNG",
-        "https://repo.ikghd.me/depictions/me.ikghd.inkplus/screenshots/5.PNG",
-        "https://repo.ikghd.me/depictions/me.ikghd.inkplus/screenshots/6.PNG",
-        "https://repo.ikghd.me/depictions/me.ikghd.inkplus/screenshots/7.PNG",
-        "https://repo.ikghd.me/depictions/me.ikghd.inkplus/screenshots/8.PNG"
-      ],
-      "appPermissions": {
-        "entitlements": [
-          "application-identifier",
-          "aps-environment",
-          "com.apple.developer.associated-domains",
-          "com.apple.security.application-groups",
-          "com.apple.developer.usernotifications.communication",
-          "com.apple.developer.usernotifications.time-sensitive",
-          "keychain-access-groups",
-          "com.apple.developer.team-identifier"
-        ],
-        "privacy": {
-          "NSBluetoothAlwaysUsageDescription": "This allows your phone to find and connect to the glasses using a Bluetooth connection.",
-          "NSCalendarsUsageDescription": "This will let Instagram sync events to your calendar.",
-          "NSCalendarsWriteOnlyAccessUsageDescription": "This will let Instagram sync events to your calendar.",
-          "NSCameraUsageDescription": "Instagram uses your device's camera to do things like help you take photos, record videos and use effects.",
-          "NSContactsUsageDescription": "Instagram will use your contacts to suggest people and things you care about, and offer a better service. Your contacts will be periodically synced and securely stored on Instagram's servers.",
-          "NSFaceIDUsageDescription": "Enable Face ID for quick and secure authentication on Instagram.",
-          "NSFocusStatusUsageDescription": "This allows Instagram to check to see if you've been missing notifications from friends. You can always change this later in settings.",
-          "NSLocationAlwaysAndWhenInUseUsageDescription": "Instagram uses this to make some features work, personalize content and help people find places. You can change your preferences at any time in your device settings.",
-          "NSLocationUsageDescription": "Instagram uses this to make some features work, personalize content and help people find places. You can change your preferences at any time in your device settings.",
-          "NSLocationWhenInUseUsageDescription": "Instagram uses this to make some features work, personalize content and help people find places. You can change your preferences at any time in your device settings.",
-          "NSMicrophoneUsageDescription": "Instagram uses your device's microphone to do things like help you record videos and preview audio effects.",
-          "NSPhotoLibraryAddUsageDescription": "This lets you save photos and videos to your Camera Roll.",
-          "NSPhotoLibraryUsageDescription": "Instagram uses access to your camera roll to do things like help you share photos and videos to Instagram, apply effects and suggest photos and videos to share.",
-          "NSUserTrackingUsageDescription": "This helps Instagram personalize ads we show you."
-        }
-      },
-      "_sourceURL": "https://repo.ikghd.me/repo.json",
-      "minOSVersion": "16.3"
-    },
-    {
       "name": "Instagram — 450.1.0",
       "bundleIdentifier": "com.burbn.instagram",
       "developerName": "@ipavault",
@@ -1240,7 +1219,7 @@
       ],
       "versionDate": "2026-10-08",
       "downloadURL": "https://ikghd.site/ipa/TikTok_47.1_TTKillerPlus_2.3.ipa",
-      "localizedDescription": "• To enter settings, long press on the Profile tab and click the ⚙️ Gear icon.\r\n• Download videos from FEED, stories, and Explore.\r\n• Save photos from FEED, Stories, and Profiles.\r\n• Merge photos and music From post together.\r\n• Save Profiles avatar or expand it.\r\n• Block all promo ads in Feed, Stories, and Explore.\r\n• Quick Seen / Unseen toggle for Stories and DMs.\r\n• Hide tabs such as Friends, Create, and Inbox.\r\n• Copy profiles bio.\r\n• Add toggle Auto Like for live streaming.\r\n• Stream Post from Specific country.\r\n• Add country Flags and post Date on FEED.\r\n• Add Follow status to Profile, following, not following, friends.\r\n• And many more customization options...\r\n• Supports iPadOS.",
+      "localizedDescription": "• To enter settings, long press on the Profile tab and click the ⚙️ Gear icon\n- Download videos from FEED, stories, and Explore.\r\n• Save photos from FEED, Stories, and Profiles.\r\n• Merge photos and music From post together.\r\n• Save Profiles avatar or expand it.\r\n• Block all promo ads in Feed, Stories, and Explore.\r\n• Quick Seen / Unseen toggle for Stories and DMs.\r\n• Hide tabs such as Friends, Create, and Inbox.\r\n• Copy profiles bio.\r\n• Add toggle Auto Like for live streaming.\r\n• Stream Post from Specific country.\r\n• Add country Flags and post Date on FEED.\r\n• Add Follow status to Profile, following, not following, friends.\r\n• And many more customization options...\r\n• Supports iPadOS.",
       "iconURL": "https://repo.ikghd.me/assets/icons/me.ikghd.ttkplus.png",
       "tintColor": "232621",
       "size": 476223966,
@@ -10269,7 +10248,7 @@
       "bundleIdentifier": "me.imgbase.videoday",
       "version": "4.3.1",
       "versionDate": "2026-10-15",
-      "fullDate": "20261015000755",
+      "fullDate": "20261015061426",
       "size": 223535643,
       "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
       "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
@@ -10400,6 +10379,27 @@
         }
       ],
       "_sourceURL": "https://repository.apptesters.org"
+    },
+    {
+      "name": "Sifu",
+      "bundleIdentifier": "com.keplerinteractive.sifu",
+      "developerName": "Kepler Interactive",
+      "version": "1.0",
+      "versionDate": "2026-10-14T14:10:30Z",
+      "downloadURL": "https://github.com/sgad73055-code/ipastrong/releases/download/sifu/Sifu_1.0.ipa",
+      "size": 1170105844,
+      "localizedDescription": "لعبة قتال وفنون قتالية تتابع فيها رحلة مقاتل شاب يسعى للانتقام.",
+      "category": "ألعاب",
+      "_sourceURL": "local",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/bd/84/0b/bd840b0a-99c9-9ad8-ea78-c0ce9f853621/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-10-14T14:10:30Z",
+          "downloadURL": "https://github.com/sgad73055-code/ipastrong/releases/download/sifu/Sifu_1.0.ipa",
+          "size": 1170105844
+        }
+      ]
     },
     {
       "name": "2 Ship 2 Harkinian",
@@ -25409,6 +25409,70 @@
     {
       "name": "YouTube",
       "bundleIdentifier": "com.google.ios.youtube",
+      "developerName": "iKarwan",
+      "subtitle": "A whole new YouTube experience!",
+      "version": "21.41.5",
+      "versions": [
+        {
+          "version": "21.41.5",
+          "date": "2026-10-12",
+          "localizedDescription": "• Add missing localization and Japanese language.\n- Fixes short FS option.\n- Fixes MDX cast Button to show origin YT one.\n- Fixes PiP ABR buffering in some cases.\n- Fixes auto skip for SPB that may not skip in some cases.\n- Improves Backup spacing.\n- Improves loading audio and video player.\n- Other improvements.\n- Updated iPA to YouTube v21.41",
+          "downloadURL": "https://ikghd.site/ipa/YouTube_21.41_YTKillerPlus_6.7.ipa",
+          "size": 142785533,
+          "minOSVersion": "17.0"
+        }
+      ],
+      "versionDate": "2026-10-12",
+      "downloadURL": "https://ikghd.site/ipa/YouTube_21.41_YTKillerPlus_6.7.ipa",
+      "localizedDescription": "• Download videos, audio, Shorts, and post images.\r\n• Enjoy full-speed 🚀 downloads with a built-in Download Manager.\r\n• Built in a modern Video and Audio player.\r\n• Built in custom Sleeptimer.\r\n• Import videos to Photos or directly into the YTKPlus library.\r\n• Block all advertisements for a clean experience.\r\n• 🎯 Fixes Playback 'Something went wrong' Exclusive.\r\n• Play media in the background.\r\n• Stream HD videos over Wi-Fi, 3G, 4G, or 5G.\r\n• Streaming and downloading 2k-4k videos on Supported Device ip15 and later.\r\n• Set default playback quality for Wi-Fi and Cellular.\r\n• Customize or hide tab bar icons and layouts.\r\n• Includes built-in SponsorBlock integration.\r\n• Picture in Picture (PiP).\r\n• And many more settings…\r\n• Supports iPadOS.",
+      "iconURL": "https://repo.ikghd.me/assets/icons/me.ikghd.ytkplus.png",
+      "tintColor": "fa2942",
+      "size": 142785533,
+      "screenshotURLs": [
+        "https://repo.ikghd.me/depictions/me.ikghd.ytkplus/screenshots/1.PNG",
+        "https://repo.ikghd.me/depictions/me.ikghd.ytkplus/screenshots/2.PNG",
+        "https://repo.ikghd.me/depictions/me.ikghd.ytkplus/screenshots/3.PNG",
+        "https://repo.ikghd.me/depictions/me.ikghd.ytkplus/screenshots/4.PNG",
+        "https://repo.ikghd.me/depictions/me.ikghd.ytkplus/screenshots/5.PNG",
+        "https://repo.ikghd.me/depictions/me.ikghd.ytkplus/screenshots/6.PNG",
+        "https://repo.ikghd.me/depictions/me.ikghd.ytkplus/screenshots/7.PNG",
+        "https://repo.ikghd.me/depictions/me.ikghd.ytkplus/screenshots/8.PNG",
+        "https://repo.ikghd.me/depictions/me.ikghd.ytkplus/screenshots/9.PNG",
+        "https://repo.ikghd.me/depictions/me.ikghd.ytkplus/screenshots/10.PNG",
+        "https://repo.ikghd.me/depictions/me.ikghd.ytkplus/screenshots/11.PNG",
+        "https://repo.ikghd.me/depictions/me.ikghd.ytkplus/screenshots/12.PNG",
+        "https://repo.ikghd.me/depictions/me.ikghd.ytkplus/screenshots/13.PNG"
+      ],
+      "appPermissions": {
+        "entitlements": [
+          "application-identifier",
+          "aps-environment",
+          "com.apple.developer.associated-domains",
+          "com.apple.security.application-groups",
+          "com.apple.developer.usernotifications.communication",
+          "com.apple.developer.usernotifications.time-sensitive",
+          "keychain-access-groups",
+          "com.apple.developer.team-identifier"
+        ],
+        "privacy": {
+          "NSAppleMusicUsageDescription": "This lets you add your own audio files to your videos.",
+          "NSBluetoothPeripheralUsageDescription": "YouTube needs bluetooth access to scan for nearby Cast devices.",
+          "NSCameraUsageDescription": "This lets you create videos using the app.",
+          "NSLocalNetworkUsageDescription": "Access to your network allows YouTube to discover and connect to devices such as your TV.",
+          "NSLocationWhenInUseUsageDescription": "Makes it easier for you to attach location information to your videos and live streams and allows for features such as improved recommendations and ads.",
+          "NSMicrophoneUsageDescription": "This lets you include audio with your videos and search using your voice.",
+          "NSPhotoLibraryUsageDescription": "This lets you upload media you've already created.",
+          "NSPhotoLibraryAddUsageDescription": "This lets you save downloaded media to the Photos app.",
+          "NSContactsUsageDescription": "Your contacts will be sent to YouTube servers to help you find friends to share videos with.",
+          "NSUserTrackingUsageDescription": "To personalize ads and provide ad measurement, YouTube will link activity from this app with activity from non-Google apps and websites."
+        }
+      },
+      "_sourceURL": "https://repo.ikghd.me/repo.json",
+      "minOSVersion": "17.0"
+    },
+    {
+      "name": "YouTube",
+      "bundleIdentifier": "com.google.ios.youtube",
       "developerName": "@ipavault",
       "version": "21.41.5",
       "versionDate": "2026-10-12",
@@ -27877,70 +27941,6 @@
         }
       ],
       "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
-    },
-    {
-      "name": "YouTube",
-      "bundleIdentifier": "com.google.ios.youtube",
-      "developerName": "iKarwan",
-      "subtitle": "A whole new YouTube experience!",
-      "version": "21.41.5",
-      "versions": [
-        {
-          "version": "21.41.5",
-          "date": "2026-10-11",
-          "localizedDescription": "• Add missing localization and Japanese language.\n- Fixes short FS option.\n- Fixes MDX cast Button to show origin YT one.\n- Fixes PiP ABR buffering in some cases.\n- Fixes auto skip for SPB that may not skip in some cases.\n- Improves Backup spacing.\n- Improves loading audio and video player.\n- Other improvements.\n- Updated iPA to YouTube v21.41",
-          "downloadURL": "https://ikghd.site/ipa/YouTube_21.41_YTKillerPlus_6.7.ipa",
-          "size": 142785533,
-          "minOSVersion": "17.0"
-        }
-      ],
-      "versionDate": "2026-10-11",
-      "downloadURL": "https://ikghd.site/ipa/YouTube_21.41_YTKillerPlus_6.7.ipa",
-      "localizedDescription": "• Download videos, audio, Shorts, and post images.\r\n• Enjoy full-speed 🚀 downloads with a built-in Download Manager.\r\n• Built in a modern Video and Audio player.\r\n• Built in custom Sleeptimer.\r\n• Import videos to Photos or directly into the YTKPlus library.\r\n• Block all advertisements for a clean experience.\r\n• 🎯 Fixes Playback 'Something went wrong' Exclusive.\r\n• Play media in the background.\r\n• Stream HD videos over Wi-Fi, 3G, 4G, or 5G.\r\n• Streaming and downloading 2k-4k videos on Supported Device ip15 and later.\r\n• Set default playback quality for Wi-Fi and Cellular.\r\n• Customize or hide tab bar icons and layouts.\r\n• Includes built-in SponsorBlock integration.\r\n• Picture in Picture (PiP).\r\n• And many more settings…\r\n• Supports iPadOS.",
-      "iconURL": "https://repo.ikghd.me/assets/icons/me.ikghd.ytkplus.png",
-      "tintColor": "fa2942",
-      "size": 142785533,
-      "screenshotURLs": [
-        "https://repo.ikghd.me/depictions/me.ikghd.ytkplus/screenshots/1.PNG",
-        "https://repo.ikghd.me/depictions/me.ikghd.ytkplus/screenshots/2.PNG",
-        "https://repo.ikghd.me/depictions/me.ikghd.ytkplus/screenshots/3.PNG",
-        "https://repo.ikghd.me/depictions/me.ikghd.ytkplus/screenshots/4.PNG",
-        "https://repo.ikghd.me/depictions/me.ikghd.ytkplus/screenshots/5.PNG",
-        "https://repo.ikghd.me/depictions/me.ikghd.ytkplus/screenshots/6.PNG",
-        "https://repo.ikghd.me/depictions/me.ikghd.ytkplus/screenshots/7.PNG",
-        "https://repo.ikghd.me/depictions/me.ikghd.ytkplus/screenshots/8.PNG",
-        "https://repo.ikghd.me/depictions/me.ikghd.ytkplus/screenshots/9.PNG",
-        "https://repo.ikghd.me/depictions/me.ikghd.ytkplus/screenshots/10.PNG",
-        "https://repo.ikghd.me/depictions/me.ikghd.ytkplus/screenshots/11.PNG",
-        "https://repo.ikghd.me/depictions/me.ikghd.ytkplus/screenshots/12.PNG",
-        "https://repo.ikghd.me/depictions/me.ikghd.ytkplus/screenshots/13.PNG"
-      ],
-      "appPermissions": {
-        "entitlements": [
-          "application-identifier",
-          "aps-environment",
-          "com.apple.developer.associated-domains",
-          "com.apple.security.application-groups",
-          "com.apple.developer.usernotifications.communication",
-          "com.apple.developer.usernotifications.time-sensitive",
-          "keychain-access-groups",
-          "com.apple.developer.team-identifier"
-        ],
-        "privacy": {
-          "NSAppleMusicUsageDescription": "This lets you add your own audio files to your videos.",
-          "NSBluetoothPeripheralUsageDescription": "YouTube needs bluetooth access to scan for nearby Cast devices.",
-          "NSCameraUsageDescription": "This lets you create videos using the app.",
-          "NSLocalNetworkUsageDescription": "Access to your network allows YouTube to discover and connect to devices such as your TV.",
-          "NSLocationWhenInUseUsageDescription": "Makes it easier for you to attach location information to your videos and live streams and allows for features such as improved recommendations and ads.",
-          "NSMicrophoneUsageDescription": "This lets you include audio with your videos and search using your voice.",
-          "NSPhotoLibraryUsageDescription": "This lets you upload media you've already created.",
-          "NSPhotoLibraryAddUsageDescription": "This lets you save downloaded media to the Photos app.",
-          "NSContactsUsageDescription": "Your contacts will be sent to YouTube servers to help you find friends to share videos with.",
-          "NSUserTrackingUsageDescription": "To personalize ads and provide ad measurement, YouTube will link activity from this app with activity from non-Google apps and websites."
-        }
-      },
-      "_sourceURL": "https://repo.ikghd.me/repo.json",
-      "minOSVersion": "17.0"
     },
     {
       "name": "YouTube (YouMod 2.0.0)",
@@ -393491,7 +393491,7 @@
   "subtitle": "ipastrong",
   "description": "Merged IPA sources",
   "permissions": [],
-  "lastUpdated": "2026-10-14T18:52:42.304030+00:00",
+  "lastUpdated": "2026-10-15T00:53:36.291286+00:00",
   "iconURL": "https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/source-icon.jpeg",
   "META": {
     "repoName": "ipastrong",
