@@ -11248,6 +11248,464 @@
       "minOSVersion": "14.0"
     },
     {
+      "name": "VDIT",
+      "type": 1,
+      "bundleID": "me.imgbase.videoday",
+      "bundleIdentifier": "me.imgbase.videoday",
+      "version": "4.3.1",
+      "versionDate": "2026-10-17",
+      "fullDate": "20261017001049",
+      "size": 223535643,
+      "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+      "developerName": "",
+      "localizedDescription": "Injected with Subscription Unlocked",
+      "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/me.imgbase.videoday.png",
+      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/me.imgbase.videoday.png",
+      "versions": [
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-17",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-16",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-15",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-14",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-13",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-12",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/11-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-11",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/10-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-10",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-09",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/08-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-08",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.0",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-09-2026/VDIT_4.3.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-09-16",
+          "size": 222157348
+        },
+        {
+          "version": "4.2.2",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-08-2026/VDIT_4.2.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-08-28",
+          "size": 229561371
+        },
+        {
+          "version": "4.2.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-08-2026/VDIT_4.2.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-08-20",
+          "size": 229498501
+        },
+        {
+          "version": "4.2.0",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-08-2026/VDIT_4.2.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-08-04",
+          "size": 222444453
+        },
+        {
+          "version": "4.1.4",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-07-2026/VDIT_4.1.4_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-07-16",
+          "size": 225775085
+        },
+        {
+          "version": "4.1.3",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-07-2026/VDIT_4.1.3_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-07-15",
+          "size": 225775529
+        },
+        {
+          "version": "4.1.2",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-06-2026/VDIT_4.1.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-06-27",
+          "size": 225188337
+        },
+        {
+          "version": "4.1.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-06-2026/VDIT_4.1.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-06-15",
+          "size": 224955813
+        },
+        {
+          "version": "4.1.0",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/10-06-2026/VDIT_4.1.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-06-10",
+          "size": 203318495
+        },
+        {
+          "version": "4.0.2",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-05-2026/VDIT_4.0.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-05-21",
+          "size": 222954612
+        },
+        {
+          "version": "4.0.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/08-05-2026/VDIT_4.0.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-05-08",
+          "size": 223933102
+        }
+      ],
+      "_sourceURL": "https://repository.apptesters.org"
+    },
+    {
+      "name": "Delta",
+      "bundleIdentifier": "com.rileytestut.Delta.Beta",
+      "developerName": "Riley Testut",
+      "subtitle": "Classic games in your pocket.",
+      "versions": [
+        {
+          "version": "2.0.7",
+          "marketingVersion": "2.0rc (175)",
+          "buildVersion": "175",
+          "date": "2026-10-16T12:00:00-04:00",
+          "localizedDescription": "NEW\n\nDLC\n• Custom in-game experiences for Pokémon games, built by our team\n• Unlock event items, receive rare Pokémon, and more\n• Start an event from the Pause Menu while playing\n• First event available now for Pokémon Emerald!\n\nCustom Filters\n• New Experimental Feature for using custom game screen filters\n• Includes two presets for every system, such as CRT and original Game Boy\n• Import your own filters from the Files app\n\nIMPROVED\n• Dynamically updates “Audio” settings icon to reflect current volume level\n• Open files browser directly upon tapping \"+\" button\n• Change fast forward speed via per-game settings\n• Restored the “Choose” button when no Nintendo WFC server is selected\n• Updated larger devices to show three games on game selection screen\n• Renamed “Minor Settings” to “Lil’ Settings”\n• Updated the previous sync status screen for iOS 26\n• Removed the redundant RetroAchievements heading from per-game settings\n• Limited the number of games shown in Recents\n• Updated the RetroAchievements description in per-game settings\n\nFIXED\n• Fixed fast forward and load state buttons disappearing when RetroAchievements are enabled\n• Fixed settings icons showing incorrect colors in light and dark mode\n• Fixed controller input picker appearing blue instead of purple on iOS 26\n• Fixed animated controller skins missing buttons in skin selection screen\n• Fixed importing .md files for Sega Genesis games\n• Fixed screenshot notifications appearing behind the pause menu\n• Fixed online multiplayer help text appearing when a Nintendo WFC server is already selected\n• Fixed RetroAchievements achievement notifications sometimes not appearing\n• Fixed crash when resizing Pause Menu to very small sizes\n• Fixed not disabling hardcore mode for games\n• Fixed app hanging indefinitely when showing cheats",
+          "downloadURL": "https://www.patreon.com/file?h=105173733&m=765526235",
+          "size": 207427358,
+          "minOSVersion": "17.4"
+        },
+        {
+          "version": "2.0.4",
+          "marketingVersion": "2.0b5 (163)",
+          "buildVersion": "163",
+          "date": "2026-07-28T13:00:00-04:00",
+          "localizedDescription": "NEW\n\nCustom Fast Forward\n• Change the preferred Fast Forward speed per-system and per-game\n• Long-press the Fast Forward button from the Pause Menu to adjust speed\n\nAnimated Controller Skins\n• Adds support for controller skins with animated buttons\n• New, official animated GBA skin by Caroline Moore\n\nAudio Settings\n• New audio settings to determine how Delta handles other apps' audio\n• \"Mix with Other Audio\" keeps your music or podcasts playing during games\n• \"Pause Other Audio\" silences everything else when a game starts\n\nAdjustable Screen Position\n• Long-press the game screen to adjust its position when a controller is connected\n\nIMPROVED\n• Graduated RetroAchievements from Experimental Features\n• Moved Online Multiplayer from Nintendo DS Core settings to top-level settings\n• Added option to move Home and Resume buttons to top of Pause Menu\n• Redesigned controller input mapping screen for game controllers and keyboards\n• Added the ability to delete save states in bulk\n• Automatically sync favorites between devices\n\nFIXED\n• Fixed error when loading RetroAchievements account information",
+          "downloadURL": "https://www.patreon.com/file?h=105173733&m=707106638",
+          "size": 198680846,
+          "minOSVersion": "17.4"
+        },
+        {
+          "version": "2.0.3",
+          "marketingVersion": "2.0b4 (161)",
+          "buildVersion": "161",
+          "date": "2026-06-03T14:00:00-04:00",
+          "localizedDescription": "NEW\n\nRedesigned Settings\n• Reorganizes settings into more easily navigable hierarchy\n• Icons help differentiate top-level settings\n• Access all settings options more quickly and intuitively\n\nEpilogue GB/SN Operator Support (thanks Epilogue!)\n• Connect game cartridges directly to your iPhone/iPad and play them natively\n• Reads and writes save files to cartridge\n• Supports GBC/GBA and SNES games (respectively)\n• Blowing into cartridges optional\n\nCheats\n• Fully redesigned cheats screen for Liquid Glass\n• Choose icons from a wide selection for added personalization\n\nIMPROVED\n• Removed “Import from iTunes” game import option\n• Changed “Open Games in New Window” setting to be off by default\n\nFIXED\n• Fixed SNES audio crackling\n• Fixed NES games occasionally opening to a black screen",
+          "downloadURL": "https://www.patreon.com/file?h=105173733&m=675009727",
+          "size": 198892266,
+          "minOSVersion": "17.4"
+        },
+        {
+          "version": "2.0.2",
+          "marketingVersion": "2.0b3 (159)",
+          "buildVersion": "159",
+          "date": "2026-04-02T15:00:00-04:00",
+          "localizedDescription": "NEW\n\nRecents & Favorites\n• New \"Recently Played\" and \"Favorites\" pages in Game Library\n• See all your recent games in the order you last played them\n• Add games to \"Favorites\" via long-press for easy access\n\nRedesigned Pause Menu\n• Fully redesigned & animated pause menu with Liquid Glass on iOS 26\n• Change Fast Forward speed per-game by long-pressing Fast Forward button\n\nRetroAchievements\n• View current game progress when launching game (e.g. number of unlocked achievements)\n• View full achievement descriptions by tapping \"Achievement Unlocked\" banners\n• Redesigned banners with more information & Liquid Glass design (iOS 26+)\n\nIMPROVED\n• Redesigned Game Library page control with icons (e.g. game systems)\n• Updated “What’s New” screen to showcase Delta 2.0 features\n\nFIXED\n• Fixed crash when enabling invalid Genesis cheats\n• Fixed incorrectly parsing some Genesis cheats\n• Fixed incorrect Settings navigation bar insets on iOS 18",
+          "downloadURL": "https://cdn.altstore.io/file/altstore/apps/delta/2_0_b3.ipa",
+          "size": 198703829,
+          "minOSVersion": "17.4"
+        },
+        {
+          "version": "1.7rc",
+          "buildVersion": "134",
+          "date": "2025-03-19T12:00:00-07:00",
+          "localizedDescription": "NEW\n\nRetroAchievements (Experimental Feature)\n• Log in with RetroAchievements to track achievements\n• Supports Hardcore mode (Optional)\n• Supports NES, SNES, and N64 games\n\nIMPROVED\n\n• Added \"Close\" button to What's New screen\n• Changed \"Respect Silent Mode\" default to OFF\n• New \"Follow Us\" footer at bottom of Settings screen\n• Stays connected online up to 30 seconds when entering background\n\nFIXED\n\n• Fixed white screen after (un-)locking device while AirPlaying DS games\n• Fixed ignoring keyboard inputs for non-DS systems\n• Fixed not showing external game controller skin when returning from background\n• Fixed missing label for no chosen controller skin\n• Fixed not asking user to import BIOS before inserting GBA game\n• Fixed not disabling touch screen controller when game controller is connected",
+          "downloadURL": "https://www.patreon.com/file?h=105173733&m=438774591",
+          "size": 196007753,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "1.7b5",
+          "buildVersion": "132",
+          "date": "2025-02-24T12:00:00-06:00",
+          "localizedDescription": "NEW\n\n“What's New” Screen\n• Lists new features in latest Delta update\n\nController Case Support\n• Adjust position of pause menu via controller skins\n• Allows using pause menu with cases such as Gamebaby and PlayCase\n• Supports vertical and horizontal insets\n\nIMPROVED\n\nOnline Multiplayer\n• Fetches known WFC servers dynamically\n• Asks user to choose WFC server when first connecting online\n• “Reset WFC Configuration” button to reset WFC-related settings\n\nFIXED\n• Fixed using analog sticks as discrete inputs for controllers with poor calibration (Thanks Ian Clawson!)\n• Fixed not disabling active Fast Forward when connecting online\n• Fixed showing all save states as incompatible for non-DS systems\n• Fixed not showing Reset button when choosing per-game External Controller or AirPlay skins\n• Fixed crash when viewing save states for unsupported system\n• Fixed Hold Button description layout after orientation change",
+          "downloadURL": "https://cdn.altstore.io/file/altstore/apps/delta/1_7_b5.ipa",
+          "size": 195842695,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "1.7b4",
+          "buildVersion": "131",
+          "date": "2025-01-30T12:00:00-06:00",
+          "localizedDescription": "NEW\n\nGame Controller Skins\n• Choose skin to use when controller is connected\n• Customize system-wide or per-game\n\nGame Settings\n• New context-menu option to configure per-game settings\n• Disable OpenGL ES 3.0 for specific games (N64)\n\nIMPROVED\n\nOnline Multiplayer (DS)\n• Simplified setup process that doesn't require configuring DNS\n• Choose from known WFC servers in Delta's settings\n• Provide custom DNS for other WFC servers\n\nScreenshots\n• Option always visible in pause menu\n• Take screenshots with game controllers or skins\n• Saves to new \"Delta Screenshots\" album\n\nFIXED\n• Fixed no audio for game previews in silent mode\n• Fixed no \"Reset\" button when choosing landscape skin",
+          "downloadURL": "https://cdn.altstore.io/file/altstore/apps/delta/1_7_b4.ipa",
+          "size": 195593542,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "1.7b3",
+          "buildVersion": "129",
+          "date": "2024-12-20T13:00:00-06:00",
+          "localizedDescription": "NEW\n• “Resume” button to easily resume games\n• Additional \"Button Pack\" icons designed by Louie Mantia\n\nIMPROVED\n• Added button to view Online Multiplayer instructions\n• Enable/disable Online Multiplayer via Experimental Features\n\nFIXED\n• Fixed incorrect default mapping for iPad GBC landscape skin",
+          "downloadURL": "https://cdn.altstore.io/file/altstore/apps/delta/1_7_b3.ipa",
+          "size": 195545849,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "1.7b2",
+          "buildVersion": "123",
+          "date": "2024-11-05T13:00:00-06:00",
+          "localizedDescription": "This beta fixes N64 games crashing on launch.\n\nPREVIOUS BETA\n\nOnline Multiplayer\n• Play Nintendo DS games online with friends!\n• Connect via 3rd-party Nintendo WFC servers (e.g. Kaeru)\n\nNintendo 64\n• New OpenGL ES 3 renderer fixes many common graphical issues\n• Optionally switch back to OpenGL ES 2 via Experimental Features\n• Custom resolutions\n• Custom texture packs\n\nMisc.\n• Adds dark + tinted variants of primary app icon\n• Fixed misleading “file does not exist” Delta Sync error\n• [iPad] Fixed qutting all games when using multiple scenes",
+          "downloadURL": "https://cdn.altstore.io/file/altstore/apps/delta/1_7_b2.ipa",
+          "size": 87951204,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "1.7b1",
+          "buildVersion": "120",
+          "date": "2024-10-23T12:00:00-05:00",
+          "localizedDescription": "NEW\n\nOnline Multiplayer\n• Play Nintendo DS games online with friends!\n• Connect via 3rd-party Nintendo WFC servers (e.g. Kaeru)\n\nNintendo 64\n• New OpenGL ES 3 renderer fixes many common graphical issues\n• Optionally switch back to OpenGL ES 2 via Experimental Features\n• Custom resolutions\n• Custom texture packs\n\nIMPROVED\n• Adds dark + tinted variants of primary app icon\n\nFIXED\n• Fixed misleading “file does not exist” Delta Sync error\n• [iPad] Fixed qutting all games when using multiple scenes",
+          "downloadURL": "https://cdn.altstore.io/file/altstore/apps/delta/1_7_b1.ipa",
+          "size": 88543419,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "1.6.3b",
+          "buildVersion": "117",
+          "date": "2024-09-04T12:00:00-05:00",
+          "localizedDescription": "• Fixed not unlocking Experimental Features\n• Fixed misc. visual bugs on iOS 18",
+          "downloadURL": "https://cdn.altstore.io/file/altstore/apps/delta/1_6_3_b.ipa",
+          "size": 87747304,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "1.6.2b",
+          "buildVersion": "112",
+          "date": "2024-07-30T12:00:00-05:00",
+          "localizedDescription": "• Fixed occasionally dropping DS touch screen inputs\n• Fixed crash loading certain skins with fallback traits\n• Fixed crash loading certain iPhone skins on iPad\n• Fixed app freezing when AirPlaying\n• Fixed app freezing when rotating device with certain skins",
+          "downloadURL": "https://cdn.altstore.io/file/altstore/apps/delta/1_6_2_b.ipa",
+          "size": 87750164,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "1.6.1b",
+          "buildVersion": "106",
+          "date": "2024-07-19T12:00:00-05:00",
+          "localizedDescription": "NEW\n• Supports using iPhone skins on iPad\n• Updated app icon to new logo\n\nFIXED\n• Fixed rare crash when loading DS save states\n• Fixed game controllers not working on visionOS and macOS\n• Fixed hardware keyboard support on macOS\n• Fixed menu button not working on external controllers with remapped menu button\n• Fixed delayed inputs on external controllers with remapped menu button\n• Fixed DS touch screen not responding after updating to iPad version",
+          "downloadURL": "https://cdn.altstore.io/file/altstore/apps/delta/1_6_1_b.ipa",
+          "size": 87750073,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "1.6rc",
+          "buildVersion": "96",
+          "date": "2024-06-27T14:00:00-05:00",
+          "localizedDescription": "NEW\n\nHandoff Support\n• Seamlessly switch between iPhone and iPad\n• Continues playing exactly where you left off\n• Supports Delta on Apple Silicon Macs via Mac App Store\n\nSave States\n• View all incompatible screenshots on a separate screen\n• Export save states to import into other emulators\n• Supports sorting by name\n\nMisc.\n• Supports Game Mode on iOS 18+\n• \"Open New Window\" option by long-pressing \"Main Menu\"/\"Close\" on pause screen\n\nIMPROVED\n\nQuick Gestures\n• Added new gestures for Quick Save/Load\n• Quick Save = Double-tap\n• Quick Load = Long-press\n\nController Skins\n• Finalizes iPad controller skin designs\n• UI to choose different Split View/Stage Manager skins\n• Increased DS screen size for default edge-to-edge iPhone landscape skin\n\nExperimental Features\n• UI to choose AirPlay skins\n• \"Skin Debugging\" to toggle \"debug mode\" for skins\n\nFIXED\n\niPad\n• Fixed not recognizing quick gestures on Split View controller\n• Fixed crash when pressing \"Reset Controller Skin\" button\n• Fixed crash opening N64 games in new window with context previews enabled\n• Fixed sometimes showing incorrect skin orientation in split view\n• Fixed loading wrong game after quitting game in another window\n• Fixed potential freeze when opening games in new window",
+          "downloadURL": "https://cdn.altstore.io/file/altstore/apps/delta/1_6_rc.ipa",
+          "size": 52596261,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "1.6b2",
+          "buildVersion": "94",
+          "date": "2024-05-30T11:30:00-05:00",
+          "localizedDescription": "⚠️ This update is incompatible with existing DS save states. Please save normally in-game before updating.\n\nNEW\n\nMultiple Windows\n• Supports multiple windows on iPad\n• Emulate games from multiple systems simultaneously \n• Open new windows via drag & drop, or by long-pressing game then choosing \"Open in New Window\"\n• Automatically pause games when switching windows (optional)\n\nUpdated melonDS core to 0.9.5\n• Improves game compatibility & performance\n• BIOS files are now optional!\n• Supports \"inserting\" GBA games into DS dual-slot\n• Increased fast forward speed to 3x (A15 processor or later)\n\n“Support External Displays” Setting\n• Control whether Delta shows games full screen on external displays\n• Disable to use multiple windows on external display with Stage Manager\n\nFIXED\n• Fixed clipped context menu preview for games\n• Fixed exporting save file without file extension\n• Fixed interface rotating when playing WarioWare: Twisted!\n• [iPad] Fixed not adjusting DS screens for split view keyboard\n• [iPad] Fixed hidden save state thumbnails when in compact size class",
+          "downloadURL": "https://cdn.altstore.io/file/altstore/apps/delta/1_6_b2.ipa",
+          "size": 48566277,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "1.6b",
+          "buildVersion": "91",
+          "date": "2024-05-01T08:30:00-05:00",
+          "localizedDescription": "Quick Gestures\n• Hold menu button to perform actions via gestures\n• Fast Forward: Swipe left or right\n• Hold Button: Tap buttons to hold/release",
+          "downloadURL": "https://cdn.altstore.io/file/altstore/apps/delta/1_6_b.ipa",
+          "size": 46968202,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "1.5rc2",
+          "buildVersion": "85",
+          "date": "2024-01-22T12:05:17-06:00",
+          "localizedDescription": "• Fixed issue where Delta could accidentally overwrite local data with old remote data\n• Fixed incorrectly marking some game saves as conflicted during initial sync\n• Fixed accidentally signing-out after signing-in to previous Google Drive account",
+          "downloadURL": "https://cdn.altstore.io/file/altstore/apps/delta/1_5_rc2.ipa",
+          "size": 48460652,
+          "sha256": "e20ff1939c33cbc6ac71e1c307f45094dc1877a32e0dd5df28094aa4f6911e60",
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "1.5rc",
+          "buildVersion": "78",
+          "date": "2023-11-21T12:30:00-06:00",
+          "localizedDescription": "IMPROVED\n\nDelta Sync\n• Added detailed logging to help debug issues\n• View complete error log via \"Export Error Log\" option in Settings\n\nMisc.\n• Shows AirPlay icon when AirPlaying\n• Added \"Learn More\" links to FAQ thoughout app\n\nFIXED\n\niPad\n• Fixed crash when changing DS emulator core\n• Fixed incorrectly indented rows on MelonDS core settings screen\n• Fixed not rounding last visible row in MelonDS core settings",
+          "downloadURL": "https://cdn.altstore.io/file/altstore/apps/delta/1_5_rc.ipa",
+          "size": 48457781,
+          "sha256": "bab95dd1801bcca1b8eab18b15abe7992550630b3e965e824c7fd34f793f63e1",
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "1.5b4",
+          "date": "2023-08-12T15:30:00-05:00",
+          "localizedDescription": "⚠️ This beta fixes a critical bug that could cause corrupted save files and save states to be uploaded to Google Drive/Dropbox.\n\nPlease update ASAP to ensure you don't lose any data. You can read more about this bug fix in today's Patreon post.",
+          "downloadURL": "https://cdn.altstore.io/file/altstore/apps/delta/1_5_b4.ipa",
+          "size": 48565606,
+          "sha256": "ca271c488da8399f977d6d5b5051a92d01431374ca545fb952e9b62256629d58",
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "1.5b3",
+          "date": "2023-07-18T12:30:00-05:00",
+          "localizedDescription": "IMPROVED\n\nDelta Sync\n• Automatically resolves cheat + controller skin sync conflicts\n• Syncs game save hash between devices to prevent redundant uploads\n• Displays activity indicator when signing in\n• Delays seeding sync database until initial sync\n• Uses local modification date when uploading changes\n• Signs out from previous service when switching services\n• Improved error message when remote storage is out of free space (Dropbox only)\n\nSettings\n• Revised UI to use modern \"inset grouped\" style\n• Uses large titles where appropriate\n\nMisc.\n• Replaces `UIDocumentBrowserViewController` with `UIDocumentPickerViewController` on iOS 17+\n• Skips checksum verification when importing zipped games\n\nFIXED\n\nDelta Sync\n• Fixed incorrect mass conflicts when signing out then back in\n• Fixed “Harmony.sqlite couldn’t be opened” sync error when there are more than 1000 games\n• Fixed “file does not exist” sync error after restoring previous version\n• Fixed Delta Sync switch remaining OFF if users cancels \"Disable Syncing?\" warning alert\n• Fixed missing references to remote files when signing out then back in\n• Fixed queued syncs sometimes fetching outdated changes\n• Fixed accidentally using wrong account when signed-in to multiple services\n\niPad\n• Fixed crash when resolving Delta Sync merge conflicts\n• Fixed crash when disabling Delta Sync or switching services\n\nExperimental Features\n• Fixed saving screenshots to Photos with .limited authorization\n• Fixed saving screenshots to Photos as JPEGs\n\nMisc.\n• Fixed accidentally deleting Games directory during sync in rare circumstances\n• Fixed crash loading save states on iOS 17\n• Fixed displaying system name in dark text when remapping inputs on iOS 17",
+          "downloadURL": "https://cdn.altstore.io/file/altstore/apps/delta/1_5_b3.ipa",
+          "size": 46221055,
+          "sha256": "7e809c5d3193f7e85232dcc649d72c24496d78e42111b070fe413d3437578e12",
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "1.5b2",
+          "date": "2023-05-03T14:00:00-05:00",
+          "localizedDescription": "NEW\n\nAirPlay Support \n• Stream your games to the big screen with AirPlay\n• [DS] Optionally AirPlay just top screen for true multi-screen experience\n\nExperimental Features\n• New section in Settings for features by third-party contributors\n• Features are WIP and should be used at user’s discretion\n\nInitial Experimental Features\n• Show Status Bar: View time/WiFi/battery while playing a game (@LitRitt)\n• Game Screenshots: Take screenshots from pause menu (@LitRitt)\n• In-Game Notifications: Show pop-up alerts when performing certain actions (@LitRitt)\n• AirPlay Skins: Customize appearance of games on TV when AirPlaying\n• Variable Fast Forward: Change the Fast Forward speed per-system\n\nFIXED\n• Fixed translucent controller skins resetting opacity after rotating device\n• Fixed incorrect thumbstick size after rotating device",
+          "downloadURL": "https://cdn.altstore.io/file/altstore/apps/delta/1_5_b2.ipa",
+          "size": 46120077,
+          "minOSVersion": "14.0"
+        }
+      ],
+      "version": "2.0.7",
+      "versionDate": "2026-10-16T12:00:00-04:00",
+      "versionDescription": "\"Contributors\" screen\n• See everyone who has contributed to Delta\n• View associated Pull Requests for contributed features\n\nPREVIOUS BETA\n• “Respect Silent Mode” setting\n• Automatically mutes game audio if another app is playing audio\n• Browse CheatBase for all known cheats for games (thanks Noah Keck @horn978)",
+      "downloadURL": "https://www.patreon.com/file?h=105173733&m=765526235",
+      "localizedDescription": "The next consoles for Delta are coming: this beta version of Delta brings support for playing Nintendo DS and Sega Genesis games!\n\nPlease report any issues you find to support@altstore.io. Thanks!",
+      "iconURL": "https://cdn.altstore.io/file/altstore/images/delta/Delta4.png",
+      "tintColor": "8A28F7",
+      "size": 207427358,
+      "category": "games",
+      "beta": true,
+      "patreon": {
+        "pledge": 3,
+        "benefit": "1186336"
+      },
+      "permissions": [
+        {
+          "type": "photos",
+          "usageDescription": "Allows Delta to use images from your Photo Library as game artwork."
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [
+          {
+            "name": "get-task-allow"
+          }
+        ],
+        "privacy": [
+          {
+            "name": "Microphone",
+            "usageDescription": "Delta uses your microphone to emulate the Nintendo DS microphone."
+          },
+          {
+            "name": "LocalNetwork",
+            "usageDescription": "Delta uses the local network to communicate with AltServer and enable JIT."
+          },
+          {
+            "name": "PhotoLibrary",
+            "usageDescription": "Allows Delta to use images from your Photo Library as game artwork."
+          }
+        ]
+      },
+      "screenshotURLs": [
+        "https://user-images.githubusercontent.com/705880/65600448-f7d9be00-df54-11e9-9e3e-d4c31296da94.PNG",
+        "https://user-images.githubusercontent.com/705880/65601942-e5ad4f00-df57-11e9-9255-1463e0296e46.PNG",
+        "https://user-images.githubusercontent.com/705880/65813009-f2ae8600-e183-11e9-9eb7-704effc11173.png",
+        "https://user-images.githubusercontent.com/705880/65601117-58b5c600-df56-11e9-9c19-9a5ba5da54cf.PNG"
+      ],
+      "screenshots": {
+        "iphone": [
+          "https://user-images.githubusercontent.com/705880/277049094-8458028c-92e0-4e73-99de-5dd865b76487.PNG",
+          "https://user-images.githubusercontent.com/705880/277049686-975b9d37-140a-481e-8668-765acdd1dedb.PNG",
+          {
+            "imageURL": "https://user-images.githubusercontent.com/705880/277049716-5d043eac-4cf2-46c9-8dfe-daefc40d0325.PNG",
+            "width": 2556,
+            "height": 1179
+          },
+          "https://user-images.githubusercontent.com/705880/277049074-15aabbaf-58f3-4609-b578-60ac7539ced0.PNG",
+          "https://user-images.githubusercontent.com/705880/277049050-e0d90f06-1f38-4736-8c1b-d41ec45d201b.PNG",
+          "https://user-images.githubusercontent.com/705880/277049040-a4dcc9d0-561d-4f1e-87cb-ff03e542a6d7.png"
+        ],
+        "ipad": [
+          {
+            "imageURL": "https://user-images.githubusercontent.com/705880/277048798-173ff326-9e75-4945-90ef-c3c5390c5fa0.png",
+            "width": 2545,
+            "height": 1908
+          },
+          {
+            "imageURL": "https://user-images.githubusercontent.com/705880/277048830-2ea042ff-6534-4663-96a6-8403065a9247.PNG",
+            "width": 2746,
+            "height": 1908
+          },
+          {
+            "imageURL": "https://user-images.githubusercontent.com/705880/277048870-e206ffb8-8889-42f3-86f7-612e78fe3291.PNG",
+            "width": 1908,
+            "height": 2746
+          },
+          {
+            "imageURL": "https://user-images.githubusercontent.com/705880/277048876-d522a486-7765-4099-a9a0-5229b0166061.PNG",
+            "width": 1908,
+            "height": 2746
+          }
+        ]
+      },
+      "_sourceURL": "https://cdn.altstore.io/file/altstore/apps.json",
+      "minOSVersion": "17.4"
+    },
+    {
+      "name": "Photomath",
+      "bundleIdentifier": "com.microblink.PhotoMath",
+      "developerName": "IPA Strong",
+      "version": "8.47.0",
+      "versionDate": "2026-10-16T14:53:19.045229+00:00",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/photomath-v8.47.0-subscription-unlocked-patched",
+      "size": 19837223,
+      "iconURL": "https://play-lh.googleusercontent.com/Ma_HEbK1LzEoayR0tE0ZXqLopug69-dPspfCV36zzHOSuC0_i6mu5ulKz1eY7en-UM4",
+      "localizedDescription": "",
+      "versions": [
+        {
+          "version": "8.47.0",
+          "date": "2026-10-16T14:53:19.045229+00:00",
+          "downloadURL": "https://dl.ikiraplus.workers.dev/dl/photomath-v8.47.0-subscription-unlocked-patched",
+          "size": 19837223,
+          "sha256": "346dc3ff40a2ea929414a8a19d123a7edbfb1796490142ecd834bf5128898a90",
+          "buildVersion": "0",
+          "minOSVersion": "14.0"
+        }
+      ],
+      "sha256": "346dc3ff40a2ea929414a8a19d123a7edbfb1796490142ecd834bf5128898a90",
+      "_sourceURL": "local",
+      "_addedFromLink": true,
+      "minOSVersion": "14.0"
+    },
+    {
       "name": "UTM SE",
       "bundleIdentifier": "com.utmapp.UTM-SE",
       "developerName": "osy",
@@ -12895,145 +13353,6 @@
         }
       ],
       "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
-    },
-    {
-      "name": "VDIT",
-      "type": 1,
-      "bundleID": "me.imgbase.videoday",
-      "bundleIdentifier": "me.imgbase.videoday",
-      "version": "4.3.1",
-      "versionDate": "2026-10-16",
-      "fullDate": "20261016194141",
-      "size": 223535643,
-      "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-      "developerName": "",
-      "localizedDescription": "Injected with Subscription Unlocked",
-      "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/me.imgbase.videoday.png",
-      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/me.imgbase.videoday.png",
-      "versions": [
-        {
-          "version": "4.3.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-10-16",
-          "size": 223535643
-        },
-        {
-          "version": "4.3.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-10-15",
-          "size": 223535643
-        },
-        {
-          "version": "4.3.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-10-14",
-          "size": 223535643
-        },
-        {
-          "version": "4.3.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-10-13",
-          "size": 223535643
-        },
-        {
-          "version": "4.3.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-10-12",
-          "size": 223535643
-        },
-        {
-          "version": "4.3.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/11-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-10-11",
-          "size": 223535643
-        },
-        {
-          "version": "4.3.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/10-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-10-10",
-          "size": 223535643
-        },
-        {
-          "version": "4.3.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-10-09",
-          "size": 223535643
-        },
-        {
-          "version": "4.3.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/08-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-10-08",
-          "size": 223535643
-        },
-        {
-          "version": "4.3.0",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-09-2026/VDIT_4.3.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-09-16",
-          "size": 222157348
-        },
-        {
-          "version": "4.2.2",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-08-2026/VDIT_4.2.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-08-28",
-          "size": 229561371
-        },
-        {
-          "version": "4.2.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-08-2026/VDIT_4.2.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-08-20",
-          "size": 229498501
-        },
-        {
-          "version": "4.2.0",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-08-2026/VDIT_4.2.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-08-04",
-          "size": 222444453
-        },
-        {
-          "version": "4.1.4",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-07-2026/VDIT_4.1.4_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-07-16",
-          "size": 225775085
-        },
-        {
-          "version": "4.1.3",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-07-2026/VDIT_4.1.3_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-07-15",
-          "size": 225775529
-        },
-        {
-          "version": "4.1.2",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-06-2026/VDIT_4.1.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-06-27",
-          "size": 225188337
-        },
-        {
-          "version": "4.1.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-06-2026/VDIT_4.1.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-06-15",
-          "size": 224955813
-        },
-        {
-          "version": "4.1.0",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/10-06-2026/VDIT_4.1.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-06-10",
-          "size": 203318495
-        },
-        {
-          "version": "4.0.2",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-05-2026/VDIT_4.0.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-05-21",
-          "size": 222954612
-        },
-        {
-          "version": "4.0.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/08-05-2026/VDIT_4.0.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-05-08",
-          "size": 223933102
-        }
-      ],
-      "_sourceURL": "https://repository.apptesters.org"
     },
     {
       "name": "Vesper",
@@ -123411,32 +123730,6 @@
       "localizedDescription": ""
     },
     {
-      "name": "Photomath",
-      "bundleIdentifier": "com.microblink.PhotoMath",
-      "developerName": "IPA Strong",
-      "version": "8.47.0",
-      "versionDate": "2026-10-16T14:53:19.045229+00:00",
-      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/photomath-v8.47.0-subscription-unlocked-patched",
-      "size": 19837223,
-      "iconURL": "https://play-lh.googleusercontent.com/Ma_HEbK1LzEoayR0tE0ZXqLopug69-dPspfCV36zzHOSuC0_i6mu5ulKz1eY7en-UM4",
-      "localizedDescription": "",
-      "versions": [
-        {
-          "version": "8.47.0",
-          "date": "2026-10-16T14:53:19.045229+00:00",
-          "downloadURL": "https://dl.ikiraplus.workers.dev/dl/photomath-v8.47.0-subscription-unlocked-patched",
-          "size": 19837223,
-          "sha256": "346dc3ff40a2ea929414a8a19d123a7edbfb1796490142ecd834bf5128898a90",
-          "buildVersion": "0",
-          "minOSVersion": "14.0"
-        }
-      ],
-      "sha256": "346dc3ff40a2ea929414a8a19d123a7edbfb1796490142ecd834bf5128898a90",
-      "_sourceURL": "local",
-      "_addedFromLink": true,
-      "minOSVersion": "14.0"
-    },
-    {
       "id": "APP-4337828919",
       "name": "PinaTv Pro",
       "bundleIdentifier": "com.kevin.pinatv",
@@ -148126,283 +148419,6 @@
         }
       ],
       "_sourceURL": "https://ipa.thuthuatjb.com/repo"
-    },
-    {
-      "name": "Delta",
-      "bundleIdentifier": "com.rileytestut.Delta.Beta",
-      "developerName": "Riley Testut",
-      "subtitle": "Classic games in your pocket.",
-      "versions": [
-        {
-          "version": "2.0.4",
-          "marketingVersion": "2.0b5 (163)",
-          "buildVersion": "163",
-          "date": "2026-07-28T13:00:00-04:00",
-          "localizedDescription": "NEW\n\nCustom Fast Forward\n• Change the preferred Fast Forward speed per-system and per-game\n• Long-press the Fast Forward button from the Pause Menu to adjust speed\n\nAnimated Controller Skins\n• Adds support for controller skins with animated buttons\n• New, official animated GBA skin by Caroline Moore\n\nAudio Settings\n• New audio settings to determine how Delta handles other apps' audio\n• \"Mix with Other Audio\" keeps your music or podcasts playing during games\n• \"Pause Other Audio\" silences everything else when a game starts\n\nAdjustable Screen Position\n• Long-press the game screen to adjust its position when a controller is connected\n\nIMPROVED\n• Graduated RetroAchievements from Experimental Features\n• Moved Online Multiplayer from Nintendo DS Core settings to top-level settings\n• Added option to move Home and Resume buttons to top of Pause Menu\n• Redesigned controller input mapping screen for game controllers and keyboards\n• Added the ability to delete save states in bulk\n• Automatically sync favorites between devices\n\nFIXED\n• Fixed error when loading RetroAchievements account information",
-          "downloadURL": "https://www.patreon.com/file?h=105173733&m=707106638",
-          "size": 198680846,
-          "minOSVersion": "17.4"
-        },
-        {
-          "version": "2.0.3",
-          "marketingVersion": "2.0b4 (161)",
-          "buildVersion": "161",
-          "date": "2026-06-03T14:00:00-04:00",
-          "localizedDescription": "NEW\n\nRedesigned Settings\n• Reorganizes settings into more easily navigable hierarchy\n• Icons help differentiate top-level settings\n• Access all settings options more quickly and intuitively\n\nEpilogue GB/SN Operator Support (thanks Epilogue!)\n• Connect game cartridges directly to your iPhone/iPad and play them natively\n• Reads and writes save files to cartridge\n• Supports GBC/GBA and SNES games (respectively)\n• Blowing into cartridges optional\n\nCheats\n• Fully redesigned cheats screen for Liquid Glass\n• Choose icons from a wide selection for added personalization\n\nIMPROVED\n• Removed “Import from iTunes” game import option\n• Changed “Open Games in New Window” setting to be off by default\n\nFIXED\n• Fixed SNES audio crackling\n• Fixed NES games occasionally opening to a black screen",
-          "downloadURL": "https://www.patreon.com/file?h=105173733&m=675009727",
-          "size": 198892266,
-          "minOSVersion": "17.4"
-        },
-        {
-          "version": "2.0.2",
-          "marketingVersion": "2.0b3 (159)",
-          "buildVersion": "159",
-          "date": "2026-04-02T15:00:00-04:00",
-          "localizedDescription": "NEW\n\nRecents & Favorites\n• New \"Recently Played\" and \"Favorites\" pages in Game Library\n• See all your recent games in the order you last played them\n• Add games to \"Favorites\" via long-press for easy access\n\nRedesigned Pause Menu\n• Fully redesigned & animated pause menu with Liquid Glass on iOS 26\n• Change Fast Forward speed per-game by long-pressing Fast Forward button\n\nRetroAchievements\n• View current game progress when launching game (e.g. number of unlocked achievements)\n• View full achievement descriptions by tapping \"Achievement Unlocked\" banners\n• Redesigned banners with more information & Liquid Glass design (iOS 26+)\n\nIMPROVED\n• Redesigned Game Library page control with icons (e.g. game systems)\n• Updated “What’s New” screen to showcase Delta 2.0 features\n\nFIXED\n• Fixed crash when enabling invalid Genesis cheats\n• Fixed incorrectly parsing some Genesis cheats\n• Fixed incorrect Settings navigation bar insets on iOS 18",
-          "downloadURL": "https://cdn.altstore.io/file/altstore/apps/delta/2_0_b3.ipa",
-          "size": 198703829,
-          "minOSVersion": "17.4"
-        },
-        {
-          "version": "1.7rc",
-          "buildVersion": "134",
-          "date": "2025-03-19T12:00:00-07:00",
-          "localizedDescription": "NEW\n\nRetroAchievements (Experimental Feature)\n• Log in with RetroAchievements to track achievements\n• Supports Hardcore mode (Optional)\n• Supports NES, SNES, and N64 games\n\nIMPROVED\n\n• Added \"Close\" button to What's New screen\n• Changed \"Respect Silent Mode\" default to OFF\n• New \"Follow Us\" footer at bottom of Settings screen\n• Stays connected online up to 30 seconds when entering background\n\nFIXED\n\n• Fixed white screen after (un-)locking device while AirPlaying DS games\n• Fixed ignoring keyboard inputs for non-DS systems\n• Fixed not showing external game controller skin when returning from background\n• Fixed missing label for no chosen controller skin\n• Fixed not asking user to import BIOS before inserting GBA game\n• Fixed not disabling touch screen controller when game controller is connected",
-          "downloadURL": "https://www.patreon.com/file?h=105173733&m=438774591",
-          "size": 196007753,
-          "minOSVersion": "14.0"
-        },
-        {
-          "version": "1.7b5",
-          "buildVersion": "132",
-          "date": "2025-02-24T12:00:00-06:00",
-          "localizedDescription": "NEW\n\n“What's New” Screen\n• Lists new features in latest Delta update\n\nController Case Support\n• Adjust position of pause menu via controller skins\n• Allows using pause menu with cases such as Gamebaby and PlayCase\n• Supports vertical and horizontal insets\n\nIMPROVED\n\nOnline Multiplayer\n• Fetches known WFC servers dynamically\n• Asks user to choose WFC server when first connecting online\n• “Reset WFC Configuration” button to reset WFC-related settings\n\nFIXED\n• Fixed using analog sticks as discrete inputs for controllers with poor calibration (Thanks Ian Clawson!)\n• Fixed not disabling active Fast Forward when connecting online\n• Fixed showing all save states as incompatible for non-DS systems\n• Fixed not showing Reset button when choosing per-game External Controller or AirPlay skins\n• Fixed crash when viewing save states for unsupported system\n• Fixed Hold Button description layout after orientation change",
-          "downloadURL": "https://cdn.altstore.io/file/altstore/apps/delta/1_7_b5.ipa",
-          "size": 195842695,
-          "minOSVersion": "14.0"
-        },
-        {
-          "version": "1.7b4",
-          "buildVersion": "131",
-          "date": "2025-01-30T12:00:00-06:00",
-          "localizedDescription": "NEW\n\nGame Controller Skins\n• Choose skin to use when controller is connected\n• Customize system-wide or per-game\n\nGame Settings\n• New context-menu option to configure per-game settings\n• Disable OpenGL ES 3.0 for specific games (N64)\n\nIMPROVED\n\nOnline Multiplayer (DS)\n• Simplified setup process that doesn't require configuring DNS\n• Choose from known WFC servers in Delta's settings\n• Provide custom DNS for other WFC servers\n\nScreenshots\n• Option always visible in pause menu\n• Take screenshots with game controllers or skins\n• Saves to new \"Delta Screenshots\" album\n\nFIXED\n• Fixed no audio for game previews in silent mode\n• Fixed no \"Reset\" button when choosing landscape skin",
-          "downloadURL": "https://cdn.altstore.io/file/altstore/apps/delta/1_7_b4.ipa",
-          "size": 195593542,
-          "minOSVersion": "14.0"
-        },
-        {
-          "version": "1.7b3",
-          "buildVersion": "129",
-          "date": "2024-12-20T13:00:00-06:00",
-          "localizedDescription": "NEW\n• “Resume” button to easily resume games\n• Additional \"Button Pack\" icons designed by Louie Mantia\n\nIMPROVED\n• Added button to view Online Multiplayer instructions\n• Enable/disable Online Multiplayer via Experimental Features\n\nFIXED\n• Fixed incorrect default mapping for iPad GBC landscape skin",
-          "downloadURL": "https://cdn.altstore.io/file/altstore/apps/delta/1_7_b3.ipa",
-          "size": 195545849,
-          "minOSVersion": "14.0"
-        },
-        {
-          "version": "1.7b2",
-          "buildVersion": "123",
-          "date": "2024-11-05T13:00:00-06:00",
-          "localizedDescription": "This beta fixes N64 games crashing on launch.\n\nPREVIOUS BETA\n\nOnline Multiplayer\n• Play Nintendo DS games online with friends!\n• Connect via 3rd-party Nintendo WFC servers (e.g. Kaeru)\n\nNintendo 64\n• New OpenGL ES 3 renderer fixes many common graphical issues\n• Optionally switch back to OpenGL ES 2 via Experimental Features\n• Custom resolutions\n• Custom texture packs\n\nMisc.\n• Adds dark + tinted variants of primary app icon\n• Fixed misleading “file does not exist” Delta Sync error\n• [iPad] Fixed qutting all games when using multiple scenes",
-          "downloadURL": "https://cdn.altstore.io/file/altstore/apps/delta/1_7_b2.ipa",
-          "size": 87951204,
-          "minOSVersion": "14.0"
-        },
-        {
-          "version": "1.7b1",
-          "buildVersion": "120",
-          "date": "2024-10-23T12:00:00-05:00",
-          "localizedDescription": "NEW\n\nOnline Multiplayer\n• Play Nintendo DS games online with friends!\n• Connect via 3rd-party Nintendo WFC servers (e.g. Kaeru)\n\nNintendo 64\n• New OpenGL ES 3 renderer fixes many common graphical issues\n• Optionally switch back to OpenGL ES 2 via Experimental Features\n• Custom resolutions\n• Custom texture packs\n\nIMPROVED\n• Adds dark + tinted variants of primary app icon\n\nFIXED\n• Fixed misleading “file does not exist” Delta Sync error\n• [iPad] Fixed qutting all games when using multiple scenes",
-          "downloadURL": "https://cdn.altstore.io/file/altstore/apps/delta/1_7_b1.ipa",
-          "size": 88543419,
-          "minOSVersion": "14.0"
-        },
-        {
-          "version": "1.6.3b",
-          "buildVersion": "117",
-          "date": "2024-09-04T12:00:00-05:00",
-          "localizedDescription": "• Fixed not unlocking Experimental Features\n• Fixed misc. visual bugs on iOS 18",
-          "downloadURL": "https://cdn.altstore.io/file/altstore/apps/delta/1_6_3_b.ipa",
-          "size": 87747304,
-          "minOSVersion": "14.0"
-        },
-        {
-          "version": "1.6.2b",
-          "buildVersion": "112",
-          "date": "2024-07-30T12:00:00-05:00",
-          "localizedDescription": "• Fixed occasionally dropping DS touch screen inputs\n• Fixed crash loading certain skins with fallback traits\n• Fixed crash loading certain iPhone skins on iPad\n• Fixed app freezing when AirPlaying\n• Fixed app freezing when rotating device with certain skins",
-          "downloadURL": "https://cdn.altstore.io/file/altstore/apps/delta/1_6_2_b.ipa",
-          "size": 87750164,
-          "minOSVersion": "14.0"
-        },
-        {
-          "version": "1.6.1b",
-          "buildVersion": "106",
-          "date": "2024-07-19T12:00:00-05:00",
-          "localizedDescription": "NEW\n• Supports using iPhone skins on iPad\n• Updated app icon to new logo\n\nFIXED\n• Fixed rare crash when loading DS save states\n• Fixed game controllers not working on visionOS and macOS\n• Fixed hardware keyboard support on macOS\n• Fixed menu button not working on external controllers with remapped menu button\n• Fixed delayed inputs on external controllers with remapped menu button\n• Fixed DS touch screen not responding after updating to iPad version",
-          "downloadURL": "https://cdn.altstore.io/file/altstore/apps/delta/1_6_1_b.ipa",
-          "size": 87750073,
-          "minOSVersion": "14.0"
-        },
-        {
-          "version": "1.6rc",
-          "buildVersion": "96",
-          "date": "2024-06-27T14:00:00-05:00",
-          "localizedDescription": "NEW\n\nHandoff Support\n• Seamlessly switch between iPhone and iPad\n• Continues playing exactly where you left off\n• Supports Delta on Apple Silicon Macs via Mac App Store\n\nSave States\n• View all incompatible screenshots on a separate screen\n• Export save states to import into other emulators\n• Supports sorting by name\n\nMisc.\n• Supports Game Mode on iOS 18+\n• \"Open New Window\" option by long-pressing \"Main Menu\"/\"Close\" on pause screen\n\nIMPROVED\n\nQuick Gestures\n• Added new gestures for Quick Save/Load\n• Quick Save = Double-tap\n• Quick Load = Long-press\n\nController Skins\n• Finalizes iPad controller skin designs\n• UI to choose different Split View/Stage Manager skins\n• Increased DS screen size for default edge-to-edge iPhone landscape skin\n\nExperimental Features\n• UI to choose AirPlay skins\n• \"Skin Debugging\" to toggle \"debug mode\" for skins\n\nFIXED\n\niPad\n• Fixed not recognizing quick gestures on Split View controller\n• Fixed crash when pressing \"Reset Controller Skin\" button\n• Fixed crash opening N64 games in new window with context previews enabled\n• Fixed sometimes showing incorrect skin orientation in split view\n• Fixed loading wrong game after quitting game in another window\n• Fixed potential freeze when opening games in new window",
-          "downloadURL": "https://cdn.altstore.io/file/altstore/apps/delta/1_6_rc.ipa",
-          "size": 52596261,
-          "minOSVersion": "14.0"
-        },
-        {
-          "version": "1.6b2",
-          "buildVersion": "94",
-          "date": "2024-05-30T11:30:00-05:00",
-          "localizedDescription": "⚠️ This update is incompatible with existing DS save states. Please save normally in-game before updating.\n\nNEW\n\nMultiple Windows\n• Supports multiple windows on iPad\n• Emulate games from multiple systems simultaneously \n• Open new windows via drag & drop, or by long-pressing game then choosing \"Open in New Window\"\n• Automatically pause games when switching windows (optional)\n\nUpdated melonDS core to 0.9.5\n• Improves game compatibility & performance\n• BIOS files are now optional!\n• Supports \"inserting\" GBA games into DS dual-slot\n• Increased fast forward speed to 3x (A15 processor or later)\n\n“Support External Displays” Setting\n• Control whether Delta shows games full screen on external displays\n• Disable to use multiple windows on external display with Stage Manager\n\nFIXED\n• Fixed clipped context menu preview for games\n• Fixed exporting save file without file extension\n• Fixed interface rotating when playing WarioWare: Twisted!\n• [iPad] Fixed not adjusting DS screens for split view keyboard\n• [iPad] Fixed hidden save state thumbnails when in compact size class",
-          "downloadURL": "https://cdn.altstore.io/file/altstore/apps/delta/1_6_b2.ipa",
-          "size": 48566277,
-          "minOSVersion": "14.0"
-        },
-        {
-          "version": "1.6b",
-          "buildVersion": "91",
-          "date": "2024-05-01T08:30:00-05:00",
-          "localizedDescription": "Quick Gestures\n• Hold menu button to perform actions via gestures\n• Fast Forward: Swipe left or right\n• Hold Button: Tap buttons to hold/release",
-          "downloadURL": "https://cdn.altstore.io/file/altstore/apps/delta/1_6_b.ipa",
-          "size": 46968202,
-          "minOSVersion": "14.0"
-        },
-        {
-          "version": "1.5rc2",
-          "buildVersion": "85",
-          "date": "2024-01-22T12:05:17-06:00",
-          "localizedDescription": "• Fixed issue where Delta could accidentally overwrite local data with old remote data\n• Fixed incorrectly marking some game saves as conflicted during initial sync\n• Fixed accidentally signing-out after signing-in to previous Google Drive account",
-          "downloadURL": "https://cdn.altstore.io/file/altstore/apps/delta/1_5_rc2.ipa",
-          "size": 48460652,
-          "sha256": "e20ff1939c33cbc6ac71e1c307f45094dc1877a32e0dd5df28094aa4f6911e60",
-          "minOSVersion": "14.0"
-        },
-        {
-          "version": "1.5rc",
-          "buildVersion": "78",
-          "date": "2023-11-21T12:30:00-06:00",
-          "localizedDescription": "IMPROVED\n\nDelta Sync\n• Added detailed logging to help debug issues\n• View complete error log via \"Export Error Log\" option in Settings\n\nMisc.\n• Shows AirPlay icon when AirPlaying\n• Added \"Learn More\" links to FAQ thoughout app\n\nFIXED\n\niPad\n• Fixed crash when changing DS emulator core\n• Fixed incorrectly indented rows on MelonDS core settings screen\n• Fixed not rounding last visible row in MelonDS core settings",
-          "downloadURL": "https://cdn.altstore.io/file/altstore/apps/delta/1_5_rc.ipa",
-          "size": 48457781,
-          "sha256": "bab95dd1801bcca1b8eab18b15abe7992550630b3e965e824c7fd34f793f63e1",
-          "minOSVersion": "14.0"
-        },
-        {
-          "version": "1.5b4",
-          "date": "2023-08-12T15:30:00-05:00",
-          "localizedDescription": "⚠️ This beta fixes a critical bug that could cause corrupted save files and save states to be uploaded to Google Drive/Dropbox.\n\nPlease update ASAP to ensure you don't lose any data. You can read more about this bug fix in today's Patreon post.",
-          "downloadURL": "https://cdn.altstore.io/file/altstore/apps/delta/1_5_b4.ipa",
-          "size": 48565606,
-          "sha256": "ca271c488da8399f977d6d5b5051a92d01431374ca545fb952e9b62256629d58",
-          "minOSVersion": "14.0"
-        },
-        {
-          "version": "1.5b3",
-          "date": "2023-07-18T12:30:00-05:00",
-          "localizedDescription": "IMPROVED\n\nDelta Sync\n• Automatically resolves cheat + controller skin sync conflicts\n• Syncs game save hash between devices to prevent redundant uploads\n• Displays activity indicator when signing in\n• Delays seeding sync database until initial sync\n• Uses local modification date when uploading changes\n• Signs out from previous service when switching services\n• Improved error message when remote storage is out of free space (Dropbox only)\n\nSettings\n• Revised UI to use modern \"inset grouped\" style\n• Uses large titles where appropriate\n\nMisc.\n• Replaces `UIDocumentBrowserViewController` with `UIDocumentPickerViewController` on iOS 17+\n• Skips checksum verification when importing zipped games\n\nFIXED\n\nDelta Sync\n• Fixed incorrect mass conflicts when signing out then back in\n• Fixed “Harmony.sqlite couldn’t be opened” sync error when there are more than 1000 games\n• Fixed “file does not exist” sync error after restoring previous version\n• Fixed Delta Sync switch remaining OFF if users cancels \"Disable Syncing?\" warning alert\n• Fixed missing references to remote files when signing out then back in\n• Fixed queued syncs sometimes fetching outdated changes\n• Fixed accidentally using wrong account when signed-in to multiple services\n\niPad\n• Fixed crash when resolving Delta Sync merge conflicts\n• Fixed crash when disabling Delta Sync or switching services\n\nExperimental Features\n• Fixed saving screenshots to Photos with .limited authorization\n• Fixed saving screenshots to Photos as JPEGs\n\nMisc.\n• Fixed accidentally deleting Games directory during sync in rare circumstances\n• Fixed crash loading save states on iOS 17\n• Fixed displaying system name in dark text when remapping inputs on iOS 17",
-          "downloadURL": "https://cdn.altstore.io/file/altstore/apps/delta/1_5_b3.ipa",
-          "size": 46221055,
-          "sha256": "7e809c5d3193f7e85232dcc649d72c24496d78e42111b070fe413d3437578e12",
-          "minOSVersion": "14.0"
-        },
-        {
-          "version": "1.5b2",
-          "date": "2023-05-03T14:00:00-05:00",
-          "localizedDescription": "NEW\n\nAirPlay Support \n• Stream your games to the big screen with AirPlay\n• [DS] Optionally AirPlay just top screen for true multi-screen experience\n\nExperimental Features\n• New section in Settings for features by third-party contributors\n• Features are WIP and should be used at user’s discretion\n\nInitial Experimental Features\n• Show Status Bar: View time/WiFi/battery while playing a game (@LitRitt)\n• Game Screenshots: Take screenshots from pause menu (@LitRitt)\n• In-Game Notifications: Show pop-up alerts when performing certain actions (@LitRitt)\n• AirPlay Skins: Customize appearance of games on TV when AirPlaying\n• Variable Fast Forward: Change the Fast Forward speed per-system\n\nFIXED\n• Fixed translucent controller skins resetting opacity after rotating device\n• Fixed incorrect thumbstick size after rotating device",
-          "downloadURL": "https://cdn.altstore.io/file/altstore/apps/delta/1_5_b2.ipa",
-          "size": 46120077,
-          "minOSVersion": "14.0"
-        }
-      ],
-      "version": "2.0.4",
-      "versionDate": "2026-07-28T13:00:00-04:00",
-      "versionDescription": "\"Contributors\" screen\n• See everyone who has contributed to Delta\n• View associated Pull Requests for contributed features\n\nPREVIOUS BETA\n• “Respect Silent Mode” setting\n• Automatically mutes game audio if another app is playing audio\n• Browse CheatBase for all known cheats for games (thanks Noah Keck @horn978)",
-      "downloadURL": "https://www.patreon.com/file?h=105173733&m=707106638",
-      "localizedDescription": "The next consoles for Delta are coming: this beta version of Delta brings support for playing Nintendo DS and Sega Genesis games!\n\nPlease report any issues you find to support@altstore.io. Thanks!",
-      "iconURL": "https://cdn.altstore.io/file/altstore/images/delta/Delta4.png",
-      "tintColor": "8A28F7",
-      "size": 198680846,
-      "category": "games",
-      "beta": true,
-      "patreon": {
-        "pledge": 3,
-        "benefit": "1186336"
-      },
-      "permissions": [
-        {
-          "type": "photos",
-          "usageDescription": "Allows Delta to use images from your Photo Library as game artwork."
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [
-          {
-            "name": "get-task-allow"
-          }
-        ],
-        "privacy": [
-          {
-            "name": "Microphone",
-            "usageDescription": "Delta uses your microphone to emulate the Nintendo DS microphone."
-          },
-          {
-            "name": "LocalNetwork",
-            "usageDescription": "Delta uses the local network to communicate with AltServer and enable JIT."
-          },
-          {
-            "name": "PhotoLibrary",
-            "usageDescription": "Allows Delta to use images from your Photo Library as game artwork."
-          }
-        ]
-      },
-      "screenshotURLs": [
-        "https://user-images.githubusercontent.com/705880/65600448-f7d9be00-df54-11e9-9e3e-d4c31296da94.PNG",
-        "https://user-images.githubusercontent.com/705880/65601942-e5ad4f00-df57-11e9-9255-1463e0296e46.PNG",
-        "https://user-images.githubusercontent.com/705880/65813009-f2ae8600-e183-11e9-9eb7-704effc11173.png",
-        "https://user-images.githubusercontent.com/705880/65601117-58b5c600-df56-11e9-9c19-9a5ba5da54cf.PNG"
-      ],
-      "screenshots": {
-        "iphone": [
-          "https://user-images.githubusercontent.com/705880/277049094-8458028c-92e0-4e73-99de-5dd865b76487.PNG",
-          "https://user-images.githubusercontent.com/705880/277049686-975b9d37-140a-481e-8668-765acdd1dedb.PNG",
-          {
-            "imageURL": "https://user-images.githubusercontent.com/705880/277049716-5d043eac-4cf2-46c9-8dfe-daefc40d0325.PNG",
-            "width": 2556,
-            "height": 1179
-          },
-          "https://user-images.githubusercontent.com/705880/277049074-15aabbaf-58f3-4609-b578-60ac7539ced0.PNG",
-          "https://user-images.githubusercontent.com/705880/277049050-e0d90f06-1f38-4736-8c1b-d41ec45d201b.PNG",
-          "https://user-images.githubusercontent.com/705880/277049040-a4dcc9d0-561d-4f1e-87cb-ff03e542a6d7.png"
-        ],
-        "ipad": [
-          {
-            "imageURL": "https://user-images.githubusercontent.com/705880/277048798-173ff326-9e75-4945-90ef-c3c5390c5fa0.png",
-            "width": 2545,
-            "height": 1908
-          },
-          {
-            "imageURL": "https://user-images.githubusercontent.com/705880/277048830-2ea042ff-6534-4663-96a6-8403065a9247.PNG",
-            "width": 2746,
-            "height": 1908
-          },
-          {
-            "imageURL": "https://user-images.githubusercontent.com/705880/277048870-e206ffb8-8889-42f3-86f7-612e78fe3291.PNG",
-            "width": 1908,
-            "height": 2746
-          },
-          {
-            "imageURL": "https://user-images.githubusercontent.com/705880/277048876-d522a486-7765-4099-a9a0-5229b0166061.PNG",
-            "width": 1908,
-            "height": 2746
-          }
-        ]
-      },
-      "_sourceURL": "https://cdn.altstore.io/file/altstore/apps.json",
-      "minOSVersion": "17.4"
     },
     {
       "id": "APP-3411088033",
@@ -453672,7 +453688,7 @@
   "subtitle": "ipastrong",
   "description": "Merged IPA sources",
   "permissions": [],
-  "lastUpdated": "2026-10-16T14:53:19.045229+00:00",
+  "lastUpdated": "2026-10-16T18:49:42.440711+00:00",
   "iconURL": "https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/source-icon.jpeg",
   "META": {
     "repoName": "ipastrong",

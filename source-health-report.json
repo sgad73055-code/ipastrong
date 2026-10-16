@@ -1,16 +1,15 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 392,
-    "restricted": 2,
-    "missing": 3,
-    "not_ipa": 2,
-    "temporary": 1
+    "ok": 395,
+    "missing": 2,
+    "temporary": 1,
+    "not_ipa": 2
   },
   "repaired": [],
   "unresolved": [],
-  "date": "2026-10-16T14:29:05.933394+00:00",
-  "inputApps": 8328,
+  "date": "2026-10-16T18:50:19.016949+00:00",
+  "inputApps": 8330,
   "outputApps": 8330,
   "preservedApps": 0,
   "recoveredPublishedSource": false,
@@ -19,7 +18,7 @@
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 9548,
+        "apps": 9549,
         "error": null
       },
       {
@@ -183,7 +182,7 @@
         "error": null
       }
     ],
-    "inputRecords": 38421,
+    "inputRecords": 38422,
     "outputApps": 8330,
     "rejectedRecords": 166
   }
