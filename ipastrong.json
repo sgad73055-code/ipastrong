@@ -123411,29 +123411,30 @@
       "localizedDescription": ""
     },
     {
-      "id": "APP-1813764936",
       "name": "Photomath",
       "bundleIdentifier": "com.microblink.PhotoMath",
-      "bundleId": "com.microblink.PhotoMath",
+      "developerName": "IPA Strong",
+      "version": "8.47.0",
+      "versionDate": "2026-10-16T14:53:19.045229+00:00",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/photomath-v8.47.0-subscription-unlocked-patched",
+      "size": 19837223,
       "iconURL": "https://play-lh.googleusercontent.com/Ma_HEbK1LzEoayR0tE0ZXqLopug69-dPspfCV36zzHOSuC0_i6mu5ulKz1eY7en-UM4",
-      "category": "دراسة وذكاء اصطناعي",
+      "localizedDescription": "",
       "versions": [
         {
           "version": "8.47.0",
+          "date": "2026-10-16T14:53:19.045229+00:00",
           "downloadURL": "https://dl.ikiraplus.workers.dev/dl/photomath-v8.47.0-subscription-unlocked-patched",
-          "date": "2026-09-02",
-          "size": 19818086
+          "size": 19837223,
+          "sha256": "346dc3ff40a2ea929414a8a19d123a7edbfb1796490142ecd834bf5128898a90",
+          "buildVersion": "0",
+          "minOSVersion": "14.0"
         }
       ],
-      "version": "8.47.0",
-      "versionDate": "2026-09-02",
-      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/photomath-v8.47.0-subscription-unlocked-patched",
-      "ipaUrl": "https://dl.ikiraplus.workers.dev/dl/photomath-v8.47.0-subscription-unlocked-patched",
-      "size": 19818086,
-      "addedAt": "2026-09-02",
-      "updatedAt": "2026-09-02",
+      "sha256": "346dc3ff40a2ea929414a8a19d123a7edbfb1796490142ecd834bf5128898a90",
       "_sourceURL": "local",
-      "localizedDescription": ""
+      "_addedFromLink": true,
+      "minOSVersion": "14.0"
     },
     {
       "id": "APP-4337828919",
@@ -453671,7 +453672,7 @@
   "subtitle": "ipastrong",
   "description": "Merged IPA sources",
   "permissions": [],
-  "lastUpdated": "2026-10-16T14:28:33.051544+00:00",
+  "lastUpdated": "2026-10-16T14:53:19.045229+00:00",
   "iconURL": "https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/source-icon.jpeg",
   "META": {
     "repoName": "ipastrong",
