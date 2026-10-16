@@ -453598,7 +453598,7 @@
       "bundleIdentifier": "com.rovio.AngryBirdsSpace",
       "category": "Games",
       "developerName": "Rovio",
-      "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Angry.Birds.Space.v2.2.13.ipa",
+      "downloadURL": "https://archive.org/download/20240608_20240608_1945/Angry%20Birds%20Space/Angry%20Birds%20Space%202.2.13%2064Bit.ipa",
       "iconURL": "https://img.ipa4fun.com/63/2d/06/501968250-logo.webp",
       "localizedDescription": "The #1 mobile game of all time blasts off into space!\n\nPlay over 300 interstellar levels across 10 planets – including our very own Solar System!\n\nWhether it’s the icy orbs of Cold Cuts, the volcanic explosiveness of Red Planet, Utopia – a planet made entirely of junk food, or even our own Solar System, each episode offers intergalactic fun at every turn! And the low-gravity environment of space results in spectacular gameplay ranging from slow-motion puzzles to lightspeed destruction. With brand new birds, special abilities, and a whole galaxy to explore, the sky is no longer the limit!\n\n-----\n\n“Intergalactic phenomenon worth every penny” – AppCraver\n\n“Takes the fundamental physics-based flinging of the original and turns it on its head... It's satisfying, yet completely familiar, and is heaps of pig-smashing fun.” – Gamespot\n\n“Anyone burnt out on vanilla bird flinging will enjoy the game's out-of-this-world adventure.” -- IGN\n\n-----\n\n- Over 300 interstellar levels!\n- New playable characters!\n- Unique special abilities for each bird!\n- Zero-gravity space adventures!\n- Trick shots using planets’ gravity!\n- Hidden bonus levels!\n- Beautifully detailed backgrounds!\n- Daily Missions!\n\n-----\n\nJoin the global phenomenon as it goes galactic!\n\nBecome a fan of Angry Birds on Facebook:\nhttp://facebook.angrybirds.com\n\nFollow us on Twitter:\nhttp://twitter.angrybirds.com\n\nTerms of Use: https://www.rovio.com/terms-of-service\nPrivacy Policy: https://www.rovio.com/privacy\n\nThis application may require internet connectivity and subsequent data transfer charges may apply.\n\n\nImportant Message for Parents\n\nThis game may include:\n- Direct links to social networking websites that are intended for an audience over the age of 13.\n- Direct links to the internet that can take players away from the game with the potential to browse any web page.\n- Advertising of Rovio products and also products from select partners.\n- The option to make in-app purchases. The bill payer should always be consulted beforehand.",
       "name": "Angry Birds Space",
@@ -453609,7 +453609,7 @@
         "https://img.ipa4fun.com/c2/46/8a/499511971-screenshot-4.webp",
         "https://img.ipa4fun.com/c2/46/8a/499511971-screenshot-5.webp"
       ],
-      "size": 49900000,
+      "size": 136799357,
       "subtitle": "Removed from the App Store!",
       "tintColor": "06253f",
       "version": "2.2.13",
@@ -453618,13 +453618,17 @@
       "versions": [
         {
           "date": "2018-05-25",
-          "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Angry.Birds.Space.v2.2.13.ipa",
+          "downloadURL": "https://archive.org/download/20240608_20240608_1945/Angry%20Birds%20Space/Angry%20Birds%20Space%202.2.13%2064Bit.ipa",
           "localizedDescription": "• We addressed some minor issues in order to improve the user experience.",
-          "size": 49900000,
-          "version": "2.2.13"
+          "size": 136799357,
+          "version": "2.2.13",
+          "minOSVersion": "9.0",
+          "sha256": "f982165e368e4ab597e2aefd0e559baad115e54196e9953ef42d135062ed34cd"
         }
       ],
-      "_sourceURL": "https://wuxu1.github.io/wuxu-complete.json"
+      "_sourceURL": "https://wuxu1.github.io/wuxu-complete.json",
+      "minOSVersion": "9.0",
+      "sha256": "f982165e368e4ab597e2aefd0e559baad115e54196e9953ef42d135062ed34cd"
     },
     {
       "beta": false,
@@ -453679,6 +453683,12 @@
       "size": 155831283,
       "minOSVersion": "12.0",
       "sha256": "1edf0b163c15c529ba18d0a7f7083e3e1f2a5f5b65d4a7f4e8f50ecac2109776"
+    },
+    "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Angry.Birds.Space.v2.2.13.ipa": {
+      "downloadURL": "https://archive.org/download/20240608_20240608_1945/Angry%20Birds%20Space/Angry%20Birds%20Space%202.2.13%2064Bit.ipa",
+      "size": 136799357,
+      "minOSVersion": "9.0",
+      "sha256": "f982165e368e4ab597e2aefd0e559baad115e54196e9953ef42d135062ed34cd"
     }
   }
 }
