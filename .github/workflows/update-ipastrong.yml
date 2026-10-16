@@ -28,7 +28,15 @@ jobs:
         with:
           python-version: '3.12'
       - name: Test maintenance protections
-        run: python3 -m unittest discover -s tests -p 'test_source_guard.py' -v
+        run: |
+          if [ -f tests/test_source_guard.py ]; then
+            python3 -m unittest discover -s tests -p 'test_source_guard.py' -v
+          elif [ -f test_source_guard.py ]; then
+            python3 -m unittest discover -s . -p 'test_source_guard.py' -v
+          else
+            echo 'Missing test_source_guard.py in tests/ or repository root'
+            exit 1
+          fi
       - name: Refresh and repair
         if: github.event.inputs.action != 'rollback'
         run: python3 source_guard.py --audit-limit 400
