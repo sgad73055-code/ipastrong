@@ -1,0 +1,36 @@
+{
+  "automatedTests": 32,
+  "testsPassed": 32,
+  "liveRefresh": {
+    "successfulSources": 29,
+    "inputApps": 8328,
+    "outputApps": 8328,
+    "checkedDownloads": 8,
+    "downloadOutcomes": {
+      "ok": 8
+    },
+    "removedApps": 0
+  },
+  "liveSecondAudit": {
+    "checked": 4,
+    "outcomes": {
+      "ok": 4
+    },
+    "repaired": [],
+    "unresolved": [],
+    "date": "2026-10-16T14:10:01.328622+00:00",
+    "inputApps": 8328,
+    "outputApps": 8328,
+    "preservedApps": 0,
+    "recoveredPublishedSource": false,
+    "removedApps": 0,
+    "upstream": {
+      "mode": "audit-only"
+    }
+  },
+  "limits": [
+    "GitHub-hosted workflow has not run yet; install and Run workflow to verify account permissions.",
+    "No installation or signing tests on iPhone.",
+    "Full 8328-link audit is scheduled in rotating batches, not completed locally."
+  ]
+}

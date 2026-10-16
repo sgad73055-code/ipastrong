@@ -1,0 +1,17 @@
+{
+  "checked": 4,
+  "outcomes": {
+    "ok": 4
+  },
+  "repaired": [],
+  "unresolved": [],
+  "date": "2026-10-16T14:10:01.328622+00:00",
+  "inputApps": 8328,
+  "outputApps": 8328,
+  "preservedApps": 0,
+  "recoveredPublishedSource": false,
+  "removedApps": 0,
+  "upstream": {
+    "mode": "audit-only"
+  }
+}
