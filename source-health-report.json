@@ -1,17 +1,16 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 395,
-    "missing": 2,
-    "temporary": 1,
-    "not_ipa": 2
+    "ok": 398,
+    "missing": 1,
+    "not_ipa": 1
   },
   "repaired": [],
   "unresolved": [],
-  "date": "2026-10-16T18:50:19.016949+00:00",
+  "date": "2026-10-17T00:55:19.751483+00:00",
   "inputApps": 8330,
-  "outputApps": 8330,
-  "preservedApps": 0,
+  "outputApps": 8331,
+  "preservedApps": 3,
   "recoveredPublishedSource": false,
   "removedApps": 0,
   "upstream": {
@@ -23,7 +22,7 @@
       },
       {
         "source": "https://ipa.cypwn.xyz/cypwn.json",
-        "apps": 207,
+        "apps": 210,
         "error": null
       },
       {
@@ -182,8 +181,8 @@
         "error": null
       }
     ],
-    "inputRecords": 38422,
-    "outputApps": 8330,
+    "inputRecords": 38425,
+    "outputApps": 8328,
     "rejectedRecords": 166
   }
 }
