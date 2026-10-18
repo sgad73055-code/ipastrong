@@ -23,6 +23,32 @@
   ],
   "apps": [
     {
+      "name": "StageStar ✨",
+      "bundleIdentifier": "com.StageStar.app",
+      "developerName": "IPA Strong",
+      "version": "2.5.1",
+      "versionDate": "2026-10-18T19:59:22.123936+00:00",
+      "downloadURL": "https://file.ipaomtk.com/stagestar/StageSta-IPAOMTK.COM.ipa",
+      "size": 105788049,
+      "iconURL": "https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/source-icon.jpeg",
+      "localizedDescription": "",
+      "versions": [
+        {
+          "version": "2.5.1",
+          "date": "2026-10-18T19:59:22.123936+00:00",
+          "downloadURL": "https://file.ipaomtk.com/stagestar/StageSta-IPAOMTK.COM.ipa",
+          "size": 105788049,
+          "sha256": "1fb2b9e65825af55e6c865fa815815cca129a6df6b85cc8957ec7d6564ba737c",
+          "buildVersion": "398",
+          "minOSVersion": "16.4"
+        }
+      ],
+      "sha256": "1fb2b9e65825af55e6c865fa815815cca129a6df6b85cc8957ec7d6564ba737c",
+      "_sourceURL": "local",
+      "_addedFromLink": true,
+      "minOSVersion": "16.4"
+    },
+    {
       "name": "Instagram",
       "bundleIdentifier": "com.burbn.instagram",
       "developerName": "@ipavault",
@@ -453671,7 +453697,7 @@
   "subtitle": "ipastrong",
   "description": "Merged IPA sources",
   "permissions": [],
-  "lastUpdated": "2026-10-16T14:28:33.051544+00:00",
+  "lastUpdated": "2026-10-18T19:59:22.123936+00:00",
   "iconURL": "https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/source-icon.jpeg",
   "META": {
     "repoName": "ipastrong",
