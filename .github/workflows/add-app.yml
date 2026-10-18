@@ -85,6 +85,9 @@ jobs:
           fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add ipastrong.json backups/ipastrong.last-good.json.gz assets/app-icons/
+          git add ipastrong.json backups/ipastrong.last-good.json.gz
+          if [ -d assets/app-icons ]; then
+            git add assets/app-icons/
+          fi
           git commit -m 'Automatically add validated IPA to IPA Strong'
           git push origin HEAD:main
