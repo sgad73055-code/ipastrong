@@ -1,0 +1,19 @@
+name: StageSta IPA metadata inspection
+on:
+  pull_request:
+    paths:
+      - 'tools/ipa_metadata.py'
+      - '.github/workflows/stagesta-metadata.yml'
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Read IPA metadata (no catalog writes)
+        run: python3 tools/ipa_metadata.py 'https://file.ipaomtk.com/stagestar/StageSta-IPAOMTK.COM.ipa'
