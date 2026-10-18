@@ -23,6 +23,32 @@
   ],
   "apps": [
     {
+      "name": "Drop Away",
+      "bundleIdentifier": "com.brewgames.dropaway",
+      "developerName": "IPA Strong",
+      "version": "1.32.1",
+      "versionDate": "2026-10-18T20:18:08.051073+00:00",
+      "downloadURL": "https://file.ipaomtk.com/Drop-Away-Color-Puzzle/Drop-Away-Color-Puzzle-ipaomtk.com.ipa",
+      "size": 191899623,
+      "iconURL": "https://ipaomtk.com/wp-content/uploads/2026/03/Drop-Away-Color-Puzzle-IPA-v1.16.2-For-iOS-150x150.webp",
+      "localizedDescription": "",
+      "versions": [
+        {
+          "version": "1.32.1",
+          "date": "2026-10-18T20:18:08.051073+00:00",
+          "downloadURL": "https://file.ipaomtk.com/Drop-Away-Color-Puzzle/Drop-Away-Color-Puzzle-ipaomtk.com.ipa",
+          "size": 191899623,
+          "sha256": "0234aacd45d9d1696b051424c852d70b37b9dcbbcac7bc425a3f5728999fec78",
+          "buildVersion": "2",
+          "minOSVersion": "15.0"
+        }
+      ],
+      "sha256": "0234aacd45d9d1696b051424c852d70b37b9dcbbcac7bc425a3f5728999fec78",
+      "_sourceURL": "local",
+      "_addedFromLink": true,
+      "minOSVersion": "15.0"
+    },
+    {
       "name": "StageStar ✨",
       "bundleIdentifier": "com.StageStar.app",
       "developerName": "IPA Strong",
@@ -453697,7 +453723,7 @@
   "subtitle": "ipastrong",
   "description": "Merged IPA sources",
   "permissions": [],
-  "lastUpdated": "2026-10-18T19:59:22.123936+00:00",
+  "lastUpdated": "2026-10-18T20:18:08.051073+00:00",
   "iconURL": "https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/source-icon.jpeg",
   "META": {
     "repoName": "ipastrong",
