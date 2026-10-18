@@ -1,14 +1,14 @@
-name: Add app from link
+name: Add app from link (review first)
 
 on:
   workflow_dispatch:
     inputs:
       url:
-        description: Direct public HTTPS IPA download URL (required)
+        description: Direct public HTTPS IPA download URL
         required: true
         type: string
       name:
-        description: App or tweak name (optional)
+        description: App name (optional)
         required: false
         type: string
       description:
@@ -22,34 +22,75 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 concurrency:
-  group: ipastrong-source-writer
+  group: ipa-strong-import-review
   cancel-in-progress: false
 
 jobs:
-  add:
+  propose:
     runs-on: ubuntu-latest
     timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Test importer
+      - name: Verify importer
         run: python3 add_app_from_url.py --self-test
-      - name: Download metadata and update source
+      - name: Validate source before changing anything
+        run: |
+          python3 - <<'PY'
+          import json
+          import source_guard
+          with open('ipastrong.json', encoding='utf-8') as f:
+              source = json.load(f)
+          source_guard.validate(source)
+          count = len(source['apps'])
+          if count < 100:
+              raise SystemExit(f'Refusing to update unexpectedly small catalog: {count} apps')
+          print(f'Validated existing catalog with {count} apps')
+          PY
+      - name: Extract IPA metadata and prepare change
         env:
           APP_URL: ${{ inputs.url }}
           APP_NAME: ${{ inputs.name }}
           APP_DESCRIPTION: ${{ inputs.description }}
           APP_ICON: ${{ inputs.icon }}
         run: python3 add_app_from_url.py
-      - name: Publish updated source
+      - name: Verify catalog was preserved
         run: |
+          python3 - <<'PY'
+          import json,subprocess
+          before=json.loads(subprocess.check_output(['git','show','HEAD:ipastrong.json']))
+          with open('ipastrong.json',encoding='utf-8') as f: after=json.load(f)
+          previous=before['apps']
+          updated=after['apps']
+          if len(updated)<len(previous):
+              raise SystemExit('Catalog shrank: refusing to propose update')
+          original_urls={a.get('downloadURL') for a in previous}
+          updated_urls={a.get('downloadURL') for a in updated}
+          if not original_urls.issubset(updated_urls):
+              raise SystemExit('Existing download URLs disappeared: refusing to propose update')
+          print(f'Catalog preserved: {len(previous)} -> {len(updated)} apps')
+          PY
+      - name: Create review pull request (never push to main)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- ipastrong.json; then
+            echo 'No changes to propose.'
+            exit 0
+          fi
+          BRANCH="automation/review-ipa-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git switch -c "$BRANCH"
           git add ipastrong.json backups/ipastrong.last-good.json.gz
-          if git diff --cached --quiet; then exit 0; fi
-          git commit -m 'Add owner app from download link'
-          git push
+          git commit -m "Propose IPA import for owner review"
+          git push origin "$BRANCH"
+          gh pr create --base main --head "$BRANCH" --title "Review new IPA app import #${GITHUB_RUN_ID}" --body "Automated IPA metadata extraction. Review the change to ipastrong.json before merging. Existing apps are checked for preservation. No changes have been published to main."
