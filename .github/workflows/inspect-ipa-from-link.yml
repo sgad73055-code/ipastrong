@@ -1,0 +1,38 @@
+name: Inspect IPA from link
+
+on:
+  workflow_dispatch:
+    inputs:
+      ipa_url:
+        description: 'Paste a direct public HTTPS IPA download link'
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Inspect IPA without publishing
+        shell: bash
+        env:
+          IPA_URL: ${{ inputs.ipa_url }}
+        run: |
+          set -euo pipefail
+          python3 tools/ipa_metadata.py "$IPA_URL" | tee ipa-metadata-report.json
+      - name: Upload report
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ipa-metadata-report
+          path: ipa-metadata-report.json
+          retention-days: 7
