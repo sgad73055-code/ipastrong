@@ -1,0 +1,34 @@
+name: IPA Strong prepare app metadata
+on:
+  workflow_dispatch:
+    inputs:
+      ipa_url:
+        description: Public direct HTTPS IPA URL
+        required: true
+        type: string
+  pull_request:
+    paths:
+      - '.github/workflows/prepare-ipa-metadata.yml'
+permissions:
+  contents: read
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Inspect IPA and prepare review-only report
+        env:
+          IPA_URL: ${{ github.event_name == 'workflow_dispatch' && inputs.ipa_url || 'https://file.ipaomtk.com/stagestar/StageSta-IPAOMTK.COM.ipa' }}
+        run: |
+          set -o pipefail
+          python3 tools/ipa_metadata.py "$IPA_URL" | tee ipa-metadata-report.json
+      - name: Upload metadata report for review
+        uses: actions/upload-artifact@v4
+        with:
+          name: ipa-metadata-report
+          path: ipa-metadata-report.json
+          retention-days: 7
