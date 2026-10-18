@@ -62,6 +62,42 @@ def inspect(path):
                 'name':str(info.get('CFBundleDisplayName') or info.get('CFBundleName') or bundle),
                 'minOS':str(info.get('MinimumOSVersion',''))}
 
+def extract_icon(path, root, metadata, sha256):
+    """Extract a declared PNG icon when available; never modify the IPA."""
+    with zipfile.ZipFile(path) as archive:
+        plist_names = [n for n in archive.namelist() if n.startswith('Payload/') and n.endswith('.app/Info.plist') and n.count('/') == 2]
+        if len(plist_names) != 1: return ''
+        base = plist_names[0].rsplit('/', 1)[0] + '/'
+        info = plistlib.loads(archive.read(plist_names[0]))
+        names = []
+        for icons in (info.get('CFBundleIcons', {}), info.get('CFBundleIcons~ipad', {})):
+            if not isinstance(icons, dict): continue
+            primary = icons.get('CFBundlePrimaryIcon', {})
+            if isinstance(primary, dict):
+                names.extend(n for n in primary.get('CFBundleIconFiles', []) if isinstance(n, str))
+                n = primary.get('CFBundleIconName')
+                if isinstance(n, str): names.append(n)
+        candidates = []
+        for item in archive.infolist():
+            n = item.filename
+            if not n.startswith(base) or '/' in n[len(base):] or not n.lower().endswith('.png'):
+                continue
+            if item.file_size > 4 * 1024 * 1024: continue
+            stem = n[len(base):].lower()
+            declared = any(stem.startswith(x.lower().removesuffix('.png')) for x in names)
+            if declared or 'appicon' in stem or 'icon' in stem:
+                candidates.append((0 if declared else 1, -item.file_size, n))
+        for _, _, name in sorted(candidates):
+            data = archive.read(name)
+            if not data.startswith(b'\\x89PNG\\r\\n\\x1a\\n'): continue
+            # Apple optimized PNGs (CgBI) are not standard browser PNGs.
+            if b'CgBI' in data[:48]: continue
+            destination = root / 'assets' / 'app-icons' / (sha256[:24] + '.png')
+            destination.parent.mkdir(parents=True, exist_ok=True)
+            destination.write_bytes(data)
+            return 'https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/assets/app-icons/' + destination.name
+    return ''
+
 def add(source, metadata, url, size, sha256, name='', description='', icon='', date=None):
     check_url(url)
     if icon: check_url(icon)
@@ -135,7 +171,10 @@ def main():
         path=Path(directory)/'app.ipa'
         size,sha=download(url,path)
         metadata=inspect(path)
-        result=add(source,metadata,url,size,sha,os.environ.get('APP_NAME',''),os.environ.get('APP_DESCRIPTION',''),os.environ.get('APP_ICON',''))
+        icon=os.environ.get('APP_ICON','').strip()
+        if not icon:
+            icon=extract_icon(path,root,metadata,sha)
+        result=add(source,metadata,url,size,sha,os.environ.get('APP_NAME',''),os.environ.get('APP_DESCRIPTION',''),icon)
         source_guard.publish(root,old,result)
     print(json.dumps({'added':metadata['name'],'version':metadata['version'],'bytes':size,'apps':len(result['apps'])},ensure_ascii=False))
     # Never embed user-supplied text in workflow command syntax or step-summary Markdown.
