@@ -89,7 +89,7 @@ def extract_icon(path, root, metadata, sha256):
                 candidates.append((0 if declared else 1, -item.file_size, n))
         for _, _, name in sorted(candidates):
             data = archive.read(name)
-            if not data.startswith(b'\\x89PNG\\r\\n\\x1a\\n'): continue
+            if not data.startswith(bytes.fromhex('89504e470d0a1a0a')): continue
             # Apple optimized PNGs (CgBI) are not standard browser PNGs.
             if b'CgBI' in data[:48]: continue
             destination = root / 'assets' / 'app-icons' / (sha256[:24] + '.png')
@@ -147,6 +147,10 @@ class ImportTests(unittest.TestCase):
             p=Path(d)/'test.ipa'
             with zipfile.ZipFile(p,'w') as z:z.writestr('Payload/Test.app/Info.plist',plistlib.dumps({'CFBundleIdentifier':'com.test','CFBundleShortVersionString':'1.0'},fmt=plistlib.FMT_BINARY))
             self.assertEqual(inspect(p)['bundle'],'com.test')
+    def test_download_size_is_recorded(self):
+        app=add(fixture(),META,'https://example.org/a.ipa',73400320,'hash')['apps'][0]
+        self.assertEqual(app['size'],73400320)
+        self.assertEqual(app['versions'][0]['size'],73400320)
     def test_missing_main_app(self):
         with tempfile.TemporaryDirectory() as d:
             p=Path(d)/'test.ipa'
