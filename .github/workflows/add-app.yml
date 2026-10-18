@@ -1,4 +1,4 @@
-name: Add app from link (review first)
+name: Add app from link (automatic)
 
 on:
   workflow_dispatch:
@@ -22,7 +22,6 @@ on:
 
 permissions:
   contents: write
-  pull-requests: write
 
 concurrency:
   group: ipa-strong-import-review
@@ -77,20 +76,15 @@ jobs:
               raise SystemExit('Existing download URLs disappeared: refusing to propose update')
           print(f'Catalog preserved: {len(previous)} -> {len(updated)} apps')
           PY
-      - name: Create review pull request (never push to main)
-        env:
-          GH_TOKEN: ${{ github.token }}
+      - name: Publish validated app automatically
         run: |
           set -euo pipefail
           if git diff --quiet -- ipastrong.json; then
-            echo 'No changes to propose.'
+            echo 'No changes needed.'
             exit 0
           fi
-          BRANCH="automation/review-ipa-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git switch -c "$BRANCH"
           git add ipastrong.json backups/ipastrong.last-good.json.gz
-          git commit -m "Propose IPA import for owner review"
-          git push origin "$BRANCH"
-          gh pr create --base main --head "$BRANCH" --title "Review new IPA app import #${GITHUB_RUN_ID}" --body "Automated IPA metadata extraction. Review the change to ipastrong.json before merging. Existing apps are checked for preservation. No changes have been published to main."
+          git commit -m 'Automatically add validated IPA to IPA Strong'
+          git push origin HEAD:main
