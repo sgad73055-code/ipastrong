@@ -1,0 +1,19 @@
+name: StageSta read-only IPA link test
+on:
+  pull_request:
+    paths:
+      - 'tools/ipa_url_preflight.py'
+      - '.github/workflows/stagesta-link-check.yml'
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check only first four bytes of supplied IPA link
+        run: python3 tools/ipa_url_preflight.py 'https://file.ipaomtk.com/stagestar/StageSta-IPAOMTK.COM.ipa'
