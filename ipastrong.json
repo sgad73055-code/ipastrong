@@ -136540,13 +136540,25 @@
       "_sourceURL": "local"
     },
     {
-      "id": "APP-5663407176",
       "name": "Gbox",
       "bundleIdentifier": "com.ideploy-storage.25a6a8",
-      "bundleId": "com.ideploy-storage.25a6a8",
+      "developerName": "IPA Strong",
+      "version": "4.7.2",
+      "versionDate": "2026-10-18T20:25:07.867797+00:00",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/gbox-4",
+      "size": 19296712,
       "iconURL": "https://raw.githubusercontent.com/ikiraplus/ipastore/main/images/app-1773510394623.png",
-      "category": "أخرى",
+      "localizedDescription": "",
       "versions": [
+        {
+          "version": "4.7.2",
+          "date": "2026-10-18T20:25:07.867797+00:00",
+          "downloadURL": "https://dl.ikiraplus.workers.dev/dl/gbox-4",
+          "size": 19296712,
+          "sha256": "4dba811760acccfde027d79a211ee9604d8ea10296b5aaf5cb4807f52c5b4950",
+          "buildVersion": "472",
+          "minOSVersion": "12.0"
+        },
         {
           "version": "1.6",
           "downloadURL": "https://dl.ikiraplus.workers.dev/dl/gbox-4",
@@ -136554,16 +136566,10 @@
           "size": 19293798
         }
       ],
-      "version": "1.6",
-      "versionDate": "2026-08-24",
-      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/gbox-4",
-      "ipaUrl": "https://dl.ikiraplus.workers.dev/dl/gbox-4",
-      "size": 19293798,
-      "addedAt": "2026-08-22",
-      "updatedAt": "2026-09-02",
-      "_rowKey": 51,
+      "sha256": "4dba811760acccfde027d79a211ee9604d8ea10296b5aaf5cb4807f52c5b4950",
       "_sourceURL": "local",
-      "localizedDescription": ""
+      "_addedFromLink": true,
+      "minOSVersion": "12.0"
     },
     {
       "id": "APP-6828930847",
@@ -453723,7 +453729,7 @@
   "subtitle": "ipastrong",
   "description": "Merged IPA sources",
   "permissions": [],
-  "lastUpdated": "2026-10-18T20:18:08.051073+00:00",
+  "lastUpdated": "2026-10-18T20:25:07.867797+00:00",
   "iconURL": "https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/source-icon.jpeg",
   "META": {
     "repoName": "ipastrong",
