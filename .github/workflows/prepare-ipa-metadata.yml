@@ -24,6 +24,7 @@ jobs:
         env:
           IPA_URL: ${{ github.event_name == 'workflow_dispatch' && inputs.ipa_url || 'https://file.ipaomtk.com/stagestar/StageSta-IPAOMTK.COM.ipa' }}
         run: |
+          set -o pipefail
           python3 tools/ipa_metadata.py "$IPA_URL" | tee ipa-metadata-report.json
       - name: Upload metadata report for review
         uses: actions/upload-artifact@v4
