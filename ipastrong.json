@@ -11429,6 +11429,157 @@
       "minOSVersion": "14.0"
     },
     {
+      "name": "VDIT",
+      "type": 1,
+      "bundleID": "me.imgbase.videoday",
+      "bundleIdentifier": "me.imgbase.videoday",
+      "version": "4.3.1",
+      "versionDate": "2026-10-18",
+      "fullDate": "20261018061711",
+      "size": 223535643,
+      "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+      "developerName": "",
+      "localizedDescription": "Injected with Subscription Unlocked",
+      "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/me.imgbase.videoday.png",
+      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/me.imgbase.videoday.png",
+      "versions": [
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-18",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-17",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-16",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-15",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-14",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-13",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-12",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/11-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-11",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/10-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-10",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-09",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/08-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-08",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.0",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-09-2026/VDIT_4.3.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-09-16",
+          "size": 222157348
+        },
+        {
+          "version": "4.2.2",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-08-2026/VDIT_4.2.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-08-28",
+          "size": 229561371
+        },
+        {
+          "version": "4.2.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-08-2026/VDIT_4.2.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-08-20",
+          "size": 229498501
+        },
+        {
+          "version": "4.2.0",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-08-2026/VDIT_4.2.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-08-04",
+          "size": 222444453
+        },
+        {
+          "version": "4.1.4",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-07-2026/VDIT_4.1.4_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-07-16",
+          "size": 225775085
+        },
+        {
+          "version": "4.1.3",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-07-2026/VDIT_4.1.3_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-07-15",
+          "size": 225775529
+        },
+        {
+          "version": "4.1.2",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-06-2026/VDIT_4.1.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-06-27",
+          "size": 225188337
+        },
+        {
+          "version": "4.1.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-06-2026/VDIT_4.1.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-06-15",
+          "size": 224955813
+        },
+        {
+          "version": "4.1.0",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/10-06-2026/VDIT_4.1.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-06-10",
+          "size": 203318495
+        },
+        {
+          "version": "4.0.2",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-05-2026/VDIT_4.0.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-05-21",
+          "size": 222954612
+        },
+        {
+          "version": "4.0.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/08-05-2026/VDIT_4.0.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-05-08",
+          "size": 223933102
+        }
+      ],
+      "_sourceURL": "https://repository.apptesters.org"
+    },
+    {
       "name": "UTM SE",
       "bundleIdentifier": "com.utmapp.UTM-SE",
       "developerName": "osy",
@@ -12318,6 +12469,29 @@
       "minOSVersion": "14.0"
     },
     {
+      "name": "Facebook (Facebook Plus)",
+      "bundleIdentifier": "com.facebook.Facebook.facebookplus",
+      "developerName": "shajon404 & IPA Vault",
+      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Facebook-583.0.0-Facebook-Plus.ipa",
+      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Facebook-Icons/Facebook-AppStore-1024x1024.png",
+      "localizedDescription": "Facebook 583.0.0 with Facebook Plus 1.0.2",
+      "size": 221760905,
+      "subtitle": "Facebook 583.0.0 with Facebook Plus 1.0.2",
+      "tintColor": "#1877F2",
+      "version": "583.0.0",
+      "versionDate": "2026-10-17",
+      "versionDescription": "IPA Vault build for Facebook (Facebook Plus), version 583.0.0",
+      "versions": [
+        {
+          "version": "583.0.0",
+          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Facebook-583.0.0-Facebook-Plus.ipa",
+          "date": "2026-10-17",
+          "size": 221760905
+        }
+      ],
+      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
+    },
+    {
       "name": "fGet",
       "bundleIdentifier": "com.penguinbit.fastdownload",
       "developerName": "@blatants",
@@ -12858,6 +13032,64 @@
       "type": 1,
       "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
+    },
+    {
+      "name": "Messenger (Flow)",
+      "bundleIdentifier": "com.facebook.Messenger.flow",
+      "developerName": "dvntms & IPA Vault",
+      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Messenger-584.0.0-Flow.ipa",
+      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Messenger-Icons/Messenger-AppStore-1024x1024.png",
+      "localizedDescription": "Messenger 584.0.0 with Flow 1.0",
+      "size": 125027873,
+      "subtitle": "Messenger 584.0.0 with Flow 1.0",
+      "tintColor": "#0084FF",
+      "version": "584.0.0",
+      "versionDate": "2026-10-17",
+      "versionDescription": "IPA Vault build for Messenger (Flow), version 584.0.0",
+      "versions": [
+        {
+          "version": "584.0.0",
+          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Messenger-584.0.0-Flow.ipa",
+          "date": "2026-10-17",
+          "size": 125027873
+        },
+        {
+          "version": "583.0.0",
+          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Messenger-583.0.0-Flow.ipa",
+          "date": "2026-10-15",
+          "size": 121058655
+        }
+      ],
+      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
+    },
+    {
+      "name": "Messenger (MSGPlusX)",
+      "bundleIdentifier": "com.facebook.Messenger",
+      "developerName": "Dens0r & IPA Vault & lucaspedrosa",
+      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Messenger-584.0.0-MSGPlusX.ipa",
+      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Messenger-Icons/Messenger-AppStore-1024x1024.png",
+      "localizedDescription": "Messenger 584.0.0 with MSGPlusX 1.1",
+      "size": 124270963,
+      "subtitle": "Messenger 584.0.0 with MSGPlusX 1.1",
+      "tintColor": "#0084FF",
+      "version": "584.0.0",
+      "versionDate": "2026-10-17",
+      "versionDescription": "IPA Vault build for Messenger (MSGPlusX), version 584.0.0",
+      "versions": [
+        {
+          "version": "584.0.0",
+          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Messenger-584.0.0-MSGPlusX.ipa",
+          "date": "2026-10-17",
+          "size": 124270963
+        },
+        {
+          "version": "583.0.0",
+          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Messenger-583.0.0-MSGPlusX.ipa",
+          "date": "2026-10-15",
+          "size": 121745367
+        }
+      ],
+      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
     },
     {
       "name": "MoviePilotLite",
@@ -13662,6 +13894,93 @@
       "minOSVersion": "14.0"
     },
     {
+      "name": "Turrit (iQTele)",
+      "bundleIdentifier": "com.seastar.turrit",
+      "developerName": "7MD & IPA Vault",
+      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Turrit-1.5.6-iQTele.ipa",
+      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Turrit-Icons/Turrit-AppStore-1024x1024.png",
+      "localizedDescription": "Turrit 1.5.6 with iQTele 1.4",
+      "size": 99832508,
+      "subtitle": "Turrit 1.5.6 with iQTele 1.4",
+      "tintColor": "#0088CC",
+      "version": "1.5.6",
+      "versionDate": "2026-10-17",
+      "versionDescription": "IPA Vault build for Turrit (iQTele), version 1.5.6",
+      "versions": [
+        {
+          "version": "1.5.6",
+          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Turrit-1.5.6-iQTele.ipa",
+          "date": "2026-10-17",
+          "size": 99832508
+        },
+        {
+          "version": "1.5.5",
+          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Turrit-1.5.5-iQTele.ipa",
+          "date": "2026-10-09",
+          "size": 99677471
+        }
+      ],
+      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
+    },
+    {
+      "name": "Turrit (MxGram)",
+      "bundleIdentifier": "com.seastar.turrit.mxgram",
+      "developerName": "m1ronx1412 & IPA Vault",
+      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Turrit-1.5.6-MxGram.ipa",
+      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Turrit-Icons/Turrit-AppStore-1024x1024.png",
+      "localizedDescription": "Turrit 1.5.6 with MxGram 1.0.0",
+      "size": 107518899,
+      "subtitle": "Turrit 1.5.6 with MxGram 1.0.0",
+      "tintColor": "#0088CC",
+      "version": "1.5.6",
+      "versionDate": "2026-10-17",
+      "versionDescription": "IPA Vault build for Turrit (MxGram), version 1.5.6",
+      "versions": [
+        {
+          "version": "1.5.6",
+          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Turrit-1.5.6-MxGram.ipa",
+          "date": "2026-10-17",
+          "size": 107518899
+        },
+        {
+          "version": "1.5.5",
+          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Turrit-1.5.5-MxGram.ipa",
+          "date": "2026-10-09",
+          "size": 107363861
+        }
+      ],
+      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
+    },
+    {
+      "name": "Turrit (TGExtra)",
+      "bundleIdentifier": "com.seastar.turrit.tgextra",
+      "developerName": "swiftleopard & IPA Vault",
+      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Turrit-1.5.6-TGExtra.ipa",
+      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Turrit-Icons/Turrit-AppStore-1024x1024.png",
+      "localizedDescription": "Turrit 1.5.6 with TGExtra 1.7.7",
+      "size": 99175753,
+      "subtitle": "Turrit 1.5.6 with TGExtra 1.7.7",
+      "tintColor": "#0088CC",
+      "version": "1.5.6",
+      "versionDate": "2026-10-17",
+      "versionDescription": "IPA Vault build for Turrit (TGExtra), version 1.5.6",
+      "versions": [
+        {
+          "version": "1.5.6",
+          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Turrit-1.5.6-TGExtra.ipa",
+          "date": "2026-10-17",
+          "size": 99175753
+        },
+        {
+          "version": "1.5.5",
+          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Turrit-1.5.5-TGExtra.ipa",
+          "date": "2026-10-09",
+          "size": 99020717
+        }
+      ],
+      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
+    },
+    {
       "name": "Twitter",
       "bundleIdentifier": "com.atebits.Tweetie2",
       "developerName": "@ipavault",
@@ -13944,151 +14263,6 @@
       "type": 1,
       "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
-    },
-    {
-      "name": "VDIT",
-      "type": 1,
-      "bundleID": "me.imgbase.videoday",
-      "bundleIdentifier": "me.imgbase.videoday",
-      "version": "4.3.1",
-      "versionDate": "2026-10-17",
-      "fullDate": "20261017235750",
-      "size": 223535643,
-      "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-      "developerName": "",
-      "localizedDescription": "Injected with Subscription Unlocked",
-      "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/me.imgbase.videoday.png",
-      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/me.imgbase.videoday.png",
-      "versions": [
-        {
-          "version": "4.3.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-10-17",
-          "size": 223535643
-        },
-        {
-          "version": "4.3.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-10-16",
-          "size": 223535643
-        },
-        {
-          "version": "4.3.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-10-15",
-          "size": 223535643
-        },
-        {
-          "version": "4.3.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-10-14",
-          "size": 223535643
-        },
-        {
-          "version": "4.3.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-10-13",
-          "size": 223535643
-        },
-        {
-          "version": "4.3.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-10-12",
-          "size": 223535643
-        },
-        {
-          "version": "4.3.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/11-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-10-11",
-          "size": 223535643
-        },
-        {
-          "version": "4.3.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/10-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-10-10",
-          "size": 223535643
-        },
-        {
-          "version": "4.3.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-10-09",
-          "size": 223535643
-        },
-        {
-          "version": "4.3.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/08-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-10-08",
-          "size": 223535643
-        },
-        {
-          "version": "4.3.0",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-09-2026/VDIT_4.3.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-09-16",
-          "size": 222157348
-        },
-        {
-          "version": "4.2.2",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-08-2026/VDIT_4.2.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-08-28",
-          "size": 229561371
-        },
-        {
-          "version": "4.2.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-08-2026/VDIT_4.2.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-08-20",
-          "size": 229498501
-        },
-        {
-          "version": "4.2.0",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-08-2026/VDIT_4.2.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-08-04",
-          "size": 222444453
-        },
-        {
-          "version": "4.1.4",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-07-2026/VDIT_4.1.4_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-07-16",
-          "size": 225775085
-        },
-        {
-          "version": "4.1.3",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-07-2026/VDIT_4.1.3_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-07-15",
-          "size": 225775529
-        },
-        {
-          "version": "4.1.2",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-06-2026/VDIT_4.1.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-06-27",
-          "size": 225188337
-        },
-        {
-          "version": "4.1.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-06-2026/VDIT_4.1.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-06-15",
-          "size": 224955813
-        },
-        {
-          "version": "4.1.0",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/10-06-2026/VDIT_4.1.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-06-10",
-          "size": 203318495
-        },
-        {
-          "version": "4.0.2",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-05-2026/VDIT_4.0.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-05-21",
-          "size": 222954612
-        },
-        {
-          "version": "4.0.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/08-05-2026/VDIT_4.0.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-05-08",
-          "size": 223933102
-        }
-      ],
-      "_sourceURL": "https://repository.apptesters.org"
     },
     {
       "name": "Videoleap",
@@ -17172,29 +17346,6 @@
       "minOSVersion": "14.0"
     },
     {
-      "name": "Facebook (Facebook Plus)",
-      "bundleIdentifier": "com.facebook.Facebook.facebookplus",
-      "developerName": "shajon404 & IPA Vault",
-      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Facebook-583.0.0-Facebook-Plus.ipa",
-      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Facebook-Icons/Facebook-AppStore-1024x1024.png",
-      "localizedDescription": "Facebook 583.0.0 with Facebook Plus 1.0.1",
-      "size": 229303578,
-      "subtitle": "Facebook 583.0.0 with Facebook Plus 1.0.1",
-      "tintColor": "#1877F2",
-      "version": "583.0.0",
-      "versionDate": "2026-10-15",
-      "versionDescription": "IPA Vault build for Facebook (Facebook Plus), version 583.0.0",
-      "versions": [
-        {
-          "version": "583.0.0",
-          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Facebook-583.0.0-Facebook-Plus.ipa",
-          "date": "2026-10-15",
-          "size": 229303578
-        }
-      ],
-      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
-    },
-    {
       "name": "Facebook (iQFace)",
       "bundleIdentifier": "com.facebook.Facebook",
       "developerName": "7MD & IPA Vault & lucaspedrosa",
@@ -17849,52 +18000,6 @@
       "type": 1,
       "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
-    },
-    {
-      "name": "Messenger (Flow)",
-      "bundleIdentifier": "com.facebook.Messenger.flow",
-      "developerName": "dvntms & IPA Vault",
-      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Messenger-583.0.0-Flow.ipa",
-      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Messenger-Icons/Messenger-AppStore-1024x1024.png",
-      "localizedDescription": "Messenger 583.0.0 with Flow 1.0",
-      "size": 121058655,
-      "subtitle": "Messenger 583.0.0 with Flow 1.0",
-      "tintColor": "#0084FF",
-      "version": "583.0.0",
-      "versionDate": "2026-10-15",
-      "versionDescription": "IPA Vault build for Messenger (Flow), version 583.0.0",
-      "versions": [
-        {
-          "version": "583.0.0",
-          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Messenger-583.0.0-Flow.ipa",
-          "date": "2026-10-15",
-          "size": 121058655
-        }
-      ],
-      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
-    },
-    {
-      "name": "Messenger (MSGPlusX)",
-      "bundleIdentifier": "com.facebook.Messenger",
-      "developerName": "Dens0r & IPA Vault & lucaspedrosa",
-      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Messenger-583.0.0-MSGPlusX.ipa",
-      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Messenger-Icons/Messenger-AppStore-1024x1024.png",
-      "localizedDescription": "Messenger 583.0.0 with MSGPlusX 1.1",
-      "size": 121745367,
-      "subtitle": "Messenger 583.0.0 with MSGPlusX 1.1",
-      "tintColor": "#0084FF",
-      "version": "583.0.0",
-      "versionDate": "2026-10-15",
-      "versionDescription": "IPA Vault build for Messenger (MSGPlusX), version 583.0.0",
-      "versions": [
-        {
-          "version": "583.0.0",
-          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Messenger-583.0.0-MSGPlusX.ipa",
-          "date": "2026-10-15",
-          "size": 121745367
-        }
-      ],
-      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
     },
     {
       "name": "Moonlitt",
@@ -33285,75 +33390,6 @@
       "type": 1,
       "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
-    },
-    {
-      "name": "Turrit (iQTele)",
-      "bundleIdentifier": "com.seastar.turrit",
-      "developerName": "7MD & IPA Vault",
-      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Turrit-1.5.5-iQTele.ipa",
-      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Turrit-Icons/Turrit-AppStore-1024x1024.png",
-      "localizedDescription": "Turrit 1.5.5 with iQTele 1.4",
-      "size": 99677471,
-      "subtitle": "Turrit 1.5.5 with iQTele 1.4",
-      "tintColor": "#0088CC",
-      "version": "1.5.5",
-      "versionDate": "2026-10-09",
-      "versionDescription": "IPA Vault build for Turrit (iQTele), version 1.5.5",
-      "versions": [
-        {
-          "version": "1.5.5",
-          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Turrit-1.5.5-iQTele.ipa",
-          "date": "2026-10-09",
-          "size": 99677471
-        }
-      ],
-      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
-    },
-    {
-      "name": "Turrit (MxGram)",
-      "bundleIdentifier": "com.seastar.turrit.mxgram",
-      "developerName": "m1ronx1412 & IPA Vault",
-      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Turrit-1.5.5-MxGram.ipa",
-      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Turrit-Icons/Turrit-AppStore-1024x1024.png",
-      "localizedDescription": "Turrit 1.5.5 with MxGram 1.0.0",
-      "size": 107363861,
-      "subtitle": "Turrit 1.5.5 with MxGram 1.0.0",
-      "tintColor": "#0088CC",
-      "version": "1.5.5",
-      "versionDate": "2026-10-09",
-      "versionDescription": "IPA Vault build for Turrit (MxGram), version 1.5.5",
-      "versions": [
-        {
-          "version": "1.5.5",
-          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Turrit-1.5.5-MxGram.ipa",
-          "date": "2026-10-09",
-          "size": 107363861
-        }
-      ],
-      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
-    },
-    {
-      "name": "Turrit (TGExtra)",
-      "bundleIdentifier": "com.seastar.turrit.tgextra",
-      "developerName": "swiftleopard & IPA Vault",
-      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Turrit-1.5.5-TGExtra.ipa",
-      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Turrit-Icons/Turrit-AppStore-1024x1024.png",
-      "localizedDescription": "Turrit 1.5.5 with TGExtra 1.7.7",
-      "size": 99020717,
-      "subtitle": "Turrit 1.5.5 with TGExtra 1.7.7",
-      "tintColor": "#0088CC",
-      "version": "1.5.5",
-      "versionDate": "2026-10-09",
-      "versionDescription": "IPA Vault build for Turrit (TGExtra), version 1.5.5",
-      "versions": [
-        {
-          "version": "1.5.5",
-          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Turrit-1.5.5-TGExtra.ipa",
-          "date": "2026-10-09",
-          "size": 99020717
-        }
-      ],
-      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
     },
     {
       "name": "Unified Dictionary",
@@ -449821,7 +449857,7 @@
   "subtitle": "ipastrong",
   "description": "Merged IPA sources",
   "permissions": [],
-  "lastUpdated": "2026-10-17T18:41:50.511059+00:00",
+  "lastUpdated": "2026-10-18T00:55:01.598827+00:00",
   "iconURL": "https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/source-icon.jpeg",
   "META": {
     "repoName": "ipastrong",
