@@ -1,15 +1,16 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 395,
+    "ok": 393,
     "missing": 2,
-    "restricted": 2,
-    "temporary": 1
+    "restricted": 3,
+    "temporary": 1,
+    "not_ipa": 1
   },
   "repaired": [],
   "unresolved": [],
-  "date": "2026-10-18T06:50:48.751107+00:00",
-  "inputApps": 8301,
+  "date": "2026-10-18T15:53:33.549328+00:00",
+  "inputApps": 8332,
   "outputApps": 8332,
   "preservedApps": 47,
   "recoveredPublishedSource": false,
