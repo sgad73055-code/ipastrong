@@ -11475,6 +11475,169 @@
       "minOSVersion": "14.0"
     },
     {
+      "name": "VDIT",
+      "type": 1,
+      "bundleID": "me.imgbase.videoday",
+      "bundleIdentifier": "me.imgbase.videoday",
+      "version": "4.3.1",
+      "versionDate": "2026-10-20",
+      "fullDate": "20261020034052",
+      "size": 223535643,
+      "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+      "developerName": "",
+      "localizedDescription": "Injected with Subscription Unlocked",
+      "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/me.imgbase.videoday.png",
+      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/me.imgbase.videoday.png",
+      "versions": [
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-20",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-19",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-18",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-17",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-16",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-15",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-14",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-13",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-12",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/11-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-11",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/10-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-10",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-09",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/08-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-08",
+          "size": 223535643
+        },
+        {
+          "version": "4.3.0",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-09-2026/VDIT_4.3.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-09-16",
+          "size": 222157348
+        },
+        {
+          "version": "4.2.2",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-08-2026/VDIT_4.2.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-08-28",
+          "size": 229561371
+        },
+        {
+          "version": "4.2.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-08-2026/VDIT_4.2.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-08-20",
+          "size": 229498501
+        },
+        {
+          "version": "4.2.0",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-08-2026/VDIT_4.2.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-08-04",
+          "size": 222444453
+        },
+        {
+          "version": "4.1.4",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-07-2026/VDIT_4.1.4_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-07-16",
+          "size": 225775085
+        },
+        {
+          "version": "4.1.3",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-07-2026/VDIT_4.1.3_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-07-15",
+          "size": 225775529
+        },
+        {
+          "version": "4.1.2",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-06-2026/VDIT_4.1.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-06-27",
+          "size": 225188337
+        },
+        {
+          "version": "4.1.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-06-2026/VDIT_4.1.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-06-15",
+          "size": 224955813
+        },
+        {
+          "version": "4.1.0",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/10-06-2026/VDIT_4.1.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-06-10",
+          "size": 203318495
+        },
+        {
+          "version": "4.0.2",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-05-2026/VDIT_4.0.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-05-21",
+          "size": 222954612
+        },
+        {
+          "version": "4.0.1",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/08-05-2026/VDIT_4.0.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-05-08",
+          "size": 223933102
+        }
+      ],
+      "_sourceURL": "https://repository.apptesters.org"
+    },
+    {
       "name": "Alpenglow",
       "bundleIdentifier": "com.andydev.alpenglow",
       "developerName": "@Sa1y0miii",
@@ -14141,6 +14304,29 @@
       "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
     },
     {
+      "name": "SpotiFLAC Mobile",
+      "bundleIdentifier": "com.zarz.spotiflac",
+      "developerName": "spotbye & IPA Vault",
+      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/SpotiFLAC-Mobile-5.2.0.ipa",
+      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/SpotiFLAC-Icons/Icon-App-1024x1024_Normal.png",
+      "localizedDescription": "SpotiFLAC Mobile 5.2.0",
+      "size": 34993155,
+      "subtitle": "SpotiFLAC Mobile 5.2.0",
+      "tintColor": "#1DB954",
+      "version": "5.2.0",
+      "versionDate": "2026-10-19",
+      "versionDescription": "IPA Vault build for SpotiFLAC Mobile, version 5.2.0",
+      "versions": [
+        {
+          "version": "5.2.0",
+          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/SpotiFLAC-Mobile-5.2.0.ipa",
+          "date": "2026-10-19",
+          "size": 34993155
+        }
+      ],
+      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
+    },
+    {
       "name": "Spotify",
       "bundleIdentifier": "com.spotify.client",
       "developerName": "@ipavault",
@@ -14388,6 +14574,35 @@
       "minOSVersion": "14.0"
     },
     {
+      "name": "Threads (ThreadSaver)",
+      "bundleIdentifier": "com.burbn.barcelona",
+      "developerName": "swiftleopard & IPA Vault",
+      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Threads-452.0-ThreadSaver.ipa",
+      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Threads-Icons/Threads-AppStore-1024x1024.png",
+      "localizedDescription": "Threads 452.0 with ThreadSaver",
+      "size": 111173156,
+      "subtitle": "Threads 452.0 with ThreadSaver",
+      "tintColor": "#000000",
+      "version": "452.0",
+      "versionDate": "2026-10-19",
+      "versionDescription": "IPA Vault build for Threads (ThreadSaver), version 452.0",
+      "versions": [
+        {
+          "version": "452.0",
+          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Threads-452.0-ThreadSaver.ipa",
+          "date": "2026-10-19",
+          "size": 111173156
+        },
+        {
+          "version": "451.0",
+          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Threads-451.0-ThreadSaver.ipa",
+          "date": "2026-10-13",
+          "size": 112995145
+        }
+      ],
+      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
+    },
+    {
       "name": "Tripsy",
       "bundleIdentifier": "app.tripsy.ios",
       "developerName": "@blatants",
@@ -14425,161 +14640,33 @@
       "minOSVersion": "14.0"
     },
     {
-      "name": "VDIT",
-      "type": 1,
-      "bundleID": "me.imgbase.videoday",
-      "bundleIdentifier": "me.imgbase.videoday",
-      "version": "4.3.1",
+      "name": "TwitchUnblock",
+      "bundleIdentifier": "com.mxfia19.TwitchUnblock",
+      "developerName": "MXFia19 & IPA Vault",
+      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/TwitchUnblock-1.5.0.ipa",
+      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Twitch-Tweach-TC-Icons/Twitch-AppStore-1024x1024.png",
+      "localizedDescription": "TwitchUnblock 1.5.0",
+      "size": 4136356,
+      "subtitle": "TwitchUnblock 1.5.0",
+      "tintColor": "#9146FF",
+      "version": "1.5.0",
       "versionDate": "2026-10-19",
-      "fullDate": "20261019183236",
-      "size": 223535643,
-      "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-      "developerName": "",
-      "localizedDescription": "Injected with Subscription Unlocked",
-      "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/me.imgbase.videoday.png",
-      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/me.imgbase.videoday.png",
+      "versionDescription": "IPA Vault build for TwitchUnblock, version 1.5.0",
       "versions": [
         {
-          "version": "4.3.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "version": "1.5.0",
+          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/TwitchUnblock-1.5.0.ipa",
           "date": "2026-10-19",
-          "size": 223535643
+          "size": 4136356
         },
         {
-          "version": "4.3.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-10-18",
-          "size": 223535643
-        },
-        {
-          "version": "4.3.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-10-17",
-          "size": 223535643
-        },
-        {
-          "version": "4.3.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-10-16",
-          "size": 223535643
-        },
-        {
-          "version": "4.3.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "version": "1.4.0",
+          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/TwitchUnblock-1.4.0.ipa",
           "date": "2026-10-15",
-          "size": 223535643
-        },
-        {
-          "version": "4.3.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-10-14",
-          "size": 223535643
-        },
-        {
-          "version": "4.3.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-10-13",
-          "size": 223535643
-        },
-        {
-          "version": "4.3.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-10-12",
-          "size": 223535643
-        },
-        {
-          "version": "4.3.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/11-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-10-11",
-          "size": 223535643
-        },
-        {
-          "version": "4.3.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/10-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-10-10",
-          "size": 223535643
-        },
-        {
-          "version": "4.3.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-10-09",
-          "size": 223535643
-        },
-        {
-          "version": "4.3.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/08-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-10-08",
-          "size": 223535643
-        },
-        {
-          "version": "4.3.0",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-09-2026/VDIT_4.3.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-09-16",
-          "size": 222157348
-        },
-        {
-          "version": "4.2.2",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-08-2026/VDIT_4.2.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-08-28",
-          "size": 229561371
-        },
-        {
-          "version": "4.2.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-08-2026/VDIT_4.2.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-08-20",
-          "size": 229498501
-        },
-        {
-          "version": "4.2.0",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-08-2026/VDIT_4.2.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-08-04",
-          "size": 222444453
-        },
-        {
-          "version": "4.1.4",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-07-2026/VDIT_4.1.4_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-07-16",
-          "size": 225775085
-        },
-        {
-          "version": "4.1.3",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-07-2026/VDIT_4.1.3_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-07-15",
-          "size": 225775529
-        },
-        {
-          "version": "4.1.2",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-06-2026/VDIT_4.1.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-06-27",
-          "size": 225188337
-        },
-        {
-          "version": "4.1.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-06-2026/VDIT_4.1.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-06-15",
-          "size": 224955813
-        },
-        {
-          "version": "4.1.0",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/10-06-2026/VDIT_4.1.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-06-10",
-          "size": 203318495
-        },
-        {
-          "version": "4.0.2",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-05-2026/VDIT_4.0.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-05-21",
-          "size": 222954612
-        },
-        {
-          "version": "4.0.1",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/08-05-2026/VDIT_4.0.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-05-08",
-          "size": 223933102
+          "size": 3844816
         }
       ],
-      "_sourceURL": "https://repository.apptesters.org"
+      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
     },
     {
       "name": "VinylStudio",
@@ -24987,29 +25074,6 @@
       "minOSVersion": "14.0"
     },
     {
-      "name": "TwitchUnblock",
-      "bundleIdentifier": "com.mxfia19.TwitchUnblock",
-      "developerName": "MXFia19 & IPA Vault",
-      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/TwitchUnblock-1.4.0.ipa",
-      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Twitch-Tweach-TC-Icons/Twitch-AppStore-1024x1024.png",
-      "localizedDescription": "TwitchUnblock 1.4.0",
-      "size": 3844816,
-      "subtitle": "TwitchUnblock 1.4.0",
-      "tintColor": "#9146FF",
-      "version": "1.4.0",
-      "versionDate": "2026-10-15",
-      "versionDescription": "IPA Vault build for TwitchUnblock, version 1.4.0",
-      "versions": [
-        {
-          "version": "1.4.0",
-          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/TwitchUnblock-1.4.0.ipa",
-          "date": "2026-10-15",
-          "size": 3844816
-        }
-      ],
-      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
-    },
-    {
       "name": "VeneraNext",
       "bundleIdentifier": "com.github.cyrilpeng.veneranext",
       "developerName": "CyrilPeng",
@@ -30443,29 +30507,6 @@
       "type": 1,
       "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0"
-    },
-    {
-      "name": "Threads (ThreadSaver)",
-      "bundleIdentifier": "com.burbn.barcelona",
-      "developerName": "swiftleopard & IPA Vault",
-      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Threads-451.0-ThreadSaver.ipa",
-      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Threads-Icons/Threads-AppStore-1024x1024.png",
-      "localizedDescription": "Threads 451.0 with ThreadSaver",
-      "size": 112995145,
-      "subtitle": "Threads 451.0 with ThreadSaver",
-      "tintColor": "#000000",
-      "version": "451.0",
-      "versionDate": "2026-10-13",
-      "versionDescription": "IPA Vault build for Threads (ThreadSaver), version 451.0",
-      "versions": [
-        {
-          "version": "451.0",
-          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Threads-451.0-ThreadSaver.ipa",
-          "date": "2026-10-13",
-          "size": 112995145
-        }
-      ],
-      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
     },
     {
       "name": "TickTick",
@@ -453133,7 +453174,7 @@
   "subtitle": "ipastrong",
   "description": "Merged IPA sources",
   "permissions": [],
-  "lastUpdated": "2026-10-19T13:16:57.441837+00:00",
+  "lastUpdated": "2026-10-19T22:22:06.786265+00:00",
   "iconURL": "https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/source-icon.jpeg",
   "META": {
     "repoName": "ipastrong",

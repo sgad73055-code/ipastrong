@@ -1,15 +1,15 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 397,
-    "missing": 1,
-    "temporary": 2
+    "ok": 395,
+    "missing": 4,
+    "temporary": 1
   },
   "repaired": [],
   "unresolved": [],
-  "date": "2026-10-19T13:17:44.934972+00:00",
+  "date": "2026-10-19T22:23:09.191320+00:00",
   "inputApps": 8350,
-  "outputApps": 8350,
+  "outputApps": 8351,
   "preservedApps": 48,
   "recoveredPublishedSource": false,
   "removedApps": 0,
@@ -17,7 +17,7 @@
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 9552,
+        "apps": 9553,
         "error": null
       },
       {
@@ -177,12 +177,12 @@
       },
       {
         "source": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json",
-        "apps": 63,
+        "apps": 64,
         "error": null
       }
     ],
-    "inputRecords": 36705,
-    "outputApps": 8302,
+    "inputRecords": 36707,
+    "outputApps": 8303,
     "rejectedRecords": 166
   }
 }
