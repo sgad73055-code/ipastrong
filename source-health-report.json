@@ -1,16 +1,16 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 393,
-    "missing": 5,
-    "restricted": 2
+    "ok": 396,
+    "missing": 3,
+    "not_ipa": 1
   },
   "repaired": [],
   "unresolved": [],
-  "date": "2026-10-18T20:45:01.078771+00:00",
+  "date": "2026-10-19T04:42:41.692964+00:00",
   "inputApps": 8332,
-  "outputApps": 8332,
-  "preservedApps": 46,
+  "outputApps": 8350,
+  "preservedApps": 48,
   "recoveredPublishedSource": false,
   "removedApps": 0,
   "upstream": {
@@ -22,7 +22,7 @@
       },
       {
         "source": "https://ipa.cypwn.xyz/cypwn.json",
-        "apps": 209,
+        "apps": 210,
         "error": null
       },
       {
@@ -77,7 +77,7 @@
       },
       {
         "source": "https://fastsign.dev/repo.json",
-        "apps": 16496,
+        "apps": 16544,
         "error": null
       },
       {
@@ -181,8 +181,8 @@
         "error": null
       }
     ],
-    "inputRecords": 36655,
-    "outputApps": 8286,
+    "inputRecords": 36704,
+    "outputApps": 8302,
     "rejectedRecords": 166
   }
 }
