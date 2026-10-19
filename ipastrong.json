@@ -23,6 +23,35 @@
   ],
   "apps": [
     {
+      "name": "TikTok (Infinitok)",
+      "bundleIdentifier": "com.zhiliaoapp.musically",
+      "developerName": "Mod4 & IPA Vault",
+      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/TikTok-47.4.0-Infinitok.ipa",
+      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/TikTok-Icons/TikTok-AppStore-1024x1024.png",
+      "localizedDescription": "TikTok 47.4.0 with Infinitok 0.0.2",
+      "size": 504394824,
+      "subtitle": "TikTok 47.4.0 with Infinitok 0.0.2",
+      "tintColor": "#000000",
+      "version": "47.4.0",
+      "versionDate": "2026-10-19",
+      "versionDescription": "IPA Vault build for TikTok (Infinitok), version 47.4.0",
+      "versions": [
+        {
+          "version": "47.4.0",
+          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/TikTok-47.4.0-Infinitok.ipa",
+          "date": "2026-10-19",
+          "size": 504394824
+        },
+        {
+          "version": "47.1.0",
+          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/TikTok-47.1.0-Infinitok.ipa",
+          "date": "2026-10-07",
+          "size": 491405708
+        }
+      ],
+      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
+    },
+    {
       "name": "Instagram (BE)",
       "bundleIdentifier": "com.burbn.instagram",
       "developerName": "iOSDecrypted",
@@ -1889,29 +1918,6 @@
       "_sourceURL": "https://fastsign.dev/repo.json",
       "minOSVersion": "14.0",
       "_expandedSocial": true
-    },
-    {
-      "name": "TikTok (Infinitok)",
-      "bundleIdentifier": "com.zhiliaoapp.musically",
-      "developerName": "Mod4 & IPA Vault",
-      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/TikTok-47.1.0-Infinitok.ipa",
-      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/TikTok-Icons/TikTok-AppStore-1024x1024.png",
-      "localizedDescription": "TikTok 47.1.0 with Infinitok 0.0.2",
-      "size": 491405708,
-      "subtitle": "TikTok 47.1.0 with Infinitok 0.0.2",
-      "tintColor": "#000000",
-      "version": "47.1.0",
-      "versionDate": "2026-10-07",
-      "versionDescription": "IPA Vault build for TikTok (Infinitok), version 47.1.0",
-      "versions": [
-        {
-          "version": "47.1.0",
-          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/TikTok-47.1.0-Infinitok.ipa",
-          "date": "2026-10-07",
-          "size": 491405708
-        }
-      ],
-      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
     },
     {
       "name": "Instagram",
@@ -12527,6 +12533,37 @@
       "minOSVersion": "14.0"
     },
     {
+      "name": "foriOS",
+      "type": 1,
+      "bundleID": "com.tapinfinity.HdjcXcode7",
+      "bundleIdentifier": "com.tapinfinity.HdjcXcode7",
+      "version": "13.3",
+      "versionDate": "2026-10-19",
+      "fullDate": "20261019171822",
+      "size": 43616502,
+      "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-10-2026/foriOS_13.3_Pro_%40thisismanpreets_apptesters.org.ipa",
+      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-10-2026/foriOS_13.3_Pro_%40thisismanpreets_apptesters.org.ipa",
+      "developerName": "",
+      "localizedDescription": "Injected with Pro",
+      "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.tapinfinity.HdjcXcode7.png",
+      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.tapinfinity.HdjcXcode7.png",
+      "versions": [
+        {
+          "version": "13.3",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-10-2026/foriOS_13.3_Pro_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-19",
+          "size": 43616502
+        },
+        {
+          "version": "13.2",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-10-2026/foriOS_13.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+          "date": "2026-10-05",
+          "size": 43616507
+        }
+      ],
+      "_sourceURL": "https://repository.apptesters.org"
+    },
+    {
       "name": "Forza Football",
       "bundleIdentifier": "com.footballaddicts.livescoreaddicts",
       "developerName": "@riftysIPAlibrary",
@@ -14075,6 +14112,35 @@
       "minOSVersion": "14.0"
     },
     {
+      "name": "SoundCloud (NexaSC)",
+      "bundleIdentifier": "com.soundcloud.TouchApp",
+      "developerName": "cielogic & IPA Vault",
+      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/SoundCloud-8.83.0-NexaSC.ipa",
+      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/SoundCloud-8.76.0-Icons/SoundCloud-AppStore-1024x1024.png",
+      "localizedDescription": "SoundCloud 8.83.0 with NexaSC beta 4",
+      "size": 227377895,
+      "subtitle": "SoundCloud 8.83.0 with NexaSC beta 4",
+      "tintColor": "#FF5500",
+      "version": "8.83.0",
+      "versionDate": "2026-10-19",
+      "versionDescription": "IPA Vault build for SoundCloud (NexaSC), version 8.83.0",
+      "versions": [
+        {
+          "version": "8.83.0",
+          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/SoundCloud-8.83.0-NexaSC.ipa",
+          "date": "2026-10-19",
+          "size": 227377895
+        },
+        {
+          "version": "8.82.0",
+          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/SoundCloud-8.82.0-NexaSC.ipa",
+          "date": "2026-10-11",
+          "size": 227238033
+        }
+      ],
+      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
+    },
+    {
       "name": "Spotify",
       "bundleIdentifier": "com.spotify.client",
       "developerName": "@ipavault",
@@ -14365,7 +14431,7 @@
       "bundleIdentifier": "me.imgbase.videoday",
       "version": "4.3.1",
       "versionDate": "2026-10-19",
-      "fullDate": "20261019100054",
+      "fullDate": "20261019183236",
       "size": 223535643,
       "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
       "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-10-2026/VDIT_4.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
@@ -20087,6 +20153,14 @@
           "localizedDescription": "@ipa_dark | 🔄 GTA 5 - appstore  🇷🇺 Порт гта 5 на iPhone  ⚠️ Минимальные системные требования: ОЗУ: 6 ГБ, а это 👇 iPhone: 12 pro, 13 pro, 14 (и более н",
           "downloadURL": "https://fastsign.dev/tg-ipa/ipa-dark/1820-GTA5Port%20%5Bv1.3.4%5D%28tg@ipa_dark%29.ipa",
           "size": 86562182,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "1.4.1",
+          "date": "2026-10-19",
+          "localizedDescription": "@kamohacks | GTA V Port 🆕 ⬆️⬆️  ⚙️Features⚙️ ✅Play GTA V Directly on Your iPhone.  v1.4.1 - Mods! Car and skin replacements, add-on cars, OpenIV packa",
+          "downloadURL": "https://fastsign.dev/tg-ipa/kamohacks/16818-GTA%20V%20Port%20-%20KamoHacks%20%5B1.4.1%5D.ipa",
+          "size": 91018367,
           "minOSVersion": "14.0"
         },
         {
@@ -33848,29 +33922,6 @@
       "minOSVersion": "14.0"
     },
     {
-      "name": "SoundCloud (NexaSC)",
-      "bundleIdentifier": "com.soundcloud.TouchApp",
-      "developerName": "cielogic & IPA Vault",
-      "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/SoundCloud-8.82.0-NexaSC.ipa",
-      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/SoundCloud-8.76.0-Icons/SoundCloud-AppStore-1024x1024.png",
-      "localizedDescription": "SoundCloud 8.82.0 with NexaSC beta 4",
-      "size": 227238033,
-      "subtitle": "SoundCloud 8.82.0 with NexaSC beta 4",
-      "tintColor": "#FF5500",
-      "version": "8.82.0",
-      "versionDate": "2026-10-11",
-      "versionDescription": "IPA Vault build for SoundCloud (NexaSC), version 8.82.0",
-      "versions": [
-        {
-          "version": "8.82.0",
-          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/SoundCloud-8.82.0-NexaSC.ipa",
-          "date": "2026-10-11",
-          "size": 227238033
-        }
-      ],
-      "_sourceURL": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json"
-    },
-    {
       "name": "Swiftgram (LD)",
       "bundleIdentifier": "app.swiftgram.ios",
       "developerName": "iOSDecrypted",
@@ -34339,8 +34390,32 @@
         },
         {
           "version": "3.0.0",
+          "date": "2026-10-19",
+          "localizedDescription": "@kamohacks | Husk 🆕 ⬆️⬆️  ⚙️Features⚙️ ✅Android Emulator for iOS also Now PS4 Games. ✅Developer Certificate is Required.  Husk v3.0 What's new? Consol",
+          "downloadURL": "https://fastsign.dev/tg-ipa/kamohacks/16819-Husk%20-%20KamoHacks%20%5B3.0.0%5D.ipa",
+          "size": 142801722,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "1.1.0",
+          "date": "2026-10-10",
+          "localizedDescription": "@kamohacks | Husk 🆕   ⚙️Features⚙️ ✅Android Emulator for iOS ✅maybe you face lags or problems be sure that this app will be updated for better experie",
+          "downloadURL": "https://fastsign.dev/tg-ipa/kamohacks/16744-Husk%20-%20KamoHacks%20%5B1.1.0%5D.ipa",
+          "size": 57603204,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "3.0",
+          "date": "2026-10-19",
+          "localizedDescription": "Run Android apps on iOS: drop in an APK, tap it, and the Android app opens full-screen on a QEMU guest with hardware-accelerated display and audio. Ne",
+          "downloadURL": "https://github.com/Leviidev/Husk/releases/download/3.0/Husk.ipa",
+          "size": 140126095,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "3.0.0",
           "date": "2026-10-18",
-          "localizedDescription": "No tweak information supplied by the source.",
+          "localizedDescription": "@ipavault | Run Android apps and games on your iPhone  An open source app that lets you run Android apps and games on iOS using an ARM64 translation l",
           "downloadURL": "https://fastsign.dev/tg-ipa/scholars-lounge/80498-Husk.ipa",
           "size": 140126095,
           "minOSVersion": "14.0"
@@ -34375,14 +34450,6 @@
           "localizedDescription": "Run Android apps on iOS: drop in an APK, tap it, and the Android app opens full-screen on a QEMU guest with hardware-accelerated display and audio. Ne",
           "downloadURL": "https://github.com/Leviidev/Husk/releases/download/2.0/Husk.ipa",
           "size": 110921859,
-          "minOSVersion": "14.0"
-        },
-        {
-          "version": "1.1.0",
-          "date": "2026-10-10",
-          "localizedDescription": "@kamohacks | Husk 🆕   ⚙️Features⚙️ ✅Android Emulator for iOS ✅maybe you face lags or problems be sure that this app will be updated for better experie",
-          "downloadURL": "https://fastsign.dev/tg-ipa/kamohacks/16744-Husk%20-%20KamoHacks%20%5B1.1.0%5D.ipa",
-          "size": 57603204,
           "minOSVersion": "14.0"
         }
       ],
@@ -52248,31 +52315,6 @@
     },
     {
       "name": "foriOS",
-      "type": 1,
-      "bundleID": "com.tapinfinity.HdjcXcode7",
-      "bundleIdentifier": "com.tapinfinity.HdjcXcode7",
-      "version": "13.2",
-      "versionDate": "2026-10-05",
-      "fullDate": "20261005051134",
-      "size": 43616507,
-      "down": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-10-2026/foriOS_13.2_Pro_%40thisismanpreets_apptesters.org.ipa",
-      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-10-2026/foriOS_13.2_Pro_%40thisismanpreets_apptesters.org.ipa",
-      "developerName": "",
-      "localizedDescription": "Injected with Pro",
-      "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.tapinfinity.HdjcXcode7.png",
-      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.tapinfinity.HdjcXcode7.png",
-      "versions": [
-        {
-          "version": "13.2",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-10-2026/foriOS_13.2_Pro_%40thisismanpreets_apptesters.org.ipa",
-          "date": "2026-10-05",
-          "size": 43616507
-        }
-      ],
-      "_sourceURL": "https://repository.apptesters.org"
-    },
-    {
-      "name": "foriOS",
       "bundleIdentifier": "com.tapinfinity.HdjcXcode7",
       "developerName": "AppTesters IPA Repo",
       "version": "13.2",
@@ -59359,6 +59401,54 @@
           "minOSVersion": "14.0"
         },
         {
+          "version": "9.42.2",
+          "date": "2026-10-19",
+          "localizedDescription": "@ipavault | Builds of YouTube Music 9.42.2  ▪️Updated to YouTube Music 9.42.2 Builds: ▪YTMUltimate+ ▪YTMUltimate+ No PIP Added Tweaks:   ▪️ReturnYouTu",
+          "downloadURL": "https://fastsign.dev/tg-ipa/ipavault/921-YTMUltimate+%209.42.2%20%5B@ipavault%5D.ipa",
+          "size": 108476393,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "9.42.2",
+          "date": "2026-10-19",
+          "localizedDescription": "@ipavault | Builds of YouTube Music 9.42.2  ▪️Updated to YouTube Music 9.42.2 Builds: ▪YTMUltimate+ ▪YTMUltimate+ No PIP Added Tweaks:   ▪️ReturnYouTu",
+          "downloadURL": "https://fastsign.dev/tg-ipa/ipavault/922-YTMUltimate+%209.42.2%20No%20PIP%20%5B@ipavault%5D.ipa",
+          "size": 108466665,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "9.41.2",
+          "date": "2026-10-12",
+          "localizedDescription": "@ipavault | Builds of YouTube Music 9.41.2  ▪️Updated to YouTube Music 9.41.2 Builds: ▪YTMUltimate+ ▪YTMUltimate+ No PIP Added Tweaks:   ▪️ReturnYouTu",
+          "downloadURL": "https://fastsign.dev/tg-ipa/ipavault/851-YTMUltimate+%209.41.2%20%5B@ipavault%5D.ipa",
+          "size": 111187370,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "9.41.2",
+          "date": "2026-10-12",
+          "localizedDescription": "@ipavault | Builds of YouTube Music 9.41.2  ▪️Updated to YouTube Music 9.41.2 Builds: ▪YTMUltimate+ ▪YTMUltimate+ No PIP Added Tweaks:   ▪️ReturnYouTu",
+          "downloadURL": "https://fastsign.dev/tg-ipa/ipavault/852-YTMUltimate+%209.41.2%20No%20PIP%20%5B@ipavault%5D.ipa",
+          "size": 111177185,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "9.40.2",
+          "date": "2026-10-05",
+          "localizedDescription": "Variant: YTMUltimate+ · No PiP",
+          "downloadURL": "https://fastsign.dev/tg-ipa/ipavault/734-YTMUltimate+%209.40.2%20No%20PIP%20%5B@ipavault%5D.ipa",
+          "size": 110827124,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "9.40.2",
+          "date": "2026-10-05",
+          "localizedDescription": "Variant: YTMUltimate+",
+          "downloadURL": "https://fastsign.dev/tg-ipa/ipavault/733-YTMUltimate+%209.40.2%20%5B@ipavault%5D.ipa",
+          "size": 110837266,
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "9.41.2",
           "date": "2026-10-13",
           "localizedDescription": "scholars lounge | YT Music Ultimate+ 9.41  - YouTube Music 9.41 - YTMusicUltimate - Return YouTube Music Dislike - YTMABConfig - YouMusicPIP - YTVolum",
@@ -59404,38 +59494,6 @@
           "localizedDescription": "scholars lounge | YT Music Ultimate+ 9.39  - YouTube Music 9.39 - YTMusicUltimate - Return YouTube Music Dislike - YTMABConfig - YouMusicPIP - YTVolum",
           "downloadURL": "https://fastsign.dev/tg-ipa/scholars-lounge/76632-YTMusicUltimate+_9.39_Jacks_Apps.ipa",
           "size": 110729253,
-          "minOSVersion": "14.0"
-        },
-        {
-          "version": "9.41.2",
-          "date": "2026-10-12",
-          "localizedDescription": "@ipavault | Builds of YouTube Music 9.41.2  ▪️Updated to YouTube Music 9.41.2 Builds: ▪YTMUltimate+ ▪YTMUltimate+ No PIP Added Tweaks:   ▪️ReturnYouTu",
-          "downloadURL": "https://fastsign.dev/tg-ipa/ipavault/851-YTMUltimate+%209.41.2%20%5B@ipavault%5D.ipa",
-          "size": 111187370,
-          "minOSVersion": "14.0"
-        },
-        {
-          "version": "9.41.2",
-          "date": "2026-10-12",
-          "localizedDescription": "@ipavault | Builds of YouTube Music 9.41.2  ▪️Updated to YouTube Music 9.41.2 Builds: ▪YTMUltimate+ ▪YTMUltimate+ No PIP Added Tweaks:   ▪️ReturnYouTu",
-          "downloadURL": "https://fastsign.dev/tg-ipa/ipavault/852-YTMUltimate+%209.41.2%20No%20PIP%20%5B@ipavault%5D.ipa",
-          "size": 111177185,
-          "minOSVersion": "14.0"
-        },
-        {
-          "version": "9.40.2",
-          "date": "2026-10-05",
-          "localizedDescription": "Variant: YTMUltimate+ · No PiP",
-          "downloadURL": "https://fastsign.dev/tg-ipa/ipavault/734-YTMUltimate+%209.40.2%20No%20PIP%20%5B@ipavault%5D.ipa",
-          "size": 110827124,
-          "minOSVersion": "14.0"
-        },
-        {
-          "version": "9.40.2",
-          "date": "2026-10-05",
-          "localizedDescription": "Variant: YTMUltimate+",
-          "downloadURL": "https://fastsign.dev/tg-ipa/ipavault/733-YTMUltimate+%209.40.2%20%5B@ipavault%5D.ipa",
-          "size": 110837266,
           "minOSVersion": "14.0"
         },
         {
@@ -156588,7 +156646,7 @@
         {
           "version": "6.2.60",
           "date": "2026-10-03",
-          "localizedDescription": "@blatants | Alight Motion  • Bundle ID: com.alightcreative.motion • Updated to: 6.2.60 • Minimum iOS: 14.4 • Patched • Modifier: Subscription Unlocked",
+          "localizedDescription": "Injected with Subscription Unlocked",
           "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-10-2026/AlightMotion_6.2.60_Subscription_Unlocked_@thisismanpreets_apptesters.org.ipa",
           "size": 129663642,
           "minOSVersion": "14.0"
@@ -157209,11 +157267,27 @@
           "minOSVersion": "14.0"
         },
         {
+          "version": "12.1.1",
+          "date": "2026-10-19",
+          "localizedDescription": "@Sa1y0miii | Alpenglow: Sunset Prediction 🧸 Min.iOS: [18.6+] 🧀 App version: [12.1.1] !upd  🪼 App Store: https://apps.apple.com/app/id978589174 📮 Notes",
+          "downloadURL": "https://fastsign.dev/tg-ipa/sa1y0miii/14515-%E2%80%8ESunset%20Predictio%E2%80%A6_v12.1.1_tg@Sa1y0miii.ipa",
+          "size": 86853108,
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "12.1",
           "date": "2026-10-15",
           "localizedDescription": "@Sa1y0miii | Alpenglow: Sunset Prediction 🧸 Min.iOS: [18.6+] 🧀 App version: [12.1] !upd  🪼 App Store: https://apps.apple.com/app/id978589174 📮 Notes: ",
           "downloadURL": "https://fastsign.dev/tg-ipa/sa1y0miii/14301-%E2%80%8ESunset%20Predictions_v12.1_tg@Sa1y0miii.ipa",
           "size": 87338996,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "12.1.1",
+          "date": "2026-10-19",
+          "localizedDescription": "@riftysIPAlibrary | Alpenglow: Sunset Prediction  Tweak: Pro Unlocked  Version: 12.1.1  Patched ✓  @riftysIPAlibrary  Additional Information ℹ️  Min O",
+          "downloadURL": "https://fastsign.dev/tg-ipa/riftysipalibrary/8450-Alpenglow:%20Sunset%20Prediction-v12.1.1-riftysipas.ipa",
+          "size": 86505364,
           "minOSVersion": "14.0"
         },
         {
@@ -159886,6 +159960,14 @@
           "minOSVersion": "14.0"
         },
         {
+          "version": "13.50",
+          "date": "2026-10-19",
+          "localizedDescription": "@blatants | Buddy: Budget Planner App  • Bundle ID: com.iPwners.Plonkan • Updated to: 13.50 • Minimum iOS: 18.0 • Patched • Modifier: Premium Unlocked",
+          "downloadURL": "https://fastsign.dev/tg-ipa/blatants/12874-Buddy_Budget_Planner_App_v13_50_Premium_Unlocked_blatant_Patched.ipa",
+          "size": 125731657,
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "13.49.1",
           "date": "2026-10-17",
           "localizedDescription": "@blatants | Buddy: Budget Planner App  • Bundle ID: com.iPwners.Plonkan • Updated to: 13.49.1 • Minimum iOS: 18.0 • Patched • Modifier: Premium Unlock",
@@ -160309,6 +160391,14 @@
           "localizedDescription": "Chức năng đã thêm: Subscription mở khoá  - IPA đã được kiểm tra và tổng hợp bởi TTJB Team",
           "downloadURL": "https://proxy-files.thuthuatjb.com/apps?=apptesters-org/AppTesters_Repo/releases/download/11-08-2025/Busuu_29.14.0_Subscription_Unlocked_@thisismanpreets_apptesters.org.ipa",
           "size": 144027700,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "30.30.0",
+          "date": "2026-10-19",
+          "localizedDescription": "@blatants | Busuu: Language Learning App  • Bundle ID: com.busuu.english.app • Updated to: 30.30.0 • Minimum iOS: 18.0 • Patched • Modifier: PremiumPl",
+          "downloadURL": "https://fastsign.dev/tg-ipa/blatants/12881-Busuu_Language_Learning_App_v30_30_0_PremiumPlus_Unlocked_blatant.ipa",
+          "size": 194633849,
           "minOSVersion": "14.0"
         },
         {
@@ -162930,6 +163020,14 @@
           "localizedDescription": "Chức năng đã thêm: Pro - IPA đã được kiểm tra và tổng hợp bởi TTJB Team",
           "downloadURL": "https://proxy-files.thuthuatjb.com/apps?=apptesters-org/AppTesters_Repo/releases/download/07-08-2025/CollaNote_3.1.8_Pro_@thisismanpreets_apptesters.org.ipa",
           "size": 186748386,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "5.0.7",
+          "date": "2026-10-19",
+          "localizedDescription": "@blatants | CollaNote: Notes & PDF Markup  • Bundle ID: net.quochuywdm.collanote496 • Updated to: 5.0.7 • Minimum iOS: 18.6 • Patched • Modifier: Pro ",
+          "downloadURL": "https://fastsign.dev/tg-ipa/blatants/12873-CollaNote_Notes_&_PDF_Markup_v5_0_7_Pro_Unlocked_blatant_Patched.ipa",
+          "size": 143123961,
           "minOSVersion": "14.0"
         },
         {
@@ -171562,6 +171660,14 @@
           "minOSVersion": "14.0"
         },
         {
+          "version": "1.241",
+          "date": "2026-10-19",
+          "localizedDescription": "@Sa1y0miii | Simple Workout Log - IRONOTES 🧸 Min.iOS: [16.6+] 🧀 App version: [1.217] !upd  🪼 App Store: https://apps.apple.com/app/id1550970850 📮 Note",
+          "downloadURL": "https://fastsign.dev/tg-ipa/sa1y0miii/14491-%E2%80%8ESimple%20Workout%20Log_v1.217_tg@Sa1y0miii.ipa",
+          "size": 73525049,
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "1.236",
           "date": "2026-09-27",
           "localizedDescription": "@Sa1y0miii | Simple Workout Log - IRONOTES 🧸 Min.iOS: [16.6+] 🧀 App version: [1.213] !upd  🪼 App Store: https://apps.apple.com/app/id1550970850 📮 Note",
@@ -173032,6 +173138,14 @@
           "localizedDescription": "Chức năng đã thêm: Premium - IPA đã được kiểm tra và tổng hợp bởi TTJB Team",
           "downloadURL": "https://proxy-files.thuthuatjb.com/apps?=apptesters-org/AppTesters_Repo/releases/download/23-08-2025/Liftoff_2.5.3_Premium_@thisismanpreets_apptesters.org.ipa",
           "size": 97410402,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "2.17.3",
+          "date": "2026-10-19",
+          "localizedDescription": "@riftysIPAlibrary | Liftoff - Ranked Gym Workouts  Tweak: Subscription Unlocked  Version: 2.17.3  Patched ✓  @riftysIPAlibrary  Additional Information",
+          "downloadURL": "https://fastsign.dev/tg-ipa/riftysipalibrary/8449-Liftoff%20-%20Ranked%20Gym%20Workouts-v2.17.3-riftysipas.ipa",
+          "size": 134476408,
           "minOSVersion": "14.0"
         },
         {
@@ -185639,6 +185753,14 @@
           "minOSVersion": "14.0"
         },
         {
+          "version": "10.31",
+          "date": "2026-10-19",
+          "localizedDescription": "@blatants | Simply Guitar - Learn Guitar  • Bundle ID: com.joytunes.SimplyGuitar • Updated to: 10.31 • Minimum iOS: 15.0 • Patched • Modifier: Subscri",
+          "downloadURL": "https://fastsign.dev/tg-ipa/blatants/12880-Simply_Guitar_Learn_Guitar_v10_31_Subscription_Unlocked_blatant.ipa",
+          "size": 167888218,
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "10.30",
           "date": "2026-09-28",
           "localizedDescription": "Injected with Subscription Unlocked",
@@ -186070,6 +186192,14 @@
           "localizedDescription": "Chức năng đã thêm: Premium - IPA đã được kiểm tra và tổng hợp bởi TTJB Team",
           "downloadURL": "https://proxy-files.thuthuatjb.com/apps?=apptesters-org/AppTesters_Repo/releases/download/05-08-2025/SimplySing_2.5.16_Premium_@thisismanpreets_apptesters.org.ipa",
           "size": 132621744,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "3.1.3",
+          "date": "2026-10-19",
+          "localizedDescription": "@blatants | Simply Sing: My Singing App  • Bundle ID: com.joytunes.Sing • Updated to: 3.1.3 • Minimum iOS: 16.0 • Patched • Modifier: Subscription Unl",
+          "downloadURL": "https://fastsign.dev/tg-ipa/blatants/12876-Simply_Sing_My_Singing_App_v3_1_3_Subscription_Unlocked_blatant.ipa",
+          "size": 115549840,
           "minOSVersion": "14.0"
         },
         {
@@ -188630,7 +188760,7 @@
         {
           "version": "4.28.71",
           "date": "2026-10-07",
-          "localizedDescription": "@blatants | Splice - Video Editor & Maker  • Bundle ID: com.path36.SpliceFree • Updated to: 4.28.71 • Minimum iOS: 14.0 • Patched • Modifier: Subscrip",
+          "localizedDescription": "Injected with Subscription Unlocked",
           "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-10-2026/Splice_4.28.71_Subscription_Unlocked_@thisismanpreets_apptesters.org.ipa",
           "size": 107410721,
           "minOSVersion": "14.0"
@@ -197746,6 +197876,14 @@
           "downloadURL": "https://proxy-files.thuthuatjb.com/apps?=apptesters-org/AppTesters_Repo/releases/download/16-11-2025/Brainnotes_4.0.7_Premium_@thisismanpreets_apptesters.org.ipa",
           "size": 29932465,
           "minOSVersion": "14.0"
+        },
+        {
+          "version": "6.10",
+          "date": "2026-10-19",
+          "localizedDescription": "@Sa1y0miii | Summarizer: Brainnotes 🧸 Min.iOS: [16.4+] 🧀 App version: [7.0] !upd  🪼 App Store: https://apps.apple.com/app/id6744852497 📮 Notes: Click ",
+          "downloadURL": "https://fastsign.dev/tg-ipa/sa1y0miii/14506-%E2%80%8ELecture%20Transcription%E2%80%A6-v7_tg@Sa1y0miii.ipa",
+          "size": 57754694,
+          "minOSVersion": "14.0"
         }
       ],
       "subtitle": "Chức năng đã thêm: Premium - IPA đã được kiểm tra và tổng hợp bởi TTJB Team",
@@ -204226,6 +204364,14 @@
           "localizedDescription": "Chức năng đã thêm: Subscription mở khoá  - IPA đã được kiểm tra và tổng hợp bởi TTJB Team",
           "downloadURL": "https://proxy-files.thuthuatjb.com/apps?=apptesters-org/AppTesters_Repo/releases/download/29-08-2025/Sketchar_9.3.1_Subscription_Unlocked_@thisismanpreets_apptesters.org.ipa",
           "size": 200105184,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "10.9.2",
+          "date": "2026-10-19",
+          "localizedDescription": "@blatants | Sketchar: AR Drawing App  • Bundle ID: tech.sketchar.ios • Updated to: 10.9.2 • Minimum iOS: 16.0 • Patched • Modifier: Subscription Unloc",
+          "downloadURL": "https://fastsign.dev/tg-ipa/blatants/12883-Sketchar_AR_Drawing_App_v10_9_2_Subscription_Unlocked_blatant_Patched.ipa",
+          "size": 174742341,
           "minOSVersion": "14.0"
         },
         {
@@ -237808,6 +237954,14 @@
           "minOSVersion": "14.0"
         },
         {
+          "version": "1.5.8",
+          "date": "2026-10-19",
+          "localizedDescription": "@blatants | Crsel: Carousel, Collage Maker  • Bundle ID: com.frameoneapps.Crsel • Updated to: 1.5.8 • Minimum iOS: 17.0 • Patched • Modifier: Pro Unlo",
+          "downloadURL": "https://fastsign.dev/tg-ipa/blatants/12888-Crsel_Carousel,_Collage_Maker_v1_5_8_Pro_Unlocked_blatant_Patched.ipa",
+          "size": 167409207,
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "1.5.7",
           "date": "2026-10-18",
           "localizedDescription": "@blatants | Crsel: Carousel, Collage Maker  • Bundle ID: com.frameoneapps.Crsel • Updated to: 1.5.7 • Minimum iOS: 17.0 • Patched • Modifier: Pro Unlo",
@@ -239404,6 +239558,14 @@
           "localizedDescription": "Chức năng đã thêm: Premium - IPA đã được kiểm tra và tổng hợp bởi TTJB Team",
           "downloadURL": "https://proxy-files.thuthuatjb.com/apps?=apptesters-org/AppTesters_Repo/releases/download/06-11-2025/Gizmo_2.0.47_Premium_@thisismanpreets_apptesters.org.ipa",
           "size": 34218064,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "3.2.133",
+          "date": "2026-10-19",
+          "localizedDescription": "@Sa1y0miii | Gizmo: AI Flashcards 🧸 Min.iOS: [16.4+] 🧀 App version: [3.2.133] !upd  🪼 App Store: https://apps.apple.com/app/id1610516671 📮 Notes: Subs",
+          "downloadURL": "https://fastsign.dev/tg-ipa/sa1y0miii/14497-%E2%80%8EGizmo:%20AI%20Tutor_v3.2.133_tg@Sa1y0miii.ipa",
+          "size": 69934268,
           "minOSVersion": "14.0"
         },
         {
@@ -243256,6 +243418,14 @@
           "localizedDescription": "Chức năng đã thêm: Premium - IPA đã được kiểm tra và tổng hợp bởi TTJB Team",
           "downloadURL": "https://proxy-files.thuthuatjb.com/apps?=apptesters-org/AppTesters_Repo/releases/download/23-12-2025/Shape_3.34_Premium_@thisismanpreets_apptesters.org.ipa",
           "size": 9098563,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "3.37",
+          "date": "2026-10-19",
+          "localizedDescription": "@riftysIPAlibrary | Shape: Lucid Dreaming  Tweak: Subscription Unlocked  Version: 3.37  Patched ✓  @riftysIPAlibrary  Additional Information ℹ️  Min O",
+          "downloadURL": "https://fastsign.dev/tg-ipa/riftysipalibrary/8451-Shape:%20Lucid%20Dreaming-v3.37-riftysipas.ipa",
+          "size": 36402511,
           "minOSVersion": "14.0"
         }
       ],
@@ -307356,19 +307526,19 @@
           "minOSVersion": "14.0"
         },
         {
-          "version": "3.5.9",
-          "date": "2026-09-29",
-          "localizedDescription": "@riftysIPAlibrary | VocaCircle: AI Smart Flashcard  Tweak: Subscription Unlocked  Version: 3.5.9  Patched ✓  @riftysIPAlibrary  Additional Information",
-          "downloadURL": "https://fastsign.dev/tg-ipa/riftysipalibrary/8112-VocaCircle:%20AI%20Smart%20Flashcard-v3.5.9-riftysipas.ipa",
-          "size": 15279667,
-          "minOSVersion": "14.0"
-        },
-        {
           "version": "3.1.7",
           "date": "2026-07-19",
           "localizedDescription": "Chức năng đã thêm: Premium - IPA đã được kiểm tra và tổng hợp bởi TTJB Team",
           "downloadURL": "https://proxy-files.thuthuatjb.com/apps?=apptesters-org/AppTesters_Repo/releases/download/19-12-2025/VocaCircle_3.1.7_Premium_@thisismanpreets_apptesters.org.ipa",
           "size": 13155509,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "3.5.9",
+          "date": "2026-09-29",
+          "localizedDescription": "@riftysIPAlibrary | VocaCircle: AI Smart Flashcard  Tweak: Subscription Unlocked  Version: 3.5.9  Patched ✓  @riftysIPAlibrary  Additional Information",
+          "downloadURL": "https://fastsign.dev/tg-ipa/riftysipalibrary/8112-VocaCircle:%20AI%20Smart%20Flashcard-v3.5.9-riftysipas.ipa",
+          "size": 15279667,
           "minOSVersion": "14.0"
         }
       ],
@@ -311075,19 +311245,19 @@
           "minOSVersion": "14.0"
         },
         {
-          "version": "8.35.2",
-          "date": "2026-09-29",
-          "localizedDescription": "@riftysIPAlibrary | Gronda: Recipes for Chefs  Tweak: Pro Unlocked  Version: 8.35.2  Patched ✓  @riftysIPAlibrary  Additional Information ℹ️  Min OS V",
-          "downloadURL": "https://fastsign.dev/tg-ipa/riftysipalibrary/8116-Gronda:%20Recipes%20for%20Chefs-v8.35.2-riftysipas.ipa",
-          "size": 55926669,
-          "minOSVersion": "14.0"
-        },
-        {
           "version": "8.2.2",
           "date": "2026-07-20",
           "localizedDescription": "Chức năng đã thêm: Pro - IPA đã được kiểm tra và tổng hợp bởi TTJB Team",
           "downloadURL": "https://proxy-files.thuthuatjb.com/apps?=apptesters-org/AppTesters_Repo/releases/download/23-12-2025/Gronda_8.2.2_Pro_@thisismanpreets_apptesters.org.ipa",
           "size": 50431011,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "8.35.2",
+          "date": "2026-09-29",
+          "localizedDescription": "@riftysIPAlibrary | Gronda: Recipes for Chefs  Tweak: Pro Unlocked  Version: 8.35.2  Patched ✓  @riftysIPAlibrary  Additional Information ℹ️  Min OS V",
+          "downloadURL": "https://fastsign.dev/tg-ipa/riftysipalibrary/8116-Gronda:%20Recipes%20for%20Chefs-v8.35.2-riftysipas.ipa",
+          "size": 55926669,
           "minOSVersion": "14.0"
         }
       ],
@@ -311435,6 +311605,14 @@
           "localizedDescription": "Chức năng đã thêm: Premium - IPA đã được kiểm tra và tổng hợp bởi TTJB Team",
           "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-01-2026/JournalCircle_3.1.1_Premium_@thisismanpreets_apptesters.org.ipa",
           "size": 12499289,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "3.6.3",
+          "date": "2026-10-19",
+          "localizedDescription": "@riftysIPAlibrary | JournalCircle: Diary & Tracker  Tweak: Premium Unlocked  Version: 3.6.3  Patched ✓  @riftysIPAlibrary  Additional Information ℹ️  ",
+          "downloadURL": "https://fastsign.dev/tg-ipa/riftysipalibrary/8448-JournalCircle:%20Diary%20&%20Tracker-v3.6.3-riftysipas.ipa",
+          "size": 14928436,
           "minOSVersion": "14.0"
         },
         {
@@ -312360,6 +312538,14 @@
           "localizedDescription": "Chức năng đã thêm: Plus - IPA đã được kiểm tra và tổng hợp bởi TTJB Team",
           "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-01-2026/NoteCircle_4.49_Plus_@thisismanpreets_apptesters.org.ipa",
           "size": 15551457,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "4.91",
+          "date": "2026-10-19",
+          "localizedDescription": "@riftysIPAlibrary | NoteCircle: To Do, Checklist  Tweak: Plus Unlocked  Version: 4.91  Patched ✓  @riftysIPAlibrary  Additional Information ℹ️  Min OS",
+          "downloadURL": "https://fastsign.dev/tg-ipa/riftysipalibrary/8440-NoteCircle:%20To%20Do,%20Checklist-v4.91-riftysipas.ipa",
+          "size": 17346251,
           "minOSVersion": "14.0"
         },
         {
@@ -315429,6 +315615,22 @@
           "localizedDescription": "ipaomtk.com | Facebook IPA has become an integral part of our lives, connecting us with friends, family, and the world around us. With over billions o",
           "downloadURL": "https://file.ipaomtk.com/Facebook/Facebook-Glow-IPAOMTK.com.ipa",
           "size": 0,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "584.0.0",
+          "date": "2026-10-19",
+          "localizedDescription": "@ipavault | Builds of Facebook 584.0.0  ▪Updated to Facebook 584.0.0 Builds: ▪iQFace 1.2 ▪Facebook Plus 1.0.2 Steps to access iQFace settings:  1.) Ta",
+          "downloadURL": "https://fastsign.dev/tg-ipa/ipavault/919-Facebook%20584.0.0%20%28iQFace%29%20%5B@ipavault%5D.ipa",
+          "size": 239358167,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "584.0.0",
+          "date": "2026-10-19",
+          "localizedDescription": "@ipavault | Builds of Facebook 584.0.0  ▪Updated to Facebook 584.0.0 Builds: ▪iQFace 1.2 ▪Facebook Plus 1.0.2 Steps to access iQFace settings:  1.) Ta",
+          "downloadURL": "https://fastsign.dev/tg-ipa/ipavault/920-Facebook%20Plus%201.0.2%20%28FB%20584.0.0%29%20%5B@ipavault%5D.ipa",
+          "size": 226274122,
           "minOSVersion": "14.0"
         },
         {
@@ -375624,66 +375826,18 @@
         },
         {
           "version": "9.1.90",
-          "date": "2026-10-18",
-          "localizedDescription": "scholars lounge | Chroma (spoti.​pw) Spotify version: 9.1.90 Chroma (spoti​.pw) version: 1.0.0-beta1 App by skopevoj Compiled by @z0_0_1  A Liquid Gla",
-          "downloadURL": "https://fastsign.dev/tg-ipa/scholars-lounge/80419-Spotify9.1.90chroma1.0.0-beta1.ipa",
-          "size": 140809370,
+          "date": "2026-10-19",
+          "localizedDescription": "@ipavault | Builds of Spotify 9.1.90 (Taurus 0.60.2)  ▪Taurus is a GPL-3.0 fork of Chroma.pw ▪Ad blocking and Spotify Premium settings ▪Liquid Glass B",
+          "downloadURL": "https://fastsign.dev/tg-ipa/ipavault/923-Spotify%209.1.90%20%28Taurus%200.60.2%29%20%5B@ipavault%5D.ipa",
+          "size": 138585335,
           "minOSVersion": "14.0"
         },
         {
           "version": "9.1.90",
-          "date": "2026-10-15",
-          "localizedDescription": "scholars lounge | Chroma (spoti.​pw) Spotify version: 9.1.90 Chroma (spoti​.pw) version: 0.51.0 Build by skopevoj Compiled by @z0_0_1  A Liquid Glass ",
-          "downloadURL": "https://fastsign.dev/tg-ipa/scholars-lounge/79882-Spotify9.1.90spoti.pw0.51.0.ipa",
-          "size": 140069357,
-          "minOSVersion": "14.0"
-        },
-        {
-          "version": "9.1.90",
-          "date": "2026-10-11",
-          "localizedDescription": "scholars lounge | spoti.​pw Spotify version: 9.1.90 spoti.pw version: 0.51.0-beta1 Build by skopevoj Compiled by @z0_0_1  A Liquid Glass redesign of S",
-          "downloadURL": "https://fastsign.dev/tg-ipa/scholars-lounge/79270-Spotify9.1.90spoti.pw0.51.0beta.1.ipa",
-          "size": 140050491,
-          "minOSVersion": "14.0"
-        },
-        {
-          "version": "9.1.90",
-          "date": "2026-10-11",
-          "localizedDescription": "scholars lounge | spoti.​pw Spotify version: 9.1.90 spoti.pw version: 0.51.0-beta1 Build by skopevoj Compiled by @z0_0_1  A Liquid Glass redesign of S",
-          "downloadURL": "https://fastsign.dev/tg-ipa/scholars-lounge/79267-Spotify9.1.90spoti.pw0.51.0beta.1.ipa",
-          "size": 137292981,
-          "minOSVersion": "14.0"
-        },
-        {
-          "version": "9.1.78",
-          "date": "2026-10-11",
-          "localizedDescription": "scholars lounge | spoti.​pw Spotify version: 9.1.78 spoti.pw version: 0.51.0-beta1 Build by skopevoj Compiled by @z0_0_1  A Liquid Glass redesign of S",
-          "downloadURL": "https://fastsign.dev/tg-ipa/scholars-lounge/79230-Spotify9.1.78spoti.pw0.51.0beta.1.ipa",
-          "size": 142235782,
-          "minOSVersion": "14.0"
-        },
-        {
-          "version": "9.1.88",
-          "date": "2026-10-07",
-          "localizedDescription": "scholars lounge | EeveeSpotifyReincarnated Spotify version: 9.1.88 EeveeSpotifyReincarnated version: 7.0.0 App by SideloadLabs Compiled by @z0_0_1  Th",
-          "downloadURL": "https://fastsign.dev/tg-ipa/scholars-lounge/78601-EeveeSpotify-7.0.0-9.1.88.ipa",
-          "size": 142340620,
-          "minOSVersion": "14.0"
-        },
-        {
-          "version": "9.1.84",
-          "date": "2026-10-06",
-          "localizedDescription": "scholars lounge | EeveeSpotifyReincarnated Spotify version: 9.1.84 EeveeSpotifyReincarnated version: 7.0.0 App by SideloadLabs Compiled by @z0_0_1  Th",
-          "downloadURL": "https://fastsign.dev/tg-ipa/scholars-lounge/78438-EeveeSpotify-7.0.0-9.1.84.ipa",
-          "size": 146364662,
-          "minOSVersion": "14.0"
-        },
-        {
-          "version": "9.1.78",
-          "date": "2026-10-06",
-          "localizedDescription": "scholars lounge | spoti.​pw Spotify version: 9.1.78 spoti.pw version: 0.50.0 App by skopevoj Compiled by @z0_0_1  A Liquid Glass redesign of Spotify f",
-          "downloadURL": "https://fastsign.dev/tg-ipa/scholars-lounge/78379-Spotify9.1.78spoti.pw0.50.0.ipa",
-          "size": 141436940,
+          "date": "2026-10-19",
+          "localizedDescription": "@ipavault | Builds of Spotify 9.1.90 (Taurus 0.60.2)  ▪Taurus is a GPL-3.0 fork of Chroma.pw ▪Ad blocking and Spotify Premium settings ▪Liquid Glass B",
+          "downloadURL": "https://fastsign.dev/tg-ipa/ipavault/924-Spotify%209.1.90%20%28Taurus%200.60.2%29%20No%20Plugins.ipa",
+          "size": 137098824,
           "minOSVersion": "14.0"
         },
         {
@@ -375831,19 +375985,67 @@
           "minOSVersion": "14.0"
         },
         {
-          "version": "9.1.88",
-          "date": "2026-10-09",
-          "localizedDescription": "@ipavault | Builds of Spotify 9.1.88 (Vitrine 1.0.0-b7)  ▪Vitrine is a GPL-3.0 fork of Spoti.pw 0.21.1 ▪Updated to Vitrine 1.0.0-b7 ▪Ad blocking and S",
-          "downloadURL": "https://fastsign.dev/tg-ipa/ipavault/806-Spotify%209.1.88%20%28Vitrine%201.0.0-b7%29%20%5B@ipavault%5D.ipa",
-          "size": 133300543,
+          "version": "9.1.90",
+          "date": "2026-10-18",
+          "localizedDescription": "scholars lounge | Chroma (spoti.​pw) Spotify version: 9.1.90 Chroma (spoti​.pw) version: 1.0.0-beta1 App by skopevoj Compiled by @z0_0_1  A Liquid Gla",
+          "downloadURL": "https://fastsign.dev/tg-ipa/scholars-lounge/80419-Spotify9.1.90chroma1.0.0-beta1.ipa",
+          "size": 140809370,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "9.1.90",
+          "date": "2026-10-15",
+          "localizedDescription": "scholars lounge | Chroma (spoti.​pw) Spotify version: 9.1.90 Chroma (spoti​.pw) version: 0.51.0 Build by skopevoj Compiled by @z0_0_1  A Liquid Glass ",
+          "downloadURL": "https://fastsign.dev/tg-ipa/scholars-lounge/79882-Spotify9.1.90spoti.pw0.51.0.ipa",
+          "size": 140069357,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "9.1.90",
+          "date": "2026-10-11",
+          "localizedDescription": "scholars lounge | spoti.​pw Spotify version: 9.1.90 spoti.pw version: 0.51.0-beta1 Build by skopevoj Compiled by @z0_0_1  A Liquid Glass redesign of S",
+          "downloadURL": "https://fastsign.dev/tg-ipa/scholars-lounge/79270-Spotify9.1.90spoti.pw0.51.0beta.1.ipa",
+          "size": 140050491,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "9.1.90",
+          "date": "2026-10-11",
+          "localizedDescription": "scholars lounge | spoti.​pw Spotify version: 9.1.90 spoti.pw version: 0.51.0-beta1 Build by skopevoj Compiled by @z0_0_1  A Liquid Glass redesign of S",
+          "downloadURL": "https://fastsign.dev/tg-ipa/scholars-lounge/79267-Spotify9.1.90spoti.pw0.51.0beta.1.ipa",
+          "size": 137292981,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "9.1.78",
+          "date": "2026-10-11",
+          "localizedDescription": "scholars lounge | spoti.​pw Spotify version: 9.1.78 spoti.pw version: 0.51.0-beta1 Build by skopevoj Compiled by @z0_0_1  A Liquid Glass redesign of S",
+          "downloadURL": "https://fastsign.dev/tg-ipa/scholars-lounge/79230-Spotify9.1.78spoti.pw0.51.0beta.1.ipa",
+          "size": 142235782,
           "minOSVersion": "14.0"
         },
         {
           "version": "9.1.88",
-          "date": "2026-10-09",
-          "localizedDescription": "@ipavault | Builds of Spotify 9.1.88 (Vitrine 1.0.0-b7)  ▪Vitrine is a GPL-3.0 fork of Spoti.pw 0.21.1 ▪Updated to Vitrine 1.0.0-b7 ▪Ad blocking and S",
-          "downloadURL": "https://fastsign.dev/tg-ipa/ipavault/807-Spotify%209.1.88%20%28Vitrine%201.0.0-b7%29%20No%20Plugins.ipa",
-          "size": 131763068,
+          "date": "2026-10-07",
+          "localizedDescription": "scholars lounge | EeveeSpotifyReincarnated Spotify version: 9.1.88 EeveeSpotifyReincarnated version: 7.0.0 App by SideloadLabs Compiled by @z0_0_1  Th",
+          "downloadURL": "https://fastsign.dev/tg-ipa/scholars-lounge/78601-EeveeSpotify-7.0.0-9.1.88.ipa",
+          "size": 142340620,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "9.1.84",
+          "date": "2026-10-06",
+          "localizedDescription": "scholars lounge | EeveeSpotifyReincarnated Spotify version: 9.1.84 EeveeSpotifyReincarnated version: 7.0.0 App by SideloadLabs Compiled by @z0_0_1  Th",
+          "downloadURL": "https://fastsign.dev/tg-ipa/scholars-lounge/78438-EeveeSpotify-7.0.0-9.1.84.ipa",
+          "size": 146364662,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "9.1.78",
+          "date": "2026-10-06",
+          "localizedDescription": "scholars lounge | spoti.​pw Spotify version: 9.1.78 spoti.pw version: 0.50.0 App by skopevoj Compiled by @z0_0_1  A Liquid Glass redesign of Spotify f",
+          "downloadURL": "https://fastsign.dev/tg-ipa/scholars-lounge/78379-Spotify9.1.78spoti.pw0.50.0.ipa",
+          "size": 141436940,
           "minOSVersion": "14.0"
         },
         {
@@ -375996,6 +376198,22 @@
           "localizedDescription": "⚙️تایبەتمەندیەکانی بەرنامەکە⚙️    تایبەتمەندیە پارەکان کراوەتۆ ✅  بارنامەیەک تایبەت بە لێدانی گۆرانی لەسەر باگراوند ✅   ئەم بەرنامە دابەزێنە خۆت نەجات",
           "downloadURL": "https://github.com/Karbin18/kara-store-ipa/releases/download/karbin-ipa-socil2/Spotify.-._9.0.10_1738703852.ipa",
           "size": 85320000,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "9.1.88",
+          "date": "2026-10-09",
+          "localizedDescription": "@ipavault | Builds of Spotify 9.1.88 (Vitrine 1.0.0-b7)  ▪Vitrine is a GPL-3.0 fork of Spoti.pw 0.21.1 ▪Updated to Vitrine 1.0.0-b7 ▪Ad blocking and S",
+          "downloadURL": "https://fastsign.dev/tg-ipa/ipavault/806-Spotify%209.1.88%20%28Vitrine%201.0.0-b7%29%20%5B@ipavault%5D.ipa",
+          "size": 133300543,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "9.1.88",
+          "date": "2026-10-09",
+          "localizedDescription": "@ipavault | Builds of Spotify 9.1.88 (Vitrine 1.0.0-b7)  ▪Vitrine is a GPL-3.0 fork of Spoti.pw 0.21.1 ▪Updated to Vitrine 1.0.0-b7 ▪Ad blocking and S",
+          "downloadURL": "https://fastsign.dev/tg-ipa/ipavault/807-Spotify%209.1.88%20%28Vitrine%201.0.0-b7%29%20No%20Plugins.ipa",
+          "size": 131763068,
           "minOSVersion": "14.0"
         },
         {
@@ -378547,6 +378765,14 @@
           "localizedDescription": "ipaomtk.com | Introduction In today’s digital world, managing screen time has become a major challenge. With smartphones and apps taking up more hours",
           "downloadURL": "https://file.ipaomtk.com/OffScreen/OffScreen_Screen-Time-Control-IPAOMTK.com.ipa",
           "size": 0,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "3.21.3",
+          "date": "2026-10-19",
+          "localizedDescription": "@riftysIPAlibrary | OffScreen: Screen Time Control  Tweak: Subscription Unlocked  Version: 3.21.3  Notes: Some features require trollstore/jailbreak  ",
+          "downloadURL": "https://fastsign.dev/tg-ipa/riftysipalibrary/8446-OffScreen:%20Screen%20Time%20Control-v3.21.3-riftysipas.ipa",
+          "size": 64469673,
           "minOSVersion": "14.0"
         },
         {
@@ -386180,6 +386406,14 @@
           "minOSVersion": "14.0"
         },
         {
+          "version": "0.0.1111",
+          "date": "2026-10-19",
+          "localizedDescription": "@riftysIPAlibrary | Car Match - Traffic Puzzle  Tweak: Free iAP  Version: 0.0.1111  Patched ✓  @riftysIPAlibrary  Additional Information ℹ️  Min OS Ve",
+          "downloadURL": "https://fastsign.dev/tg-ipa/riftysipalibrary/8452-Car%20Match%20-%20Traffic%20Puzzle-v0.0.1111-riftysipas.ipa",
+          "size": 200192731,
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "0.0.1095",
           "date": "2026-10-09",
           "localizedDescription": "@riftysIPAlibrary | Car Match - Traffic Puzzle  Tweak: Free iAP  Version: 0.0.1095  Patched ✓  @riftysIPAlibrary  Additional Information ℹ️  Min OS Ve",
@@ -389743,6 +389977,14 @@
           "minOSVersion": "14.0"
         },
         {
+          "version": "7.1.6",
+          "date": "2026-10-19",
+          "localizedDescription": "@riftysIPAlibrary | Forza Football - Live Scores  Tweak: Legend Unlocked  Version: 7.1.6  Patched ✓  @riftysIPAlibrary  Additional Information ℹ️  Min",
+          "downloadURL": "https://fastsign.dev/tg-ipa/riftysipalibrary/8445-Forza%20Football%20-%20Live%20Scores-v7.1.6-riftysipas.ipa",
+          "size": 150299819,
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "7.1.5",
           "date": "2026-10-12",
           "localizedDescription": "@riftysIPAlibrary | Forza Football - Live Scores  Tweak: Legend Unlocked  Version: 7.1.5  Patched ✓  @riftysIPAlibrary  Additional Information ℹ️  Min",
@@ -392759,6 +393001,14 @@
           "minOSVersion": "14.0"
         },
         {
+          "version": "3.10.4",
+          "date": "2026-10-19",
+          "localizedDescription": "@blatants | Tripsy: Travel Planner  • Bundle ID: app.tripsy.ios • Updated to: 3.10.4 • Minimum iOS: 18 • Patched • Modifier: Lifetime Unlocked • Tweak",
+          "downloadURL": "https://fastsign.dev/tg-ipa/blatants/12887-Tripsy_Travel_Planner_v3_10_4_Lifetime_Unlocked_blatant_Patched.ipa",
+          "size": 93948737,
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "3.10.3",
           "date": "2026-10-10",
           "localizedDescription": "@blatants | Tripsy: Travel Planner  • Bundle ID: app.tripsy.ios • Updated to: 3.10.3 • Minimum iOS: 18 • Patched • Modifier: Lifetime Unlocked • Tweak",
@@ -394631,6 +394881,14 @@
           "localizedDescription": "ipaomtk.com | Grand Summoners Anime RPG IPA have carved a niche that appeals to a diverse audience.One standout title that has ​captured the hearts ​o",
           "downloadURL": "https://file.ipaomtk.com/grand-summoners-anime-rpg/Grand-Summoners-IPAOMTK.COM.ipa",
           "size": 0,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "4.0.4",
+          "date": "2026-10-19",
+          "localizedDescription": "@kamohacks | Grand Summoners - Anime RPG 🆕⬆️⬆️  🔩Hack Features🔩 ✅Massive Damage ✅Low Enemy Attack ✅Instant Art Skills ✅No Skills Cooldown  📄Buy Your O",
+          "downloadURL": "https://fastsign.dev/tg-ipa/kamohacks/16811-Grand%20Summoners%20-%20KamoHacks%20%5B4.0.4%5D.ipa",
+          "size": 62575296,
           "minOSVersion": "14.0"
         },
         {
@@ -400357,6 +400615,14 @@
           "localizedDescription": "تایبوتمەندیە پارەکان کراونەتۆ",
           "downloadURL": "https://github.com/Karbin18/kara-store-ipa/releases/download/karbin-ipa-socil2/Photoroom.-._6.4.5_1738700819.ipa",
           "size": 86910000,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "2026.42.01",
+          "date": "2026-10-19",
+          "localizedDescription": "@kamohacks | PhotoRoom 🆕 ⬆️⬆️  ⚙️Features⚙️ ✅Max Subscription Unlocked  RULES 📝  📄Buy Your Own Certificate Tap Here 📱Apple ID With Paid Games Tap here",
+          "downloadURL": "https://fastsign.dev/tg-ipa/kamohacks/16820-Photoroom%20-%20KamoHacks%20%5B2026.42.01%5D.ipa",
+          "size": 238873744,
           "minOSVersion": "14.0"
         },
         {
@@ -420466,6 +420732,14 @@
           "minOSVersion": "14.0"
         },
         {
+          "version": "3.4.3",
+          "date": "2026-10-19",
+          "localizedDescription": "@blatants | StressWatch: AI Stress Monitor  • Bundle ID: com.ideation.Stress • Updated to: 3.4.3 • Minimum iOS: 16.0 • Patched • Modifier: Subscriptio",
+          "downloadURL": "https://fastsign.dev/tg-ipa/blatants/12885-StressWatch_AI_Stress_Monitor_v3_4_3_Subscription_Unlocked_blatant.ipa",
+          "size": 353454629,
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "3.4.2",
           "date": "2026-10-15",
           "localizedDescription": "@blatants | StressWatch: AI Stress Monitor  • Bundle ID: com.ideation.Stress • Updated to: 3.4.2 • Minimum iOS: 16.0 • Patched • Modifier: Subscriptio",
@@ -425673,6 +425947,14 @@
           "minOSVersion": "14.0"
         },
         {
+          "version": "1244.0",
+          "date": "2026-10-19",
+          "localizedDescription": "@riftysIPAlibrary | FotMob - Soccer Live Scores  Tweak: Premium Unlocked  Version: 1244.0  Patched ✓  @riftysIPAlibrary  Additional Information ℹ️  Mi",
+          "downloadURL": "https://fastsign.dev/tg-ipa/riftysipalibrary/8444-FotMob%20-%20Soccer%20Live%20Scores-v1244.0-riftysipas.ipa",
+          "size": 68045267,
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "1243.0",
           "date": "2026-10-04",
           "localizedDescription": "@riftysIPAlibrary | FotMob - Soccer Live Scores  Tweak: Premium Unlocked  Version: 1243.0  Patched ✓  @riftysIPAlibrary  Additional Information ℹ️  Mi",
@@ -426936,6 +427218,22 @@
         },
         {
           "version": "7.5.3",
+          "date": "2026-10-19",
+          "localizedDescription": "@kamohacks | Block Blast! 🆕⬆️⬆️  🔩Hack Features🔩  ✅Infinite Revive ✅Score Multiplier ✅Auto Win ✅PREMIUM  📄Buy Your Own Certificate Tap Here 🛒Apple ID ",
+          "downloadURL": "https://fastsign.dev/tg-ipa/kamohacks/16812-Block%20Blast%21%20-%20KamoHacks%20%5B7.5.3%5D.ipa",
+          "size": 94175969,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "7.5.1",
+          "date": "2026-10-16",
+          "localizedDescription": "@kamohacks | Block Blast! 🆕⬆️⬆️  🔩Hack Features🔩  ✅Infinite Revive ✅Score Multiplier ✅Auto Win ✅PREMIUM  📄Buy Your Own Certificate Tap Here 🛒Apple ID ",
+          "downloadURL": "https://fastsign.dev/tg-ipa/kamohacks/16789-Block%20Blast%21%20-%20KamoHacks%20%5B7.5.1%5D.ipa",
+          "size": 93975636,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "7.5.3",
           "date": "2026-10-18",
           "localizedDescription": "@riftysIPAlibrary | Block Blast!  Tweak: No Ads  Version: 7.5.3  Patched ✓  @riftysIPAlibrary  Additional Information ℹ️  Min OS Version: 15.0 Bundle ",
           "downloadURL": "https://fastsign.dev/tg-ipa/riftysipalibrary/8409-Block%20Blast%21-v7.5.3-riftysipas.ipa",
@@ -426972,14 +427270,6 @@
           "localizedDescription": "@riftysIPAlibrary | Block Blast!  Tweak: No Ads  Version: 7.4.9  Patched ✓  @riftysIPAlibrary  Additional Information ℹ️  Min OS Version: 15.0 Bundle ",
           "downloadURL": "https://fastsign.dev/tg-ipa/riftysipalibrary/8123-Block%20Blast%21-v7.4.9-riftysipas.ipa",
           "size": 85837724,
-          "minOSVersion": "14.0"
-        },
-        {
-          "version": "7.5.1",
-          "date": "2026-10-16",
-          "localizedDescription": "@kamohacks | Block Blast! 🆕⬆️⬆️  🔩Hack Features🔩  ✅Infinite Revive ✅Score Multiplier ✅Auto Win ✅PREMIUM  📄Buy Your Own Certificate Tap Here 🛒Apple ID ",
-          "downloadURL": "https://fastsign.dev/tg-ipa/kamohacks/16789-Block%20Blast%21%20-%20KamoHacks%20%5B7.5.1%5D.ipa",
-          "size": 93975636,
           "minOSVersion": "14.0"
         }
       ],
@@ -437122,6 +437412,14 @@
           "downloadURL": "https://file.ipaomtk.com/Car%20Simulator%202/Car-Simulator-IPAOMTK.COM.ipa",
           "size": 0,
           "minOSVersion": "14.0"
+        },
+        {
+          "version": "1.64.10",
+          "date": "2026-10-19",
+          "localizedDescription": "@kamohacks | Car Simulator 2 🆕⬆️⬆️  🔩Hack Features🔩 ✅Free In-App Purchases ✅inf coins   📄Buy Your Own Certificate Tap Here 🛒Apple ID With Paid Games T",
+          "downloadURL": "https://fastsign.dev/tg-ipa/kamohacks/16815-Car%20Simulator%202%20-%20KamoHacks%20%5B1.64.10%5D.ipa",
+          "size": 1107547988,
+          "minOSVersion": "14.0"
         }
       ],
       "subtitle": "ipaomtk.com | Car Simulator 2 IPA It’s time to hit the road and take a real-world driving experience with the Car Simulator 2 IPA for iOS! This impres",
@@ -441218,6 +441516,14 @@
           "minOSVersion": "14.0"
         },
         {
+          "version": "7.4.0",
+          "date": "2026-10-19",
+          "localizedDescription": "@kamohacks | Mortal Kombat 🆕⬆️⬆️  🔩Hack Features🔩 ✅Instantly Kill individual Enemy Characters* ✅Force Swap Enemy Characters* ✅Easy Enemy* (1 hit KO) ✅",
+          "downloadURL": "https://fastsign.dev/tg-ipa/kamohacks/16816-Mortal%20Kombat%20-%20KamoHacks%20%5B7.4.0%5D.ipa",
+          "size": 2005780671,
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "7.3.0",
           "date": "2026-10-02",
           "localizedDescription": "@kamohacks | Mortal Kombat 🆕⬆️⬆️  🔩Hack Features🔩 ✅Instantly Kill individual Enemy Characters* ✅Force Swap Enemy Characters* ✅Easy Enemy* (1 hit KO) ✅",
@@ -442231,6 +442537,14 @@
           "minOSVersion": "14.0"
         },
         {
+          "version": "27.0.5",
+          "date": "2026-10-19",
+          "localizedDescription": "@blatants | Bazaart AI Photo Editor Design  • Bundle ID: co.bazaart.app • Updated to: 27.0.5 • Minimum iOS: 18.0 • Patched • Modifier: Bazaart Super U",
+          "downloadURL": "https://fastsign.dev/tg-ipa/blatants/12875-Bazaart_AI_Photo_Editor_Design_v27_0_5_Bazaart_Super_Unlocked_blatant.ipa",
+          "size": 119965757,
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "27.0.4",
           "date": "2026-10-11",
           "localizedDescription": "@blatants | Bazaart AI Photo Editor Design  • Bundle ID: co.bazaart.app • Updated to: 27.0.4 • Minimum iOS: 18.0 • Patched • Modifier: Bazaart Super U",
@@ -442882,7 +443196,7 @@
         {
           "version": "2.67.0",
           "date": "2026-10-03",
-          "localizedDescription": "@blatants | Locket Widget  • Bundle ID: com.locket.Locket • Updated to: 2.67.0 • Minimum iOS: 15.0 • Patched • Modifier: Locket Gold • Tweaked by @bla",
+          "localizedDescription": "Injected with Gold",
           "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-10-2026/Locket_2.67.0_Gold_@thisismanpreets_apptesters.org.ipa",
           "size": 95093398,
           "minOSVersion": "14.0"
@@ -444729,6 +445043,14 @@
           "localizedDescription": "ipaomtk.com | Tap Titans 2 – Hero Legends IPA iOS is a popular mobile game that has taken the gaming world by storm. Developed by Game Hive Corporatio",
           "downloadURL": "https://file.ipaomtk.com/Tap-Titans-2/Tap-Titans-2-IPAOMTK.COM.ipa",
           "size": 0,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "8.3.2",
+          "date": "2026-10-19",
+          "localizedDescription": "@kamohacks | Tap Titans 2 🆕⬆️⬆️  🔩Hack Features🔩 ✅Freeze Gold  ✅Freeze Mana ✅10x Gold Drop  📄Buy Your Own Certificate Tap Here 🛒Apple ID With Paid Gam",
+          "downloadURL": "https://fastsign.dev/tg-ipa/kamohacks/16810-Tap%20Titans%202%20-%20KamoHacks%20%5B8.3.2%5D.ipa",
+          "size": 223931109,
           "minOSVersion": "14.0"
         }
       ],
@@ -447823,27 +448145,11 @@
           "minOSVersion": "14.0"
         },
         {
-          "version": "8.80.0",
-          "date": "2026-09-29",
-          "localizedDescription": "Variant: NexaSC",
-          "downloadURL": "https://fastsign.dev/tg-ipa/ipavault/633-SoundCloud%208.80.0%20%28NexaSC%29%20%5B@ipavault%5D.ipa",
-          "size": 115739742,
-          "minOSVersion": "14.0"
-        },
-        {
           "version": "8.75.0",
           "date": "2026-09-29",
           "localizedDescription": "@ipa_dark | 🔄 SoundCloud - музыка и звук   🇷🇺 Модифицированный клиент SoundCloud   ⚠️ Устанавливайте вместо оригинального приложения   💡 Для открытия ",
           "downloadURL": "https://fastsign.dev/tg-ipa/ipa-dark/1777-SoundCloud%20NexaSC%20%5Bv8.75.0%5D%28tg@ipa_dark%29.ipa",
           "size": 118226984,
-          "minOSVersion": "14.0"
-        },
-        {
-          "version": "8.80.0",
-          "date": "2026-09-29",
-          "localizedDescription": "@compiledipas | Appstore link : SoundCloud Updated to : 8.80.0. Packaged by : @woomc  Features: • Go+ unlocked • HQ audio streaming • No ads (audio & ",
-          "downloadURL": "https://fastsign.dev/tg-ipa/compiledipas/1624-SoundCloud%208.80.0%20NoAds.ipa",
-          "size": 118444513,
           "minOSVersion": "14.0"
         },
         {
@@ -447932,6 +448238,22 @@
           "localizedDescription": "",
           "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/soundcloud/soundcloud-6.22.0-scmusicplus-2.2.1.ipa",
           "size": 61258341,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "8.80.0",
+          "date": "2026-09-29",
+          "localizedDescription": "Variant: NexaSC",
+          "downloadURL": "https://fastsign.dev/tg-ipa/ipavault/633-SoundCloud%208.80.0%20%28NexaSC%29%20%5B@ipavault%5D.ipa",
+          "size": 115739742,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "8.80.0",
+          "date": "2026-09-29",
+          "localizedDescription": "@compiledipas | Appstore link : SoundCloud Updated to : 8.80.0. Packaged by : @woomc  Features: • Go+ unlocked • HQ audio streaming • No ads (audio & ",
+          "downloadURL": "https://fastsign.dev/tg-ipa/compiledipas/1624-SoundCloud%208.80.0%20NoAds.ipa",
+          "size": 118444513,
           "minOSVersion": "14.0"
         },
         {
@@ -452811,7 +453133,7 @@
   "subtitle": "ipastrong",
   "description": "Merged IPA sources",
   "permissions": [],
-  "lastUpdated": "2026-10-19T04:41:51.465050+00:00",
+  "lastUpdated": "2026-10-19T13:16:57.441837+00:00",
   "iconURL": "https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/source-icon.jpeg",
   "META": {
     "repoName": "ipastrong",
