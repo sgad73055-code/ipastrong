@@ -1,16 +1,17 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 395,
-    "missing": 4,
-    "temporary": 1
+    "ok": 394,
+    "temporary": 2,
+    "missing": 3,
+    "restricted": 1
   },
   "repaired": [],
   "unresolved": [],
-  "date": "2026-10-19T22:23:09.191320+00:00",
-  "inputApps": 8350,
-  "outputApps": 8351,
-  "preservedApps": 48,
+  "date": "2026-10-20T04:53:02.749878+00:00",
+  "inputApps": 8351,
+  "outputApps": 8387,
+  "preservedApps": 64,
   "recoveredPublishedSource": false,
   "removedApps": 0,
   "upstream": {
@@ -77,7 +78,7 @@
       },
       {
         "source": "https://fastsign.dev/repo.json",
-        "apps": 16544,
+        "apps": 16605,
         "error": null
       },
       {
@@ -181,8 +182,8 @@
         "error": null
       }
     ],
-    "inputRecords": 36707,
-    "outputApps": 8303,
+    "inputRecords": 36768,
+    "outputApps": 8323,
     "rejectedRecords": 166
   }
 }
