@@ -2,14 +2,16 @@
   "checked": 400,
   "outcomes": {
     "ok": 395,
-    "missing": 5
+    "missing": 3,
+    "restricted": 1,
+    "temporary": 1
   },
   "repaired": [],
   "unresolved": [],
-  "date": "2026-10-20T11:39:01.890713+00:00",
-  "inputApps": 8387,
-  "outputApps": 8388,
-  "preservedApps": 65,
+  "date": "2026-10-20T17:06:47.545032+00:00",
+  "inputApps": 8388,
+  "outputApps": 8400,
+  "preservedApps": 67,
   "recoveredPublishedSource": false,
   "removedApps": 0,
   "upstream": {
@@ -21,17 +23,17 @@
       },
       {
         "source": "https://ipa.cypwn.xyz/cypwn.json",
-        "apps": 210,
+        "apps": 209,
         "error": null
       },
       {
         "source": "https://wuxu1.github.io/wuxu-complete.json",
-        "apps": 20,
+        "apps": 17,
         "error": null
       },
       {
         "source": "https://wuxu1.github.io/wuxu-complete-plus.json",
-        "apps": 13,
+        "apps": 12,
         "error": null
       },
       {
@@ -180,8 +182,8 @@
         "error": null
       }
     ],
-    "inputRecords": 36768,
-    "outputApps": 8323,
+    "inputRecords": 36763,
+    "outputApps": 8333,
     "rejectedRecords": 166
   }
 }
