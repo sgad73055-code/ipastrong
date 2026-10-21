@@ -23,6 +23,32 @@
   ],
   "apps": [
     {
+      "name": "teleceres",
+      "bundleIdentifier": "ph.telegra.Telegraph",
+      "developerName": "IPA Strong",
+      "version": "13.0",
+      "versionDate": "2026-10-21T11:46:39.914995+00:00",
+      "downloadURL": "https://github.com/sgad73055-code/ipastrong/releases/download/telegram/TeleCeres@wahmipa.ipa",
+      "size": 81208312,
+      "iconURL": "https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/assets/app-icons/dd71b0461bd967c8727fa585.png",
+      "localizedDescription": "💬  إخفاء الرسائل المحذوفة  💬  وضع الشبح في القصص والرسائل  💬  رفع القصص بالجودة الأصلية  💬  تنزيل القصص ومقاطع Reels من الاستكشاف  💬  مشاهدة الوسائط المؤقتة بلا حدود  💬  نسخ التعليقات  💬  تعطيل تسجيل المكالمات  💬  تخصيص مظهر التطبيق",
+      "versions": [
+        {
+          "version": "13.0",
+          "date": "2026-10-21T11:46:39.914995+00:00",
+          "downloadURL": "https://github.com/sgad73055-code/ipastrong/releases/download/telegram/TeleCeres@wahmipa.ipa",
+          "size": 81208312,
+          "sha256": "dd71b0461bd967c8727fa5854b0878a9939e1d8afe10e60284efff7a7e92a0ad",
+          "buildVersion": "100001",
+          "minOSVersion": "15.0"
+        }
+      ],
+      "sha256": "dd71b0461bd967c8727fa5854b0878a9939e1d8afe10e60284efff7a7e92a0ad",
+      "_sourceURL": "local",
+      "_addedFromLink": true,
+      "minOSVersion": "15.0"
+    },
+    {
       "name": "mushare",
       "bundleIdentifier": "com.ali.Mushare",
       "developerName": "IPA Strong",
@@ -457599,7 +457625,7 @@
   "subtitle": "ipastrong",
   "description": "Merged IPA sources",
   "permissions": [],
-  "lastUpdated": "2026-10-21T11:42:48.938074+00:00",
+  "lastUpdated": "2026-10-21T11:46:39.914995+00:00",
   "iconURL": "https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/source-icon.jpeg",
   "META": {
     "repoName": "ipastrong",
