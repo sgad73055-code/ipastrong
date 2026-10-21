@@ -23,6 +23,32 @@
   ],
   "apps": [
     {
+      "name": "spotify",
+      "bundleIdentifier": "com.spotify.client",
+      "developerName": "IPA Strong",
+      "version": "9.1.90",
+      "versionDate": "2026-10-21T01:41:31.506150+00:00",
+      "downloadURL": "https://github.com/sgad73055-code/ipastrong/releases/download/spotify/Taurus-0.60.2.ipa",
+      "size": 137673025,
+      "iconURL": "https://fastsign.dev/tg-icon/ipavault/923.png",
+      "localizedDescription": "افضل نسخه سبوتيفاي",
+      "versions": [
+        {
+          "version": "9.1.90",
+          "date": "2026-10-21T01:41:31.506150+00:00",
+          "downloadURL": "https://github.com/sgad73055-code/ipastrong/releases/download/spotify/Taurus-0.60.2.ipa",
+          "size": 137673025,
+          "sha256": "81346641653fbd559b8fb30d725dab47ae13b4f73d935108accb4885382fb627",
+          "buildVersion": "919002269",
+          "minOSVersion": "16.1"
+        }
+      ],
+      "sha256": "81346641653fbd559b8fb30d725dab47ae13b4f73d935108accb4885382fb627",
+      "_sourceURL": "local",
+      "_addedFromLink": true,
+      "minOSVersion": "16.1"
+    },
+    {
       "name": "Subway surf",
       "bundleIdentifier": "com.kiloo.subwaysurfers",
       "developerName": "IPA Strong",
@@ -456343,7 +456369,7 @@
   "subtitle": "ipastrong",
   "description": "Merged IPA sources",
   "permissions": [],
-  "lastUpdated": "2026-10-21T01:01:18.409191+00:00",
+  "lastUpdated": "2026-10-21T01:41:31.506150+00:00",
   "iconURL": "https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/source-icon.jpeg",
   "META": {
     "repoName": "ipastrong",
