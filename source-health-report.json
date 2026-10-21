@@ -1,16 +1,17 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 390,
-    "missing": 8,
-    "restricted": 2
+    "ok": 392,
+    "missing": 5,
+    "temporary": 2,
+    "not_ipa": 1
   },
   "repaired": [],
   "unresolved": [],
-  "date": "2026-10-20T21:38:44.286016+00:00",
-  "inputApps": 8400,
-  "outputApps": 8400,
-  "preservedApps": 67,
+  "date": "2026-10-21T04:49:15.724003+00:00",
+  "inputApps": 8402,
+  "outputApps": 8426,
+  "preservedApps": 90,
   "recoveredPublishedSource": false,
   "removedApps": 0,
   "upstream": {
@@ -77,7 +78,7 @@
       },
       {
         "source": "https://fastsign.dev/repo.json",
-        "apps": 16605,
+        "apps": 16662,
         "error": null
       },
       {
@@ -177,12 +178,12 @@
       },
       {
         "source": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json",
-        "apps": 64,
+        "apps": 67,
         "error": null
       }
     ],
-    "inputRecords": 36765,
-    "outputApps": 8333,
+    "inputRecords": 36827,
+    "outputApps": 8336,
     "rejectedRecords": 166
   }
 }
