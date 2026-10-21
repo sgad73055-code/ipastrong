@@ -2,28 +2,28 @@
   "checked": 400,
   "outcomes": {
     "ok": 392,
-    "not_ipa": 4,
-    "missing": 2,
-    "restricted": 2
+    "missing": 6,
+    "temporary": 1,
+    "restricted": 1
   },
   "repaired": [],
   "unresolved": [],
-  "date": "2026-10-21T17:14:03.046179+00:00",
+  "date": "2026-10-21T21:44:42.356942+00:00",
   "inputApps": 8428,
-  "outputApps": 8428,
-  "preservedApps": 90,
+  "outputApps": 8431,
+  "preservedApps": 96,
   "recoveredPublishedSource": false,
   "removedApps": 0,
   "upstream": {
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 9705,
+        "apps": 9719,
         "error": null
       },
       {
         "source": "https://ipa.cypwn.xyz/cypwn.json",
-        "apps": 209,
+        "apps": 210,
         "error": null
       },
       {
@@ -178,12 +178,12 @@
       },
       {
         "source": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json",
-        "apps": 67,
+        "apps": 64,
         "error": null
       }
     ],
-    "inputRecords": 36979,
-    "outputApps": 8338,
+    "inputRecords": 36991,
+    "outputApps": 8335,
     "rejectedRecords": 169
   }
 }
