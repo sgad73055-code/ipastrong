@@ -1,16 +1,15 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 392,
+    "ok": 391,
     "missing": 5,
-    "temporary": 2,
-    "not_ipa": 1
+    "restricted": 4
   },
   "repaired": [],
   "unresolved": [],
-  "date": "2026-10-21T04:49:15.724003+00:00",
-  "inputApps": 8402,
-  "outputApps": 8426,
+  "date": "2026-10-21T11:51:26.142655+00:00",
+  "inputApps": 8428,
+  "outputApps": 8428,
   "preservedApps": 90,
   "recoveredPublishedSource": false,
   "removedApps": 0,
@@ -18,12 +17,12 @@
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 9554,
+        "apps": 9538,
         "error": null
       },
       {
         "source": "https://ipa.cypwn.xyz/cypwn.json",
-        "apps": 210,
+        "apps": 209,
         "error": null
       },
       {
@@ -182,8 +181,8 @@
         "error": null
       }
     ],
-    "inputRecords": 36827,
-    "outputApps": 8336,
+    "inputRecords": 36812,
+    "outputApps": 8338,
     "rejectedRecords": 166
   }
 }
