@@ -23,6 +23,32 @@
   ],
   "apps": [
     {
+      "name": "mushare",
+      "bundleIdentifier": "com.ali.Mushare",
+      "developerName": "IPA Strong",
+      "version": "1.1",
+      "versionDate": "2026-10-21T11:42:48.938074+00:00",
+      "downloadURL": "https://github.com/sgad73055-code/ipastrong/releases/download/mushare/Mushare_1.1.ipa",
+      "size": 11741496,
+      "iconURL": "https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/source-icon.jpeg",
+      "localizedDescription": "Mushare نزل من اليوتيوب واحفظ في  ابل ميوزك التطبيق الاول من نوعة في عالم ios لا يحتاج الى حاسوب او جيلبريك او ترولستور",
+      "versions": [
+        {
+          "version": "1.1",
+          "date": "2026-10-21T11:42:48.938074+00:00",
+          "downloadURL": "https://github.com/sgad73055-code/ipastrong/releases/download/mushare/Mushare_1.1.ipa",
+          "size": 11741496,
+          "sha256": "462844d32f60e4a84d9c10561803712e98509dfd8506791101b7e6e07468861e",
+          "buildVersion": "1",
+          "minOSVersion": "27.0"
+        }
+      ],
+      "sha256": "462844d32f60e4a84d9c10561803712e98509dfd8506791101b7e6e07468861e",
+      "_sourceURL": "local",
+      "_addedFromLink": true,
+      "minOSVersion": "27.0"
+    },
+    {
       "name": "Instagram",
       "bundleIdentifier": "com.burbn.instagram",
       "developerName": "@ipavault",
@@ -457573,7 +457599,7 @@
   "subtitle": "ipastrong",
   "description": "Merged IPA sources",
   "permissions": [],
-  "lastUpdated": "2026-10-21T04:48:33.470269+00:00",
+  "lastUpdated": "2026-10-21T11:42:48.938074+00:00",
   "iconURL": "https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/source-icon.jpeg",
   "META": {
     "repoName": "ipastrong",
