@@ -51,6 +51,23 @@ def key(app):
 def validate(source):
     if not isinstance(source, dict) or not source.get('name') or not isinstance(source.get('apps'), list) or not source['apps']:
         raise ValueError('Empty or invalid source; publication blocked')
+    # AltSourceKit decodes OSVersion from a JSON string. Some feeds emit 10.0
+    # as a number; one such field prevents clients from decoding the whole repo.
+    for entry in source['apps']:
+        if not isinstance(entry, dict):
+            continue
+        records = [entry] + (entry.get('versions') if isinstance(entry.get('versions'), list) else [])
+        for record in records:
+            if not isinstance(record, dict):
+                continue
+            for field in ('minOSVersion', 'maxOSVersion'):
+                value = record.get(field)
+                if isinstance(value, (int, float)) and not isinstance(value, bool):
+                    if value < 0 or not float('-inf') < value < float('inf'):
+                        raise ValueError('Invalid OS version')
+                    record[field] = str(value)
+                elif value is not None and not isinstance(value, str):
+                    raise ValueError('Invalid OS version type')
     for app in source['apps']:
         if not isinstance(app, dict) or not app.get('name') or not app.get('bundleIdentifier') or not valid_url(app.get('downloadURL')):
             raise ValueError('App missing required identity or download URL')
@@ -228,7 +245,7 @@ def publish(root, old_bytes, source):
     validate(source)
     # Backup is updated only AFTER full validation, before the atomic source replacement.
     atomic_bytes(root/'backups/ipastrong.last-good.json.gz', gzip.compress(old_bytes, mtime=0))
-    write(root/'ipastrong.json', source)
+    atomic_bytes(root/'ipastrong.json', (json.dumps(source, ensure_ascii=False, separators=(',', ':'), allow_nan=False)+'\n').encode())
 
 def rollback(root):
     data = gzip.decompress((root/'backups/ipastrong.last-good.json.gz').read_bytes())
