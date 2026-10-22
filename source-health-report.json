@@ -18,8 +18,8 @@
       "url": "https://fastsign.dev/tg-ipa/iosdecrypted/222977-%E2%80%8EIncremental%20Push%20Up-v2.0_@iosdecrypted_processed.ipa"
     }
   ],
-  "date": "2026-10-22T17:11:54.662395+00:00",
-  "inputApps": 11000,
+  "date": "2026-10-22T19:05:30.942882+00:00",
+  "inputApps": 11253,
   "outputApps": 11253,
   "preservedApps": 116,
   "recoveredPublishedSource": false,
@@ -28,7 +28,7 @@
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 9739,
+        "apps": 9746,
         "error": null
       },
       {
@@ -192,7 +192,7 @@
         "error": null
       }
     ],
-    "inputRecords": 39795,
+    "inputRecords": 39802,
     "outputApps": 11137,
     "rejectedRecords": 169
   }
