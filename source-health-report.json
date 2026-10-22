@@ -1,29 +1,28 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 392,
-    "missing": 6,
-    "temporary": 1,
-    "restricted": 1
+    "ok": 395,
+    "missing": 3,
+    "temporary": 2
   },
   "repaired": [],
   "unresolved": [],
-  "date": "2026-10-21T21:44:42.356942+00:00",
-  "inputApps": 8428,
-  "outputApps": 8431,
-  "preservedApps": 96,
+  "date": "2026-10-22T04:47:40.142378+00:00",
+  "inputApps": 8431,
+  "outputApps": 8426,
+  "preservedApps": 119,
   "recoveredPublishedSource": false,
   "removedApps": 0,
   "upstream": {
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 9719,
+        "apps": 9726,
         "error": null
       },
       {
         "source": "https://ipa.cypwn.xyz/cypwn.json",
-        "apps": 210,
+        "apps": 209,
         "error": null
       },
       {
@@ -78,7 +77,7 @@
       },
       {
         "source": "https://fastsign.dev/repo.json",
-        "apps": 16662,
+        "apps": 16618,
         "error": null
       },
       {
@@ -182,8 +181,8 @@
         "error": null
       }
     ],
-    "inputRecords": 36991,
-    "outputApps": 8335,
+    "inputRecords": 36953,
+    "outputApps": 8307,
     "rejectedRecords": 169
   }
 }
