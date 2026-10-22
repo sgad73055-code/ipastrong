@@ -1,15 +1,30 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 395,
+    "ok": 393,
+    "restricted": 2,
     "missing": 3,
-    "temporary": 2
+    "not_ipa": 1,
+    "temporary": 1
   },
   "repaired": [],
-  "unresolved": [],
-  "date": "2026-10-22T04:47:40.142378+00:00",
-  "inputApps": 8431,
-  "outputApps": 8426,
+  "unresolved": [
+    {
+      "name": "YTPlus/YTLite Cracked + Bonus Tweaks (6.0 Beta 2 - IPAVault - Liquid Glass Support)",
+      "url": "https://repo.ballermc.com/tubevault/YouTube%2021.39.4%20%28YTPlus%206.0~b2%29%20%5B@ipavault%5D.ipa"
+    },
+    {
+      "name": "Oceanhorn 3",
+      "url": "https://cold2.gofile.io/download/web/854e9513-7fb2-447a-8ead-0b9e87c16326/Oceanhorn_3_(v1.1.1_Univ_64bit_os150_ok26)-user_hidden.bfi2.ipa"
+    },
+    {
+      "name": "Idle Push Up",
+      "url": "https://fastsign.dev/tg-ipa/iosdecrypted/222977-%E2%80%8EIncremental%20Push%20Up-v2.0_@iosdecrypted_processed.ipa"
+    }
+  ],
+  "date": "2026-10-22T11:54:43.888966+00:00",
+  "inputApps": 8426,
+  "outputApps": 8427,
   "preservedApps": 119,
   "recoveredPublishedSource": false,
   "removedApps": 0,
@@ -17,7 +32,7 @@
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 9726,
+        "apps": 9735,
         "error": null
       },
       {
@@ -181,8 +196,8 @@
         "error": null
       }
     ],
-    "inputRecords": 36953,
-    "outputApps": 8307,
+    "inputRecords": 36962,
+    "outputApps": 8308,
     "rejectedRecords": 169
   }
 }
