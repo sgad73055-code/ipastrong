@@ -1,8 +1,7 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 395,
-    "temporary": 5
+    "ok": 400
   },
   "repaired": [],
   "unresolved": [
@@ -19,9 +18,9 @@
       "url": "https://fastsign.dev/tg-ipa/iosdecrypted/222977-%E2%80%8EIncremental%20Push%20Up-v2.0_@iosdecrypted_processed.ipa"
     }
   ],
-  "date": "2026-10-23T17:08:57.823541+00:00",
-  "inputApps": 11287,
-  "outputApps": 11287,
+  "date": "2026-10-23T21:25:45.304464+00:00",
+  "inputApps": 11288,
+  "outputApps": 11288,
   "preservedApps": 119,
   "recoveredPublishedSource": false,
   "removedApps": 0,
@@ -29,12 +28,12 @@
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 9769,
+        "apps": 9783,
         "error": null
       },
       {
         "source": "https://ipa.cypwn.xyz/cypwn.json",
-        "apps": 209,
+        "apps": 210,
         "error": null
       },
       {
@@ -154,8 +153,8 @@
       },
       {
         "source": "https://provenance-emu.com/apps.json",
-        "apps": 0,
-        "error": "The read operation timed out"
+        "apps": 1,
+        "error": null
       },
       {
         "source": "https://alt.getutm.app",
@@ -193,8 +192,8 @@
         "error": null
       }
     ],
-    "inputRecords": 40030,
-    "outputApps": 11168,
+    "inputRecords": 40046,
+    "outputApps": 11169,
     "rejectedRecords": 169
   }
 }
