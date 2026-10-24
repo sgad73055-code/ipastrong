@@ -2,9 +2,8 @@
   "checked": 400,
   "outcomes": {
     "ok": 392,
-    "missing": 5,
-    "temporary": 1,
-    "not_ipa": 2
+    "missing": 7,
+    "not_ipa": 1
   },
   "repaired": [],
   "unresolved": [
@@ -27,11 +26,15 @@
     {
       "name": "Beholder: Conductor",
       "url": "https://fastsign.dev/tg-ipa/ipa-dark/1762-Beholder%20%20Conductor%20%5Bv1.0.86%5D%28tg@ipa_dark%29.ipa"
+    },
+    {
+      "name": "Spotluma",
+      "url": "https://fastsign.dev/tg-ipa/ipa-dark/1761-Tink%20Spot%20%5Bv8.2.9%5D%28tg@ipa_dark%29.ipa"
     }
   ],
-  "date": "2026-10-24T15:58:45.006468+00:00",
-  "inputApps": 11413,
-  "outputApps": 11417,
+  "date": "2026-10-24T20:51:17.792079+00:00",
+  "inputApps": 11418,
+  "outputApps": 11419,
   "preservedApps": 283,
   "recoveredPublishedSource": false,
   "removedApps": 0,
@@ -39,7 +42,7 @@
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 9794,
+        "apps": 9795,
         "error": null
       },
       {
@@ -203,8 +206,8 @@
         "error": null
       }
     ],
-    "inputRecords": 41269,
-    "outputApps": 11134,
+    "inputRecords": 41271,
+    "outputApps": 11136,
     "rejectedRecords": 169
   }
 }
