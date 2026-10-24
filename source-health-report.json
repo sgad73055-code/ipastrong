@@ -1,8 +1,10 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 399,
-    "not_ipa": 1
+    "ok": 392,
+    "missing": 5,
+    "temporary": 1,
+    "not_ipa": 2
   },
   "repaired": [],
   "unresolved": [
@@ -15,13 +17,21 @@
       "url": "https://cold2.gofile.io/download/web/854e9513-7fb2-447a-8ead-0b9e87c16326/Oceanhorn_3_(v1.1.1_Univ_64bit_os150_ok26)-user_hidden.bfi2.ipa"
     },
     {
+      "name": "CercubePlus (Cercube+)",
+      "url": "https://github.com/qnblackcat/CercubePlus/releases/download/v17.43.1-5.3.11/CercubePlus_17.43.1_5.3.11.ipa"
+    },
+    {
       "name": "Idle Push Up",
       "url": "https://fastsign.dev/tg-ipa/iosdecrypted/222977-%E2%80%8EIncremental%20Push%20Up-v2.0_@iosdecrypted_processed.ipa"
+    },
+    {
+      "name": "Beholder: Conductor",
+      "url": "https://fastsign.dev/tg-ipa/ipa-dark/1762-Beholder%20%20Conductor%20%5Bv1.0.86%5D%28tg@ipa_dark%29.ipa"
     }
   ],
-  "date": "2026-10-24T11:02:52.903521+00:00",
-  "inputApps": 11411,
-  "outputApps": 11413,
+  "date": "2026-10-24T15:58:45.006468+00:00",
+  "inputApps": 11413,
+  "outputApps": 11417,
   "preservedApps": 283,
   "recoveredPublishedSource": false,
   "removedApps": 0,
@@ -29,7 +39,7 @@
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 9789,
+        "apps": 9794,
         "error": null
       },
       {
@@ -44,7 +54,7 @@
       },
       {
         "source": "https://wuxu1.github.io/wuxu-complete-plus.json",
-        "apps": 12,
+        "apps": 13,
         "error": null
       },
       {
@@ -193,8 +203,8 @@
         "error": null
       }
     ],
-    "inputRecords": 41263,
-    "outputApps": 11130,
+    "inputRecords": 41269,
+    "outputApps": 11134,
     "rejectedRecords": 169
   }
 }
