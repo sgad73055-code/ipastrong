@@ -1,7 +1,8 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 400
+    "ok": 399,
+    "not_ipa": 1
   },
   "repaired": [],
   "unresolved": [
@@ -18,9 +19,9 @@
       "url": "https://fastsign.dev/tg-ipa/iosdecrypted/222977-%E2%80%8EIncremental%20Push%20Up-v2.0_@iosdecrypted_processed.ipa"
     }
   ],
-  "date": "2026-10-24T04:39:46.917759+00:00",
-  "inputApps": 11289,
-  "outputApps": 11410,
+  "date": "2026-10-24T11:02:52.903521+00:00",
+  "inputApps": 11411,
+  "outputApps": 11413,
   "preservedApps": 283,
   "recoveredPublishedSource": false,
   "removedApps": 0,
@@ -28,12 +29,12 @@
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 9788,
+        "apps": 9789,
         "error": null
       },
       {
         "source": "https://ipa.cypwn.xyz/cypwn.json",
-        "apps": 209,
+        "apps": 210,
         "error": null
       },
       {
@@ -188,12 +189,12 @@
       },
       {
         "source": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json",
-        "apps": 64,
+        "apps": 66,
         "error": null
       }
     ],
-    "inputRecords": 41258,
-    "outputApps": 11127,
+    "inputRecords": 41263,
+    "outputApps": 11130,
     "rejectedRecords": 169
   }
 }
