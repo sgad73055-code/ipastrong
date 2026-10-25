@@ -2,8 +2,7 @@
   "checked": 400,
   "outcomes": {
     "ok": 392,
-    "missing": 7,
-    "not_ipa": 1
+    "missing": 8
   },
   "repaired": [],
   "unresolved": [
@@ -20,6 +19,14 @@
       "url": "https://github.com/qnblackcat/CercubePlus/releases/download/v17.43.1-5.3.11/CercubePlus_17.43.1_5.3.11.ipa"
     },
     {
+      "name": "Alpin Quests",
+      "url": "https://fastsign.dev/tg-ipa/ipa-dark/1766-Alpin%20Quest%20PRO%20-%20Outdoor%20GPS%20%5Bv10.0.50+1800%5D%28tg@ipa_dark%29.ipa"
+    },
+    {
+      "name": "Animates (patched)",
+      "url": "https://fastsign.dev/tg-ipa/iosdecrypted/222688-%E2%80%8E%20Animates_v1.0.19_patched_@iosdecrypted_processed.ipa"
+    },
+    {
       "name": "Idle Push Up",
       "url": "https://fastsign.dev/tg-ipa/iosdecrypted/222977-%E2%80%8EIncremental%20Push%20Up-v2.0_@iosdecrypted_processed.ipa"
     },
@@ -28,21 +35,29 @@
       "url": "https://fastsign.dev/tg-ipa/ipa-dark/1762-Beholder%20%20Conductor%20%5Bv1.0.86%5D%28tg@ipa_dark%29.ipa"
     },
     {
+      "name": "PosePal",
+      "url": "https://fastsign.dev/tg-ipa/sa1y0miii/13593-%E2%80%8E%20PosePal_v1.1_tg@Sa1y0miii.ipa"
+    },
+    {
       "name": "Spotluma",
       "url": "https://fastsign.dev/tg-ipa/ipa-dark/1761-Tink%20Spot%20%5Bv8.2.9%5D%28tg@ipa_dark%29.ipa"
+    },
+    {
+      "name": "GrowCastle",
+      "url": "https://file.ipaomtk.com/Grow%20Castle%21/Grow-Castle-1.50.14-IPAOMTK.COM.ipa"
     }
   ],
-  "date": "2026-10-24T20:51:17.792079+00:00",
-  "inputApps": 11418,
-  "outputApps": 11419,
-  "preservedApps": 283,
+  "date": "2026-10-25T04:42:45.534848+00:00",
+  "inputApps": 11419,
+  "outputApps": 11360,
+  "preservedApps": 295,
   "recoveredPublishedSource": false,
   "removedApps": 0,
   "upstream": {
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 9795,
+        "apps": 9797,
         "error": null
       },
       {
@@ -102,7 +117,7 @@
       },
       {
         "source": "https://fastsign.dev/repo.json",
-        "apps": 18030,
+        "apps": 16001,
         "error": null
       },
       {
@@ -206,8 +221,8 @@
         "error": null
       }
     ],
-    "inputRecords": 41271,
-    "outputApps": 11136,
+    "inputRecords": 39244,
+    "outputApps": 11065,
     "rejectedRecords": 169
   }
 }
