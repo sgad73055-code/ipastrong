@@ -1,11 +1,9 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 392,
-    "missing": 4,
-    "temporary": 1,
-    "not_ipa": 1,
-    "restricted": 2
+    "ok": 391,
+    "missing": 6,
+    "restricted": 3
   },
   "repaired": [],
   "unresolved": [
@@ -18,8 +16,20 @@
       "url": "https://fastsign.dev/tg-ipa/riftysipalibrary/8427-MySwimPro:%20#1%20Swim%20Workout%20App-v9.7.0-riftysipas.ipa"
     },
     {
+      "name": "Telegram (TGExtra)",
+      "url": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Telegram-13.0-TGExtra.ipa"
+    },
+    {
+      "name": "Phonto Pro",
+      "url": "https://dl.ikiraplus.workers.dev/dl/phonto.pro.4.9.43-1"
+    },
+    {
       "name": "Oceanhorn 3",
       "url": "https://cold2.gofile.io/download/web/854e9513-7fb2-447a-8ead-0b9e87c16326/Oceanhorn_3_(v1.1.1_Univ_64bit_os150_ok26)-user_hidden.bfi2.ipa"
+    },
+    {
+      "name": "Spotify++",
+      "url": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Spotify.v8.9.36.+.Eevee.v2.1.ipa"
     },
     {
       "name": "AppStore++ TrollStore",
@@ -36,6 +46,10 @@
     {
       "name": "YTPlus/YTLite Cracked + Bonus Tweaks (6.0 Beta 2 - IPAVault - Liquid Glass Support)",
       "url": "https://repo.ballermc.com/tubevault/YouTube%2021.39.4%20%28YTPlus%206.0~b2%29%20%5B@ipavault%5D.ipa"
+    },
+    {
+      "name": "Colourtone",
+      "url": "https://fastsign.dev/tg-ipa/riftysipalibrary/8143-Colourtone:%20#1%20Photo%20Editor-v5.7-riftysipas.ipa"
     },
     {
       "name": "YTPlus/YTLite Cracked (6.0 BETA 1) - v21.39.4",
@@ -78,17 +92,17 @@
       "url": "https://file.ipaomtk.com/Grow%20Castle%21/Grow-Castle-1.50.14-IPAOMTK.COM.ipa"
     }
   ],
-  "date": "2026-10-26T13:04:55.964731+00:00",
+  "date": "2026-10-26T22:41:56.539244+00:00",
   "inputApps": 11379,
-  "outputApps": 11379,
-  "preservedApps": 311,
+  "outputApps": 11380,
+  "preservedApps": 310,
   "recoveredPublishedSource": false,
   "removedApps": 0,
   "upstream": {
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 9824,
+        "apps": 9839,
         "error": null
       },
       {
@@ -252,8 +266,8 @@
         "error": null
       }
     ],
-    "inputRecords": 39263,
-    "outputApps": 11068,
-    "rejectedRecords": 170
+    "inputRecords": 39278,
+    "outputApps": 11070,
+    "rejectedRecords": 171
   }
 }
