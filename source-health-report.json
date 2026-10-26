@@ -1,9 +1,11 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 387,
-    "restricted": 3,
-    "missing": 10
+    "ok": 392,
+    "missing": 4,
+    "temporary": 1,
+    "not_ipa": 1,
+    "restricted": 2
   },
   "repaired": [],
   "unresolved": [
@@ -76,8 +78,8 @@
       "url": "https://file.ipaomtk.com/Grow%20Castle%21/Grow-Castle-1.50.14-IPAOMTK.COM.ipa"
     }
   ],
-  "date": "2026-10-26T04:48:50.816336+00:00",
-  "inputApps": 11364,
+  "date": "2026-10-26T13:04:55.964731+00:00",
+  "inputApps": 11379,
   "outputApps": 11379,
   "preservedApps": 311,
   "recoveredPublishedSource": false,
@@ -86,7 +88,7 @@
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 9814,
+        "apps": 9824,
         "error": null
       },
       {
@@ -250,7 +252,7 @@
         "error": null
       }
     ],
-    "inputRecords": 39253,
+    "inputRecords": 39263,
     "outputApps": 11068,
     "rejectedRecords": 170
   }
