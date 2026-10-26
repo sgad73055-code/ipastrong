@@ -1,9 +1,9 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 382,
-    "missing": 17,
-    "temporary": 1
+    "ok": 387,
+    "restricted": 3,
+    "missing": 10
   },
   "repaired": [],
   "unresolved": [
@@ -14,10 +14,6 @@
     {
       "name": "MySwimPro",
       "url": "https://fastsign.dev/tg-ipa/riftysipalibrary/8427-MySwimPro:%20#1%20Swim%20Workout%20App-v9.7.0-riftysipas.ipa"
-    },
-    {
-      "name": "YTPlus/YTLite Cracked + Bonus Tweaks (6.0 Beta 2 - IPAVault - Liquid Glass Support)",
-      "url": "https://repo.ballermc.com/tubevault/YouTube%2021.39.4%20%28YTPlus%206.0~b2%29%20%5B@ipavault%5D.ipa"
     },
     {
       "name": "Oceanhorn 3",
@@ -36,6 +32,10 @@
       "url": "https://github.com/qnblackcat/CercubePlus/releases/download/v17.43.1-5.3.11/CercubePlus_17.43.1_5.3.11.ipa"
     },
     {
+      "name": "YTPlus/YTLite Cracked + Bonus Tweaks (6.0 Beta 2 - IPAVault - Liquid Glass Support)",
+      "url": "https://repo.ballermc.com/tubevault/YouTube%2021.39.4%20%28YTPlus%206.0~b2%29%20%5B@ipavault%5D.ipa"
+    },
+    {
       "name": "YTPlus/YTLite Cracked (6.0 BETA 1) - v21.39.4",
       "url": "https://repo.ballermc.com/tubevault/YouTube_v21.39.4_YTPlus_v6.0_Beta_1_cracked%5Btg@tubevault%5D.ipa"
     },
@@ -48,8 +48,16 @@
       "url": "https://fastsign.dev/tg-ipa/iosdecrypted/222688-%E2%80%8E%20Animates_v1.0.19_patched_@iosdecrypted_processed.ipa"
     },
     {
+      "name": "Beast Evo",
+      "url": "https://fastsign.dev/tg-ipa/kamohacks/16661-Beast%20Evo%20-%20KamoHacks%20%5B1.0.13%5D.ipa"
+    },
+    {
       "name": "Idle Push Up",
       "url": "https://fastsign.dev/tg-ipa/iosdecrypted/222977-%E2%80%8EIncremental%20Push%20Up-v2.0_@iosdecrypted_processed.ipa"
+    },
+    {
+      "name": "Pixel Defenders: Merge TD Game",
+      "url": "https://fastsign.dev/tg-ipa/kamohacks/16662-Pixel%20Defenders:%20Merge%20TD%20Game%20-%20KamoHacks%20%5B1.0.8%5D.ipa"
     },
     {
       "name": "Beholder: Conductor",
@@ -68,22 +76,22 @@
       "url": "https://file.ipaomtk.com/Grow%20Castle%21/Grow-Castle-1.50.14-IPAOMTK.COM.ipa"
     }
   ],
-  "date": "2026-10-25T20:52:23.857879+00:00",
-  "inputApps": 11361,
-  "outputApps": 11364,
-  "preservedApps": 297,
+  "date": "2026-10-26T04:48:50.816336+00:00",
+  "inputApps": 11364,
+  "outputApps": 11379,
+  "preservedApps": 311,
   "recoveredPublishedSource": false,
   "removedApps": 0,
   "upstream": {
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 9808,
+        "apps": 9814,
         "error": null
       },
       {
         "source": "https://ipa.cypwn.xyz/cypwn.json",
-        "apps": 210,
+        "apps": 209,
         "error": null
       },
       {
@@ -138,7 +146,7 @@
       },
       {
         "source": "https://fastsign.dev/repo.json",
-        "apps": 16001,
+        "apps": 15992,
         "error": null
       },
       {
@@ -242,8 +250,8 @@
         "error": null
       }
     ],
-    "inputRecords": 39257,
-    "outputApps": 11067,
-    "rejectedRecords": 169
+    "inputRecords": 39253,
+    "outputApps": 11068,
+    "rejectedRecords": 170
   }
 }
