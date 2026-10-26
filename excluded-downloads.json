@@ -3,6 +3,22 @@
   "urls": [
     "https://github.com/LiveContainer/LiveContainer/releases/download/3.8.0/LiveContainer.ipa",
     "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Spotify.v8.9.38.+.Eevee.v3.0.ipa",
-    "https://github.com/TherionRO/YouTubeiVanced/releases/download/release19.08.2/iVanced_19.08.2.ipa"
+    "https://github.com/TherionRO/YouTubeiVanced/releases/download/release19.08.2/iVanced_19.08.2.ipa",
+    "https://dl.ikiraplus.workers.dev/dl/pubg-gl-4.5.0",
+    "https://dl.ikiraplus.workers.dev/dl/pubgm-tw-fix_4.5.0_v2"
+  ],
+  "ownerExclusions": [
+    {
+      "reason": "Owner requested removal of PUBG 4.5 releases",
+      "name": "Pubg TW hack",
+      "version": "4.5.0",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/pubgm-tw-fix_4.5.0_v2"
+    },
+    {
+      "reason": "Owner requested removal of PUBG 4.5 releases",
+      "name": "Pubg GL Hack",
+      "version": "4.5.0",
+      "downloadURL": "https://dl.ikiraplus.workers.dev/dl/pubg-gl-4.5.0"
+    }
   ]
 }
