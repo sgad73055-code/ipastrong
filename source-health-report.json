@@ -1,9 +1,9 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 395,
-    "missing": 4,
-    "not_ipa": 1
+    "ok": 392,
+    "missing": 6,
+    "temporary": 2
   },
   "repaired": [],
   "unresolved": [
@@ -14,10 +14,6 @@
     {
       "name": "MySwimPro",
       "url": "https://fastsign.dev/tg-ipa/riftysipalibrary/8427-MySwimPro:%20#1%20Swim%20Workout%20App-v9.7.0-riftysipas.ipa"
-    },
-    {
-      "name": "Telegram (TGExtra)",
-      "url": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Telegram-13.0-TGExtra.ipa"
     },
     {
       "name": "Phonto Pro",
@@ -60,6 +56,10 @@
       "url": "https://repo.ballermc.com/tubevault/YouTube_v21.39.4_YTPlus_v6.0_Beta_1_cracked%5Btg@tubevault%5D.ipa"
     },
     {
+      "name": "TikTok — 46.9.0",
+      "url": "https://fastsign.dev/tg-ipa/ipa-dark/1767-TikTok%20ASJTikTok%20%5Bv1.2.1%20v46.9.0%5D%28tg@ipa_dark%29.ipa"
+    },
+    {
       "name": "Alpin Quests",
       "url": "https://fastsign.dev/tg-ipa/ipa-dark/1766-Alpin%20Quest%20PRO%20-%20Outdoor%20GPS%20%5Bv10.0.50+1800%5D%28tg@ipa_dark%29.ipa"
     },
@@ -100,22 +100,22 @@
       "url": "https://file.ipaomtk.com/Grow%20Castle%21/Grow-Castle-1.50.14-IPAOMTK.COM.ipa"
     }
   ],
-  "date": "2026-10-27T05:06:40.208214+00:00",
-  "inputApps": 11380,
-  "outputApps": 11397,
-  "preservedApps": 322,
+  "date": "2026-10-27T12:13:18.641149+00:00",
+  "inputApps": 11397,
+  "outputApps": 11399,
+  "preservedApps": 325,
   "recoveredPublishedSource": false,
   "removedApps": 0,
   "upstream": {
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 9842,
+        "apps": 9847,
         "error": null
       },
       {
         "source": "https://ipa.cypwn.xyz/cypwn.json",
-        "apps": 209,
+        "apps": 210,
         "error": null
       },
       {
@@ -270,12 +270,12 @@
       },
       {
         "source": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json",
-        "apps": 69,
+        "apps": 68,
         "error": null
       }
     ],
-    "inputRecords": 39349,
-    "outputApps": 11075,
+    "inputRecords": 39354,
+    "outputApps": 11074,
     "rejectedRecords": 171
   }
 }
