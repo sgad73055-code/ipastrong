@@ -1,9 +1,8 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 392,
-    "missing": 6,
-    "temporary": 2
+    "ok": 388,
+    "missing": 12
   },
   "repaired": [],
   "unresolved": [
@@ -18,6 +17,10 @@
     {
       "name": "Phonto Pro",
       "url": "https://dl.ikiraplus.workers.dev/dl/phonto.pro.4.9.43-1"
+    },
+    {
+      "name": "Streameast no ads",
+      "url": "https://dl.ikiraplus.workers.dev/dl/streameast.1.1.1-1"
     },
     {
       "name": "Oceanhorn 3",
@@ -60,6 +63,10 @@
       "url": "https://fastsign.dev/tg-ipa/ipa-dark/1767-TikTok%20ASJTikTok%20%5Bv1.2.1%20v46.9.0%5D%28tg@ipa_dark%29.ipa"
     },
     {
+      "name": "Taurus (v0.50.1 - Not Patched) IPAVault",
+      "url": "https://repo.ballermc.com/tubevault/Spotify%209.1.78%20%28Taurus%200.50.1%29%20No%20Plugins.ipa"
+    },
+    {
       "name": "Alpin Quests",
       "url": "https://fastsign.dev/tg-ipa/ipa-dark/1766-Alpin%20Quest%20PRO%20-%20Outdoor%20GPS%20%5Bv10.0.50+1800%5D%28tg@ipa_dark%29.ipa"
     },
@@ -96,13 +103,17 @@
       "url": "https://fastsign.dev/tg-ipa/ipa-dark/1761-Tink%20Spot%20%5Bv8.2.9%5D%28tg@ipa_dark%29.ipa"
     },
     {
+      "name": "Почта Mail.ru",
+      "url": "https://fastsign.dev/tg-ipa/ipa-dark/1759-%D0%9F%D0%BE%D1%87%D1%82%D0%B0%20mail%20%5Bv15.92.0%5D%28tg@ipa_dark%29.ipa"
+    },
+    {
       "name": "GrowCastle",
       "url": "https://file.ipaomtk.com/Grow%20Castle%21/Grow-Castle-1.50.14-IPAOMTK.COM.ipa"
     }
   ],
-  "date": "2026-10-27T12:13:18.641149+00:00",
-  "inputApps": 11397,
-  "outputApps": 11399,
+  "date": "2026-10-27T18:02:05.447020+00:00",
+  "inputApps": 11399,
+  "outputApps": 11400,
   "preservedApps": 325,
   "recoveredPublishedSource": false,
   "removedApps": 0,
@@ -110,7 +121,7 @@
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 9847,
+        "apps": 9855,
         "error": null
       },
       {
@@ -274,8 +285,8 @@
         "error": null
       }
     ],
-    "inputRecords": 39354,
-    "outputApps": 11074,
+    "inputRecords": 39362,
+    "outputApps": 11075,
     "rejectedRecords": 171
   }
 }
