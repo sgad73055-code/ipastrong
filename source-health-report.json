@@ -1,9 +1,9 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 391,
-    "missing": 6,
-    "restricted": 3
+    "ok": 395,
+    "missing": 4,
+    "not_ipa": 1
   },
   "repaired": [],
   "unresolved": [
@@ -52,6 +52,10 @@
       "url": "https://fastsign.dev/tg-ipa/riftysipalibrary/8143-Colourtone:%20#1%20Photo%20Editor-v5.7-riftysipas.ipa"
     },
     {
+      "name": "Punko.io",
+      "url": "https://file.ipaomtk.com/punko-io-tower-defense-td/Punko-io-IPAOMTK.COM.ipa"
+    },
+    {
       "name": "YTPlus/YTLite Cracked (6.0 BETA 1) - v21.39.4",
       "url": "https://repo.ballermc.com/tubevault/YouTube_v21.39.4_YTPlus_v6.0_Beta_1_cracked%5Btg@tubevault%5D.ipa"
     },
@@ -70,6 +74,10 @@
     {
       "name": "Idle Push Up",
       "url": "https://fastsign.dev/tg-ipa/iosdecrypted/222977-%E2%80%8EIncremental%20Push%20Up-v2.0_@iosdecrypted_processed.ipa"
+    },
+    {
+      "name": "Opus",
+      "url": "https://fastsign.dev/tg-ipa/sa1y0miii/13620-%E2%80%8E%20Opus_v2.1.1_tg@Sa1y0miii.ipa"
     },
     {
       "name": "Pixel Defenders: Merge TD Game",
@@ -92,17 +100,17 @@
       "url": "https://file.ipaomtk.com/Grow%20Castle%21/Grow-Castle-1.50.14-IPAOMTK.COM.ipa"
     }
   ],
-  "date": "2026-10-26T22:41:56.539244+00:00",
-  "inputApps": 11379,
-  "outputApps": 11380,
-  "preservedApps": 310,
+  "date": "2026-10-27T05:06:40.208214+00:00",
+  "inputApps": 11380,
+  "outputApps": 11397,
+  "preservedApps": 322,
   "recoveredPublishedSource": false,
   "removedApps": 0,
   "upstream": {
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 9839,
+        "apps": 9842,
         "error": null
       },
       {
@@ -162,7 +170,7 @@
       },
       {
         "source": "https://fastsign.dev/repo.json",
-        "apps": 15992,
+        "apps": 16058,
         "error": null
       },
       {
@@ -262,12 +270,12 @@
       },
       {
         "source": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json",
-        "apps": 67,
+        "apps": 69,
         "error": null
       }
     ],
-    "inputRecords": 39278,
-    "outputApps": 11070,
+    "inputRecords": 39349,
+    "outputApps": 11075,
     "rejectedRecords": 171
   }
 }
