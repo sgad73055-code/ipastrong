@@ -2,7 +2,8 @@
   "checked": 400,
   "outcomes": {
     "ok": 388,
-    "missing": 12
+    "restricted": 3,
+    "missing": 9
   },
   "repaired": [],
   "unresolved": [
@@ -13,6 +14,14 @@
     {
       "name": "MySwimPro",
       "url": "https://fastsign.dev/tg-ipa/riftysipalibrary/8427-MySwimPro:%20#1%20Swim%20Workout%20App-v9.7.0-riftysipas.ipa"
+    },
+    {
+      "name": "Adobe Photoshop pro",
+      "url": "https://dl.ikiraplus.workers.dev/dl/adobe.photoshop.pro.7.4-1"
+    },
+    {
+      "name": "Lingogram",
+      "url": "https://dl.ikiraplus.workers.dev/dl/lingogram-1"
     },
     {
       "name": "Phonto Pro",
@@ -91,6 +100,10 @@
       "url": "https://fastsign.dev/tg-ipa/kamohacks/16662-Pixel%20Defenders:%20Merge%20TD%20Game%20-%20KamoHacks%20%5B1.0.8%5D.ipa"
     },
     {
+      "name": "ahead",
+      "url": "https://fastsign.dev/tg-ipa/sa1y0miii/13548-%E2%80%8E%20Ahead_v1.60.30_tg@Sa1y0miii.ipa"
+    },
+    {
       "name": "Beholder: Conductor",
       "url": "https://fastsign.dev/tg-ipa/ipa-dark/1762-Beholder%20%20Conductor%20%5Bv1.0.86%5D%28tg@ipa_dark%29.ipa"
     },
@@ -111,9 +124,9 @@
       "url": "https://file.ipaomtk.com/Grow%20Castle%21/Grow-Castle-1.50.14-IPAOMTK.COM.ipa"
     }
   ],
-  "date": "2026-10-27T18:02:05.447020+00:00",
-  "inputApps": 11399,
-  "outputApps": 11400,
+  "date": "2026-10-27T22:15:40.644166+00:00",
+  "inputApps": 11400,
+  "outputApps": 11401,
   "preservedApps": 325,
   "recoveredPublishedSource": false,
   "removedApps": 0,
@@ -121,7 +134,7 @@
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 9855,
+        "apps": 9862,
         "error": null
       },
       {
@@ -285,8 +298,8 @@
         "error": null
       }
     ],
-    "inputRecords": 39362,
-    "outputApps": 11075,
+    "inputRecords": 39369,
+    "outputApps": 11076,
     "rejectedRecords": 171
   }
 }
