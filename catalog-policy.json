@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "blockedURLs": [
+    "https://cold2.gofile.io/download/web/854e9513-7fb2-447a-8ead-0b9e87c16326/Oceanhorn_3_(v1.1.1_Univ_64bit_os150_ok26)-user_hidden.bfi2.ipa",
+    "https://github.com/kurd4u1/ipa/releases/download/2026/Video.Star_13.0.4_1778782545.ipa"
+  ],
+  "versionFloors": [],
+  "videoStarOnlyAllowed": true,
+  "videoStarAllowed": [
+    {
+      "bundleIdentifier": "com.frontierdesign.videostarr",
+      "version": "15.2.1",
+      "downloadURL": "https://github.com/sgad73055-code/ipastrong/releases/download/videostar/VideoStar.ipa"
+    }
+  ],
+  "videoStarAdditionalOwnerVersions": [
+    "15.3.1"
+  ]
+}

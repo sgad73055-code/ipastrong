@@ -242,6 +242,9 @@ def monitor(source, state, limit, now, prober=probe):
     return {'checked': len(selected)+len(alternatives), 'outcomes':outcomes, 'repaired': repairs, 'unresolved': unresolved}
 
 def publish(root, old_bytes, source):
+    if (root/'catalog-policy.json').exists():
+        from catalog_policy import apply_policy
+        apply_policy(source, root/'catalog-policy.json')
     validate(source)
     # Backup is updated only AFTER full validation, before the atomic source replacement.
     atomic_bytes(root/'backups/ipastrong.last-good.json.gz', gzip.compress(old_bytes, mtime=0))
@@ -285,9 +288,13 @@ def run(root, limit=400, refresh=True):
     apply_overrides(candidate, base.get('_downloadOverrides', {}))
     source, restored = preserve(base, candidate)
     apply_overrides(source, base.get('_downloadOverrides', {}))
+    policy_report = {'removedApps': 0, 'removedVersions': 0}
+    if (root/'catalog-policy.json').exists():
+        from catalog_policy import apply_policy
+        policy_report = apply_policy(source, root/'catalog-policy.json')
     report = monitor(source, state, limit, now)
     validate(source)
-    report.update(date=datetime.now(timezone.utc).isoformat(), inputApps=len(base['apps']), outputApps=len(source['apps']), preservedApps=restored, recoveredPublishedSource=recovered, removedApps=0, upstream=upstream)
+    report.update(date=datetime.now(timezone.utc).isoformat(), inputApps=len(base['apps']), outputApps=len(source['apps']), preservedApps=restored, recoveredPublishedSource=recovered, removedApps=policy_report['removedApps'], catalogPolicy=policy_report, upstream=upstream)
     publish(root, old_bytes, source)
     write(root/STATE_NAME, state)
     write(root/REPORT_NAME, report)
