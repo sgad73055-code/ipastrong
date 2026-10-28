@@ -1,9 +1,10 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 389,
-    "temporary": 4,
-    "missing": 7
+    "ok": 390,
+    "missing": 7,
+    "temporary": 2,
+    "restricted": 1
   },
   "repaired": [],
   "unresolved": [
@@ -36,8 +37,8 @@
       "url": "https://dl.ikiraplus.workers.dev/dl/streameast.1.1.1-1"
     },
     {
-      "name": "Oceanhorn 3",
-      "url": "https://cold2.gofile.io/download/web/854e9513-7fb2-447a-8ead-0b9e87c16326/Oceanhorn_3_(v1.1.1_Univ_64bit_os150_ok26)-user_hidden.bfi2.ipa"
+      "name": "Swiftgram+",
+      "url": "https://proxy-files.thuthuatjb.com/apps?=thuthuatjb/IPAS/releases/download/2/Swiftgram+_11.3.2_TTJB.ipa"
     },
     {
       "name": "CamScanner+",
@@ -58,6 +59,10 @@
     {
       "name": "CercubePlus (Cercube+)",
       "url": "https://github.com/qnblackcat/CercubePlus/releases/download/v17.43.1-5.3.11/CercubePlus_17.43.1_5.3.11.ipa"
+    },
+    {
+      "name": "Cercube+",
+      "url": "https://github.com/ytjailed/ytjailed.github.io/releases/download/0.1/Cercube_5-3-3_16-42-3.ipa"
     },
     {
       "name": "YTPlus/YTLite Cracked + Bonus Tweaks (6.0 Beta 2 - IPAVault - Liquid Glass Support)",
@@ -104,6 +109,10 @@
       "url": "https://fastsign.dev/tg-ipa/kamohacks/16661-Beast%20Evo%20-%20KamoHacks%20%5B1.0.13%5D.ipa"
     },
     {
+      "name": "Elementra: The Boy's Adventure",
+      "url": "https://fastsign.dev/tg-ipa/kamohacks/16660-Elementra:%20The%20Boy%27s%20Adventure%20-%20KamoHacks%20%5B136%5D.ipa"
+    },
+    {
       "name": "Idle Push Up",
       "url": "https://fastsign.dev/tg-ipa/iosdecrypted/222977-%E2%80%8EIncremental%20Push%20Up-v2.0_@iosdecrypted_processed.ipa"
     },
@@ -144,22 +153,26 @@
       "url": "https://file.ipaomtk.com/Grow%20Castle%21/Grow-Castle-1.50.14-IPAOMTK.COM.ipa"
     }
   ],
-  "date": "2026-10-28T05:44:31.441530+00:00",
-  "inputApps": 11401,
-  "outputApps": 11426,
+  "date": "2026-10-28T12:56:27.999423+00:00",
+  "inputApps": 11418,
+  "outputApps": 11419,
   "preservedApps": 356,
   "recoveredPublishedSource": false,
-  "removedApps": 0,
+  "removedApps": 5,
+  "catalogPolicy": {
+    "removedApps": 5,
+    "removedVersions": 0
+  },
   "upstream": {
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 9871,
+        "apps": 9878,
         "error": null
       },
       {
         "source": "https://ipa.cypwn.xyz/cypwn.json",
-        "apps": 209,
+        "apps": 210,
         "error": null
       },
       {
@@ -194,8 +207,8 @@
       },
       {
         "source": "https://alts.lao.sb/source.json",
-        "apps": 1,
-        "error": null
+        "apps": 0,
+        "error": "<urlopen error _ssl.c:993: The handshake operation timed out>"
       },
       {
         "source": "https://apps.nabzclan.vip/repos/altstore.php",
@@ -318,8 +331,8 @@
         "error": null
       }
     ],
-    "inputRecords": 39357,
-    "outputApps": 11070,
+    "inputRecords": 39362,
+    "outputApps": 11068,
     "rejectedRecords": 172
   }
 }
