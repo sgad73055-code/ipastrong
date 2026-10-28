@@ -1,10 +1,8 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 390,
-    "missing": 7,
-    "temporary": 2,
-    "restricted": 1
+    "ok": 393,
+    "missing": 7
   },
   "repaired": [],
   "unresolved": [
@@ -73,8 +71,16 @@
       "url": "https://fastsign.dev/tg-ipa/riftysipalibrary/8143-Colourtone:%20#1%20Photo%20Editor-v5.7-riftysipas.ipa"
     },
     {
+      "name": "YTPlus/YTLite Cracked (6.0 BETA 1 - iOS 16+ Support)",
+      "url": "https://repo.ballermc.com/tubevault/YouTube_v21.33.6_YTPlus_v6.0_Beta_1_cracked%5Btg@tubevault%5D.ipa"
+    },
+    {
       "name": "Punko.io",
       "url": "https://file.ipaomtk.com/punko-io-tower-defense-td/Punko-io-IPAOMTK.COM.ipa"
+    },
+    {
+      "name": "Chunk (patched)",
+      "url": "https://fastsign.dev/tg-ipa/iosdecrypted/223848-%E2%80%8E%20%20%20%20%20Chunk_v2.6.1_patched_@iosdecrypted_processed.ipa"
     },
     {
       "name": "MD_Widgets_Live_Wallpaper_v4_3_2_Pro_Unlocked_blatant_Patched",
@@ -83,6 +89,10 @@
     {
       "name": "YTPlus/YTLite Cracked (6.0 BETA 1) - v21.39.4",
       "url": "https://repo.ballermc.com/tubevault/YouTube_v21.39.4_YTPlus_v6.0_Beta_1_cracked%5Btg@tubevault%5D.ipa"
+    },
+    {
+      "name": "Instagram — 448.0.0",
+      "url": "https://fastsign.dev/tg-ipa/ipa-dark/1775-Instagram%20Regram%20%5Bv448.0.0%5D%28tg@ipa_dark%29.ipa"
     },
     {
       "name": "TikTok — 46.9.0",
@@ -149,12 +159,16 @@
       "url": "https://fastsign.dev/tg-ipa/ipa-dark/1759-%D0%9F%D0%BE%D1%87%D1%82%D0%B0%20mail%20%5Bv15.92.0%5D%28tg@ipa_dark%29.ipa"
     },
     {
+      "name": "Учим слова",
+      "url": "https://fastsign.dev/tg-ipa/ipa-dark/1758-%D0%A3%D1%87%D0%B8%D1%80%D1%83%20%5Bv1.02%5D%28tg@ipa_dark%29.ipa"
+    },
+    {
       "name": "GrowCastle",
       "url": "https://file.ipaomtk.com/Grow%20Castle%21/Grow-Castle-1.50.14-IPAOMTK.COM.ipa"
     }
   ],
-  "date": "2026-10-28T12:56:27.999423+00:00",
-  "inputApps": 11418,
+  "date": "2026-10-28T22:36:50.538931+00:00",
+  "inputApps": 11419,
   "outputApps": 11419,
   "preservedApps": 356,
   "recoveredPublishedSource": false,
@@ -167,7 +181,7 @@
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 9878,
+        "apps": 9896,
         "error": null
       },
       {
@@ -207,8 +221,8 @@
       },
       {
         "source": "https://alts.lao.sb/source.json",
-        "apps": 0,
-        "error": "<urlopen error _ssl.c:993: The handshake operation timed out>"
+        "apps": 1,
+        "error": null
       },
       {
         "source": "https://apps.nabzclan.vip/repos/altstore.php",
@@ -331,8 +345,8 @@
         "error": null
       }
     ],
-    "inputRecords": 39362,
+    "inputRecords": 39380,
     "outputApps": 11068,
-    "rejectedRecords": 172
+    "rejectedRecords": 173
   }
 }
