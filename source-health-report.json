@@ -1,6 +1,10 @@
 {
-  "checked": 0,
-  "outcomes": {},
+  "checked": 400,
+  "outcomes": {
+    "ok": 388,
+    "missing": 10,
+    "temporary": 2
+  },
   "repaired": [],
   "unresolved": [
     {
@@ -60,6 +64,10 @@
       "url": "https://repo.ballermc.com/tubevault/YouTube%2021.39.4%20%28YTPlus%206.0~b2%29%20%5B@ipavault%5D.ipa"
     },
     {
+      "name": "Clash of Clans",
+      "url": "https://fastsign.dev/tg-ipa/kamohacks/16698-Clash%20of%20Clans%20-%20KamoHacks%20%5B18.600.7%5D.ipa"
+    },
+    {
       "name": "Blunders",
       "url": "https://fastsign.dev/tg-ipa/sa1y0miii/13758-Blunders_v6.0_tg@Sa1y0miii.ipa"
     },
@@ -80,6 +88,10 @@
       "url": "https://file.ipaomtk.com/punko-io-tower-defense-td/Punko-io-IPAOMTK.COM.ipa"
     },
     {
+      "name": "EeveeSpotifyReincarnated (v7.0.0 - Patched) IPAVault",
+      "url": "https://repo.ballermc.com/tubevault/Spotify%209.1.90%20%28EeveeSpotify%207.0.0%29%20%5B@ipavault%5D.ipa"
+    },
+    {
       "name": "Chunk (patched)",
       "url": "https://fastsign.dev/tg-ipa/iosdecrypted/223848-%E2%80%8E%20%20%20%20%20Chunk_v2.6.1_patched_@iosdecrypted_processed.ipa"
     },
@@ -94,6 +106,10 @@
     {
       "name": "Pokemon Go (w/ SpooferPro)",
       "url": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Pokemon.Go.v0.269.1.+.SpooferPro.v0.148.ipa"
+    },
+    {
+      "name": "HD Flix (No Ads)",
+      "url": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/HD.Flix.No.Ads.v2.0.ipa"
     },
     {
       "name": "Instagram — 448.0.0",
@@ -140,6 +156,14 @@
       "url": "https://fastsign.dev/tg-ipa/kamohacks/16662-Pixel%20Defenders:%20Merge%20TD%20Game%20-%20KamoHacks%20%5B1.0.8%5D.ipa"
     },
     {
+      "name": "Stylify",
+      "url": "https://fastsign.dev/tg-ipa/ipa-dark/1765-Stylify%20PRO%20%5Bv1.4.2%5D%28tg@ipa_dark%29.ipa"
+    },
+    {
+      "name": "Truck Simulator Drive USA: EVO",
+      "url": "https://fastsign.dev/tg-ipa/kamohacks/16664-Truck%20Simulator%20Drive%20USA:%20EVO%20-%20KamoHacks%20%5B1.2.18%5D.ipa"
+    },
+    {
       "name": "ahead",
       "url": "https://fastsign.dev/tg-ipa/sa1y0miii/13548-%E2%80%8E%20Ahead_v1.60.30_tg@Sa1y0miii.ipa"
     },
@@ -180,225 +204,190 @@
       "url": "https://file.ipaomtk.com/Grow%20Castle%21/Grow-Castle-1.50.14-IPAOMTK.COM.ipa"
     }
   ],
-  "date": "2026-10-29T14:16:39.678735+00:00",
-  "inputApps": 11483,
-  "outputApps": 11439,
-  "preservedApps": 0,
+  "date": "2026-10-29T22:46:54.748365+00:00",
+  "inputApps": 11440,
+  "outputApps": 11440,
+  "preservedApps": 389,
   "recoveredPublishedSource": false,
-  "removedApps": 15,
+  "removedApps": 20,
   "catalogPolicy": {
-    "removedApps": 15,
+    "removedApps": 20,
     "removedVersions": 0
   },
   "upstream": {
-    "mode": "audit-only"
+    "sources": [
+      {
+        "source": "https://repository.apptesters.org",
+        "apps": 9911,
+        "error": null
+      },
+      {
+        "source": "https://ipa.cypwn.xyz/cypwn.json",
+        "apps": 210,
+        "error": null
+      },
+      {
+        "source": "https://wuxu1.github.io/wuxu-complete.json",
+        "apps": 17,
+        "error": null
+      },
+      {
+        "source": "https://wuxu1.github.io/wuxu-complete-plus.json",
+        "apps": 13,
+        "error": null
+      },
+      {
+        "source": "https://repo.ikghd.me/repo.json",
+        "apps": 3,
+        "error": null
+      },
+      {
+        "source": "https://check0ver.site/repo.json",
+        "apps": 0,
+        "error": "HTTP Error 404: Not Found"
+      },
+      {
+        "source": "https://quarksources.github.io/dist/quantumsource%2B%2B.min.json",
+        "apps": 35,
+        "error": null
+      },
+      {
+        "source": "https://cdn.altstore.io/file/altstore/apps.json",
+        "apps": 6,
+        "error": null
+      },
+      {
+        "source": "https://alts.lao.sb/source.json",
+        "apps": 1,
+        "error": null
+      },
+      {
+        "source": "https://apps.nabzclan.vip/repos/altstore.php",
+        "apps": 0,
+        "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)>"
+      },
+      {
+        "source": "https://ipa.thuthuatjb.com/repo",
+        "apps": 9371,
+        "error": null
+      },
+      {
+        "source": "https://repo.ethsign.fyi",
+        "apps": 0,
+        "error": "<urlopen error timed out>"
+      },
+      {
+        "source": "https://fastsign.dev/repo.json",
+        "apps": 16063,
+        "error": null
+      },
+      {
+        "source": "https://pokemmo.eu/altstore/",
+        "apps": 1,
+        "error": null
+      },
+      {
+        "source": "https://tiny.one/SpotC",
+        "apps": 2,
+        "error": null
+      },
+      {
+        "source": "https://xitrix.github.io/iTorrent/AltStore.json",
+        "apps": 1,
+        "error": null
+      },
+      {
+        "source": "https://ish.app/altstore.json",
+        "apps": 1,
+        "error": null
+      },
+      {
+        "source": "https://repo.madari.media/nightly/repo.json",
+        "apps": 0,
+        "error": "Source returned no usable apps"
+      },
+      {
+        "source": "https://github.com/dvntm0/AltStore/raw/refs/heads/main/feather.json",
+        "apps": 8,
+        "error": null
+      },
+      {
+        "source": "https://raw.githubusercontent.com/notrifty1/riftysrepo/refs/heads/main/reposource.json",
+        "apps": 5,
+        "error": null
+      },
+      {
+        "source": "https://raw.githubusercontent.com/driftywinds/driftywinds.github.io/master/AltStore/apps.json",
+        "apps": 8,
+        "error": null
+      },
+      {
+        "source": "https://enmity-mod.github.io/repo/altstore.json",
+        "apps": 1,
+        "error": null
+      },
+      {
+        "source": "https://github.com/khcrysalis/Feather/raw/main/app-repo.json",
+        "apps": 1,
+        "error": null
+      },
+      {
+        "source": "https://raw.githubusercontent.com/Nyasami/Ksign/refs/heads/main/repo.json",
+        "apps": 1,
+        "error": null
+      },
+      {
+        "source": "https://buildbot.libretro.com/stable/altstore.json",
+        "apps": 1,
+        "error": null
+      },
+      {
+        "source": "https://provenance-emu.com/apps.json",
+        "apps": 1,
+        "error": null
+      },
+      {
+        "source": "https://alt.getutm.app",
+        "apps": 1,
+        "error": null
+      },
+      {
+        "source": "https://azu0609.github.io/repo/altstore_repo.json",
+        "apps": 1,
+        "error": null
+      },
+      {
+        "source": "https://raw.githubusercontent.com/driftywinds/driftywinds.github.io/master/AltStore/nyx.json",
+        "apps": 1,
+        "error": null
+      },
+      {
+        "source": "https://raw.githubusercontent.com/driftywinds/driftywinds.github.io/master/AltStore/theta.json",
+        "apps": 1,
+        "error": null
+      },
+      {
+        "source": "https://raw.githubusercontent.com/lo-cafe/winston-altstore/main/apps.json",
+        "apps": 1,
+        "error": null
+      },
+      {
+        "source": "https://connect.sidestore.io/apps.json",
+        "apps": 2,
+        "error": null
+      },
+      {
+        "source": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json",
+        "apps": 68,
+        "error": null
+      }
+    ],
+    "inputRecords": 39421,
+    "outputApps": 11071,
+    "rejectedRecords": 173
   },
   "deduplication": {
-    "removedApps": 29,
-    "duplicates": [
-      {
-        "name": "TikTok — 42.7.0",
-        "keptName": "TikTok",
-        "bundleIdentifier": "com.zhiliaoapp.musically",
-        "version": "42.7.0",
-        "downloadURL": "https://proxy-files.thuthuatjb.com/apps?=apptesters-org/AppTesters_Repo/releases/download/25-11-2025/TikTok_42.7.0_Premium_@thisismanpreets_apptesters.org.ipa"
-      },
-      {
-        "name": "TikTokDark — 28.1.0",
-        "keptName": "TikTokDark",
-        "bundleIdentifier": "com.zhiliaoapp.musically",
-        "version": "28.1.0",
-        "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/02-08-2023/TikTokDark-28.1.0.ipa"
-      },
-      {
-        "name": "DLTikTok — 29.5.0",
-        "keptName": "DLTikTok",
-        "bundleIdentifier": "com.zhiliaoapp.musically",
-        "version": "29.5.0",
-        "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/05-24-2023/DLTikTok-29.5.0.ipa"
-      },
-      {
-        "name": "Facebook++",
-        "keptName": "Facebook++",
-        "bundleIdentifier": "com.facebook.Facebook",
-        "version": "585.0.0",
-        "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Facebook.v585.0.0.iQFace.ipa"
-      },
-      {
-        "name": "Stremio-2.0.7",
-        "keptName": "Stremio-2.0.7",
-        "bundleIdentifier": "com.stremio.pal",
-        "version": "2.0.7",
-        "downloadURL": "https://ipa.cypwn.xyz/ipas/Stremio-2.0.7.ipa"
-      },
-      {
-        "name": "Watusi (Business)",
-        "keptName": "Watusi Business",
-        "bundleIdentifier": "net.whatsapp.WhatsAppSMB",
-        "version": "26.41.75",
-        "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1792830196679-8ueg6/net.whatsapp.WhatsAppSMB_26.41.75_watusi3_1.3.28_sl.ipa"
-      },
-      {
-        "name": "Watusi (Business Duplicate)",
-        "keptName": "Watusi Business · Duplicate",
-        "bundleIdentifier": "com.fouadraheb.watusiSMB",
-        "version": "26.41.75",
-        "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1792830196678-mkeh3/com.fouadraheb.watusiSMB_26.41.75_watusi3_1.3.28_sl.ipa"
-      },
-      {
-        "name": "Watusi (Duplicate)",
-        "keptName": "Watusi · Duplicate",
-        "bundleIdentifier": "com.fouadraheb.watusi",
-        "version": "26.41.75",
-        "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1792830196680-z1lbl/com.fouadraheb.watusi_26.41.75_watusi3_1.3.28_sl.ipa"
-      },
-      {
-        "name": "Vitrine + Pixie (Not Patched) IPAVault",
-        "keptName": "Vitrine v1.0.0-b16 + Pixie v1.3 (Not Patched) IPAVault",
-        "bundleIdentifier": "com.spotify.client.ios.vitrine.pixie.not.patched.9.1.90",
-        "version": "9.1.90",
-        "downloadURL": "https://repo.ballermc.com/tubevault/Spotify%209.1.90%20%28Vitrine+Pixie%29%20No%20Plugins.ipa"
-      },
-      {
-        "name": "Vitrine + Pixie (Patched) IPAVault",
-        "keptName": "Vitrine v1.0.0-b16 + Pixie v1.3 (Patched) IPAVault",
-        "bundleIdentifier": "com.spotify.client.ios.vitrine.pixie.patched.9.1.90",
-        "version": "9.1.90",
-        "downloadURL": "https://repo.ballermc.com/tubevault/Spotify%209.1.90%20%28Vitrine+Pixie%29%20%5B@ipavault%5D.ipa"
-      },
-      {
-        "name": "Vitrine (v1.0.0 Beta 15 - Not Patched) IPAVault",
-        "keptName": "Vitrine (v1.0.0 Beta 15 - Not Patched) Hazel's EeveeSpotify IPAs",
-        "bundleIdentifier": "com.spotify.client.ios.vitrine.1.0.0.beta.15.not.patched.9.1.90",
-        "version": "9.1.90",
-        "downloadURL": "https://repo.ballermc.com/tubevault/Spotify%209.1.90%20%28Vitrine%201.0.0-b15%29%20No%20Plugins.ipa"
-      },
-      {
-        "name": "Vitrine (v1.0.0 Beta 15 - Patched) IPAVault",
-        "keptName": "Vitrine (v1.0.0 Beta 15 - Patched) Hazel's EeveeSpotify IPAs",
-        "bundleIdentifier": "com.spotify.client.ios.vitrine.1.0.0.beta.15.patched.9.1.90",
-        "version": "9.1.90",
-        "downloadURL": "https://repo.ballermc.com/tubevault/Spotify%209.1.90%20%28Vitrine%201.0.0-b15%29%20%5B@ipavault%5D.ipa"
-      },
-      {
-        "name": "MaxTube (2.0) - Downgraded to 20.21.6",
-        "keptName": "MaxTube (2.1) - Downgraded to 20.21.6",
-        "bundleIdentifier": "com.google.ios.youtube.maxtube.6.0.beta.2.20.21.6",
-        "version": "20.21.6",
-        "downloadURL": "https://repo.ballermc.com/tubevault/MaxTube_20.21.6_6.0b2.ipa"
-      },
-      {
-        "name": "MaxTube (1.6.2) - Downgraded to 21.24.3",
-        "keptName": "MaxTube (2.1) - Downgraded to 21.24.3",
-        "bundleIdentifier": "com.google.ios.youtube.maxtube.5.2.2.21.24.3",
-        "version": "21.24.3",
-        "downloadURL": "https://repo.ballermc.com/tubevault/MaxTube_21.24.3_5.2.2.ipa"
-      },
-      {
-        "name": "MaxTube (2.0) - iOS 16+ Support",
-        "keptName": "MaxTube (2.1) - iOS 16+ Support",
-        "bundleIdentifier": "com.google.ios.youtube.maxtube.6.0.beta.2.21.33.6",
-        "version": "21.33.6",
-        "downloadURL": "https://repo.ballermc.com/tubevault/MaxTube_21.33.6_6.0b2.ipa"
-      },
-      {
-        "name": "Bunny_Pyoncord_224.0",
-        "keptName": "Bunny_Pyoncord_224.0",
-        "bundleIdentifier": "com.hammerandchisel.discord",
-        "version": "224.0",
-        "downloadURL": "https://ipa.cypwn.xyz/ipas/Bunny_Pyoncord_224.0.ipa"
-      },
-      {
-        "name": "Discord_228.1_Pyoncord",
-        "keptName": "Discord_228.1_Pyoncord",
-        "bundleIdentifier": "com.hammerandchisel.discord",
-        "version": "228.1",
-        "downloadURL": "https://ipa.cypwn.xyz/ipas/Discord_228.1_Pyoncord_DiscordNoTrack.ipa"
-      },
-      {
-        "name": "Ignited_1.8.5",
-        "keptName": "Ignited_1.8.5",
-        "bundleIdentifier": "com.litritt.ignited",
-        "version": "1.8.5",
-        "downloadURL": "https://ipa.cypwn.xyz/ipas/Ignited_1.8.5.ipa"
-      },
-      {
-        "name": "PicsArt_25.1.2",
-        "keptName": "PicsArt_25.1.2",
-        "bundleIdentifier": "com.picsart.studio",
-        "version": "25.1.2",
-        "downloadURL": "https://ipa.cypwn.xyz/ipas/PicsArt_25.1.2.ipa"
-      },
-      {
-        "name": "Spark_3.9.11",
-        "keptName": "Spark_3.9.11",
-        "bundleIdentifier": "com.readdle.smartemail",
-        "version": "3.9.11",
-        "downloadURL": "https://ipa.cypwn.xyz/ipas/Spark_3.9.11.ipa"
-      },
-      {
-        "name": "Speedtest_VPN_Premium_5.4.0",
-        "keptName": "Speedtest_VPN_Premium_5.4.0",
-        "bundleIdentifier": "com.ookla.speedtest",
-        "version": "5.4.0",
-        "downloadURL": "https://ipa.cypwn.xyz/ipas/Speedtest_VPN_Premium_5.4.0.ipa"
-      },
-      {
-        "name": "Geranium_1.1.3",
-        "keptName": "Geranium_1.1.3",
-        "bundleIdentifier": "live.cclerc.geranium",
-        "version": "1.1.3",
-        "downloadURL": "https://ipa.cypwn.xyz/ipas/Geranium_1.1.3.ipa"
-      },
-      {
-        "name": "EeveeSpotify-5.8-8.9.90",
-        "keptName": "EeveeSpotify-5.8-8.9.90",
-        "bundleIdentifier": "com.spotify.client",
-        "version": "8.9.90",
-        "downloadURL": "https://ipa.cypwn.xyz/ipas/EeveeSpotify-5.8-8.9.90.ipa"
-      },
-      {
-        "name": "TorBrowserPremium",
-        "keptName": "TorBrowserPremium",
-        "bundleIdentifier": "ch.b-eng.tor",
-        "version": "3.4.21",
-        "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/TorBrowserPremium/TorBrowserPremium-3.4.21.ipa"
-      },
-      {
-        "name": "AddonsPro-3.8",
-        "keptName": "AddonsPro-3.8",
-        "bundleIdentifier": "com.qingbin.Addons",
-        "version": "3.8",
-        "downloadURL": "https://ipa.cypwn.xyz/ipas/AddonsPro-3.8.ipa"
-      },
-      {
-        "name": "AIChatSmithPremium-7.0.0",
-        "keptName": "AIChatSmithPremium-7.0.0",
-        "bundleIdentifier": "co.vulcanlabs.moodtracker",
-        "version": "7.0.0",
-        "downloadURL": "https://ipa.cypwn.xyz/ipas/AIChatSmithPremium-7.0.0.ipa"
-      },
-      {
-        "name": "ChargeLimiter_1.6",
-        "keptName": "ChargeLimiter_1.6",
-        "bundleIdentifier": "chaoge.ChargeLimiter",
-        "version": "1.6",
-        "downloadURL": "https://ipa.cypwn.xyz/ipas/ChargeLimiter_1.6.ipa"
-      },
-      {
-        "name": "WazePlus_4.100.0",
-        "keptName": "WazePlus_4.100.0",
-        "bundleIdentifier": "com.waze.iphone",
-        "version": "4.100.0",
-        "downloadURL": "https://ipa.cypwn.xyz/ipas/WazePlus_4.100.0.ipa"
-      },
-      {
-        "name": "YouTube (YTKACE 1.1.3) (iOS 16+)",
-        "keptName": "YouTube (YTKACE 1.1.4) (iOS 16+)",
-        "bundleIdentifier": "com.google.ios.youtube.ytkace",
-        "version": "21.33.6",
-        "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/YouTube-21.33.6-YTKACE.ipa"
-      }
-    ]
+    "removedApps": 0,
+    "duplicates": []
   }
 }
