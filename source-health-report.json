@@ -1,18 +1,15 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 393,
-    "missing": 7
+    "ok": 388,
+    "missing": 11,
+    "not_ipa": 1
   },
   "repaired": [],
   "unresolved": [
     {
       "name": "TikTok++",
       "url": "https://github.com/WuXu1/wuxuslibrary/releases/download/Latest/TikTok.v28.2.0.+.LRD+.ipa"
-    },
-    {
-      "name": "MySwimPro",
-      "url": "https://fastsign.dev/tg-ipa/riftysipalibrary/8427-MySwimPro:%20#1%20Swim%20Workout%20App-v9.7.0-riftysipas.ipa"
     },
     {
       "name": "Adobe Photoshop pro",
@@ -91,6 +88,10 @@
       "url": "https://repo.ballermc.com/tubevault/YouTube_v21.39.4_YTPlus_v6.0_Beta_1_cracked%5Btg@tubevault%5D.ipa"
     },
     {
+      "name": "Pokemon Go (w/ SpooferPro)",
+      "url": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Pokemon.Go.v0.269.1.+.SpooferPro.v0.148.ipa"
+    },
+    {
       "name": "Instagram — 448.0.0",
       "url": "https://fastsign.dev/tg-ipa/ipa-dark/1775-Instagram%20Regram%20%5Bv448.0.0%5D%28tg@ipa_dark%29.ipa"
     },
@@ -147,8 +148,16 @@
       "url": "https://fastsign.dev/tg-ipa/ipa-dark/1762-Beholder%20%20Conductor%20%5Bv1.0.86%5D%28tg@ipa_dark%29.ipa"
     },
     {
+      "name": "Novagram",
+      "url": "https://fastsign.dev/tg-ipa/ipa-dark/1764-Fenixuz%20-%20Novagram.ipa"
+    },
+    {
       "name": "PosePal",
       "url": "https://fastsign.dev/tg-ipa/sa1y0miii/13593-%E2%80%8E%20PosePal_v1.1_tg@Sa1y0miii.ipa"
+    },
+    {
+      "name": "SilaZvuka",
+      "url": "https://fastsign.dev/tg-ipa/ipa-dark/1760-Sber%20Music%20HiFi%20%5Bv1.7.0%5D%28tg@ipa_dark%29.ipa"
     },
     {
       "name": "Spotluma",
@@ -167,26 +176,26 @@
       "url": "https://file.ipaomtk.com/Grow%20Castle%21/Grow-Castle-1.50.14-IPAOMTK.COM.ipa"
     }
   ],
-  "date": "2026-10-28T22:36:50.538931+00:00",
-  "inputApps": 11419,
-  "outputApps": 11419,
-  "preservedApps": 356,
+  "date": "2026-10-29T05:49:45.878217+00:00",
+  "inputApps": 11418,
+  "outputApps": 11439,
+  "preservedApps": 376,
   "recoveredPublishedSource": false,
-  "removedApps": 5,
+  "removedApps": 6,
   "catalogPolicy": {
-    "removedApps": 5,
+    "removedApps": 6,
     "removedVersions": 0
   },
   "upstream": {
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 9896,
+        "apps": 9900,
         "error": null
       },
       {
         "source": "https://ipa.cypwn.xyz/cypwn.json",
-        "apps": 210,
+        "apps": 209,
         "error": null
       },
       {
@@ -241,7 +250,7 @@
       },
       {
         "source": "https://fastsign.dev/repo.json",
-        "apps": 16038,
+        "apps": 16063,
         "error": null
       },
       {
@@ -345,8 +354,8 @@
         "error": null
       }
     ],
-    "inputRecords": 39380,
-    "outputApps": 11068,
+    "inputRecords": 39408,
+    "outputApps": 11069,
     "rejectedRecords": 173
   }
 }
