@@ -2,6 +2,7 @@
 import copy
 import json
 import re
+from datetime import datetime
 
 
 def numeric_version(value):
@@ -35,12 +36,27 @@ def is_video_star(app):
     return 'videostar' in text or 'فيديوستار' in text
 
 
+def is_netflix_app(app):
+    name = re.sub(r'\s+', ' ', str(app.get('name', '')).casefold()).strip()
+    bundle = str(app.get('bundleIdentifier', '')).casefold()
+    if bundle.startswith('com.netflix.ngp.') or 'checker' in name or 'checker' in bundle:
+        return False
+    return (bool(re.match(r'^netflix(?:$|[ +\-–—])', name)) or
+            any(name.startswith(word) for word in ('نتفلكس', 'نتفليكس')) or
+            bundle in ('com.netflix.netflix', 'com.unknown.netflix'))
+
+
 def apply_policy(source, path):
     if not path.exists():
         return {'removedApps': 0, 'removedVersions': 0}
     policy = json.loads(path.read_text(encoding='utf-8'))
     if policy.get('schema') != 1:
         raise ValueError('Unsupported catalog policy schema')
+    netflix_cutoff = policy.get('netflixOwnerImportsAfter')
+    if netflix_cutoff is not None:
+        netflix_cutoff = datetime.fromisoformat(netflix_cutoff.replace('Z', '+00:00'))
+        if netflix_cutoff.tzinfo is None:
+            raise ValueError('Netflix cutoff must include timezone')
     blocked = policy.get('blockedURLs', [])
     rules = policy.get('versionFloors', [])
     allowed = policy.get('videoStarAllowed', [])
@@ -70,6 +86,17 @@ def apply_policy(source, path):
     removed, pruned = 0, 0
     for original in source['apps']:
         app = copy.deepcopy(original)
+        if netflix_cutoff is not None and is_netflix_app(app):
+            permitted = False
+            if app.get('_sourceURL') == 'local' and app.get('_addedFromLink') is True:
+                try:
+                    added = datetime.fromisoformat(str(app.get('versionDate', '')).replace('Z', '+00:00'))
+                    permitted = added.tzinfo is not None and added > netflix_cutoff
+                except (ValueError, TypeError):
+                    pass
+            if not permitted:
+                removed += 1
+                continue
         video = is_video_star(app) and policy.get('videoStarOnlyAllowed')
         if video:
             selected = (str(app.get('bundleIdentifier', '')).casefold(),
@@ -108,3 +135,4 @@ def apply_policy(source, path):
         raise ValueError('Policy cannot publish an empty catalog')
     source['apps'] = result
     return {'removedApps': removed, 'removedVersions': pruned}
+
