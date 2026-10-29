@@ -1,6 +1,12 @@
 name: Update and repair IPA Strong
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'catalog_dedup.py'
+      - 'catalog-policy.json'
+      - 'source_guard.py'
   workflow_dispatch:
     inputs:
       action:
@@ -38,8 +44,11 @@ jobs:
             exit 1
           fi
       - name: Refresh and repair
-        if: github.event.inputs.action != 'rollback'
+        if: github.event_name != 'push' && github.event.inputs.action != 'rollback'
         run: python3 source_guard.py --audit-limit 400
+      - name: Apply validated catalog cleanup
+        if: github.event_name == 'push'
+        run: python3 source_guard.py --audit-only --audit-limit 0
       - name: Restore last-good source
         if: github.event.inputs.action == 'rollback'
         run: python3 source_guard.py --rollback

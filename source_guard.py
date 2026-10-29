@@ -16,6 +16,7 @@ import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
+from catalog_dedup import deduplicate
 
 ROOT = Path(__file__).resolve().parent
 STATE_NAME = 'source-health.json'
@@ -245,6 +246,7 @@ def publish(root, old_bytes, source):
     if (root/'catalog-policy.json').exists():
         from catalog_policy import apply_policy
         apply_policy(source, root/'catalog-policy.json')
+    deduplicate(source)
     validate(source)
     # Backup is updated only AFTER full validation, before the atomic source replacement.
     atomic_bytes(root/'backups/ipastrong.last-good.json.gz', gzip.compress(old_bytes, mtime=0))
@@ -293,8 +295,10 @@ def run(root, limit=400, refresh=True):
         from catalog_policy import apply_policy
         policy_report = apply_policy(source, root/'catalog-policy.json')
     report = monitor(source, state, limit, now)
+    duplicate_report = deduplicate(source)
     validate(source)
     report.update(date=datetime.now(timezone.utc).isoformat(), inputApps=len(base['apps']), outputApps=len(source['apps']), preservedApps=restored, recoveredPublishedSource=recovered, removedApps=policy_report['removedApps'], catalogPolicy=policy_report, upstream=upstream)
+    report['deduplication'] = duplicate_report
     publish(root, old_bytes, source)
     write(root/STATE_NAME, state)
     write(root/REPORT_NAME, report)

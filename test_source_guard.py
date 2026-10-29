@@ -26,6 +26,53 @@ def missing(state, url=URL):
     g.record(state, url, {'status':'missing','http':404}, NOW)
 
 class GuardTests(unittest.TestCase):
+    def test_dedup_preserves_owner_history_and_featured(self):
+        imported = app('Imported alias')
+        imported['_sourceURL'] = 'https://repo.example'
+        imported['_featured'] = True
+        imported['versions'].append(app(version='1.0', url=ALT)['versions'][0])
+        owner = app('Owner name')
+        s = {'name': 'IPA Strong', 'apps': [imported, owner]}
+        report = g.deduplicate(s)
+        self.assertEqual(report['removedApps'], 1)
+        self.assertEqual(s['apps'][0]['name'], 'Owner name')
+        self.assertTrue(s['apps'][0]['_featured'])
+        self.assertEqual(len(s['apps'][0]['versions']), 2)
+        g.validate(s)
+        again = copy.deepcopy(s)
+        self.assertEqual(g.deduplicate(s)['removedApps'], 0)
+        self.assertEqual(s, again)
+
+    def test_dedup_preserves_distinct_files_ids_versions_and_hashes(self):
+        original = app()
+        variants = [app(url=ALT), app(version='3.0'),
+                    dict(app(), bundleIdentifier='com.other.app')]
+        s = {'name': 'IPA Strong', 'apps': [original] + variants}
+        self.assertEqual(g.deduplicate(s)['removedApps'], 0)
+        s['apps'] = [dict(app(), sha256='one'), dict(app(), sha256='two')]
+        self.assertEqual(g.deduplicate(s)['removedApps'], 0)
+
+    def test_publish_deduplicates_and_preserves_original_backup(self):
+        import gzip
+        s = source()
+        s['apps'].append(app('Alias'))
+        old = json.dumps(s).encode()
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            g.publish(root, old, s)
+            self.assertEqual(len(json.loads((root/'ipastrong.json').read_text())['apps']), 1)
+            self.assertEqual(gzip.decompress((root/'backups/ipastrong.last-good.json.gz').read_bytes()), old)
+
+    def test_refresh_cannot_reintroduce_duplicate(self):
+        s = source()
+        s['apps'].append(dict(app('Upstream alias'), _sourceURL='https://repo.example'))
+        g.deduplicate(s)
+        candidate = {'name': 'IPA Strong', 'apps': [dict(app('Upstream alias'), _sourceURL='https://repo.example')]}
+        refreshed, _ = g.preserve(s, candidate)
+        g.deduplicate(refreshed)
+        self.assertEqual(len(refreshed['apps']), 1)
+        self.assertEqual(refreshed['apps'][0]['name'], 'Example')
+
     def test_valid_source(self): g.validate(source())
     def test_empty_source_rejected(self):
         with self.assertRaises(ValueError): g.validate({'name':'x','apps':[]})
@@ -96,7 +143,7 @@ class GuardTests(unittest.TestCase):
             self.assertEqual(g.read(p/'ipastrong.json')['apps'][0]['downloadURL'],ALT)
     def test_backup_and_rollback(self):
         with tempfile.TemporaryDirectory() as temp:
-            p=Path(temp);old=source();new=source();new['apps'].append(app('Other'))
+            p=Path(temp);old=source();new=source();new['apps'].append(app('Other', url=ALT))
             old_bytes=json.dumps(old).encode();(p/'ipastrong.json').write_bytes(old_bytes)
             g.publish(p,old_bytes,new);self.assertEqual(len(g.read(p/'ipastrong.json')['apps']),2)
             g.rollback(p);self.assertEqual((p/'ipastrong.json').read_bytes(),old_bytes)
