@@ -1,9 +1,9 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 388,
-    "missing": 11,
-    "not_ipa": 1
+    "ok": 390,
+    "missing": 8,
+    "restricted": 2
   },
   "repaired": [],
   "unresolved": [
@@ -64,8 +64,16 @@
       "url": "https://repo.ballermc.com/tubevault/YouTube%2021.39.4%20%28YTPlus%206.0~b2%29%20%5B@ipavault%5D.ipa"
     },
     {
+      "name": "Blunders",
+      "url": "https://fastsign.dev/tg-ipa/sa1y0miii/13758-Blunders_v6.0_tg@Sa1y0miii.ipa"
+    },
+    {
       "name": "Colourtone",
       "url": "https://fastsign.dev/tg-ipa/riftysipalibrary/8143-Colourtone:%20#1%20Photo%20Editor-v5.7-riftysipas.ipa"
+    },
+    {
+      "name": "MA 3",
+      "url": "https://fastsign.dev/tg-ipa/kamohacks/16692-MA%203%20-%20KamoHacks%20%5B37%5D.ipa"
     },
     {
       "name": "YTPlus/YTLite Cracked (6.0 BETA 1 - iOS 16+ Support)",
@@ -176,10 +184,10 @@
       "url": "https://file.ipaomtk.com/Grow%20Castle%21/Grow-Castle-1.50.14-IPAOMTK.COM.ipa"
     }
   ],
-  "date": "2026-10-29T05:49:45.878217+00:00",
-  "inputApps": 11418,
-  "outputApps": 11439,
-  "preservedApps": 376,
+  "date": "2026-10-29T13:02:41.630280+00:00",
+  "inputApps": 11439,
+  "outputApps": 11483,
+  "preservedApps": 419,
   "recoveredPublishedSource": false,
   "removedApps": 6,
   "catalogPolicy": {
@@ -190,12 +198,12 @@
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 9900,
+        "apps": 9905,
         "error": null
       },
       {
         "source": "https://ipa.cypwn.xyz/cypwn.json",
-        "apps": 209,
+        "apps": 210,
         "error": null
       },
       {
@@ -354,8 +362,8 @@
         "error": null
       }
     ],
-    "inputRecords": 39408,
-    "outputApps": 11069,
+    "inputRecords": 39414,
+    "outputApps": 11070,
     "rejectedRecords": 173
   }
 }
