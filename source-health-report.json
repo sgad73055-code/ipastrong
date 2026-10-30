@@ -1,9 +1,10 @@
 {
   "checked": 403,
   "outcomes": {
-    "ok": 387,
-    "missing": 15,
-    "temporary": 1
+    "ok": 389,
+    "temporary": 1,
+    "missing": 12,
+    "restricted": 1
   },
   "repaired": [],
   "unresolved": [
@@ -38,6 +39,10 @@
     {
       "name": "CamScanner+",
       "url": "https://proxy-files.thuthuatjb.com/apps?=thuthuatjb/IPAS/releases/download/2/CamScanner+_5.26.10_TTJB.ipa"
+    },
+    {
+      "name": "ClashOfClan",
+      "url": "https://proxy-files.thuthuatjb.com/apps?=thuthuatjb/IPAS/releases/download/2/Clash.Of.Clash.16.137.13_TTJB.ipa"
     },
     {
       "name": "Spotify++",
@@ -82,6 +87,10 @@
     {
       "name": "MA 3",
       "url": "https://fastsign.dev/tg-ipa/kamohacks/16692-MA%203%20-%20KamoHacks%20%5B37%5D.ipa"
+    },
+    {
+      "name": "Photos Backup",
+      "url": "https://fastsign.dev/tg-ipa/ipavault/697-PhotosBackup.ipa"
     },
     {
       "name": "YTPlus/YTLite Cracked (6.0 BETA 1 - iOS 16+ Support)",
@@ -216,10 +225,10 @@
       "url": "https://file.ipaomtk.com/Grow%20Castle%21/Grow-Castle-1.50.14-IPAOMTK.COM.ipa"
     }
   ],
-  "date": "2026-10-30T05:51:29.923005+00:00",
-  "inputApps": 11441,
-  "outputApps": 11445,
-  "preservedApps": 399,
+  "date": "2026-10-30T12:57:25.861286+00:00",
+  "inputApps": 11446,
+  "outputApps": 11446,
+  "preservedApps": 397,
   "recoveredPublishedSource": false,
   "removedApps": 19,
   "catalogPolicy": {
@@ -230,7 +239,7 @@
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 9912,
+        "apps": 9915,
         "error": null
       },
       {
@@ -394,20 +403,12 @@
         "error": null
       }
     ],
-    "inputRecords": 39397,
-    "outputApps": 11066,
+    "inputRecords": 39400,
+    "outputApps": 11068,
     "rejectedRecords": 173
   },
   "deduplication": {
-    "removedApps": 1,
-    "duplicates": [
-      {
-        "name": "Instagram — 452.0.1",
-        "keptName": "Instagram",
-        "bundleIdentifier": "com.burbn.instagram",
-        "version": "452.0.1",
-        "downloadURL": "https://source.ryuksign.com/ipas/22ac767c9d09aed8795b.ipa"
-      }
-    ]
+    "removedApps": 0,
+    "duplicates": []
   }
 }
