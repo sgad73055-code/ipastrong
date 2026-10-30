@@ -1,9 +1,9 @@
 {
-  "checked": 400,
+  "checked": 403,
   "outcomes": {
-    "ok": 388,
-    "missing": 10,
-    "temporary": 2
+    "ok": 387,
+    "missing": 15,
+    "temporary": 1
   },
   "repaired": [],
   "unresolved": [
@@ -46,6 +46,10 @@
     {
       "name": "AppStore++ TrollStore",
       "url": "https://proxy-files.thuthuatjb.com/apps?=CokePokes/AppStorePlus-TrollStore/releases/download/v1.2-1/AppStore++_TrollStore_v1.0.3-2.ipa"
+    },
+    {
+      "name": "iVanced for YouTube",
+      "url": "https://github.com/TherionRO/YouTubeiVanced/releases/download/release19.06.2/iVanced_19.06.2.ipa"
     },
     {
       "name": "NineAnimator",
@@ -112,6 +116,10 @@
       "url": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/HD.Flix.No.Ads.v2.0.ipa"
     },
     {
+      "name": "SpotiFLAC Mobile",
+      "url": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/SpotiFLAC-Mobile-5.2.0.ipa"
+    },
+    {
       "name": "Instagram — 448.0.0",
       "url": "https://fastsign.dev/tg-ipa/ipa-dark/1775-Instagram%20Regram%20%5Bv448.0.0%5D%28tg@ipa_dark%29.ipa"
     },
@@ -122,6 +130,10 @@
     {
       "name": "Taurus (v0.50.1 - Not Patched) IPAVault",
       "url": "https://repo.ballermc.com/tubevault/Spotify%209.1.78%20%28Taurus%200.50.1%29%20No%20Plugins.ipa"
+    },
+    {
+      "name": "Twitch",
+      "url": "https://fastsign.dev/tg-ipa/ipavault/653-Twitch%2031.4%20%28Tweach+TC%29%20Glass%20%5B@ipavault%5D.ipa"
     },
     {
       "name": "YTKACE (1.1.2) - Bonus Tweaks (iOSDecrypted)",
@@ -204,21 +216,21 @@
       "url": "https://file.ipaomtk.com/Grow%20Castle%21/Grow-Castle-1.50.14-IPAOMTK.COM.ipa"
     }
   ],
-  "date": "2026-10-29T22:46:54.748365+00:00",
-  "inputApps": 11440,
-  "outputApps": 11440,
-  "preservedApps": 389,
+  "date": "2026-10-30T05:51:29.923005+00:00",
+  "inputApps": 11441,
+  "outputApps": 11445,
+  "preservedApps": 399,
   "recoveredPublishedSource": false,
-  "removedApps": 20,
+  "removedApps": 19,
   "catalogPolicy": {
-    "removedApps": 20,
+    "removedApps": 19,
     "removedVersions": 0
   },
   "upstream": {
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 9911,
+        "apps": 9912,
         "error": null
       },
       {
@@ -278,7 +290,7 @@
       },
       {
         "source": "https://fastsign.dev/repo.json",
-        "apps": 16063,
+        "apps": 16037,
         "error": null
       },
       {
@@ -382,12 +394,20 @@
         "error": null
       }
     ],
-    "inputRecords": 39421,
-    "outputApps": 11071,
+    "inputRecords": 39397,
+    "outputApps": 11066,
     "rejectedRecords": 173
   },
   "deduplication": {
-    "removedApps": 0,
-    "duplicates": []
+    "removedApps": 1,
+    "duplicates": [
+      {
+        "name": "Instagram — 452.0.1",
+        "keptName": "Instagram",
+        "bundleIdentifier": "com.burbn.instagram",
+        "version": "452.0.1",
+        "downloadURL": "https://source.ryuksign.com/ipas/22ac767c9d09aed8795b.ipa"
+      }
+    ]
   }
 }
