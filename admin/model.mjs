@@ -6,7 +6,7 @@ const pythonString=x=>x===undefined?'':x===null?'None':x===true?'True':x===false
 export function identityText(app){return '['+['downloadURL','bundleIdentifier','name','_sourceURL'].map(k=>JSON.stringify(pythonString(app[k]))).join(', ')+']'}
 export async function appId(app){const digest=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(identityText(app)));return [...new Uint8Array(digest)].map(x=>x.toString(16).padStart(2,'0')).join('').slice(0,16)}
 export function imageURL(value){try{const u=new URL(value);return u.protocol==='https:'?u.href:''}catch{return ''}}
-export function sourceLabel(app){try{const u=new URL(app._sourceURL&&app._sourceURL!=='local'?app._sourceURL:app.downloadURL);const channel=decodeURIComponent(u.pathname).match(/tg-ipa\/([^/]+)/);return channel?channel[1]:app._sourceURL==='local'?'إضافة خاصة':u.hostname.replace(/^www\./,'')}catch{return 'المصدر'}}
+export function sourceLabel(app){try{if(app._sourceURL==='local')return 'إضافة خاصة';const download=new URL(app.downloadURL);const channel=decodeURIComponent(download.pathname).match(/tg-ipa\/([^/]+)/);if(channel)return channel[1];const u=new URL(app._sourceURL||app.downloadURL);if(u.hostname==='raw.githubusercontent.com'||u.hostname==='github.com')return u.pathname.split('/').filter(Boolean)[0]||'GitHub';return u.hostname.replace(/^www\./,'')}catch{return 'المصدر'}}
 export function findApps(apps,query){const q=query.trim().toLocaleLowerCase();if(!q)return apps;return apps.filter(a=>[a.name,a.bundleIdentifier,a.version,a.downloadURL,a._sourceURL,sourceLabel(a)].some(v=>String(v||'').toLocaleLowerCase().includes(q)))}
 export function buildInputs({original,values,action,requestId,target=''}){
  const inputs={action,request_id:requestId,dry_run:false};
