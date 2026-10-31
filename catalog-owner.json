@@ -34,6 +34,43 @@
         "_sourceURL": "local",
         "localizedDescription": ""
       }
+    },
+    {
+      "urls": [
+        "https://github.com/sgad73055-code/ipastrong/releases/download/beegram-453.0.0/Beegram_453.0.0.ipa"
+      ],
+      "patch": {
+        "localizedDescription": "👤 البروفايل الذهبي (محلي فقط). 👁 اخفاء متابعينك عن الاخرين. 👁 اخفاء الذين تتابعهم عن الاخرين. 👁 اخفاء نفسك من الاشخاص المتابعهم. 👤 وضع مطور ميتا اللذي يسمح لك بفتح 38000 ميزة وتخصيص في انستكرام. 🪄اصلاحات كثيرة هنا وهناك. #️⃣التوافق مع احدث اصدار من انستكرام. . ⚙️ يمكنك الوصول لاعدادات الاخفاء في قسم الحساب في بيگرام والمميزات الاضافية في قسم التخصيص  هذه اهم المميزات المضافة في بيگرام 3.8.1"
+      },
+      "seed": {
+        "name": "Beegram-453.0.0",
+        "bundleIdentifier": "com.burbn.instagram",
+        "developerName": "IPA Strong",
+        "version": "453.0.0",
+        "versionDate": "2026-10-30T08:47:54.879895+00:00",
+        "downloadURL": "https://github.com/sgad73055-code/ipastrong/releases/download/beegram-453.0.0/Beegram_453.0.0.ipa",
+        "size": 377327726,
+        "iconURL": "https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/assets/app-icons/8fa7843436df6aba14d85580.png",
+        "localizedDescription": "👤 البروفايل الذهبي (محلي فقط). 👁 اخافاء متابعينك عن الاخرين. 👁 اخفاء الذين تتابعهم عن الاخرين. 👁 اخفاء نفسك من الاشخاص المتابعهم. 👤 وضع مطور ميتا اللذي يسمح لك بفتح 38000 ميزة وتخصيص في انستكرام. 🪄اصلاحات كثيرة هنا وهناك. #️⃣التوافق مع احدث اصدار من انستكرام. . ⚙️ يمكنك الوصول لاعدادات الاخفاء في قسم الحساب في بيگرام والمميزات الاضافية في قسم التخصيص  هذه اهم المميزات المضافة في بيگرام 3.8.1   @Alibusut",
+        "versions": [
+          {
+            "version": "453.0.0",
+            "date": "2026-10-30T08:47:54.879895+00:00",
+            "downloadURL": "https://github.com/sgad73055-code/ipastrong/releases/download/beegram-453.0.0/Beegram_453.0.0.ipa",
+            "size": 377327726,
+            "sha256": "8fa7843436df6aba14d85580ed602c08dbae9b18f734e4cb4c3a90f6833e2bdc",
+            "buildVersion": "1099096960",
+            "minOSVersion": "16.0"
+          }
+        ],
+        "sha256": "8fa7843436df6aba14d85580ed602c08dbae9b18f734e4cb4c3a90f6833e2bdc",
+        "_sourceURL": "local",
+        "_addedFromLink": true,
+        "minOSVersion": "16.0"
+      },
+      "keys": [
+        "3bf500a3809ef1f6"
+      ]
     }
   ]
 }
