@@ -1,5 +1,8 @@
 """Manage the live catalog from workflow inputs; no source writes before validation."""
 import copy
+import base64
+import binascii
+import hashlib
 import html
 import json
 import os
@@ -33,8 +36,32 @@ def select(source, target):
     return matches[0]
 
 
+def prepare_icon(value):
+    """Accept only bounded image bytes; never trust the supplied extension."""
+    if not value.startswith('data:'):
+        return value, None
+    if len(value) > 45000:
+        raise ValueError('Uploaded icon is too large; use the image picker to resize it.')
+    try:
+        prefix, encoded = value.split(',', 1)
+        mime = {'data:image/jpeg;base64': ('jpg', b'\xff\xd8\xff'),
+                'data:image/png;base64': ('png', bytes.fromhex('89504e470d0a1a0a'))}
+        extension, magic = mime[prefix]
+        data = base64.b64decode(encoded, validate=True)
+        if not data.startswith(magic) or len(data) > 32768:
+            raise ValueError('Invalid or oversized icon bytes')
+    except (KeyError, ValueError, binascii.Error) as error:
+        raise ValueError('Icon upload must be a small JPEG or PNG image') from error
+    name = 'owner-' + hashlib.sha256(data).hexdigest()[:24] + '.' + extension
+    url = 'https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/assets/app-icons/' + name
+    return url, ('assets/app-icons/' + name, data)
+
+
 def execute(root, action, target='', updates=None, dry_run=False, clear_description=False, clear_icon=False):
-    updates = updates or {}
+    updates = dict(updates or {})
+    icon_asset = None
+    if updates.get('iconURL'):
+        updates['iconURL'], icon_asset = prepare_icon(updates['iconURL'])
     old = (root / 'ipastrong.json').read_bytes()
     source = json.loads(old)
     source_guard.validate(source)
@@ -127,6 +154,8 @@ def execute(root, action, target='', updates=None, dry_run=False, clear_descript
     if not dry_run:
         candidate['lastUpdated'] = datetime.now(timezone.utc).isoformat()
         # Both files are committed together by Actions; failed jobs never push.
+        if icon_asset:
+            source_guard.atomic_bytes(root / icon_asset[0], icon_asset[1])
         source_guard.atomic_bytes(root / 'catalog-owner.json', (json.dumps(state, ensure_ascii=False, indent=2) + '\n').encode())
         source_guard.publish(root, old, candidate)
     return report

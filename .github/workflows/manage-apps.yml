@@ -1,4 +1,5 @@
 name: Manage apps — إدارة التطبيقات
+run-name: "Catalog · ${{ inputs.request_id || github.run_number }}"
 
 on:
   push:
@@ -8,8 +9,13 @@ on:
       - 'manage_catalog.py'
       - 'catalog_owner.py'
       - 'test_manage_catalog.py'
+      - 'admin/**'
   workflow_dispatch:
     inputs:
+      request_id:
+        description: 'معرّف الطلب من لوحة الإدارة (اتركه فارغًا عند التشغيل اليدوي)'
+        type: string
+        required: false
       action:
         description: 'العملية: list بحث، edit تعديل، delete حذف، add إضافة، restore إلغاء تخصيص'
         type: choice
@@ -67,13 +73,18 @@ jobs:
         run: |
           python3 -m unittest test_manage_catalog test_source_guard -v
           python3 add_app_from_url.py --self-test
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test visual manager
+        run: node --test admin/test-model.mjs
       - name: Verify search on the actual catalog without writing
         env:
           MANAGE_ACTION: list
           MANAGE_TARGET: Beegram
         run: |
           before=$(git hash-object ipastrong.json)
-          python3 manage_catalog.py
+          GITHUB_STEP_SUMMARY='' python3 manage_catalog.py
           test "$before" = "$(git hash-object ipastrong.json)"
           test ! -f catalog-owner.json || git diff --exit-code -- catalog-owner.json
   manage:
@@ -115,6 +126,7 @@ jobs:
         run: |
           set -euo pipefail
           git add ipastrong.json catalog-owner.json backups/ipastrong.last-good.json.gz
+          if [ -d assets/app-icons ]; then git add assets/app-icons/; fi
           if git diff --cached --quiet; then exit 0; fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'

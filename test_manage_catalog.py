@@ -1,4 +1,5 @@
 import copy
+import base64
 import io
 import json
 from pathlib import Path
@@ -146,6 +147,28 @@ class ManagementTests(unittest.TestCase):
         self.assertEqual(self.read()['apps'], [self.source['apps'][1]])
         source_guard.publish(self.root, self.original, copy.deepcopy(self.source))
         self.assertEqual(self.read()['apps'], [self.source['apps'][1]])
+
+    def test_image_upload_has_permanent_url_and_preserves_other_apps(self):
+        # A real minimal 1x1 PNG, no uploaded file is executed.
+        icon = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+j4e8AAAAASUVORK5CYII='
+        manager.execute(self.root, 'edit', 'Test', {'iconURL': icon})
+        saved = self.read()['apps'][0]['iconURL']
+        self.assertTrue(saved.startswith('https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/assets/app-icons/owner-'))
+        assets = list((self.root / 'assets' / 'app-icons').iterdir())
+        self.assertEqual(len(assets), 1)
+        self.assertEqual(assets[0].read_bytes(), base64.b64decode(icon.split(',')[1]))
+        self.assertEqual(self.read()['apps'][1], self.source['apps'][1])
+        source_guard.publish(self.root, self.original, copy.deepcopy(self.source))
+        self.assertEqual(self.read()['apps'][0]['iconURL'], saved)
+
+    def test_image_dry_run_and_bad_image_write_nothing(self):
+        icon = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+j4e8AAAAASUVORK5CYII='
+        manager.execute(self.root, 'edit', 'Test', {'iconURL': icon}, dry_run=True)
+        for invalid in ('data:image/svg+xml;base64,PHN2Zz48L3N2Zz4=', 'data:image/png;base64,bm90IGEgcG5n', 'data:image/png;base64,' + 'A' * 45001):
+            with self.assertRaises(ValueError): manager.execute(self.root, 'edit', 'Test', {'iconURL': invalid})
+        self.assertEqual((self.root / 'ipastrong.json').read_bytes(), self.original)
+        self.assertFalse((self.root / 'catalog-owner.json').exists())
+        self.assertFalse((self.root / 'assets').exists())
 
     def test_deleting_last_app_is_blocked(self):
         manager.execute(self.root, 'delete', 'Other')
