@@ -1,5 +1,5 @@
 import {RAW,REPO,findApps,imageURL,sourceLabel,appId,buildInputs,operationMatches} from './model.mjs';
-import {GitHub} from './github.mjs';
+import {GitHub} from './github.mjs?v=2';
 const $=id=>document.getElementById(id),form=$('editForm'),api=new GitHub();
 const state={apps:[],filtered:[],limit:48,selected:null,selectedId:'',imageData:'',dirty:false,busy:false,loading:false,pending:null,polling:false};
 const pendingKey='ipastrong-manager-pending-v1';

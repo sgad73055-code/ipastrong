@@ -2,7 +2,7 @@ import {REPO_API,WORKFLOW} from './model.mjs';
 export class GitHubError extends Error{constructor(message,status){super(message);this.status=status}}
 export class GitHub{
  #token='';
- constructor(fetcher=fetch){this.fetcher=fetcher}
+ constructor(fetcher=fetch){this.fetcher=fetcher.bind(globalThis)}
  get connected(){return !!this.#token}
  disconnect(){this.#token=''}
  async request(path,{method='GET',body}={},token=this.#token){

@@ -48,3 +48,8 @@ test('legacy polling selects the exact request, never another user run',async()=
 test('credential is never persisted; no third-party executable scripts',()=>{
  const js=readFileSync(new URL('./app.mjs',import.meta.url),'utf8'),html=readFileSync(new URL('./index.html',import.meta.url),'utf8');assert(!/localStorage\.setItem\([^\n]*(?:token|credential)/.test(js));assert(!html.includes('script src="https:'));assert(html.includes("script-src 'self'"));assert(html.includes('type="password"'));
 });
+
+test('native browser fetch keeps the global receiver',async()=>{
+ const api=new GitHub(function(url,options){if(this!==globalThis)throw new TypeError('Illegal invocation');return Promise.resolve(response(200,{state:'active'}))});
+ await api.connect('github_pat_fixture');assert.equal(api.connected,true);
+});
