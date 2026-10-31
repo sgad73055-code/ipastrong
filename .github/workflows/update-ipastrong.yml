@@ -30,6 +30,8 @@ jobs:
     timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
+      - name: Use latest main after waiting for other writers
+        run: git checkout -B main origin/main && git pull --ff-only origin main
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'

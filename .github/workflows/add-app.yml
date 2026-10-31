@@ -24,7 +24,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: ipa-strong-import-review
+  group: ipastrong-source-writer
   cancel-in-progress: false
 
 jobs:
@@ -35,6 +35,8 @@ jobs:
       - uses: actions/checkout@v4
         with:
           persist-credentials: true
+      - name: Use latest main after waiting for other writers
+        run: git checkout -B main origin/main && git pull --ff-only origin main
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'

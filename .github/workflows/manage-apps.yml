@@ -1,0 +1,122 @@
+name: Manage apps — إدارة التطبيقات
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/manage-apps.yml'
+      - 'manage_catalog.py'
+      - 'catalog_owner.py'
+      - 'test_manage_catalog.py'
+  workflow_dispatch:
+    inputs:
+      action:
+        description: 'العملية: list بحث، edit تعديل، delete حذف، add إضافة، restore إلغاء تخصيص'
+        type: choice
+        default: list
+        options: [list, edit, delete, add, restore]
+      target:
+        description: 'للبحث: اسم أو جزء منه. للتعديل والحذف: ID من نتيجة البحث أو رابط التطبيق الكامل'
+        type: string
+        required: false
+      name:
+        description: 'اسم التطبيق الجديد (اختياري)'
+        type: string
+        required: false
+      description:
+        description: 'الوصف الجديد (اتركه فارغًا لإبقاء الوصف الحالي)'
+        type: string
+        required: false
+      icon:
+        description: 'رابط صورة HTTPS جديد (اختياري)'
+        type: string
+        required: false
+      url:
+        description: 'رابط IPA مباشر: مطلوب للإضافة، اختياري لتبديل ملف التطبيق'
+        type: string
+        required: false
+      clear_description:
+        description: 'مسح الوصف الحالي'
+        type: boolean
+        default: false
+      clear_icon:
+        description: 'مسح الصورة الحالية'
+        type: boolean
+        default: false
+      dry_run:
+        description: 'معاينة فقط، بدون حفظ أي تغيير'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ipastrong-source-writer
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test catalog management and maintenance
+        run: |
+          python3 -m unittest test_manage_catalog test_source_guard -v
+          python3 add_app_from_url.py --self-test
+      - name: Verify search on the actual catalog without writing
+        env:
+          MANAGE_ACTION: list
+          MANAGE_TARGET: Beegram
+        run: |
+          before=$(git hash-object ipastrong.json)
+          python3 manage_catalog.py
+          test "$before" = "$(git hash-object ipastrong.json)"
+          test ! -f catalog-owner.json || git diff --exit-code -- catalog-owner.json
+  manage:
+    if: github.event_name == 'workflow_dispatch'
+    needs: verify
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Use latest main after waiting for other writers
+        run: git pull --ff-only origin main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Manage selected application
+        env:
+          MANAGE_ACTION: ${{ inputs.action }}
+          MANAGE_TARGET: ${{ inputs.target }}
+          MANAGE_NAME: ${{ inputs.name }}
+          MANAGE_DESCRIPTION: ${{ inputs.description }}
+          MANAGE_ICON: ${{ inputs.icon }}
+          MANAGE_URL: ${{ inputs.url }}
+          MANAGE_CLEAR_DESCRIPTION: ${{ inputs.clear_description }}
+          MANAGE_CLEAR_ICON: ${{ inputs.clear_icon }}
+          MANAGE_DRY_RUN: ${{ inputs.dry_run }}
+        run: python3 manage_catalog.py
+      - name: Downloadable search results and change report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: catalog-management-report
+          path: catalog-management-report.json
+          if-no-files-found: ignore
+          retention-days: 14
+      - name: Publish catalog and persistent owner rules together
+        if: inputs.action != 'list' && !inputs.dry_run
+        run: |
+          set -euo pipefail
+          git add ipastrong.json catalog-owner.json backups/ipastrong.last-good.json.gz
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Apply owner catalog management action'
+          git push origin HEAD:main

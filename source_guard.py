@@ -246,6 +246,8 @@ def publish(root, old_bytes, source):
     if (root/'catalog-policy.json').exists():
         from catalog_policy import apply_policy
         apply_policy(source, root/'catalog-policy.json')
+    from catalog_owner import apply_file
+    apply_file(source, root)
     deduplicate(source)
     validate(source)
     # Backup is updated only AFTER full validation, before the atomic source replacement.
@@ -294,6 +296,8 @@ def run(root, limit=400, refresh=True):
     if (root/'catalog-policy.json').exists():
         from catalog_policy import apply_policy
         policy_report = apply_policy(source, root/'catalog-policy.json')
+    from catalog_owner import apply_file
+    apply_file(source, root)
     report = monitor(source, state, limit, now)
     duplicate_report = deduplicate(source)
     validate(source)
