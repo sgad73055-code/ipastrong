@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "rules": [
+    {
+      "keys": [
+        "f4f0317f0df505ab"
+      ],
+      "urls": [
+        "https://dl.ikiraplus.workers.dev/dl/beegram_444.0.0-v3.1"
+      ],
+      "deleted": true,
+      "seed": {
+        "id": "APP-4229526127",
+        "name": "بيكرام",
+        "bundleIdentifier": "com.burbn.instagram",
+        "bundleId": "com.burbn.instagram",
+        "iconURL": "https://raw.githubusercontent.com/ikiraplus/ipastore/main/images/app-1773402346513.png",
+        "category": "تواصل",
+        "versions": [
+          {
+            "version": "444.0.0",
+            "downloadURL": "https://dl.ikiraplus.workers.dev/dl/beegram_444.0.0-v3.1",
+            "date": "2026-08-29",
+            "size": 287414681
+          }
+        ],
+        "version": "444.0.0",
+        "versionDate": "2026-08-29",
+        "downloadURL": "https://dl.ikiraplus.workers.dev/dl/beegram_444.0.0-v3.1",
+        "ipaUrl": "https://dl.ikiraplus.workers.dev/dl/beegram_444.0.0-v3.1",
+        "size": 287414681,
+        "addedAt": "2026-08-29",
+        "updatedAt": "2026-09-02",
+        "_sourceURL": "local",
+        "localizedDescription": ""
+      }
+    }
+  ]
+}
