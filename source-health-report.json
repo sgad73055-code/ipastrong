@@ -223,8 +223,8 @@
       "url": "https://file.ipaomtk.com/Grow%20Castle%21/Grow-Castle-1.50.14-IPAOMTK.COM.ipa"
     }
   ],
-  "date": "2026-10-31T05:42:31.905252+00:00",
-  "inputApps": 11449,
+  "date": "2026-10-31T12:30:50.146448+00:00",
+  "inputApps": 11500,
   "outputApps": 11500,
   "preservedApps": 395,
   "recoveredPublishedSource": false,
@@ -242,7 +242,7 @@
       },
       {
         "source": "https://ipa.cypwn.xyz/cypwn.json",
-        "apps": 209,
+        "apps": 210,
         "error": null
       },
       {
@@ -401,7 +401,7 @@
         "error": null
       }
     ],
-    "inputRecords": 39804,
+    "inputRecords": 39805,
     "outputApps": 11124,
     "rejectedRecords": 173
   },
