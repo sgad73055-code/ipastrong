@@ -2,6 +2,7 @@
 import argparse
 import copy
 import hashlib
+import io
 import json
 import os
 from pathlib import Path
@@ -9,6 +10,7 @@ import plistlib
 import tempfile
 import time
 import unittest
+from unittest.mock import patch
 import urllib.parse
 import urllib.request
 import zipfile
@@ -39,7 +41,22 @@ def download(url, destination):
             chunk = response.read(1024*1024)
             if not chunk: break
             if total == 0 and chunk[:4] not in (b'PK\x03\x04',b'PK\x05\x06'):
-                raise ValueError('Link returned a webpage or non-IPA file; use a direct download link')
+                # Check the original and redirect destination hosts without logging
+                # URLs, which may contain private query parameters.
+                hosts = [urllib.parse.urlsplit(u).hostname or ''
+                         for u in (url, response.geturl())]
+                if any(h == 'modsfire.com' or h.endswith('.modsfire.com') for h in hosts):
+                    raise ValueError(
+                        'ModsFire returned a download webpage, not an IPA file. '
+                        'Interactive ModsFire pages are not supported. Download the IPA '
+                        'in your browser, upload it to GitHub Releases, then use the '
+                        'permanent HTTPS release asset download URL. Do not use a '
+                        'temporary signed link. Catalog unchanged.')
+                raise ValueError(
+                    'URL returned HTML or another non-IPA response. Use a permanent '
+                    'public HTTPS link that downloads the IPA without a download page, '
+                    'login or CAPTCHA (for example a GitHub Releases asset). '
+                    'Catalog unchanged.')
             total += len(chunk)
             if total > MAX_BYTES: raise ValueError('IPA exceeds 5 GiB import limit')
             digest.update(chunk)
@@ -130,6 +147,60 @@ def fixture():
 META = {'bundle':'com.example.test','version':'2.0','build':'20','name':'Test','minOS':'14.0'}
 
 class ImportTests(unittest.TestCase):
+    def test_direct_download_inspect_and_add(self):
+        data = io.BytesIO()
+        with zipfile.ZipFile(data, 'w') as archive:
+            archive.writestr('Payload/Test.app/Info.plist', plistlib.dumps({
+                'CFBundleIdentifier': META['bundle'],
+                'CFBundleShortVersionString': META['version']}))
+        payload = data.getvalue()
+        # No .ipa suffix required; the file contents decide acceptance.
+        for url in ('https://example.org/download', 'https://modsfire.com/d/direct'):
+            with self.subTest(url=url), tempfile.TemporaryDirectory() as directory:
+                response = io.BytesIO(payload)
+                response.headers = {'Content-Length': str(len(payload))}
+                response.geturl = lambda: url
+                original = add(fixture(), META, 'https://example.org/old.ipa', 12, 'old')
+                snapshot = copy.deepcopy(original)
+                path = Path(directory) / 'app.ipa'
+                with patch('urllib.request.urlopen', return_value=response):
+                    size, digest = download(url, path)
+                result = add(original, inspect(path), url, size, digest)
+                self.assertEqual(size, len(payload))
+                self.assertEqual(digest, hashlib.sha256(payload).hexdigest())
+                self.assertEqual(len(result['apps']), 2)
+                self.assertEqual(result['apps'][1:], original['apps'])
+                self.assertEqual(original, snapshot)
+
+    def test_webpage_rejected_before_publish(self):
+        import source_guard
+        for url, final_url, message in (
+            ('https://modsfire.com/d/t4kxC698eX3ZH22',
+             'https://modsfire.com/d/t4kxC698eX3ZH22', 'ModsFire returned'),
+            ('https://example.org/redirect', 'https://www.modsfire.com/d/test', 'ModsFire returned'),
+            ('https://example.org/app.ipa', 'https://example.org/app.ipa', 'URL returned HTML'),
+            ('https://notmodsfire.com/app.ipa', 'https://notmodsfire.com/app.ipa', 'URL returned HTML'),
+        ):
+            with self.subTest(url=url), tempfile.TemporaryDirectory() as directory:
+                root = Path(directory)
+                catalog = root / 'ipastrong.json'
+                original = json.dumps(fixture()).encode()
+                catalog.write_bytes(original)
+                response = io.BytesIO(b'<!doctype html><a>Download</a>')
+                response.headers = {}
+                response.geturl = lambda: final_url
+                with patch.dict(os.environ, {'APP_URL': url}), \
+                     patch('sys.argv', ['importer']), \
+                     patch.dict(main.__globals__, {'__file__': str(root / 'importer.py')}), \
+                     patch('source_guard.validate'), \
+                     patch('source_guard.publish') as publish, \
+                     patch('urllib.request.urlopen', return_value=response):
+                    with self.assertRaisesRegex(ValueError, message):
+                        main()
+                    publish.assert_not_called()
+                self.assertEqual(catalog.read_bytes(), original)
+                self.assertEqual(list(root.iterdir()), [catalog])
+
     def test_new_app(self):
         s=add(fixture(),META,'https://example.org/a.ipa',123,'hash');self.assertEqual(len(s['apps']),1);self.assertEqual(s['apps'][0]['version'],'2.0')
     def test_duplicate_idempotent(self):
