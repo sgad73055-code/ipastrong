@@ -223,10 +223,10 @@
       "url": "https://file.ipaomtk.com/Grow%20Castle%21/Grow-Castle-1.50.14-IPAOMTK.COM.ipa"
     }
   ],
-  "date": "2026-10-30T22:22:02.085753+00:00",
-  "inputApps": 11447,
-  "outputApps": 11449,
-  "preservedApps": 397,
+  "date": "2026-10-31T05:42:31.905252+00:00",
+  "inputApps": 11449,
+  "outputApps": 11500,
+  "preservedApps": 395,
   "recoveredPublishedSource": false,
   "removedApps": 19,
   "catalogPolicy": {
@@ -237,7 +237,7 @@
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 9925,
+        "apps": 9929,
         "error": null
       },
       {
@@ -297,7 +297,7 @@
       },
       {
         "source": "https://fastsign.dev/repo.json",
-        "apps": 16037,
+        "apps": 16427,
         "error": null
       },
       {
@@ -401,8 +401,8 @@
         "error": null
       }
     ],
-    "inputRecords": 39410,
-    "outputApps": 11071,
+    "inputRecords": 39804,
+    "outputApps": 11124,
     "rejectedRecords": 173
   },
   "deduplication": {
