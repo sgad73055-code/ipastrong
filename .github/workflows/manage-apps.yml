@@ -77,7 +77,7 @@ jobs:
         with:
           node-version: '22'
       - name: Test visual manager
-        run: node --test admin/test-model.mjs
+        run: node --test admin/test-model.mjs admin/test-upload.mjs
       - name: Verify search on the actual catalog without writing
         env:
           MANAGE_ACTION: list
