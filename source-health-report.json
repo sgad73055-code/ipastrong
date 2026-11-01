@@ -1,6 +1,9 @@
 {
-  "checked": 0,
-  "outcomes": {},
+  "checked": 403,
+  "outcomes": {
+    "ok": 399,
+    "missing": 4
+  },
   "repaired": [],
   "unresolved": [
     {
@@ -220,18 +223,187 @@
       "url": "https://file.ipaomtk.com/Grow%20Castle%21/Grow-Castle-1.50.14-IPAOMTK.COM.ipa"
     }
   ],
-  "date": "2026-10-31T21:37:13.625359+00:00",
-  "inputApps": 11501,
-  "outputApps": 11501,
-  "preservedApps": 0,
+  "date": "2026-11-01T06:06:01.457648+00:00",
+  "inputApps": 11500,
+  "outputApps": 11512,
+  "preservedApps": 352,
   "recoveredPublishedSource": false,
-  "removedApps": 0,
+  "removedApps": 18,
   "catalogPolicy": {
-    "removedApps": 0,
+    "removedApps": 18,
     "removedVersions": 0
   },
   "upstream": {
-    "mode": "audit-only"
+    "sources": [
+      {
+        "source": "https://repository.apptesters.org",
+        "apps": 9938,
+        "error": null
+      },
+      {
+        "source": "https://ipa.cypwn.xyz/cypwn.json",
+        "apps": 209,
+        "error": null
+      },
+      {
+        "source": "https://wuxu1.github.io/wuxu-complete.json",
+        "apps": 17,
+        "error": null
+      },
+      {
+        "source": "https://wuxu1.github.io/wuxu-complete-plus.json",
+        "apps": 13,
+        "error": null
+      },
+      {
+        "source": "https://repo.ikghd.me/repo.json",
+        "apps": 3,
+        "error": null
+      },
+      {
+        "source": "https://check0ver.site/repo.json",
+        "apps": 0,
+        "error": "HTTP Error 404: Not Found"
+      },
+      {
+        "source": "https://quarksources.github.io/dist/quantumsource%2B%2B.min.json",
+        "apps": 35,
+        "error": null
+      },
+      {
+        "source": "https://cdn.altstore.io/file/altstore/apps.json",
+        "apps": 6,
+        "error": null
+      },
+      {
+        "source": "https://alts.lao.sb/source.json",
+        "apps": 1,
+        "error": null
+      },
+      {
+        "source": "https://apps.nabzclan.vip/repos/altstore.php",
+        "apps": 0,
+        "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)>"
+      },
+      {
+        "source": "https://ipa.thuthuatjb.com/repo",
+        "apps": 9371,
+        "error": null
+      },
+      {
+        "source": "https://repo.ethsign.fyi",
+        "apps": 0,
+        "error": "<urlopen error timed out>"
+      },
+      {
+        "source": "https://fastsign.dev/repo.json",
+        "apps": 16714,
+        "error": null
+      },
+      {
+        "source": "https://pokemmo.eu/altstore/",
+        "apps": 1,
+        "error": null
+      },
+      {
+        "source": "https://tiny.one/SpotC",
+        "apps": 2,
+        "error": null
+      },
+      {
+        "source": "https://xitrix.github.io/iTorrent/AltStore.json",
+        "apps": 1,
+        "error": null
+      },
+      {
+        "source": "https://ish.app/altstore.json",
+        "apps": 1,
+        "error": null
+      },
+      {
+        "source": "https://repo.madari.media/nightly/repo.json",
+        "apps": 0,
+        "error": "Source returned no usable apps"
+      },
+      {
+        "source": "https://github.com/dvntm0/AltStore/raw/refs/heads/main/feather.json",
+        "apps": 8,
+        "error": null
+      },
+      {
+        "source": "https://raw.githubusercontent.com/notrifty1/riftysrepo/refs/heads/main/reposource.json",
+        "apps": 5,
+        "error": null
+      },
+      {
+        "source": "https://raw.githubusercontent.com/driftywinds/driftywinds.github.io/master/AltStore/apps.json",
+        "apps": 8,
+        "error": null
+      },
+      {
+        "source": "https://enmity-mod.github.io/repo/altstore.json",
+        "apps": 1,
+        "error": null
+      },
+      {
+        "source": "https://github.com/khcrysalis/Feather/raw/main/app-repo.json",
+        "apps": 1,
+        "error": null
+      },
+      {
+        "source": "https://raw.githubusercontent.com/Nyasami/Ksign/refs/heads/main/repo.json",
+        "apps": 1,
+        "error": null
+      },
+      {
+        "source": "https://buildbot.libretro.com/stable/altstore.json",
+        "apps": 1,
+        "error": null
+      },
+      {
+        "source": "https://provenance-emu.com/apps.json",
+        "apps": 1,
+        "error": null
+      },
+      {
+        "source": "https://alt.getutm.app",
+        "apps": 1,
+        "error": null
+      },
+      {
+        "source": "https://azu0609.github.io/repo/altstore_repo.json",
+        "apps": 1,
+        "error": null
+      },
+      {
+        "source": "https://raw.githubusercontent.com/driftywinds/driftywinds.github.io/master/AltStore/nyx.json",
+        "apps": 1,
+        "error": null
+      },
+      {
+        "source": "https://raw.githubusercontent.com/driftywinds/driftywinds.github.io/master/AltStore/theta.json",
+        "apps": 1,
+        "error": null
+      },
+      {
+        "source": "https://raw.githubusercontent.com/lo-cafe/winston-altstore/main/apps.json",
+        "apps": 1,
+        "error": null
+      },
+      {
+        "source": "https://connect.sidestore.io/apps.json",
+        "apps": 2,
+        "error": null
+      },
+      {
+        "source": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json",
+        "apps": 68,
+        "error": null
+      }
+    ],
+    "inputRecords": 40099,
+    "outputApps": 11178,
+    "rejectedRecords": 173
   },
   "deduplication": {
     "removedApps": 0,
