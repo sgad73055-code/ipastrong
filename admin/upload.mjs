@@ -1,5 +1,5 @@
-import {checkFile,remoteFilename,uploadURL,uploadFile,probePublic,isPackageURL} from './gitlab-upload.mjs';
-const $=id=>document.getElementById(id);let file=null,busy=false,request=null,target=null,wake=null;
+import {checkFile,remoteFilename,uploadURL,uploadFile,probePublic,isPackageURL,progressState} from './gitlab-upload.mjs?v=2';
+const $=id=>document.getElementById(id);let file=null,busy=false,request=null,target=null,wake=null,stallTimer=null,lastProgress=0,lastBytes=0;
 const key='ipastrong-gitlab-upload-target-v1';
 function remember(){try{sessionStorage.setItem(key,JSON.stringify({url:target}))}catch{}}
 function error(text){$('uploadError').textContent=text;$('uploadError').hidden=false}
@@ -16,10 +16,12 @@ $('uploadForm').onsubmit=async e=>{
   target=uploadURL($('remoteName').value.trim(),new Date().toISOString().replace(/[^0-9]/g,'').slice(0,14)+'-'+crypto.randomUUID().slice(0,8));remember();
   $('progressSection').hidden=false;$('progress').value=0;$('progressTitle').textContent='جارٍ الرفع إلى GitLab…';$('progressText').textContent='بدء الاتصال…';$('cancelUpload').hidden=false;
   try{wake=await navigator.wakeLock?.request('screen')}catch{}
-  request=uploadFile({file,url:target,token,onProgress:(loaded,total)=>{const percent=total?Math.min(100,loaded/total*100):0;$('progress').value=percent;$('progressText').textContent=percent.toFixed(1)+'% · '+(loaded/1024**3).toFixed(2)+' / '+(total/1024**3).toFixed(2)+' GiB';if(percent>=100)$('progressTitle').textContent='الإرسال كمل؛ ننتظر تأكيد GitLab…'}});
-  await request.promise;$('progressTitle').textContent='GitLab أكد استلام الملف ✓';$('progress').value=100;$('deployToken').value='';showResult('تم رفع الملف؛ نفحص الرابط…','نختبر التنزيل بدون رمز، حتى يشتغل عند المشتركين.');await verify();
+  lastProgress=Date.now();lastBytes=0;
+  stallTimer=setInterval(()=>{if(busy&&Date.now()-lastProgress>=90000){$('progressTitle').textContent='ما وصل تقدّم جديد من المتصفح…';$('progressText').textContent='التقدّم متوقف منذ '+Math.floor((Date.now()-lastProgress)/60000)+' دقيقة. استلام الملف غير مؤكد؛ لا تعيد الرفع تلقائيًا.'}},15000);
+  request=uploadFile({file,url:target,token,onProgress:(loaded,total)=>{if(loaded>lastBytes){lastProgress=Date.now();lastBytes=loaded}const progress=progressState(loaded,total);$('progress').value=progress.percent;$('progressTitle').textContent=progress.title;$('progressText').textContent=progress.percent.toFixed(1)+'% · '+(progress.sent/1024**3).toFixed(2)+' / '+(progress.total/1024**3).toFixed(2)+' GiB'}});
+  await request.promise;$('progressTitle').textContent='GitLab أكد استلام الملف ✓';$('progress').value=100;$('progressText').textContent='١٠٠٪ — GitLab أكد استلام الملف.';$('deployToken').value='';showResult('تم رفع الملف؛ نفحص الرابط…','نختبر التنزيل بدون رمز، حتى يشتغل عند المشتركين.');await verify();
  }catch(err){error(err.message);if(target&&err.uncertain)showResult('حالة الرفع غير مؤكدة','افحص نفس الرابط أولًا. ما راح نعيد إرسال الملف تلقائيًا.');}
- finally{busy=false;controls(false);$('cancelUpload').hidden=true;request=null;try{await wake?.release()}catch{}wake=null}
+ finally{clearInterval(stallTimer);stallTimer=null;busy=false;controls(false);$('cancelUpload').hidden=true;request=null;try{await wake?.release()}catch{}wake=null}
 };
 $('cancelUpload').onclick=()=>{if(request&&confirm('توقف إرسال الملف؟ الرفع ما يستأنف من نفس المكان.'))request.abort()};$('verifyLink').onclick=verify;$('copyLink').onclick=async()=>{try{await navigator.clipboard.writeText(target);$('copyLink').textContent='تم نسخ الرابط ✓'}catch{$('downloadURL').focus();$('downloadURL').select();error('اضغط مطولًا على الرابط وانسخه يدويًا.')}};
 window.addEventListener('beforeunload',e=>{if(busy){e.preventDefault();e.returnValue=''}});

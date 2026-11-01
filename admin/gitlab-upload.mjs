@@ -12,7 +12,7 @@ export function uploadFile({file,url,token,onProgress=()=>{},makeXHR=()=>new XML
  const promise=new Promise((resolve,reject)=>{
   xhr.open('PUT',url,true);xhr.timeout=3*60*60*1000;xhr.withCredentials=false;
   xhr.setRequestHeader('DEPLOY-TOKEN',token);xhr.setRequestHeader('Content-Type','application/octet-stream');
-  xhr.upload.onprogress=e=>onProgress(e.loaded,e.lengthComputable?e.total:file.size);
+  xhr.upload.onprogress=e=>onProgress(e.loaded,file.size);
   xhr.onload=()=>{
    if(xhr.status===201){resolve({url,status:201});return}
    const messages={400:'GitLab رفض الملف أو اسم الحزمة.',401:'رمز GitLab غير صحيح أو انتهت صلاحيته.',403:'الرمز ما عنده صلاحية write_package_registry، أو حسابك يحتاج توثيق.',404:'المشروع غير متاح للرمز أو Package Registry غير مفعّل.',409:'هذا الملف موجود مسبقًا؛ افحص رابط العملية السابقة.',413:'GitLab رفض حجم الملف؛ تجاوز حد الرفع المتاح.',429:'وصلت لحد الطلبات. انتظر قبل محاولة جديدة.'};
@@ -35,4 +35,10 @@ export async function probePublic(url,fetcher=fetch){
  try{while(bytes.length<4){const {value,done}=await reader.read();if(done)break;for(const byte of value){bytes.push(byte);if(bytes.length===4)break}}}finally{try{await reader.cancel()}catch{}}
  const zip=bytes.length===4&&bytes[0]===80&&bytes[1]===75&&((bytes[2]===3&&bytes[3]===4)||(bytes[2]===5&&bytes[3]===6));
  return {ready:zip,reason:zip?'الرابط رجّع الملف مباشرة، بدون تسجيل دخول.':'الرابط رجّع صفحة أو ملفًا مختلفًا؛ ما نعتمده للسورس بعد.'};
+}
+
+export function progressState(loaded,size){
+ const sent=Math.max(0,Math.min(size,Number.isFinite(loaded)?loaded:0));
+ // Only HTTP 201 may display 100%; browser progress totals can change on Safari.
+ return {sent,total:size,percent:size?Math.min(99.9,sent/size*100):0,title:sent>=size?'بانتظار رد GitLab؛ الاستلام غير مؤكد بعد…':'جارٍ إرسال الملف إلى GitLab…'};
 }
