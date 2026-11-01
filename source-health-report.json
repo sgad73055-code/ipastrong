@@ -1,8 +1,8 @@
 {
   "checked": 403,
   "outcomes": {
-    "ok": 400,
-    "missing": 3
+    "ok": 398,
+    "missing": 5
   },
   "repaired": [],
   "unresolved": [
@@ -223,10 +223,10 @@
       "url": "https://file.ipaomtk.com/Grow%20Castle%21/Grow-Castle-1.50.14-IPAOMTK.COM.ipa"
     }
   ],
-  "date": "2026-11-01T13:25:51.441412+00:00",
+  "date": "2026-11-01T22:03:02.986286+00:00",
   "inputApps": 11512,
-  "outputApps": 11512,
-  "preservedApps": 352,
+  "outputApps": 11519,
+  "preservedApps": 356,
   "recoveredPublishedSource": false,
   "removedApps": 18,
   "catalogPolicy": {
@@ -237,7 +237,7 @@
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 9939,
+        "apps": 9945,
         "error": null
       },
       {
@@ -247,12 +247,12 @@
       },
       {
         "source": "https://wuxu1.github.io/wuxu-complete.json",
-        "apps": 17,
+        "apps": 30,
         "error": null
       },
       {
         "source": "https://wuxu1.github.io/wuxu-complete-plus.json",
-        "apps": 13,
+        "apps": 30,
         "error": null
       },
       {
@@ -401,12 +401,34 @@
         "error": null
       }
     ],
-    "inputRecords": 40101,
-    "outputApps": 11178,
-    "rejectedRecords": 173
+    "inputRecords": 40137,
+    "outputApps": 11184,
+    "rejectedRecords": 174
   },
   "deduplication": {
-    "removedApps": 0,
-    "duplicates": []
+    "removedApps": 3,
+    "duplicates": [
+      {
+        "name": "TikTok++",
+        "keptName": "TikTok++ — 47.4.0",
+        "bundleIdentifier": "com.zhiliaoapp.musically",
+        "version": "47.4.0",
+        "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/TikTok.v47.4.0.Infinitok.ipa"
+      },
+      {
+        "name": "SceneBox",
+        "keptName": "SceneBox",
+        "bundleIdentifier": "app.scenebox.SceneBox",
+        "version": "1.0.4",
+        "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/SceneBox.v1.0.4.ipa"
+      },
+      {
+        "name": "BeReal++",
+        "keptName": "BeReal++",
+        "bundleIdentifier": "AlexisBarreyat.BeReal",
+        "version": "2.14.2",
+        "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/BeReal.v2.14.2.+.Bea.v1.3.8.ipa"
+      }
+    ]
   }
 }
