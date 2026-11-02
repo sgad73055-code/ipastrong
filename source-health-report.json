@@ -224,14 +224,14 @@
       "url": "https://github.com/ytjailed/ytjailed.github.io/releases/download/0.1/Cercube_5-3-3_16-42-3.ipa"
     }
   ],
-  "date": "2026-11-02T20:16:20.133418+00:00",
-  "inputApps": 11526,
+  "date": "2026-11-02T20:16:58.882429+00:00",
+  "inputApps": 11525,
   "outputApps": 11525,
   "preservedApps": 0,
   "recoveredPublishedSource": false,
-  "removedApps": 1,
+  "removedApps": 0,
   "catalogPolicy": {
-    "removedApps": 1,
+    "removedApps": 0,
     "removedVersions": 0
   },
   "upstream": {
