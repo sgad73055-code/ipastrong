@@ -1,70 +1,47 @@
 {
-  "checked": 403,
+  "checked": 400,
   "outcomes": {
-    "ok": 398,
-    "missing": 5
+    "ok": 397,
+    "missing": 2,
+    "temporary": 1
   },
   "repaired": [],
   "unresolved": [
+    {
+      "name": "Instagram — 448.0.0",
+      "url": "https://fastsign.dev/tg-ipa/ipa-dark/1775-Instagram%20Regram%20%5Bv448.0.0%5D%28tg@ipa_dark%29.ipa"
+    },
+    {
+      "name": "TikTok — 46.9.0",
+      "url": "https://fastsign.dev/tg-ipa/ipa-dark/1767-TikTok%20ASJTikTok%20%5Bv1.2.1%20v46.9.0%5D%28tg@ipa_dark%29.ipa"
+    },
     {
       "name": "TikTok++",
       "url": "https://github.com/WuXu1/wuxuslibrary/releases/download/Latest/TikTok.v28.2.0.+.LRD+.ipa"
     },
     {
-      "name": "Adobe Photoshop pro",
-      "url": "https://dl.ikiraplus.workers.dev/dl/adobe.photoshop.pro.7.4-1"
+      "name": "SpotiFLAC Mobile",
+      "url": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/SpotiFLAC-Mobile-5.2.0.ipa"
     },
     {
-      "name": "Air movie",
-      "url": "https://dl.ikiraplus.workers.dev/dl/air.movie._.kira-1"
+      "name": "MySwimPro",
+      "url": "https://fastsign.dev/tg-ipa/riftysipalibrary/8427-MySwimPro:%20#1%20Swim%20Workout%20App-v9.7.0-riftysipas.ipa"
     },
     {
-      "name": "Lingogram",
-      "url": "https://dl.ikiraplus.workers.dev/dl/lingogram-1"
+      "name": "Taurus (v0.50.1 - Not Patched) IPAVault",
+      "url": "https://repo.ballermc.com/tubevault/Spotify%209.1.78%20%28Taurus%200.50.1%29%20No%20Plugins.ipa"
     },
     {
-      "name": "Phonto Pro",
-      "url": "https://dl.ikiraplus.workers.dev/dl/phonto.pro.4.9.43-1"
+      "name": "EeveeSpotifyReincarnated (v7.0.0 - Patched) IPAVault",
+      "url": "https://repo.ballermc.com/tubevault/Spotify%209.1.90%20%28EeveeSpotify%207.0.0%29%20%5B@ipavault%5D.ipa"
     },
     {
-      "name": "Streameast no ads",
-      "url": "https://dl.ikiraplus.workers.dev/dl/streameast.1.1.1-1"
+      "name": "Telegram (TGExtra)",
+      "url": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Telegram-13.0-TGExtra.ipa"
     },
     {
-      "name": "Swiftgram+",
-      "url": "https://proxy-files.thuthuatjb.com/apps?=thuthuatjb/IPAS/releases/download/2/Swiftgram+_11.3.2_TTJB.ipa"
-    },
-    {
-      "name": "CamScanner+",
-      "url": "https://proxy-files.thuthuatjb.com/apps?=thuthuatjb/IPAS/releases/download/2/CamScanner+_5.26.10_TTJB.ipa"
-    },
-    {
-      "name": "ClashOfClan",
-      "url": "https://proxy-files.thuthuatjb.com/apps?=thuthuatjb/IPAS/releases/download/2/Clash.Of.Clash.16.137.13_TTJB.ipa"
-    },
-    {
-      "name": "Spotify++",
-      "url": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Spotify.v8.9.36.+.Eevee.v2.1.ipa"
-    },
-    {
-      "name": "AppStore++ TrollStore",
-      "url": "https://proxy-files.thuthuatjb.com/apps?=CokePokes/AppStorePlus-TrollStore/releases/download/v1.2-1/AppStore++_TrollStore_v1.0.3-2.ipa"
-    },
-    {
-      "name": "iVanced for YouTube",
-      "url": "https://github.com/TherionRO/YouTubeiVanced/releases/download/release19.06.2/iVanced_19.06.2.ipa"
-    },
-    {
-      "name": "NineAnimator",
-      "url": "https://github.com/SuperMarcus/NineAnimator/releases/download/1.3.0-3/NineAnimator_1.3.0_Build_3.iOS.ipa"
-    },
-    {
-      "name": "CercubePlus (Cercube+)",
-      "url": "https://github.com/qnblackcat/CercubePlus/releases/download/v17.43.1-5.3.11/CercubePlus_17.43.1_5.3.11.ipa"
-    },
-    {
-      "name": "Cercube+",
-      "url": "https://github.com/ytjailed/ytjailed.github.io/releases/download/0.1/Cercube_5-3-3_16-42-3.ipa"
+      "name": "YTKACE (1.1.2) - Bonus Tweaks (iOSDecrypted)",
+      "url": "https://repo.ballermc.com/tubevault/%5BTG@i_osd%5DYT_21.40.5_KC.ipa"
     },
     {
       "name": "YTPlus/YTLite Cracked + Bonus Tweaks (6.0 Beta 2 - IPAVault - Liquid Glass Support)",
@@ -91,60 +68,24 @@
       "url": "https://fastsign.dev/tg-ipa/ipavault/697-PhotosBackup.ipa"
     },
     {
-      "name": "YTPlus/YTLite Cracked (6.0 BETA 1 - iOS 16+ Support)",
-      "url": "https://repo.ballermc.com/tubevault/YouTube_v21.33.6_YTPlus_v6.0_Beta_1_cracked%5Btg@tubevault%5D.ipa"
-    },
-    {
-      "name": "Punko.io",
-      "url": "https://file.ipaomtk.com/punko-io-tower-defense-td/Punko-io-IPAOMTK.COM.ipa"
-    },
-    {
-      "name": "EeveeSpotifyReincarnated (v7.0.0 - Patched) IPAVault",
-      "url": "https://repo.ballermc.com/tubevault/Spotify%209.1.90%20%28EeveeSpotify%207.0.0%29%20%5B@ipavault%5D.ipa"
-    },
-    {
       "name": "Chunk (patched)",
       "url": "https://fastsign.dev/tg-ipa/iosdecrypted/223848-%E2%80%8E%20%20%20%20%20Chunk_v2.6.1_patched_@iosdecrypted_processed.ipa"
+    },
+    {
+      "name": "YTPlus/YTLite Cracked (6.0 BETA 1 - iOS 16+ Support)",
+      "url": "https://repo.ballermc.com/tubevault/YouTube_v21.33.6_YTPlus_v6.0_Beta_1_cracked%5Btg@tubevault%5D.ipa"
     },
     {
       "name": "MD_Widgets_Live_Wallpaper_v4_3_2_Pro_Unlocked_blatant_Patched",
       "url": "https://fastsign.dev/tg-ipa/blatants/12523-MD_Widgets_Live_Wallpaper_v4_3_2_Pro_Unlocked_blatant_Patched.ipa"
     },
     {
-      "name": "YTPlus/YTLite Cracked (6.0 BETA 1) - v21.39.4",
-      "url": "https://repo.ballermc.com/tubevault/YouTube_v21.39.4_YTPlus_v6.0_Beta_1_cracked%5Btg@tubevault%5D.ipa"
-    },
-    {
-      "name": "Pokemon Go (w/ SpooferPro)",
-      "url": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Pokemon.Go.v0.269.1.+.SpooferPro.v0.148.ipa"
-    },
-    {
-      "name": "HD Flix (No Ads)",
-      "url": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/HD.Flix.No.Ads.v2.0.ipa"
-    },
-    {
-      "name": "SpotiFLAC Mobile",
-      "url": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/SpotiFLAC-Mobile-5.2.0.ipa"
-    },
-    {
-      "name": "Instagram — 448.0.0",
-      "url": "https://fastsign.dev/tg-ipa/ipa-dark/1775-Instagram%20Regram%20%5Bv448.0.0%5D%28tg@ipa_dark%29.ipa"
-    },
-    {
-      "name": "TikTok — 46.9.0",
-      "url": "https://fastsign.dev/tg-ipa/ipa-dark/1767-TikTok%20ASJTikTok%20%5Bv1.2.1%20v46.9.0%5D%28tg@ipa_dark%29.ipa"
-    },
-    {
-      "name": "Taurus (v0.50.1 - Not Patched) IPAVault",
-      "url": "https://repo.ballermc.com/tubevault/Spotify%209.1.78%20%28Taurus%200.50.1%29%20No%20Plugins.ipa"
-    },
-    {
       "name": "Twitch",
       "url": "https://fastsign.dev/tg-ipa/ipavault/653-Twitch%2031.4%20%28Tweach+TC%29%20Glass%20%5B@ipavault%5D.ipa"
     },
     {
-      "name": "YTKACE (1.1.2) - Bonus Tweaks (iOSDecrypted)",
-      "url": "https://repo.ballermc.com/tubevault/%5BTG@i_osd%5DYT_21.40.5_KC.ipa"
+      "name": "YTPlus/YTLite Cracked (6.0 BETA 1) - v21.39.4",
+      "url": "https://repo.ballermc.com/tubevault/YouTube_v21.39.4_YTPlus_v6.0_Beta_1_cracked%5Btg@tubevault%5D.ipa"
     },
     {
       "name": "Alpin Quests",
@@ -219,25 +160,89 @@
       "url": "https://fastsign.dev/tg-ipa/ipa-dark/1758-%D0%A3%D1%87%D0%B8%D1%80%D1%83%20%5Bv1.02%5D%28tg@ipa_dark%29.ipa"
     },
     {
-      "name": "GrowCastle",
-      "url": "https://file.ipaomtk.com/Grow%20Castle%21/Grow-Castle-1.50.14-IPAOMTK.COM.ipa"
+      "name": "Adobe Photoshop pro",
+      "url": "https://dl.ikiraplus.workers.dev/dl/adobe.photoshop.pro.7.4-1"
+    },
+    {
+      "name": "Air movie",
+      "url": "https://dl.ikiraplus.workers.dev/dl/air.movie._.kira-1"
+    },
+    {
+      "name": "Lingogram",
+      "url": "https://dl.ikiraplus.workers.dev/dl/lingogram-1"
+    },
+    {
+      "name": "Phonto Pro",
+      "url": "https://dl.ikiraplus.workers.dev/dl/phonto.pro.4.9.43-1"
+    },
+    {
+      "name": "Streameast no ads",
+      "url": "https://dl.ikiraplus.workers.dev/dl/streameast.1.1.1-1"
+    },
+    {
+      "name": "Pokemon Go (w/ SpooferPro)",
+      "url": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Pokemon.Go.v0.269.1.+.SpooferPro.v0.148.ipa"
+    },
+    {
+      "name": "Punko.io",
+      "url": "https://file.ipaomtk.com/punko-io-tower-defense-td/Punko-io-IPAOMTK.COM.ipa"
+    },
+    {
+      "name": "HD Flix (No Ads)",
+      "url": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/HD.Flix.No.Ads.v2.0.ipa"
+    },
+    {
+      "name": "Swiftgram+",
+      "url": "https://proxy-files.thuthuatjb.com/apps?=thuthuatjb/IPAS/releases/download/2/Swiftgram+_11.3.2_TTJB.ipa"
+    },
+    {
+      "name": "CamScanner+",
+      "url": "https://proxy-files.thuthuatjb.com/apps?=thuthuatjb/IPAS/releases/download/2/CamScanner+_5.26.10_TTJB.ipa"
+    },
+    {
+      "name": "ClashOfClan",
+      "url": "https://proxy-files.thuthuatjb.com/apps?=thuthuatjb/IPAS/releases/download/2/Clash.Of.Clash.16.137.13_TTJB.ipa"
+    },
+    {
+      "name": "Spotify++",
+      "url": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Spotify.v8.9.36.+.Eevee.v2.1.ipa"
+    },
+    {
+      "name": "AppStore++ TrollStore",
+      "url": "https://proxy-files.thuthuatjb.com/apps?=CokePokes/AppStorePlus-TrollStore/releases/download/v1.2-1/AppStore++_TrollStore_v1.0.3-2.ipa"
+    },
+    {
+      "name": "iVanced for YouTube",
+      "url": "https://github.com/TherionRO/YouTubeiVanced/releases/download/release19.06.2/iVanced_19.06.2.ipa"
+    },
+    {
+      "name": "NineAnimator",
+      "url": "https://github.com/SuperMarcus/NineAnimator/releases/download/1.3.0-3/NineAnimator_1.3.0_Build_3.iOS.ipa"
+    },
+    {
+      "name": "CercubePlus (Cercube+)",
+      "url": "https://github.com/qnblackcat/CercubePlus/releases/download/v17.43.1-5.3.11/CercubePlus_17.43.1_5.3.11.ipa"
+    },
+    {
+      "name": "Cercube+",
+      "url": "https://github.com/ytjailed/ytjailed.github.io/releases/download/0.1/Cercube_5-3-3_16-42-3.ipa"
     }
   ],
-  "date": "2026-11-01T22:03:02.986286+00:00",
-  "inputApps": 11512,
-  "outputApps": 11519,
-  "preservedApps": 356,
+  "date": "2026-11-02T06:04:51.939288+00:00",
+  "inputApps": 9823,
+  "outputApps": 11595,
+  "preservedApps": 9,
   "recoveredPublishedSource": false,
-  "removedApps": 18,
+  "removedApps": 26,
   "catalogPolicy": {
-    "removedApps": 18,
+    "removedApps": 26,
     "removedVersions": 0
   },
   "upstream": {
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 9945,
+        "apps": 9949,
         "error": null
       },
       {
@@ -247,12 +252,12 @@
       },
       {
         "source": "https://wuxu1.github.io/wuxu-complete.json",
-        "apps": 30,
+        "apps": 34,
         "error": null
       },
       {
         "source": "https://wuxu1.github.io/wuxu-complete-plus.json",
-        "apps": 30,
+        "apps": 34,
         "error": null
       },
       {
@@ -297,7 +302,7 @@
       },
       {
         "source": "https://fastsign.dev/repo.json",
-        "apps": 16714,
+        "apps": 16548,
         "error": null
       },
       {
@@ -401,33 +406,1573 @@
         "error": null
       }
     ],
-    "inputRecords": 40137,
-    "outputApps": 11184,
-    "rejectedRecords": 174
+    "inputRecords": 44982,
+    "outputApps": 11835,
+    "rejectedRecords": 179
   },
   "deduplication": {
-    "removedApps": 3,
+    "removedApps": 223,
     "duplicates": [
       {
-        "name": "TikTok++",
-        "keptName": "TikTok++ — 47.4.0",
+        "name": "Instagram++",
+        "keptName": "Instagram++",
+        "bundleIdentifier": "com.burbn.instagram",
+        "version": "177.0",
+        "downloadURL": "https://github.com/Randomblock1/altstore/releases/download/assets/Instagram_v177.0_Rocket_v3.7.18.ipa"
+      },
+      {
+        "name": "RyukGram",
+        "keptName": "RyukGram",
+        "bundleIdentifier": "com.burbn.instagram",
+        "version": "449.0.0",
+        "downloadURL": "https://source.ryuksign.com/ipas/af1fa1f50214c41d8cf4.ipa"
+      },
+      {
+        "name": "BHTikTokPlus — 46.2.0",
+        "keptName": "BHTikTokPlus — 46.2.0",
         "bundleIdentifier": "com.zhiliaoapp.musically",
-        "version": "47.4.0",
-        "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/TikTok.v47.4.0.Infinitok.ipa"
+        "version": "46.2.0",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/29-07-2026/BHTikTokPlus_46.2.0_Plus_@thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "TikTok — 42.9.0 — 42.9.0",
+        "keptName": "TikTok — 42.9.0",
+        "bundleIdentifier": "com.zhiliaoapp.musically",
+        "version": "42.9.0",
+        "downloadURL": "https://proxy-files.thuthuatjb.com/apps?=apptesters-org/AppTesters_Repo/releases/download/06-12-2025/TikTok_42.9.0_Premium_@thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "BHTikTokPlus — 43.9.0",
+        "keptName": "BHTikTokPlus — 43.9.0",
+        "bundleIdentifier": "com.zhiliaoapp.musically",
+        "version": "43.9.0",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-02-2026/BHTikTokPlus_43.9.0_Plus_@thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "TikTokDark — 27.6.0 — 27.6.0",
+        "keptName": "TikTokDark — 27.6.0",
+        "bundleIdentifier": "com.zhiliaoapp.musically",
+        "version": "27.6.0",
+        "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/01-05-2023/TikTokDark-27.6.0.ipa"
+      },
+      {
+        "name": "Paste",
+        "keptName": "Paste",
+        "bundleIdentifier": "com.wiheads.paste",
+        "version": "4.0.1",
+        "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/Paste/Paste-4.0.1.ipa"
+      },
+      {
+        "name": "Ereasy",
+        "keptName": "Ereasy",
+        "bundleIdentifier": "background.remover.bg.eraser",
+        "version": "2.9.1",
+        "downloadURL": "https://file.ipaomtk.com/AI%20Background/AI-Background-Remover-Ereasy-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "Level Devil",
+        "keptName": "Level Devil",
+        "bundleIdentifier": "com.unept.leveldevil",
+        "version": "1.34.4",
+        "downloadURL": "https://file.ipaomtk.com/Level%20Devil/Level-Devil-NOT-A-Troll-Game-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "Nagram",
+        "keptName": "Nagram",
+        "bundleIdentifier": "xyz.nextalone.nagram",
+        "version": "13.0.1",
+        "downloadURL": "https://fastsign.dev/tg-ipa/ipavault/950-Nagram%2013.0.1%20%28iQTele%29%20%5B@ipavault%5D.ipa"
+      },
+      {
+        "name": "OffScreen",
+        "keptName": "OffScreen",
+        "bundleIdentifier": "tech.miidii.off-screen",
+        "version": "3.20.7",
+        "downloadURL": "https://file.ipaomtk.com/OffScreen/OffScreen_Screen-Time-Control-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "s c e n i c",
+        "keptName": "s c e n i c",
+        "bundleIdentifier": "com.pinguido.scenic",
+        "version": "4.30",
+        "downloadURL": "https://file.ipaomtk.com/Scenic%20Motorcycle/Scenic-Motorcycle-Navigation-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "AltStore",
+        "keptName": "AltStore",
+        "bundleIdentifier": "com.rileytestut.AltStore",
+        "version": "2.2.1",
+        "downloadURL": "https://cdn.altstore.io/file/altstore/apps/altstore/2_2_1.ipa"
+      },
+      {
+        "name": "POV",
+        "keptName": "POV",
+        "bundleIdentifier": "com.SixThree.POV",
+        "version": "5.50",
+        "downloadURL": "https://file.ipaomtk.com/POV%20%E2%80%93%20Disposable/POV-Disposable-Camera-Events-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "Sofascore",
+        "keptName": "Sofascore",
+        "bundleIdentifier": "com.SofaScore.iOS",
+        "version": "26.02.25",
+        "downloadURL": "https://file.ipaomtk.com/sofascore-live-sports-scores/Sofascore-Live-sports-scores-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "Unstuck",
+        "keptName": "Unstuck",
+        "bundleIdentifier": "com.unstuckstudy",
+        "version": "1.7.11",
+        "downloadURL": "https://file.ipaomtk.com/Unstuck%20AI%20Note/Unstuck-AI-Note-Taker-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "Watusi",
+        "keptName": "Watusi",
+        "bundleIdentifier": "net.whatsapp.WhatsApp",
+        "version": "26.41.74",
+        "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1792478430260-ebhzr/net.whatsapp.WhatsApp_26.41.74_watusi3_1.3.27_sl.ipa"
+      },
+      {
+        "name": "CodeSnack IDE",
+        "keptName": "CodeSnack IDE",
+        "bundleIdentifier": "com.cloud-compiler",
+        "version": "5.9.13",
+        "downloadURL": "https://file.ipaomtk.com/CodeSnack-IDE/CodeSnack-IDE-IPAOMTK.COM.ipa"
+      },
+      {
+        "name": "Mantra",
+        "keptName": "Mantra",
+        "bundleIdentifier": "com.efehelvaci.Daily-Affirmation",
+        "version": "5.9.3",
+        "downloadURL": "https://file.ipaomtk.com/mantra-daily-affirmations/Mantra-Daily-Affirmations-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "Car Match",
+        "keptName": "Car Match",
+        "bundleIdentifier": "com.grandgames.carmatch",
+        "version": "0.0.508",
+        "downloadURL": "https://file.ipaomtk.com/car-match-traffic-puzzle/Car-Match-Traffic-Puzzle-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "Car Simulator 2",
+        "keptName": "Car Simulator 2",
+        "bundleIdentifier": "com.oppanagames.car.simulator",
+        "version": "1.64.10",
+        "downloadURL": "https://fastsign.dev/tg-ipa/kamohacks/16815-Car%20Simulator%202%20-%20KamoHacks%20%5B1.64.10%5D.ipa"
+      },
+      {
+        "name": "Forza Football",
+        "keptName": "Forza Football",
+        "bundleIdentifier": "com.footballaddicts.livescoreaddicts",
+        "version": "6.16.7",
+        "downloadURL": "https://file.ipaomtk.com/forza-football-live-scores/Forza-Football-Live-Scores-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "Grand Summoners",
+        "keptName": "Grand Summoners",
+        "bundleIdentifier": "jp.goodsmile.grandsummonersglobal",
+        "version": "3.56.2",
+        "downloadURL": "https://file.ipaomtk.com/grand-summoners-anime-rpg/Grand-Summoners-IPAOMTK.COM.ipa"
+      },
+      {
+        "name": "Mortal Kombat",
+        "keptName": "Mortal Kombat",
+        "bundleIdentifier": "com.wb.MK.Brawler2015",
+        "version": "7.4.0",
+        "downloadURL": "https://fastsign.dev/tg-ipa/kamohacks/16816-Mortal%20Kombat%20-%20KamoHacks%20%5B7.4.0%5D.ipa"
+      },
+      {
+        "name": "Crossy Road",
+        "keptName": "Crossy Road",
+        "bundleIdentifier": "com.hipsterwhale.crossy",
+        "version": "7.14.0",
+        "downloadURL": "https://fastsign.dev/tg-ipa/riftysipalibrary/8421-Crossy%20Road-v7.14.0-riftysipas.ipa"
+      },
+      {
+        "name": "Medication List",
+        "keptName": "Medication List",
+        "bundleIdentifier": "com.jojoapps.Medication-List",
+        "version": "1.7.10",
+        "downloadURL": "https://file.ipaomtk.com/Medication/Medication-List-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "Paku",
+        "keptName": "Paku",
+        "bundleIdentifier": "com.kylebashour.aqi-wtf",
+        "version": "6.1.0",
+        "downloadURL": "https://file.ipaomtk.com/Paku%20for%20PurpleAir/Paku-for-PurpleAir-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "Paraphraser",
+        "keptName": "Paraphraser",
+        "bundleIdentifier": "com.tr.paraphrasingtool.rewritertool.textrewriter",
+        "version": "1.6.0",
+        "downloadURL": "https://file.ipaomtk.com/Paraphrasing/Paraphrasing-Tool-Paraphrase-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "Stick War Legacy",
+        "keptName": "Stick War Legacy",
+        "bundleIdentifier": "com.stickpage.stickwar",
+        "version": "2026.1.1196",
+        "downloadURL": "https://fastsign.dev/tg-ipa/riftysipalibrary/8439-Stick%20War:%20Legacy-v2026.1.1196-riftysipas.ipa"
+      },
+      {
+        "name": "Turrit",
+        "keptName": "Turrit",
+        "bundleIdentifier": "com.seastar.turrit",
+        "version": "1.5.6",
+        "downloadURL": "https://fastsign.dev/tg-ipa/ipavault/915-Turrit%201.5.6%20%28iQTele%29%20%5B@ipavault%5D.ipa"
+      },
+      {
+        "name": "Voloco",
+        "keptName": "Voloco",
+        "bundleIdentifier": "com.resonantcavity.Voloco",
+        "version": "9.14.2",
+        "downloadURL": "https://file.ipaomtk.com/voloco-vocal-recording-studio/Voloco-Vocal-Recording-Studio-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "xZoom Cam",
+        "keptName": "xZoom Cam",
+        "bundleIdentifier": "com.mobndev.xZoom-pro",
+        "version": "1.1.420",
+        "downloadURL": "https://file.ipaomtk.com/xZoom/xZoom-Cam-PRO-Camera-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "Castle Busters",
+        "keptName": "Castle Busters",
+        "bundleIdentifier": "com.epicoro.castleclashers",
+        "version": "1.20.1",
+        "downloadURL": "https://fastsign.dev/tg-ipa/kamohacks/16800-Castle%20Busters%20-%20KamoHacks%20%5B1.20.1%5D.ipa"
+      },
+      {
+        "name": "Dream Blast",
+        "keptName": "Dream Blast",
+        "bundleIdentifier": "com.rovio.dream",
+        "version": "1.104.0",
+        "downloadURL": "https://file.ipaomtk.com/angry-birds-dream-blast/Angry-Birds-IPAOMTK.COM.ipa"
+      },
+      {
+        "name": "Nutri Coach",
+        "keptName": "Nutri Coach",
+        "bundleIdentifier": "nutrition.coach",
+        "version": "1.8.1",
+        "downloadURL": "https://file.ipaomtk.com/Nutrition%20Coach/Nutrition_Coach_Food_tracker_IPAOMTK.com.ipa"
+      },
+      {
+        "name": "MD Clock",
+        "keptName": "MD Clock",
+        "bundleIdentifier": "tech.miidii.MDClock",
+        "version": "2.65.1",
+        "downloadURL": "https://file.ipaomtk.com/MD%20Clock/MD-Clock-Flip-Clock-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "Toca World",
+        "keptName": "Toca World",
+        "bundleIdentifier": "com.tocaboca.tocalifeworld",
+        "version": "1.140",
+        "downloadURL": "https://fastsign.dev/tg-ipa/kamohacks/16791-Toca%20World%20-%20KamoHacks%20%5B1.140%5D.ipa"
+      },
+      {
+        "name": "Beat Maker Pro",
+        "keptName": "Beat Maker Pro",
+        "bundleIdentifier": "com.mwm.sampler-app",
+        "version": "4.15.01",
+        "downloadURL": "https://file.ipaomtk.com/Beat%20Maker%20Pro/Beat_Maker_Pro_Music_drum_Pad_IPAOMTK.com.ipa"
+      },
+      {
+        "name": "Podcast App",
+        "keptName": "Podcast App",
+        "bundleIdentifier": "com.evolve.podcast",
+        "version": "6.138.0",
+        "downloadURL": "https://file.ipaomtk.com/podcast-app/Podcast-App-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "Sky Guide",
+        "keptName": "Sky Guide",
+        "bundleIdentifier": "com.fifthstarlabs.skyguide",
+        "version": "12.0.11",
+        "downloadURL": "https://file.ipaomtk.com/Sky%20Guide/Sky-Guide-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "EnsWilde",
+        "keptName": "EnsWilde",
+        "bundleIdentifier": "com.yangjiii.EnsWilde",
+        "version": "3.1.2",
+        "downloadURL": "https://file.ipaomtk.com/EnsWilde/EnsWilde.ipa"
       },
       {
         "name": "SceneBox",
         "keptName": "SceneBox",
         "bundleIdentifier": "app.scenebox.SceneBox",
         "version": "1.0.4",
-        "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/SceneBox.v1.0.4.ipa"
+        "downloadURL": "https://github.com/donbytyqi/scenebox/releases/download/v1.0.4/SceneBox-1.0.4.ipa"
       },
       {
-        "name": "BeReal++",
-        "keptName": "BeReal++",
-        "bundleIdentifier": "AlexisBarreyat.BeReal",
-        "version": "2.14.2",
-        "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/BeReal.v2.14.2.+.Bea.v1.3.8.ipa"
+        "name": "StikDebug",
+        "keptName": "StikDebug",
+        "bundleIdentifier": "com.stik.stikdebug",
+        "version": "2.3.7",
+        "downloadURL": "https://file.ipaomtk.com/StikDebug/StikDebug-2.3.7-ipaomtk.com.ipa"
+      },
+      {
+        "name": "Among Us",
+        "keptName": "Among Us",
+        "bundleIdentifier": "com.innersloth.amongus",
+        "version": "2026.9.29",
+        "downloadURL": "https://fastsign.dev/tg-ipa/kamohacks/16779-Among%20Us%20-%20KamoHacks%20%5B2026.9.29%5D.ipa"
+      },
+      {
+        "name": "God Rivals",
+        "keptName": "God Rivals",
+        "bundleIdentifier": "com.gamee.godslayer.rpg.rougelike",
+        "version": "1.1.24",
+        "downloadURL": "https://fastsign.dev/tg-ipa/kamohacks/16777-God%20Rivals%20-%20KamoHacks%20%5B1.1.24%5D.ipa"
+      },
+      {
+        "name": "Swamp Attack 2",
+        "keptName": "Swamp Attack 2",
+        "bundleIdentifier": "com.hyperdotstudios.swampattack2",
+        "version": "1.0.91",
+        "downloadURL": "https://file.ipaomtk.com/Swamp-Attack-2/Swamp-Attack-2-IPAOMTK.COM.ipa"
+      },
+      {
+        "name": "WallPics",
+        "keptName": "WallPics",
+        "bundleIdentifier": "com.kyragames.AestheticSadWallppapers",
+        "version": "2.5.5",
+        "downloadURL": "https://proxy-files.thuthuatjb.com/apps?=thuthuatjb/IPAS/releases/download/2/WallPics_2.5.5_TTJB.ipa"
+      },
+      {
+        "name": "CSR Racing 2",
+        "keptName": "CSR Racing 2",
+        "bundleIdentifier": "com.naturalmotion.customstreetracer2",
+        "version": "6.7.2",
+        "downloadURL": "https://fastsign.dev/tg-ipa/kamohacks/16751-CSR%20Racing%202%20-%20KamoHacks%20%5B6.7.2%5D.ipa"
+      },
+      {
+        "name": "LYSSA: Goddess of Rage",
+        "keptName": "LYSSA: Goddess of Rage",
+        "bundleIdentifier": "com.panoramik.lyssa",
+        "version": "19.0.0",
+        "downloadURL": "https://file.ipaomtk.com/lyssa-goddess-of-rage/LYSSA-IPAOMTK.COM.ipa"
+      },
+      {
+        "name": "OnceWorld",
+        "keptName": "OnceWorld",
+        "bundleIdentifier": "work.ponix.onceworld",
+        "version": "1.4.4",
+        "downloadURL": "https://file.ipaomtk.com/OnceWorld/OnceWorld-IPAOMTK.COM.ipa"
+      },
+      {
+        "name": "Gentler Streak",
+        "keptName": "Gentler Streak",
+        "bundleIdentifier": "app.gentler.activity",
+        "version": "5.11.3",
+        "downloadURL": "https://file.ipaomtk.com/Gentler-Streak/Gentler_Streak_Workout_Tracker_IPAOMTK.com.ipa"
+      },
+      {
+        "name": "Magic Recipe",
+        "keptName": "Magic Recipe",
+        "bundleIdentifier": "com.hidea.cat.magicrecipe",
+        "version": "1.0.0",
+        "downloadURL": "https://file.ipaomtk.com/cats-soup-magic-recipe/Cats-Soup-Magic-Recipe-IPAOMTK.COM.ipa"
+      },
+      {
+        "name": "Offline Games",
+        "keptName": "Offline Games",
+        "bundleIdentifier": "com.JindoBlu.OfflineGamesIOS",
+        "version": "3.8.1",
+        "downloadURL": "https://file.ipaomtk.com/Offline%20Games/Offline-Games-No-Wifi-Games-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "Zombie Streets",
+        "keptName": "Zombie Streets",
+        "bundleIdentifier": "com.builditgames.zombiestreets",
+        "version": "1.0.65",
+        "downloadURL": "https://file.ipaomtk.com/zombie-streets-gps-ar-shooter/Zombie-Streets-GPS-AR-Shooter-IPAOMTK.COM.ipa"
+      },
+      {
+        "name": "The Walking Dead",
+        "keptName": "The Walking Dead",
+        "bundleIdentifier": "com.ares.twd",
+        "version": "2.2.2",
+        "downloadURL": "https://fastsign.dev/tg-ipa/kamohacks/16722-The%20Walking%20Dead%20-%20KamoHacks%20%5B2.2.2%5D.ipa"
+      },
+      {
+        "name": "Earn to Die Rogue",
+        "keptName": "Earn to Die Rogue",
+        "bundleIdentifier": "com.notdoppler.earntodierogue",
+        "version": "1.29.263",
+        "downloadURL": "https://fastsign.dev/tg-ipa/kamohacks/16704-Earn%20to%20Die%20Rogue%20-%20KamoHacks%20%5B1.29.263%5D.ipa"
+      },
+      {
+        "name": "foriOS",
+        "keptName": "foriOS",
+        "bundleIdentifier": "com.tapinfinity.HdjcXcode7",
+        "version": "13.2",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-10-2026/foriOS_13.2_Pro_@thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "Little Alchemist Remastered",
+        "keptName": "Little Alchemist Remastered",
+        "bundleIdentifier": "io.monumental.littlealchemist.ios",
+        "version": "2.22.6",
+        "downloadURL": "https://file.ipaomtk.com/little-alchemist-remastered/Little-Alchemist-IPAOMTK.COM.ipa"
+      },
+      {
+        "name": "Monsters",
+        "keptName": "Monsters",
+        "bundleIdentifier": "es.socialpoint.MonsterCity",
+        "version": "20.3",
+        "downloadURL": "https://fastsign.dev/tg-ipa/kamohacks/16701-Monsters%20-%20KamoHacks%20%5B20.3%5D.ipa"
+      },
+      {
+        "name": "Shadow Fight 3",
+        "keptName": "Shadow Fight 3",
+        "bundleIdentifier": "com.nekki.shadowfight3",
+        "version": "1.45.5",
+        "downloadURL": "https://fastsign.dev/tg-ipa/kamohacks/16705-Shadow%20Fight%203%20-%20KamoHacks%20%5B1.45.5%5D.ipa"
+      },
+      {
+        "name": "Combyne",
+        "keptName": "Combyne",
+        "bundleIdentifier": "com.pungme.combyne",
+        "version": "8.6.5",
+        "downloadURL": "https://file.ipaomtk.com/combyne-your-perfect-outfit/Combyne-your-perfect-Outfit-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "famefy",
+        "keptName": "famefy",
+        "bundleIdentifier": "com.wavera.ios.famefy",
+        "version": "3.0.10",
+        "downloadURL": "https://file.ipaomtk.com/Famefy/Famefy-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "Hunters Origin",
+        "keptName": "Hunters Origin",
+        "bundleIdentifier": "com.hunters.legacy",
+        "version": "1.0.10",
+        "downloadURL": "https://file.ipaomtk.com/hunters-origin-ipa/Hunters-Origin-IPAOMTK.COM.ipa"
+      },
+      {
+        "name": "MusicSmart",
+        "keptName": "MusicSmart",
+        "bundleIdentifier": "br.com.marcosatanaka.musicwhiz",
+        "version": "2.2.4",
+        "downloadURL": "https://file.ipaomtk.com/MusicSmart/MusicSmart-Liner-Notes-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "Parking Master Multiplayer 2",
+        "keptName": "Parking Master Multiplayer 2",
+        "bundleIdentifier": "com.SpektraGames.ParkingMasterMultiplayer2",
+        "version": "2.9.5",
+        "downloadURL": "https://file.ipaomtk.com/parking-master-multiplayer-2/Parking-Master-Multiplayer-2-IPAOMTK.COM.ipa"
+      },
+      {
+        "name": "Yukon Family Adventure",
+        "keptName": "Yukon Family Adventure",
+        "bundleIdentifier": "com.enixan.yukon.family.adventure",
+        "version": "1.70.0",
+        "downloadURL": "https://file.ipaomtk.com/yukon-family-adventure/Yukon-Family-IPAOMTK.COM.ipa"
+      },
+      {
+        "name": "Dead Impact",
+        "keptName": "Dead Impact",
+        "bundleIdentifier": "games.synthez.zombie.survival.multiplayer",
+        "version": "0.2.221164",
+        "downloadURL": "https://file.ipaomtk.com/dead-impact-survival-mmorpg/Dead-Impact-IPAOMTK.COM.ipa"
+      },
+      {
+        "name": "Knight Lancer",
+        "keptName": "Knight Lancer",
+        "bundleIdentifier": "com.ToweringTower.KnightLancer",
+        "version": "1.57",
+        "downloadURL": "https://file.ipaomtk.com/Knight%20Lancer/Knight-Lancer-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "Soccer Champs",
+        "keptName": "Soccer Champs",
+        "bundleIdentifier": "com.monkeyibrowstudios.worldsoccerchamps",
+        "version": "2026.12",
+        "downloadURL": "https://fastsign.dev/tg-ipa/kamohacks/16668-Soccer%20Champs%20-%20KamoHacks%20%5B2026.12%5D.ipa"
+      },
+      {
+        "name": "BoldVoice",
+        "keptName": "BoldVoice",
+        "bundleIdentifier": "com.wellocution.iosapp",
+        "version": "3.7.2",
+        "downloadURL": "https://file.ipaomtk.com/boldvoice-accent-training/BoldVoice_Accent_Training_IPAOMTK.com.ipa"
+      },
+      {
+        "name": "Sofa",
+        "keptName": "Sofa",
+        "bundleIdentifier": "com.astrio.Sofa",
+        "version": "5.0.1",
+        "downloadURL": "https://file.ipaomtk.com/sofa-downtime-organizer/Sofa_Downtime_Organizer-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "Analogue",
+        "keptName": "Analogue",
+        "bundleIdentifier": "Cristian-Teichner.Analogue",
+        "version": "1.4",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-05-2026/Analogue_1.4_Pro_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "DtdSounds",
+        "keptName": "DtdSounds",
+        "bundleIdentifier": "com.dtd.aroundu",
+        "version": "2.4.5",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-12-2025/DtdSounds_2.4.5_Premium_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "Caliber",
+        "keptName": "Caliber",
+        "bundleIdentifier": "com.caliberfitness.app",
+        "version": "5.14.0",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-07-2026/Caliber_5.14.0_Premium_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "Township",
+        "keptName": "Township",
+        "bundleIdentifier": "com.playrix.township-ios",
+        "version": "32.1.0",
+        "downloadURL": "https://proxy-files.thuthuatjb.com/apps?=apptesters-org/AppTesters_Repo/releases/download/17-12-2025/Township_32.1.0_Mods_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "Homescapes",
+        "keptName": "Homescapes",
+        "bundleIdentifier": "com.playrix.gardenscapes-sweethome",
+        "version": "8.2.1",
+        "downloadURL": "https://proxy-files.thuthuatjb.com/apps?=apptesters-org/AppTesters_Repo/releases/download/25-08-2025/Homescapes_8.2.1_Mods_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "Bike Race",
+        "keptName": "Bike Race",
+        "bundleIdentifier": "com.topfreegames.bikeracefree",
+        "version": "8.14.0",
+        "downloadURL": "https://file.ipaomtk.com/bike-race-free-style-games/Bike-Race-IPAOMTK.COM.ipa"
+      },
+      {
+        "name": "Car Parking",
+        "keptName": "Car Parking",
+        "bundleIdentifier": "com.aidana.cardriving.ios",
+        "version": "4.8.15",
+        "downloadURL": "https://github.com/karbin09/karbin-ipa-four/releases/download/kara-ipa-1/Car.Parking.-._4.8.15.ipa"
+      },
+      {
+        "name": "Endless Wander",
+        "keptName": "Endless Wander",
+        "bundleIdentifier": "com.FirstPickStudios.Endless-Wander",
+        "version": "3.1.14",
+        "downloadURL": "https://file.ipaomtk.com/endless-wander-roguelike-rpg/Endless-Wander-IPAOMTK.COM.ipa"
+      },
+      {
+        "name": "Fwd Assault",
+        "keptName": "Fwd Assault",
+        "bundleIdentifier": "com.blayzegames.newfps",
+        "version": "1.2081.1",
+        "downloadURL": "https://file.ipaomtk.com/Forward-Assault/Forward-Assault-IPAOMTK.COM.ipa"
+      },
+      {
+        "name": "Switching Heroes",
+        "keptName": "Switching Heroes",
+        "bundleIdentifier": "com.zilliongames.collectionidle",
+        "version": "3.10",
+        "downloadURL": "https://file.ipaomtk.com/switching-heroes-action-rpg-ipa/Switching-Heroes-IPAOMTK.COM.ipa"
+      },
+      {
+        "name": "Spotify++",
+        "keptName": "Spotify++",
+        "bundleIdentifier": "com.spotify.client",
+        "version": "8.4.43",
+        "downloadURL": "https://bunduuk.github.io/altstore-source/ipa/Spotify/Spotify.ipa?raw=true"
+      },
+      {
+        "name": "UniDream",
+        "keptName": "UniDream",
+        "bundleIdentifier": "com.thirteenleafclover.art.generator",
+        "version": "6.6.1",
+        "downloadURL": "https://github.com/karbin09/karbin-ipa-three/releases/download/karbin-ipa/UniDream-v6.6.1.ipa"
+      },
+      {
+        "name": "Messenger",
+        "keptName": "Messenger",
+        "bundleIdentifier": "com.facebook.Messenger",
+        "version": "565.0.0",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/10-06-2026/Messenger_565.0.0_Premium_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "SnapEdit",
+        "keptName": "SnapEdit",
+        "bundleIdentifier": "com.sfun.snapedit",
+        "version": "6.4.3",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-03-2026/SnapEdit_6.4.3_Premium_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "1Blocker",
+        "keptName": "1Blocker",
+        "bundleIdentifier": "com.khanov.BlockerX",
+        "version": "6.4.3",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-02-2026/1Blocker_6.4.3_Pro_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "AdobeExpress",
+        "keptName": "AdobeExpress",
+        "bundleIdentifier": "com.adobe.post",
+        "version": "29.0.0",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-08-2025/AdobeExpress_29.0.0_Pro_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "AdobeFresco",
+        "keptName": "AdobeFresco",
+        "bundleIdentifier": "com.adobe.fresco.ios",
+        "version": "7.3.0",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-05-2026/AdobeFresco_7.3.0_IAP_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "BEAT",
+        "keptName": "BEAT",
+        "bundleIdentifier": "reels-maker-one",
+        "version": "1.22.0",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-10-2025/BEAT_1.22.0_Pro_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "Busuu",
+        "keptName": "Busuu",
+        "bundleIdentifier": "com.busuu.english.app",
+        "version": "29.28.0",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-01-2026/Busuu_29.28.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "Captions",
+        "keptName": "Captions",
+        "bundleIdentifier": "boomer.Smart-Video",
+        "version": "11.70.2",
+        "downloadURL": "https://github.com/karbin09/karbin-ipa-three/releases/download/karbin-ipa/Captionsl.ipa"
+      },
+      {
+        "name": "Cleanup",
+        "keptName": "Cleanup",
+        "bundleIdentifier": "com.codeway.cleanerplus",
+        "version": "6.11.0",
+        "downloadURL": "https://file.ipaomtk.com/cleanup-phone-storage-cleaner/Cleanup_Phone_Storage_Cleaner_IPAOMTK.com.ipa"
+      },
+      {
+        "name": "ColorPop",
+        "keptName": "ColorPop",
+        "bundleIdentifier": "com.mwm.procolor",
+        "version": "2.58.02",
+        "downloadURL": "https://file.ipaomtk.com/Color-Pop/Color_Pop_AI_Coloring_Book_IPAOMTK.com.ipa"
+      },
+      {
+        "name": "Documents",
+        "keptName": "Documents",
+        "bundleIdentifier": "com.readdle.ReaddleDocsIPad",
+        "version": "8.19.6",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-03-2026/Documents_8.19.6_Pro_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "DragonCity",
+        "keptName": "DragonCity",
+        "bundleIdentifier": "es.socialpoint.dragoncity",
+        "version": "25.10.1",
+        "downloadURL": "https://proxy-files.thuthuatjb.com/apps?=apptesters-org/AppTesters_Repo/releases/download/25-08-2025/DragonCity_25.10.1_Mods_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "Dropshare",
+        "keptName": "Dropshare",
+        "bundleIdentifier": "net.mkswap.Dropshare-iOS",
+        "version": "3.56",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-09-2025/Dropshare_3.56_Pro_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "Duolingo",
+        "keptName": "Duolingo",
+        "bundleIdentifier": "com.duolingo.DuolingoMobile",
+        "version": "7.111.0",
+        "downloadURL": "https://file.ipaomtk.com/Promova%20Language/Duolingo_Language_Lessons_IPAOMTK.com.ipa"
+      },
+      {
+        "name": "Elevate",
+        "keptName": "Elevate",
+        "bundleIdentifier": "com.elevateapp.elevate",
+        "version": "5.229.0",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-02-2026/Elevate_5.229.0_Pro_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "Evermusic",
+        "keptName": "Evermusic",
+        "bundleIdentifier": "com.leshko.cloudplayer",
+        "version": "8.5",
+        "downloadURL": "https://file.ipaomtk.com/Evermusic%20Pro/Evermusic_Simple_Music_Player_IPAOMTK.com.ipa"
+      },
+      {
+        "name": "Fonts",
+        "keptName": "Fonts",
+        "bundleIdentifier": "fontskeyboard.fonts",
+        "version": "8.4.54",
+        "downloadURL": "https://proxy-files.thuthuatjb.com/apps?=apptesters-org/AppTesters_Repo/releases/download/24-06-2026/Fonts_8.4.54_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "FreeYourMusic",
+        "keptName": "FreeYourMusic",
+        "bundleIdentifier": "io.stampapp.Stamp",
+        "version": "9.22.1",
+        "downloadURL": "https://file.ipaomtk.com/Free-Your-Music/Free-Your-Music-IPAOMTK.COM.ipa"
+      },
+      {
+        "name": "GOWOD",
+        "keptName": "GOWOD",
+        "bundleIdentifier": "eu.gowod",
+        "version": "5.5.8",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-03-2026/GOWOD_5.5.8_Premium_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "Hevy",
+        "keptName": "Hevy",
+        "bundleIdentifier": "com.hevyapp.hevy",
+        "version": "3.0.11",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-05-2026/Hevy_3.0.11_Pro_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "Homeworkouts",
+        "keptName": "Homeworkouts",
+        "bundleIdentifier": "com.abishkking.maleworkout",
+        "version": "1.43.10",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-12-2025/Homeworkouts_1.43.10_Pro_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "Labbet",
+        "keptName": "Labbet",
+        "bundleIdentifier": "app.labbet.labbet",
+        "version": "2.50",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/25-11-2025/Labbet_2.50_Premium_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "Lyfta",
+        "keptName": "Lyfta",
+        "bundleIdentifier": "com.lyftaios",
+        "version": "1.129",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-12-2025/Lyfta_1.129_Premium_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "Mimo",
+        "keptName": "Mimo",
+        "bundleIdentifier": "com.getmimo.mimo",
+        "version": "12.2.0",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-02-2026/Mimo_12.2.0_Premium_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "Minutes",
+        "keptName": "Minutes",
+        "bundleIdentifier": "ventures.slam.minutes",
+        "version": "1.9.14",
+        "downloadURL": "https://file.ipaomtk.com/minutes-ai-meeting-note-taker/Minutes-AI-IPAOMTK.COM.ipa"
+      },
+      {
+        "name": "MyFitnessPal",
+        "keptName": "MyFitnessPal",
+        "bundleIdentifier": "com.myfitnesspal.mfp",
+        "version": "26.9.1",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-03-2026/MyFitnessPal_26.9.1_Premium_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "Photoshop",
+        "keptName": "Photoshop",
+        "bundleIdentifier": "com.adobe.photoshop.ios",
+        "version": "7.4",
+        "downloadURL": "https://file.ipaomtk.com/Adobe-Photoshop-Pro/Adobe_Photoshop_Photo_Editor_IPAOMTK.com.ipa"
+      },
+      {
+        "name": "PicsArt",
+        "keptName": "PicsArt",
+        "bundleIdentifier": "com.picsart.studio",
+        "version": "29.4.3",
+        "downloadURL": "https://file.ipaomtk.com/Picsart/Picsart_AI_Photo_Editor_Video_IPAOMTK.com.ipa"
+      },
+      {
+        "name": "Pillow",
+        "keptName": "Pillow",
+        "bundleIdentifier": "com.neybox.Pillow",
+        "version": "6.2.8",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-03-2026/Pillow_6.2.8_Premium_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "Scanner",
+        "keptName": "Scanner",
+        "bundleIdentifier": "com.apalonapps.pdffree",
+        "version": "3.7.2",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-01-2026/Scanner_3.7.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "SimplyGuitar",
+        "keptName": "SimplyGuitar",
+        "bundleIdentifier": "com.joytunes.SimplyGuitar",
+        "version": "10.14",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/25-01-2026/SimplyGuitar_10.14_Premium_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "SimplyPiano",
+        "keptName": "SimplyPiano",
+        "bundleIdentifier": "com.joytunes.asla",
+        "version": "9.10.52",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-01-2026/SimplyPiano_9.10.52_Premium_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "SimplySing",
+        "keptName": "SimplySing",
+        "bundleIdentifier": "com.joytunes.Sing",
+        "version": "3.0.1",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-03-2026/SimplySing_3.0.1_Premium_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "SODA",
+        "keptName": "SODA",
+        "bundleIdentifier": "com.snowcorp.soda",
+        "version": "10.0.5",
+        "downloadURL": "https://file.ipaomtk.com/soda-natural-beauty-camera/SODA_Natural_Beauty_Camera_IPAOMTK.com.ipa"
+      },
+      {
+        "name": "Stemz",
+        "keptName": "Stemz",
+        "bundleIdentifier": "com.mwm.stems",
+        "version": "4.03.06",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-02-2026/Stemz_4.03.06_Premium_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "Tripsy",
+        "keptName": "Tripsy",
+        "bundleIdentifier": "app.tripsy.ios",
+        "version": "3.7.10",
+        "downloadURL": "https://file.ipaomtk.com/Travel%20Planner%20Guide/Tripsy_Travel_Planner_IPAOMTK.com.ipa"
+      },
+      {
+        "name": "Truecaller",
+        "keptName": "Truecaller",
+        "bundleIdentifier": "com.truesoftware.TrueCallerOther",
+        "version": "26.6.5",
+        "downloadURL": "https://file.ipaomtk.com/Truecaller/Truecaller_Premium_Caller_ID_IPAOMTK.com.ipa"
+      },
+      {
+        "name": "Unfold",
+        "keptName": "Unfold",
+        "bundleIdentifier": "com.moonlab.unfoldstories",
+        "version": "8.155.1",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-03-2026/Unfold_8.155.1_Plus_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "UpNote",
+        "keptName": "UpNote",
+        "bundleIdentifier": "com.getupnote.ios",
+        "version": "9.16.0",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-12-2025/UpNote_9.16.0_Premium_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "VivaCut",
+        "keptName": "VivaCut",
+        "bundleIdentifier": "com.vivacut.videoeditor",
+        "version": "4.6.0",
+        "downloadURL": "https://proxy-files.thuthuatjb.com/apps?=apptesters-org/AppTesters_Repo/releases/download/11-06-2026/VivaCut_4.6.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "Widgy",
+        "keptName": "Widgy",
+        "bundleIdentifier": "boomer.Smart-Video",
+        "version": "4.20",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-08-2025/Widgy_4.20_Satella_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "Wikiloc",
+        "keptName": "Wikiloc",
+        "bundleIdentifier": "com.wikiloc.wikiloc",
+        "version": "3.26.3",
+        "downloadURL": "https://file.ipaomtk.com/Wikiloc/Wikiloc-Premium-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "Action",
+        "keptName": "Action",
+        "bundleIdentifier": "com.future.kapi",
+        "version": "3.25.0",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-11-2025/Action_3.25.0_Premium_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "Calendars",
+        "keptName": "Calendars",
+        "bundleIdentifier": "com.readdle.CalendarsLite",
+        "version": "5.37.21",
+        "downloadURL": "https://file.ipaomtk.com/Calendars_Schedule_Planner/Calendars_Schedule_Planner_IPAOMTK.com.ipa"
+      },
+      {
+        "name": "Lightroom",
+        "keptName": "Lightroom",
+        "bundleIdentifier": "com.adobe.lrmobilephone",
+        "version": "11.2.2",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-03-2026/Lightroom_11.2.2_Premium_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "Osmosis",
+        "keptName": "Osmosis",
+        "bundleIdentifier": "com.osmose-it.osmosis",
+        "version": "6.0.3",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-02-2026/Osmosis_6.0.3_Premium_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "Peachy",
+        "keptName": "Peachy",
+        "bundleIdentifier": "com.camerasideas.Peachy",
+        "version": "2.10.0",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-02-2026/Peachy_2.10.0_Pro_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "Procreate",
+        "keptName": "Procreate",
+        "bundleIdentifier": "au.com.savageinteractive.procreate",
+        "version": "5.4.9",
+        "downloadURL": "https://proxy-files.thuthuatjb.com/apps?=apptesters-org/AppTesters_Repo/releases/download/19-03-2026/Procreate_5.4.9_Pro_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "ProFit",
+        "keptName": "ProFit",
+        "bundleIdentifier": "com.maxty.gofitness",
+        "version": "7.16.6",
+        "downloadURL": "https://file.ipaomtk.com/ProFit%20Workout/ProFit_Workout_Planner_IPAOMTK.com.ipa"
+      },
+      {
+        "name": "SoundLab",
+        "keptName": "SoundLab",
+        "bundleIdentifier": "com.castpeer.audioroom.ios",
+        "version": "2.10.6",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-02-2026/SoundLab_2.10.6_Pro_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "Uplens",
+        "keptName": "Uplens",
+        "bundleIdentifier": "app.uplens",
+        "version": "3.4.10",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-03-2026/Uplens_3.4.10_Pro_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "Videoleap",
+        "keptName": "Videoleap",
+        "bundleIdentifier": "com.lightricks.Enlight-Video",
+        "version": "2.82",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-03-2026/Videoleap_2.82_Pro_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "Dehancer",
+        "keptName": "Dehancer",
+        "bundleIdentifier": "com.dehancer.film.ios-app",
+        "version": "5.0",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/08-10-2025/Dehancer_5.0_IAP_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "Edith",
+        "keptName": "Edith",
+        "bundleIdentifier": "com.thenovik.Presets",
+        "version": "2.4.13",
+        "downloadURL": "https://file.ipaomtk.com/edith-presets-for-lightroom/Edith_Aesthetic_Photo_Editor_IPAOMTK.com.ipa"
+      },
+      {
+        "name": "Encode",
+        "keptName": "Encode",
+        "bundleIdentifier": "com.upskew.encode.ios",
+        "version": "6.20.2",
+        "downloadURL": "https://file.ipaomtk.com/encode-learn-to-code/Encode_Learn_to_Code_IPAOMTK.com.ipa"
+      },
+      {
+        "name": "Enki",
+        "keptName": "Enki",
+        "bundleIdentifier": "PHCXZHD53T.com.enki.insights",
+        "version": "2.40.7",
+        "downloadURL": "https://file.ipaomtk.com/Enki/Enki_Learn_Coding_Programming_IPAOMTK.com.ipa"
+      },
+      {
+        "name": "Mercury",
+        "keptName": "Mercury",
+        "bundleIdentifier": "com.tripleglazedstudios.Weather",
+        "version": "3.0.1",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/10-10-2025/Mercury_3.0.1_Pro_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "Mindllama",
+        "keptName": "Mindllama",
+        "bundleIdentifier": "com.vitalii.mind",
+        "version": "2.5.5",
+        "downloadURL": "https://file.ipaomtk.com/Mindllama/Mindllama_Breathe_Sleep_Focus_IPAOMTK.com.ipa"
+      },
+      {
+        "name": "RunGo",
+        "keptName": "RunGo",
+        "bundleIdentifier": "com.leapingcoyote.rungo",
+        "version": "7.2.4",
+        "downloadURL": "https://file.ipaomtk.com/RunGo/RunGo_The_Best_Routes_to_Run_IPAOMTK.com.ipa"
+      },
+      {
+        "name": "Stay",
+        "keptName": "Stay",
+        "bundleIdentifier": "com.dajiu.stay.pro",
+        "version": "2.9.18",
+        "downloadURL": "https://file.ipaomtk.com/stay-for-safari/Stay-for-Safari-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "superagent",
+        "keptName": "superagent",
+        "bundleIdentifier": "com.agent.super.extension.safari",
+        "version": "3.48.0",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-03-2026/superagent_3.48.0_Premium_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "VDIT",
+        "keptName": "VDIT",
+        "bundleIdentifier": "me.imgbase.videoday",
+        "version": "3.7.1",
+        "downloadURL": "https://file.ipaomtk.com/vdit-video-maker-editor/VDIT-IPAOMTK.COM.ipa"
+      },
+      {
+        "name": "Chimera",
+        "keptName": "Chimera",
+        "bundleIdentifier": "com.electrateam.chimera",
+        "version": "1.6.5",
+        "downloadURL": "https://raw.githubusercontent.com/coolstar/electra-ipas/master/chimera/1.6.5-12.2-12.5.ipa"
+      },
+      {
+        "name": "Esign",
+        "keptName": "Esign",
+        "bundleIdentifier": "p3.xyz.yyyue.esign",
+        "version": "5.0.2",
+        "downloadURL": "https://proxy-files.thuthuatjb.com/apps?=thuthuatjb/IPAS/releases/download/2/ESign_5.0.2.ipa"
+      },
+      {
+        "name": "Swiftgram",
+        "keptName": "Swiftgram",
+        "bundleIdentifier": "app.swiftgram.ios",
+        "version": "12.4",
+        "downloadURL": "https://file.ipaomtk.com/Swiftgram/Swiftgram_Telegram_mod_client_IPAOMTK.com.ipa"
+      },
+      {
+        "name": "UTM",
+        "keptName": "UTM",
+        "bundleIdentifier": "com.osy86.UTM",
+        "version": "0.1",
+        "downloadURL": "https://github.com/utmapp/UTM/releases/download/v0.1/UTM.ipa"
+      },
+      {
+        "name": "YouTube++",
+        "keptName": "YouTube++",
+        "bundleIdentifier": "com.google.ios.youtube",
+        "version": "13.02.9",
+        "downloadURL": "https://bunduuk.github.io/altstore-source/ipa/youtube/youtube.ipa?raw=true"
+      },
+      {
+        "name": "FaceLab",
+        "keptName": "FaceLab",
+        "bundleIdentifier": "com.lyrebirdstudio.facelab",
+        "version": "5.2.0",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/08-06-2026/FaceLab_5.2.0_Premium_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "InCollage",
+        "keptName": "InCollage",
+        "bundleIdentifier": "PhotoEditor.PhotoCollage.inCollage",
+        "version": "2.2.12",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/29-12-2025/InCollage_2.2.12_Pro_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "KKPhoto",
+        "keptName": "KKPhoto",
+        "bundleIdentifier": "tech.miidii.AlbumManager",
+        "version": "2.2.2",
+        "downloadURL": "https://file.ipaomtk.com/KK-Photo/KK-Photo-ipaomtk.com.ipa"
+      },
+      {
+        "name": "ReelsApp",
+        "keptName": "ReelsApp",
+        "bundleIdentifier": "com.nextgen.reelsapp",
+        "version": "7.7",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-03-2026/ReelsApp_7.7_Pro_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "Smallpdf",
+        "keptName": "Smallpdf",
+        "bundleIdentifier": "com.smallpdf.app.ios",
+        "version": "1.53.60",
+        "downloadURL": "https://proxy-files.thuthuatjb.com/apps?=apptesters-org/AppTesters_Repo/releases/download/12-10-2025/Smallpdf_1.53.60_Premium_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "Photoroom",
+        "keptName": "Photoroom",
+        "bundleIdentifier": "com.dr1ven.eraser",
+        "version": "6.4.5",
+        "downloadURL": "https://github.com/Karbin18/kara-store-ipa/releases/download/karbin-ipa-socil2/Photoroom.-._6.4.5_1738700819.ipa"
+      },
+      {
+        "name": "StepsApp",
+        "keptName": "StepsApp",
+        "bundleIdentifier": "com.gunthermarktl.stepapp",
+        "version": "8.6.1",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-12-2025/StepsApp_8.6.1_Pro_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "Tiimo",
+        "keptName": "Tiimo",
+        "bundleIdentifier": "com.tiimo.app",
+        "version": "3.37.0",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/Tiimo_3.37.0_Premium_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "FLTR",
+        "keptName": "FLTR",
+        "bundleIdentifier": "com.feelty",
+        "version": "4.21.0",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-02-2026/FLTR_4.21.0_Pro_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "BlitzerdePRO",
+        "keptName": "BlitzerdePRO",
+        "bundleIdentifier": "com.eifrig.blitzerdepro",
+        "version": "400.1.1",
+        "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/BlitzerdePRO/BlitzerdePRO-400.1.1.ipa"
+      },
+      {
+        "name": "Sudoku",
+        "keptName": "Sudoku",
+        "bundleIdentifier": "com.ocho.SudokuaDay",
+        "version": "2.2.0",
+        "downloadURL": "https://file.ipaomtk.com/sudoku-a-day-pro/Sudoku-a-Day-Pro-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "AllTrails",
+        "keptName": "AllTrails",
+        "bundleIdentifier": "com.alltrails.AllTrails",
+        "version": "26.3.10",
+        "downloadURL": "https://file.ipaomtk.com/AllTrails/AllTrails-Pro-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "VideoStudio",
+        "keptName": "VideoStudio",
+        "bundleIdentifier": "videoeditor.app",
+        "version": "3.21.4",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-07-2026/VideoStudio_3.21.4_Subscription_Unlocked_@thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "Wallpapers",
+        "keptName": "Wallpapers",
+        "bundleIdentifier": "com.apalonapps.wallpaperspys",
+        "version": "2.1",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-10-2025/Wallpapers_2.1_Premium_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "VEEDCaptions",
+        "keptName": "VEEDCaptions",
+        "bundleIdentifier": "io.veed.appstore",
+        "version": "8.6.0",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-02-2026/VEEDCaptions_8.6.0_Pro_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "flipclock",
+        "keptName": "flipclock",
+        "bundleIdentifier": "com.cuilingshi.flipclock",
+        "version": "6.18",
+        "downloadURL": "https://file.ipaomtk.com/Flip-Clock-digital-widgets/Flip-Clock-digital-widgets-IPAOMTK.COM.ipa"
+      },
+      {
+        "name": "Nerva",
+        "keptName": "Nerva",
+        "bundleIdentifier": "com.mindsethealth.ibs",
+        "version": "49.1",
+        "downloadURL": "https://file.ipaomtk.com/Nerva/Nerva-Pro-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "OldOS",
+        "keptName": "OldOS",
+        "bundleIdentifier": "com.zrc.BudgetingBuddy",
+        "version": "2.0.7",
+        "downloadURL": "https://ipa.cypwn.xyz/ipas/OldOS.ipa"
+      },
+      {
+        "name": "Narwhal",
+        "keptName": "Narwhal",
+        "bundleIdentifier": "com.rickharrison.narwhal",
+        "version": "2026.1",
+        "downloadURL": "https://file.ipaomtk.com/Narwhal%20for/Narwhal-Pro-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "Notability",
+        "keptName": "Notability",
+        "bundleIdentifier": "com.gingerlabs.Notability",
+        "version": "15.4.2",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-03-2026/Notability_15.4.2_Plus_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "ToonSquid",
+        "keptName": "ToonSquid",
+        "bundleIdentifier": "com.keiwando.toonsquid",
+        "version": "2.0.21",
+        "downloadURL": "https://file.ipaomtk.com/ToonSquid/ToonSquid-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "Unscripted",
+        "keptName": "Unscripted",
+        "bundleIdentifier": "com.ibit.UNPOSED",
+        "version": "4.7.3",
+        "downloadURL": "https://file.ipaomtk.com/UNSCRIPTED/UNSCRIPTED-Photography-Poses-Pro-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "Chai",
+        "keptName": "Chai",
+        "bundleIdentifier": "com.beauchamp.Messenger.external",
+        "version": "20250610.0.0",
+        "downloadURL": "https://file.ipaomtk.com/chai-social-ai-platform-chat/Chai-IPAOMTK.COM.ipa"
+      },
+      {
+        "name": "Fishbrain",
+        "keptName": "Fishbrain",
+        "bundleIdentifier": "com.fishbrain.app",
+        "version": "9.44.0",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-12-2025/Fishbrain_9.44.0_Pro_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "InShot",
+        "keptName": "InShot",
+        "bundleIdentifier": "com.camerasideas.InstaShot",
+        "version": "1.96.0",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-05-2026/InShot_1.96.0_Pro_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "Radiance",
+        "keptName": "Radiance",
+        "bundleIdentifier": "SimpleTools.Wallpaper-Workshop",
+        "version": "2.2.7",
+        "downloadURL": "https://file.ipaomtk.com/Radiance%20Wallpapers/Radiance-Wallpapers-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "Motobit",
+        "keptName": "Motobit",
+        "bundleIdentifier": "com.getmotobit.motobit",
+        "version": "1.0.62",
+        "downloadURL": "https://file.ipaomtk.com/motobit-motorcycle-navigation/Motobit-Premium-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "Soundmap",
+        "keptName": "Soundmap",
+        "bundleIdentifier": "app.mmap.mobile",
+        "version": "2.9.9",
+        "downloadURL": "https://file.ipaomtk.com/Soundmap/Soundmap-Pro-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "Headway",
+        "keptName": "Headway",
+        "bundleIdentifier": "com.headway.books",
+        "version": "354.1",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/31-10-2025/Headway_354.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "Calory",
+        "keptName": "Calory",
+        "bundleIdentifier": "com.funnmedia.calory",
+        "version": "4.6.7",
+        "downloadURL": "https://file.ipaomtk.com/Calory/Calory-AI-IAP-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "AlevioOS",
+        "keptName": "AlevioOS",
+        "bundleIdentifier": "com.alevioos.app",
+        "version": "2.4.4",
+        "downloadURL": "https://file.ipaomtk.com/AlevioOS_Local_Ai/AlevioOS_Local_Ai_IPAOMTK.com.ipa"
+      },
+      {
+        "name": "HeyJapan",
+        "keptName": "HeyJapan",
+        "bundleIdentifier": "com.eup.heyjapan",
+        "version": "2.3.3",
+        "downloadURL": "https://file.ipaomtk.com/Learn%20Japanese/Learn-Japanese-IAP-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "moneycontrol",
+        "keptName": "moneycontrol",
+        "bundleIdentifier": "com.moneycontrol.mc",
+        "version": "11.1.2",
+        "downloadURL": "https://file.ipaomtk.com/moneycontrol-markets-news/Moneycontrol-IPAOMTK.COM.ipa"
+      },
+      {
+        "name": "DictionaryAir",
+        "keptName": "DictionaryAir",
+        "bundleIdentifier": "co.airapps.dictionary",
+        "version": "2026.2.2",
+        "downloadURL": "https://file.ipaomtk.com/Dictionary%20Air/Dictionary_Air_English_Vocab_IPAOMTK.com.ipa"
+      },
+      {
+        "name": "QrCode",
+        "keptName": "QrCode",
+        "bundleIdentifier": "com.internet-rocks.codescanner",
+        "version": "2026.1.4",
+        "downloadURL": "https://file.ipaomtk.com/QR%20Code/QR_Code_Reader-Barcode_Scanner_IPAOMTK.com.ipa"
+      },
+      {
+        "name": "djay",
+        "keptName": "djay",
+        "bundleIdentifier": "com.algoriddim.djay-iphone-free",
+        "version": "5.6.1",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-12-2025/djay_5.6.1_Premium_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "Things",
+        "keptName": "Things",
+        "bundleIdentifier": "com.culturedcode.ThingsiPad",
+        "version": "3.22.7",
+        "downloadURL": "https://file.ipaomtk.com/Things%203%20for%20iPad/Things-3-for-iPad-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "Moment",
+        "keptName": "Moment",
+        "bundleIdentifier": "com.momentinc.procamera",
+        "version": "1.0.3",
+        "downloadURL": "https://file.ipaomtk.com/Moment/Moment-Pro-Camera-II-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "WABusiness",
+        "keptName": "WABusiness",
+        "bundleIdentifier": "net.whatsapp.WhatsAppSMB",
+        "version": "25.37.76",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-01-2026/WABusiness_25.37.76_Watusi1.3.1Cracked_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "WhatsApp",
+        "keptName": "WhatsApp",
+        "bundleIdentifier": "net.whatsapp.WhatsApp",
+        "version": "25.37.76",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-01-2026/WhatsApp_25.37.76_Watusi1.3.1Cracked_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "Cure",
+        "keptName": "Cure",
+        "bundleIdentifier": "app.cranberry.cure",
+        "version": "2.1",
+        "downloadURL": "https://file.ipaomtk.com/CURE-Quit/CURE_Quit_Porn_Addiction-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "Scoreboard",
+        "keptName": "Scoreboard",
+        "bundleIdentifier": "com.edwinchan.Scoreboard",
+        "version": "1.8.3",
+        "downloadURL": "https://file.ipaomtk.com/Scoreboard/Scoreboard-Pro-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "X",
+        "keptName": "X",
+        "bundleIdentifier": "com.atebits.Tweetie2",
+        "version": "11.12.1",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-08-2025/X_11.12.1_Unlocked_All_Functions_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "Spotify",
+        "keptName": "Spotify",
+        "bundleIdentifier": "com.spotify.client",
+        "version": "9.1.28",
+        "downloadURL": "https://file.ipaomtk.com/Spotify/Spotify-2-IPAOMTK.COM.ipa"
+      },
+      {
+        "name": "VSCO",
+        "keptName": "VSCO",
+        "bundleIdentifier": "co.visualsupply.cam",
+        "version": "458.0.0",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-03-2026/VSCO_458.0.0_Pro_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "PictureThis",
+        "keptName": "PictureThis",
+        "bundleIdentifier": "cn.danatech.xingseus",
+        "version": "5.34.0",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-10-2025/PictureThis_5.34.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "Peanote",
+        "keptName": "Peanote",
+        "bundleIdentifier": "com.mwm.nota",
+        "version": "1.4.4",
+        "downloadURL": "https://file.ipaomtk.com/Peanote%20-%20AI%20Voice/Peanote_AI_Voice_Notes_IPAOMTK.com.ipa"
+      },
+      {
+        "name": "Across",
+        "keptName": "Across",
+        "bundleIdentifier": "com.daymore.Across",
+        "version": "1.12.8",
+        "downloadURL": "https://file.ipaomtk.com/Across%20Modern/Across-Premium-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "Gronk",
+        "keptName": "Gronk",
+        "bundleIdentifier": "com.dreamaichatbot.dreameai",
+        "version": "4.0",
+        "downloadURL": "https://file.ipaomtk.com/DeepGronk/DeepGronk-AI-Chatbot-GronkAI-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "NoteCircle",
+        "keptName": "NoteCircle",
+        "bundleIdentifier": "com.thegenau.NoteCircle",
+        "version": "4.45",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/NoteCircle_4.45_Premium_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "AlohaVPN",
+        "keptName": "AlohaVPN",
+        "bundleIdentifier": "com.alohabrowser.vpn",
+        "version": "2.6.2",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-01-2026/AlohaVPN_2.6.2_IAP_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "ShiftWorkCal",
+        "keptName": "ShiftWorkCal",
+        "bundleIdentifier": "jp.ebisusoft.shiftworkcallite",
+        "version": "2025.3.0",
+        "downloadURL": "https://file.ipaomtk.com/Shift%20Work/Shift-Work-Calendar-Premium-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "GrowIt",
+        "keptName": "GrowIt",
+        "bundleIdentifier": "com.grow.my.food",
+        "version": "1.36",
+        "downloadURL": "https://file.ipaomtk.com/GrowIt%20Garden/GrowIt_Garden_Planner_IPAOMTK.com.ipa"
+      },
+      {
+        "name": "Shapy",
+        "keptName": "Shapy",
+        "bundleIdentifier": "com.blake.femalefitness",
+        "version": "10.5.0",
+        "downloadURL": "https://file.ipaomtk.com/Shapy%20Personal/Shapy_Personal_Fitness_App_IPAOMTK.com.ipa"
+      },
+      {
+        "name": "Summarify",
+        "keptName": "Summarify",
+        "bundleIdentifier": "nz.digitaltools.Tube-GPT",
+        "version": "3.9.0",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-08-2025/Summarify_3.9.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "INTVL",
+        "keptName": "INTVL",
+        "bundleIdentifier": "com.intvl.app",
+        "version": "3.3.3",
+        "downloadURL": "https://file.ipaomtk.com/INTVL/INTVL-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "Spoke",
+        "keptName": "Spoke",
+        "bundleIdentifier": "com.limepresso.shiftworkcalendar",
+        "version": "2.5.4",
+        "downloadURL": "https://file.ipaomtk.com/Shift%20Days/Shift-Days_Work-Hour-Calendar-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "VCMI",
+        "keptName": "VCMI",
+        "bundleIdentifier": "eu.vcmi.vcmiclient",
+        "version": "1.6.7",
+        "downloadURL": "https://github.com/vcmi/vcmi/releases/download/1.6.7/VCMI-iOS.ipa"
+      },
+      {
+        "name": "Lunatask",
+        "keptName": "Lunatask",
+        "bundleIdentifier": "com.mikekreeki.tasks",
+        "version": "2.1.24",
+        "downloadURL": "https://file.ipaomtk.com/Lunatask/Lunatask_A-Better-To-Do-List-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "Speak4Me",
+        "keptName": "Speak4Me",
+        "bundleIdentifier": "com.yadux.Speak4Me",
+        "version": "6.2.8",
+        "downloadURL": "https://file.ipaomtk.com/Speak4Me/Speak4Me-Text-to-Speech-Reader-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "dp",
+        "keptName": "dp",
+        "bundleIdentifier": "au.com.michaeltigas.MiniOS",
+        "version": "1.11.6",
+        "downloadURL": "https://file.ipaomtk.com/Dumb%20Phone/Dumb-Phone-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "GPTalk",
+        "keptName": "GPTalk",
+        "bundleIdentifier": "labs.mehmet.gptalk",
+        "version": "1.9.9",
+        "downloadURL": "https://file.ipaomtk.com/ask-ai-anything-aido/Ask-AI-Anything-Aido-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "LeafSnap",
+        "keptName": "LeafSnap",
+        "bundleIdentifier": "com.identification.plant",
+        "version": "2.77",
+        "downloadURL": "https://file.ipaomtk.com/LeafSnap/LeafSnap-Plant-Identification-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "OfflineGames",
+        "keptName": "OfflineGames",
+        "bundleIdentifier": "com.JindoBlu.OfflineGamesIOS",
+        "version": "3.6.4",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/OfflineGames_3.6.4_noads_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "Sunlitt",
+        "keptName": "Sunlitt",
+        "bundleIdentifier": "eu.sun.litt",
+        "version": "4.9.10",
+        "downloadURL": "https://file.ipaomtk.com/Sunlitt/Sun-Position-and-Path-Sunlitt-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "WordPal",
+        "keptName": "WordPal",
+        "bundleIdentifier": "com.dynamicapps.Vocab-Builder",
+        "version": "4.6.17",
+        "downloadURL": "https://file.ipaomtk.com/WordPal/WordPal-Vocabulary-Builder-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "Feather",
+        "keptName": "Feather",
+        "bundleIdentifier": "thewonderofyou.Feather",
+        "version": "2.2.1",
+        "downloadURL": "https://file.ipaomtk.com/Feather/Feather-IPAOMTK.COM.ipa"
+      },
+      {
+        "name": "GALATEA",
+        "keptName": "GALATEA",
+        "bundleIdentifier": "org.reactjs.native.Inkitt.App.Colt",
+        "version": "14.21.0",
+        "downloadURL": "https://file.ipaomtk.com/galatea-books-audiobooks/GALATEA-IPAOMTK.COM.ipa"
+      },
+      {
+        "name": "Yana",
+        "keptName": "Yana",
+        "bundleIdentifier": "com.yana.yanapp",
+        "version": "4.60.5",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-08-2025/Yana_4.60.5_Premium_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "Demonicsect",
+        "keptName": "Demonicsect",
+        "bundleIdentifier": "com.daerigame.demonicsect",
+        "version": "126",
+        "downloadURL": "https://file.ipaomtk.com/Demonic%20Tao%202D%20MMORPG/Demonic-Tao-IPAOMTK.COM.ipa"
+      },
+      {
+        "name": "MoneyCoach",
+        "keptName": "MoneyCoach",
+        "bundleIdentifier": "com.duuro.moneyCoach",
+        "version": "11.2.2",
+        "downloadURL": "https://file.ipaomtk.com/Money%20Coach/Money-Coach-My-Budget-Planner-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "WeChef",
+        "keptName": "WeChef",
+        "bundleIdentifier": "com.relentlessco.zesty",
+        "version": "1.38.5",
+        "downloadURL": "https://file.ipaomtk.com/WeChef/WeChef-Recipe-Journal-IPAOMTK.com.ipa"
+      },
+      {
+        "name": "Enmity",
+        "keptName": "Enmity",
+        "bundleIdentifier": "com.hammerandchisel.discord",
+        "version": "v2.2.6.2025-01-08",
+        "downloadURL": "https://github.com/enmity-mod/tweak/releases/download/v2.2.6/Enmity.ipa"
       }
     ]
   }
