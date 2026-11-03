@@ -249,6 +249,8 @@ def publish(root, old_bytes, source):
     from catalog_owner import apply_file
     apply_file(source, root)
     deduplicate(source)
+    from catalog_limit import apply_limit
+    apply_limit(source, root)
     validate(source)
     # Backup is updated only AFTER full validation, before the atomic source replacement.
     atomic_bytes(root/'backups/ipastrong.last-good.json.gz', gzip.compress(old_bytes, mtime=0))
@@ -300,9 +302,12 @@ def run(root, limit=400, refresh=True):
     apply_file(source, root)
     report = monitor(source, state, limit, now)
     duplicate_report = deduplicate(source)
+    from catalog_limit import apply_limit
+    limit_report = apply_limit(source, root)
     validate(source)
     report.update(date=datetime.now(timezone.utc).isoformat(), inputApps=len(base['apps']), outputApps=len(source['apps']), preservedApps=restored, recoveredPublishedSource=recovered, removedApps=policy_report['removedApps'], catalogPolicy=policy_report, upstream=upstream)
     report['deduplication'] = duplicate_report
+    report['catalogLimit'] = limit_report
     publish(root, old_bytes, source)
     write(root/STATE_NAME, state)
     write(root/REPORT_NAME, report)
