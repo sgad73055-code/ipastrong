@@ -1,9 +1,9 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 395,
-    "missing": 4,
-    "temporary": 1
+    "ok": 391,
+    "missing": 8,
+    "not_ipa": 1
   },
   "repaired": [],
   "unresolved": [
@@ -12,26 +12,26 @@
       "url": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/TikTok.v38.7.0.+.AC.v2.0.ipa"
     }
   ],
-  "date": "2026-11-03T14:15:52.322612+00:00",
+  "date": "2026-11-03T23:24:38.564426+00:00",
   "inputApps": 9000,
   "outputApps": 9000,
-  "preservedApps": 78,
+  "preservedApps": 86,
   "recoveredPublishedSource": false,
-  "removedApps": 17,
+  "removedApps": 18,
   "catalogPolicy": {
-    "removedApps": 17,
+    "removedApps": 18,
     "removedVersions": 0
   },
   "upstream": {
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 9984,
+        "apps": 9995,
         "error": null
       },
       {
         "source": "https://ipa.cypwn.xyz/cypwn.json",
-        "apps": 210,
+        "apps": 207,
         "error": null
       },
       {
@@ -72,7 +72,7 @@
       {
         "source": "https://apps.nabzclan.vip/repos/altstore.php",
         "apps": 0,
-        "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>"
+        "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)>"
       },
       {
         "source": "https://ipa.thuthuatjb.com/repo",
@@ -186,16 +186,16 @@
       },
       {
         "source": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json",
-        "apps": 68,
+        "apps": 77,
         "error": null
       }
     ],
-    "inputRecords": 42960,
-    "outputApps": 10862,
+    "inputRecords": 42838,
+    "outputApps": 10871,
     "rejectedRecords": 178
   },
   "deduplication": {
-    "removedApps": 75,
+    "removedApps": 71,
     "duplicates": [
       {
         "name": "TikTok",
@@ -219,25 +219,32 @@
         "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-02-2026/BHTikTokPlus_43.9.0_Plus_@thisismanpreets_apptesters.org.ipa"
       },
       {
-        "name": "BuildBox",
-        "keptName": "BuildBox",
-        "bundleIdentifier": "com.mikevillarroel.buildbox",
-        "version": "2.1.4",
-        "downloadURL": "https://github.com/mikevillarroel/buildbox-ios/releases/download/v2.1.4/BuildBox-2.1.4.ipa"
+        "name": "Swiftgram",
+        "keptName": "Swiftgram",
+        "bundleIdentifier": "app.swiftgram.ios",
+        "version": "12.4",
+        "downloadURL": "https://file.ipaomtk.com/Swiftgram/Swiftgram_Telegram_mod_client_IPAOMTK.com.ipa"
       },
       {
-        "name": "dp",
-        "keptName": "dp",
-        "bundleIdentifier": "au.com.michaeltigas.MiniOS",
-        "version": "1.11.6",
-        "downloadURL": "https://file.ipaomtk.com/Dumb%20Phone/Dumb-Phone-IPAOMTK.com.ipa"
+        "name": "Captions",
+        "keptName": "Captions",
+        "bundleIdentifier": "boomer.Smart-Video",
+        "version": "11.70.2",
+        "downloadURL": "https://github.com/karbin09/karbin-ipa-three/releases/download/karbin-ipa/Captionsl.ipa"
       },
       {
-        "name": "YouTube++",
-        "keptName": "YouTube++",
-        "bundleIdentifier": "com.google.ios.youtube",
-        "version": "13.02.9",
-        "downloadURL": "https://bunduuk.github.io/altstore-source/ipa/youtube/youtube.ipa?raw=true"
+        "name": "Photoroom",
+        "keptName": "Photoroom",
+        "bundleIdentifier": "com.dr1ven.eraser",
+        "version": "6.4.5",
+        "downloadURL": "https://github.com/Karbin18/kara-store-ipa/releases/download/karbin-ipa-socil2/Photoroom.-._6.4.5_1738700819.ipa"
+      },
+      {
+        "name": "Minutes",
+        "keptName": "Minutes",
+        "bundleIdentifier": "ventures.slam.minutes",
+        "version": "1.9.14",
+        "downloadURL": "https://file.ipaomtk.com/minutes-ai-meeting-note-taker/Minutes-AI-IPAOMTK.COM.ipa"
       },
       {
         "name": "MoneyCoach",
@@ -254,88 +261,11 @@
         "downloadURL": "https://file.ipaomtk.com/Spotify/Spotify-2-IPAOMTK.COM.ipa"
       },
       {
-        "name": "djay",
-        "keptName": "djay",
-        "bundleIdentifier": "com.algoriddim.djay-iphone-free",
-        "version": "5.6.1",
-        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-12-2025/djay_5.6.1_Premium_%40thisismanpreets_apptesters.org.ipa"
-      },
-      {
-        "name": "Notability",
-        "keptName": "Notability",
-        "bundleIdentifier": "com.gingerlabs.Notability",
-        "version": "15.4.2",
-        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-03-2026/Notability_15.4.2_Plus_%40thisismanpreets_apptesters.org.ipa"
-      },
-      {
-        "name": "Photoroom",
-        "keptName": "Photoroom",
-        "bundleIdentifier": "com.dr1ven.eraser",
-        "version": "6.4.5",
-        "downloadURL": "https://github.com/Karbin18/kara-store-ipa/releases/download/karbin-ipa-socil2/Photoroom.-._6.4.5_1738700819.ipa"
-      },
-      {
-        "name": "Captions",
-        "keptName": "Captions",
-        "bundleIdentifier": "boomer.Smart-Video",
-        "version": "11.70.2",
-        "downloadURL": "https://github.com/karbin09/karbin-ipa-three/releases/download/karbin-ipa/Captionsl.ipa"
-      },
-      {
-        "name": "Elevate",
-        "keptName": "Elevate",
-        "bundleIdentifier": "com.elevateapp.elevate",
-        "version": "5.229.0",
-        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-02-2026/Elevate_5.229.0_Pro_%40thisismanpreets_apptesters.org.ipa"
-      },
-      {
-        "name": "Lightroom",
-        "keptName": "Lightroom",
-        "bundleIdentifier": "com.adobe.lrmobilephone",
-        "version": "11.2.2",
-        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-03-2026/Lightroom_11.2.2_Premium_%40thisismanpreets_apptesters.org.ipa"
-      },
-      {
-        "name": "Lyfta",
-        "keptName": "Lyfta",
-        "bundleIdentifier": "com.lyftaios",
-        "version": "1.129",
-        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-12-2025/Lyfta_1.129_Premium_%40thisismanpreets_apptesters.org.ipa"
-      },
-      {
-        "name": "Swiftgram",
-        "keptName": "Swiftgram",
-        "bundleIdentifier": "app.swiftgram.ios",
-        "version": "12.4",
-        "downloadURL": "https://file.ipaomtk.com/Swiftgram/Swiftgram_Telegram_mod_client_IPAOMTK.com.ipa"
-      },
-      {
-        "name": "Minutes",
-        "keptName": "Minutes",
-        "bundleIdentifier": "ventures.slam.minutes",
-        "version": "1.9.14",
-        "downloadURL": "https://file.ipaomtk.com/minutes-ai-meeting-note-taker/Minutes-AI-IPAOMTK.COM.ipa"
-      },
-      {
-        "name": "Pillow",
-        "keptName": "Pillow",
-        "bundleIdentifier": "com.neybox.Pillow",
-        "version": "6.2.8",
-        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-03-2026/Pillow_6.2.8_Premium_%40thisismanpreets_apptesters.org.ipa"
-      },
-      {
         "name": "foriOS",
         "keptName": "foriOS",
         "bundleIdentifier": "com.tapinfinity.HdjcXcode7",
         "version": "13.2",
         "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-10-2026/foriOS_13.2_Pro_@thisismanpreets_apptesters.org.ipa"
-      },
-      {
-        "name": "InShot",
-        "keptName": "InShot",
-        "bundleIdentifier": "com.camerasideas.InstaShot",
-        "version": "1.96.0",
-        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-05-2026/InShot_1.96.0_Pro_%40thisismanpreets_apptesters.org.ipa"
       },
       {
         "name": "Caliber",
@@ -380,6 +310,13 @@
         "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-05-2026/Hevy_3.0.11_Pro_%40thisismanpreets_apptesters.org.ipa"
       },
       {
+        "name": "InShot",
+        "keptName": "InShot",
+        "bundleIdentifier": "com.camerasideas.InstaShot",
+        "version": "1.96.0",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-05-2026/InShot_1.96.0_Pro_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
         "name": "Analogue",
         "keptName": "Analogue",
         "bundleIdentifier": "Cristian-Teichner.Analogue",
@@ -394,11 +331,25 @@
         "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-03-2026/ReelsApp_7.7_Pro_%40thisismanpreets_apptesters.org.ipa"
       },
       {
+        "name": "Lightroom",
+        "keptName": "Lightroom",
+        "bundleIdentifier": "com.adobe.lrmobilephone",
+        "version": "11.2.2",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-03-2026/Lightroom_11.2.2_Premium_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
         "name": "MyFitnessPal",
         "keptName": "MyFitnessPal",
         "bundleIdentifier": "com.myfitnesspal.mfp",
         "version": "26.9.1",
         "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-03-2026/MyFitnessPal_26.9.1_Premium_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "Pillow",
+        "keptName": "Pillow",
+        "bundleIdentifier": "com.neybox.Pillow",
+        "version": "6.2.8",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-03-2026/Pillow_6.2.8_Premium_%40thisismanpreets_apptesters.org.ipa"
       },
       {
         "name": "superagent",
@@ -434,6 +385,13 @@
         "bundleIdentifier": "com.sfun.snapedit",
         "version": "6.4.3",
         "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-03-2026/SnapEdit_6.4.3_Premium_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "Notability",
+        "keptName": "Notability",
+        "bundleIdentifier": "com.gingerlabs.Notability",
+        "version": "15.4.2",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-03-2026/Notability_15.4.2_Plus_%40thisismanpreets_apptesters.org.ipa"
       },
       {
         "name": "Unfold",
@@ -483,6 +441,13 @@
         "bundleIdentifier": "com.castpeer.audioroom.ios",
         "version": "2.10.6",
         "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-02-2026/SoundLab_2.10.6_Pro_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "Elevate",
+        "keptName": "Elevate",
+        "bundleIdentifier": "com.elevateapp.elevate",
+        "version": "5.229.0",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-02-2026/Elevate_5.229.0_Pro_%40thisismanpreets_apptesters.org.ipa"
       },
       {
         "name": "VEEDCaptions",
@@ -590,18 +555,25 @@
         "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-12-2025/UpNote_9.16.0_Premium_%40thisismanpreets_apptesters.org.ipa"
       },
       {
+        "name": "Lyfta",
+        "keptName": "Lyfta",
+        "bundleIdentifier": "com.lyftaios",
+        "version": "1.129",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-12-2025/Lyfta_1.129_Premium_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "djay",
+        "keptName": "djay",
+        "bundleIdentifier": "com.algoriddim.djay-iphone-free",
+        "version": "5.6.1",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-12-2025/djay_5.6.1_Premium_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
         "name": "NoteCircle",
         "keptName": "NoteCircle",
         "bundleIdentifier": "com.thegenau.NoteCircle",
         "version": "4.45",
         "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/NoteCircle_4.45_Premium_%40thisismanpreets_apptesters.org.ipa"
-      },
-      {
-        "name": "OfflineGames",
-        "keptName": "OfflineGames",
-        "bundleIdentifier": "com.JindoBlu.OfflineGamesIOS",
-        "version": "3.6.4",
-        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/OfflineGames_3.6.4_noads_%40thisismanpreets_apptesters.org.ipa"
       },
       {
         "name": "Tiimo",
@@ -725,8 +697,8 @@
     ]
   },
   "catalogLimit": {
-    "removedApps": 1848,
+    "removedApps": 1868,
     "maxApps": 9000,
-    "protectedApps": 55
+    "protectedApps": 54
   }
 }
