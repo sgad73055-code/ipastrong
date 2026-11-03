@@ -242,6 +242,16 @@ def monitor(source, state, limit, now, prober=probe):
         outcomes[status] = outcomes.get(status, 0) + 1
     return {'checked': len(selected)+len(alternatives), 'outcomes':outcomes, 'repaired': repairs, 'unresolved': unresolved}
 
+def compact_versions(source):
+    """Keep the published current release, preserving all app descriptions and icons."""
+    for app in source['apps']:
+        current = next((v for v in app['versions']
+                        if v['downloadURL'] == app['downloadURL']
+                        and str(v['version']) == str(app['version'])), None)
+        if current is None:
+            raise ValueError('Current release missing; refusing to compact')
+        app['versions'] = [current]
+
 def publish(root, old_bytes, source):
     if (root/'catalog-policy.json').exists():
         from catalog_policy import apply_policy
@@ -251,6 +261,7 @@ def publish(root, old_bytes, source):
     deduplicate(source)
     from catalog_limit import apply_limit
     apply_limit(source, root)
+    compact_versions(source)
     validate(source)
     # Backup is updated only AFTER full validation, before the atomic source replacement.
     atomic_bytes(root/'backups/ipastrong.last-good.json.gz', gzip.compress(old_bytes, mtime=0))
@@ -304,6 +315,7 @@ def run(root, limit=400, refresh=True):
     duplicate_report = deduplicate(source)
     from catalog_limit import apply_limit
     limit_report = apply_limit(source, root)
+    compact_versions(source)
     validate(source)
     report.update(date=datetime.now(timezone.utc).isoformat(), inputApps=len(base['apps']), outputApps=len(source['apps']), preservedApps=restored, recoveredPublishedSource=recovered, removedApps=policy_report['removedApps'], catalogPolicy=policy_report, upstream=upstream)
     report['deduplication'] = duplicate_report
