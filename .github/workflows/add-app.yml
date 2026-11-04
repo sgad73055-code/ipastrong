@@ -72,9 +72,18 @@ jobs:
           updated=after['apps']
           if len(updated)<len(previous):
               raise SystemExit('Catalog shrank: refusing to propose update')
-          original_urls={a.get('downloadURL') for a in previous}
-          updated_urls={a.get('downloadURL') for a in updated}
-          if not original_urls.issubset(updated_urls):
+          from pathlib import Path
+          from catalog_limit import apply_limit
+
+          original_urls = {app['downloadURL'] for app in previous}
+          additions = [app for app in updated if app['downloadURL'] not in original_urls]
+          if len(additions) > 1 or any(not app.get('_addedFromLink') for app in additions):
+              raise SystemExit('Unexpected additions in single-app import')
+          expected = {'apps': additions + previous}
+          apply_limit(expected, Path('.'))
+          expected_urls = {app['downloadURL'] for app in expected['apps']}
+          updated_urls = {app['downloadURL'] for app in updated}
+          if expected_urls != updated_urls:
               raise SystemExit('Existing download URLs disappeared: refusing to propose update')
           print(f'Catalog preserved: {len(previous)} -> {len(updated)} apps')
           PY
