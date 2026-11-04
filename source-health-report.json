@@ -1,37 +1,32 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 391,
-    "missing": 8,
-    "not_ipa": 1
+    "ok": 397,
+    "missing": 2,
+    "temporary": 1
   },
   "repaired": [],
-  "unresolved": [
-    {
-      "name": "TikTok++ — 38.7.0",
-      "url": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/TikTok.v38.7.0.+.AC.v2.0.ipa"
-    }
-  ],
-  "date": "2026-11-03T23:24:38.564426+00:00",
+  "unresolved": [],
+  "date": "2026-11-04T06:24:00.149680+00:00",
   "inputApps": 9000,
   "outputApps": 9000,
-  "preservedApps": 86,
+  "preservedApps": 105,
   "recoveredPublishedSource": false,
-  "removedApps": 18,
+  "removedApps": 17,
   "catalogPolicy": {
-    "removedApps": 18,
+    "removedApps": 17,
     "removedVersions": 0
   },
   "upstream": {
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 9995,
+        "apps": 9999,
         "error": null
       },
       {
         "source": "https://ipa.cypwn.xyz/cypwn.json",
-        "apps": 207,
+        "apps": 210,
         "error": null
       },
       {
@@ -72,7 +67,7 @@
       {
         "source": "https://apps.nabzclan.vip/repos/altstore.php",
         "apps": 0,
-        "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)>"
+        "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>"
       },
       {
         "source": "https://ipa.thuthuatjb.com/repo",
@@ -86,7 +81,7 @@
       },
       {
         "source": "https://fastsign.dev/repo.json",
-        "apps": 16768,
+        "apps": 16789,
         "error": null
       },
       {
@@ -190,13 +185,20 @@
         "error": null
       }
     ],
-    "inputRecords": 42838,
-    "outputApps": 10871,
+    "inputRecords": 42804,
+    "outputApps": 10889,
     "rejectedRecords": 178
   },
   "deduplication": {
-    "removedApps": 71,
+    "removedApps": 75,
     "duplicates": [
+      {
+        "name": "TikTok++",
+        "keptName": "TikTok++",
+        "bundleIdentifier": "com.zhiliaoapp.musically",
+        "version": "47.6.0",
+        "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/TikTok.v47.6.0.+.gtok.v2.5.fixed.ipa"
+      },
       {
         "name": "TikTok",
         "keptName": "TikTok — 36.7.0",
@@ -219,32 +221,53 @@
         "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-02-2026/BHTikTokPlus_43.9.0_Plus_@thisismanpreets_apptesters.org.ipa"
       },
       {
-        "name": "Swiftgram",
-        "keptName": "Swiftgram",
-        "bundleIdentifier": "app.swiftgram.ios",
-        "version": "12.4",
-        "downloadURL": "https://file.ipaomtk.com/Swiftgram/Swiftgram_Telegram_mod_client_IPAOMTK.com.ipa"
+        "name": "Dopamine",
+        "keptName": "Dopamine",
+        "bundleIdentifier": "com.opa334.Dopamine",
+        "version": "3.0.13",
+        "downloadURL": "https://github.com/opa334/Dopamine/releases/download/3.0.13/Dopamine.ipa"
       },
       {
-        "name": "Captions",
-        "keptName": "Captions",
-        "bundleIdentifier": "boomer.Smart-Video",
-        "version": "11.70.2",
-        "downloadURL": "https://github.com/karbin09/karbin-ipa-three/releases/download/karbin-ipa/Captionsl.ipa"
+        "name": "Duolingo++",
+        "keptName": "Duolingo++",
+        "bundleIdentifier": "com.duolingo.DuolingoMobile",
+        "version": "7.134.0",
+        "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Duolingo.v7.134.0.fixed.ipa"
       },
       {
-        "name": "Photoroom",
-        "keptName": "Photoroom",
-        "bundleIdentifier": "com.dr1ven.eraser",
-        "version": "6.4.5",
-        "downloadURL": "https://github.com/Karbin18/kara-store-ipa/releases/download/karbin-ipa-socil2/Photoroom.-._6.4.5_1738700819.ipa"
+        "name": "Facebook++",
+        "keptName": "Facebook++",
+        "bundleIdentifier": "com.facebook.Facebook",
+        "version": "585.0.0",
+        "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Facebook.v585.0.0.+.iQFace.fixed.ipa"
       },
       {
-        "name": "Minutes",
-        "keptName": "Minutes",
-        "bundleIdentifier": "ventures.slam.minutes",
-        "version": "1.9.14",
-        "downloadURL": "https://file.ipaomtk.com/minutes-ai-meeting-note-taker/Minutes-AI-IPAOMTK.COM.ipa"
+        "name": "MyFitnessPal++",
+        "keptName": "MyFitnessPal++",
+        "bundleIdentifier": "com.myfitnesspal.mfp",
+        "version": "26.30.0",
+        "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/MyFitnessPal.v26.30.0.fixed.ipa"
+      },
+      {
+        "name": "SoundCloud++",
+        "keptName": "SoundCloud++",
+        "bundleIdentifier": "com.soundcloud.TouchApp",
+        "version": "8.85.0",
+        "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/SoundCloud.v8.85.0.+.NexaSC.fixed.ipa"
+      },
+      {
+        "name": "YouTube++",
+        "keptName": "YouTube++",
+        "bundleIdentifier": "com.google.ios.youtube",
+        "version": "21.44.4",
+        "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/YouTube.v21.44.4.+.YTPlus.v6.0b2.fixed.ipa"
+      },
+      {
+        "name": "Messenger++",
+        "keptName": "Messenger++",
+        "bundleIdentifier": "com.facebook.Messenger",
+        "version": "584.0.0",
+        "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Messenger.v584.0.0.+.Flow.ipa"
       },
       {
         "name": "MoneyCoach",
@@ -697,7 +720,7 @@
     ]
   },
   "catalogLimit": {
-    "removedApps": 1868,
+    "removedApps": 1902,
     "maxApps": 9000,
     "protectedApps": 54
   }
