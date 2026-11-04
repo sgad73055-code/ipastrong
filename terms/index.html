@@ -23,7 +23,14 @@ p{margin:0;color:var(--muted)}
 .eyebrow{color:var(--accent);font-weight:700}
 nav ul{display:flex;flex-wrap:wrap;gap:.5rem 1.4rem;padding:0;list-style:none}
 section{padding:1.2rem 1.4rem;border:1px solid var(--line);border-radius:16px;background:var(--panel);margin-block:1rem;scroll-margin-top:1rem}
-section:target{border-color:var(--accent)}
+section{background:#fff;color:#24374b;border-radius:22px;padding:clamp(1.2rem,4vw,2rem)}
+section h2{border-block-end:2px solid #344355;padding-block-end:.65rem;margin-block-end:.7rem}
+section p,.rules{color:#192333}
+.rules{list-style:none;margin:0;padding:0}
+.rules li{position:relative;padding:.65rem 1.55rem .65rem 0}
+.rules li+li{border-block-start:1px dashed #ced8e6}
+.rules li::before{content:"";position:absolute;inset-inline-start:0;inset-block-start:1.18rem;width:.6rem;height:.6rem;border:2px solid #0067ed;border-radius:50%}
+section:target{outline:2px solid var(--accent)}
 footer{border-block:1px solid var(--line) 0}
 </style>
 </head>
@@ -31,12 +38,13 @@ footer{border-block:1px solid var(--line) 0}
 <header><div class="wrap"><a class="brand" href="/"><img src="/source-icon.jpeg" width="38" height="38" alt=""><span dir="ltr">IPA STRONG</span></a><a href="/">العودة إلى المتجر</a></div></header>
 <main class="wrap">
 <div class="hero"><p class="eyebrow">دليل الاشتراك</p><h1>الشروط والأحكام</h1><p>تعرّف على طريقة التفعيل، ومدة ضمان باقتك، وكيف تطلب التعويض أو الدعم.</p></div>
-<nav aria-label="محتويات الصفحة"><ul><li><a href="#term-1">الشهادة وتفعيل الجهاز</a></li><li><a href="#term-2">مدة الشهادة والضمان</a></li><li><a href="#term-3">التعويض عند توقف الشهادة</a></li><li><a href="#term-4">مدة التفعيل والدفع</a></li><li><a href="#term-5">توافق التطبيقات والتحديثات</a></li><li><a href="#term-6">معرّف الجهاز والدعم</a></li></ul></nav>
-<section id="term-1"><h2>الشهادة وتفعيل الجهاز</h2><p>تتيح شهادة التوقيع تثبيت التطبيقات الموقّعة على الآيفون. يرتبط التفعيل بمعرّف الجهاز (UDID) الذي ترسله عند الاشتراك، ولا ينتقل تلقائيًا إلى جهاز آخر. عند تبديل جهازك، تواصل مع الدعم لمعرفة خيارات تفعيل الجهاز الجديد.</p></section>
+<nav aria-label="محتويات الصفحة"><ul><li><a href="#term-1">الشهادة وتفعيل الجهاز</a></li><li><a href="#term-2">مدة الشهادة والضمان</a></li><li><a href="#term-3">التعويض عند توقف الشهادة</a></li><li><a href="#term-4">مدة التفعيل والدفع</a></li><li><a href="#refund">الاسترداد</a></li><li><a href="#term-5">التطبيقات والخدمات</a></li><li><a href="#term-6">معرّف الجهاز والدعم</a></li></ul></nav>
+<section id="term-1"><h2>الشهادة وتفعيل الجهاز</h2><ul class="rules"><li>تتيح شهادة التوقيع تثبيت التطبيقات الموقّعة على الآيفون. يرتبط الاشتراك بمعرّف جهازك (UDID)، ولا يمكن نقله إلى جهاز آخر.</li><li>يمكن إعادة تثبيت المتجر بعد إعادة ضبط الهاتف أو تحديث iOS على الجهاز نفسه، ما دامت الشهادة سارية وكان إصدار النظام متوافقًا.</li></ul></section>
 <section id="term-2"><h2>مدة الشهادة والضمان</h2><p>مدة الشهادة سنة كاملة في جميع الباقات. تختار عند الاشتراك ضمانًا لمدة شهر أو 3 أشهر أو 6 أشهر أو 10 أشهر، حسب الباقة.</p></section>
 <section id="term-3"><h2>التعويض عند توقف الشهادة</h2><p>إذا تعطّلت الشهادة خلال مدة الضمان، تواصل معنا للتحقق من المشكلة. نعوّضك مباشرةً عند تأكيد تعطل الشهادة، ونرسل لك خطوات إعادة التفعيل. إذا انتهى الضمان، تواصل معنا لمعرفة الخيارات المتاحة.</p></section>
 <section id="term-4"><h2>مدة التفعيل والدفع</h2><p>تختلف مدة التفعيل بحسب حالة الجهاز. راجع الباقات المتاحة وتأكد من مدة التفعيل وطريقة الدفع مع المتجر قبل إتمام الاشتراك.</p></section>
-<section id="term-5"><h2>توافق التطبيقات والتحديثات</h2><p>يعتمد عمل التطبيق واحتفاظه بالبيانات عند التحديث على إصدار iOS ونسخة التطبيق وطريقة التثبيت. إذا واجهت مشكلة، أرسل للدعم اسم التطبيق وإصدار iOS وصورة الخطأ.</p></section>
+<section id="refund"><h2>الاسترداد</h2><ul class="rules"><li>بعد ربط الجهاز وتفعيل الاشتراك، لا تُسترد الرسوم إلا في الحالات التي يوجب فيها القانون الاسترداد. راجع تفاصيل الباقة قبل الدفع.</li><li>إذا توقفت الشهادة خلال مدة الضمان، يمكنك طلب التعويض وفق بند الضمان.</li></ul></section>
+<section id="term-5"><h2>التطبيقات والخدمات</h2><ul class="rules"><li>يساعدك الدعم في تثبيت التطبيقات الأساسية المتاحة وتشخيص مشكلات تشغيلها على الأجهزة والإصدارات المتوافقة.</li><li>قد تتغير ميزات النسخ المعدّلة أو تتوقف بعد التحديث. يعتمد التوافق والاحتفاظ بالبيانات على نسخة التطبيق وإصدار iOS وطريقة التثبيت.</li><li>نعمل على تحديث التطبيقات المطلوبة حسب توفّر النسخ، وقد تتغير قائمة المتجر من وقت لآخر.</li><li>قد تتطلب بعض التطبيقات رسوم تفعيل إضافية. تُوضَّح الرسوم قبل الدفع.</li><li>إذا واجهت مشكلة، أرسل للدعم اسم التطبيق وإصدار iOS وصورة الخطأ.</li></ul></section>
 <section id="term-6"><h2>معرّف الجهاز والدعم</h2><p>نطلب معرّف جهازك لتسجيله وتفعيل الشهادة. لا تشارك كلمة مرور حساب Apple أو رموز التحقق. للدعم، اتبع وسيلة التواصل المبيّنة في قناة المتجر.</p></section>
 </main>
 <footer><div class="wrap"><a href="/#packages">عرض الباقات</a><a href="https://t.me/ipastrong">قناة المتجر والدعم على تيليجرام</a></div></footer>
