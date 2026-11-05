@@ -1,15 +1,14 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 399,
-    "missing": 1
+    "ok": 400
   },
   "repaired": [],
   "unresolved": [],
-  "date": "2026-11-05T06:47:34.482184+00:00",
+  "date": "2026-11-05T19:58:22.603504+00:00",
   "inputApps": 9000,
   "outputApps": 9000,
-  "preservedApps": 107,
+  "preservedApps": 158,
   "recoveredPublishedSource": false,
   "removedApps": 17,
   "catalogPolicy": {
@@ -20,7 +19,7 @@
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 10031,
+        "apps": 10047,
         "error": null
       },
       {
@@ -80,7 +79,7 @@
       },
       {
         "source": "https://fastsign.dev/repo.json",
-        "apps": 16766,
+        "apps": 16702,
         "error": null
       },
       {
@@ -184,19 +183,47 @@
         "error": null
       }
     ],
-    "inputRecords": 42772,
-    "outputApps": 10904,
-    "rejectedRecords": 178
+    "inputRecords": 42563,
+    "outputApps": 11177,
+    "rejectedRecords": 179
   },
   "deduplication": {
-    "removedApps": 66,
+    "removedApps": 77,
     "duplicates": [
+      {
+        "name": "Instagram — 454.1.0",
+        "keptName": "Instagram (Sparkle 1.5.1 · no plugins)",
+        "bundleIdentifier": "com.burbn.instagram",
+        "version": "454.1.0",
+        "downloadURL": "https://fastsign.dev/tg-ipa/ipavault/1200-Sparkle%201.5.1%20%28IG%20454.1.0%29%20No%20Plugins.ipa"
+      },
+      {
+        "name": "Instagram — 454.0.0",
+        "keptName": "Instagram (RyukGram 1.5.1) — 454.0.0",
+        "bundleIdentifier": "com.burbn.instagram",
+        "version": "454.0.0",
+        "downloadURL": "https://fastsign.dev/tg-ipa/ipavault/1156-RyukGram%201.5.1%20%28IG%20454.0.0%29%20%5B@ipavault%5D.ipa"
+      },
+      {
+        "name": "TikTok — 47.6.0",
+        "keptName": "TikTok (RXTikTok 2.0.4)",
+        "bundleIdentifier": "com.zhiliaoapp.musically",
+        "version": "47.6.0",
+        "downloadURL": "https://fastsign.dev/tg-ipa/ipavault/1165-TikTok%2047.6.0%20%28RXTikTok%202.0.4%29%20%5B@ipavault%5D.ipa"
+      },
       {
         "name": "TikTok",
         "keptName": "TikTok — 36.7.0",
         "bundleIdentifier": "com.zhiliaoapp.musically",
         "version": "36.7.0",
         "downloadURL": "https://proxy-files.thuthuatjb.com/apps?=thuthuatjb/IPAS/releases/download/2/Tiktok_36.7.0_BHTikTokPlus_TTJB.ipa"
+      },
+      {
+        "name": "TikTok — 47.5.0",
+        "keptName": "TikTok (gtok 2.5) — 47.5.0",
+        "bundleIdentifier": "com.zhiliaoapp.musically",
+        "version": "47.5.0",
+        "downloadURL": "https://fastsign.dev/tg-ipa/ipavault/1087-TikTok%2047.5.0%20%28gtok%202.5%29%20%5B@ipavault%5D.ipa"
       },
       {
         "name": "BHTikTokPlus — 46.2.0",
@@ -206,6 +233,13 @@
         "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/29-07-2026/BHTikTokPlus_46.2.0_Plus_@thisismanpreets_apptesters.org.ipa"
       },
       {
+        "name": "TikTok — 42.9.0",
+        "keptName": "TikTok (VibeTok, AutoCacheDelete)",
+        "bundleIdentifier": "com.zhiliaoapp.musically",
+        "version": "42.9.0",
+        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-12-2025/TikTok_42.9.0_Premium_@thisismanpreets_apptesters.org.ipa"
+      },
+      {
         "name": "BHTikTokPlus — 43.9.0",
         "keptName": "BHTikTokPlus — 43.9.0",
         "bundleIdentifier": "com.zhiliaoapp.musically",
@@ -213,11 +247,53 @@
         "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-02-2026/BHTikTokPlus_43.9.0_Plus_@thisismanpreets_apptesters.org.ipa"
       },
       {
-        "name": "X++",
-        "keptName": "X++",
-        "bundleIdentifier": "com.atebits.Tweetie2",
-        "version": "12.40.1",
-        "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/X.v12.40.1.+.NFB.v7.3.1.ipa"
+        "name": "YTKACE (1.1.5)",
+        "keptName": "YouTube",
+        "bundleIdentifier": "com.google.ios.youtube.ytkace.1.1.5",
+        "version": "21.44.4",
+        "downloadURL": "https://repo.ballermc.com/tubevault/YTKACE_1.1.5_YouTube_21.44.4.ipa"
+      },
+      {
+        "name": "Nagram",
+        "keptName": "Nagram (iQTele 1.5)",
+        "bundleIdentifier": "xyz.nextalone.nagram",
+        "version": "13.1.1",
+        "downloadURL": "https://fastsign.dev/tg-ipa/ipavault/1149-Nagram%2013.1.1%20TF%20%28iQTele%201.5%29%20%5B@ipavault%5D.ipa"
+      },
+      {
+        "name": "Telegram",
+        "keptName": "Telegram (Lead 2.0)",
+        "bundleIdentifier": "ph.telegra.Telegraph",
+        "version": "13.1.2",
+        "downloadURL": "https://fastsign.dev/tg-ipa/ipavault/1143-Telegram%2013.1.2%20%28Lead%202.0%29%20%5B@ipavault%5D.ipa"
+      },
+      {
+        "name": "Turrit",
+        "keptName": "Turrit (iQTele · TF)",
+        "bundleIdentifier": "com.seastar.turrit",
+        "version": "1.5.8",
+        "downloadURL": "https://fastsign.dev/tg-ipa/ipavault/1145-Turrit%201.5.8%20TF%20%28iQTele%201.5%29%20%5B@ipavault%5D.ipa"
+      },
+      {
+        "name": "YouTube Music",
+        "keptName": "YouTube Music (YouMusicPiP)",
+        "bundleIdentifier": "com.google.ios.youtubemusic",
+        "version": "9.44.2",
+        "downloadURL": "https://fastsign.dev/tg-ipa/ipavault/1141-YTMUltimate+%209.44.2%20%5B@ipavault%5D.ipa"
+      },
+      {
+        "name": "EeveeSpotifyReincarnated (v7.0.0 - Patched) IPAVault",
+        "keptName": "Spotify",
+        "bundleIdentifier": "com.spotify.client.ios.eeveespotifyreincarnated.7.0.0.patched.9.1.94.ipavault",
+        "version": "9.1.94",
+        "downloadURL": "https://repo.ballermc.com/tubevault/Spotify%209.1.94%20%28EeveeSpotify%207.0.0%29%20%5B@ipavault%5D.ipa"
+      },
+      {
+        "name": "!Camera",
+        "keptName": "!Camera (v1.62)",
+        "bundleIdentifier": "com.andyworks.camera",
+        "version": "1.61",
+        "downloadURL": "https://fastsign.dev/tg-ipa/blatants/12974-Not_Boring_Camera_v1_62_Subscription_Unlocked_blatant_Patched.ipa"
       },
       {
         "name": "foriOS",
@@ -656,8 +732,8 @@
     ]
   },
   "catalogLimit": {
-    "removedApps": 1928,
+    "removedApps": 2241,
     "maxApps": 9000,
-    "protectedApps": 56
+    "protectedApps": 60
   }
 }
