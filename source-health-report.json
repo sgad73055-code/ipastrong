@@ -1,15 +1,15 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 398,
-    "missing": 2
+    "ok": 395,
+    "missing": 5
   },
   "repaired": [],
   "unresolved": [],
-  "date": "2026-11-06T06:48:42.967057+00:00",
+  "date": "2026-11-06T19:25:44.179631+00:00",
   "inputApps": 9000,
   "outputApps": 9000,
-  "preservedApps": 161,
+  "preservedApps": 157,
   "recoveredPublishedSource": false,
   "removedApps": 18,
   "catalogPolicy": {
@@ -20,12 +20,12 @@
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 10056,
+        "apps": 10061,
         "error": null
       },
       {
         "source": "https://ipa.cypwn.xyz/cypwn.json",
-        "apps": 209,
+        "apps": 210,
         "error": null
       },
       {
@@ -180,16 +180,16 @@
       },
       {
         "source": "https://raw.githubusercontent.com/927tx/IPA-Vault/refs/heads/main/ipavaultsource.json",
-        "apps": 77,
+        "apps": 78,
         "error": null
       }
     ],
-    "inputRecords": 43096,
-    "outputApps": 11463,
+    "inputRecords": 42826,
+    "outputApps": 11428,
     "rejectedRecords": 179
   },
   "deduplication": {
-    "removedApps": 62,
+    "removedApps": 61,
     "duplicates": [
       {
         "name": "TikTok — 36.7.0",
@@ -570,13 +570,6 @@
         "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-10-2025/BEAT_1.22.0_Pro_%40thisismanpreets_apptesters.org.ipa"
       },
       {
-        "name": "PictureThis",
-        "keptName": "PictureThis",
-        "bundleIdentifier": "cn.danatech.xingseus",
-        "version": "5.34.0",
-        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-10-2025/PictureThis_5.34.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa"
-      },
-      {
         "name": "Wallpapers",
         "keptName": "Wallpapers",
         "bundleIdentifier": "com.apalonapps.wallpaperspys",
@@ -628,8 +621,8 @@
     ]
   },
   "catalogLimit": {
-    "removedApps": 2544,
+    "removedApps": 2506,
     "maxApps": 9000,
-    "protectedApps": 60
+    "protectedApps": 64
   }
 }
