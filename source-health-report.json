@@ -1,14 +1,15 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 400
+    "ok": 373,
+    "missing": 27
   },
   "repaired": [],
   "unresolved": [],
-  "date": "2026-11-07T05:59:28.110498+00:00",
+  "date": "2026-11-07T13:02:28.809246+00:00",
   "inputApps": 9000,
   "outputApps": 9000,
-  "preservedApps": 188,
+  "preservedApps": 180,
   "recoveredPublishedSource": false,
   "removedApps": 17,
   "catalogPolicy": {
@@ -19,12 +20,12 @@
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 10073,
+        "apps": 10077,
         "error": null
       },
       {
         "source": "https://ipa.cypwn.xyz/cypwn.json",
-        "apps": 210,
+        "apps": 209,
         "error": null
       },
       {
@@ -183,12 +184,12 @@
         "error": null
       }
     ],
-    "inputRecords": 42303,
+    "inputRecords": 42306,
     "outputApps": 11162,
     "rejectedRecords": 180
   },
   "deduplication": {
-    "removedApps": 67,
+    "removedApps": 59,
     "duplicates": [
       {
         "name": "TikTok",
@@ -210,55 +211,6 @@
         "bundleIdentifier": "com.zhiliaoapp.musically",
         "version": "43.9.0",
         "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-02-2026/BHTikTokPlus_43.9.0_Plus_@thisismanpreets_apptesters.org.ipa"
-      },
-      {
-        "name": "BuildBox",
-        "keptName": "BuildBox",
-        "bundleIdentifier": "com.mikevillarroel.buildbox",
-        "version": "2.1.6",
-        "downloadURL": "https://github.com/mikevillarroel/buildbox-ios/releases/download/v2.1.6/BuildBox-2.1.6.ipa"
-      },
-      {
-        "name": "Reddit++",
-        "keptName": "Reddit++",
-        "bundleIdentifier": "com.reddit.Reddit",
-        "version": "2026.44.1",
-        "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Reddit.v2026.44.1.+.RedditFilter.ipa"
-      },
-      {
-        "name": "Nagram (iQTele 1.5)",
-        "keptName": "Nagram (iQTele 1.5 · TF)",
-        "bundleIdentifier": "xyz.nextalone.nagram",
-        "version": "13.1.1",
-        "downloadURL": "https://fastsign.dev/tg-ipa/ipavault/1149-Nagram%2013.1.1%20TF%20%28iQTele%201.5%29%20%5B@ipavault%5D.ipa"
-      },
-      {
-        "name": "Nagram (Lead 2.0)",
-        "keptName": "Nagram (Lead 2.0 · TF)",
-        "bundleIdentifier": "xyz.nextalone.nagram",
-        "version": "13.1.1",
-        "downloadURL": "https://fastsign.dev/tg-ipa/ipavault/1150-Nagram%2013.1.1%20TF%20%28Lead%202.0%29%20%5B@ipavault%5D.ipa"
-      },
-      {
-        "name": "Nagram (TGExtra 1.7.10)",
-        "keptName": "Nagram (TGExtra 1.7.10 · TF)",
-        "bundleIdentifier": "xyz.nextalone.nagram",
-        "version": "13.1.1",
-        "downloadURL": "https://fastsign.dev/tg-ipa/ipavault/1151-Nagram%2013.1.1%20TF%20%28TGExtra%201.7.10%29%20%5B@ipavault%5D.ipa"
-      },
-      {
-        "name": "MyFitnessPal (v26.43.0)",
-        "keptName": "MyFitnessPal",
-        "bundleIdentifier": "com.myfitnesspal.mfp",
-        "version": "26.42.0",
-        "downloadURL": "https://fastsign.dev/tg-ipa/blatants/13123-MyFitnessPal_Calorie_Counter_v26_43_0_Subscription_Unlocked_blatant.ipa"
-      },
-      {
-        "name": "!Camera (v1.62)",
-        "keptName": "!Camera",
-        "bundleIdentifier": "com.andyworks.camera",
-        "version": "1.61",
-        "downloadURL": "https://fastsign.dev/tg-ipa/blatants/12974-Not_Boring_Camera_v1_62_Subscription_Unlocked_blatant_Patched.ipa"
       },
       {
         "name": "foriOS",
@@ -651,13 +603,6 @@
         "bundleIdentifier": "com.atebits.Tweetie2",
         "version": "11.12.1",
         "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-08-2025/X_11.12.1_Unlocked_All_Functions_%40thisismanpreets_apptesters.org.ipa"
-      },
-      {
-        "name": "TrollInstallerX",
-        "keptName": "TrollInstallerX",
-        "bundleIdentifier": "com.Alfie.TrollInstallerX",
-        "version": "1.0.3",
-        "downloadURL": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.3/TrollInstallerX.ipa"
       }
     ]
   },
