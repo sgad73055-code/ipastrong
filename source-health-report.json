@@ -1,16 +1,16 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 373,
-    "missing": 26,
-    "restricted": 1
+    "ok": 382,
+    "missing": 16,
+    "temporary": 2
   },
   "repaired": [],
   "unresolved": [],
-  "date": "2026-11-07T21:52:43.597811+00:00",
+  "date": "2026-11-08T06:02:45.952489+00:00",
   "inputApps": 9000,
   "outputApps": 9000,
-  "preservedApps": 180,
+  "preservedApps": 183,
   "recoveredPublishedSource": false,
   "removedApps": 17,
   "catalogPolicy": {
@@ -26,7 +26,7 @@
       },
       {
         "source": "https://ipa.cypwn.xyz/cypwn.json",
-        "apps": 210,
+        "apps": 209,
         "error": null
       },
       {
@@ -81,7 +81,7 @@
       },
       {
         "source": "https://fastsign.dev/repo.json",
-        "apps": 16766,
+        "apps": 16945,
         "error": null
       },
       {
@@ -185,13 +185,20 @@
         "error": null
       }
     ],
-    "inputRecords": 42311,
-    "outputApps": 11166,
+    "inputRecords": 42463,
+    "outputApps": 11160,
     "rejectedRecords": 180
   },
   "deduplication": {
-    "removedApps": 59,
+    "removedApps": 61,
     "duplicates": [
+      {
+        "name": "Instagram++",
+        "keptName": "Instagram++",
+        "bundleIdentifier": "com.burbn.instagram",
+        "version": "448.0.0",
+        "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Instagram.v448.0.0.+.regram.6.3.sl.patched.fixed.ipa"
+      },
       {
         "name": "TikTok",
         "keptName": "TikTok — 36.7.0",
@@ -214,11 +221,25 @@
         "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-02-2026/BHTikTokPlus_43.9.0_Plus_@thisismanpreets_apptesters.org.ipa"
       },
       {
-        "name": "foriOS",
-        "keptName": "foriOS",
-        "bundleIdentifier": "com.tapinfinity.HdjcXcode7",
-        "version": "13.2",
-        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-10-2026/foriOS_13.2_Pro_@thisismanpreets_apptesters.org.ipa"
+        "name": "BuildBox",
+        "keptName": "BuildBox",
+        "bundleIdentifier": "com.mikevillarroel.buildbox",
+        "version": "2.1.7",
+        "downloadURL": "https://github.com/mikevillarroel/buildbox-ios/releases/download/v2.1.7/BuildBox-2.1.7.ipa"
+      },
+      {
+        "name": "Reddit++",
+        "keptName": "Reddit++",
+        "bundleIdentifier": "com.reddit.Reddit",
+        "version": "2026.44.1",
+        "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Reddit.v2026.44.1.+.RedditFilter.fixed.ipa"
+      },
+      {
+        "name": "X++",
+        "keptName": "X++",
+        "bundleIdentifier": "com.atebits.Tweetie2",
+        "version": "12.41",
+        "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/X.v12.41.+.NFB.v7.3.1.fixed.ipa"
       },
       {
         "name": "Caliber",
@@ -226,13 +247,6 @@
         "bundleIdentifier": "com.caliberfitness.app",
         "version": "5.14.0",
         "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-07-2026/Caliber_5.14.0_Premium_%40thisismanpreets_apptesters.org.ipa"
-      },
-      {
-        "name": "VideoStudio",
-        "keptName": "VideoStudio",
-        "bundleIdentifier": "videoeditor.app",
-        "version": "3.21.4",
-        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-07-2026/VideoStudio_3.21.4_Subscription_Unlocked_@thisismanpreets_apptesters.org.ipa"
       },
       {
         "name": "Messenger",
@@ -608,8 +622,8 @@
     ]
   },
   "catalogLimit": {
-    "removedApps": 2270,
+    "removedApps": 2265,
     "maxApps": 9000,
-    "protectedApps": 67
+    "protectedApps": 68
   }
 }
