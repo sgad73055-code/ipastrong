@@ -1,16 +1,15 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 382,
-    "missing": 16,
-    "temporary": 2
+    "ok": 366,
+    "missing": 34
   },
   "repaired": [],
   "unresolved": [],
-  "date": "2026-11-08T06:02:45.952489+00:00",
+  "date": "2026-11-08T13:25:57.244650+00:00",
   "inputApps": 9000,
   "outputApps": 9000,
-  "preservedApps": 183,
+  "preservedApps": 179,
   "recoveredPublishedSource": false,
   "removedApps": 17,
   "catalogPolicy": {
@@ -21,7 +20,7 @@
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 10081,
+        "apps": 10084,
         "error": null
       },
       {
@@ -185,20 +184,13 @@
         "error": null
       }
     ],
-    "inputRecords": 42463,
-    "outputApps": 11160,
-    "rejectedRecords": 180
+    "inputRecords": 42442,
+    "outputApps": 11136,
+    "rejectedRecords": 179
   },
   "deduplication": {
-    "removedApps": 61,
+    "removedApps": 57,
     "duplicates": [
-      {
-        "name": "Instagram++",
-        "keptName": "Instagram++",
-        "bundleIdentifier": "com.burbn.instagram",
-        "version": "448.0.0",
-        "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Instagram.v448.0.0.+.regram.6.3.sl.patched.fixed.ipa"
-      },
       {
         "name": "TikTok",
         "keptName": "TikTok — 36.7.0",
@@ -219,27 +211,6 @@
         "bundleIdentifier": "com.zhiliaoapp.musically",
         "version": "43.9.0",
         "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-02-2026/BHTikTokPlus_43.9.0_Plus_@thisismanpreets_apptesters.org.ipa"
-      },
-      {
-        "name": "BuildBox",
-        "keptName": "BuildBox",
-        "bundleIdentifier": "com.mikevillarroel.buildbox",
-        "version": "2.1.7",
-        "downloadURL": "https://github.com/mikevillarroel/buildbox-ios/releases/download/v2.1.7/BuildBox-2.1.7.ipa"
-      },
-      {
-        "name": "Reddit++",
-        "keptName": "Reddit++",
-        "bundleIdentifier": "com.reddit.Reddit",
-        "version": "2026.44.1",
-        "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Reddit.v2026.44.1.+.RedditFilter.fixed.ipa"
-      },
-      {
-        "name": "X++",
-        "keptName": "X++",
-        "bundleIdentifier": "com.atebits.Tweetie2",
-        "version": "12.41",
-        "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/X.v12.41.+.NFB.v7.3.1.fixed.ipa"
       },
       {
         "name": "Caliber",
@@ -622,7 +593,7 @@
     ]
   },
   "catalogLimit": {
-    "removedApps": 2265,
+    "removedApps": 2241,
     "maxApps": 9000,
     "protectedApps": 68
   }
