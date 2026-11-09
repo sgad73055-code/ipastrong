@@ -1,13 +1,13 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 351,
-    "temporary": 17,
-    "missing": 32
+    "ok": 383,
+    "restricted": 1,
+    "missing": 16
   },
   "repaired": [],
   "unresolved": [],
-  "date": "2026-11-09T06:32:37.375125+00:00",
+  "date": "2026-11-09T22:23:20.561834+00:00",
   "inputApps": 9000,
   "outputApps": 9000,
   "preservedApps": 186,
@@ -21,7 +21,7 @@
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 10088,
+        "apps": 10117,
         "error": null
       },
       {
@@ -121,7 +121,7 @@
       },
       {
         "source": "https://raw.githubusercontent.com/driftywinds/driftywinds.github.io/master/AltStore/apps.json",
-        "apps": 8,
+        "apps": 3,
         "error": null
       },
       {
@@ -185,12 +185,12 @@
         "error": null
       }
     ],
-    "inputRecords": 42393,
-    "outputApps": 11104,
+    "inputRecords": 42394,
+    "outputApps": 11084,
     "rejectedRecords": 179
   },
   "deduplication": {
-    "removedApps": 57,
+    "removedApps": 59,
     "duplicates": [
       {
         "name": "TikTok",
@@ -219,6 +219,20 @@
         "bundleIdentifier": "com.caliberfitness.app",
         "version": "5.14.0",
         "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-07-2026/Caliber_5.14.0_Premium_%40thisismanpreets_apptesters.org.ipa"
+      },
+      {
+        "name": "Feather",
+        "keptName": "Feather",
+        "bundleIdentifier": "kh.crysalis.feather",
+        "version": "2.4.0",
+        "downloadURL": "https://github.com/khcrysalis/Feather/releases/download/v2.4.0/Feather.ipa"
+      },
+      {
+        "name": "Twitter BHX",
+        "keptName": "Twitter BHX",
+        "bundleIdentifier": "com.atebits.Tweetie2",
+        "version": "11.54",
+        "downloadURL": "https://github.com/driftywinds/BHX/releases/download/v11.54/BHTwitter-sideloaded_4.4_11.54.ipa"
       },
       {
         "name": "Messenger",
@@ -594,7 +608,7 @@
     ]
   },
   "catalogLimit": {
-    "removedApps": 2216,
+    "removedApps": 2194,
     "maxApps": 9000,
     "protectedApps": 68
   }
