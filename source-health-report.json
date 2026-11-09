@@ -1,17 +1,16 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 373,
-    "missing": 25,
-    "restricted": 1,
-    "temporary": 1
+    "ok": 351,
+    "temporary": 17,
+    "missing": 32
   },
   "repaired": [],
   "unresolved": [],
-  "date": "2026-11-08T22:07:02.087227+00:00",
+  "date": "2026-11-09T06:32:37.375125+00:00",
   "inputApps": 9000,
   "outputApps": 9000,
-  "preservedApps": 183,
+  "preservedApps": 186,
   "recoveredPublishedSource": false,
   "removedApps": 17,
   "catalogPolicy": {
@@ -22,7 +21,7 @@
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 10085,
+        "apps": 10088,
         "error": null
       },
       {
@@ -82,7 +81,7 @@
       },
       {
         "source": "https://fastsign.dev/repo.json",
-        "apps": 16945,
+        "apps": 16937,
         "error": null
       },
       {
@@ -186,8 +185,8 @@
         "error": null
       }
     ],
-    "inputRecords": 42432,
-    "outputApps": 11125,
+    "inputRecords": 42393,
+    "outputApps": 11104,
     "rejectedRecords": 179
   },
   "deduplication": {
@@ -595,7 +594,7 @@
     ]
   },
   "catalogLimit": {
-    "removedApps": 2234,
+    "removedApps": 2216,
     "maxApps": 9000,
     "protectedApps": 68
   }
