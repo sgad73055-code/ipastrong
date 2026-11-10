@@ -88,8 +88,8 @@ def execute(root, action, target='', updates=None, dry_run=False, clear_descript
             raise ValueError('Add requires a direct HTTPS IPA URL in url.')
         old_url = original['downloadURL'] if original else updates['downloadURL']
         prior = next((r for r in state['rules'] if (owner.app_id(original) in r['keys'] if original else old_url in r['urls'])), None)
-        if action == 'add' and (any(a['downloadURL'] == old_url for a in source['apps']) or prior):
-            raise ValueError('URL already exists or has an owner rule; use edit or restore.')
+        if action == 'add' and (any(a['downloadURL'] == old_url for a in source['apps']) or (prior and not prior.get('deleted'))):
+            raise ValueError('URL already exists or has an active owner rule; use edit or restore.')
         if action == 'delete':
             urls = list(dict.fromkeys((prior['urls'] if prior else []) + [old_url] + [v['downloadURL'] for v in original.get('versions', [])]))
             rule = {'keys': list(dict.fromkeys((prior['keys'] if prior else []) + [owner.app_id(original)])), 'urls': urls, 'deleted': True, 'seed': copy.deepcopy(prior.get('seed', original) if prior else original)}

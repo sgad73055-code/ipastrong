@@ -99,6 +99,15 @@ class ManagementTests(unittest.TestCase):
         self.assertEqual(added['iconURL'], '')
         self.assertEqual(self.read()['apps'][1:], self.source['apps'])
 
+    def test_add_can_reimport_url_after_explicit_delete(self):
+        manager.execute(self.root, 'delete', 'Test')
+        self.assertEqual(len(self.read()['apps']), 1)
+        with patch('urllib.request.urlopen', return_value=self.response(self.ipa('com.test'))):
+            manager.execute(self.root, 'add', updates={'downloadURL': 'https://example.org/a.ipa', 'name': 'Re-added'})
+        self.assertEqual(len(self.read()['apps']), 2)
+        self.assertEqual(self.read()['apps'][0]['name'], 'Re-added')
+        self.assertFalse(any('https://example.org/a.ipa' in rule['urls'] and rule.get('deleted') for rule in owner.load(self.root / 'catalog-owner.json')['rules']))
+
     def test_add_direct_ipa_and_idempotent_owner_overlay(self):
         with patch('urllib.request.urlopen', return_value=self.response(self.ipa())):
             manager.execute(self.root, 'add', updates={'downloadURL': 'https://example.org/new.ipa', 'name': 'Added'})
