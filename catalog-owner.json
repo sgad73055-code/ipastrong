@@ -71,6 +71,41 @@
       "keys": [
         "3bf500a3809ef1f6"
       ]
+    },
+    {
+      "keys": [
+        "2539a2053f1911c0"
+      ],
+      "urls": [
+        "https://github.com/sgad73055-code/ipastrong/releases/download/rave/Rave.ipa"
+      ],
+      "deleted": true,
+      "seed": {
+        "name": "rave ipastrong",
+        "bundleIdentifier": "io.rave",
+        "developerName": "IPA Strong",
+        "version": "9.0",
+        "versionDate": "2026-11-10T17:03:01.169537+00:00",
+        "downloadURL": "https://github.com/sgad73055-code/ipastrong/releases/download/rave/Rave.ipa",
+        "size": 161994733,
+        "iconURL": "https://pin.it/1jmmcBIn5",
+        "localizedDescription": "Rave 🍿 تطبيق محذوف من الاب ستور ✅ المميزات؟ تم تحديثة الى اخر اصدار تم اصلاح اللائحه المعكوسة للغه العربية تمت ازالة الاعلانات من التطبيق",
+        "versions": [
+          {
+            "version": "9.0",
+            "date": "2026-11-10T17:03:01.169537+00:00",
+            "downloadURL": "https://github.com/sgad73055-code/ipastrong/releases/download/rave/Rave.ipa",
+            "size": 161994733,
+            "sha256": "23d2d5329a6c03619132c75dcea37bd39c64dfeb8fbde2601a821dffca54d252",
+            "buildVersion": "2897",
+            "minOSVersion": "18.6"
+          }
+        ],
+        "sha256": "23d2d5329a6c03619132c75dcea37bd39c64dfeb8fbde2601a821dffca54d252",
+        "_sourceURL": "local",
+        "_addedFromLink": true,
+        "minOSVersion": "18.6"
+      }
     }
   ]
 }
