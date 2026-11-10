@@ -7,6 +7,7 @@ import json
 import os
 from pathlib import Path
 import plistlib
+import re
 import tempfile
 import time
 import unittest
@@ -115,6 +116,61 @@ def extract_icon(path, root, metadata, sha256):
             return 'https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/assets/app-icons/' + destination.name
     return ''
 
+
+def extract_release_icon(url, root, sha256):
+    """Use an image embedded in the matching GitHub Release description, if present."""
+    parsed = urllib.parse.urlsplit(url)
+    match = re.match(r'^/([^/]+)/([^/]+)/releases/download/([^/]+)/', parsed.path)
+    if parsed.scheme != 'https' or parsed.hostname != 'github.com' or not match:
+        return ''
+    owner, repository, tag = match.groups()
+    api = 'https://api.github.com/repos/{}/{}/releases/tags/{}'.format(
+        owner, repository, urllib.parse.quote(urllib.parse.unquote(tag), safe=''))
+    try:
+        request = urllib.request.Request(api, headers={
+            'User-Agent': 'IPA-Strong-Importer/1.0',
+            'Accept': 'application/vnd.github+json'})
+        with urllib.request.urlopen(request, timeout=15) as response:
+            raw = response.read(1024 * 1024 + 1)
+        if len(raw) > 1024 * 1024:
+            return ''
+        release = json.loads(raw)
+        body = release.get('body') or ''
+        candidates = re.findall(
+            r'''(?:src|href)=["'](https://github\\.com/user-attachments/assets/[A-Za-z0-9-]+)["']''',
+            body, flags=re.I)
+        candidates += re.findall(
+            r'''!\\[[^\\]]*\\]\\((https://github\\.com/user-attachments/assets/[^\\s)]+)''',
+            body, flags=re.I)
+        image_url = next((x for x in candidates
+                          if urllib.parse.urlsplit(x).hostname == 'github.com'), '')
+        if not image_url:
+            return ''
+        image_request = urllib.request.Request(image_url, headers={
+            'User-Agent': 'IPA-Strong-Importer/1.0'})
+        with urllib.request.urlopen(image_request, timeout=20) as response:
+            data = response.read(4 * 1024 * 1024 + 1)
+            content_type = response.headers.get('Content-Type', '').lower()
+        if len(data) > 4 * 1024 * 1024:
+            return ''
+        if data.startswith(bytes.fromhex('89504e470d0a1a0a')):
+            extension = 'png'
+        elif data.startswith(b'\\xff\\xd8\\xff'):
+            extension = 'jpg'
+        else:
+            return ''
+        if content_type and not (content_type.startswith('image/png') if extension == 'png'
+                                 else content_type.startswith('image/jpeg')):
+            return ''
+        name = hashlib.sha256((sha256 + image_url).encode()).hexdigest()[:24] + '.' + extension
+        destination = root / 'assets' / 'app-icons' / name
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        destination.write_bytes(data)
+        return 'https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/assets/app-icons/' + name
+    except (OSError, ValueError, KeyError, TypeError, json.JSONDecodeError):
+        # A missing or inaccessible release cover must not block a valid IPA import.
+        return ''
+
 def add(source, metadata, url, size, sha256, name='', description='', icon='', date=None):
     check_url(url)
     if icon: check_url(icon)
@@ -124,7 +180,7 @@ def add(source, metadata, url, size, sha256, name='', description='', icon='', d
     existing = next((a for a in result['apps'] if a.get('downloadURL') == url and a.get('_sourceURL') == 'local'), None)
     image = icon or (existing or {}).get('iconURL')
     if not image:
-        image = next((a.get('iconURL') for a in result['apps'] if str(a.get('bundleIdentifier','')).lower() == metadata['bundle'].lower() and a.get('iconURL')),result.get('iconURL',''))
+        image = next((a.get('iconURL') for a in result['apps'] if str(a.get('bundleIdentifier','')).lower() == metadata['bundle'].lower() and a.get('iconURL')), '')
     display = name.strip() or (existing or {}).get('name') or metadata['name']
     version = {'version':metadata['version'],'date':date,'downloadURL':url,'size':size,'sha256':sha256}
     if metadata['build']: version['buildVersion']=metadata['build']
@@ -248,7 +304,7 @@ def main():
         metadata=inspect(path)
         icon=os.environ.get('APP_ICON','').strip()
         if not icon:
-            icon=extract_icon(path,root,metadata,sha)
+            icon=extract_release_icon(url,root,sha) or extract_icon(path,root,metadata,sha)
         result=add(source,metadata,url,size,sha,os.environ.get('APP_NAME',''),os.environ.get('APP_DESCRIPTION',''),icon)
         source_guard.publish(root,old,result)
     print(json.dumps({'added':metadata['name'],'version':metadata['version'],'bytes':size,'apps':len(result['apps'])},ensure_ascii=False))

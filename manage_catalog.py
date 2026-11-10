@@ -104,9 +104,10 @@ def execute(root, action, target='', updates=None, dry_run=False, clear_descript
                     path = Path(d) / 'app.ipa'
                     size, digest = importer.download(new_url, path)
                     metadata = importer.inspect(path)
+                    icon = importer.extract_release_icon(new_url, root, digest) or importer.extract_icon(path, root, metadata, digest)
                 if original and metadata['bundle'].casefold() != original['bundleIdentifier'].casefold():
                     raise ValueError('Replacement IPA has a different bundle identifier; add it separately.')
-                imported = importer.add(importer.fixture(), metadata, new_url, size, digest)['apps'][0]
+                imported = importer.add(importer.fixture(), metadata, new_url, size, digest, icon=icon)['apps'][0]
                 patch.update({k: v for k, v in imported.items() if k not in ('name', 'iconURL', 'localizedDescription', '_sourceURL', '_addedFromLink')})
                 if action == 'add':
                     patch.update(imported)

@@ -92,6 +92,13 @@ class ManagementTests(unittest.TestCase):
                 'CFBundleIdentifier': bundle, 'CFBundleShortVersionString': '2', 'CFBundleDisplayName': 'New'}))
         return body.getvalue()
 
+    def test_add_does_not_use_global_source_icon_as_app_icon(self):
+        with patch('urllib.request.urlopen', return_value=self.response(self.ipa())):
+            manager.execute(self.root, 'add', updates={'downloadURL': 'https://example.org/new.ipa'})
+        added = self.read()['apps'][0]
+        self.assertEqual(added['iconURL'], '')
+        self.assertEqual(self.read()['apps'][1:], self.source['apps'])
+
     def test_add_direct_ipa_and_idempotent_owner_overlay(self):
         with patch('urllib.request.urlopen', return_value=self.response(self.ipa())):
             manager.execute(self.root, 'add', updates={'downloadURL': 'https://example.org/new.ipa', 'name': 'Added'})
