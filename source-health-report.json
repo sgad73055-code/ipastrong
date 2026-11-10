@@ -1,15 +1,15 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 342,
-    "missing": 58
+    "ok": 392,
+    "missing": 8
   },
   "repaired": [],
   "unresolved": [],
-  "date": "2026-11-10T07:20:21.700661+00:00",
+  "date": "2026-11-10T19:46:25.860710+00:00",
   "inputApps": 9000,
   "outputApps": 9000,
-  "preservedApps": 198,
+  "preservedApps": 202,
   "recoveredPublishedSource": false,
   "removedApps": 17,
   "catalogPolicy": {
@@ -20,7 +20,7 @@
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 10120,
+        "apps": 10140,
         "error": null
       },
       {
@@ -70,7 +70,7 @@
       },
       {
         "source": "https://ipa.thuthuatjb.com/repo",
-        "apps": 9371,
+        "apps": 10175,
         "error": null
       },
       {
@@ -184,9 +184,9 @@
         "error": null
       }
     ],
-    "inputRecords": 42424,
-    "outputApps": 11059,
-    "rejectedRecords": 179
+    "inputRecords": 43237,
+    "outputApps": 11203,
+    "rejectedRecords": 194
   },
   "deduplication": {
     "removedApps": 59,
@@ -213,18 +213,18 @@
         "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-02-2026/BHTikTokPlus_43.9.0_Plus_@thisismanpreets_apptesters.org.ipa"
       },
       {
-        "name": "SoundCloud++",
-        "keptName": "SoundCloud++",
-        "bundleIdentifier": "com.soundcloud.TouchApp",
-        "version": "8.86.0",
-        "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/SoundCloud.v8.86.0.+.NexaSC-b5.ipa"
+        "name": "TikTok — 45.8.0",
+        "keptName": "TikTok — 45.8.0",
+        "bundleIdentifier": "com.zhiliaoapp.musically",
+        "version": "45.8.0",
+        "downloadURL": "https://proxy-files.thuthuatjb.com/apps?=apptesters-org/AppTesters_Repo/releases/download/29-06-2026/TikTok_45.8.0_Premium_%40thisismanpreets_apptesters.org.ipa"
       },
       {
-        "name": "X++",
-        "keptName": "X++",
-        "bundleIdentifier": "com.atebits.Tweetie2",
-        "version": "12.42.1",
-        "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/X.v12.42.1.+.NFB.v7.3.1.ipa"
+        "name": "BHTikTokPlus — 45.0.0",
+        "keptName": "BHTikTokPlus — 45.0.0",
+        "bundleIdentifier": "com.zhiliaoapp.musically",
+        "version": "45.0.0",
+        "downloadURL": "https://proxy-files.thuthuatjb.com/apps?=apptesters-org/AppTesters_Repo/releases/download/06-05-2026/BHTikTokPlus_45.0.0_Plus_%40thisismanpreets_apptesters.org.ipa"
       },
       {
         "name": "Caliber",
@@ -607,8 +607,8 @@
     ]
   },
   "catalogLimit": {
-    "removedApps": 2181,
+    "removedApps": 2329,
     "maxApps": 9000,
-    "protectedApps": 68
+    "protectedApps": 70
   }
 }
