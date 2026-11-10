@@ -1,16 +1,15 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 383,
-    "restricted": 1,
-    "missing": 16
+    "ok": 342,
+    "missing": 58
   },
   "repaired": [],
   "unresolved": [],
-  "date": "2026-11-09T22:23:20.561834+00:00",
+  "date": "2026-11-10T07:20:21.700661+00:00",
   "inputApps": 9000,
   "outputApps": 9000,
-  "preservedApps": 186,
+  "preservedApps": 198,
   "recoveredPublishedSource": false,
   "removedApps": 17,
   "catalogPolicy": {
@@ -21,12 +20,12 @@
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 10117,
+        "apps": 10120,
         "error": null
       },
       {
         "source": "https://ipa.cypwn.xyz/cypwn.json",
-        "apps": 209,
+        "apps": 210,
         "error": null
       },
       {
@@ -81,7 +80,7 @@
       },
       {
         "source": "https://fastsign.dev/repo.json",
-        "apps": 16937,
+        "apps": 16994,
         "error": null
       },
       {
@@ -185,8 +184,8 @@
         "error": null
       }
     ],
-    "inputRecords": 42394,
-    "outputApps": 11084,
+    "inputRecords": 42424,
+    "outputApps": 11059,
     "rejectedRecords": 179
   },
   "deduplication": {
@@ -214,25 +213,25 @@
         "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-02-2026/BHTikTokPlus_43.9.0_Plus_@thisismanpreets_apptesters.org.ipa"
       },
       {
+        "name": "SoundCloud++",
+        "keptName": "SoundCloud++",
+        "bundleIdentifier": "com.soundcloud.TouchApp",
+        "version": "8.86.0",
+        "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/SoundCloud.v8.86.0.+.NexaSC-b5.ipa"
+      },
+      {
+        "name": "X++",
+        "keptName": "X++",
+        "bundleIdentifier": "com.atebits.Tweetie2",
+        "version": "12.42.1",
+        "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/X.v12.42.1.+.NFB.v7.3.1.ipa"
+      },
+      {
         "name": "Caliber",
         "keptName": "Caliber",
         "bundleIdentifier": "com.caliberfitness.app",
         "version": "5.14.0",
         "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-07-2026/Caliber_5.14.0_Premium_%40thisismanpreets_apptesters.org.ipa"
-      },
-      {
-        "name": "Feather",
-        "keptName": "Feather",
-        "bundleIdentifier": "kh.crysalis.feather",
-        "version": "2.4.0",
-        "downloadURL": "https://github.com/khcrysalis/Feather/releases/download/v2.4.0/Feather.ipa"
-      },
-      {
-        "name": "Twitter BHX",
-        "keptName": "Twitter BHX",
-        "bundleIdentifier": "com.atebits.Tweetie2",
-        "version": "11.54",
-        "downloadURL": "https://github.com/driftywinds/BHX/releases/download/v11.54/BHTwitter-sideloaded_4.4_11.54.ipa"
       },
       {
         "name": "Messenger",
@@ -608,7 +607,7 @@
     ]
   },
   "catalogLimit": {
-    "removedApps": 2194,
+    "removedApps": 2181,
     "maxApps": 9000,
     "protectedApps": 68
   }
