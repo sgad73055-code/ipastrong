@@ -137,10 +137,10 @@ def extract_release_icon(url, root, sha256):
         release = json.loads(raw)
         body = release.get('body') or ''
         candidates = re.findall(
-            r'''(?:src|href)=["'](https://github\\.com/user-attachments/assets/[A-Za-z0-9-]+)["']''',
+            r'''(?:src|href)=["'](https://github\.com/user-attachments/assets/[A-Za-z0-9-]+)["']''',
             body, flags=re.I)
         candidates += re.findall(
-            r'''!\\[[^\\]]*\\]\\((https://github\\.com/user-attachments/assets/[^\\s)]+)''',
+            r'''!\[[^\]]*\]\((https://github\.com/user-attachments/assets/[^\s)]+)''',
             body, flags=re.I)
         image_url = next((x for x in candidates
                           if urllib.parse.urlsplit(x).hostname == 'github.com'), '')
@@ -256,6 +256,27 @@ class ImportTests(unittest.TestCase):
                     publish.assert_not_called()
                 self.assertEqual(catalog.read_bytes(), original)
                 self.assertEqual(list(root.iterdir()), [catalog])
+
+    def test_release_description_icon_is_extracted(self):
+        class FakeResponse(io.BytesIO):
+            def __init__(self, body, content_type='application/json'):
+                super().__init__(body)
+                self.headers = {'Content-Type': content_type}
+            def __enter__(self): return self
+            def __exit__(self, *args): self.close()
+        release = json.dumps({'body': '![icon](https://github.com/user-attachments/assets/abc-123)' }).encode()
+        png = bytes.fromhex('89504e470d0a1a0a') + b'fakepng'
+        with tempfile.TemporaryDirectory() as directory, patch(
+            'urllib.request.urlopen',
+            side_effect=[FakeResponse(release), FakeResponse(png, 'image/png')]
+        ):
+            result = extract_release_icon(
+                'https://github.com/example/repo/releases/download/rave/Rave.ipa',
+                Path(directory), 'abc123')
+            self.assertTrue(result.endswith('.png'))
+            saved = list((Path(directory) / 'assets' / 'app-icons').iterdir())
+            self.assertEqual(len(saved), 1)
+            self.assertEqual(saved[0].read_bytes(), png)
 
     def test_new_app(self):
         s=add(fixture(),META,'https://example.org/a.ipa',123,'hash');self.assertEqual(len(s['apps']),1);self.assertEqual(s['apps'][0]['version'],'2.0')
