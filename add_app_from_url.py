@@ -159,9 +159,8 @@ def extract_release_icon(url, root, sha256):
             extension = 'jpg'
         else:
             return ''
-        if content_type and not (content_type.startswith('image/png') if extension == 'png'
-                                 else content_type.startswith('image/jpeg')):
-            return ''
+        # GitHub user-attachment URLs may return valid image bytes as application/octet-stream.
+        # The PNG/JPEG magic-byte check above is authoritative; do not reject on MIME metadata.
         name = hashlib.sha256((sha256 + image_url).encode()).hexdigest()[:24] + '.' + extension
         destination = root / 'assets' / 'app-icons' / name
         destination.parent.mkdir(parents=True, exist_ok=True)
@@ -268,7 +267,7 @@ class ImportTests(unittest.TestCase):
         png = bytes.fromhex('89504e470d0a1a0a') + b'fakepng'
         with tempfile.TemporaryDirectory() as directory, patch(
             'urllib.request.urlopen',
-            side_effect=[FakeResponse(release), FakeResponse(png, 'image/png')]
+            side_effect=[FakeResponse(release), FakeResponse(png, 'application/octet-stream')]
         ):
             result = extract_release_icon(
                 'https://github.com/example/repo/releases/download/rave/Rave.ipa',
