@@ -1,15 +1,16 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 392,
-    "missing": 8
+    "ok": 385,
+    "missing": 14,
+    "temporary": 1
   },
   "repaired": [],
   "unresolved": [],
-  "date": "2026-11-10T19:46:25.860710+00:00",
-  "inputApps": 9000,
+  "date": "2026-11-11T06:22:22.378798+00:00",
+  "inputApps": 6748,
   "outputApps": 9000,
-  "preservedApps": 202,
+  "preservedApps": 108,
   "recoveredPublishedSource": false,
   "removedApps": 17,
   "catalogPolicy": {
@@ -20,7 +21,7 @@
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 10140,
+        "apps": 10148,
         "error": null
       },
       {
@@ -80,7 +81,7 @@
       },
       {
         "source": "https://fastsign.dev/repo.json",
-        "apps": 16994,
+        "apps": 16909,
         "error": null
       },
       {
@@ -184,48 +185,13 @@
         "error": null
       }
     ],
-    "inputRecords": 43237,
-    "outputApps": 11203,
+    "inputRecords": 42217,
+    "outputApps": 10380,
     "rejectedRecords": 194
   },
   "deduplication": {
-    "removedApps": 59,
+    "removedApps": 38,
     "duplicates": [
-      {
-        "name": "TikTok",
-        "keptName": "TikTok — 36.7.0",
-        "bundleIdentifier": "com.zhiliaoapp.musically",
-        "version": "36.7.0",
-        "downloadURL": "https://proxy-files.thuthuatjb.com/apps?=thuthuatjb/IPAS/releases/download/2/Tiktok_36.7.0_BHTikTokPlus_TTJB.ipa"
-      },
-      {
-        "name": "BHTikTokPlus — 46.2.0",
-        "keptName": "BHTikTokPlus — 46.2.0",
-        "bundleIdentifier": "com.zhiliaoapp.musically",
-        "version": "46.2.0",
-        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/29-07-2026/BHTikTokPlus_46.2.0_Plus_@thisismanpreets_apptesters.org.ipa"
-      },
-      {
-        "name": "BHTikTokPlus — 43.9.0",
-        "keptName": "BHTikTokPlus — 43.9.0",
-        "bundleIdentifier": "com.zhiliaoapp.musically",
-        "version": "43.9.0",
-        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-02-2026/BHTikTokPlus_43.9.0_Plus_@thisismanpreets_apptesters.org.ipa"
-      },
-      {
-        "name": "TikTok — 45.8.0",
-        "keptName": "TikTok — 45.8.0",
-        "bundleIdentifier": "com.zhiliaoapp.musically",
-        "version": "45.8.0",
-        "downloadURL": "https://proxy-files.thuthuatjb.com/apps?=apptesters-org/AppTesters_Repo/releases/download/29-06-2026/TikTok_45.8.0_Premium_%40thisismanpreets_apptesters.org.ipa"
-      },
-      {
-        "name": "BHTikTokPlus — 45.0.0",
-        "keptName": "BHTikTokPlus — 45.0.0",
-        "bundleIdentifier": "com.zhiliaoapp.musically",
-        "version": "45.0.0",
-        "downloadURL": "https://proxy-files.thuthuatjb.com/apps?=apptesters-org/AppTesters_Repo/releases/download/06-05-2026/BHTikTokPlus_45.0.0_Plus_%40thisismanpreets_apptesters.org.ipa"
-      },
       {
         "name": "Caliber",
         "keptName": "Caliber",
@@ -255,13 +221,6 @@
         "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-05-2026/AdobeFresco_7.3.0_IAP_%40thisismanpreets_apptesters.org.ipa"
       },
       {
-        "name": "Hevy",
-        "keptName": "Hevy",
-        "bundleIdentifier": "com.hevyapp.hevy",
-        "version": "3.0.11",
-        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-05-2026/Hevy_3.0.11_Pro_%40thisismanpreets_apptesters.org.ipa"
-      },
-      {
         "name": "InShot",
         "keptName": "InShot",
         "bundleIdentifier": "com.camerasideas.InstaShot",
@@ -274,13 +233,6 @@
         "bundleIdentifier": "Cristian-Teichner.Analogue",
         "version": "1.4",
         "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-05-2026/Analogue_1.4_Pro_%40thisismanpreets_apptesters.org.ipa"
-      },
-      {
-        "name": "ReelsApp",
-        "keptName": "ReelsApp",
-        "bundleIdentifier": "com.nextgen.reelsapp",
-        "version": "7.7",
-        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-03-2026/ReelsApp_7.7_Pro_%40thisismanpreets_apptesters.org.ipa"
       },
       {
         "name": "Lightroom",
@@ -318,25 +270,11 @@
         "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-03-2026/Videoleap_2.82_Pro_%40thisismanpreets_apptesters.org.ipa"
       },
       {
-        "name": "Documents",
-        "keptName": "Documents",
-        "bundleIdentifier": "com.readdle.ReaddleDocsIPad",
-        "version": "8.19.6",
-        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-03-2026/Documents_8.19.6_Pro_%40thisismanpreets_apptesters.org.ipa"
-      },
-      {
         "name": "SimplySing",
         "keptName": "SimplySing",
         "bundleIdentifier": "com.joytunes.Sing",
         "version": "3.0.1",
         "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-03-2026/SimplySing_3.0.1_Premium_%40thisismanpreets_apptesters.org.ipa"
-      },
-      {
-        "name": "SnapEdit",
-        "keptName": "SnapEdit",
-        "bundleIdentifier": "com.sfun.snapedit",
-        "version": "6.4.3",
-        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-03-2026/SnapEdit_6.4.3_Premium_%40thisismanpreets_apptesters.org.ipa"
       },
       {
         "name": "Notability",
@@ -353,13 +291,6 @@
         "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-03-2026/Unfold_8.155.1_Plus_%40thisismanpreets_apptesters.org.ipa"
       },
       {
-        "name": "VSCO",
-        "keptName": "VSCO",
-        "bundleIdentifier": "co.visualsupply.cam",
-        "version": "458.0.0",
-        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-03-2026/VSCO_458.0.0_Pro_%40thisismanpreets_apptesters.org.ipa"
-      },
-      {
         "name": "GOWOD",
         "keptName": "GOWOD",
         "bundleIdentifier": "eu.gowod",
@@ -372,13 +303,6 @@
         "bundleIdentifier": "app.uplens",
         "version": "3.4.10",
         "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-03-2026/Uplens_3.4.10_Pro_%40thisismanpreets_apptesters.org.ipa"
-      },
-      {
-        "name": "Mimo",
-        "keptName": "Mimo",
-        "bundleIdentifier": "com.getmimo.mimo",
-        "version": "12.2.0",
-        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-02-2026/Mimo_12.2.0_Premium_%40thisismanpreets_apptesters.org.ipa"
       },
       {
         "name": "Peachy",
@@ -400,13 +324,6 @@
         "bundleIdentifier": "com.elevateapp.elevate",
         "version": "5.229.0",
         "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-02-2026/Elevate_5.229.0_Pro_%40thisismanpreets_apptesters.org.ipa"
-      },
-      {
-        "name": "VEEDCaptions",
-        "keptName": "VEEDCaptions",
-        "bundleIdentifier": "io.veed.appstore",
-        "version": "8.6.0",
-        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-02-2026/VEEDCaptions_8.6.0_Pro_%40thisismanpreets_apptesters.org.ipa"
       },
       {
         "name": "Osmosis",
@@ -465,20 +382,6 @@
         "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-01-2026/Scanner_3.7.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa"
       },
       {
-        "name": "InCollage",
-        "keptName": "InCollage",
-        "bundleIdentifier": "PhotoEditor.PhotoCollage.inCollage",
-        "version": "2.2.12",
-        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/29-12-2025/InCollage_2.2.12_Pro_%40thisismanpreets_apptesters.org.ipa"
-      },
-      {
-        "name": "Homeworkouts",
-        "keptName": "Homeworkouts",
-        "bundleIdentifier": "com.abishkking.maleworkout",
-        "version": "1.43.10",
-        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-12-2025/Homeworkouts_1.43.10_Pro_%40thisismanpreets_apptesters.org.ipa"
-      },
-      {
         "name": "UpNote",
         "keptName": "UpNote",
         "bundleIdentifier": "com.getupnote.ios",
@@ -491,34 +394,6 @@
         "bundleIdentifier": "com.lyftaios",
         "version": "1.129",
         "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-12-2025/Lyfta_1.129_Premium_%40thisismanpreets_apptesters.org.ipa"
-      },
-      {
-        "name": "djay",
-        "keptName": "djay",
-        "bundleIdentifier": "com.algoriddim.djay-iphone-free",
-        "version": "5.6.1",
-        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-12-2025/djay_5.6.1_Premium_%40thisismanpreets_apptesters.org.ipa"
-      },
-      {
-        "name": "Tiimo",
-        "keptName": "Tiimo",
-        "bundleIdentifier": "com.tiimo.app",
-        "version": "3.37.0",
-        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/Tiimo_3.37.0_Premium_%40thisismanpreets_apptesters.org.ipa"
-      },
-      {
-        "name": "Fishbrain",
-        "keptName": "Fishbrain",
-        "bundleIdentifier": "com.fishbrain.app",
-        "version": "9.44.0",
-        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-12-2025/Fishbrain_9.44.0_Pro_%40thisismanpreets_apptesters.org.ipa"
-      },
-      {
-        "name": "StepsApp",
-        "keptName": "StepsApp",
-        "bundleIdentifier": "com.gunthermarktl.stepapp",
-        "version": "8.6.1",
-        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-12-2025/StepsApp_8.6.1_Pro_%40thisismanpreets_apptesters.org.ipa"
       },
       {
         "name": "DtdSounds",
@@ -542,13 +417,6 @@
         "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/25-11-2025/Labbet_2.50_Premium_%40thisismanpreets_apptesters.org.ipa"
       },
       {
-        "name": "Headway",
-        "keptName": "Headway",
-        "bundleIdentifier": "com.headway.books",
-        "version": "354.1",
-        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/31-10-2025/Headway_354.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa"
-      },
-      {
         "name": "BEAT",
         "keptName": "BEAT",
         "bundleIdentifier": "reels-maker-one",
@@ -570,13 +438,6 @@
         "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/10-10-2025/Mercury_3.0.1_Pro_%40thisismanpreets_apptesters.org.ipa"
       },
       {
-        "name": "Dehancer",
-        "keptName": "Dehancer",
-        "bundleIdentifier": "com.dehancer.film.ios-app",
-        "version": "5.0",
-        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/08-10-2025/Dehancer_5.0_IAP_%40thisismanpreets_apptesters.org.ipa"
-      },
-      {
         "name": "Dropshare",
         "keptName": "Dropshare",
         "bundleIdentifier": "net.mkswap.Dropshare-iOS",
@@ -596,19 +457,12 @@
         "bundleIdentifier": "boomer.Smart-Video",
         "version": "4.20",
         "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-08-2025/Widgy_4.20_Satella_%40thisismanpreets_apptesters.org.ipa"
-      },
-      {
-        "name": "X",
-        "keptName": "X",
-        "bundleIdentifier": "com.atebits.Tweetie2",
-        "version": "11.12.1",
-        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-08-2025/X_11.12.1_Unlocked_All_Functions_%40thisismanpreets_apptesters.org.ipa"
       }
     ]
   },
   "catalogLimit": {
-    "removedApps": 2329,
+    "removedApps": 1433,
     "maxApps": 9000,
-    "protectedApps": 70
+    "protectedApps": 69
   }
 }
