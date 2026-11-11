@@ -1,17 +1,17 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 385,
-    "missing": 14,
-    "temporary": 1
+    "ok": 386,
+    "missing": 12,
+    "restricted": 2
   },
   "repaired": [],
   "unresolved": [],
-  "date": "2026-11-11T06:22:22.378798+00:00",
+  "date": "2026-11-11T19:37:08.384079+00:00",
   "inputApps": 6748,
   "outputApps": 9000,
   "preservedApps": 108,
-  "recoveredPublishedSource": false,
+  "recoveredPublishedSource": true,
   "removedApps": 17,
   "catalogPolicy": {
     "removedApps": 17,
@@ -21,12 +21,12 @@
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 10148,
+        "apps": 10163,
         "error": null
       },
       {
         "source": "https://ipa.cypwn.xyz/cypwn.json",
-        "apps": 210,
+        "apps": 209,
         "error": null
       },
       {
@@ -67,7 +67,7 @@
       {
         "source": "https://apps.nabzclan.vip/repos/altstore.php",
         "apps": 0,
-        "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>"
+        "error": "HTTP Error 403: Forbidden"
       },
       {
         "source": "https://ipa.thuthuatjb.com/repo",
@@ -185,8 +185,8 @@
         "error": null
       }
     ],
-    "inputRecords": 42217,
-    "outputApps": 10380,
+    "inputRecords": 42231,
+    "outputApps": 10381,
     "rejectedRecords": 194
   },
   "deduplication": {
@@ -461,7 +461,7 @@
     ]
   },
   "catalogLimit": {
-    "removedApps": 1433,
+    "removedApps": 1434,
     "maxApps": 9000,
     "protectedApps": 69
   }
