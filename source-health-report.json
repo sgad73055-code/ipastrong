@@ -1,17 +1,16 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 386,
-    "missing": 12,
-    "restricted": 2
+    "ok": 374,
+    "missing": 26
   },
   "repaired": [],
   "unresolved": [],
-  "date": "2026-11-11T19:37:08.384079+00:00",
-  "inputApps": 6748,
+  "date": "2026-11-12T07:11:44.287066+00:00",
+  "inputApps": 9000,
   "outputApps": 9000,
-  "preservedApps": 108,
-  "recoveredPublishedSource": true,
+  "preservedApps": 115,
+  "recoveredPublishedSource": false,
   "removedApps": 17,
   "catalogPolicy": {
     "removedApps": 17,
@@ -21,12 +20,12 @@
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 10163,
+        "apps": 10170,
         "error": null
       },
       {
         "source": "https://ipa.cypwn.xyz/cypwn.json",
-        "apps": 209,
+        "apps": 210,
         "error": null
       },
       {
@@ -81,7 +80,7 @@
       },
       {
         "source": "https://fastsign.dev/repo.json",
-        "apps": 16909,
+        "apps": 17004,
         "error": null
       },
       {
@@ -185,13 +184,20 @@
         "error": null
       }
     ],
-    "inputRecords": 42231,
-    "outputApps": 10381,
+    "inputRecords": 42315,
+    "outputApps": 10376,
     "rejectedRecords": 194
   },
   "deduplication": {
-    "removedApps": 38,
+    "removedApps": 37,
     "duplicates": [
+      {
+        "name": "Facebook++",
+        "keptName": "Facebook++",
+        "bundleIdentifier": "com.facebook.Facebook",
+        "version": "587.0.0",
+        "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Facebook.v587.0.0.+.iQFace.ipa"
+      },
       {
         "name": "Caliber",
         "keptName": "Caliber",
@@ -443,25 +449,11 @@
         "bundleIdentifier": "net.mkswap.Dropshare-iOS",
         "version": "3.56",
         "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-09-2025/Dropshare_3.56_Pro_%40thisismanpreets_apptesters.org.ipa"
-      },
-      {
-        "name": "AdobeExpress",
-        "keptName": "AdobeExpress",
-        "bundleIdentifier": "com.adobe.post",
-        "version": "29.0.0",
-        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-08-2025/AdobeExpress_29.0.0_Pro_%40thisismanpreets_apptesters.org.ipa"
-      },
-      {
-        "name": "Widgy",
-        "keptName": "Widgy",
-        "bundleIdentifier": "boomer.Smart-Video",
-        "version": "4.20",
-        "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-08-2025/Widgy_4.20_Satella_%40thisismanpreets_apptesters.org.ipa"
       }
     ]
   },
   "catalogLimit": {
-    "removedApps": 1434,
+    "removedApps": 1437,
     "maxApps": 9000,
     "protectedApps": 69
   }
