@@ -1,17 +1,19 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 377,
-    "missing": 20,
-    "restricted": 3
+    "ok": 354,
+    "not_ipa": 29,
+    "missing": 15,
+    "restricted": 1,
+    "temporary": 1
   },
   "repaired": [],
   "unresolved": [],
-  "date": "2026-11-12T19:55:51.591316+00:00",
+  "date": "2026-11-13T06:47:53.887466+00:00",
   "inputApps": 9000,
   "outputApps": 9000,
-  "preservedApps": 115,
-  "recoveredPublishedSource": true,
+  "preservedApps": 133,
+  "recoveredPublishedSource": false,
   "removedApps": 17,
   "catalogPolicy": {
     "removedApps": 17,
@@ -21,12 +23,12 @@
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 10189,
+        "apps": 10198,
         "error": null
       },
       {
         "source": "https://ipa.cypwn.xyz/cypwn.json",
-        "apps": 210,
+        "apps": 209,
         "error": null
       },
       {
@@ -81,7 +83,7 @@
       },
       {
         "source": "https://fastsign.dev/repo.json",
-        "apps": 17004,
+        "apps": 17069,
         "error": null
       },
       {
@@ -185,19 +187,26 @@
         "error": null
       }
     ],
-    "inputRecords": 42334,
-    "outputApps": 10376,
+    "inputRecords": 42377,
+    "outputApps": 10368,
     "rejectedRecords": 195
   },
   "deduplication": {
-    "removedApps": 37,
+    "removedApps": 38,
     "duplicates": [
       {
-        "name": "Facebook++",
-        "keptName": "Facebook++",
-        "bundleIdentifier": "com.facebook.Facebook",
-        "version": "587.0.0",
-        "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Facebook.v587.0.0.+.iQFace.ipa"
+        "name": "Reddit++",
+        "keptName": "Reddit++",
+        "bundleIdentifier": "com.reddit.Reddit",
+        "version": "2026.45.1",
+        "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Reddit.v2026.45.1.+.RedditFilter.ipa"
+      },
+      {
+        "name": "X++",
+        "keptName": "X++",
+        "bundleIdentifier": "com.atebits.Tweetie2",
+        "version": "12.43",
+        "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/X.v12.43.+.NFB.v7.3.1.ipa"
       },
       {
         "name": "Caliber",
@@ -454,8 +463,8 @@
     ]
   },
   "catalogLimit": {
-    "removedApps": 1437,
+    "removedApps": 1446,
     "maxApps": 9000,
-    "protectedApps": 69
+    "protectedApps": 70
   }
 }
