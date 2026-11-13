@@ -1,34 +1,34 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 354,
-    "not_ipa": 29,
-    "missing": 15,
-    "restricted": 1,
-    "temporary": 1
+    "ok": 387,
+    "temporary": 2,
+    "missing": 9,
+    "not_ipa": 1,
+    "restricted": 1
   },
   "repaired": [],
   "unresolved": [],
-  "date": "2026-11-13T06:47:53.887466+00:00",
+  "date": "2026-11-13T19:43:25.335422+00:00",
   "inputApps": 9000,
   "outputApps": 9000,
-  "preservedApps": 133,
+  "preservedApps": 154,
   "recoveredPublishedSource": false,
-  "removedApps": 17,
+  "removedApps": 18,
   "catalogPolicy": {
-    "removedApps": 17,
+    "removedApps": 18,
     "removedVersions": 0
   },
   "upstream": {
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 10198,
+        "apps": 10199,
         "error": null
       },
       {
         "source": "https://ipa.cypwn.xyz/cypwn.json",
-        "apps": 209,
+        "apps": 207,
         "error": null
       },
       {
@@ -83,7 +83,7 @@
       },
       {
         "source": "https://fastsign.dev/repo.json",
-        "apps": 17069,
+        "apps": 17030,
         "error": null
       },
       {
@@ -187,26 +187,26 @@
         "error": null
       }
     ],
-    "inputRecords": 42377,
-    "outputApps": 10368,
+    "inputRecords": 42319,
+    "outputApps": 10342,
     "rejectedRecords": 195
   },
   "deduplication": {
     "removedApps": 38,
     "duplicates": [
       {
-        "name": "Reddit++",
-        "keptName": "Reddit++",
-        "bundleIdentifier": "com.reddit.Reddit",
-        "version": "2026.45.1",
-        "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Reddit.v2026.45.1.+.RedditFilter.ipa"
+        "name": "Taurus (v0.60.6 - Patched) IPAVault",
+        "keptName": "Spotify",
+        "bundleIdentifier": "com.spotify.client.ios.taurus.0.60.6.patched.9.1.90",
+        "version": "9.1.90",
+        "downloadURL": "https://repo.ballermc.com/tubevault/Spotify%209.1.90%20%28Taurus%200.60.6%29%20%5B@ipavault%5D.ipa"
       },
       {
-        "name": "X++",
-        "keptName": "X++",
-        "bundleIdentifier": "com.atebits.Tweetie2",
-        "version": "12.43",
-        "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/X.v12.43.+.NFB.v7.3.1.ipa"
+        "name": "Spotify",
+        "keptName": "EeveeSpotifyReincarnated (v7.0.0 - Patched) IPAVault",
+        "bundleIdentifier": "com.spotify.client.ios.eeveespotifyreincarnated.7.0.0.patched.9.1.98.ipavault",
+        "version": "9.1.98",
+        "downloadURL": "https://repo.ballermc.com/tubevault/Spotify%209.1.98%20%28EeveeSpotify%207.0.0%29%20%5B@ipavault%5D.ipa"
       },
       {
         "name": "Caliber",
@@ -463,7 +463,7 @@
     ]
   },
   "catalogLimit": {
-    "removedApps": 1446,
+    "removedApps": 1440,
     "maxApps": 9000,
     "protectedApps": 70
   }
