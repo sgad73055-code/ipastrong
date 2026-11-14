@@ -1,31 +1,31 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 399,
-    "temporary": 1
+    "ok": 389,
+    "missing": 11
   },
   "repaired": [],
   "unresolved": [],
-  "date": "2026-11-14T18:02:24.017228+00:00",
+  "date": "2026-11-14T22:25:01.344301+00:00",
   "inputApps": 9000,
   "outputApps": 9000,
-  "preservedApps": 156,
+  "preservedApps": 155,
   "recoveredPublishedSource": false,
-  "removedApps": 17,
+  "removedApps": 18,
   "catalogPolicy": {
-    "removedApps": 17,
+    "removedApps": 18,
     "removedVersions": 0
   },
   "upstream": {
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 10199,
+        "apps": 10226,
         "error": null
       },
       {
         "source": "https://ipa.cypwn.xyz/cypwn.json",
-        "apps": 210,
+        "apps": 207,
         "error": null
       },
       {
@@ -66,7 +66,7 @@
       {
         "source": "https://apps.nabzclan.vip/repos/altstore.php",
         "apps": 0,
-        "error": "HTTP Error 403: Forbidden"
+        "error": "HTTP Error 404: Not Found"
       },
       {
         "source": "https://ipa.thuthuatjb.com/repo",
@@ -184,9 +184,9 @@
         "error": null
       }
     ],
-    "inputRecords": 42343,
-    "outputApps": 10328,
-    "rejectedRecords": 195
+    "inputRecords": 42361,
+    "outputApps": 10325,
+    "rejectedRecords": 196
   },
   "deduplication": {
     "removedApps": 36,
@@ -446,7 +446,7 @@
     ]
   },
   "catalogLimit": {
-    "removedApps": 1431,
+    "removedApps": 1426,
     "maxApps": 9000,
     "protectedApps": 70
   }
