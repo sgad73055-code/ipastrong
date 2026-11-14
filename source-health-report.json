@@ -1,15 +1,15 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 392,
-    "missing": 8
+    "ok": 399,
+    "temporary": 1
   },
   "repaired": [],
   "unresolved": [],
-  "date": "2026-11-14T06:24:23.640950+00:00",
+  "date": "2026-11-14T18:02:24.017228+00:00",
   "inputApps": 9000,
   "outputApps": 9000,
-  "preservedApps": 157,
+  "preservedApps": 156,
   "recoveredPublishedSource": false,
   "removedApps": 17,
   "catalogPolicy": {
@@ -184,8 +184,8 @@
         "error": null
       }
     ],
-    "inputRecords": 42351,
-    "outputApps": 10336,
+    "inputRecords": 42343,
+    "outputApps": 10328,
     "rejectedRecords": 195
   },
   "deduplication": {
@@ -446,7 +446,7 @@
     ]
   },
   "catalogLimit": {
-    "removedApps": 1440,
+    "removedApps": 1431,
     "maxApps": 9000,
     "protectedApps": 70
   }
