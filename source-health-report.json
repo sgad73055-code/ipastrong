@@ -1,22 +1,19 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 387,
-    "temporary": 2,
-    "missing": 9,
-    "not_ipa": 1,
-    "restricted": 1
+    "ok": 392,
+    "missing": 8
   },
   "repaired": [],
   "unresolved": [],
-  "date": "2026-11-13T19:43:25.335422+00:00",
+  "date": "2026-11-14T06:24:23.640950+00:00",
   "inputApps": 9000,
   "outputApps": 9000,
-  "preservedApps": 154,
+  "preservedApps": 157,
   "recoveredPublishedSource": false,
-  "removedApps": 18,
+  "removedApps": 17,
   "catalogPolicy": {
-    "removedApps": 18,
+    "removedApps": 17,
     "removedVersions": 0
   },
   "upstream": {
@@ -28,7 +25,7 @@
       },
       {
         "source": "https://ipa.cypwn.xyz/cypwn.json",
-        "apps": 207,
+        "apps": 210,
         "error": null
       },
       {
@@ -83,7 +80,7 @@
       },
       {
         "source": "https://fastsign.dev/repo.json",
-        "apps": 17030,
+        "apps": 17071,
         "error": null
       },
       {
@@ -187,27 +184,13 @@
         "error": null
       }
     ],
-    "inputRecords": 42319,
-    "outputApps": 10342,
+    "inputRecords": 42351,
+    "outputApps": 10336,
     "rejectedRecords": 195
   },
   "deduplication": {
-    "removedApps": 38,
+    "removedApps": 36,
     "duplicates": [
-      {
-        "name": "Taurus (v0.60.6 - Patched) IPAVault",
-        "keptName": "Spotify",
-        "bundleIdentifier": "com.spotify.client.ios.taurus.0.60.6.patched.9.1.90",
-        "version": "9.1.90",
-        "downloadURL": "https://repo.ballermc.com/tubevault/Spotify%209.1.90%20%28Taurus%200.60.6%29%20%5B@ipavault%5D.ipa"
-      },
-      {
-        "name": "Spotify",
-        "keptName": "EeveeSpotifyReincarnated (v7.0.0 - Patched) IPAVault",
-        "bundleIdentifier": "com.spotify.client.ios.eeveespotifyreincarnated.7.0.0.patched.9.1.98.ipavault",
-        "version": "9.1.98",
-        "downloadURL": "https://repo.ballermc.com/tubevault/Spotify%209.1.98%20%28EeveeSpotify%207.0.0%29%20%5B@ipavault%5D.ipa"
-      },
       {
         "name": "Caliber",
         "keptName": "Caliber",
