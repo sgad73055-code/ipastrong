@@ -1,31 +1,32 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 389,
-    "missing": 11
+    "ok": 379,
+    "temporary": 16,
+    "missing": 5
   },
   "repaired": [],
   "unresolved": [],
-  "date": "2026-11-14T22:25:01.344301+00:00",
+  "date": "2026-11-15T06:34:13.376824+00:00",
   "inputApps": 9000,
   "outputApps": 9000,
-  "preservedApps": 155,
+  "preservedApps": 197,
   "recoveredPublishedSource": false,
-  "removedApps": 18,
+  "removedApps": 17,
   "catalogPolicy": {
-    "removedApps": 18,
+    "removedApps": 17,
     "removedVersions": 0
   },
   "upstream": {
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 10226,
+        "apps": 10227,
         "error": null
       },
       {
         "source": "https://ipa.cypwn.xyz/cypwn.json",
-        "apps": 207,
+        "apps": 210,
         "error": null
       },
       {
@@ -80,7 +81,7 @@
       },
       {
         "source": "https://fastsign.dev/repo.json",
-        "apps": 17071,
+        "apps": 17052,
         "error": null
       },
       {
@@ -184,13 +185,20 @@
         "error": null
       }
     ],
-    "inputRecords": 42361,
-    "outputApps": 10325,
+    "inputRecords": 42346,
+    "outputApps": 10299,
     "rejectedRecords": 196
   },
   "deduplication": {
-    "removedApps": 36,
+    "removedApps": 37,
     "duplicates": [
+      {
+        "name": "TikTok++",
+        "keptName": "TikTok++",
+        "bundleIdentifier": "com.zhiliaoapp.musically",
+        "version": "47.7.0",
+        "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/TikTok.v47.7.0.+.RXTikTok.v2.0.4.ipa"
+      },
       {
         "name": "Caliber",
         "keptName": "Caliber",
@@ -446,7 +454,7 @@
     ]
   },
   "catalogLimit": {
-    "removedApps": 1426,
+    "removedApps": 1442,
     "maxApps": 9000,
     "protectedApps": 70
   }
