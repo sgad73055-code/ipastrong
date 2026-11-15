@@ -1,16 +1,15 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 379,
-    "temporary": 16,
-    "missing": 5
+    "ok": 396,
+    "missing": 4
   },
   "repaired": [],
   "unresolved": [],
-  "date": "2026-11-15T06:34:13.376824+00:00",
+  "date": "2026-11-15T18:52:20.859270+00:00",
   "inputApps": 9000,
   "outputApps": 9000,
-  "preservedApps": 197,
+  "preservedApps": 191,
   "recoveredPublishedSource": false,
   "removedApps": 17,
   "catalogPolicy": {
@@ -21,12 +20,12 @@
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 10227,
+        "apps": 10233,
         "error": null
       },
       {
         "source": "https://ipa.cypwn.xyz/cypwn.json",
-        "apps": 210,
+        "apps": 209,
         "error": null
       },
       {
@@ -185,19 +184,33 @@
         "error": null
       }
     ],
-    "inputRecords": 42346,
+    "inputRecords": 42351,
     "outputApps": 10299,
     "rejectedRecords": 196
   },
   "deduplication": {
-    "removedApps": 37,
+    "removedApps": 39,
     "duplicates": [
       {
-        "name": "TikTok++",
-        "keptName": "TikTok++",
+        "name": "Instagram",
+        "keptName": "iNKillerPlus",
+        "bundleIdentifier": "com.burbn.instagram",
+        "version": "455.0.0",
+        "downloadURL": "https://ikghd.site/ipa/Instagram_455.0_iNKillerPlus_5.4.ipa"
+      },
+      {
+        "name": "TikTok",
+        "keptName": "TTKillerPlus",
         "bundleIdentifier": "com.zhiliaoapp.musically",
         "version": "47.7.0",
-        "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/TikTok.v47.7.0.+.RXTikTok.v2.0.4.ipa"
+        "downloadURL": "https://ikghd.site/ipa/TikTok_47.7_TTKillerPlus_2.4.ipa"
+      },
+      {
+        "name": "YouTube",
+        "keptName": "YTKillerPlus",
+        "bundleIdentifier": "com.google.ios.youtube",
+        "version": "21.45.4",
+        "downloadURL": "https://ikghd.site/ipa/YouTube_21.45_YTKillerPlus_6.8.ipa"
       },
       {
         "name": "Caliber",
@@ -454,7 +467,7 @@
     ]
   },
   "catalogLimit": {
-    "removedApps": 1442,
+    "removedApps": 1434,
     "maxApps": 9000,
     "protectedApps": 70
   }
