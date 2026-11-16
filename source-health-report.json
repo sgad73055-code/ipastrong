@@ -1,15 +1,16 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 396,
-    "missing": 4
+    "ok": 398,
+    "temporary": 1,
+    "missing": 1
   },
   "repaired": [],
   "unresolved": [],
-  "date": "2026-11-15T18:52:20.859270+00:00",
+  "date": "2026-11-16T06:31:19.252769+00:00",
   "inputApps": 9000,
   "outputApps": 9000,
-  "preservedApps": 191,
+  "preservedApps": 209,
   "recoveredPublishedSource": false,
   "removedApps": 17,
   "catalogPolicy": {
@@ -20,12 +21,12 @@
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 10233,
+        "apps": 10237,
         "error": null
       },
       {
         "source": "https://ipa.cypwn.xyz/cypwn.json",
-        "apps": 209,
+        "apps": 210,
         "error": null
       },
       {
@@ -65,8 +66,8 @@
       },
       {
         "source": "https://apps.nabzclan.vip/repos/altstore.php",
-        "apps": 0,
-        "error": "HTTP Error 404: Not Found"
+        "apps": 3,
+        "error": null
       },
       {
         "source": "https://ipa.thuthuatjb.com/repo",
@@ -80,7 +81,7 @@
       },
       {
         "source": "https://fastsign.dev/repo.json",
-        "apps": 17052,
+        "apps": 17077,
         "error": null
       },
       {
@@ -184,33 +185,33 @@
         "error": null
       }
     ],
-    "inputRecords": 42351,
-    "outputApps": 10299,
-    "rejectedRecords": 196
+    "inputRecords": 42384,
+    "outputApps": 10326,
+    "rejectedRecords": 197
   },
   "deduplication": {
     "removedApps": 39,
     "duplicates": [
       {
-        "name": "Instagram",
-        "keptName": "iNKillerPlus",
-        "bundleIdentifier": "com.burbn.instagram",
-        "version": "455.0.0",
-        "downloadURL": "https://ikghd.site/ipa/Instagram_455.0_iNKillerPlus_5.4.ipa"
+        "name": "YTPlus/YTLite Cracked (6.0) - v20.21.6 (IPAVault) + Bonus Tweaks",
+        "keptName": "YTPlus/YTLite Cracked (6.0) - iOS 15+ (IPAVault) + Bonus Tweaks",
+        "bundleIdentifier": "com.google.ios.youtube.ytplus.cracked.6.0.20.21.6.ipavault.bonus.tweaks",
+        "version": "20.21.6",
+        "downloadURL": "https://repo.ballermc.com/tubevault/YouTube%2020.21.6%20YTPlus%206.0%20%5B@ipavault%5D.ipa"
       },
       {
-        "name": "TikTok",
-        "keptName": "TTKillerPlus",
-        "bundleIdentifier": "com.zhiliaoapp.musically",
-        "version": "47.7.0",
-        "downloadURL": "https://ikghd.site/ipa/TikTok_47.7_TTKillerPlus_2.4.ipa"
+        "name": "YTPlus/YTLite Cracked (6.0) - v21.33.6 (IPAVault) + Bonus Tweaks",
+        "keptName": "YTPlus/YTLite Cracked (6.0) - iOS 16+ (IPAVault) + Bonus Tweaks",
+        "bundleIdentifier": "com.google.ios.youtube.ytplus.cracked.6.0.21.33.6.ipavault.bonus.tweaks",
+        "version": "21.33.6",
+        "downloadURL": "https://repo.ballermc.com/tubevault/YouTube%2021.33.6%20YTPlus%206.0%20%5B@ipavault%5D.ipa"
       },
       {
-        "name": "YouTube",
-        "keptName": "YTKillerPlus",
-        "bundleIdentifier": "com.google.ios.youtube",
-        "version": "21.45.4",
-        "downloadURL": "https://ikghd.site/ipa/YouTube_21.45_YTKillerPlus_6.8.ipa"
+        "name": "Spotify",
+        "keptName": "Taurus (v0.60.6 - Patched) IPAVault",
+        "bundleIdentifier": "com.spotify.client.ios.taurus.0.60.6.patched.9.1.90",
+        "version": "9.1.90",
+        "downloadURL": "https://repo.ballermc.com/tubevault/Spotify%209.1.90%20%28Taurus%200.60.6%29%20%5B@ipavault%5D.ipa"
       },
       {
         "name": "Caliber",
@@ -467,7 +468,7 @@
     ]
   },
   "catalogLimit": {
-    "removedApps": 1434,
+    "removedApps": 1479,
     "maxApps": 9000,
     "protectedApps": 70
   }
