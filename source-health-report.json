@@ -1,16 +1,17 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 398,
+    "not_ipa": 24,
+    "ok": 374,
     "temporary": 1,
-    "missing": 1
+    "restricted": 1
   },
   "repaired": [],
   "unresolved": [],
-  "date": "2026-11-16T06:31:19.252769+00:00",
+  "date": "2026-11-16T22:03:11.303783+00:00",
   "inputApps": 9000,
   "outputApps": 9000,
-  "preservedApps": 209,
+  "preservedApps": 206,
   "recoveredPublishedSource": false,
   "removedApps": 17,
   "catalogPolicy": {
@@ -21,7 +22,7 @@
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 10237,
+        "apps": 10259,
         "error": null
       },
       {
@@ -66,7 +67,7 @@
       },
       {
         "source": "https://apps.nabzclan.vip/repos/altstore.php",
-        "apps": 3,
+        "apps": 6,
         "error": null
       },
       {
@@ -81,7 +82,7 @@
       },
       {
         "source": "https://fastsign.dev/repo.json",
-        "apps": 17077,
+        "apps": 17164,
         "error": null
       },
       {
@@ -185,33 +186,19 @@
         "error": null
       }
     ],
-    "inputRecords": 42384,
-    "outputApps": 10326,
+    "inputRecords": 42495,
+    "outputApps": 10375,
     "rejectedRecords": 197
   },
   "deduplication": {
-    "removedApps": 39,
+    "removedApps": 37,
     "duplicates": [
       {
-        "name": "YTPlus/YTLite Cracked (6.0) - v20.21.6 (IPAVault) + Bonus Tweaks",
-        "keptName": "YTPlus/YTLite Cracked (6.0) - iOS 15+ (IPAVault) + Bonus Tweaks",
-        "bundleIdentifier": "com.google.ios.youtube.ytplus.cracked.6.0.20.21.6.ipavault.bonus.tweaks",
-        "version": "20.21.6",
-        "downloadURL": "https://repo.ballermc.com/tubevault/YouTube%2020.21.6%20YTPlus%206.0%20%5B@ipavault%5D.ipa"
-      },
-      {
-        "name": "YTPlus/YTLite Cracked (6.0) - v21.33.6 (IPAVault) + Bonus Tweaks",
-        "keptName": "YTPlus/YTLite Cracked (6.0) - iOS 16+ (IPAVault) + Bonus Tweaks",
-        "bundleIdentifier": "com.google.ios.youtube.ytplus.cracked.6.0.21.33.6.ipavault.bonus.tweaks",
-        "version": "21.33.6",
-        "downloadURL": "https://repo.ballermc.com/tubevault/YouTube%2021.33.6%20YTPlus%206.0%20%5B@ipavault%5D.ipa"
-      },
-      {
-        "name": "Spotify",
-        "keptName": "Taurus (v0.60.6 - Patched) IPAVault",
-        "bundleIdentifier": "com.spotify.client.ios.taurus.0.60.6.patched.9.1.90",
-        "version": "9.1.90",
-        "downloadURL": "https://repo.ballermc.com/tubevault/Spotify%209.1.90%20%28Taurus%200.60.6%29%20%5B@ipavault%5D.ipa"
+        "name": "Alpin Quest PRO – Outdoor GPS (Free paid)",
+        "keptName": "Alpin Quest PRO 0 (Free paid)",
+        "bundleIdentifier": "com.alpinquest.app",
+        "version": "10.0.200+2500",
+        "downloadURL": "https://appstore.sidelix.vip/repos/download/4/app_4_nabzclan_sidelix.ipa"
       },
       {
         "name": "Caliber",
@@ -468,7 +455,7 @@
     ]
   },
   "catalogLimit": {
-    "removedApps": 1479,
+    "removedApps": 1527,
     "maxApps": 9000,
     "protectedApps": 70
   }
