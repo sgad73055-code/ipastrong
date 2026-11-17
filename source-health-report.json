@@ -1,17 +1,20 @@
 {
   "checked": 400,
   "outcomes": {
-    "not_ipa": 24,
-    "ok": 374,
-    "temporary": 1,
-    "restricted": 1
+    "ok": 390,
+    "missing": 10
   },
   "repaired": [],
-  "unresolved": [],
-  "date": "2026-11-16T22:03:11.303783+00:00",
+  "unresolved": [
+    {
+      "name": "CercubePlus (Cercube+)",
+      "url": "https://github.com/qnblackcat/CercubePlus/releases/download/v17.43.1-5.3.11/CercubePlus_17.43.1_5.3.11.ipa"
+    }
+  ],
+  "date": "2026-11-17T07:56:33.923471+00:00",
   "inputApps": 9000,
   "outputApps": 9000,
-  "preservedApps": 206,
+  "preservedApps": 204,
   "recoveredPublishedSource": false,
   "removedApps": 17,
   "catalogPolicy": {
@@ -22,7 +25,7 @@
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 10259,
+        "apps": 10271,
         "error": null
       },
       {
@@ -67,7 +70,7 @@
       },
       {
         "source": "https://apps.nabzclan.vip/repos/altstore.php",
-        "apps": 6,
+        "apps": 10,
         "error": null
       },
       {
@@ -82,7 +85,7 @@
       },
       {
         "source": "https://fastsign.dev/repo.json",
-        "apps": 17164,
+        "apps": 17204,
         "error": null
       },
       {
@@ -186,20 +189,13 @@
         "error": null
       }
     ],
-    "inputRecords": 42495,
-    "outputApps": 10375,
+    "inputRecords": 42551,
+    "outputApps": 10392,
     "rejectedRecords": 197
   },
   "deduplication": {
-    "removedApps": 37,
+    "removedApps": 36,
     "duplicates": [
-      {
-        "name": "Alpin Quest PRO – Outdoor GPS (Free paid)",
-        "keptName": "Alpin Quest PRO 0 (Free paid)",
-        "bundleIdentifier": "com.alpinquest.app",
-        "version": "10.0.200+2500",
-        "downloadURL": "https://appstore.sidelix.vip/repos/download/4/app_4_nabzclan_sidelix.ipa"
-      },
       {
         "name": "Caliber",
         "keptName": "Caliber",
@@ -455,7 +451,7 @@
     ]
   },
   "catalogLimit": {
-    "removedApps": 1527,
+    "removedApps": 1543,
     "maxApps": 9000,
     "protectedApps": 70
   }
