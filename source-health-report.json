@@ -1,17 +1,42 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 390,
-    "missing": 10
+    "ok": 386,
+    "missing": 13,
+    "not_ipa": 1
   },
   "repaired": [],
   "unresolved": [
     {
+      "name": "TikTok++",
+      "url": "https://github.com/WuXu1/wuxuslibrary/releases/download/Latest/TikTok.v28.2.0.+.LRD+.ipa"
+    },
+    {
+      "name": "AppStore++ TrollStore",
+      "url": "https://proxy-files.thuthuatjb.com/apps?=CokePokes/AppStorePlus-TrollStore/releases/download/v1.2-1/AppStore++_TrollStore_v1.0.3-2.ipa"
+    },
+    {
+      "name": "NineAnimator",
+      "url": "https://github.com/SuperMarcus/NineAnimator/releases/download/1.3.0-3/NineAnimator_1.3.0_Build_3.iOS.ipa"
+    },
+    {
+      "name": "ZiniTevi++",
+      "url": "https://github.com/WuXu1/wuxuslibrary/releases/download/Latest/ZiniTevi+.v1.5.0.ipa"
+    },
+    {
       "name": "CercubePlus (Cercube+)",
       "url": "https://github.com/qnblackcat/CercubePlus/releases/download/v17.43.1-5.3.11/CercubePlus_17.43.1_5.3.11.ipa"
+    },
+    {
+      "name": "Angry Birds Space",
+      "url": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Angry.Birds.Space.v2.2.13.ipa"
+    },
+    {
+      "name": "Angry Birds Star Wars",
+      "url": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Angry.Birds.Star.Wars.v1.5.12.ipa"
     }
   ],
-  "date": "2026-11-17T07:56:33.923471+00:00",
+  "date": "2026-11-17T20:56:43.381746+00:00",
   "inputApps": 9000,
   "outputApps": 9000,
   "preservedApps": 204,
@@ -25,7 +50,7 @@
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 10271,
+        "apps": 10278,
         "error": null
       },
       {
@@ -70,7 +95,7 @@
       },
       {
         "source": "https://apps.nabzclan.vip/repos/altstore.php",
-        "apps": 10,
+        "apps": 11,
         "error": null
       },
       {
@@ -189,8 +214,8 @@
         "error": null
       }
     ],
-    "inputRecords": 42551,
-    "outputApps": 10392,
+    "inputRecords": 42559,
+    "outputApps": 10393,
     "rejectedRecords": 197
   },
   "deduplication": {
@@ -451,7 +476,7 @@
     ]
   },
   "catalogLimit": {
-    "removedApps": 1543,
+    "removedApps": 1544,
     "maxApps": 9000,
     "protectedApps": 70
   }
