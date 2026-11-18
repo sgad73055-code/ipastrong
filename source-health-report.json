@@ -1,15 +1,19 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 386,
-    "missing": 13,
-    "not_ipa": 1
+    "ok": 388,
+    "missing": 11,
+    "temporary": 1
   },
   "repaired": [],
   "unresolved": [
     {
       "name": "TikTok++",
       "url": "https://github.com/WuXu1/wuxuslibrary/releases/download/Latest/TikTok.v28.2.0.+.LRD+.ipa"
+    },
+    {
+      "name": "Spotify++",
+      "url": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Spotify.v8.9.36.+.Eevee.v2.1.ipa"
     },
     {
       "name": "AppStore++ TrollStore",
@@ -36,10 +40,10 @@
       "url": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Angry.Birds.Star.Wars.v1.5.12.ipa"
     }
   ],
-  "date": "2026-11-17T20:56:43.381746+00:00",
+  "date": "2026-11-18T07:30:18.983900+00:00",
   "inputApps": 9000,
   "outputApps": 9000,
-  "preservedApps": 204,
+  "preservedApps": 324,
   "recoveredPublishedSource": false,
   "removedApps": 17,
   "catalogPolicy": {
@@ -50,12 +54,12 @@
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 10278,
+        "apps": 10292,
         "error": null
       },
       {
         "source": "https://ipa.cypwn.xyz/cypwn.json",
-        "apps": 210,
+        "apps": 209,
         "error": null
       },
       {
@@ -95,7 +99,7 @@
       },
       {
         "source": "https://apps.nabzclan.vip/repos/altstore.php",
-        "apps": 11,
+        "apps": 14,
         "error": null
       },
       {
@@ -110,7 +114,7 @@
       },
       {
         "source": "https://fastsign.dev/repo.json",
-        "apps": 17204,
+        "apps": 17185,
         "error": null
       },
       {
@@ -214,8 +218,8 @@
         "error": null
       }
     ],
-    "inputRecords": 42559,
-    "outputApps": 10393,
+    "inputRecords": 42550,
+    "outputApps": 10432,
     "rejectedRecords": 197
   },
   "deduplication": {
@@ -476,7 +480,7 @@
     ]
   },
   "catalogLimit": {
-    "removedApps": 1544,
+    "removedApps": 1703,
     "maxApps": 9000,
     "protectedApps": 70
   }
