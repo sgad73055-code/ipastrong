@@ -1,8 +1,9 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 397,
-    "missing": 3
+    "ok": 375,
+    "missing": 24,
+    "temporary": 1
   },
   "repaired": [],
   "unresolved": [
@@ -55,10 +56,10 @@
       "url": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Angry.Birds.Star.Wars.v1.5.12.ipa"
     }
   ],
-  "date": "2026-11-19T07:26:44.689681+00:00",
+  "date": "2026-11-19T20:38:44.529648+00:00",
   "inputApps": 9000,
   "outputApps": 9000,
-  "preservedApps": 352,
+  "preservedApps": 350,
   "recoveredPublishedSource": false,
   "removedApps": 17,
   "catalogPolicy": {
@@ -69,7 +70,7 @@
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 10321,
+        "apps": 10338,
         "error": null
       },
       {
@@ -159,7 +160,7 @@
       },
       {
         "source": "https://github.com/dvntm0/AltStore/raw/refs/heads/main/feather.json",
-        "apps": 8,
+        "apps": 5,
         "error": null
       },
       {
@@ -233,27 +234,13 @@
         "error": null
       }
     ],
-    "inputRecords": 42531,
-    "outputApps": 10396,
+    "inputRecords": 42545,
+    "outputApps": 10397,
     "rejectedRecords": 197
   },
   "deduplication": {
-    "removedApps": 38,
+    "removedApps": 36,
     "duplicates": [
-      {
-        "name": "TwitchControl (v0.0.7 - TubeVault/BallerMC) - Patched + Liquid Glass",
-        "keptName": "TwitchControl (v0.0.7 - TubeVault/BallerMC) - Liquid Glass",
-        "bundleIdentifier": "tv.twitch",
-        "version": "32.1",
-        "downloadURL": "https://repo.ballermc.com/tubevault/Twitch_v32.1_TwitchControl_v0.0.7_Liquid_Glass%5Btg@tubevault%5D.ipa"
-      },
-      {
-        "name": "Telegram (Lead 2.0)",
-        "keptName": "Telegram",
-        "bundleIdentifier": "ph.telegra.Telegraph",
-        "version": "13.1.2",
-        "downloadURL": "https://fastsign.dev/tg-ipa/ipavault/1143-Telegram%2013.1.2%20%28Lead%202.0%29%20%5B@ipavault%5D.ipa"
-      },
       {
         "name": "Caliber",
         "keptName": "Caliber",
@@ -509,7 +496,7 @@
     ]
   },
   "catalogLimit": {
-    "removedApps": 1693,
+    "removedApps": 1694,
     "maxApps": 9000,
     "protectedApps": 70
   }
