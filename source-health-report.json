@@ -1,9 +1,8 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 384,
-    "missing": 15,
-    "restricted": 1
+    "ok": 397,
+    "missing": 3
   },
   "repaired": [],
   "unresolved": [
@@ -56,10 +55,10 @@
       "url": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Angry.Birds.Star.Wars.v1.5.12.ipa"
     }
   ],
-  "date": "2026-11-18T20:32:31.496721+00:00",
+  "date": "2026-11-19T07:26:44.689681+00:00",
   "inputApps": 9000,
   "outputApps": 9000,
-  "preservedApps": 325,
+  "preservedApps": 352,
   "recoveredPublishedSource": false,
   "removedApps": 17,
   "catalogPolicy": {
@@ -70,12 +69,12 @@
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 10311,
+        "apps": 10321,
         "error": null
       },
       {
         "source": "https://ipa.cypwn.xyz/cypwn.json",
-        "apps": 210,
+        "apps": 209,
         "error": null
       },
       {
@@ -115,7 +114,7 @@
       },
       {
         "source": "https://apps.nabzclan.vip/repos/altstore.php",
-        "apps": 14,
+        "apps": 16,
         "error": null
       },
       {
@@ -130,7 +129,7 @@
       },
       {
         "source": "https://fastsign.dev/repo.json",
-        "apps": 17185,
+        "apps": 17135,
         "error": null
       },
       {
@@ -234,19 +233,26 @@
         "error": null
       }
     ],
-    "inputRecords": 42570,
-    "outputApps": 10433,
+    "inputRecords": 42531,
+    "outputApps": 10396,
     "rejectedRecords": 197
   },
   "deduplication": {
-    "removedApps": 37,
+    "removedApps": 38,
     "duplicates": [
       {
-        "name": "Alpin Quest PRO 0 (Free paid)",
-        "keptName": "Alpin Quest PRO (Free paid)",
-        "bundleIdentifier": "com.alpinquest.app",
-        "version": "10.0.200+2500",
-        "downloadURL": "https://appstore.sidelix.vip/repos/download/4/app_4_nabzclan_sidelix.ipa"
+        "name": "TwitchControl (v0.0.7 - TubeVault/BallerMC) - Patched + Liquid Glass",
+        "keptName": "TwitchControl (v0.0.7 - TubeVault/BallerMC) - Liquid Glass",
+        "bundleIdentifier": "tv.twitch",
+        "version": "32.1",
+        "downloadURL": "https://repo.ballermc.com/tubevault/Twitch_v32.1_TwitchControl_v0.0.7_Liquid_Glass%5Btg@tubevault%5D.ipa"
+      },
+      {
+        "name": "Telegram (Lead 2.0)",
+        "keptName": "Telegram",
+        "bundleIdentifier": "ph.telegra.Telegraph",
+        "version": "13.1.2",
+        "downloadURL": "https://fastsign.dev/tg-ipa/ipavault/1143-Telegram%2013.1.2%20%28Lead%202.0%29%20%5B@ipavault%5D.ipa"
       },
       {
         "name": "Caliber",
@@ -503,7 +509,7 @@
     ]
   },
   "catalogLimit": {
-    "removedApps": 1704,
+    "removedApps": 1693,
     "maxApps": 9000,
     "protectedApps": 70
   }
