@@ -1,8 +1,9 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 378,
-    "missing": 22
+    "ok": 368,
+    "missing": 31,
+    "temporary": 1
   },
   "repaired": [],
   "unresolved": [
@@ -17,6 +18,10 @@
     {
       "name": "CamScanner+",
       "url": "https://proxy-files.thuthuatjb.com/apps?=thuthuatjb/IPAS/releases/download/2/CamScanner+_5.26.10_TTJB.ipa"
+    },
+    {
+      "name": "ClashOfClan",
+      "url": "https://proxy-files.thuthuatjb.com/apps?=thuthuatjb/IPAS/releases/download/2/Clash.Of.Clash.16.137.13_TTJB.ipa"
     },
     {
       "name": "Spotify++",
@@ -37,6 +42,14 @@
     {
       "name": "Anime Now!",
       "url": "https://github.com/WuXu1/wuxuslibrary/releases/download/Latest/Anime.Now.v1.0.0-b3.ipa"
+    },
+    {
+      "name": "Photomath++",
+      "url": "https://github.com/WuXu1/wuxuslibrary/releases/download/Latest/Photomath.Cracked.v8.21.0.ipa"
+    },
+    {
+      "name": "SoundCloud++",
+      "url": "https://github.com/WuXu1/wuxuslibrary/releases/download/Latest/SoundCloud.v6.20.0.+.DarkCloud.v1.4.ipa"
     },
     {
       "name": "Snapchat++",
@@ -63,10 +76,10 @@
       "url": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Angry.Birds.Star.Wars.v1.5.12.ipa"
     }
   ],
-  "date": "2026-11-20T07:17:09.336067+00:00",
+  "date": "2026-11-20T20:21:39.540418+00:00",
   "inputApps": 9000,
   "outputApps": 9000,
-  "preservedApps": 349,
+  "preservedApps": 329,
   "recoveredPublishedSource": false,
   "removedApps": 17,
   "catalogPolicy": {
@@ -77,12 +90,12 @@
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 10344,
+        "apps": 10351,
         "error": null
       },
       {
         "source": "https://ipa.cypwn.xyz/cypwn.json",
-        "apps": 209,
+        "apps": 210,
         "error": null
       },
       {
@@ -241,8 +254,8 @@
         "error": null
       }
     ],
-    "inputRecords": 42646,
-    "outputApps": 10426,
+    "inputRecords": 42654,
+    "outputApps": 10428,
     "rejectedRecords": 197
   },
   "deduplication": {
@@ -503,7 +516,7 @@
     ]
   },
   "catalogLimit": {
-    "removedApps": 1722,
+    "removedApps": 1704,
     "maxApps": 9000,
     "protectedApps": 70
   }
