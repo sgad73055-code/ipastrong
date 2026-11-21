@@ -1,7 +1,9 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 400
+    "ok": 170,
+    "restricted": 226,
+    "missing": 4
   },
   "repaired": [],
   "unresolved": [
@@ -74,10 +76,10 @@
       "url": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Angry.Birds.Star.Wars.v1.5.12.ipa"
     }
   ],
-  "date": "2026-11-21T07:09:14.423508+00:00",
+  "date": "2026-11-21T19:16:46.259309+00:00",
   "inputApps": 9000,
   "outputApps": 9000,
-  "preservedApps": 356,
+  "preservedApps": 333,
   "recoveredPublishedSource": false,
   "removedApps": 17,
   "catalogPolicy": {
@@ -88,7 +90,7 @@
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 10358,
+        "apps": 10359,
         "error": null
       },
       {
@@ -252,27 +254,13 @@
         "error": null
       }
     ],
-    "inputRecords": 42624,
-    "outputApps": 10423,
+    "inputRecords": 42620,
+    "outputApps": 10420,
     "rejectedRecords": 197
   },
   "deduplication": {
-    "removedApps": 38,
+    "removedApps": 36,
     "duplicates": [
-      {
-        "name": "TendieMaker",
-        "keptName": "TendieMaker",
-        "bundleIdentifier": "com.mikevillarroel.tendiemaker",
-        "version": "1.0.10",
-        "downloadURL": "https://github.com/mikevillarroel/tendiemaker/releases/download/v1.0.10/TendieMaker-1.0.10.ipa"
-      },
-      {
-        "name": "X++",
-        "keptName": "X++",
-        "bundleIdentifier": "com.atebits.Tweetie2",
-        "version": "12.45.1",
-        "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/X.v12.45.1.+.NFB.v7.3.1.ipa"
-      },
       {
         "name": "Caliber",
         "keptName": "Caliber",
@@ -528,7 +516,7 @@
     ]
   },
   "catalogLimit": {
-    "removedApps": 1724,
+    "removedApps": 1700,
     "maxApps": 9000,
     "protectedApps": 72
   }
