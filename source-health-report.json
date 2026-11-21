@@ -1,9 +1,7 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 368,
-    "missing": 31,
-    "temporary": 1
+    "ok": 400
   },
   "repaired": [],
   "unresolved": [
@@ -76,10 +74,10 @@
       "url": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Angry.Birds.Star.Wars.v1.5.12.ipa"
     }
   ],
-  "date": "2026-11-20T20:21:39.540418+00:00",
+  "date": "2026-11-21T07:09:14.423508+00:00",
   "inputApps": 9000,
   "outputApps": 9000,
-  "preservedApps": 329,
+  "preservedApps": 356,
   "recoveredPublishedSource": false,
   "removedApps": 17,
   "catalogPolicy": {
@@ -90,7 +88,7 @@
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 10351,
+        "apps": 10358,
         "error": null
       },
       {
@@ -135,7 +133,7 @@
       },
       {
         "source": "https://apps.nabzclan.vip/repos/altstore.php",
-        "apps": 16,
+        "apps": 27,
         "error": null
       },
       {
@@ -150,7 +148,7 @@
       },
       {
         "source": "https://fastsign.dev/repo.json",
-        "apps": 17230,
+        "apps": 17182,
         "error": null
       },
       {
@@ -215,8 +213,8 @@
       },
       {
         "source": "https://provenance-emu.com/apps.json",
-        "apps": 1,
-        "error": null
+        "apps": 0,
+        "error": "Selected apps unavailable; retaining previous entries"
       },
       {
         "source": "https://alt.getutm.app",
@@ -254,13 +252,27 @@
         "error": null
       }
     ],
-    "inputRecords": 42654,
-    "outputApps": 10428,
+    "inputRecords": 42624,
+    "outputApps": 10423,
     "rejectedRecords": 197
   },
   "deduplication": {
-    "removedApps": 36,
+    "removedApps": 38,
     "duplicates": [
+      {
+        "name": "TendieMaker",
+        "keptName": "TendieMaker",
+        "bundleIdentifier": "com.mikevillarroel.tendiemaker",
+        "version": "1.0.10",
+        "downloadURL": "https://github.com/mikevillarroel/tendiemaker/releases/download/v1.0.10/TendieMaker-1.0.10.ipa"
+      },
+      {
+        "name": "X++",
+        "keptName": "X++",
+        "bundleIdentifier": "com.atebits.Tweetie2",
+        "version": "12.45.1",
+        "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/X.v12.45.1.+.NFB.v7.3.1.ipa"
+      },
       {
         "name": "Caliber",
         "keptName": "Caliber",
@@ -516,8 +528,8 @@
     ]
   },
   "catalogLimit": {
-    "removedApps": 1704,
+    "removedApps": 1724,
     "maxApps": 9000,
-    "protectedApps": 70
+    "protectedApps": 72
   }
 }
