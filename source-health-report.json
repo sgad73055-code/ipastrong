@@ -1,10 +1,8 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 123,
-    "restricted": 266,
-    "not_ipa": 5,
-    "missing": 6
+    "restricted": 352,
+    "ok": 48
   },
   "repaired": [],
   "unresolved": [
@@ -77,10 +75,10 @@
       "url": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Angry.Birds.Star.Wars.v1.5.12.ipa"
     }
   ],
-  "date": "2026-11-22T19:41:38.655305+00:00",
+  "date": "2026-11-23T07:39:33.084116+00:00",
   "inputApps": 9000,
   "outputApps": 9000,
-  "preservedApps": 338,
+  "preservedApps": 356,
   "recoveredPublishedSource": false,
   "removedApps": 17,
   "catalogPolicy": {
@@ -91,12 +89,12 @@
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 10373,
+        "apps": 10374,
         "error": null
       },
       {
         "source": "https://ipa.cypwn.xyz/cypwn.json",
-        "apps": 209,
+        "apps": 210,
         "error": null
       },
       {
@@ -136,7 +134,7 @@
       },
       {
         "source": "https://apps.nabzclan.vip/repos/altstore.php",
-        "apps": 54,
+        "apps": 162,
         "error": null
       },
       {
@@ -151,7 +149,7 @@
       },
       {
         "source": "https://fastsign.dev/repo.json",
-        "apps": 17287,
+        "apps": 17304,
         "error": null
       },
       {
@@ -255,76 +253,13 @@
         "error": null
       }
     ],
-    "inputRecords": 42764,
-    "outputApps": 10513,
+    "inputRecords": 42890,
+    "outputApps": 10641,
     "rejectedRecords": 197
   },
   "deduplication": {
-    "removedApps": 45,
+    "removedApps": 36,
     "duplicates": [
-      {
-        "name": "Ryukgram",
-        "keptName": "Ryukgram (Hacked)",
-        "bundleIdentifier": "com.burbn.instagram",
-        "version": "453.0.0",
-        "downloadURL": "https://appstore.sidelix.vip/repos/download/23/app_23_nabzclan_sidelix.ipa"
-      },
-      {
-        "name": "TikTok Douyin - plus",
-        "keptName": "TikTok Douyin - plus (Hacked)",
-        "bundleIdentifier": "com.zhiliaoapp.musically",
-        "version": "41.1.0",
-        "downloadURL": "https://appstore.sidelix.vip/repos/download/17/app_17_nabzclan_sidelix.ipa"
-      },
-      {
-        "name": "Cash App - AlpineV5Trial",
-        "keptName": "Cash App - AlpineV5Trial (Hacked)",
-        "bundleIdentifier": "com.squareup.cash",
-        "version": "1.2",
-        "downloadURL": "https://appstore.sidelix.vip/repos/download/24/app_24_nabzclan_sidelix.ipa"
-      },
-      {
-        "name": "Magic Sort - (Hacked)",
-        "keptName": "Magic Sort (Hacked)",
-        "bundleIdentifier": "com.grandgames.magicsort",
-        "version": "0.0.3538",
-        "downloadURL": "https://appstore.sidelix.vip/repos/download/25/app_25_nabzclan_sidelix.ipa"
-      },
-      {
-        "name": "X - NeoFreeBird",
-        "keptName": "X - NeoFreeBird (Hacked)",
-        "bundleIdentifier": "com.atebits.Tweetie2",
-        "version": "12.45.1",
-        "downloadURL": "https://appstore.sidelix.vip/repos/download/22/app_22_nabzclan_sidelix.ipa"
-      },
-      {
-        "name": "Cooking Diary - (Hacked)",
-        "keptName": "Cooking Diary (Hacked)",
-        "bundleIdentifier": "com.mytonallc.cookingdiary",
-        "version": "2.59.1",
-        "downloadURL": "https://appstore.sidelix.vip/repos/download/20/app_20_nabzclan_sidelix.ipa"
-      },
-      {
-        "name": "YouTube plus",
-        "keptName": "YouTube plus (Hacked)",
-        "bundleIdentifier": "com.google.ios.youtube",
-        "version": "21.45.4",
-        "downloadURL": "https://appstore.sidelix.vip/repos/download/7/app_7_nabzclan_sidelix.ipa"
-      },
-      {
-        "name": "Roblox Delta",
-        "keptName": "Roblox Delta (Hacked)",
-        "bundleIdentifier": "com.roblox.robloxmobile",
-        "version": "2.747.1486",
-        "downloadURL": "https://appstore.sidelix.vip/repos/download/16/app_16_nabzclan_sidelix.ipa"
-      },
-      {
-        "name": "Spotify - Eevee",
-        "keptName": "Spotify - Eevee (Hacked)",
-        "bundleIdentifier": "com.spotify.client",
-        "version": "9.2.0",
-        "downloadURL": "https://appstore.sidelix.vip/repos/download/18/app_18_nabzclan_sidelix.ipa"
-      },
       {
         "name": "Caliber",
         "keptName": "Caliber",
@@ -580,8 +515,8 @@
     ]
   },
   "catalogLimit": {
-    "removedApps": 1789,
+    "removedApps": 1944,
     "maxApps": 9000,
-    "protectedApps": 73
+    "protectedApps": 74
   }
 }
