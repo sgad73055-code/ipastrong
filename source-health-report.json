@@ -1,9 +1,9 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 81,
-    "restricted": 318,
-    "missing": 1
+    "ok": 111,
+    "restricted": 288,
+    "temporary": 1
   },
   "repaired": [],
   "unresolved": [
@@ -76,10 +76,10 @@
       "url": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Angry.Birds.Star.Wars.v1.5.12.ipa"
     }
   ],
-  "date": "2026-11-23T23:54:30.339713+00:00",
+  "date": "2026-11-24T09:55:49.001546+00:00",
   "inputApps": 9000,
   "outputApps": 9000,
-  "preservedApps": 354,
+  "preservedApps": 404,
   "recoveredPublishedSource": false,
   "removedApps": 17,
   "catalogPolicy": {
@@ -90,12 +90,12 @@
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 10403,
+        "apps": 10410,
         "error": null
       },
       {
         "source": "https://ipa.cypwn.xyz/cypwn.json",
-        "apps": 209,
+        "apps": 210,
         "error": null
       },
       {
@@ -140,7 +140,7 @@
       },
       {
         "source": "https://ipa.thuthuatjb.com/repo",
-        "apps": 10175,
+        "apps": 10443,
         "error": null
       },
       {
@@ -150,7 +150,7 @@
       },
       {
         "source": "https://fastsign.dev/repo.json",
-        "apps": 17304,
+        "apps": 17358,
         "error": null
       },
       {
@@ -254,13 +254,20 @@
         "error": null
       }
     ],
-    "inputRecords": 42923,
-    "outputApps": 10649,
-    "rejectedRecords": 198
+    "inputRecords": 43253,
+    "outputApps": 10680,
+    "rejectedRecords": 202
   },
   "deduplication": {
-    "removedApps": 36,
+    "removedApps": 37,
     "duplicates": [
+      {
+        "name": "X++",
+        "keptName": "X++",
+        "bundleIdentifier": "com.atebits.Tweetie2",
+        "version": "12.46",
+        "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/X.v12.46.+.NFB.v7.3.1.ipa"
+      },
       {
         "name": "Caliber",
         "keptName": "Caliber",
@@ -516,7 +523,7 @@
     ]
   },
   "catalogLimit": {
-    "removedApps": 1950,
+    "removedApps": 2030,
     "maxApps": 9000,
     "protectedApps": 74
   }
