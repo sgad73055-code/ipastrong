@@ -1,9 +1,9 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 111,
-    "restricted": 288,
-    "temporary": 1
+    "ok": 115,
+    "restricted": 284,
+    "missing": 1
   },
   "repaired": [],
   "unresolved": [
@@ -76,10 +76,10 @@
       "url": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Angry.Birds.Star.Wars.v1.5.12.ipa"
     }
   ],
-  "date": "2026-11-24T09:55:49.001546+00:00",
+  "date": "2026-11-24T22:27:50.326349+00:00",
   "inputApps": 9000,
   "outputApps": 9000,
-  "preservedApps": 404,
+  "preservedApps": 402,
   "recoveredPublishedSource": false,
   "removedApps": 17,
   "catalogPolicy": {
@@ -90,7 +90,7 @@
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 10410,
+        "apps": 10431,
         "error": null
       },
       {
@@ -254,20 +254,13 @@
         "error": null
       }
     ],
-    "inputRecords": 43253,
+    "inputRecords": 43274,
     "outputApps": 10680,
     "rejectedRecords": 202
   },
   "deduplication": {
-    "removedApps": 37,
+    "removedApps": 36,
     "duplicates": [
-      {
-        "name": "X++",
-        "keptName": "X++",
-        "bundleIdentifier": "com.atebits.Tweetie2",
-        "version": "12.46",
-        "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/X.v12.46.+.NFB.v7.3.1.ipa"
-      },
       {
         "name": "Caliber",
         "keptName": "Caliber",
@@ -523,7 +516,7 @@
     ]
   },
   "catalogLimit": {
-    "removedApps": 2030,
+    "removedApps": 2029,
     "maxApps": 9000,
     "protectedApps": 74
   }
