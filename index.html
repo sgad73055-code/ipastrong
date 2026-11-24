@@ -1,41 +1,681 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#080e1b">
-<title>IPA Strong — مكتبتك، بطريقتك</title><meta name="description" content="تصفّح مكتبة IPA Strong لتطبيقات وألعاب الآيفون. ابحث عن نسختك، استعرض التفاصيل، وتعرّف على باقات الشهادات.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#070a12">
+<meta name="color-scheme" content="dark">
+<title>IPA Strong — مكتبتك، بطريقتك</title>
+<meta name="description" content="تصفّح مكتبة IPA Strong لتطبيقات وألعاب الآيفون. ابحث عن نسختك، استعرض التفاصيل، وتعرّف على باقات الشهادات.">
+<link rel="icon" href="https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/source-icon.jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Readex+Pro:wght@400;500;600;700&display=swap">
 <style>
-:root{color-scheme:dark;--bg:#080e1b;--panel:#101a2b;--line:#ffffff13;--text:#f2f6ff;--muted:#94a4be;--cyan:#71e7ff;--violet:#a396ff}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Tahoma,Arial,sans-serif}button,input,select{font:inherit}button,a,input,select{-webkit-tap-highlight-color:transparent}button,a{touch-action:manipulation}button{cursor:pointer}a{color:inherit;text-decoration:none}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--cyan);outline-offset:4px}.wrap{width:min(1140px,calc(100% - 48px));margin:auto}.top{height:80px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:11px;font-weight:800;line-height:1.3;letter-spacing:.5px}.brand img{width:44px;height:44px;object-fit:cover;border-radius:13px}.brand small{display:block;color:var(--muted);font-size:10px;font-weight:400;letter-spacing:0;margin-top:3px}.nav{display:flex;gap:28px;align-items:center;color:#bbc8dd;font-size:13px}.nav a:hover{color:var(--cyan)}.nav .channel{padding:8px 16px;border:1px solid var(--line);border-radius:10px}.hero{padding:66px 0 42px;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;width:500px;height:400px;top:-220px;right:10%;background:radial-gradient(ellipse,#297cbd26,transparent 70%);pointer-events:none}.hero-inner{display:grid;grid-template-columns:1.2fr .8fr;gap:50px;align-items:center}.eyebrow{font-size:11px;letter-spacing:2px;color:var(--cyan);display:flex;align-items:center;gap:9px}.eyebrow:before{content:"";width:24px;height:1px;background:var(--cyan)}h1{font-size:clamp(36px,5vw,62px);line-height:1.32;letter-spacing:-1.6px;margin:17px 0}h1 span{color:var(--cyan)}.hero p{color:var(--muted);max-width:470px;font-size:15px;margin:0}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}.button{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:10px 18px;border:1px solid var(--line);border-radius:12px;background:#ffffff04;color:var(--text);font-weight:600;font-size:13px}.button.primary{background:var(--cyan);color:#071523;border-color:var(--cyan)}.button:hover{filter:brightness(1.1)}.hero-art{position:relative;display:flex;align-items:center;justify-content:center;min-height:245px}.hero-art:before{content:"";position:absolute;inset:5px 25px;border:1px solid #71e7ff16;border-radius:50%;transform:rotate(-20deg)}.hero-art img{width:205px;height:205px;object-fit:cover;border-radius:48px;transform:rotate(-7deg);box-shadow:0 18px 80px #1e82d52b}.floating-label{position:absolute;bottom:0;right:7%;padding:11px 18px;background:#142035;border:1px solid #536e902e;border-radius:14px;box-shadow:0 12px 40px #0004;font-size:12px}.floating-label b{color:var(--cyan);margin-left:7px}.library{padding:28px 0 46px}.section-title{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-bottom:22px}h2{margin:0;font-size:25px;letter-spacing:-.5px}.section-title p{margin:3px 0 0;color:var(--muted);font-size:12px}.small-label{color:var(--muted);font-size:11px;white-space:nowrap}.toolbar{display:flex;gap:12px;margin-bottom:16px}.searchbox{flex:1;display:flex;align-items:center;gap:12px;padding:0 16px;background:var(--panel);border:1px solid #ffffff18;border-radius:14px}.searchbox svg{color:var(--muted);flex-shrink:0}.searchbox input{height:54px;min-width:0;width:100%;border:0;color:var(--text);background:none;outline:0!important;font-size:14px}.searchbox input::placeholder{color:#7f91ac}.clear{background:none;border:0;color:var(--muted);padding:8px;font-size:21px}.sort{max-width:150px;border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:0 12px;color:#bdcbe0;font-size:12px}.categories{display:flex;gap:8px;overflow-x:auto;padding:0 0 13px;scrollbar-width:none}.categories::-webkit-scrollbar{display:none}.chip{white-space:nowrap;border:1px solid var(--line);background:transparent;color:#a8b7cf;border-radius:9px;padding:7px 15px;font-size:12px}.chip[aria-pressed=true]{color:var(--cyan);background:#71e7ff0e;border-color:#71e7ff40}.resultline{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:4px 0 16px;color:var(--muted);font-size:11px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.app{display:flex;gap:13px;align-items:center;min-width:0;padding:17px;border:1px solid var(--line);background:linear-gradient(115deg,#121e30,#0d1626);border-radius:17px;color:inherit;text-align:right;width:100%;transition:border-color .15s,transform .15s}.app:hover{border-color:#71e7ff4d;transform:translateY(-2px)}.app-icon{width:60px;height:60px;border-radius:15px;object-fit:cover;flex-shrink:0;background:#20324b}.app-copy{min-width:0;flex:1}.app h3{font-size:14px;line-height:1.4;margin:0 0 5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;direction:auto}.app .meta{font-size:10px;color:var(--muted);margin:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.app .version{font-size:10px;color:#a6b7d2;margin-top:3px;direction:ltr;text-align:right}.app .arrow{font-size:20px;color:#61728b}.morebox{text-align:center;margin-top:24px}.empty{grid-column:1/-1;padding:48px 20px;text-align:center;border:1px dashed #ffffff1c;border-radius:16px;color:var(--muted)}.empty strong{display:block;color:var(--text);margin-bottom:8px}.skeleton{height:99px;background:linear-gradient(100deg,#132033,#1a2940,#132033);background-size:200% 100%;border-radius:17px;animation:shimmer 1.5s infinite}@keyframes shimmer{to{background-position:-200% 0}}.packages{padding:46px 0 56px;border-block:1px solid var(--line);background:#0b1322}.package-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.package{padding:24px 20px;background:#101b2d;border:1px solid var(--line);border-radius:18px;display:flex;flex-direction:column}.package.featured{border-color:#71e7ff57;background:linear-gradient(135deg,#14293a,#101b2d)}.package .tag{font-size:10px;color:var(--cyan);letter-spacing:.5px;margin-bottom:14px}.package h3{font-size:17px;margin:0 0 12px}.price{font-size:27px;line-height:1.5;font-weight:750;letter-spacing:-1px}.price small{font-size:11px;letter-spacing:0;color:var(--muted);font-weight:400}.package p{font-size:12px;color:var(--muted);margin:9px 0 20px}.package .button{margin-top:auto;font-size:12px;padding-inline:10px}.note{font-size:12px;color:var(--muted);margin:18px 0 0}.bottom{display:grid;grid-template-columns:1fr 1fr;gap:60px;padding:50px 0}.bottom h2{font-size:23px;margin-bottom:14px}.bottom p{color:var(--muted);font-size:13px}.steps{list-style:none;padding:0;display:grid;gap:16px}.steps li{display:flex;align-items:flex-start;gap:12px;font-size:13px;color:#b5c5dc}.stepnum{width:27px;height:27px;flex-shrink:0;display:grid;place-items:center;background:#71e7ff0c;border:1px solid #71e7ff26;color:var(--cyan);border-radius:8px;font-size:11px}.steps b{display:block;color:var(--text);font-weight:600}details{border-bottom:1px solid var(--line);padding:14px 0;font-size:13px}summary{cursor:pointer;color:#d7e2f4}details p{margin-bottom:0}footer{border-top:1px solid var(--line);padding:22px 0;color:var(--muted);font-size:11px}.footer-inner{display:flex;justify-content:space-between;gap:12px}.footer-inner a{color:var(--cyan)}dialog{color:var(--text);background:#101b2d;border:1px solid #ffffff20;border-radius:24px;padding:26px;width:min(560px,calc(100% - 28px));max-height:85dvh;overflow:auto}dialog::backdrop{background:#020711c9;backdrop-filter:blur(7px)}.dialog-head{display:flex;gap:14px;align-items:center;padding-left:25px}.dialog-head img{width:72px;height:72px;object-fit:cover;border-radius:18px}.dialog-head h2{font-size:21px;line-height:1.4;direction:auto}.dialog-head p{font-size:11px;color:var(--muted);margin:5px 0}.close-dialog{position:absolute;top:13px;left:13px;background:#ffffff08;border:1px solid var(--line);color:#b4c4db;border-radius:50%;width:32px;height:32px;font-size:20px}.description{white-space:pre-wrap;overflow-wrap:anywhere;color:#b6c5db;font-size:13px;line-height:1.9;margin:25px 0;max-height:42vh;overflow:auto}.dialog-action{width:100%}.dialog-note{text-align:center;font-size:10px;color:var(--muted);margin-bottom:0}.toast{position:fixed;bottom:28px;left:50%;transform:translateX(-50%);background:#dffaff;color:#102330;padding:11px 20px;border-radius:12px;font-size:13px;z-index:10;box-shadow:0 10px 40px #0005;max-width:90%;text-align:center}.sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}[hidden]{display:none!important}@media(min-width:1100px){.grid{grid-template-columns:repeat(4,minmax(0,1fr))}.app{padding:15px;gap:10px}.app-icon{width:52px;height:52px}.app h3{font-size:12px}}@media(max-width:700px){.wrap{width:calc(100% - 32px)}.top{height:68px}.brand img{width:38px;height:38px}.brand{font-size:14px}.nav{gap:17px;font-size:11px}.nav .channel,.nav .infolink{display:none}.hero{padding:35px 0 26px}.hero-inner{grid-template-columns:1fr;gap:0}.hero-art{display:none}h1{font-size:40px;margin:15px 0;letter-spacing:-1px}.hero p{font-size:13px;max-width:330px}.eyebrow{font-size:10px}.actions{margin-top:22px}.button{font-size:12px;padding:10px 15px}.library{padding-top:20px}.section-title{margin-bottom:17px}h2{font-size:22px}.section-title p{font-size:11px}.small-label{font-size:10px}.toolbar{gap:8px}.sort{max-width:110px;font-size:10px;padding-inline:8px}.searchbox{padding-inline:12px;gap:8px}.searchbox input{font-size:12px;height:49px}.chip{font-size:11px;padding:7px 13px}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.app{padding:12px 10px;gap:9px;align-items:center}.app-icon{width:43px;height:43px;border-radius:12px}.app h3{font-size:11px}.app .meta,.app .version{font-size:9px}.app .arrow{display:none}.resultline{font-size:10px}.package-grid{grid-template-columns:repeat(2,1fr);gap:10px}.package{padding:20px 15px}.package h3{font-size:14px}.price{font-size:24px}.package p{font-size:11px}.packages{padding:30px 0}.bottom{grid-template-columns:1fr;gap:28px;padding:32px 0}.footer-inner{flex-direction:column;gap:5px}.section-title.packtitle{align-items:flex-start;flex-direction:column;gap:4px}dialog{padding:22px}.dialog-head h2{font-size:18px}}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
-</style></head>
+/* ───────── Tokens ───────── */
+:root{
+  color-scheme:dark;
+  --bg:#070a12;--s1:#0d1320;--s2:#131b2c;--s3:#1b2539;
+  --line:rgb(255 255 255/.075);--line2:rgb(255 255 255/.15);
+  --text:#edf1fa;--muted:#8c99b2;--dim:#5b6882;
+  --cyan:#5ce1ff;--cyan-ink:#04202a;--amber:#ffc66d;--amber-ink:#2a1a00;
+  --f-display:"Readex Pro","IBM Plex Sans Arabic",-apple-system,"Segoe UI",Tahoma,sans-serif;
+  --f-body:"IBM Plex Sans Arabic",-apple-system,BlinkMacSystemFont,"Segoe UI",Tahoma,Arial,sans-serif;
+  --ease:cubic-bezier(.22,.8,.24,1);
+  --header:68px;
+  --safe-b:env(safe-area-inset-bottom,0px);
+}
+*{box-sizing:border-box}
+html{background:var(--bg);scroll-behavior:smooth;scroll-padding-top:calc(var(--header) + 20px);-webkit-text-size-adjust:100%}
+body{margin:0;color:var(--text);font:400 15px/1.75 var(--f-body);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+button,input,select{font:inherit;color:inherit}
+button,a,input,select{-webkit-tap-highlight-color:transparent}
+button,a{touch-action:manipulation}
+button{cursor:pointer}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--cyan);outline-offset:3px;border-radius:8px}
+.ic{width:1.15em;height:1.15em;flex-shrink:0;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+.sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+[hidden]{display:none!important}
+.wrap{width:min(1180px,calc(100% - 48px));margin-inline:auto}
+
+/* ───────── Ambient background ───────── */
+.ambient{position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background:
+   radial-gradient(900px 520px at 78% -8%,rgb(44 130 200/.2),transparent 70%),
+   radial-gradient(700px 460px at 8% 38%,rgb(92 90 220/.09),transparent 70%),
+   var(--bg)}
+
+/* ───────── Header ───────── */
+.top{position:sticky;top:0;z-index:50;background:rgb(7 10 18/.72);-webkit-backdrop-filter:saturate(1.5) blur(18px);backdrop-filter:saturate(1.5) blur(18px);border-bottom:1px solid var(--line)}
+.top-in{height:var(--header);display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;font-family:var(--f-display);font-weight:700;line-height:1.25;letter-spacing:.6px}
+.brand img{width:42px;height:42px;object-fit:cover;border-radius:22.4%;box-shadow:0 0 0 1px var(--line2),0 6px 18px rgb(0 0 0/.4);transition:transform .35s var(--ease)}
+.brand:hover img{transform:rotate(-6deg) scale(1.05)}
+.brand small{display:block;color:var(--muted);font:400 11.5px/1.4 var(--f-body);letter-spacing:0;margin-top:2px}
+.nav{display:flex;align-items:center;gap:6px;font-size:14px}
+.nav a{padding:7px 14px;border-radius:999px;color:#b4c0d6;transition:color .2s,background .2s}
+.nav a:hover{color:var(--text);background:rgb(255 255 255/.06)}
+.nav a[aria-current]{color:var(--cyan);background:rgb(92 225 255/.09)}
+.nav .channel{display:inline-flex;align-items:center;gap:8px;margin-inline-start:10px;padding:8px 16px;border:1px solid var(--line2);color:var(--text);transition:border-color .25s,box-shadow .25s,background .25s}
+.nav .channel:hover{border-color:rgb(92 225 255/.55);background:rgb(92 225 255/.07);box-shadow:0 0 28px rgb(92 225 255/.18)}
+.nav .channel .ic{transition:transform .3s var(--ease)}
+.nav .channel:hover .ic{transform:translate(-2px,-2px) rotate(-8deg)}
+.top-channel{display:none;width:42px;height:42px;place-items:center;border:1px solid var(--line2);border-radius:14px;background:rgb(255 255 255/.03);font-size:19px}
+
+/* ───────── Buttons ───────── */
+.button{position:relative;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:46px;padding:10px 20px;border:1px solid var(--line2);border-radius:14px;background:rgb(255 255 255/.035);color:var(--text);font-weight:500;font-size:14px;line-height:1.3;transition:transform .18s var(--ease),border-color .25s,box-shadow .25s,background .25s}
+.button .ic{font-size:17px;transition:transform .3s var(--ease)}
+.button:hover{border-color:rgb(255 255 255/.3);background:rgb(255 255 255/.07)}
+.button:active{transform:scale(.97)}
+.button.primary{background:var(--cyan);border-color:var(--cyan);color:var(--cyan-ink);font-weight:600;box-shadow:0 10px 30px -10px rgb(92 225 255/.55)}
+.button.primary:hover{background:#86ebff;box-shadow:0 12px 38px -8px rgb(92 225 255/.7)}
+.button.primary::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 35%,rgb(255 255 255/.55) 50%,transparent 65%);transform:translateX(120%);transition:transform .7s var(--ease)}
+.button.primary:hover::after{transform:translateX(-120%)}
+.button:hover .ic-go{transform:translateX(-4px)}
+.button:hover .ic-ext{transform:translate(-2px,-2px)}
+
+/* ───────── Hero ───────── */
+.hero{position:relative;overflow:hidden;padding:clamp(40px,6vw,84px) 0 clamp(30px,4vw,56px)}
+.hero::before{content:"";position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(rgb(255 255 255/.16) 1px,transparent 1.2px);background-size:30px 30px;mask-image:radial-gradient(ellipse 70% 80% at 70% 40%,#000,transparent 75%);-webkit-mask-image:radial-gradient(ellipse 70% 80% at 70% 40%,#000,transparent 75%);opacity:.55}
+.hero-in{position:relative;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:32px;align-items:center}
+.badge{display:inline-flex;align-items:center;gap:10px;padding:6px 14px 6px 16px;border:1px solid var(--line2);border-radius:999px;background:rgb(255 255 255/.03);color:#c7d3e8;font-size:13px}
+.badge i{width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 12px var(--cyan)}
+h1{margin:22px 0 20px;font:700 clamp(42px,6.2vw,80px)/1.22 var(--f-display);letter-spacing:0}
+h1 .l1,h1 .l2{display:block}
+h1 .l2{color:#6f7e9a}
+.hero-copy p{max-width:30em;margin:0;color:var(--muted);font-size:clamp(15px,1.5vw,17px);line-height:1.9}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
+.hero-stat{display:flex;align-items:baseline;gap:12px;margin-top:38px;padding-top:22px;border-top:1px solid var(--line);max-width:30em;color:var(--muted);font-size:13.5px}
+.hero-stat b{font:600 28px/1 var(--f-display);color:var(--text);letter-spacing:0;font-variant-numeric:tabular-nums}
+.hero-copy>*{animation:rise .8s var(--ease) both}
+.hero-copy>:nth-child(2){animation-delay:.08s}.hero-copy>:nth-child(3){animation-delay:.16s}.hero-copy>:nth-child(4){animation-delay:.24s}.hero-copy>:nth-child(5){animation-delay:.32s}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}}
+
+/* Mosaic: real app icons drifting in opposite directions */
+.mosaic-wrap{position:relative;height:540px;display:grid;place-items:center;animation:fade 1.2s .2s both}
+@keyframes fade{from{opacity:0}}
+.mosaic-wrap::before{content:"";position:absolute;inset:40px 6px;border:1px solid rgb(92 225 255/.16);border-radius:50%;transform:rotate(-18deg)}
+.mosaic-wrap::after{content:"";position:absolute;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgb(60 150 220/.22),transparent 68%);filter:blur(10px)}
+.mosaic{position:relative;z-index:1;display:flex;gap:16px;height:600px;transform:rotate(-9deg);mask-image:linear-gradient(transparent,#000 22%,#000 78%,transparent);-webkit-mask-image:linear-gradient(transparent,#000 22%,#000 78%,transparent)}
+.mcol{display:flex;flex-direction:column;width:88px;will-change:transform;animation:up 70s linear infinite}
+.mcol:nth-child(even){animation-name:down;animation-duration:84s}
+.mcol:nth-child(2){margin-top:-48px}.mcol:nth-child(4){margin-top:-92px}
+.tile{display:block;flex-shrink:0;width:88px;height:88px;margin-block-end:16px;border-radius:22.4%;overflow:hidden;background:var(--s3);box-shadow:0 0 0 1px var(--line2),0 14px 30px -8px rgb(0 0 0/.65)}
+.tile img{display:block;width:100%;height:100%;object-fit:cover}
+.mosaic.is-loading .mcol{animation:none}
+.mosaic.is-loading .tile{background:linear-gradient(100deg,var(--s2) 30%,var(--s3) 50%,var(--s2) 70%);background-size:200% 100%;animation:shimmer 1.6s linear infinite}
+@keyframes up{to{transform:translateY(-50%)}}
+@keyframes down{from{transform:translateY(-50%)}to{transform:none}}
+@keyframes right{to{transform:translateX(50%)}}
+@keyframes left{from{transform:translateX(50%)}to{transform:none}}
+.mosaic-logo{position:absolute;z-index:2;width:104px;height:104px;border-radius:24px;padding:5px;background:rgb(7 10 18/.55);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border:1px solid var(--line2);box-shadow:0 20px 60px rgb(0 0 0/.6),0 0 60px rgb(92 225 255/.2)}
+.mosaic-logo img{display:block;width:100%;height:100%;object-fit:cover;border-radius:19px}
+
+/* ───────── Library ───────── */
+.library{padding:clamp(28px,4vw,52px) 0 clamp(48px,6vw,84px)}
+.section-title{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:26px}
+h2{margin:0;font:600 clamp(25px,3vw,34px)/1.35 var(--f-display);letter-spacing:0}
+.section-title p{margin:6px 0 0;color:var(--muted);font-size:14px}
+.small-label{padding:5px 14px;border:1px solid var(--line);border-radius:999px;color:var(--muted);font-size:12.5px;white-space:nowrap;font-variant-numeric:tabular-nums}
+
+.toolbar{position:sticky;top:calc(var(--header) + 8px);z-index:20;display:flex;gap:10px;margin-bottom:14px}
+.toolbar::before{content:"";position:absolute;inset:-10px -18px -14px;z-index:-1;pointer-events:none;opacity:0;transition:opacity .25s;background:linear-gradient(rgb(7 10 18/.94) 62%,transparent)}
+.toolbar.stuck::before{opacity:1}
+.searchbox{flex:1;min-width:0;display:flex;align-items:center;gap:12px;padding:0 10px 0 16px;background:var(--s1);border:1px solid var(--line2);border-radius:16px;box-shadow:0 12px 32px -14px rgb(0 0 0/.7);transition:border-color .25s,box-shadow .25s}
+.searchbox:focus-within{border-color:rgb(92 225 255/.7);box-shadow:0 0 0 4px rgb(92 225 255/.12),0 12px 32px -14px rgb(0 0 0/.7)}
+.searchbox>.ic{font-size:20px;color:var(--muted);transition:color .25s}
+.searchbox:focus-within>.ic{color:var(--cyan)}
+.searchbox input{height:56px;min-width:0;width:100%;border:0;background:none;outline:0!important;font-size:16px;-webkit-appearance:none;appearance:none}
+.searchbox input::placeholder{color:#74829d}
+.searchbox input::-webkit-search-cancel-button{display:none}
+.kbd{display:grid;place-items:center;min-width:26px;height:26px;padding:0 7px;border:1px solid var(--line2);border-bottom-width:2px;border-radius:7px;color:var(--muted);font:500 12px/1 var(--f-display)}
+.searchbox:focus-within .kbd{display:none}
+@media(hover:none){.kbd{display:none}}
+.clear{display:grid;place-items:center;width:34px;height:34px;border:0;border-radius:10px;background:rgb(255 255 255/.06);color:var(--muted);font-size:17px;transition:background .2s,color .2s,transform .15s}
+.clear:hover{background:rgb(255 255 255/.12);color:var(--text)}
+.clear:active{transform:scale(.9)}
+.sortbox{position:relative;display:flex;align-items:center;flex-shrink:0;background:var(--s1);border:1px solid var(--line2);border-radius:16px;box-shadow:0 12px 32px -14px rgb(0 0 0/.7);color:var(--muted);transition:border-color .25s}
+.sortbox:hover,.sortbox:focus-within{border-color:rgb(255 255 255/.3)}
+.sortbox>.ic{position:absolute;inset-inline-start:14px;pointer-events:none;font-size:17px}
+.sort{-webkit-appearance:none;appearance:none;height:100%;min-height:56px;border:0;background:none;color:#cdd8ea;font-size:13.5px;padding:0 42px 0 18px;padding-inline:42px 18px;cursor:pointer;outline-offset:-2px}
+.sort option{background:#131b2c;color:var(--text)}
+
+.categories{display:flex;gap:8px;overflow-x:auto;padding:4px 2px 14px;scrollbar-width:none;mask-image:linear-gradient(90deg,transparent,#000 22px,#000 calc(100% - 22px),transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 22px,#000 calc(100% - 22px),transparent)}
+.categories::-webkit-scrollbar{display:none}
+.chip{display:inline-flex;align-items:center;gap:8px;white-space:nowrap;min-height:40px;padding:0 16px;border:1px solid var(--line);background:rgb(255 255 255/.025);color:#a9b6cc;border-radius:999px;font-size:13.5px;transition:color .2s,background .2s,border-color .2s,transform .15s}
+.chip .ic{font-size:16px}
+.chip .count{padding:1px 8px;border-radius:999px;background:rgb(255 255 255/.06);color:var(--muted);font-size:11.5px;font-variant-numeric:tabular-nums}
+.chip:hover{color:var(--text);border-color:var(--line2)}
+.chip:active{transform:scale(.95)}
+.chip[aria-pressed=true]{color:var(--cyan);background:rgb(92 225 255/.1);border-color:rgb(92 225 255/.45)}
+.chip[aria-pressed=true] .count{background:rgb(92 225 255/.14);color:var(--cyan)}
+
+.resultline{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:2px 0 16px;color:var(--muted);font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.app{position:relative;isolation:isolate;overflow:hidden;display:flex;align-items:center;gap:14px;min-width:0;width:100%;padding:14px 14px 14px 16px;border:1px solid var(--line);background:var(--s1);border-radius:20px;color:inherit;text-align:start;transition:border-color .25s,transform .25s var(--ease),background .25s;animation:cardin .4s var(--ease) both;animation-delay:calc(var(--i,0)*22ms)}
+@keyframes cardin{from{opacity:0;transform:translateY(10px) scale(.985)}}
+.app::before{content:"";position:absolute;inset:0;z-index:-1;opacity:0;transition:opacity .3s;background:radial-gradient(240px circle at var(--mx,50%) var(--my,50%),rgb(92 225 255/.15),transparent 70%)}
+.app:focus-visible::before{opacity:1}
+.app:active{transform:scale(.985)}
+@media(hover:hover){.app:hover{border-color:rgb(92 225 255/.38);transform:translateY(-2px);background:var(--s2)}.app:hover::before{opacity:1}.app:hover .arrow{transform:translateX(-4px);color:var(--cyan)}.app:hover .app-icon{transform:scale(1.05)}}
+.app-icon{width:58px;height:58px;border-radius:22.4%;object-fit:cover;flex-shrink:0;background:var(--s3);box-shadow:0 0 0 1px var(--line2),0 8px 18px -4px rgb(0 0 0/.6);transition:transform .35s var(--ease)}
+.app-copy{min-width:0;flex:1}
+.app h3{margin:0 0 3px;font:600 15px/1.45 var(--f-display);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;direction:auto;letter-spacing:0}
+.app .meta{display:flex;align-items:center;gap:6px;margin:0;font-size:12.5px;color:var(--muted);overflow:hidden;white-space:nowrap}
+.app .meta .ic{font-size:14px;color:var(--dim)}
+.app .version{margin-top:1px;font-size:12px;color:#7f8ca6;direction:ltr;text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.app .arrow{display:grid;color:var(--dim);font-size:19px;transition:transform .3s var(--ease),color .25s}
+.morebox{text-align:center;margin-top:28px}
+.empty{grid-column:1/-1;display:flex;flex-direction:column;align-items:center;gap:6px;padding:52px 20px;text-align:center;border:1px dashed var(--line2);border-radius:22px;color:var(--muted)}
+.empty>.ic{font-size:30px;color:var(--dim);margin-bottom:6px}
+.empty strong{color:var(--text);font:600 18px/1.4 var(--f-display)}
+.empty p,.empty span{margin:0;font-size:14px}
+.empty .button{margin-top:14px}
+.empty.error>.ic{color:#ff8b8b}
+.skeleton{display:flex;align-items:center;gap:14px;height:90px;padding:14px 16px;border:1px solid var(--line);background:var(--s1);border-radius:20px}
+.sk-icon,.sk-lines b{background:linear-gradient(100deg,var(--s2) 30%,var(--s3) 50%,var(--s2) 70%);background-size:200% 100%;animation:shimmer 1.5s linear infinite}
+.sk-icon{width:58px;height:58px;border-radius:22.4%;flex-shrink:0}
+.sk-lines{flex:1;display:grid;gap:9px}
+.sk-lines b{height:11px;border-radius:6px;width:70%}.sk-lines b+b{width:40%}
+@keyframes shimmer{to{background-position:-200% 0}}
+
+/* ───────── Packages: the warranty ladder ───────── */
+.packages{padding:clamp(48px,6vw,84px) 0;border-block:1px solid var(--line);background:linear-gradient(180deg,rgb(255 255 255/.018),rgb(255 255 255/.01))}
+.ladder{margin-top:6px;border:1px solid var(--line2);border-radius:26px;background:var(--s1);overflow:hidden;box-shadow:0 30px 80px -40px rgb(0 0 0/.8)}
+.ladder-head{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr) 120px 190px;gap:28px;padding:14px 34px;border-bottom:1px solid var(--line);background:rgb(255 255 255/.02);color:var(--muted);font-size:12.5px}
+.ladder-head span:nth-child(3){text-align:end}
+.tier{position:relative;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr) 120px 190px;align-items:center;gap:28px;padding:26px 34px;border-top:1px solid var(--line);transition:background .3s}
+.ladder-head+.tier{border-top:0}
+.tier:hover{background:rgb(255 255 255/.025)}
+.tier .tag{margin-bottom:4px;color:var(--muted);font-size:12.5px}
+.tier h3{margin:0;font:600 20px/1.4 var(--f-display);letter-spacing:0}
+.tier p{margin:2px 0 0;color:var(--muted);font-size:13.5px}
+.meter{--c:var(--cyan);height:10px;border-radius:3px;background:linear-gradient(to left,var(--c) calc(var(--n)*10%),rgb(255 255 255/.09) 0);-webkit-mask:repeating-linear-gradient(to left,#000 0 calc(10% - 4px),transparent calc(10% - 4px) 10%);mask:repeating-linear-gradient(to left,#000 0 calc(10% - 4px),transparent calc(10% - 4px) 10%)}
+.price{font:600 28px/1.2 var(--f-display);letter-spacing:0;text-align:end;font-variant-numeric:tabular-nums;white-space:nowrap}
+.price small{font:400 12.5px var(--f-body);color:var(--muted)}
+.tier .button{width:100%;font-size:13.5px}
+.tier.featured{background:linear-gradient(to left,rgb(255 198 109/.09),transparent 65%)}
+.tier.featured::before{content:"";position:absolute;inset-block:0;inset-inline-start:0;width:3px;background:var(--amber);box-shadow:0 0 24px var(--amber)}
+.tier.featured .tag{color:var(--amber)}
+.tier.featured .meter{--c:var(--amber)}
+.tier.featured .button{background:var(--amber);border-color:var(--amber);color:var(--amber-ink);box-shadow:0 10px 30px -10px rgb(255 198 109/.55)}
+.tier.featured .button:hover{background:#ffd68f}
+.note{display:flex;align-items:center;gap:10px;margin:20px 0 0;color:var(--muted);font-size:13.5px}
+.note .ic{color:var(--cyan);font-size:18px}
+
+/* ───────── Steps + FAQ ───────── */
+.bottom{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(36px,6vw,88px);padding:clamp(48px,6vw,84px) 0}
+.bottom>div>p{margin:8px 0 22px;color:var(--muted);font-size:14.5px}
+.badge.plain{padding:5px 14px;margin-bottom:16px}
+.steps{list-style:none;margin:30px 0 0;padding:0}
+.steps li{position:relative;display:flex;gap:16px;padding-bottom:30px;color:var(--muted);font-size:14.5px}
+.steps li:last-child{padding-bottom:0}
+.steps li:not(:last-child)::before{content:"";position:absolute;inset-inline-start:17px;top:42px;bottom:6px;width:1px;background:linear-gradient(var(--line2),transparent)}
+.stepnum{width:36px;height:36px;flex-shrink:0;display:grid;place-items:center;border:1px solid rgb(92 225 255/.35);border-radius:12px;background:rgb(92 225 255/.07);color:var(--cyan);font:500 13px var(--f-display);font-variant-numeric:tabular-nums}
+.steps b{display:block;margin-bottom:2px;color:var(--text);font:600 16px/1.5 var(--f-display)}
+details{border-bottom:1px solid var(--line);font-size:14.5px}
+details:first-of-type{border-top:1px solid var(--line)}
+summary{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 4px;cursor:pointer;list-style:none;color:#d9e3f4;font-weight:500;transition:color .2s}
+summary::-webkit-details-marker{display:none}
+summary .ic{font-size:18px;color:var(--dim);transition:transform .35s var(--ease),color .25s}
+summary:hover{color:var(--text)}
+summary:hover .ic{color:var(--cyan)}
+details[open] summary{color:var(--cyan)}
+details[open] summary .ic{transform:rotate(180deg);color:var(--cyan)}
+details p{margin:0;padding:0 4px 20px;max-width:46em;color:var(--muted);line-height:1.95;animation:open .35s var(--ease)}
+@keyframes open{from{opacity:0;transform:translateY(-6px)}}
+
+/* ───────── Footer ───────── */
+footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);font-size:13px}
+.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.footer-inner a{transition:color .2s}
+.footer-inner a:hover{color:var(--cyan)}
+.footer-inner .links{display:flex;gap:20px;flex-wrap:wrap}
+.footer-inner .links a{display:inline-flex;align-items:center;gap:6px}
+.footer-inner .links .ic{font-size:14px}
+
+/* ───────── Details dialog ───────── */
+dialog{padding:0;color:var(--text);background:var(--s2);border:1px solid var(--line2);border-radius:30px;width:min(520px,calc(100% - 28px));max-height:min(86dvh,740px);overflow:hidden;box-shadow:0 50px 140px rgb(0 0 0/.75)}
+dialog[open]{display:flex;flex-direction:column;animation:pop .32s var(--ease)}
+dialog::backdrop{background:rgb(2 5 12/.72);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);animation:fade .3s both}
+@keyframes pop{from{opacity:0;transform:translateY(18px) scale(.96)}}
+@keyframes sheet{from{transform:translateY(100%)}}
+.close-dialog{position:absolute;z-index:2;top:16px;inset-inline-end:16px;display:grid;place-items:center;width:36px;height:36px;border:1px solid var(--line);border-radius:50%;background:rgb(255 255 255/.06);color:#b9c6dc;font-size:17px;transition:background .2s,transform .2s var(--ease)}
+.close-dialog:hover{background:rgb(255 255 255/.14);transform:rotate(90deg)}
+.dialog-head{position:relative;display:flex;gap:18px;align-items:center;padding:28px 28px 8px;padding-inline-end:64px;background:radial-gradient(360px 160px at 20% 0,rgb(92 225 255/.1),transparent 70%)}
+.dialog-head img{width:84px;height:84px;object-fit:cover;border-radius:22.4%;flex-shrink:0;box-shadow:0 0 0 1px var(--line2),0 16px 36px -8px rgb(0 0 0/.7)}
+.dialog-head>div{min-width:0}
+.dialog-head h2{font-size:22px;line-height:1.4;direction:auto;overflow-wrap:anywhere}
+.dialog-head p{margin:4px 0 0;color:var(--muted);font-size:13px;direction:rtl}
+.tags{display:flex;flex-wrap:wrap;gap:8px;padding:12px 28px 0}
+.tags span{display:inline-flex;align-items:center;gap:6px;padding:3px 12px;border:1px solid var(--line);border-radius:999px;background:rgb(255 255 255/.04);color:#aab7cd;font-size:12.5px}
+.tags .ic{font-size:14px}
+.description{flex:1;min-height:0;margin:0;padding:18px 28px 22px;white-space:pre-wrap;overflow-wrap:anywhere;overflow:auto;color:#b6c3d9;font-size:14px;line-height:1.95;-webkit-mask-image:linear-gradient(transparent,#000 14px,#000 calc(100% - 14px),transparent);mask-image:linear-gradient(transparent,#000 14px,#000 calc(100% - 14px),transparent)}
+.dialog-foot{display:grid;grid-template-columns:1fr auto;gap:10px;padding:16px 28px 0;border-top:1px solid var(--line);background:var(--s2)}
+.dialog-action{width:100%}
+.copy.done{border-color:rgb(92 225 255/.5);color:var(--cyan)}
+.dialog-note{margin:0;padding:10px 28px calc(18px + var(--safe-b));text-align:center;font-size:12px;color:var(--muted);background:var(--s2)}
+
+/* ───────── Toast ───────── */
+.toast{position:fixed;inset:auto auto 30px 50%;margin:0;transform:translateX(-50%);display:flex;align-items:center;gap:10px;width:max-content;max-width:calc(100% - 32px);padding:12px 20px 12px 18px;border:1px solid var(--line2);border-radius:16px;background:#e8fbff;color:#0b2230;font-size:14px;font-weight:500;line-height:1.5;box-shadow:0 18px 50px rgb(0 0 0/.55);overflow:visible}
+.toast:popover-open{animation:toast .35s var(--ease)}
+@keyframes toast{from{opacity:0;transform:translate(-50%,16px)}}
+.toast .ic{font-size:19px;color:#0a8f5a}
+.toast.err{background:#ffeceb;color:#40100f;border-color:#ffb4b0}
+.toast.err .ic{color:#d1343a}
+
+/* ───────── Scroll reveal ───────── */
+.js .rv{opacity:0;transform:translateY(16px)}
+.js .rv.in{opacity:1;transform:none;transition:opacity .7s var(--ease) var(--d,0s),transform .7s var(--ease) var(--d,0s)}
+
+/* ───────── Mobile tab bar ───────── */
+.tabbar{display:none}
+
+/* ───────── Responsive ───────── */
+@media(max-width:1000px){
+  .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .ladder-head,.tier{grid-template-columns:minmax(0,1fr) minmax(0,1fr) 110px 170px;gap:20px;padding-inline:26px}
+}
+@media(max-width:860px){
+  .hero-in{grid-template-columns:minmax(0,1fr);gap:10px}
+  .mosaic-wrap{height:230px;margin-inline:-24px;overflow:hidden}
+  .mosaic-wrap::before,.mosaic-logo{display:none}
+  .mosaic-wrap::after{width:320px;height:200px}
+  .mosaic{flex-direction:column;gap:12px;height:auto;width:100%;transform:none;mask-image:linear-gradient(90deg,transparent,#000 14%,#000 86%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 14%,#000 86%,transparent)}
+  .mcol{flex-direction:row;width:max-content;margin:0!important;animation-name:right;animation-duration:60s}
+  .mcol:nth-child(even){animation-name:left;animation-duration:72s}
+  .mcol:nth-child(n+4){display:none}
+  .tile{width:60px;height:60px;margin:0;margin-inline-end:12px}
+  .bottom{grid-template-columns:1fr}
+  .ladder-head{display:none}
+  .tier{grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"info price" "meter meter" "cta cta";gap:16px 18px;padding:22px 22px 24px}
+  .tier-info{grid-area:info}.tier .price{grid-area:price;text-align:end}.tier .meter{grid-area:meter}.tier .button{grid-area:cta;min-height:48px}
+}
+@media(max-width:760px){
+  :root{--header:60px}
+  .wrap{width:calc(100% - 32px)}
+  body{padding-bottom:calc(76px + var(--safe-b))}
+  .nav{display:none}
+  .top-channel{display:grid}
+  .brand img{width:38px;height:38px}
+  .brand{font-size:15px}
+  h1{font-size:clamp(40px,12.5vw,54px);margin:18px 0 16px}
+  .actions{margin-top:26px}
+  .actions .button{flex:1;min-width:0}
+  .hero-stat{margin-top:30px}
+  .section-title{flex-direction:column;align-items:flex-start;gap:12px;margin-bottom:20px}
+  .sortbox{width:56px}
+  .sortbox>.ic{inset-inline-start:0;inset-inline-end:0;margin:auto;font-size:20px;color:#cdd8ea}
+  .sort{width:100%;padding:0;opacity:0;position:absolute;inset:0}
+  .toolbar{gap:8px}
+  .toolbar::before{inset-inline:-16px}
+  .grid{grid-template-columns:1fr;gap:10px}
+  .app{padding:13px 14px 13px 16px}
+  .app .arrow{display:grid}
+  .resultline{font-size:12.5px}
+  .price{font-size:24px}
+  .footer-inner{flex-direction:column;align-items:flex-start}
+  .toast{bottom:calc(92px + var(--safe-b))}
+  dialog[open]{margin:auto 0 0;width:100%;max-width:100%;max-height:90dvh;border-radius:28px 28px 0 0;border-bottom:0;animation-name:sheet;animation-duration:.4s}
+  dialog[open]::after{content:"";position:absolute;top:8px;left:50%;width:40px;height:4px;margin-left:-20px;border-radius:2px;background:rgb(255 255 255/.18)}
+  .dialog-head{padding:30px 22px 8px;padding-inline-end:60px}
+  .dialog-head img{width:70px;height:70px}
+  .dialog-head h2{font-size:19px}
+  .tags,.dialog-foot,.description,.dialog-note{padding-inline:22px}
+  .dialog-foot{grid-template-columns:1fr}
+  .tabbar{position:fixed;z-index:45;inset-inline:12px;bottom:calc(10px + var(--safe-b));display:grid;grid-template-columns:repeat(3,1fr);gap:4px;padding:6px;border:1px solid var(--line2);border-radius:22px;background:rgb(13 19 32/.82);-webkit-backdrop-filter:saturate(1.6) blur(20px);backdrop-filter:saturate(1.6) blur(20px);box-shadow:0 20px 50px rgb(0 0 0/.6)}
+  .tabbar a{display:flex;flex-direction:column;align-items:center;gap:3px;padding:8px 4px 7px;border-radius:16px;color:var(--muted);font-size:11.5px;line-height:1.3;transition:color .2s,background .25s,transform .15s}
+  .tabbar a .ic{font-size:21px}
+  .tabbar a:active{transform:scale(.94)}
+  .tabbar a[aria-current]{color:var(--cyan);background:rgb(92 225 255/.1)}
+}
+@media(max-width:420px){
+  .wrap{width:calc(100% - 28px)}
+  .searchbox{padding-inline-start:14px}
+  .chip{padding:0 14px}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .js .rv{opacity:1;transform:none}
+}
+</style>
+</head>
 <body>
-<header class="wrap top"><a href="#" class="brand"><img src="https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/source-icon.jpeg" alt="شعار IPA Strong"><span dir="ltr">IPA STRONG<small dir="rtl">تطبيقات وألعاب الآيفون</small></span></a><nav class="nav" aria-label="القائمة الرئيسية"><a href="#library">المكتبة</a><a href="#packages">الباقات</a><a class="infolink" href="#faq">أسئلة شائعة</a><a class="channel" href="https://t.me/ipastrong" target="_blank" rel="noopener">قناة المتجر ↗</a></nav></header>
+<div class="ambient" aria-hidden="true"></div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+<symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+<symbol id="i-go" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></symbol>
+<symbol id="i-chev" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+<symbol id="i-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+<symbol id="i-ext" viewBox="0 0 24 24"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></symbol>
+<symbol id="i-send" viewBox="0 0 24 24"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></symbol>
+<symbol id="i-grid" viewBox="0 0 24 24"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></symbol>
+<symbol id="i-game" viewBox="0 0 24 24"><path d="M6 11h4"/><path d="M8 9v4"/><path d="M15 12h.01"/><path d="M18 10h.01"/><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258A4 4 0 0 0 17.32 5z"/></symbol>
+<symbol id="i-chat" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
+<symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol>
+<symbol id="i-play" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m10 8 6 4-6 4Z"/></symbol>
+<symbol id="i-cap" viewBox="0 0 24 24"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></symbol>
+<symbol id="i-dots" viewBox="0 0 24 24"><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+<symbol id="i-copy" viewBox="0 0 24 24"><rect width="14" height="14" x="8" y="8" rx="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+<symbol id="i-alert" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/></symbol>
+<symbol id="i-sort" viewBox="0 0 24 24"><path d="m21 16-4 4-4-4"/><path d="M17 20V4"/><path d="m3 8 4-4 4 4"/><path d="M7 4v16"/></symbol>
+<symbol id="i-refresh" viewBox="0 0 24 24"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></symbol>
+<symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></symbol>
+<symbol id="i-user" viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+<symbol id="i-file" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/></symbol>
+</defs></svg>
+
+<noscript><div style="padding:14px 20px;background:#131b2c;text-align:center;font-size:14px">تحتاج تفعيل JavaScript حتى تظهر مكتبة التطبيقات.</div></noscript>
+
+<header class="top">
+  <div class="wrap top-in">
+    <a href="#" class="brand" aria-label="IPA Strong — الرئيسية"><img src="https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/source-icon.jpeg" alt="شعار IPA Strong" width="42" height="42"><span dir="ltr">IPA STRONG<small dir="rtl">تطبيقات وألعاب الآيفون</small></span></a>
+    <nav class="nav" aria-label="القائمة الرئيسية">
+      <a href="#library" data-nav="library">المكتبة</a>
+      <a href="#packages" data-nav="packages">الباقات</a>
+      <a class="infolink" href="#faq" data-nav="faq">أسئلة شائعة</a>
+      <a class="channel" href="https://t.me/ipastrong" target="_blank" rel="noopener">قناة المتجر <svg class="ic ic-ext" aria-hidden="true"><use href="#i-send"/></svg></a>
+    </nav>
+    <a class="top-channel" href="https://t.me/ipastrong" target="_blank" rel="noopener" aria-label="قناة المتجر على تيليگرام"><svg class="ic" aria-hidden="true"><use href="#i-send"/></svg></a>
+  </div>
+</header>
+
 <main>
-<section class="hero"><div class="wrap hero-inner"><div><div class="eyebrow">مكتبة IPA STRONG</div><h1>نسختك المفضّلة.<br><span>بمكان واحد.</span></h1><p>تطبيقات، ألعاب، ونسخ بمميزات إضافية.<br>ابحث عن اللي تريده وخلي الباقي علينا.</p><div class="actions"><a class="button primary" href="#library">تصفّح المكتبة <span aria-hidden="true">←</span></a></div></div><div class="hero-art" aria-hidden="true"><img src="https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/source-icon.jpeg" alt=""><div class="floating-label"><b id="heroCount">المكتبة</b>تطبيقات ونسخ بمكان واحد</div></div></div></section>
-<section class="library wrap" id="library"><div class="section-title"><div><h2>اكتشف مكتبتك</h2><p>اختار قسمك، أو ابحث مباشرة عن اسم التطبيق.</p></div><span class="small-label" id="totalLabel">جارٍ تحميل المكتبة</span></div><div class="toolbar"><label class="searchbox"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><span class="sr">ابحث عن تطبيق أو لعبة</span><input id="search" type="search" placeholder="ابحث عن تطبيق أو لعبة…" autocomplete="off"><button class="clear" id="clear" type="button" aria-label="مسح البحث" hidden>×</button></label><label class="sr" for="sort">ترتيب التطبيقات</label><select class="sort" id="sort"><option value="default">ترتيب المكتبة</option><option value="date">الأحدث تحديثًا</option><option value="name">حسب الاسم</option></select></div><div class="categories" id="categories" aria-label="أقسام المكتبة"></div><div class="resultline"><span id="results" role="status" aria-live="polite">نجهّز التطبيقات إلك…</span><span id="shownLabel"></span></div><div class="grid" id="grid" aria-busy="true"></div><div class="morebox"><button type="button" id="more" class="button" hidden>عرض المزيد <span aria-hidden="true">↓</span></button></div></section>
-<section class="packages" id="packages"><div class="wrap"><div class="section-title packtitle"><div><h2>اختار ضمانك</h2><p>الشهادة سنة كاملة. الاختلاف بمدة الضمان.</p></div><span class="small-label">الأسعار بالدينار العراقي</span></div><div class="package-grid"><article class="package"><div class="tag">بداية بسيطة</div><h3>ضمان شهر</h3><div class="price">10,000 <small>د.ع</small></div><p>شهادة سنوية بضمان شهر.</p><a class="button" href="https://t.me/ipastrong" target="_blank" rel="noopener">تفاصيل الاشتراك ↗</a></article><article class="package"><div class="tag">ضمان أطول</div><h3>ضمان 3 أشهر</h3><div class="price">15,000 <small>د.ع</small></div><p>شهادة سنوية بضمان 3 أشهر.</p><a class="button" href="https://t.me/ipastrong" target="_blank" rel="noopener">تفاصيل الاشتراك ↗</a></article><article class="package featured"><div class="tag">ستة أشهر من الضمان</div><h3>ضمان 6 أشهر</h3><div class="price">20,000 <small>د.ع</small></div><p>شهادة سنوية بضمان 6 أشهر.</p><a class="button primary" href="https://t.me/ipastrong" target="_blank" rel="noopener">تفاصيل الاشتراك ↗</a></article><article class="package"><div class="tag">أطول ضمان بالمكتبة</div><h3>ضمان 10 أشهر</h3><div class="price">30,000 <small>د.ع</small></div><p>شهادة سنوية بضمان 10 أشهر.</p><a class="button" href="https://t.me/ipastrong" target="_blank" rel="noopener">تفاصيل الاشتراك ↗</a></article></div><p class="note">تواصل عبر قناة المتجر لمعرفة تفاصيل التفعيل وطرق الدفع المتوفرة.</p></div></section>
-<section class="wrap bottom" id="info"><div><div class="eyebrow">خطوات بسيطة</div><h2>من الاختيار إلى التثبيت.</h2><ol class="steps"><li><span class="stepnum">01</span><div><b>تصفّح واختار</b>ابحث عن اسم التطبيق وشوف النسخ وتفاصيلها.</div></li><li><span class="stepnum">02</span><div><b>تعرّف على باقتك</b>افتح قناة المتجر واتبع طريقة التواصل للاشتراك والتفعيل.</div></li><li><span class="stepnum">03</span><div><b>ثبّت تطبيقاتك</b>اتبع تعليمات المتجر لتفعيل الخدمة وتثبيت تطبيقاتك.</div></li></ol></div><div id="faq"><h2>أسئلتك، وأجوبتها.</h2><p>كل اللي تحتاج تعرفه قبل الاشتراك وبعده.</p><details><summary>شنو هي شهادة الآيفون، وشنو فائدتها؟</summary><p>هي شهادة توقيع نستخدمها حتى نجهّز التطبيقات للتثبيت على جهازك خارج App Store. نسجّل جهازك باستخدام الـUDID حتى تصير التطبيقات الموقّعة مخصّصة إله.</p></details><details><summary>شنو الفرق بين مدة الشهادة ومدة الضمان؟</summary><p>مدة الشهادة سنة كاملة، ومدة الضمان حسب الباقة اللي تختارها. إذا تعطّلت الشهادة خلال مدة الضمان، نعوّضك مباشرةً.</p></details><details><summary>شنو الفرق بين الباقات؟</summary><p>مدة الشهادة سنة بجميع الباقات. الاختلاف بمدة الضمان: شهر، 3 أشهر، 6 أشهر، أو 10 أشهر. الأسعار موضّحة بقسم الباقات.</p></details><details><summary>شلون أشترك، وشنو أحتاج أرسل؟</summary><p>تواصل ويانا حتى تختار باقتك. نرسلك رابط استخراج UDID جهازك؛ تفتحه من الآيفون، تتبع الخطوات، وتنسخ الـUDID وترسله إلنا حتى نكمل تفعيل جهازك. ما تحتاج ترسل كلمة مرور Apple ID.</p></details><details><summary>شنو هو UDID، وشلون أطلعه؟</summary><p>هو معرّف خاص بجهازك نحتاجه حتى نسجّله للتفعيل. إحنا نرسلك رابط استخراجه، وإنت بس تتبع الخطوات وتطلع الـUDID وترسله إلنا. ما تحتاج تعرف تفاصيل تقنية.</p></details><details><summary>شكد يستغرق التفعيل؟</summary><p>بعد ما ترسل الـUDID نتابع تفعيل جهازك ونبلغك بالمدة حسب حالته. تأكد من وقت التفعيل ويانا قبل إتمام الاشتراك؛ المدة مو ثابتة لكل الأجهزة.</p></details><details><summary>أحتاج جلبريك أو كمبيوتر؟</summary><p>ما تحتاج جلبريك. نرسلك رابط استخراج الـUDID وخطوات التفعيل والتثبيت على الآيفون، وتمشي عليها من جهازك.</p></details><details><summary>أگدر أثبّت التطبيق الأصلي والمعدّل سوا؟</summary><p>بعض النسخ تدعم التكرار وتشتغل بجانب التطبيق الأصلي. يعتمد على النسخة والتطبيق؛ تواصل ويانا حتى نحددلك النسخة المناسبة قبل التثبيت.</p></details><details><summary>إذا توقفت الشهادة، شنو يصير وشيسوي الضمان؟</summary><p>إذا تعطّلت الشهادة، ممكن التطبيقات الموقّعة بيها تتوقف عن الفتح. إذا التعطيل صار ضمن مدة ضمانك، نعوّضك مباشرةً ونرسللك خطوات التفعيل من جديد. وإذا انتهى الضمان، تواصل ويانا حتى نوضحلك الخيارات المتوفرة.</p></details><details><summary>إذا بدّلت جهازي، تنتقل الشهادة؟</summary><p>التفعيل مرتبط بـUDID جهازك، لذلك ما ينتقل تلقائيًا إلى جهاز ثاني. قبل تبديل الجهاز، تواصل ويانا حتى نوضحلك خيارات تفعيل الجهاز الجديد.</p></details><details><summary>شلون أحدّث التطبيقات؟ وهل تنحذف بياناتي؟</summary><p>تحديث التطبيقات يصير من خلال تطبيق التوقيع حسب الخطوات اللي نرسلهالك. الحفاظ على البيانات يعتمد على التطبيق والنسخة وطريقة التثبيت. لا تحذف النسخة الحالية قبل التأكد، وخذ نسخة احتياطية من بياناتك المهمة إذا التطبيق يدعمها.</p></details><details><summary>شنو طرق الدفع المتوفرة؟</summary><p>متوفر ماستر كارد، زين كاش، آسيا باي، رصيد آسياسيل، الراجحي، urpay، وUSDT عبر Binance وOKX. الدفع برصيد آسياسيل عليه عمولة إضافية 2,000 د.ع. تواصل ويانا حتى نرسلك تفاصيل وسيلة الدفع المناسبة.</p></details><details><summary>إذا التطبيق ما اشتغل، شلون أتواصل للدعم؟</summary><p>افتح قناة IPA Strong على تيليگرام واتبع وسيلة التواصل الموجودة بيها. ارسل اسم التطبيق، نوع جهازك، إصدار iOS، وصورة الخطأ حتى نقدر نساعدك. زر طلب التثبيت داخل تفاصيل التطبيق يفتح قناة المتجر.</p></details></div></section>
-</main><footer><div class="wrap footer-inner"><span dir="ltr">© <span id="year">2026</span> IPA STRONG</span><span><a href="/terms/">الشروط والأحكام</a> · <a href="https://t.me/ipastrong" target="_blank" rel="noopener">آخر أخبار المتجر على تيليگرام ↗</a></span></div></footer>
-<dialog id="details" aria-labelledby="detailName"><button type="button" class="close-dialog" id="closeDialog" aria-label="إغلاق التفاصيل">×</button><div class="dialog-head"><img id="detailIcon" alt=""><div><h2 id="detailName"></h2><p id="detailMeta"></p></div></div><div class="description" id="description"></div><a class="button primary dialog-action" href="https://t.me/ipastrong" target="_blank" rel="noopener">طلب التثبيت عبر المتجر ↗</a><p class="dialog-note">يفتح قناة المتجر على تيليگرام</p></dialog><div id="toast" class="toast" role="status" hidden></div>
+<section class="hero">
+  <div class="wrap hero-in">
+    <div class="hero-copy">
+      <div class="badge"><i aria-hidden="true"></i>مكتبة IPA STRONG</div>
+      <h1><span class="l1">نسختك المفضّلة.</span><span class="l2">بمكان واحد.</span></h1>
+      <p>تطبيقات، ألعاب، ونسخ بمميزات إضافية.<br>ابحث عن اللي تريده وخلي الباقي علينا.</p>
+      <div class="actions">
+        <a class="button primary" href="#library">تصفّح المكتبة <svg class="ic ic-go" aria-hidden="true"><use href="#i-go"/></svg></a>
+        <a class="button" href="https://t.me/ipastrong" target="_blank" rel="noopener">قناة المتجر <svg class="ic ic-ext" aria-hidden="true"><use href="#i-ext"/></svg></a>
+      </div>
+      <div class="hero-stat"><b id="heroCount">المكتبة</b><span>تطبيقات ونسخ بمكان واحد</span></div>
+    </div>
+    <div class="mosaic-wrap" aria-hidden="true">
+      <div class="mosaic is-loading" id="mosaic"></div>
+      <div class="mosaic-logo"><img src="https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/source-icon.jpeg" alt="" width="94" height="94"></div>
+    </div>
+  </div>
+</section>
+
+<section class="library wrap" id="library">
+  <div class="section-title rv"><div><h2>اكتشف مكتبتك</h2><p>اختار قسمك، أو ابحث مباشرة عن اسم التطبيق.</p></div><span class="small-label" id="totalLabel">جارٍ تحميل المكتبة</span></div>
+  <div id="sentinel" aria-hidden="true" style="height:1px;margin-top:-1px"></div>
+  <div class="toolbar">
+    <label class="searchbox"><svg class="ic" aria-hidden="true"><use href="#i-search"/></svg><span class="sr">ابحث عن تطبيق أو لعبة</span><input id="search" type="search" placeholder="ابحث عن تطبيق أو لعبة…" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search"><kbd class="kbd" aria-hidden="true">/</kbd><button class="clear" id="clear" type="button" aria-label="مسح البحث" hidden><svg class="ic" aria-hidden="true"><use href="#i-x"/></svg></button></label>
+    <label class="sr" for="sort">ترتيب التطبيقات</label>
+    <div class="sortbox"><svg class="ic" aria-hidden="true"><use href="#i-sort"/></svg><select class="sort" id="sort"><option value="default">ترتيب المكتبة</option><option value="date">الأحدث تحديثًا</option><option value="name">حسب الاسم</option></select></div>
+  </div>
+  <div class="categories" id="categories" aria-label="أقسام المكتبة"></div>
+  <div class="resultline"><span id="results" role="status" aria-live="polite">نجهّز التطبيقات إلك…</span><span id="shownLabel"></span></div>
+  <div class="grid" id="grid" aria-busy="true"></div>
+  <div class="morebox"><button type="button" id="more" class="button" hidden>عرض المزيد <svg class="ic" aria-hidden="true"><use href="#i-down"/></svg></button></div>
+</section>
+
+<section class="packages" id="packages">
+  <div class="wrap">
+    <div class="section-title packtitle rv"><div><h2>اختار ضمانك</h2><p>الشهادة سنة كاملة. الاختلاف بمدة الضمان.</p></div><span class="small-label">الأسعار بالدينار العراقي</span></div>
+    <div class="ladder">
+      <div class="ladder-head" aria-hidden="true"><span>الباقة</span><span>مدة الضمان من أصل 10 أشهر</span><span>السعر</span><span></span></div>
+      <article class="package tier rv" style="--d:0s">
+        <div class="tier-info"><div class="tag">بداية بسيطة</div><h3>ضمان شهر</h3><p>شهادة سنوية بضمان شهر.</p></div>
+        <div class="meter" style="--n:1" role="img" aria-label="ضمان شهر واحد من أصل 10 أشهر"></div>
+        <div class="price">10,000 <small>د.ع</small></div>
+        <a class="button" href="https://t.me/ipastrong" target="_blank" rel="noopener">تفاصيل الاشتراك <svg class="ic ic-ext" aria-hidden="true"><use href="#i-ext"/></svg></a>
+      </article>
+      <article class="package tier rv" style="--d:.07s">
+        <div class="tier-info"><div class="tag">ضمان أطول</div><h3>ضمان 3 أشهر</h3><p>شهادة سنوية بضمان 3 أشهر.</p></div>
+        <div class="meter" style="--n:3" role="img" aria-label="ضمان 3 أشهر من أصل 10 أشهر"></div>
+        <div class="price">15,000 <small>د.ع</small></div>
+        <a class="button" href="https://t.me/ipastrong" target="_blank" rel="noopener">تفاصيل الاشتراك <svg class="ic ic-ext" aria-hidden="true"><use href="#i-ext"/></svg></a>
+      </article>
+      <article class="package tier featured rv" style="--d:.14s">
+        <div class="tier-info"><div class="tag">ستة أشهر من الضمان</div><h3>ضمان 6 أشهر</h3><p>شهادة سنوية بضمان 6 أشهر.</p></div>
+        <div class="meter" style="--n:6" role="img" aria-label="ضمان 6 أشهر من أصل 10 أشهر"></div>
+        <div class="price">20,000 <small>د.ع</small></div>
+        <a class="button primary" href="https://t.me/ipastrong" target="_blank" rel="noopener">تفاصيل الاشتراك <svg class="ic ic-ext" aria-hidden="true"><use href="#i-ext"/></svg></a>
+      </article>
+      <article class="package tier rv" style="--d:.21s">
+        <div class="tier-info"><div class="tag">أطول ضمان بالمكتبة</div><h3>ضمان 10 أشهر</h3><p>شهادة سنوية بضمان 10 أشهر.</p></div>
+        <div class="meter" style="--n:10" role="img" aria-label="ضمان 10 أشهر، وهو أطول ضمان"></div>
+        <div class="price">30,000 <small>د.ع</small></div>
+        <a class="button" href="https://t.me/ipastrong" target="_blank" rel="noopener">تفاصيل الاشتراك <svg class="ic ic-ext" aria-hidden="true"><use href="#i-ext"/></svg></a>
+      </article>
+    </div>
+    <p class="note rv"><svg class="ic" aria-hidden="true"><use href="#i-shield"/></svg>تواصل عبر قناة المتجر لمعرفة تفاصيل التفعيل وطرق الدفع المتوفرة.</p>
+  </div>
+</section>
+
+<section class="wrap bottom" id="info">
+  <div>
+    <div class="badge plain rv">خطوات بسيطة</div>
+    <h2 class="rv">من الاختيار إلى التثبيت.</h2>
+    <ol class="steps">
+      <li class="rv"><span class="stepnum">01</span><div><b>تصفّح واختار</b>ابحث عن اسم التطبيق وشوف النسخ وتفاصيلها.</div></li>
+      <li class="rv" style="--d:.08s"><span class="stepnum">02</span><div><b>تعرّف على باقتك</b>افتح قناة المتجر واتبع طريقة التواصل للاشتراك والتفعيل.</div></li>
+      <li class="rv" style="--d:.16s"><span class="stepnum">03</span><div><b>ثبّت تطبيقاتك</b>اتبع تعليمات المتجر لتفعيل الخدمة وتثبيت تطبيقاتك.</div></li>
+    </ol>
+  </div>
+  <div id="faq" class="rv">
+    <h2>أسئلتك، وأجوبتها.</h2>
+    <p>كل اللي تحتاج تعرفه قبل الاشتراك وبعده.</p>
+    <details><summary>شنو هي شهادة الآيفون، وشنو فائدتها؟<svg class="ic" aria-hidden="true"><use href="#i-down"/></svg></summary><p>هي شهادة توقيع نستخدمها حتى نجهّز التطبيقات للتثبيت على جهازك خارج App Store. نسجّل جهازك باستخدام الـUDID حتى تصير التطبيقات الموقّعة مخصّصة إله.</p></details>
+    <details><summary>شنو الفرق بين مدة الشهادة ومدة الضمان؟<svg class="ic" aria-hidden="true"><use href="#i-down"/></svg></summary><p>مدة الشهادة سنة كاملة، ومدة الضمان حسب الباقة اللي تختارها. إذا تعطّلت الشهادة خلال مدة الضمان، نعوّضك مباشرةً.</p></details>
+    <details><summary>شنو الفرق بين الباقات؟<svg class="ic" aria-hidden="true"><use href="#i-down"/></svg></summary><p>مدة الشهادة سنة بجميع الباقات. الاختلاف بمدة الضمان: شهر، 3 أشهر، 6 أشهر، أو 10 أشهر. الأسعار موضّحة بقسم الباقات.</p></details>
+    <details><summary>شلون أشترك، وشنو أحتاج أرسل؟<svg class="ic" aria-hidden="true"><use href="#i-down"/></svg></summary><p>تواصل ويانا حتى تختار باقتك. نرسلك رابط استخراج UDID جهازك؛ تفتحه من الآيفون، تتبع الخطوات، وتنسخ الـUDID وترسله إلنا حتى نكمل تفعيل جهازك. ما تحتاج ترسل كلمة مرور Apple ID.</p></details>
+    <details><summary>شنو هو UDID، وشلون أطلعه؟<svg class="ic" aria-hidden="true"><use href="#i-down"/></svg></summary><p>هو معرّف خاص بجهازك نحتاجه حتى نسجّله للتفعيل. إحنا نرسلك رابط استخراجه، وإنت بس تتبع الخطوات وتطلع الـUDID وترسله إلنا. ما تحتاج تعرف تفاصيل تقنية.</p></details>
+    <details><summary>شكد يستغرق التفعيل؟<svg class="ic" aria-hidden="true"><use href="#i-down"/></svg></summary><p>بعد ما ترسل الـUDID نتابع تفعيل جهازك ونبلغك بالمدة حسب حالته. تأكد من وقت التفعيل ويانا قبل إتمام الاشتراك؛ المدة مو ثابتة لكل الأجهزة.</p></details>
+    <details><summary>أحتاج جلبريك أو كمبيوتر؟<svg class="ic" aria-hidden="true"><use href="#i-down"/></svg></summary><p>ما تحتاج جلبريك. نرسلك رابط استخراج الـUDID وخطوات التفعيل والتثبيت على الآيفون، وتمشي عليها من جهازك.</p></details>
+    <details><summary>أگدر أثبّت التطبيق الأصلي والمعدّل سوا؟<svg class="ic" aria-hidden="true"><use href="#i-down"/></svg></summary><p>بعض النسخ تدعم التكرار وتشتغل بجانب التطبيق الأصلي. يعتمد على النسخة والتطبيق؛ تواصل ويانا حتى نحددلك النسخة المناسبة قبل التثبيت.</p></details>
+    <details><summary>إذا توقفت الشهادة، شنو يصير وشيسوي الضمان؟<svg class="ic" aria-hidden="true"><use href="#i-down"/></svg></summary><p>إذا تعطّلت الشهادة، ممكن التطبيقات الموقّعة بيها تتوقف عن الفتح. إذا التعطيل صار ضمن مدة ضمانك، نعوّضك مباشرةً ونرسللك خطوات التفعيل من جديد. وإذا انتهى الضمان، تواصل ويانا حتى نوضحلك الخيارات المتوفرة.</p></details>
+    <details><summary>إذا بدّلت جهازي، تنتقل الشهادة؟<svg class="ic" aria-hidden="true"><use href="#i-down"/></svg></summary><p>التفعيل مرتبط بـUDID جهازك، لذلك ما ينتقل تلقائيًا إلى جهاز ثاني. قبل تبديل الجهاز، تواصل ويانا حتى نوضحلك خيارات تفعيل الجهاز الجديد.</p></details>
+    <details><summary>شلون أحدّث التطبيقات؟ وهل تنحذف بياناتي؟<svg class="ic" aria-hidden="true"><use href="#i-down"/></svg></summary><p>تحديث التطبيقات يصير من خلال تطبيق التوقيع حسب الخطوات اللي نرسلهالك. الحفاظ على البيانات يعتمد على التطبيق والنسخة وطريقة التثبيت. لا تحذف النسخة الحالية قبل التأكد، وخذ نسخة احتياطية من بياناتك المهمة إذا التطبيق يدعمها.</p></details>
+    <details><summary>شنو طرق الدفع المتوفرة؟<svg class="ic" aria-hidden="true"><use href="#i-down"/></svg></summary><p>متوفر ماستر كارد، زين كاش، آسيا باي، رصيد آسياسيل، الراجحي، urpay، وUSDT عبر Binance وOKX. الدفع برصيد آسياسيل عليه عمولة إضافية 2,000 د.ع. تواصل ويانا حتى نرسلك تفاصيل وسيلة الدفع المناسبة.</p></details>
+    <details><summary>إذا التطبيق ما اشتغل، شلون أتواصل للدعم؟<svg class="ic" aria-hidden="true"><use href="#i-down"/></svg></summary><p>افتح قناة IPA Strong على تيليگرام واتبع وسيلة التواصل الموجودة بيها. ارسل اسم التطبيق، نوع جهازك، إصدار iOS، وصورة الخطأ حتى نقدر نساعدك. زر طلب التثبيت داخل تفاصيل التطبيق يفتح قناة المتجر.</p></details>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap footer-inner"><span dir="ltr">© <span id="year">2026</span> IPA STRONG</span><span class="links"><a href="/terms/"><svg class="ic" aria-hidden="true"><use href="#i-file"/></svg>الشروط والأحكام</a><a href="https://t.me/ipastrong" target="_blank" rel="noopener">آخر أخبار المتجر على تيليگرام <svg class="ic" aria-hidden="true"><use href="#i-ext"/></svg></a></span></div></footer>
+
+<nav class="tabbar" aria-label="تنقل سريع">
+  <a href="#library" data-nav="library"><svg class="ic" aria-hidden="true"><use href="#i-grid"/></svg>المكتبة</a>
+  <a href="#packages" data-nav="packages"><svg class="ic" aria-hidden="true"><use href="#i-shield"/></svg>الباقات</a>
+  <a href="#faq" data-nav="faq"><svg class="ic" aria-hidden="true"><use href="#i-help"/></svg>أسئلة</a>
+</nav>
+
+<dialog id="details" aria-labelledby="detailName">
+  <button type="button" class="close-dialog" id="closeDialog" aria-label="إغلاق التفاصيل"><svg class="ic" aria-hidden="true"><use href="#i-x"/></svg></button>
+  <div class="dialog-head"><img id="detailIcon" alt="" width="84" height="84"><div><h2 id="detailName"></h2><p id="detailMeta"></p></div></div>
+  <div class="tags" id="detailTags"></div>
+  <div class="description" id="description"></div>
+  <div class="dialog-foot">
+    <a class="button primary dialog-action" href="https://t.me/ipastrong" target="_blank" rel="noopener">طلب التثبيت عبر المتجر <svg class="ic ic-ext" aria-hidden="true"><use href="#i-send"/></svg></a>
+    <button type="button" class="button copy" id="copyName"><svg class="ic" aria-hidden="true"><use href="#i-copy"/></svg><span>نسخ اسم التطبيق</span></button>
+  </div>
+  <p class="dialog-note">يفتح قناة المتجر على تيليگرام</p>
+</dialog>
+<div id="toast" class="toast" popover="manual" role="status" hidden></div>
+
 <script>
 'use strict';
 
 const LOGO='https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/source-icon.jpeg';
 const PLACEHOLDER='data:image/svg+xml;charset=utf-8,'+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80"><rect width="80" height="80" rx="20" fill="#20324b"/><g fill="none" stroke="#93adc8" stroke-width="2"><rect x="22" y="22" width="14" height="14" rx="4"/><rect x="44" y="22" width="14" height="14" rx="4"/><rect x="22" y="44" width="14" height="14" rx="4"/><rect x="44" y="44" width="14" height="14" rx="4"/></g></svg>');
 function appIcon(value){const url=safeURL(value);return !url||url===LOGO?PLACEHOLDER:url}
-const $=id=>document.getElementById(id);let apps=[],filtered=[],category='all',shown=36,timer,toastTimer,lastFocused;
+const $=id=>document.getElementById(id);
+let apps=[],filtered=[],category='all',shown=36,timer,toastTimer,lastFocused,current=null;
+const PAGE=36;
 const groups=[['all','الكل'],['games','الألعاب'],['social','التواصل'],['tools','الأدوات'],['media','الترفيه'],['education','التعليم'],['other','أخرى']];
+const catIcon={all:'grid',games:'game',social:'chat',tools:'wrench',media:'play',education:'cap',other:'dots'};
+const SVGNS='http://www.w3.org/2000/svg';
+
 function categoryOf(value){const s=String(value||'').trim().toLowerCase();if(['games','game','ألعاب','العاب','الألعاب'].includes(s))return'games';if(['social','social networking','تواصل','التواصل','تواصل اجتماعي'].includes(s))return'social';if(['utilities','utility','tools','أدوات','ادوات','أدوات النظام','productivity'].includes(s))return'tools';if(['entertainment','photo-video','photo & video','music','ترفيه','الترفيه','تصوير'].includes(s))return'media';if(['education','تعليم','دراسة وذكاء اصطناعي'].includes(s))return'education';return'other'}
 const safeURL=value=>{try{const u=new URL(String(value));return['https:','http:'].includes(u.protocol)?u.href:''}catch{return''}};
 function normalize(a,index){const v=Array.isArray(a.versions)?a.versions[0]||{}:{};return{name:String(a.name||'تطبيق بدون اسم'),version:String(a.version||v.version||'—'),size:Number(a.size||v.size||0),icon:appIcon(a.iconURL||a.icon),description:String(a.localizedDescription||a.description||a.subtitle||'تطبيق متوفر ضمن مكتبة IPA Strong.'),category:categoryOf(a.category),developer:String(a.developerName||''),date:Date.parse(a.versionDate||v.date||'')||0,index}}
 function sizeText(n){if(!Number.isFinite(n)||n<=0)return'';return n>=1e9?(n/1e9).toFixed(1)+' GB':Math.round(n/1e6)+' MB'}
 function make(tag,cls,text){const el=document.createElement(tag);if(cls)el.className=cls;if(text!==undefined)el.textContent=text;return el}
-function image(src,cls){const img=make('img',cls);img.src=src;img.alt='';img.loading='lazy';img.width=60;img.height=60;img.addEventListener('error',()=>{img.src=PLACEHOLDER},{once:true});return img}
-function renderCategories(){const box=$('categories');box.replaceChildren();for(const[id,label]of groups){if(id!=='all'&&!apps.some(a=>a.category===id))continue;const b=make('button','chip',label);b.type='button';b.setAttribute('aria-pressed',String(category===id));b.onclick=()=>{category=id;shown=36;renderCategories();filterApps()};box.append(b)}}
+function icon(id,cls){const s=document.createElementNS(SVGNS,'svg');s.setAttribute('class',cls||'ic');s.setAttribute('aria-hidden','true');const u=document.createElementNS(SVGNS,'use');u.setAttribute('href','#i-'+id);s.append(u);return s}
+function image(src,cls){const img=make('img',cls);img.src=src;img.alt='';img.loading='lazy';img.decoding='async';img.width=58;img.height=58;img.addEventListener('error',()=>{img.src=PLACEHOLDER},{once:true});return img}
+const catLabel=id=>(groups.find(x=>x[0]===id)||groups[6])[1];
+
+/* ── Hero mosaic: real icons from the library ── */
+function mosaicSkeleton(){const box=$('mosaic');if(!box)return;box.classList.add('is-loading');box.replaceChildren();for(let c=0;c<4;c++){const col=make('div','mcol');for(let i=0;i<6;i++)col.append(make('span','tile'));box.append(col)}}
+function buildMosaic(){
+  const box=$('mosaic');if(!box)return;
+  const pool=apps.filter(a=>a.icon!==PLACEHOLDER);
+  if(pool.length<12)return;
+  const cols=4,per=6,total=cols*per,step=Math.max(1,Math.floor(pool.length/total));
+  const pick=[];for(let i=0;i<total;i++)pick.push(pool[(i*step+(step>>1))%pool.length]);
+  const tile=a=>{const t=make('span','tile');const img=make('img');img.src=a.icon;img.alt='';img.width=88;img.height=88;img.decoding='async';img.addEventListener('error',()=>{img.src=PLACEHOLDER},{once:true});t.append(img);return t};
+  box.replaceChildren();
+  for(let c=0;c<cols;c++){const col=make('div','mcol');const set=pick.slice(c*per,(c+1)*per);set.forEach(a=>col.append(tile(a)));set.forEach(a=>col.append(tile(a)));box.append(col)}
+  box.classList.remove('is-loading');
+}
+
+/* ── Categories ── */
+function renderCategories(){
+  const box=$('categories');box.replaceChildren();
+  const counts={all:apps.length};for(const a of apps)counts[a.category]=(counts[a.category]||0)+1;
+  for(const[id,label]of groups){
+    if(id!=='all'&&!apps.some(a=>a.category===id))continue;
+    const b=make('button','chip');b.type='button';b.setAttribute('aria-pressed',String(category===id));
+    b.append(icon(catIcon[id]),make('span','',label),make('span','count',(counts[id]||0).toLocaleString('ar-IQ')));
+    b.onclick=()=>{category=id;shown=PAGE;renderCategories();filterApps()};box.append(b);
+  }
+}
+
+/* ── Filtering / rendering ── */
 function filterApps(){const q=$('search').value.trim().toLocaleLowerCase();$('clear').hidden=!q;filtered=apps.filter(a=>(category==='all'||a.category===category)&&(!q||(a.name+' '+a.version+' '+a.developer).toLocaleLowerCase().includes(q)));const sort=$('sort').value;if(sort==='name')filtered.sort((a,b)=>a.name.localeCompare(b.name,'ar'));if(sort==='date')filtered.sort((a,b)=>b.date-a.date||a.index-b.index);renderApps()}
-function renderApps(){const grid=$('grid');const frag=document.createDocumentFragment();for(const a of filtered.slice(0,shown)){const card=make('button','app');card.type='button';card.setAttribute('aria-label','تفاصيل '+a.name);card.append(image(a.icon,'app-icon'));const copy=make('div','app-copy');copy.append(make('h3','',a.name),make('p','meta',groups.find(x=>x[0]===a.category)[1]),make('div','version','v'+a.version+(sizeText(a.size)?' · '+sizeText(a.size):'')));card.append(copy,make('span','arrow','‹'));card.onclick=()=>openDetails(a);frag.append(card)}if(!filtered.length){const empty=make('div','empty');empty.append(make('strong','','ما لكينا نتائج'),make('span','','جرّب اسم ثاني أو اختار قسم الكل.'));frag.append(empty)}grid.replaceChildren(frag);grid.setAttribute('aria-busy','false');$('results').textContent=filtered.length.toLocaleString('ar-IQ')+' تطبيق ونسخة'+($('search').value.trim()?' مطابقة للبحث':'');$('shownLabel').textContent=filtered.length?'عرض '+Math.min(shown,filtered.length).toLocaleString('ar-IQ')+' من '+filtered.length.toLocaleString('ar-IQ'):'';$('more').hidden=shown>=filtered.length}
-function openDetails(a){lastFocused=document.activeElement;$('detailName').textContent=a.name;$('detailIcon').src=a.icon;$('detailIcon').onerror=()=>{$('detailIcon').onerror=null;$('detailIcon').src=PLACEHOLDER};$('detailMeta').textContent='الإصدار '+a.version+(sizeText(a.size)?' · '+sizeText(a.size):'');$('description').textContent=a.description;$('details').showModal();document.body.style.overflow='hidden'}
-$('closeDialog').onclick=()=>$('details').close();$('details').addEventListener('close',()=>{document.body.style.overflow='';lastFocused?.focus()});$('details').onclick=e=>{if(e.target===$('details')){const r=$('details').getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)$('details').close()}};
-$('search').oninput=()=>{clearTimeout(timer);timer=setTimeout(()=>{shown=36;filterApps()},120)};$('clear').onclick=()=>{$('search').value='';shown=36;filterApps();$('search').focus()};$('sort').onchange=()=>{shown=36;filterApps()};$('more').onclick=()=>{shown+=36;renderApps()};
-function toast(text){$('toast').textContent=text;$('toast').hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('toast').hidden=true,2800)}
-async function loadApps(){const grid=$('grid');grid.replaceChildren();for(let i=0;i<12;i++)grid.append(make('div','skeleton'));$('more').hidden=true;$('results').textContent='جارٍ تحميل المكتبة…';grid.setAttribute('aria-busy','true');let data;for(const url of ['./ipastrong.json']){const controller=new AbortController();const timeout=setTimeout(()=>controller.abort(),45000);try{const r=await fetch(url,{cache:'no-cache',signal:controller.signal});if(!r.ok)throw Error('HTTP '+r.status);const d=await r.json();const list=Array.isArray(d)?d:d.apps;if(!Array.isArray(list)||!list.length)throw Error('Empty library');data=list;break}catch{}finally{clearTimeout(timeout)}}if(!data){grid.replaceChildren();const empty=make('div','empty');empty.append(make('strong','','تعذّر تحميل المكتبة'),make('p','','تحقق من اتصالك وحاول مرة ثانية.'));const retry=make('button','button','إعادة المحاولة');retry.onclick=loadApps;empty.append(retry);grid.append(empty);grid.setAttribute('aria-busy','false');$('results').textContent='المكتبة غير متاحة حاليًا';$('totalLabel').textContent='حاول مرة ثانية';return}apps=data.map(normalize);renderCategories();filterApps();$('totalLabel').textContent=apps.length.toLocaleString('ar-IQ')+' تطبيق ونسخة';$('heroCount').textContent=apps.length.toLocaleString('ar-IQ')+'+'}
-$('year').textContent=new Date().getFullYear();loadApps();
-</script></body></html>
+function appCard(a,i){
+  const card=make('button','app');card.type='button';card.setAttribute('aria-label','تفاصيل '+a.name);card.style.setProperty('--i',Math.min(i,11));
+  card.append(image(a.icon,'app-icon'));
+  const copy=make('div','app-copy');
+  const meta=make('p','meta');meta.append(icon(catIcon[a.category]||'dots'),make('span','',catLabel(a.category)));
+  copy.append(make('h3','',a.name),meta,make('div','version','v'+a.version+(sizeText(a.size)?' · '+sizeText(a.size):'')));
+  const arrow=make('span','arrow');arrow.append(icon('chev'));
+  card.append(copy,arrow);card.onclick=()=>openDetails(a);return card;
+}
+function renderApps(append){
+  const grid=$('grid');const frag=document.createDocumentFragment();
+  const start=append?grid.querySelectorAll('.app').length:0;
+  filtered.slice(start,shown).forEach((a,i)=>frag.append(appCard(a,i)));
+  if(!filtered.length){
+    const empty=make('div','empty');empty.append(icon('search'),make('strong','','ما لكينا نتائج'),make('span','','جرّب اسم ثاني أو اختار قسم الكل.'));
+    if($('search').value.trim()||category!=='all'){const reset=make('button','button','عرض كل المكتبة');reset.type='button';reset.onclick=()=>{$('search').value='';category='all';shown=PAGE;renderCategories();filterApps()};empty.append(reset)}
+    frag.append(empty);
+  }
+  if(append)grid.append(frag);else grid.replaceChildren(frag);
+  grid.setAttribute('aria-busy','false');
+  $('results').textContent=filtered.length.toLocaleString('ar-IQ')+' تطبيق ونسخة'+($('search').value.trim()?' مطابقة للبحث':'');
+  $('shownLabel').textContent=filtered.length?'عرض '+Math.min(shown,filtered.length).toLocaleString('ar-IQ')+' من '+filtered.length.toLocaleString('ar-IQ'):'';
+  $('more').hidden=shown>=filtered.length;
+}
+
+/* ── Details dialog ── */
+function openDetails(a){
+  lastFocused=document.activeElement;current=a;
+  $('detailName').textContent=a.name;
+  $('detailIcon').src=a.icon;$('detailIcon').onerror=()=>{$('detailIcon').onerror=null;$('detailIcon').src=PLACEHOLDER};
+  {const m=$('detailMeta');m.replaceChildren('الإصدار ');const v=document.createElement('bdi');v.textContent=a.version;m.append(v);if(sizeText(a.size)){const z=document.createElement('bdi');z.textContent=sizeText(a.size);m.append(' · ',z)}}
+  const tags=$('detailTags');tags.replaceChildren();
+  const t1=make('span');t1.append(icon(catIcon[a.category]||'dots'),make('span','',catLabel(a.category)));tags.append(t1);
+  if(a.developer){const t2=make('span');t2.append(icon('user'),make('span','',a.developer));tags.append(t2)}
+  $('description').textContent=a.description;$('description').scrollTop=0;
+  resetCopy();
+  $('details').showModal();document.body.style.overflow='hidden';
+}
+$('closeDialog').onclick=()=>$('details').close();
+$('details').addEventListener('close',()=>{document.body.style.overflow='';lastFocused?.focus()});
+$('details').onclick=e=>{if(e.target===$('details')){const r=$('details').getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)$('details').close()}};
+
+/* ── Copy app name (handy for support requests) ── */
+let copyTimer;
+function resetCopy(){clearTimeout(copyTimer);const b=$('copyName');b.classList.remove('done');b.replaceChildren(icon('copy'),make('span','','نسخ اسم التطبيق'))}
+function copyText(t){
+  if(navigator.clipboard&&window.isSecureContext)return navigator.clipboard.writeText(t);
+  return new Promise((ok,fail)=>{const ta=document.createElement('textarea');ta.value=t;ta.setAttribute('readonly','');ta.style.cssText='position:fixed;opacity:0;top:0';$('details').append(ta);ta.select();try{document.execCommand('copy')?ok():fail()}catch(e){fail(e)}ta.remove()});
+}
+$('copyName').onclick=async()=>{
+  if(!current)return;
+  try{await copyText(current.name);const b=$('copyName');b.classList.add('done');b.replaceChildren(icon('check'),make('span','','تم النسخ'));toast('تم نسخ اسم التطبيق','ok');clearTimeout(copyTimer);copyTimer=setTimeout(resetCopy,2000)}
+  catch{toast('تعذّر النسخ. انسخ الاسم يدويًا.','err')}
+};
+
+/* ── Toast (top layer so it also shows above the dialog) ── */
+function toast(text,type){
+  const t=$('toast');t.replaceChildren();if(type)t.append(icon(type==='err'?'alert':'check'));t.append(make('span','',text));
+  t.className='toast'+(type==='err'?' err':'');t.hidden=false;
+  if(t.showPopover){try{if(t.matches(':popover-open'))t.hidePopover();t.showPopover()}catch{}}
+  clearTimeout(toastTimer);toastTimer=setTimeout(hideToast,2800);
+}
+function hideToast(){const t=$('toast');try{if(t.hidePopover&&t.matches(':popover-open'))t.hidePopover()}catch{}t.hidden=true}
+
+/* ── Controls ── */
+$('search').oninput=()=>{clearTimeout(timer);timer=setTimeout(()=>{shown=PAGE;filterApps()},120)};
+$('search').addEventListener('keydown',e=>{if(e.key==='Escape'&&$('search').value){e.preventDefault();$('clear').click()}});
+$('clear').onclick=()=>{$('search').value='';shown=PAGE;filterApps();$('search').focus()};
+$('sort').onchange=()=>{shown=PAGE;filterApps()};
+$('more').onclick=()=>{shown+=PAGE;renderApps(true)};
+document.addEventListener('keydown',e=>{
+  if(e.key!=='/'||e.ctrlKey||e.metaKey||e.altKey)return;
+  if(e.target.closest&&e.target.closest('input,textarea,select,[contenteditable]'))return;
+  if($('details').open)return;
+  e.preventDefault();$('search').focus();
+});
+/* card spotlight follows the pointer */
+$('grid').addEventListener('pointermove',e=>{
+  if(e.pointerType==='touch')return;
+  const c=e.target.closest&&e.target.closest('.app');if(!c)return;
+  const r=c.getBoundingClientRect();c.style.setProperty('--mx',(e.clientX-r.left)+'px');c.style.setProperty('--my',(e.clientY-r.top)+'px');
+});
+
+/* ── Data ── */
+function skeletons(){const grid=$('grid');grid.replaceChildren();for(let i=0;i<12;i++){const s=make('div','skeleton');const lines=make('div','sk-lines');lines.append(make('b'),make('b'));s.append(make('i','sk-icon'),lines);grid.append(s)}}
+async function loadApps(manual){
+  const grid=$('grid');skeletons();mosaicSkeleton();
+  $('more').hidden=true;$('results').textContent='جارٍ تحميل المكتبة…';$('totalLabel').textContent='جارٍ تحميل المكتبة';$('shownLabel').textContent='';grid.setAttribute('aria-busy','true');
+  let data;
+  for(const url of ['./ipastrong.json']){
+    const controller=new AbortController();const timeout=setTimeout(()=>controller.abort(),45000);
+    try{const r=await fetch(url,{cache:'no-cache',signal:controller.signal});if(!r.ok)throw Error('HTTP '+r.status);const d=await r.json();const list=Array.isArray(d)?d:d.apps;if(!Array.isArray(list)||!list.length)throw Error('Empty library');data=list;break}catch{}finally{clearTimeout(timeout)}
+  }
+  if(!data){
+    grid.replaceChildren();
+    const empty=make('div','empty error');empty.append(icon('alert'),make('strong','','تعذّر تحميل المكتبة'),make('p','','تحقق من اتصالك وحاول مرة ثانية.'));
+    const retry=make('button','button');retry.type='button';retry.append(icon('refresh'),make('span','','إعادة المحاولة'));retry.onclick=()=>loadApps(true);empty.append(retry);
+    grid.append(empty);grid.setAttribute('aria-busy','false');
+    $('results').textContent='المكتبة غير متاحة حاليًا';$('totalLabel').textContent='حاول مرة ثانية';$('mosaic')?.classList.remove('is-loading');
+    if(manual)toast('ما كدرنا نوصل للمكتبة. حاول مرة ثانية.','err');
+    return;
+  }
+  apps=data.map(normalize);renderCategories();filterApps();buildMosaic();
+  $('totalLabel').textContent=apps.length.toLocaleString('ar-IQ')+' تطبيق ونسخة';
+  $('heroCount').textContent=apps.length.toLocaleString('ar-IQ')+'+';
+  if(manual)toast('تم تحميل المكتبة','ok');
+}
+
+/* ── Scroll reveal + active section ── */
+(function(){
+  if(!('IntersectionObserver'in window))return;
+  document.documentElement.classList.add('js');
+  const io=new IntersectionObserver(es=>{for(const e of es)if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}},{rootMargin:'0px 0px -6% 0px',threshold:.06});
+  document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+  const links=[...document.querySelectorAll('[data-nav]')];
+  const so=new IntersectionObserver(es=>{for(const e of es)if(e.isIntersecting)links.forEach(l=>l.dataset.nav===e.target.id?l.setAttribute('aria-current','true'):l.removeAttribute('aria-current'))},{rootMargin:'-40% 0px -55% 0px'});
+  ['library','packages','faq'].forEach(id=>{const s=$(id);if(s)so.observe(s)});
+})();
+
+(function(){const s=$('sentinel'),t=document.querySelector('.toolbar');if(!s||!t||!('IntersectionObserver'in window))return;new IntersectionObserver(es=>{for(const e of es)t.classList.toggle('stuck',!e.isIntersecting&&e.boundingClientRect.top<120)},{threshold:0,rootMargin:'-70px 0px 0px 0px'}).observe(s)})();
+$('year').textContent=new Date().getFullYear();
+loadApps();
+</script>
+</body>
+</html>
