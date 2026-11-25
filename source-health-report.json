@@ -1,8 +1,8 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 27,
-    "restricted": 373
+    "ok": 78,
+    "restricted": 322
   },
   "repaired": [],
   "unresolved": [
@@ -75,7 +75,7 @@
       "url": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Angry.Birds.Star.Wars.v1.5.12.ipa"
     }
   ],
-  "date": "2026-11-25T08:35:17.923727+00:00",
+  "date": "2026-11-25T21:42:52.558345+00:00",
   "inputApps": 9000,
   "outputApps": 9000,
   "preservedApps": 411,
@@ -89,12 +89,12 @@
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 10441,
+        "apps": 10448,
         "error": null
       },
       {
         "source": "https://ipa.cypwn.xyz/cypwn.json",
-        "apps": 209,
+        "apps": 210,
         "error": null
       },
       {
@@ -253,13 +253,20 @@
         "error": null
       }
     ],
-    "inputRecords": 43356,
+    "inputRecords": 43364,
     "outputApps": 10693,
     "rejectedRecords": 203
   },
   "deduplication": {
-    "removedApps": 36,
+    "removedApps": 37,
     "duplicates": [
+      {
+        "name": "NabzCraft — Minecraft Bedrock Client",
+        "keptName": "NabzCraft",
+        "bundleIdentifier": "com.mojang.minecraftpe",
+        "version": "26.62",
+        "downloadURL": "https://appstore.sidelix.vip/repos/download/176/app_181_nabzclan_sidelix.ipa"
+      },
       {
         "name": "Caliber",
         "keptName": "Caliber",
@@ -515,7 +522,7 @@
     ]
   },
   "catalogLimit": {
-    "removedApps": 2051,
+    "removedApps": 2050,
     "maxApps": 9000,
     "protectedApps": 74
   }
