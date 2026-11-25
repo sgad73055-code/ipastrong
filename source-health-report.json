@@ -1,9 +1,8 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 115,
-    "restricted": 284,
-    "missing": 1
+    "ok": 27,
+    "restricted": 373
   },
   "repaired": [],
   "unresolved": [
@@ -76,10 +75,10 @@
       "url": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Angry.Birds.Star.Wars.v1.5.12.ipa"
     }
   ],
-  "date": "2026-11-24T22:27:50.326349+00:00",
+  "date": "2026-11-25T08:35:17.923727+00:00",
   "inputApps": 9000,
   "outputApps": 9000,
-  "preservedApps": 402,
+  "preservedApps": 411,
   "recoveredPublishedSource": false,
   "removedApps": 17,
   "catalogPolicy": {
@@ -90,12 +89,12 @@
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 10431,
+        "apps": 10441,
         "error": null
       },
       {
         "source": "https://ipa.cypwn.xyz/cypwn.json",
-        "apps": 210,
+        "apps": 209,
         "error": null
       },
       {
@@ -135,7 +134,7 @@
       },
       {
         "source": "https://apps.nabzclan.vip/repos/altstore.php",
-        "apps": 168,
+        "apps": 169,
         "error": null
       },
       {
@@ -150,7 +149,7 @@
       },
       {
         "source": "https://fastsign.dev/repo.json",
-        "apps": 17358,
+        "apps": 17430,
         "error": null
       },
       {
@@ -254,9 +253,9 @@
         "error": null
       }
     ],
-    "inputRecords": 43274,
-    "outputApps": 10680,
-    "rejectedRecords": 202
+    "inputRecords": 43356,
+    "outputApps": 10693,
+    "rejectedRecords": 203
   },
   "deduplication": {
     "removedApps": 36,
@@ -516,7 +515,7 @@
     ]
   },
   "catalogLimit": {
-    "removedApps": 2029,
+    "removedApps": 2051,
     "maxApps": 9000,
     "protectedApps": 74
   }
