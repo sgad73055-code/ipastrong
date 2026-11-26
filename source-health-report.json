@@ -1,8 +1,8 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 78,
-    "restricted": 322
+    "restricted": 348,
+    "ok": 52
   },
   "repaired": [],
   "unresolved": [
@@ -75,10 +75,10 @@
       "url": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Angry.Birds.Star.Wars.v1.5.12.ipa"
     }
   ],
-  "date": "2026-11-25T21:42:52.558345+00:00",
+  "date": "2026-11-26T08:18:47.788790+00:00",
   "inputApps": 9000,
   "outputApps": 9000,
-  "preservedApps": 411,
+  "preservedApps": 423,
   "recoveredPublishedSource": false,
   "removedApps": 17,
   "catalogPolicy": {
@@ -89,7 +89,7 @@
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 10448,
+        "apps": 10462,
         "error": null
       },
       {
@@ -139,7 +139,7 @@
       },
       {
         "source": "https://ipa.thuthuatjb.com/repo",
-        "apps": 10443,
+        "apps": 10495,
         "error": null
       },
       {
@@ -149,7 +149,7 @@
       },
       {
         "source": "https://fastsign.dev/repo.json",
-        "apps": 17430,
+        "apps": 17444,
         "error": null
       },
       {
@@ -253,20 +253,13 @@
         "error": null
       }
     ],
-    "inputRecords": 43364,
-    "outputApps": 10693,
-    "rejectedRecords": 203
+    "inputRecords": 43444,
+    "outputApps": 10678,
+    "rejectedRecords": 205
   },
   "deduplication": {
-    "removedApps": 37,
+    "removedApps": 36,
     "duplicates": [
-      {
-        "name": "NabzCraft — Minecraft Bedrock Client",
-        "keptName": "NabzCraft",
-        "bundleIdentifier": "com.mojang.minecraftpe",
-        "version": "26.62",
-        "downloadURL": "https://appstore.sidelix.vip/repos/download/176/app_181_nabzclan_sidelix.ipa"
-      },
       {
         "name": "Caliber",
         "keptName": "Caliber",
@@ -522,7 +515,7 @@
     ]
   },
   "catalogLimit": {
-    "removedApps": 2050,
+    "removedApps": 2048,
     "maxApps": 9000,
     "protectedApps": 74
   }
