@@ -1,8 +1,9 @@
 {
   "checked": 400,
   "outcomes": {
-    "restricted": 348,
-    "ok": 52
+    "ok": 56,
+    "restricted": 343,
+    "missing": 1
   },
   "repaired": [],
   "unresolved": [
@@ -75,10 +76,10 @@
       "url": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Angry.Birds.Star.Wars.v1.5.12.ipa"
     }
   ],
-  "date": "2026-11-26T08:18:47.788790+00:00",
+  "date": "2026-11-26T21:32:39.314615+00:00",
   "inputApps": 9000,
   "outputApps": 9000,
-  "preservedApps": 423,
+  "preservedApps": 422,
   "recoveredPublishedSource": false,
   "removedApps": 17,
   "catalogPolicy": {
@@ -89,7 +90,7 @@
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 10462,
+        "apps": 10472,
         "error": null
       },
       {
@@ -253,7 +254,7 @@
         "error": null
       }
     ],
-    "inputRecords": 43444,
+    "inputRecords": 43454,
     "outputApps": 10678,
     "rejectedRecords": 205
   },
@@ -515,7 +516,7 @@
     ]
   },
   "catalogLimit": {
-    "removedApps": 2048,
+    "removedApps": 2047,
     "maxApps": 9000,
     "protectedApps": 74
   }
