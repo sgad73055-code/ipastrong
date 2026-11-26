@@ -16,6 +16,20 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://raw.githubusercontent.com" crossorigin>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<script>
+/* تحميل مكتبات الحركة مرة واحدة وبشكل غير حاجب. لا تُحمَّل أصلاً عند تفعيل تقليل الحركة.
+   عند أي فشل يبقى الموقع كاملاً بالحركات الأساسية (CSS). */
+(function(){var d=document.documentElement,r=matchMedia('(prefers-reduced-motion: reduce)').matches;
+window.__motion={ready:null,reduced:r};if(r)return;
+d.classList.add('pre');
+var g='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/';
+function ld(u){return new Promise(function(ok,no){var s=document.createElement('script');s.src=u;s.async=false;s.onload=ok;s.onerror=no;document.head.appendChild(s)})}
+window.__motion.ready=ld(g+'gsap.min.js').then(function(){return Promise.all([ld(g+'ScrollTrigger.min.js'),ld('https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js').catch(function(){})])});
+setTimeout(function(){d.classList.remove('pre')},3000);
+})();
+</script>
 <!-- الخطوط لا تحجب العرض: تُحمَّل بشكل غير متزامن مع خط بديل جاهز -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Readex+Pro:wght@500;600;700&display=swap" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Readex+Pro:wght@500;600;700&display=swap"></noscript>
@@ -310,6 +324,25 @@ dialog::backdrop{background:rgb(1 4 9/.74);-webkit-backdrop-filter:blur(8px);bac
 /* ═════════════ Mobile tab bar ═════════════ */
 .tabbar{display:none}
 
+/* ═════════════ Motion layer (يعمل فقط مع GSAP/Lenis) ═════════════ */
+.pre .hero-copy>*{animation:none;opacity:0}
+.gsap-on .hero-copy>*,.gsap-on .app{animation:none}
+html.lenis,html.lenis body{height:auto}
+.lenis.lenis-smooth{scroll-behavior:auto!important}
+.lenis.lenis-smooth [data-lenis-prevent]{overscroll-behavior:contain}
+.lenis.lenis-stopped{overflow:hidden}
+.hero-orbs{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.orb{position:absolute;border-radius:50%;background:radial-gradient(circle,rgb(79 214 255/.2),transparent 65%);will-change:transform}
+.orb.a{width:560px;height:560px;top:-240px;inset-inline-start:-120px}
+.orb.b{width:420px;height:420px;bottom:-220px;inset-inline-end:8%;opacity:.7}
+.hero-spot{position:absolute;inset:0;pointer-events:none;background:radial-gradient(380px circle at var(--sx,70%) var(--sy,30%),rgb(79 214 255/.11),transparent 70%);opacity:0;transition:opacity .5s}
+.hero.spot-on .hero-spot{opacity:1}
+.w{display:inline-block;will-change:transform,opacity}
+.mag{transition-property:border-color,box-shadow,background,color!important}
+.searchbox{position:relative}
+.searchbox::after{content:"";position:absolute;inset:-1px;border-radius:17px;padding:1px;pointer-events:none;opacity:0;transition:opacity .3s;background:conic-gradient(from var(--a),transparent 0 68%,var(--cyan) 92%,transparent);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box exclude,linear-gradient(#000 0 0);animation:spin 4s linear infinite}
+.searchbox:focus-within::after{opacity:1}
+
 /* ═════════════ Responsive ═════════════ */
 @media(max-width:1000px){
   .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
@@ -437,6 +470,7 @@ dialog::backdrop{background:rgb(1 4 9/.74);-webkit-backdrop-filter:blur(8px);bac
 
 <main>
 <section class="hero">
+  <div class="hero-orbs" aria-hidden="true"><i class="orb a"></i><i class="orb b"></i><i class="hero-spot"></i></div>
   <div class="wrap hero-in">
     <div class="hero-copy">
       <div class="badge"><i aria-hidden="true"></i>مكتبة IPA STRONG</div>
@@ -546,11 +580,11 @@ dialog::backdrop{background:rgb(1 4 9/.74);-webkit-backdrop-filter:blur(8px);bac
   <a href="#faq" data-nav="faq"><svg class="ic" aria-hidden="true"><use href="#i-help"/></svg>أسئلة</a>
 </nav>
 
-<dialog id="details" aria-labelledby="detailName">
+<dialog id="details" aria-labelledby="detailName" data-lenis-prevent>
   <button type="button" class="close-dialog" id="closeDialog" aria-label="إغلاق التفاصيل"><svg class="ic" aria-hidden="true"><use href="#i-x"/></svg></button>
   <div class="dialog-head" id="dialogHead"><img id="detailIcon" alt="" width="88" height="88"><div><h2 id="detailName"></h2><p id="detailMeta"></p></div></div>
   <div class="tags" id="detailTags"></div>
-  <div class="description" id="description"></div>
+  <div class="description" id="description" data-lenis-prevent></div>
   <div class="dialog-foot">
     <a class="button primary dialog-action" href="https://t.me/ipastrong" target="_blank" rel="noopener">طلب التثبيت عبر المتجر <svg class="ic ic-ext" aria-hidden="true"><use href="#i-send"/></svg></a>
     <button type="button" class="button copy" id="copyName"><svg class="ic" aria-hidden="true"><use href="#i-copy"/></svg><span>نسخ اسم التطبيق</span></button>
@@ -676,6 +710,7 @@ function renderApps(append){
   const q=$('search').value.trim().toLocaleLowerCase();
   const start=append?grid.querySelectorAll('.app').length:0;
   filtered.slice(start,shown).forEach((a,i)=>frag.append(appCard(a,i,q)));
+  const nodes=[...frag.children].filter(n=>n.classList.contains('app'));
   if(!filtered.length){
     const empty=make('div','empty');empty.append(icon('search'),make('strong','','ما لكينا نتائج'),make('span','','جرّب اسم ثاني أو اختار قسم الكل.'));
     if(q||category!=='all'){const reset=make('button','button','عرض كل المكتبة');reset.type='button';reset.onclick=resetFilters;empty.append(reset)}
@@ -689,6 +724,7 @@ function renderApps(append){
   $('more').hidden=left<=0;
   if(left>0)$('more').firstChild.textContent='عرض المزيد ('+fmtNum(Math.min(PAGE,left))+') ';
   $('reset').hidden=!(q||category!=='all'||$('sort').value!=='default');
+  if(window.__onCards)try{window.__onCards(nodes,!!append)}catch{}
 }
 function resetFilters(){$('search').value='';$('sort').value='default';setCategory('all',true);filterApps()}
 $('reset').onclick=resetFilters;
@@ -706,10 +742,10 @@ function openDetails(a){
   if(a.date){const t3=make('span');t3.append(icon('cal'),make('span','','آخر تحديث '+dateText(a.date)));tags.append(t3)}
   $('description').textContent=a.description;$('description').scrollTop=0;
   resetCopy();
-  $('details').showModal();document.body.style.overflow='hidden';
+  $('details').showModal();document.body.style.overflow='hidden';window.__lenis&&window.__lenis.stop();
 }
 $('closeDialog').onclick=()=>$('details').close();
-$('details').addEventListener('close',()=>{document.body.style.overflow='';lastFocused?.focus()});
+$('details').addEventListener('close',()=>{document.body.style.overflow='';window.__lenis&&window.__lenis.start();lastFocused?.focus()});
 $('details').onclick=e=>{if(e.target===$('details')){const r=$('details').getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)$('details').close()}};
 
 /* ── Copy app name (handy for support requests) ── */
@@ -801,6 +837,134 @@ async function loadApps(manual){
 })();
 $('year').textContent=new Date().getFullYear();
 loadApps();
+</script>
+
+<script>
+/* ═════════ طبقة الحركة: GSAP + ScrollTrigger + Lenis (تحسين تدريجي) ═════════ */
+(function(){
+  const root=document.documentElement,M=window.__motion;
+  if(!M||M.reduced||!M.ready){root.classList.remove('pre');return}
+  const touched=[];let lenis=null,cardIO=null;
+  M.ready.then(init).catch(()=>root.classList.remove('pre'));
+
+  function splitWords(el){
+    const words=[];const txt=el.textContent.trim().split(/\s+/);el.textContent='';el.setAttribute('aria-hidden','true');
+    txt.forEach((t,i)=>{const w=document.createElement('span');w.className='w';w.textContent=t;el.append(w);if(i<txt.length-1)el.append(' ');words.push(w)});
+    return words;
+  }
+  function init(){
+    if(!window.gsap||!window.ScrollTrigger){root.classList.remove('pre');return}
+    try{run()}catch(err){
+      console.warn('IPA Strong: motion disabled',err);
+      try{ScrollTrigger.getAll().forEach(t=>t.kill());gsap.killTweensOf(touched);gsap.set(touched,{clearProps:'all'});gsap.set('.app',{clearProps:'all'})}catch{}
+      try{lenis&&lenis.destroy()}catch{}
+      window.__lenis=null;window.__onCards=null;cardIO&&cardIO.disconnect();
+      root.classList.remove('pre','gsap-on','lenis','lenis-smooth');
+    }
+  }
+  function run(){
+    gsap.registerPlugin(ScrollTrigger);
+    ScrollTrigger.config({ignoreMobileResize:true});
+    root.classList.add('gsap-on');
+    const fine=matchMedia('(hover:hover) and (pointer:fine)').matches;
+    const wide=matchMedia('(min-width:861px)').matches;
+    const $$=s=>[...document.querySelectorAll(s)];
+    const hero=document.querySelector('.hero');
+
+    /* ── Lenis: للماوس/التراكباد فقط. اللمس (iPhone) يبقى على التمرير الأصلي ── */
+    if(window.Lenis&&fine){
+      lenis=new Lenis({lerp:.1,smoothWheel:true,syncTouch:false});
+      window.__lenis=lenis;
+      lenis.on('scroll',ScrollTrigger.update);
+      gsap.ticker.add(t=>lenis.raf(t*1000));
+      gsap.ticker.lagSmoothing(0);
+      document.addEventListener('click',e=>{
+        const a=e.target.closest&&e.target.closest('a[href^="#"]');if(!a)return;
+        const id=a.getAttribute('href');
+        if(id==='#'){e.preventDefault();lenis.scrollTo(0,{duration:1.1});return}
+        const t=document.querySelector(id);if(!t)return;e.preventDefault();
+        const off=-(parseFloat(getComputedStyle(root).getPropertyValue('--header'))+32);
+        lenis.scrollTo(t,{offset:off,duration:1.2});
+      });
+    }
+
+    /* ── Hero: SplitText بالكلمات (تقسيم الحروف يكسر اتصال الحروف العربية) ── */
+    const h1=document.querySelector('h1');
+    if(root.classList.contains('pre')&&h1){
+      const full=h1.textContent.replace(/\s+/g,' ').trim();
+      const words=$$('h1 .l1,h1 .l2').flatMap(splitWords);h1.setAttribute('aria-label',full);
+      const parts=$$('.hero-copy>:not(h1)');
+      touched.push(h1,...parts,...words);
+      gsap.set(parts,{opacity:0,y:18});gsap.set(h1,{opacity:1});gsap.set(words,{opacity:0,yPercent:45,filter:'blur(10px)'});
+      root.classList.remove('pre');
+      gsap.timeline({defaults:{ease:'power3.out'},onComplete:()=>gsap.set([h1,...parts,...words],{clearProps:'all'})})
+        .to(parts[0],{opacity:1,y:0,duration:.7},0)
+        .to(words,{opacity:1,yPercent:0,filter:'blur(0px)',duration:1,stagger:.1},.12)
+        .to(parts.slice(1),{opacity:1,y:0,duration:.8,stagger:.1},.5);
+    }else root.classList.remove('pre');
+
+    /* ── خلفية Hero المتحركة: كرتان ضوئيتان + بقعة تتبع المؤشر ── */
+    const orbs=$$('.orb');
+    const orbTw=[gsap.to(orbs[0],{x:90,y:60,duration:9,ease:'sine.inOut',repeat:-1,yoyo:true}),gsap.to(orbs[1],{x:-80,y:-50,duration:11,ease:'sine.inOut',repeat:-1,yoyo:true})];
+    touched.push(...orbs);
+    ScrollTrigger.create({trigger:hero,start:'top bottom',end:'bottom top',onToggle:s=>orbTw.forEach(t=>s.isActive?t.play():t.pause())});
+    if(fine){
+      let raf=0,px=0,py=0;
+      hero.addEventListener('pointerenter',()=>hero.classList.add('spot-on'));
+      hero.addEventListener('pointerleave',()=>hero.classList.remove('spot-on'));
+      hero.addEventListener('pointermove',e=>{px=e.clientX;py=e.clientY;if(raf)return;raf=requestAnimationFrame(()=>{raf=0;const r=hero.getBoundingClientRect();hero.style.setProperty('--sx',(px-r.left)+'px');hero.style.setProperty('--sy',(py-r.top)+'px')})},{passive:true});
+    }
+
+    /* ── Parallax خفيف (شاشات واسعة فقط) ── */
+    if(wide){
+      const st={trigger:hero,start:'top top',end:'bottom top',scrub:.5};
+      gsap.to('.mosaic-wrap',{yPercent:-7,ease:'none',scrollTrigger:st});
+      gsap.to('.hero-copy',{yPercent:-4,ease:'none',scrollTrigger:st});
+      touched.push(...$$('.mosaic-wrap,.hero-copy'));
+    }
+
+    /* ── ظهور العناصر عند التمرير (يستبدل ظهور CSS) ── */
+    const rv=$$('.rv');rv.forEach(e=>e.classList.remove('rv','in'));
+    touched.push(...rv);gsap.set(rv,{opacity:0,y:30});
+    ScrollTrigger.batch(rv,{start:'top 92%',once:true,batchMax:6,onEnter:b=>gsap.to(b,{opacity:1,y:0,duration:.9,stagger:.09,ease:'power3.out',overwrite:true,clearProps:'opacity,transform'})});
+
+    /* ── عناوين الأقسام: ظهور بالكلمات ── */
+    $$('.section-title h2,.bottom h2').forEach(h=>{
+      const w=splitWords(h);h.setAttribute('aria-label',w.map(x=>x.textContent).join(' '));touched.push(...w);
+      gsap.fromTo(w,{opacity:0,yPercent:40,filter:'blur(6px)'},{opacity:1,yPercent:0,filter:'blur(0px)',duration:.8,stagger:.07,ease:'power3.out',clearProps:'filter,transform',scrollTrigger:{trigger:h,start:'top 90%',once:true}});
+    });
+
+    /* ── عدّادات ضمان الباقات تمتلئ عند الظهور ── */
+    $$('.meter').forEach(m=>{
+      const to=parseFloat(m.style.getPropertyValue('--n'));if(!(to>0))return;
+      gsap.fromTo(m,{'--n':0},{'--n':to,duration:1.2,ease:'power2.out',scrollTrigger:{trigger:m,start:'top 92%',once:true}});
+    });
+
+    /* ── أزرار مغناطيسية خفيفة (ماوس فقط) ── */
+    if(fine)$$('.hero .actions .button,.tier .button.primary').forEach(b=>{
+      b.classList.add('mag');
+      const xt=gsap.quickTo(b,'x',{duration:.4,ease:'power3'}),yt=gsap.quickTo(b,'y',{duration:.4,ease:'power3'});
+      b.addEventListener('pointermove',e=>{const r=b.getBoundingClientRect();xt((e.clientX-r.left-r.width/2)*.18);yt((e.clientY-r.top-r.height/2)*.25)});
+      b.addEventListener('pointerleave',()=>{xt(0);yt(0)});
+    });
+
+    /* ── كروت التطبيقات: IntersectionObserver واحد، ولا حركة إلا لما يدخل الكرت الشاشة ── */
+    cardIO=new IntersectionObserver(es=>{
+      const hit=es.filter(e=>e.isIntersecting).map(e=>{cardIO.unobserve(e.target);return e.target});
+      if(hit.length)gsap.to(hit.slice(0,24),{opacity:1,y:0,scale:1,duration:.55,stagger:.04,ease:'power3.out',overwrite:'auto',clearProps:'opacity,transform'});
+      hit.slice(24).forEach(n=>{n.style.opacity='';n.style.transform=''});
+    },{rootMargin:'0px'});
+    let rf;
+    window.__onCards=(nodes,append)=>{
+      if(!append)cardIO.disconnect();
+      gsap.set(nodes,{opacity:0,y:18,scale:.985});
+      nodes.forEach(n=>cardIO.observe(n));
+      clearTimeout(rf);rf=setTimeout(()=>ScrollTrigger.refresh(),200);
+    };
+    /* الكروت المعروضة قبل اكتمال تحميل المكتبات */
+    const first=$$('#grid .app');if(first.length)window.__onCards(first);
+  }
+})();
 </script>
 </body>
 </html>
