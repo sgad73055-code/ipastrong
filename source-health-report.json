@@ -1,9 +1,8 @@
 {
   "checked": 400,
   "outcomes": {
-    "restricted": 363,
-    "ok": 36,
-    "missing": 1
+    "ok": 43,
+    "restricted": 357
   },
   "repaired": [],
   "unresolved": [
@@ -76,10 +75,10 @@
       "url": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Angry.Birds.Star.Wars.v1.5.12.ipa"
     }
   ],
-  "date": "2026-11-27T08:34:42.653537+00:00",
+  "date": "2026-11-27T21:17:51.134603+00:00",
   "inputApps": 9000,
   "outputApps": 9000,
-  "preservedApps": 450,
+  "preservedApps": 446,
   "recoveredPublishedSource": false,
   "removedApps": 17,
   "catalogPolicy": {
@@ -90,12 +89,12 @@
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 10476,
+        "apps": 10481,
         "error": null
       },
       {
         "source": "https://ipa.cypwn.xyz/cypwn.json",
-        "apps": 210,
+        "apps": 209,
         "error": null
       },
       {
@@ -254,27 +253,13 @@
         "error": null
       }
     ],
-    "inputRecords": 43431,
+    "inputRecords": 43435,
     "outputApps": 10624,
     "rejectedRecords": 205
   },
   "deduplication": {
-    "removedApps": 38,
+    "removedApps": 36,
     "duplicates": [
-      {
-        "name": "SoundCloud++",
-        "keptName": "SoundCloud++",
-        "bundleIdentifier": "com.soundcloud.TouchApp",
-        "version": "9.1.0",
-        "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/SoundCloud.v9.1.0.+.NexaSC-b5.ipa"
-      },
-      {
-        "name": "Twitch++",
-        "keptName": "Twitch++",
-        "bundleIdentifier": "tv.twitch",
-        "version": "32.2",
-        "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Twitch.v32.2.+.TwitchAdBlock.v0.1.24.ipa"
-      },
       {
         "name": "Caliber",
         "keptName": "Caliber",
@@ -530,7 +515,7 @@
     ]
   },
   "catalogLimit": {
-    "removedApps": 2019,
+    "removedApps": 2017,
     "maxApps": 9000,
     "protectedApps": 74
   }
