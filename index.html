@@ -684,7 +684,8 @@ html.journey-on .ft-tile:not(.on) .ft-ic{opacity:0}
   <div class="dialog-foot">
     <a class="button primary dialog-action" href="https://t.me/ipastrong" target="_blank" rel="noopener">طلب التثبيت عبر المتجر <svg class="ic ic-ext" aria-hidden="true"><use href="#i-send"/></svg></a>
     <button type="button" class="button copy" id="copyName"><svg class="ic" aria-hidden="true"><use href="#i-copy"/></svg><span>نسخ اسم التطبيق</span></button>
-    <button type="button" class="button" id="copyLink"><svg class="ic" aria-hidden="true"><use href="#i-link"/></svg><span>نسخ رابط التطبيق</span></button>
+    <button type="button" class="button" id="copyLink"><svg class="ic" aria-hidden="true"><use href="#i-link"/></svg><span>نسخ رابط IPA المباشر</span></button>
+    <a class="button" id="downloadIPA" href="#" target="_blank" rel="noopener" hidden><svg class="ic" aria-hidden="true"><use href="#i-down"/></svg><span>تنزيل ملف IPA</span></a>
   </div>
   <p class="dialog-note">يفتح قناة المتجر على تيليگرام</p>
 </dialog>
@@ -712,7 +713,8 @@ const safeURL=value=>{try{const u=new URL(String(value));return['https:','http:'
 const nrm=s=>String(s).toLocaleLowerCase().replace(/[ً-ٰٟـ]/g,'').replace(/[إأآٱ]/g,'ا').replace(/ى/g,'ي').replace(/ة/g,'ه');
 function normalize(a,index){
   const v=Array.isArray(a.versions)?a.versions[0]||{}:{};
-  const o={name:String(a.name||'تطبيق بدون اسم'),version:String(a.version||v.version||'—'),size:Number(a.size||v.size||0),icon:appIcon(a.iconURL||a.icon),description:String(a.localizedDescription||a.description||a.subtitle||'تطبيق متوفر ضمن مكتبة IPA Strong.'),category:categoryOf(a.category),developer:String(a.developerName||''),date:Date.parse(a.versionDate||v.date||'')||0,index};
+  const ipaURL=safeURL(a.downloadURL||v.downloadURL||a.downloadUrl||v.downloadUrl||a.ipaURL||v.ipaURL||a.ipaUrl||v.ipaUrl||a.link||v.link||'');
+  const o={name:String(a.name||'تطبيق بدون اسم'),version:String(a.version||v.version||'—'),size:Number(a.size||v.size||0),icon:appIcon(a.iconURL||a.icon),description:String(a.localizedDescription||a.description||a.subtitle||'تطبيق متوفر ضمن مكتبة IPA Strong.'),category:categoryOf(a.category),developer:String(a.developerName||''),date:Date.parse(a.versionDate||v.date||'')||0,downloadURL:ipaURL,index};
   o.nname=nrm(o.name);o.hay=nrm(o.name+' '+o.version+' '+o.developer);
   return o;
 }
@@ -974,6 +976,7 @@ function openDetails(a){
   if(a.developer){const t2=make('span');t2.append(icon('user'),make('span','',a.developer));tags.append(t2)}
   if(a.date){const t3=make('span');t3.append(icon('cal'),make('span','','آخر تحديث '+dateText(a.date)));tags.append(t3)}
   $('description').textContent=a.description;$('description').scrollTop=0;
+  const ipaButton=$('downloadIPA');ipaButton.hidden=!a.downloadURL;ipaButton.href=a.downloadURL||'#';
   resetCopy();
   $('details').showModal();document.body.style.overflow='hidden';window.__lenis&&window.__lenis.stop();
 }
@@ -990,7 +993,8 @@ function applyHash(){
 addEventListener('hashchange',()=>{if(apps.length)applyHash()});
 $('copyLink').onclick=async()=>{
   if(!current)return;
-  try{await copyText(location.href.split('#')[0]+'#q='+encodeURIComponent(current.name));toast('تم نسخ رابط التطبيق','ok')}catch{toast('تعذّر النسخ. انسخ الرابط يدويًا.','err')}
+  if(!current.downloadURL){toast('رابط IPA المباشر غير متوفر لهذا التطبيق','err');return}
+  try{await copyText(current.downloadURL);toast('تم نسخ رابط IPA المباشر','ok')}catch{toast('تعذّر النسخ. حاول مرة ثانية.','err')}
 };
 
 /* ── Copy app name (handy for support requests) ── */
