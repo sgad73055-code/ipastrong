@@ -1,8 +1,8 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 56,
-    "restricted": 343,
+    "restricted": 363,
+    "ok": 36,
     "missing": 1
   },
   "repaired": [],
@@ -76,10 +76,10 @@
       "url": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Angry.Birds.Star.Wars.v1.5.12.ipa"
     }
   ],
-  "date": "2026-11-26T21:32:39.314615+00:00",
+  "date": "2026-11-27T08:34:42.653537+00:00",
   "inputApps": 9000,
   "outputApps": 9000,
-  "preservedApps": 422,
+  "preservedApps": 450,
   "recoveredPublishedSource": false,
   "removedApps": 17,
   "catalogPolicy": {
@@ -90,7 +90,7 @@
     "sources": [
       {
         "source": "https://repository.apptesters.org",
-        "apps": 10472,
+        "apps": 10476,
         "error": null
       },
       {
@@ -135,7 +135,7 @@
       },
       {
         "source": "https://apps.nabzclan.vip/repos/altstore.php",
-        "apps": 169,
+        "apps": 174,
         "error": null
       },
       {
@@ -150,7 +150,7 @@
       },
       {
         "source": "https://fastsign.dev/repo.json",
-        "apps": 17444,
+        "apps": 17412,
         "error": null
       },
       {
@@ -254,13 +254,27 @@
         "error": null
       }
     ],
-    "inputRecords": 43454,
-    "outputApps": 10678,
+    "inputRecords": 43431,
+    "outputApps": 10624,
     "rejectedRecords": 205
   },
   "deduplication": {
-    "removedApps": 36,
+    "removedApps": 38,
     "duplicates": [
+      {
+        "name": "SoundCloud++",
+        "keptName": "SoundCloud++",
+        "bundleIdentifier": "com.soundcloud.TouchApp",
+        "version": "9.1.0",
+        "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/SoundCloud.v9.1.0.+.NexaSC-b5.ipa"
+      },
+      {
+        "name": "Twitch++",
+        "keptName": "Twitch++",
+        "bundleIdentifier": "tv.twitch",
+        "version": "32.2",
+        "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Twitch.v32.2.+.TwitchAdBlock.v0.1.24.ipa"
+      },
       {
         "name": "Caliber",
         "keptName": "Caliber",
@@ -516,7 +530,7 @@
     ]
   },
   "catalogLimit": {
-    "removedApps": 2047,
+    "removedApps": 2019,
     "maxApps": 9000,
     "protectedApps": 74
   }
