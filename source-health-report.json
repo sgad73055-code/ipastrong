@@ -3,15 +3,15 @@
   "outcomes": {},
   "repaired": [],
   "unresolved": [],
-  "date": "2026-11-27T22:06:34.503752+00:00",
-  "inputApps": 9000,
-  "outputApps": 8959,
+  "date": "2026-11-27T22:20:22.308619+00:00",
+  "inputApps": 8959,
+  "outputApps": 8878,
   "preservedApps": 0,
   "recoveredPublishedSource": false,
-  "removedApps": 0,
+  "removedApps": 81,
   "catalogPolicy": {
-    "removedApps": 0,
-    "removedVersions": 0
+    "removedApps": 81,
+    "removedVersions": 3
   },
   "upstream": {
     "mode": "audit-only"
@@ -21,7 +21,7 @@
     "duplicates": []
   },
   "blockedFamilies": {
-    "removedApps": 41
+    "removedApps": 0
   },
   "catalogLimit": {
     "removedApps": 0

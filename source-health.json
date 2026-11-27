@@ -46520,14 +46520,6 @@
       "size": 32380285,
       "checkedAt": 1794598917.7813048
     },
-    "c4d608c25f2a7e7f9577ca9495db8f8838b345f65dfb84d23fab7cba9eaeb077": {
-      "url": "https://git.ryujinx.app/projects/MeloNX/releases/download/2.6/MeloNX.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1794598917.7813048
-    },
     "d2c0dcc8754d7f8eeb3f833fd33d371cc93477d461dfdd223c82205bb0584d6c": {
       "url": "https://fastsign.dev/tg-ipa/riftysipalibrary/8690-Stronger%20-%20Gym%20Workout%20Planner-v6.0.3-riftysipas.ipa",
       "missingRuns": 0,
@@ -55862,36 +55854,12 @@
       "size": 129943362,
       "checkedAt": 1794513249.1722064
     },
-    "06b1605511526afbb43b873eb1fc52dadce6918c5b1fb0876cf0583f3eca181d": {
-      "url": "https://cdn.omnidev.org/Barcode_Scanner-wc.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1794552373.7208972
-    },
     "0c8ff818fe9141bbd0832229e971f418357e53eacd88480930350b1ad73cdc8f": {
       "url": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-11-2026/SODA_10.5.0_Subscription_Unlocked_@thisismanpreets_apptesters.org.ipa",
       "missingRuns": 0,
       "status": "ok",
       "http": 206,
       "size": 182206025,
-      "checkedAt": 1794552373.7208972
-    },
-    "10311b31b70e128c0b4e1557557de54def49f1d1d47928e728b9793138aa4572": {
-      "url": "https://cdn.omnidev.org/Charlie_the_Steak_1_2_495_64_bit_644918861_812715227_Cracked-Nk.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1794552373.7208972
-    },
-    "121eb00479c314a9777393e49cff3463afeec1974aa1a17975a89b829bb3eb51": {
-      "url": "https://cdn.omnidev.org/Eevee_Spotify_5_8_8_9_90-lF.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
       "checkedAt": 1794552373.7208972
     },
     "187f7d5b6ef1d383754c6459faa09b4909dbdd50f7a63f0203c542c98f7dd162": {
@@ -55902,44 +55870,12 @@
       "size": 135385205,
       "checkedAt": 1794552373.7208972
     },
-    "1e719f75c67b0dce837a737a660219843deefb4cfb8a11e14e85afc5275ddfa3": {
-      "url": "https://cdn.omnidev.org/Bunny_IPA_Edit-H0.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1794552373.7208972
-    },
-    "1fe19dcab1c9b8490767ccb5ba37b1a82b7723e012e5fcb29f67b797fdbea5be": {
-      "url": "https://cdn.omnidev.org/Five_Nights_at_Freddys_SL_v2_0_3-Hu.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1794552373.7208972
-    },
-    "27ac2d145a8ac7d6582e3c0fed23dced3f02040167e33db05c8a746fbb9bc64d": {
-      "url": "https://cdn.omnidev.org/Feedback_Assistant_i_OS-OB.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1794552373.7208972
-    },
     "35ab0502f97ffe90d370c90807132fd3dd769489fa7e8af4e286d17b56ded874": {
       "url": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-11-2026/Boostcamp_269_Subscription_Unlocked_@thisismanpreets_apptesters.org.ipa",
       "missingRuns": 0,
       "status": "ok",
       "http": 206,
       "size": 95607942,
-      "checkedAt": 1794552373.7208972
-    },
-    "3a1849aa26aa2956e034a1266265b75e6108e45dca20c9c522902d60e9e7a96f": {
-      "url": "https://cdn.omnidev.org/Enmity_c91537b-OZ.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
       "checkedAt": 1794552373.7208972
     },
     "3a688cd93687bbf9268ca75b25b2c59c19c6447b0ec52403e2730c2311b29c03": {
@@ -55958,22 +55894,6 @@
       "size": 235263620,
       "checkedAt": 1794552373.7208972
     },
-    "3f145675e95af42b8dd3b129a5e7e42a853ee97d1ee7a2d08df3448a858aee45": {
-      "url": "https://cdn.omnidev.org/E_Sign_V5_0_2_No_Logs-29.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1794552373.7208972
-    },
-    "420d8a5a7fd220e6b1550895ed740956e02e08560f03a55a97eead3859be93c9": {
-      "url": "https://cdn.omnidev.org/FNAF_6_Pizzeria_simulator-7t.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1794552373.7208972
-    },
     "4ad1f972992ed4b7786a3dc372a8178794d65a77aa535c5e9ab5c08bfdbb1e50": {
       "url": "https://www.patreon.com/file?h=105173733&m=782951823",
       "missingRuns": 0,
@@ -55989,60 +55909,12 @@
       "size": 4819436,
       "checkedAt": 1794552373.7208972
     },
-    "58d09e10fcac4220a357897fd7cfb371a6ea2b8ece6d319faac40099f8ead256": {
-      "url": "https://cdn.omnidev.org/Geometry_2_206-2v.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1794552373.7208972
-    },
-    "678287ce6ce6e3f81d6c48aba1609017a0a4b31adc810c6fb3b175beeba47e32": {
-      "url": "https://cdn.omnidev.org/Black_Hole_v1_15_11_ios-7c.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1794552373.7208972
-    },
-    "688f27af33e2658e160f50a6e3df21ee1d93a2c809c2e07eff0114c489ce15a5": {
-      "url": "https://cdn.omnidev.org/Five_Nights_at_Freddys_2_v_2_0_4-xJ.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1794552373.7208972
-    },
     "6a31406a31acaafc97163425edaed24407b3bfb5e9a8ed713764030595ada188": {
       "url": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-11-2026/iTranslate_17.4.77_Subscription_Unlocked_@thisismanpreets_apptesters.org.ipa",
       "missingRuns": 0,
       "status": "ok",
       "http": 206,
       "size": 103168114,
-      "checkedAt": 1794552373.7208972
-    },
-    "7474a809b2fe54ea06e8d095ee82616df73cfbfd1841fdda988740b2d9acaa28": {
-      "url": "https://cdn.omnidev.org/Frida_Code_Manager_roothide1_6-11.deb",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1794552373.7208972
-    },
-    "7943657efeba682538a26be3369426bd341379e659f343cf0e0c4dfb9e43f673": {
-      "url": "https://cdn.omnidev.org/BH_Twitter_sideloaded_IPA_Edit-pN.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1794552373.7208972
-    },
-    "7ba18df2d775e70ef428382933cfc81ece8f89b1507629e2b76926166be3237a": {
-      "url": "https://cdn.omnidev.org/Flycast_2_4-W4.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
       "checkedAt": 1794552373.7208972
     },
     "85439ba9b289757eeab74ddaf164a09d32c7dd746c53f0392a76a70b1f7a7f86": {
@@ -56053,46 +55925,6 @@
       "size": 41761137,
       "checkedAt": 1794552373.7208972
     },
-    "893e28226301e05479582c058ad6698be0ee892039c576b1ed15ab16fff8f4f3": {
-      "url": "https://cdn.omnidev.org/Frida_Code_Manager_trollstore1_6-rk.tipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1794552373.7208972
-    },
-    "8a4d432e98c2e75e1a678abee491b3810fc68f07cfc6af0ddac19edeb9f51a88": {
-      "url": "https://cdn.omnidev.org/Fortnite_32_10_1-8F.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1794552373.7208972
-    },
-    "9152d8f8ab6dad0f08cc205d80ca2384f946ede5cfc3627921f0c3a24cdc8e23": {
-      "url": "https://cdn.omnidev.org/Five_Nights_at_Freddys_HW_v1_1_3-nw.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1794552373.7208972
-    },
-    "a0aefc9f3839a047b5a3ad42ee5f3b6b6bb0283743cad2529e3a55c605fb3207": {
-      "url": "https://cdn.omnidev.org/Cash_App_V3_esign-HW.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1794552373.7208972
-    },
-    "a7919319b74286e05e9abf3ef542936d40160c11a467be83128de973f4b605ce": {
-      "url": "https://cdn.omnidev.org/Funkin_0_4_1_patch1-ZU.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1794552373.7208972
-    },
     "b17a27904579251d0f88f02f3fe384da10e7a960048dbb2123ed9e751ca64708": {
       "url": "https://cdn.altstore.io/file/altstore/apps/delta/2_0_1.ipa",
       "missingRuns": 0,
@@ -56101,68 +55933,12 @@
       "size": 207457043,
       "checkedAt": 1794552373.7208972
     },
-    "b5ccf76dce5706b65b15b23fc57d9b8e9fdea14c0136a5687517146f9c2ce090": {
-      "url": "https://cdn.omnidev.org/Celeste_VC-Tp.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1794552373.7208972
-    },
-    "ba8ab7b636c9b54990e9225441a7663af50830af9c108be14929904b80aee45c": {
-      "url": "https://cdn.omnidev.org/Five_Nights_at_Freddys_3_v2_0_2-cs.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1794552373.7208972
-    },
-    "c0d74ed6869800261e662c67584ab728facb2fc43d4e5ff2ec2914288c39bc28": {
-      "url": "https://cdn.omnidev.org/Dead_Cells_plus_v3_3_2-bd.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1794552373.7208972
-    },
     "d307fd3f76eba6d6f9508e79138455efeca2d56d52f730d7051b516440cd8273": {
       "url": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-11-2026/Swiftgram_13.2_Premium_@thisismanpreets_apptesters.org.ipa",
       "missingRuns": 0,
       "status": "ok",
       "http": 206,
       "size": 93686639,
-      "checkedAt": 1794552373.7208972
-    },
-    "daa2ffb6f3f52f4ae9d9ad102e30742da2117af30114726844e87f18d1a8c5cb": {
-      "url": "https://cdn.omnidev.org/Frida_Code_Manager_rootless1_6-3P.deb",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1794552373.7208972
-    },
-    "dc423ea6f76d1b14d2583240288020a5cf0980dc87550be3cb124c7febe194cd": {
-      "url": "https://cdn.omnidev.org/Azula-bW.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1794552373.7208972
-    },
-    "e4f80a68a74f5867a5c1436ac0557b2cc38439cb83a052184d11b7986afab86d": {
-      "url": "https://cdn.omnidev.org/Five_Nights_at_Freddys_v_2_0_3-jN.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1794552373.7208972
-    },
-    "e9704af052833a41f5a1c761ce5321bef6c844301903a7f07453a921eac2bdd9": {
-      "url": "https://cdn.omnidev.org/Frida_Code_Manager_stock_alpha1_6-1G.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
       "checkedAt": 1794552373.7208972
     },
     "f23c8a28cfc6eb003a0e7fb9452e8679ddec4bdf1cd5d775e3f214ef1cd1c3a6": {
@@ -56179,22 +55955,6 @@
       "status": "ok",
       "http": 206,
       "size": 135385205,
-      "checkedAt": 1794552373.7208972
-    },
-    "f55fa4b8e1784bd184d490914586c21213b1d2e7690ff28d5ab6e87f4d85a57e": {
-      "url": "https://cdn.omnidev.org/Five_Nights_at_Freddys_4_v2_0_2-tK.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1794552373.7208972
-    },
-    "f58618cc0d97e8d23b7511fcbdd4b827bfe94860b3b775c305b481f6542758f5": {
-      "url": "https://cdn.omnidev.org/Dolphini_OS_No_JIT-xI.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
       "checkedAt": 1794552373.7208972
     },
     "fcbce32ee5789cdb6c3dec01429591aa7251a768f52883c3e4c0deed416160a7": {
@@ -56900,14 +56660,6 @@
       "size": 134327582,
       "checkedAt": 1794810598.111063
     },
-    "023920c56ddf3d21d4ccac82bc2f989c225edefb60525bd2f9229dbe871438b4": {
-      "url": "https://cdn.omnidev.org/PPSSPP_v1_17_4-Zd.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1794866497.225191
-    },
     "137e8e411703dc3946bc6ef00f1254c9e9fb843cad141046a1e365ad8fb5d1cc": {
       "url": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-11-2026/LUTStudio_4.1.4_Pro_@thisismanpreets_apptesters.org.ipa",
       "missingRuns": 0,
@@ -56924,44 +56676,12 @@
       "size": 128348415,
       "checkedAt": 1794866497.225191
     },
-    "328f6e331dc07b060adedc3c3ac878f2d9d0e495b45e8ceaa59daa094db760c7": {
-      "url": "https://cdn.omnidev.org/com_kdt_livecontainer_2_1_2-3Z.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1794866497.225191
-    },
-    "34002abda2e53fa9797a116290cd85743871f2005d74fb38f125d0a1ba7014b0": {
-      "url": "https://cdn.omnidev.org/Psych_Engine073-h9.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1794866497.225191
-    },
-    "47f6700f2bcaf4cd83da41e01ba011d0b9862c3f4cddb4764d2282f741038b4e": {
-      "url": "https://cdn.omnidev.org/Sonic_Mania-BK.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1794866497.225191
-    },
     "48246aa20a8ed53d445ddde90b4582b8f18157d22482452dd5343bd4975adaa6": {
       "url": "https://repo.ballermc.com/tubevault/ASJTube-1.5_21.44.4-plugins.ipa",
       "missingRuns": 0,
       "status": "ok",
       "http": 206,
       "size": 152750691,
-      "checkedAt": 1794866497.225191
-    },
-    "4852dd5fe729870f8b0c3f59085aaad9304d4f607ac6bcb5f47255f935806f5b": {
-      "url": "https://cdn.omnidev.org/Revenge_discordnotrack_IPA_Edit-4G.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
       "checkedAt": 1794866497.225191
     },
     "4a6495489e08ac2556bed83c04edae93aadf7ba465e2d1f8c06eb210d6e58e81": {
@@ -56988,14 +56708,6 @@
       "size": 150414937,
       "checkedAt": 1794866497.225191
     },
-    "6a2be684b0ccaf2505a22829cefec72b9d015b6b81c58da7eb5e5c672010ecc8": {
-      "url": "https://cdn.omnidev.org/Psych_Engine063-pH.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1794866497.225191
-    },
     "6eb13b826cdd748e7dd624b5fbe7c5f551b1f1b0156e79c0c7bfc60ced9426f1": {
       "url": "https://cdn.omnidev.org/app_swiftgram_ios_11_2-a4.ipa",
       "missingRuns": 0,
@@ -57019,22 +56731,6 @@
       "size": 51645502,
       "checkedAt": 1794866497.225191
     },
-    "75c3de4edc9033a0bcde0025a6136c6c00ea8241848523c9292cf4a0812ebfd9": {
-      "url": "https://cdn.omnidev.org/com_ps_cahighfps_1_3_1_iphoneos_arm64-9E.deb",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1794866497.225191
-    },
-    "7ade9ec9fb6036f61ab7559cd00bdbb4094f979fc36216dc74a8707f98b8a3e1": {
-      "url": "https://cdn.omnidev.org/UNDERTALE-ej.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1794866497.225191
-    },
     "8a80cfe56f37cd523786a0d92102cc6ae320740e40ec7c4c1743cd8fc4619650": {
       "url": "https://repo.ballermc.com/tubevault/YouTube%2021.46.3%20YTPlus%206.0%20base%20%5B@ipavault%5D.ipa",
       "missingRuns": 0,
@@ -57051,60 +56747,12 @@
       "size": 132928944,
       "checkedAt": 1794866497.225191
     },
-    "8decd8a798c7dc5553331ced75ab1fe67c6ac5ee270ebc1107169e511bd334c3": {
-      "url": "https://cdn.omnidev.org/celestenocontroller_IPA_Edit-6N.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1794866497.225191
-    },
-    "93669307652f3a755013f736ae9f22400fa5c9e3458fccdc47c2c0f7595b0b7d": {
-      "url": "https://cdn.omnidev.org/Nugget2_0-cM.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1794866497.225191
-    },
-    "94f9d759314adb185e67e6485ebec42fac2e65c9c04461689431a2746b0a0fb2": {
-      "url": "https://cdn.omnidev.org/UTM-01.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1794866497.225191
-    },
     "99b25c7130c31538c682411cc78a1f282a77fb2b5bde6101b9285792bcbb3e85": {
       "url": "https://appstore.sidelix.vip/repos/download/7/app_7_nabzclan_sidelix.ipa",
       "missingRuns": 0,
       "status": "ok",
       "http": 206,
       "size": 166601807,
-      "checkedAt": 1794866497.225191
-    },
-    "a3d8992c6ef490322e466dce5949a12ef3113ef3882da9a67108b1438cd449e3": {
-      "url": "https://cdn.omnidev.org/Infinity_Blade_II_Community_Patch_v2_0-Bs.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1794866497.225191
-    },
-    "a51ae53a5ad2e7f49f8adb1f31f76f54feb3075d92b8488e56689a3890aed1d8": {
-      "url": "https://cdn.omnidev.org/com_iaftt_flightplusfree_8_2_0_eeveedecrypter-Wz.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1794866497.225191
-    },
-    "a6f26a56eb539466d1b45da96563f201e112ec1c912cb971736403b7be2aaff8": {
-      "url": "https://cdn.omnidev.org/Undertale_BNP-El.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
       "checkedAt": 1794866497.225191
     },
     "a73e5dee4dc51151006e1a8327e916a5fa283f5d3ff23a6c7e97735c0bc74c01": {
@@ -57123,38 +56771,6 @@
       "size": 128348415,
       "checkedAt": 1794866497.225191
     },
-    "b22e4262c4588c7fd4734381214c49061e6722c57f0d06b8970f77bd3b22d2ae": {
-      "url": "https://cdn.omnidev.org/Infinity_Blade_III_Community_Patch_v2_2-hU.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1794866497.225191
-    },
-    "b752f60bad95593cacb68890d2245b839fa3671f718b3fbcde7b5ff7768bcfe9": {
-      "url": "https://cdn.omnidev.org/Undertale_Red_Yellow-y4.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1794866497.225191
-    },
-    "b9eb042bd4b81f946632b5e30112da217e054e67492b7e78330b5a6acb1cabf8": {
-      "url": "https://cdn.omnidev.org/Psych_Engine_v1_0-nN.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1794866497.225191
-    },
-    "bf80282df535b0265dc36adb130ad9b037e19bf6664dad99e8e6ee124dccbd6a": {
-      "url": "https://cdn.omnidev.org/com_kdt_sparsebox_0_0_1-Ei.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1794866497.225191
-    },
     "c872ab9f333fdbe045c6bbf0ff2696bb219da26cd5214b55df3320c6061541a7": {
       "url": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-11-2026/rPlayer_8.1.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
       "missingRuns": 0,
@@ -57171,28 +56787,12 @@
       "size": 150414937,
       "checkedAt": 1794866497.225191
     },
-    "cf80e4fa862dc7b2a59a67860e3492719459037da7c1ee577d6d21222d00a119": {
-      "url": "https://cdn.omnidev.org/YT_Lite_Plus_19_42_1_5_0_2-ns.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1794866497.225191
-    },
     "d00af4f274fb52318283ddd51ea5a48b04c2e0e9ccb74f66bf0d53e349489a15": {
       "url": "https://repo.ballermc.com/tubevault/YouTube%2020.21.6%20YTPlus%206.0%20base%20%5B@ipavault%5D.ipa",
       "missingRuns": 0,
       "status": "ok",
       "http": 206,
       "size": 139088046,
-      "checkedAt": 1794866497.225191
-    },
-    "da7717dacc4801d93e44e2de6e696d23805b7838f7890c5ba5313a67273bf1ce": {
-      "url": "https://cdn.omnidev.org/Infinity_Blade_I_Community_Patch_v2_0-dt.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
       "checkedAt": 1794866497.225191
     },
     "ddde9e29b5a689d8aafea3d0f9556b4e6b2ab0c4876caee6434274b9705f09c7": {
@@ -57219,14 +56819,6 @@
       "size": 137728661,
       "checkedAt": 1794866497.225191
     },
-    "f5c2db0c01c0085467c14b15553a31080795ef08ac89c137a53360fa09ccba2a": {
-      "url": "https://cdn.omnidev.org/Nugget_1_0_1-Fq.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1794866497.225191
-    },
     "f684b8a2d6a2994b52e36d12066d5fe6d3eab6e75590062fe404ed752e7fa0fc": {
       "url": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-11-2026/LUTStudio_4.1.4_Pro_%40thisismanpreets_apptesters.org.ipa",
       "missingRuns": 0,
@@ -57235,36 +56827,12 @@
       "size": 152412566,
       "checkedAt": 1794866497.225191
     },
-    "f71524d4d09c2ebcfe337ae9c3618a96b7452aff0d354bf4c925709e5cd801f5": {
-      "url": "https://cdn.omnidev.org/Psych_Engine_v1_0pre-II.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1794866497.225191
-    },
     "fd54cde06cf19cb1f09d06447acb91770267f352d700409d13ce6db2fbd1d4bc": {
       "url": "https://github.com/Sle2p/AniCh/releases/download/1.5.27/anich-ios-no_sign-1.5.27.ipa",
       "missingRuns": 0,
       "status": "ok",
       "http": 206,
       "size": 41226765,
-      "checkedAt": 1794866497.225191
-    },
-    "fd9855fee2021189d7a3db4af2194dfbba34f616ee74f93953d6ce5483452a87": {
-      "url": "https://cdn.omnidev.org/Procreate_Pocket-4z.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1794866497.225191
-    },
-    "fe3423c8b16486ea763345e2223e4a624c28f4e12d2d7a05f5815f1230044392": {
-      "url": "https://cdn.omnidev.org/Ultimate_Custom_Night_v1_0_52-1Z.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
       "checkedAt": 1794866497.225191
     },
     "02548ac3fa974c98d936a4d1b2b3f130f73a627084386354b83301cb347eff7d": {
@@ -58595,22 +58163,6 @@
       "size": 329449314,
       "checkedAt": 1795288546.5235317
     },
-    "02c66bc9afe03c1a9960823d78608d16429fc61435699f899f5c34b8548edb46": {
-      "url": "https://cdn.omnidev.org/i_OS_Gods_com_i_AP_Cracker_0_0_1_1_debug_iphoneos_arm-Cg.deb",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1795330087.1703634
-    },
-    "0c68c4be9442ec569a646a0103c5efe97e849353e598beb4d44cfcb6026f017b": {
-      "url": "https://cdn.omnidev.org/WDB_Remove_Three_App_Limit_v1_0-qz.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1795330087.1703634
-    },
     "0cf01ae2a14bb69e30febd8aaac0af0b13ccebafce282c67df25ec61b2909290": {
       "url": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-11-2026/CalculatorAir_2026.11.8_Subscription_Unlocked_@thisismanpreets_apptesters.org.ipa",
       "missingRuns": 0,
@@ -58642,27 +58194,11 @@
       "size": 57777344,
       "checkedAt": 1795330087.1703634
     },
-    "1f5d2b0f39cd3daa7c29a2443582791b810a77eb22c76615552a7f745594dbce": {
-      "url": "https://cdn.omnidev.org/osu2024_1115_3-TG.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1795330087.1703634
-    },
     "201b1ddbd68740d7d9ee46808dca4732cc33e27c7881bdacbdfcfdfe1aadfa9a": {
       "url": "https://fastsign.dev/d/q4syc3a0/ipavault/1186-Swiftgram%2013.1.3%20TF%20%28TGExtra%29%20%5B@ipavault%5D.ipa",
       "missingRuns": 0,
       "status": "restricted",
       "http": 403,
-      "checkedAt": 1795330087.1703634
-    },
-    "24ad198c95c8c61aa122276c3dceef5f6c95c949c83de29aca9c6da774b90508": {
-      "url": "https://cdn.omnidev.org/net_kdt_pojavlauncher_2_2_ios-ON.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
       "checkedAt": 1795330087.1703634
     },
     "282c4e4e96cc4e1854f4066e4ad04f0f1be8403fe4e04cb49e3a88e28069c81d": {
@@ -58671,14 +58207,6 @@
       "status": "ok",
       "http": 206,
       "size": 27861953,
-      "checkedAt": 1795330087.1703634
-    },
-    "2a39aa923a5ba3097605c6b66da6f6fc50e283df6bbf751ad890e74e38f33079": {
-      "url": "https://cdn.omnidev.org/feather_v1_1_2-IW.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
       "checkedAt": 1795330087.1703634
     },
     "33a42c2395aabc88f0b7482d307fd37e8b142061f0cfc07708340db878194f6b": {
@@ -58696,27 +58224,11 @@
       "size": 109493586,
       "checkedAt": 1795330087.1703634
     },
-    "344a501b1c7aff518d7d593eaa2200e3d1caa8e40ee9a27f8f8011daffe1394a": {
-      "url": "https://cdn.omnidev.org/dolphin_Non_Jailbroken-JW.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1795330087.1703634
-    },
     "36107eb4ee4e2d3eca78c779db838a6379e7801b63d5379b2564aeb4c074bf7a": {
       "url": "https://fastsign.dev/d/q4syc3a0/compiledipas/1698-%E2%80%8EWhatsApp_26.43.75_WGoldPlus.ipa",
       "missingRuns": 0,
       "status": "restricted",
       "http": 403,
-      "checkedAt": 1795330087.1703634
-    },
-    "3d306a8b5e6bab5397c710d99cac886da9d8e93b6a17ee2ebd51fa67c42fa07e": {
-      "url": "https://cdn.omnidev.org/fnaf_world_mobile2-Yj.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
       "checkedAt": 1795330087.1703634
     },
     "464987b8aa82fe68aea00bc975a9d82718f451d8e6aa2302445ce8f50bd412af": {
@@ -58763,22 +58275,6 @@
       "http": 403,
       "checkedAt": 1795330087.1703634
     },
-    "5cfbfcc6595c90b520d4062b86079eb5b04446e8061c746c5600a9c6af060719": {
-      "url": "https://cdn.omnidev.org/srr224-QH.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1795330087.1703634
-    },
-    "63bc8d3b54aaee2952f2382ed35489aca92f20ee79c091cbcc4aa906725ee3f9": {
-      "url": "https://cdn.omnidev.org/feather_v1_1_3-Xp.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1795330087.1703634
-    },
     "65af6f547e55dca1c07154e8ec723b1637f465562c9a786a63dc8e66765cc4d9": {
       "url": "https://fastsign.dev/d/q4syc3a0/ipavault/1181-YouTube%2021.44.4%20%28YTKACE%201.1.5%29%20%5B@ipavault%5D.ipa",
       "missingRuns": 0,
@@ -58786,35 +58282,11 @@
       "http": 403,
       "checkedAt": 1795330087.1703634
     },
-    "68642f2581a4aee0cfa9fa84da7d452647f101ced0fa1306b7d8bb7dc3b1569b": {
-      "url": "https://cdn.omnidev.org/UTM_SE-QQ.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1795330087.1703634
-    },
     "75031650aafbe6e1b10d93eb00fdbac350842995b6d4a4cb2ac45bb7c3bdc3bc": {
       "url": "https://fastsign.dev/d/q4syc3a0/sa1y0miii/15505-%E2%80%8EMusic_v3.9_tg@Sa1y0miii.ipa",
       "missingRuns": 0,
       "status": "restricted",
       "http": 403,
-      "checkedAt": 1795330087.1703634
-    },
-    "7c43f3cada143d6e34e26c5aa1237371af2e77bbdc03933e8b3fee9e3ff3423c": {
-      "url": "https://cdn.omnidev.org/org_localsend_localsend_App_1_15_4-gZ.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1795330087.1703634
-    },
-    "8332a716dc99f8557010a8480d35dcc4005cd5a66ca8d8b001b4006502cd8cac": {
-      "url": "https://cdn.omnidev.org/com_kdt_livecontainer8b6e503-b3.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
       "checkedAt": 1795330087.1703634
     },
     "8386ddb774fd399061f33df46b5c8c176324ecd9522670ca204253a6d45b71ed": {
@@ -58991,14 +58463,6 @@
       "size": 54693955,
       "checkedAt": 1795376410.8900096
     },
-    "9ecd795a451752a30155de1dab12e13e47f8ffb2133b9fac9fa2e26b7930a7fc": {
-      "url": "https://cdn.omnidev.org/com_parksman_Log_Ride_6_9_4-iF.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1795376410.8900096
-    },
     "9f84a44a26fcc88b7cf4bc64001328cd31f4b230448044f0a7bcf50f55cf31c9": {
       "url": "https://fastsign.dev/d/q4syc3a0/sa1y0miii/15541-%E2%80%8EBlood%20Sugar%20Tracker%E2%80%A6_v1.1_tg@Sa1y0miii.ipa",
       "missingRuns": 0,
@@ -59038,14 +58502,6 @@
       "size": 13268541,
       "checkedAt": 1795376410.8900096
     },
-    "aec0f1b0b50e8ebfa2a47bfaa14ff4fafb0f6a079f751b94080e839ba4b20e16": {
-      "url": "https://cdn.omnidev.org/hdflixnoads4_0-Yb.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1795376410.8900096
-    },
     "b9713d4e98fdce6d4c15d3519ee29466cdda78a80b4874dc14f1e90e787eb7d4": {
       "url": "https://fastsign.dev/d/q4syc3a0/scholars-lounge/83388-YouTubePlus_21.44.4_6.0.ipa",
       "missingRuns": 0,
@@ -59075,14 +58531,6 @@
       "status": "ok",
       "http": 206,
       "size": 46641421,
-      "checkedAt": 1795376410.8900096
-    },
-    "c5297911633196f9d32775a52a0221fe8cfa9757af9ca1dc9404dcc9ca9a3810": {
-      "url": "https://cdn.omnidev.org/undertale_yellow_port_1_2-Fd.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
       "checkedAt": 1795376410.8900096
     },
     "ca52fd6eba2279e697b06943df868aa1043f4fd92ec5f591ad1f32cce4e2b14f": {
@@ -59132,28 +58580,12 @@
       "size": 591780257,
       "checkedAt": 1795376410.8900096
     },
-    "df0d34e762a011ea56fbdc8ad067747b35c54ae8e831188ffc4d8cb3b915c1ba": {
-      "url": "https://cdn.omnidev.org/dev_casp_i_Plist_Gen_1_0-xV.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
-      "checkedAt": 1795376410.8900096
-    },
     "df730291ecf4b8b99f90321121aae32e91aa285362357fae479b028f1a148b9d": {
       "url": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-11-2026/Locket_2.74.0_Gold_%40thisismanpreets_apptesters.org.ipa",
       "missingRuns": 0,
       "status": "ok",
       "http": 206,
       "size": 98777331,
-      "checkedAt": 1795376410.8900096
-    },
-    "e690187ef449218a6ad95cd6879413437b59a730d2c092242eccca4542bff916": {
-      "url": "https://cdn.omnidev.org/feather_v1_0_5-e6.ipa",
-      "missingRuns": 0,
-      "status": "not_ipa",
-      "http": 200,
-      "size": null,
       "checkedAt": 1795376410.8900096
     },
     "eb3499df0ce2babb845f68c448d7c199b3ec68bbfca44944a6993d6b277e1270": {
