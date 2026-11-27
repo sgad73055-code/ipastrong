@@ -206,7 +206,7 @@ h2{margin:0;font:600 clamp(25px,3vw,34px)/1.35 var(--f-display);letter-spacing:0
 @media(hover:hover){.app:hover{border-color:rgb(79 214 255/.4);transform:translateY(-2px);background:var(--s2);box-shadow:0 18px 40px -20px rgb(0 0 0/.9)}.app:hover::before{opacity:1}.app:hover .go{background:var(--cyan);border-color:var(--cyan);color:var(--cyan-ink)}.app:hover .go .ic{transform:translateX(-2px)}.app:hover .app-icon{transform:scale(1.06) rotate(-2deg)}}
 .app-icon{width:64px;height:64px;border-radius:22.4%;object-fit:cover;flex-shrink:0;background:var(--s3);box-shadow:0 0 0 1px var(--line2),0 8px 18px -4px rgb(0 0 0/.65);transition:transform .35s var(--ease)}
 .app-copy{min-width:0}
-.app h3{margin:0 0 2px;font:600 15px/1.5 var(--f-display);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;direction:auto;letter-spacing:0}
+.app h3{margin:0 0 2px;font:600 15px/1.5 var(--f-display);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;unicode-bidi:plaintext;letter-spacing:0}
 .app h3 mark{background:rgb(79 214 255/.18);color:var(--cyan-2);border-radius:4px;padding:0 2px}
 .app .meta{display:flex;align-items:center;gap:6px;margin:0;font-size:12.5px;line-height:1.5;color:var(--muted);overflow:hidden;white-space:nowrap}
 .app .meta .ic{font-size:14px;color:var(--dim)}
@@ -298,14 +298,14 @@ dialog::backdrop{background:rgb(1 4 9/.74);-webkit-backdrop-filter:blur(8px);bac
 .dialog-head::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(transparent 30%,var(--s2))}
 .dialog-head img{width:88px;height:88px;object-fit:cover;border-radius:22.4%;flex-shrink:0;box-shadow:0 0 0 1px var(--line2),0 18px 40px -8px rgb(0 0 0/.75)}
 .dialog-head>div{min-width:0}
-.dialog-head h2{font-size:22px;line-height:1.4;direction:auto;overflow-wrap:anywhere}
+.dialog-head h2{font-size:22px;line-height:1.4;unicode-bidi:plaintext;overflow-wrap:anywhere}
 .dialog-head p{margin:4px 0 0;color:#a3b6c7;font-size:13px;direction:rtl}
 .tags{display:flex;flex-wrap:wrap;gap:8px;padding:12px 28px 0}
 .tags>span{display:inline-flex;align-items:center;gap:6px;padding:3px 12px;border:1px solid var(--line);border-radius:999px;background:rgb(255 255 255/.04);color:#a3b6c7;font-size:12.5px}
 .tags .ic{font-size:14px;color:var(--cyan)}
 .description{flex:1;min-height:0;margin:0;padding:18px 28px 22px;white-space:pre-wrap;overflow-wrap:anywhere;overflow:auto;color:#b2c3d3;font-size:14px;line-height:1.95;-webkit-mask-image:linear-gradient(transparent,#000 14px,#000 calc(100% - 14px),transparent);mask-image:linear-gradient(transparent,#000 14px,#000 calc(100% - 14px),transparent)}
-.dialog-foot{display:grid;grid-template-columns:1fr auto;gap:10px;padding:16px 28px 0;border-top:1px solid var(--line);background:var(--s2)}
-.dialog-action{width:100%}
+.dialog-foot{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:16px 28px 0;border-top:1px solid var(--line);background:var(--s2)}
+.dialog-action{width:100%;grid-column:1/-1}
 .copy.done{border-color:var(--cyan-b);color:var(--cyan)}
 .dialog-note{margin:0;padding:10px 28px calc(18px + var(--safe-b));text-align:center;font-size:12px;color:var(--muted);background:var(--s2)}
 
@@ -379,6 +379,33 @@ html.journey-on .sc-top>*,html.journey-on .sc-bot>*{opacity:var(--tx,0);transfor
 .co.l::before{right:-50px}
 .co.l{align-items:flex-end;text-align:right}
 
+/* مختارات المتجر: الأيقونات تتحول هنا إلى بطاقات تطبيقات */
+.featured{position:relative;z-index:3;margin-top:calc(-1*clamp(28px,4vw,56px));padding:calc(clamp(28px,4vw,56px) + clamp(28px,4vw,56px)) 0 clamp(56px,7vw,96px);background:var(--bg);border-radius:0 0 clamp(28px,4vw,56px) clamp(28px,4vw,56px)}
+.ft-head{text-align:center;max-width:36em;margin:0 auto 30px}
+.ft-head h2{margin:12px 0 8px}
+.ft-head p{margin:0;color:var(--muted);font-size:14.5px}
+.ft-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:14px}
+.ft-tile,.ft-item{border:1px solid var(--line);background:#fff;color:var(--text);transition:transform .25s var(--ease),box-shadow .25s,border-color .25s}
+.ft-tile{display:flex;flex-direction:column;align-items:center;gap:6px;min-width:0;padding:20px 12px 16px;border-radius:22px;text-align:center}
+.ft-tile:hover,.ft-item:hover{transform:translateY(-3px);border-color:rgb(0 184 217/.55);box-shadow:0 20px 40px -24px rgb(15 76 129/.55)}
+.ft-tile:active,.ft-item:active{transform:scale(.98)}
+.ft-ic{width:88px;height:88px;margin-bottom:6px;border-radius:22.4%;object-fit:cover;background:var(--s3);box-shadow:0 0 0 1px var(--line2),0 12px 24px -10px rgb(15 76 129/.4)}
+.ft-tile b{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--deep);font:600 14.5px/1.4 var(--f-display);unicode-bidi:plaintext}
+.ft-tile small{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--muted);font-size:12px}
+.ft-tile .ver{direction:ltr;unicode-bidi:isolate}
+html.journey-on .ft-tile:not(.on) .ft-ic{opacity:0}
+.ft-recent{margin-top:46px}
+.ft-recent h3{margin:0 0 14px;font:600 18px/1.4 var(--f-display)}
+.ft-rail{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x proximity;padding:4px 2px 16px;scrollbar-width:none}
+.ft-rail::-webkit-scrollbar{display:none}
+.ft-item{flex:0 0 auto;display:flex;align-items:center;gap:12px;width:250px;padding:12px 14px;border-radius:18px;text-align:start;scroll-snap-align:start}
+.ft-item img{width:52px;height:52px;flex-shrink:0;border-radius:22.4%;object-fit:cover;background:var(--s3);box-shadow:0 0 0 1px var(--line2)}
+.ft-item div{min-width:0}
+.ft-item b{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--deep);font:600 14px/1.45 var(--f-display);unicode-bidi:plaintext}
+.ft-item span{display:block;color:var(--muted);font-size:12px}
+@media(max-width:1000px){.ft-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:760px){.ft-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.ft-ic{width:72px;height:72px}.ft-item{width:224px}.ft-tile{padding:16px 10px 14px}}
+
 /* الباقات بقسم فاتح */
 .packages.light{background:var(--bg);border:0;border-radius:clamp(28px,4vw,56px)}
 .packages.light::before{display:none}
@@ -450,7 +477,7 @@ html.journey-on .sc-top>*,html.journey-on .sc-bot>*{opacity:var(--tx,0);transfor
   .dialog-head img{width:72px;height:72px}
   .dialog-head h2{font-size:19px}
   .tags,.dialog-foot,.description,.dialog-note{padding-inline:22px}
-  .dialog-foot{grid-template-columns:1fr}
+  .dialog-foot{grid-template-columns:1fr 1fr}
   .tabbar{position:fixed;z-index:45;inset-inline:12px;bottom:calc(10px + var(--safe-b));display:grid;grid-template-columns:repeat(3,1fr);gap:4px;padding:6px;border:1px solid var(--line2);border-radius:22px;background:rgb(9 16 26/.84);-webkit-backdrop-filter:saturate(1.6) blur(20px);backdrop-filter:saturate(1.6) blur(20px);box-shadow:0 20px 50px rgb(0 0 0/.65)}
   .tabbar a{display:flex;flex-direction:column;align-items:center;gap:3px;min-height:52px;padding:8px 4px 7px;border-radius:16px;color:var(--muted);font-size:11.5px;line-height:1.3;transition:color .2s,background .25s,transform .15s}
   .tabbar a .ic{font-size:21px;transition:transform .35s var(--ease)}
@@ -503,6 +530,7 @@ html.journey-on .sc-top>*,html.journey-on .sc-bot>*{opacity:var(--tx,0);transfor
 <symbol id="i-file" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/></symbol>
 <symbol id="i-cal" viewBox="0 0 24 24"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></symbol>
 <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></symbol>
+<symbol id="i-link" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></symbol>
 <symbol id="i-reset" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></symbol>
 </defs></svg>
 
@@ -551,6 +579,14 @@ html.journey-on .sc-top>*,html.journey-on .sc-bot>*{opacity:var(--tx,0);transfor
   <div class="sc-pin">
     <div class="sc-top"><span class="sc-kicker">من الأيقونة إلى التطبيق</span><h2 class="sc-title" id="scTitle">كل أيقونة،<br><em>نسخة حقيقية.</em></h2></div>
     <div class="sc-bot"><p class="sc-sub">هذي أيقونات فعلية من المكتبة. ابحث باسم التطبيق وافتح تفاصيله.</p><a class="button sc-cta" href="#library">ابدأ البحث <svg class="ic ic-go" aria-hidden="true"><use href="#i-go"/></svg></a><div class="sc-row" id="scRow" aria-hidden="true" style="margin-top:28px"></div></div>
+  </div>
+</section>
+
+<section class="featured light" id="featured" aria-labelledby="ftTitle" hidden>
+  <div class="wrap">
+    <div class="ft-head"><span class="sc-kicker">تطبيقاتك الأفضل</span><h2 id="ftTitle">مختارات المتجر</h2><p>اختيارنا من المكتبة. اضغط أي تطبيق لتشوف تفاصيله.</p></div>
+    <div class="ft-grid" id="ftGrid"></div>
+    <div class="ft-recent" id="ftRecent" hidden><h3>آخر التحديثات</h3><div class="ft-rail" id="ftRail"></div></div>
   </div>
 </section>
 
@@ -648,6 +684,7 @@ html.journey-on .sc-top>*,html.journey-on .sc-bot>*{opacity:var(--tx,0);transfor
   <div class="dialog-foot">
     <a class="button primary dialog-action" href="https://t.me/ipastrong" target="_blank" rel="noopener">طلب التثبيت عبر المتجر <svg class="ic ic-ext" aria-hidden="true"><use href="#i-send"/></svg></a>
     <button type="button" class="button copy" id="copyName"><svg class="ic" aria-hidden="true"><use href="#i-copy"/></svg><span>نسخ اسم التطبيق</span></button>
+    <button type="button" class="button" id="copyLink"><svg class="ic" aria-hidden="true"><use href="#i-link"/></svg><span>نسخ رابط التطبيق</span></button>
   </div>
   <p class="dialog-note">يفتح قناة المتجر على تيليگرام</p>
 </dialog>
@@ -718,6 +755,42 @@ function buildStats(){
   if(latest){$('statFresh').hidden=false;$('heroFresh').textContent=agoText(latest)}
 }
 
+/* ── مختارات المتجر ──
+   الترتيب بحسب الأولوية التي تحددها أنت: عدّل هذه القائمة لتغيير ما يظهر ومن يأتي أولاً.
+   لكل كلمة يُختار أحدث تطبيق بالمكتبة يحتوي اسمه عليها (من البيانات الفعلية فقط).
+   إذا لم يوجد تطبيق مطابق تُكمَّل القائمة من أقسام المكتبة المختلفة. */
+const FEATURED_KEYS=['instagram','tiktok','telegram','whatsapp','facebook','snapchat','youtube','spotify','minecraft','pubg','roblox','clash'];
+let FEAT=[];
+function pickFeatured(n){
+  const pool=apps.filter(a=>a.icon!==PLACEHOLDER),out=[],used=new Set();n=Math.min(n,pool.length);
+  for(const k of FEATURED_KEYS){if(out.length>=n)break;let best=null;for(const a of pool)if(!used.has(a)&&a.nname.includes(k)&&(!best||a.date>best.date))best=a;if(best){out.push(best);used.add(best)}}
+  if(out.length<n){const seen=new Set(out.map(a=>a.category));for(const a of pool){if(out.length>=n)break;if(!used.has(a)&&!seen.has(a.category)){out.push(a);used.add(a);seen.add(a.category)}}}
+  if(out.length<n){const step=Math.max(1,Math.floor(pool.length/n));for(let i=0;out.length<n&&i<pool.length;i+=step){const a=pool[i];if(!used.has(a)){out.push(a);used.add(a)}}}
+  return out.slice(0,n);
+}
+function buildFeatured(){
+  const sec=$('featured'),grid=$('ftGrid');if(!sec||!grid)return;
+  FEAT=pickFeatured(6);grid.replaceChildren();
+  if(FEAT.length<4){sec.hidden=true;FEAT=[];return}
+  FEAT.forEach(a=>{
+    const t=make('button','ft-tile');t.type='button';t.setAttribute('aria-label','تفاصيل '+a.name);
+    const img=make('img','ft-ic');img.src=a.icon;img.alt='';img.width=88;img.height=88;img.decoding='async';img.addEventListener('error',()=>{img.src=PLACEHOLDER},{once:true});
+    const ver=make('span','ver','v'+a.version+(sizeText(a.size)?' · '+sizeText(a.size):''));
+    const sm=make('small');sm.append(catLabel(a.category)+' · ',ver);
+    t.append(img,make('b','',a.name),sm);t.onclick=()=>openDetails(a);grid.append(t);
+  });
+  sec.hidden=false;
+  /* آخر التحديثات: أحدث التطبيقات تاريخًا من البيانات */
+  const rail=$('ftRail'),recent=apps.filter(a=>a.date>0&&a.icon!==PLACEHOLDER).sort((x,y)=>y.date-x.date).slice(0,12);
+  rail.replaceChildren();
+  if(recent.length>=4){
+    recent.forEach(a=>{const b=make('button','ft-item');b.type='button';b.setAttribute('aria-label','تفاصيل '+a.name);
+      const img=make('img');img.src=a.icon;img.alt='';img.width=52;img.height=52;img.loading='lazy';img.decoding='async';img.addEventListener('error',()=>{img.src=PLACEHOLDER},{once:true});
+      const d=make('div');d.append(make('b','',a.name),make('span','',agoText(a.date)));b.append(img,d);b.onclick=()=>openDetails(a);rail.append(b)});
+    $('ftRecent').hidden=false;
+  }else $('ftRecent').hidden=true;
+}
+
 /* ── قسم العرض: صف ثابت للأيقونات (يُستخدم عند إيقاف رحلة التمرير) ── */
 function buildShowRow(){
   const row=$('scRow');if(!row)return;row.replaceChildren();
@@ -732,22 +805,26 @@ const Journey=(()=>{
   const sstep=(a,b,x)=>{const t=Math.min(1,Math.max(0,(x-a)/((b-a)||1)));return t*t*(3-2*t)};
   const lerp=(a,b,t)=>a+(b-a)*t,TAU=Math.PI*2;
   const mq=window.matchMedia('(max-width:860px)');
-  let on=false,bound=false,layer=null,els=[],N=0,mob=false,m={},vw=0,vh=0,tk=false,lastTx=-1,sc=null,rt;
+  let on=false,bound=false,layer=null,els=[],N=0,mob=false,m={},vw=0,vh=0,tk=false,lastTx=-1,sc=null,rt,tiles=[],landed=[];
   function pick(){
     const pool=apps.filter(a=>a.icon!==PLACEHOLDER);if(pool.length<12)return null;
-    const n=Math.min(mq.matches?10:14,pool.length),step=Math.max(1,Math.floor(pool.length/n)),out=[];
-    for(let i=0;i<n;i++)out.push(pool[(i*step+(step>>1))%pool.length]);return out;
+    const isM=mq.matches,n=Math.min(isM?10:14,pool.length);
+    const feat=FEAT.slice(0,6),slots=isM?[1,3,4,6,7,9]:[1,3,5,8,10,12];
+    const list=new Array(n).fill(null),used=new Set(feat);
+    feat.forEach((a,j)=>{let at=slots[j]<n?slots[j]:list.indexOf(null);list[at]={a,f:j}});
+    const step=Math.max(1,Math.floor(pool.length/n));let p=step>>1;
+    for(let i=0;i<n;i++){if(list[i])continue;let a,g=0;do{a=pool[p%pool.length];p+=step;g++}while(used.has(a)&&g<pool.length+2);used.add(a);list[i]={a,f:-1}}
+    return list;
   }
-  function destroy(){layer&&layer.remove();layer=null;els=[];on=false;document.documentElement.classList.remove('journey-on');sc&&sc.style.removeProperty('--tx');lastTx=-1}
+  function destroy(){layer&&layer.remove();layer=null;els=[];on=false;document.documentElement.classList.remove('journey-on');sc&&sc.style.removeProperty('--tx');lastTx=-1;document.querySelectorAll('#ftGrid .ft-tile.on').forEach(t=>t.classList.remove('on'))}
   function build(list){
     destroy();N=list.length;mob=mq.matches;sc=$('showcase');
     layer=make('div','journey');layer.setAttribute('aria-hidden','true');
-    const co=mob?[2,5,8]:[2,5,8,11];
-    els=list.map((a,i)=>{
-      const h=make('div','hx');h.style.setProperty('--k',i);
+    els=list.map((it,i)=>{
+      const a=it.a,h=make('div','hx');h.style.setProperty('--k',i);
       const img=make('img');img.src=a.icon;img.alt='';img.width=100;img.height=100;img.decoding='async';img.addEventListener('error',()=>{img.src=PLACEHOLDER},{once:true});h.append(img);
-      let c=null;if(co.includes(i)){c=make('div','co r');c.append(make('b','',a.name.length>20?a.name.slice(0,19)+'…':a.name),make('small','',catLabel(a.category)));layer.append(c)}
-      layer.append(h);return{h,c,dir:'r'};
+      let c=null;if(it.f>=0&&(!mob||it.f<3)){c=make('div','co r');c.append(make('b','',a.name.length>20?a.name.slice(0,19)+'…':a.name),make('small','',catLabel(a.category)));layer.append(c)}
+      layer.append(h);return{h,c,dir:'r',f:it.f};
     });
     document.body.append(layer);document.documentElement.classList.add('journey-on');on=true;
     measure();
@@ -758,15 +835,20 @@ const Journey=(()=>{
     const b=document.querySelector('.mosaic-wrap').getBoundingClientRect();
     m.ax=b.left+b.width/2;m.ay=b.top+y+b.height/2;m.aw=b.width;m.ah=b.height;
     const r=sc.getBoundingClientRect();m.s1=r.top+y;m.s2=m.s1+r.height-vh;m.L=Math.max(1,m.s2-m.s1);
+    tiles=[...document.querySelectorAll('#ftGrid .ft-tile')];m.t=[];
+    tiles.forEach((t,j)=>{const q=t.querySelector('.ft-ic').getBoundingClientRect();m.t[j]=q.width?{x:q.left+q.width/2,y:q.top+y+q.height/2,s:q.width}:null});
     update();
   }
   function update(){
     tk=false;if(!on)return;const y=scrollY;
     const q1=sstep(m.s1*.12,m.s1+m.L*.35,y);
     const cv=sstep(m.s1+m.L*.32,m.s1+m.L*.5,y)*(1-sstep(m.s1+m.L*.8,m.s1+m.L*.95,y));
-    const q2=sstep(m.s1+m.L*.88,m.s2+vh*.45,y);
+    const q2=sstep(m.s1+m.L*.88,m.s2+vh*.9,y);
     const tx=sstep(m.s1-vh*.55,m.s1+m.L*.18,y);
     if(Math.abs(tx-lastTx)>.004||tx===0||tx===1){lastTx=tx;sc.style.setProperty('--tx',tx.toFixed(3))}
+    /* عند الهبوط: البطاقة الحقيقية تظهر بدل الأيقونة الطائرة */
+    const land=q2>=.97;
+    for(let j=0;j<tiles.length;j++)if(landed[j]!==land){landed[j]=land;tiles[j].classList.toggle('on',land)}
     if(q2>=.999){layer.style.visibility='hidden';return}
     layer.style.visibility='';
     const phase=.5+y*.0008,tA=1.5,tB=1.1;
@@ -778,11 +860,13 @@ const Journey=(()=>{
       let xA,yA;
       if(mob){xA=m.ax+u*WA;yA=m.ay-y+ampA*Math.sin(thA)}else{xA=m.ax+ampA*Math.sin(thA);yA=m.ay-y+u*HA}
       const xB=vw/2+ampB*Math.sin(thB),yB=cyB+u*HB;
-      const th=lerp(thA,thB,q1),k=(Math.cos(th)+1)/2;
-      const x=lerp(xA,xB,q1),yy=lerp(yA,yB,q1)+q2*vh*.22;
-      const s=lerp(sA,sB,q1)*(.72+.28*k)*(1-.3*q2),e=els[i];
-      e.h.style.transform='translate3d('+(x-50).toFixed(1)+'px,'+(yy-50).toFixed(1)+'px,0) scale('+(s/100).toFixed(3)+') rotate('+(Math.sin(th)*8).toFixed(1)+'deg)';
-      e.h.style.opacity=((.55+.45*k)*(1-q2)).toFixed(3);e.h.style.zIndex=Math.round(k*100);
+      const th=lerp(thA,thB,q1),k=(Math.cos(th)+1)/2,e=els[i];
+      let x=lerp(xA,xB,q1),yy=lerp(yA,yB,q1),s=lerp(sA,sB,q1)*(.72+.28*k),op=.55+.45*k,rot=Math.sin(th)*8;
+      const T=e.f>=0&&m.t&&m.t[e.f];
+      if(T){x=lerp(x,T.x,q2);yy=lerp(yy,T.y-y,q2);s=lerp(s,T.s,q2);op=lerp(op,1,q2);rot*=1-q2}
+      else{yy+=q2*vh*.22;s*=1-.3*q2;op*=Math.max(0,1-q2*2.2)}
+      e.h.style.transform='translate3d('+(x-50).toFixed(1)+'px,'+(yy-50).toFixed(1)+'px,0) scale('+(s/100).toFixed(3)+') rotate('+rot.toFixed(1)+'deg)';
+      e.h.style.opacity=op.toFixed(3);e.h.style.zIndex=Math.round(k*100)+(T?q2*100|0:0);
       if(e.c){
         const a=cv*sstep(.62,.9,k);
         e.c.style.opacity=a<.01?'0':a.toFixed(3);
@@ -802,7 +886,7 @@ const Journey=(()=>{
     addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(()=>{if(!on)return;if(mq.matches!==mob){const l=pick();l?build(l):destroy()}else measure()},150)});
     if(document.fonts&&document.fonts.ready)document.fonts.ready.then(measure);
     addEventListener('load',measure);
-    if('ResizeObserver'in window){const ro=new ResizeObserver(()=>measure());ro.observe(document.querySelector('.hero'));ro.observe($('showcase'))}
+    if('ResizeObserver'in window){const ro=new ResizeObserver(()=>measure());ro.observe(document.querySelector('.hero'));ro.observe($('showcase'));ro.observe($('featured'))}
   }
   return{init};
 })();
@@ -897,6 +981,18 @@ $('closeDialog').onclick=()=>$('details').close();
 $('details').addEventListener('close',()=>{document.body.style.overflow='';window.__lenis&&window.__lenis.start();lastFocused?.focus()});
 $('details').onclick=e=>{if(e.target===$('details')){const r=$('details').getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)$('details').close()}};
 
+/* ── رابط مباشر للتطبيق: #q=الاسم يفتح المكتبة مفلترة على هذا الاسم ── */
+function applyHash(){
+  const mt=/^#q=(.+)$/.exec(location.hash);if(!mt)return;
+  try{$('search').value=decodeURIComponent(mt[1])}catch{return}
+  shown=PAGE;filterApps();setTimeout(()=>$('library').scrollIntoView(),50);
+}
+addEventListener('hashchange',()=>{if(apps.length)applyHash()});
+$('copyLink').onclick=async()=>{
+  if(!current)return;
+  try{await copyText(location.href.split('#')[0]+'#q='+encodeURIComponent(current.name));toast('تم نسخ رابط التطبيق','ok')}catch{toast('تعذّر النسخ. انسخ الرابط يدويًا.','err')}
+};
+
 /* ── Copy app name (handy for support requests) ── */
 let copyTimer;
 function resetCopy(){clearTimeout(copyTimer);const b=$('copyName');b.classList.remove('done');b.replaceChildren(icon('copy'),make('span','','نسخ اسم التطبيق'))}
@@ -957,7 +1053,7 @@ async function loadApps(manual){
     if(manual)toast('ما كدرنا نوصل للمكتبة. حاول مرة ثانية.','err');
     return;
   }
-  apps=data.map(normalize);category='all';renderCategories();filterApps();buildMosaic();buildStats();buildShowRow();Journey.init();
+  apps=data.map(normalize);category='all';renderCategories();filterApps();buildMosaic();buildStats();buildShowRow();buildFeatured();Journey.init();applyHash();
   $('totalLabel').textContent=fmtNum(apps.length)+' تطبيق ونسخة';
   if(manual)toast('تم تحميل المكتبة','ok');
 }
