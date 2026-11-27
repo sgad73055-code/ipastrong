@@ -17,6 +17,7 @@ import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 from catalog_dedup import deduplicate
+from blocked_apps import remove_blocked
 
 ROOT = Path(__file__).resolve().parent
 STATE_NAME = 'source-health.json'
@@ -258,6 +259,7 @@ def publish(root, old_bytes, source):
         apply_policy(source, root/'catalog-policy.json')
     from catalog_owner import apply_file
     apply_file(source, root)
+    remove_blocked(source)
     deduplicate(source)
     from catalog_limit import apply_limit
     apply_limit(source, root)
@@ -269,7 +271,10 @@ def publish(root, old_bytes, source):
 
 def rollback(root):
     data = gzip.decompress((root/'backups/ipastrong.last-good.json.gz').read_bytes())
-    validate(json.loads(data))
+    source = json.loads(data)
+    if remove_blocked(source)['removedApps']:
+        data = (json.dumps(source, ensure_ascii=False, separators=(',', ':'), allow_nan=False)+'\n').encode()
+    validate(source)
     atomic_bytes(root/'ipastrong.json', data)
 
 def load_base(root):
@@ -311,6 +316,7 @@ def run(root, limit=400, refresh=True):
         policy_report = apply_policy(source, root/'catalog-policy.json')
     from catalog_owner import apply_file
     apply_file(source, root)
+    blocked_report = remove_blocked(source)
     report = monitor(source, state, limit, now)
     duplicate_report = deduplicate(source)
     from catalog_limit import apply_limit
@@ -319,6 +325,7 @@ def run(root, limit=400, refresh=True):
     validate(source)
     report.update(date=datetime.now(timezone.utc).isoformat(), inputApps=len(base['apps']), outputApps=len(source['apps']), preservedApps=restored, recoveredPublishedSource=recovered, removedApps=policy_report['removedApps'], catalogPolicy=policy_report, upstream=upstream)
     report['deduplication'] = duplicate_report
+    report['blockedFamilies'] = blocked_report
     report['catalogLimit'] = limit_report
     publish(root, old_bytes, source)
     write(root/STATE_NAME, state)
