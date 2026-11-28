@@ -56,7 +56,7 @@ input[type=text],input[type=password]{width:100%;margin-top:12px;padding:14px;bo
 
 <script>
 /* اضبط هذا بعد نشر signing-service (انظر README.md فيه). فارغ = الواجهة تعمل لكن التوقيع معطّل. */
-const SIGN_SERVICE_URL = ""; // مثال: "https://ipastrong-signer-xxxx.run.app"
+const SIGN_SERVICE_URL = "https://ipastrong-3.onrender.com";
 
 const $=id=>document.getElementById(id),ipa=$("ipa"),p12=$("p12"),prov=$("prov"),pass=$("p12Pass"),btn=$("signBtn");
 function size(n){return n<1024?n+" B":n<1048576?(n/1024).toFixed(1)+" KB":(n/1048576).toFixed(1)+" MB"}
