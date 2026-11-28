@@ -71,7 +71,7 @@ jobs:
           python-version: '3.12'
       - name: Test catalog management and maintenance
         run: |
-          python3 -m unittest test_manage_catalog test_source_guard -v
+          python3 -m unittest test_manage_catalog test_source_guard test_pipeline test_blocked_apps -v
           python3 add_app_from_url.py --self-test
       - uses: actions/setup-node@v4
         with:
@@ -126,6 +126,7 @@ jobs:
         run: |
           set -euo pipefail
           git add ipastrong.json catalog-owner.json backups/ipastrong.last-good.json.gz
+          if [ -f status.json ]; then git add status.json; fi
           if [ -d assets/app-icons ]; then git add assets/app-icons/; fi
           if git diff --cached --quiet; then exit 0; fi
           git config user.name 'github-actions[bot]'

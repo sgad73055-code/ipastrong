@@ -1,0 +1,40 @@
+{
+  "_note": "إعدادات سورس IPA Strong بمكان واحد. أي تعديل هنا يطبقه الـ workflow تلقائياً.",
+  "brand": "IPA Strong",
+  "sources": [
+    "https://repository.apptesters.org",
+    "https://ipa.cypwn.xyz/cypwn.json",
+    "https://wuxu1.github.io/wuxu-complete.json",
+    "https://wuxu1.github.io/wuxu-complete-plus.json",
+    "https://repo.ikghd.me/repo.json",
+    "https://check0ver.site/repo.json",
+    "https://quarksources.github.io/dist/quantumsource%2B%2B.min.json",
+    "https://cdn.altstore.io/file/altstore/apps.json",
+    "https://alts.lao.sb/source.json",
+    "https://apps.nabzclan.vip/repos/altstore.php",
+    "https://ipa.thuthuatjb.com/repo",
+    "https://repo.ethsign.fyi"
+  ],
+  "blockedHosts": [
+    "fastsign.dev"
+  ],
+  "blockedBundles": [
+    "ipaomtk.installer",
+    "Ed0ardo.CyPwn-Store",
+    "Ed0ardo.CyPwnStore",
+    "it.ned.appdb-ios",
+    "com.thuthuatjb.ttapps",
+    "vip.nabzclan.school",
+    "com.pandahelper.deb"
+  ],
+  "blockedBundlePrefixes": [
+    "cypwn.AppDB_"
+  ],
+  "publishGuard": {
+    "maxDropPercent": 15,
+    "maxAddPerRun": 400
+  },
+  "blockedNames": [
+    "NabzCraft"
+  ]
+}
