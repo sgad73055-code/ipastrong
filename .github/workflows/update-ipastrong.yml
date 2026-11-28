@@ -11,6 +11,7 @@ on:
       - 'blocked_apps.py'
       - 'catalog-owner.json'
       - 'pipeline/**'
+      - 'translations/**'
   workflow_dispatch:
     inputs:
       action:

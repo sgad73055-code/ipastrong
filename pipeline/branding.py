@@ -53,6 +53,9 @@ INLINE = [
     (re.compile(r'\s*(?:Please )?report any crashes to our HelpDesk:?\s*https?://helpdesk\.nabzclan\S*', re.I), ''),
     (re.compile(r'\s*See app description on AppDB\.?', re.I), ''),
     (re.compile(r'\s*KamoHacks\b', re.I), ''),
+    (re.compile(r'\s*من\s+iosgods\b', re.I), ''),
+    (re.compile(r'\s*\biOSGods\b', re.I), ''),
+    (re.compile(r'\s*description Public HTTPS icon URL \(optional\).*$', re.S), ''),
     (re.compile(r'\s*\|?\s*If you want to donate(?: to me)?:?\s*-?\s*https?://(?:ko-fi\.com|www\.patreon\.com|patreon\.com|buymeacoffee\.com|paypal\.me)/\S+', re.I), ''),
 ]
 # Tags inside app names such as "(IPAVault)" or "- IPAVault -".
@@ -60,7 +63,7 @@ INLINE = [
 NAME_TAG = re.compile(r'\s*[\[(]\s*(?:IPAVault|driftywinds|tg@[\w]+|@[\w]+)\s*[\])]', re.I)
 NAME_INNER = re.compile(r'\s*-\s*IPAVault\b|\s+IPAVault\s*$', re.I)
 
-TEXT_FIELDS = ('localizedDescription', 'subtitle', 'versionDescription')
+TEXT_FIELDS = ('localizedDescription', 'subtitle', 'versionDescription', '_originalDescription')
 DROP_KEYS = ('patreon', 'contact', 'information', 'META', 'vipOnly', 'vipMinTier', 'freeAccess',
              'disableGuest', 'disableGuestAds', 'disableAdCode', 'popupAccess', 'latest_appstore_app')
 
@@ -89,6 +92,9 @@ def clean_developer(value):
 def clean_name(value):
     name = NAME_INNER.sub('', NAME_TAG.sub('', str(value or '')))
     name = re.sub(r'\s{2,}', ' ', re.sub(r'\(\s*\)', '', name)).strip()
+    m = re.fullmatch(r'(.+?)\s+IPA(\s+MOD)?(?:\s+iOS)?', name)  # "Game IPA MOD iOS" -> "Game MOD"
+    if m and len(m.group(1)) > 1:
+        name = m.group(1) + (m.group(2) or '')
     return name or str(value or '').strip()
 
 
