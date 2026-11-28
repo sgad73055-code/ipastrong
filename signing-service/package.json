@@ -1,0 +1,6 @@
+{
+  "name": "ipastrong-signing-service",
+  "private": true,
+  "type": "module",
+  "scripts": { "test": "node --test test" }
+}
