@@ -366,6 +366,9 @@ def run(root, limit=400, refresh=True):
     blocked_report = remove_blocked(source)
     report = monitor(source, state, limit, now)
     duplicate_report = deduplicate(source)
+    if read(root/'source-config.json', None):
+        from pipeline.mirrors import remove_mirrors
+        duplicate_report['mirrors'] = remove_mirrors(source)  # before the limit, so mirrors don't push real apps out
     from catalog_limit import apply_limit
     limit_report = apply_limit(source, root)
     compact_versions(source)
