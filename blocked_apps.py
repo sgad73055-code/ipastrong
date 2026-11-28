@@ -3,6 +3,19 @@ import re
 from urllib.parse import unquote, urlsplit
 
 
+import json
+from pathlib import Path
+
+_CONFIG_PATH = Path(__file__).with_name('source-config.json')
+try:
+    _CONFIG = json.loads(_CONFIG_PATH.read_text(encoding='utf-8')) if _CONFIG_PATH.exists() else {}
+except ValueError:
+    _CONFIG = {}
+BLOCKED_HOSTS = tuple(h.casefold() for h in _CONFIG.get('blockedHosts', ['fastsign.dev']))
+BLOCKED_BUNDLES = {b.casefold() for b in _CONFIG.get('blockedBundles', [])}
+BLOCKED_PREFIXES = tuple(b.casefold() for b in _CONFIG.get('blockedBundlePrefixes', []))
+BLOCKED_NAMES = {n.casefold() for n in _CONFIG.get('blockedNames', [])}
+
 # FastSign: removed entirely by the owner (credits/ads inside its builds).
 FASTSIGN = re.compile(r'fastsign\.dev', re.I)
 FASTSIGN_CREDIT = re.compile(r'\s*FastSign is operated by CertFish\.?(?:\s*The easy way to sideload:?\s*https?://cert\.fish/?)?', re.I)
@@ -24,8 +37,29 @@ def strip_fastsign_credit(app):
     return changed
 
 
+def is_foreign_host(app):
+    links = [app.get('_sourceURL'), app.get('downloadURL')] + [v.get('downloadURL') for v in app.get('versions', [])]
+    hosts = [urlsplit(str(u or '')).netloc.casefold() for u in links]
+    return any(h == b or h.endswith('.' + b) for h in hosts for b in BLOCKED_HOSTS)
+
+
+def is_competitor_store(app):
+    bundle = str(app.get('bundleIdentifier', '')).casefold()
+    name = str(app.get('name', '')).strip().casefold()
+    return (bundle in BLOCKED_BUNDLES or name in BLOCKED_NAMES
+            or (bool(BLOCKED_PREFIXES) and bundle.startswith(BLOCKED_PREFIXES)))
+
+
+DEAD_MARK = re.compile(r'Removed from the repo:|Status:\s*❌')
+
+
+def is_marked_dead(app):
+    # The uploader itself marked the build as removed/broken.
+    return bool(DEAD_MARK.search(str(app.get('localizedDescription') or '')))
+
+
 def is_blocked(app):
-    if is_fastsign(app):
+    if is_fastsign(app) or is_foreign_host(app) or is_competitor_store(app) or is_marked_dead(app):
         return True
     bundle = str(app.get('bundleIdentifier', '')).casefold()
     name = str(app.get('name', ''))

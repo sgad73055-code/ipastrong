@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>حالة السورس — IPA Strong</title>
+<meta name="theme-color" content="#04070c">
+<link rel="icon" href="../source-icon.jpeg">
+<style>
+  :root{--bg:#04070c;--card:#0a121c;--line:#14212f;--text:#e9f2fa;--muted:#8ba2b7;--cyan:#4fd6ff;--ok:#3ddc97;--bad:#ff6b6b}
+  *{box-sizing:border-box}
+  body{margin:0;min-height:100vh;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"SF Arabic","Segoe UI",Tahoma,sans-serif;display:flex;justify-content:center;padding:24px 16px calc(24px + env(safe-area-inset-bottom))}
+  main{width:100%;max-width:520px}
+  header{display:flex;align-items:center;gap:12px;margin-bottom:20px}
+  header img{width:52px;height:52px;border-radius:14px;object-fit:cover}
+  h1{font-size:20px;margin:0}
+  .state{display:inline-flex;align-items:center;gap:8px;font-size:14px;color:var(--muted)}
+  .dot{width:9px;height:9px;border-radius:50%;background:var(--muted)}
+  .dot.ok{background:var(--ok);box-shadow:0 0 10px var(--ok)} .dot.bad{background:var(--bad)}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px}
+  .card b{display:block;font-size:26px;color:var(--cyan);font-variant-numeric:tabular-nums}
+  .card span{font-size:13px;color:var(--muted)}
+  .wide{grid-column:1/-1}
+  .url{direction:ltr;text-align:left;font:12px ui-monospace,Menlo,monospace;word-break:break-all;color:var(--muted);margin:8px 0 10px}
+  button,a.btn{all:unset;cursor:pointer;display:inline-block;background:var(--cyan);color:#03171f;font-weight:700;border-radius:12px;padding:10px 16px;font-size:14px}
+  a.back{color:var(--cyan);text-decoration:none;font-size:14px;display:inline-block;margin-top:18px}
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="../source-icon.jpeg" alt="">
+    <div>
+      <h1>حالة سورس IPA Strong</h1>
+      <div class="state"><i class="dot" id="dot"></i><span id="state">جاري الفحص…</span></div>
+    </div>
+  </header>
+  <div class="grid">
+    <div class="card"><b id="apps">—</b><span>تطبيق ولعبة</span></div>
+    <div class="card"><b id="games">—</b><span>لعبة</span></div>
+    <div class="card"><b id="other">—</b><span>تطبيق</span></div>
+    <div class="card"><b id="updated" style="font-size:16px">—</b><span>آخر تحديث</span></div>
+    <div class="card wide">
+      <span>رابط السورس (ESign / Feather / KSign / AltStore)</span>
+      <div class="url" id="src">—</div>
+      <button id="copy" type="button">نسخ الرابط</button>
+    </div>
+  </div>
+  <a class="back" href="../">← الرجوع للمتجر</a>
+</main>
+<script>
+(async () => {
+  const $ = id => document.getElementById(id);
+  try {
+    const r = await fetch('../status.json', {cache: 'no-cache'});
+    if (!r.ok) throw Error(r.status);
+    const s = await r.json();
+    const n = v => Number(v || 0).toLocaleString('ar-IQ');
+    $('apps').textContent = n(s.apps); $('games').textContent = n(s.games); $('other').textContent = n(s.other);
+    const d = new Date(s.updated);
+    $('updated').textContent = isNaN(d) ? '—' : d.toLocaleString('ar-IQ', {dateStyle: 'medium', timeStyle: 'short'});
+    $('src').textContent = s.sourceURL || '';
+    const fresh = !isNaN(d) && Date.now() - d.getTime() < 2 * 864e5;
+    $('dot').className = 'dot ' + (fresh ? 'ok' : 'bad');
+    $('state').textContent = fresh ? 'السورس شغال ومحدث' : 'السورس شغال — ينتظر التحديث القادم';
+    $('copy').onclick = async () => {
+      try { await navigator.clipboard.writeText(s.sourceURL); $('copy').textContent = 'تم النسخ ✓'; }
+      catch { $('copy').textContent = 'انسخه يدوياً من فوق'; }
+    };
+  } catch (e) {
+    $('dot').className = 'dot bad'; $('state').textContent = 'تعذر قراءة الحالة حالياً';
+    $('copy').style.display = 'none';
+  }
+})();
+</script>
+</body>
+</html>

@@ -260,19 +260,59 @@ def publish(root, old_bytes, source):
     from catalog_owner import apply_file
     apply_file(source, root)
     remove_blocked(source)
+    config = read(root/'source-config.json', None)
+    if config:  # production repo: rebrand before any check
+        from pipeline.branding import brand_source
+        brand_source(source)
     deduplicate(source)
     from catalog_limit import apply_limit
     apply_limit(source, root)
     compact_versions(source)
     validate(source)
+    if config:
+        publish_guard(source)
     # Backup is updated only AFTER full validation, before the atomic source replacement.
     atomic_bytes(root/'backups/ipastrong.last-good.json.gz', gzip.compress(old_bytes, mtime=0))
     atomic_bytes(root/'ipastrong.json', (json.dumps(source, ensure_ascii=False, separators=(',', ':'), allow_nan=False)+'\n').encode())
+    if config:
+        write_status(root, source)
+
+def publish_guard(source):
+    """Last gate before subscribers see anything: the old source stays online if this fails."""
+    from pipeline.client_check import check
+    from pipeline.branding import foreign_mentions
+    result = check(source)
+    if not result['ok']:
+        raise ValueError('Installer compatibility check failed: ' + '; '.join(result['errors'][:5]))
+    leftover = foreign_mentions(source)
+    if leftover:
+        raise ValueError('Other stores are still credited in: ' + ', '.join(map(str, leftover[:5])))
+
+def drop_guard(root, before, source):
+    """Automatic runs may not wipe a big part of the catalog (owner actions are not limited)."""
+    config = read(root/'source-config.json', None) or {}
+    limit = config.get('publishGuard', {}).get('maxDropPercent')
+    if not limit or not before or os.environ.get('IPASTRONG_ALLOW_BIG_DROP') == '1':
+        return
+    if len(source['apps']) < before * (1 - limit / 100):
+        raise ValueError(f'Automatic run would drop {before} -> {len(source["apps"])} apps (> {limit}%); publication blocked')
+
+def write_status(root, source):
+    apps = source['apps']
+    games = sum('game' in str(a.get('_category') or a.get('category') or '').lower() or 'لعب' in str(a.get('_category') or '') for a in apps)
+    status = {'name': source.get('name'), 'apps': len(apps), 'games': games, 'other': len(apps) - games,
+              'updated': source.get('lastUpdated') or datetime.now(timezone.utc).isoformat(timespec='seconds'),
+              'sourceURL': source.get('sourceURL')}
+    write(root/'status.json', status)
 
 def rollback(root):
     data = gzip.decompress((root/'backups/ipastrong.last-good.json.gz').read_bytes())
     source = json.loads(data)
-    if remove_blocked(source)['removedApps']:
+    changed = remove_blocked(source)['removedApps']
+    if read(root/'source-config.json', None):
+        from pipeline.branding import brand_source
+        changed += brand_source(source)['brandedApps']
+    if changed:
         data = (json.dumps(source, ensure_ascii=False, separators=(',', ':'), allow_nan=False)+'\n').encode()
     validate(source)
     atomic_bytes(root/'ipastrong.json', data)
@@ -327,6 +367,7 @@ def run(root, limit=400, refresh=True):
     report['deduplication'] = duplicate_report
     report['blockedFamilies'] = blocked_report
     report['catalogLimit'] = limit_report
+    drop_guard(root, len(base['apps']), source)
     publish(root, old_bytes, source)
     write(root/STATE_NAME, state)
     write(root/REPORT_NAME, report)

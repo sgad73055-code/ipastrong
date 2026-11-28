@@ -7,6 +7,10 @@ on:
       - 'catalog_dedup.py'
       - 'catalog-policy.json'
       - 'source_guard.py'
+      - 'source-config.json'
+      - 'blocked_apps.py'
+      - 'catalog-owner.json'
+      - 'pipeline/**'
   workflow_dispatch:
     inputs:
       action:
@@ -41,6 +45,7 @@ jobs:
             python3 -m unittest discover -s tests -p 'test_source_guard.py' -v
           elif [ -f test_source_guard.py ]; then
             python3 -m unittest discover -s . -p 'test_source_guard.py' -v
+            python3 -m unittest test_pipeline test_blocked_apps -v
           else
             echo 'Missing test_source_guard.py in tests/ or repository root'
             exit 1
@@ -67,7 +72,7 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add ipastrong.json
-          for file in source-health.json source-health-report.json backups/ipastrong.last-good.json.gz; do
+          for file in source-health.json source-health-report.json backups/ipastrong.last-good.json.gz status.json; do
             if [ -f "$file" ]; then git add "$file"; fi
           done
           if git diff --cached --quiet; then exit 0; fi
