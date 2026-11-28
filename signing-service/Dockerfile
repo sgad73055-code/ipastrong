@@ -1,7 +1,7 @@
 # خدمة توقيع IPA — تعمل على Render/Cloud Run/Fly.io/أي مضيف حاويات. لا تعمل على Cloudflare Pages Functions.
 FROM debian:bookworm-slim AS builder
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    git g++ pkg-config libssl-dev ca-certificates && \
+    git g++ make pkg-config libssl-dev ca-certificates && \
     rm -rf /var/lib/apt/lists/*
 WORKDIR /build
 RUN git clone --depth 1 https://github.com/zhlynn/zsign.git
