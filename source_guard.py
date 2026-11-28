@@ -265,6 +265,11 @@ def publish(root, old_bytes, source):
         from pipeline.branding import brand_source
         brand_source(source)
     deduplicate(source)
+    if config:
+        from pipeline.mirrors import remove_mirrors
+        from pipeline.arabic import arabize_source
+        remove_mirrors(source)       # one copy per build
+        arabize_source(source, root) # tidy Arabic descriptions
     from catalog_limit import apply_limit
     apply_limit(source, root)
     compact_versions(source)
@@ -311,7 +316,9 @@ def rollback(root):
     changed = remove_blocked(source)['removedApps']
     if read(root/'source-config.json', None):
         from pipeline.branding import brand_source
+        from pipeline.arabic import arabize_source
         changed += brand_source(source)['brandedApps']
+        changed += arabize_source(source, root)['arabizedApps']
     if changed:
         data = (json.dumps(source, ensure_ascii=False, separators=(',', ':'), allow_nan=False)+'\n').encode()
     validate(source)

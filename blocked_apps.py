@@ -50,7 +50,7 @@ def is_competitor_store(app):
             or (bool(BLOCKED_PREFIXES) and bundle.startswith(BLOCKED_PREFIXES)))
 
 
-DEAD_MARK = re.compile(r'Removed from the repo:|Status:\s*❌')
+DEAD_MARK = re.compile(r'Removed from the repo:|Status:\s*❌|\bThis is not working\b')
 
 
 def is_marked_dead(app):

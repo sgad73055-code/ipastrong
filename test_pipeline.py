@@ -10,6 +10,8 @@ import source_guard as g
 from blocked_apps import is_blocked
 from pipeline.branding import BRAND, brand_source, clean_developer, clean_name, foreign_mentions
 from pipeline.client_check import check
+from pipeline.arabic import arabize_source, auto_translate, translate_feature
+from pipeline.mirrors import remove_mirrors
 
 
 def app(name='Game', dev='Unknown', desc='', url='https://example.org/a.ipa', bundle='com.example.game'):
@@ -69,6 +71,62 @@ class BrandingTest(unittest.TestCase):
         s = source(app('Clip', desc='Join https://t.me/+abc for more.'))
         brand_source(s)
         self.assertEqual(s['apps'][0]['localizedDescription'], 'Clip — متوفر على IPA Strong')
+
+
+class ArabicTest(unittest.TestCase):
+    def test_features_translated_and_layout(self):
+        a = app('Knight Survivors', desc='Knight Survivors.\n\nUpstream variant: Unlimited Coins, No Ads, Damage Multiplier')
+        a['minOSVersion'] = '15.0'
+        a['_category'] = 'Games'
+        s = source(a)
+        arabize_source(s, '/nonexistent')
+        self.assertEqual(s['apps'][0]['localizedDescription'],
+                         'لعبة Knight Survivors — نسخة معدّلة.\n✨ المميزات: العملات غير محدودة، بدون إعلانات، مضاعفة الضرر\n📱 يتطلب iOS 15.0 أو أحدث')
+
+    def test_idempotent_and_owner_arabic_kept(self):
+        s = source(app('Spotify', desc='Injected with Premium'), app('Mine', desc='وصف المالك بالعربي'))
+        arabize_source(s, '/nonexistent')
+        once = copy.deepcopy(s)
+        arabize_source(s, '/nonexistent')
+        self.assertEqual(s, once)
+        self.assertEqual(s['apps'][1]['localizedDescription'], 'وصف المالك بالعربي')
+        self.assertNotIn('_originalDescription', s['apps'][1])
+
+    def test_upstream_text_change_rebuilds(self):
+        s = source(app('Spotify', desc='Injected with Premium'))
+        arabize_source(s, '/nonexistent')
+        s['apps'][0]['localizedDescription'] = 'Injected with No Ads'
+        arabize_source(s, '/nonexistent')
+        self.assertIn('بدون إعلانات', s['apps'][0]['localizedDescription'])
+
+    def test_translation_overlay_used(self):
+        with tempfile.TemporaryDirectory() as temp:
+            (Path(temp) / 'translations').mkdir()
+            (Path(temp) / 'translations' / 'ar.json').write_text(
+                json.dumps({'com.example.game|game': 'لعبة حلوة.'}, ensure_ascii=False), encoding='utf-8')
+            s = source(app('Game', desc='A very long English description about the game and its levels.'))
+            arabize_source(s, temp)
+            self.assertEqual(s['apps'][0]['localizedDescription'], 'لعبة حلوة.')
+
+    def test_templates(self):
+        self.assertEqual(auto_translate('This is a modded version of Spotify. This works with sidestore!!'),
+                         'نسخة معدّلة من Spotify. تشتغل على SideStore.')
+        self.assertIsNone(auto_translate('A beautiful app to track your habits every day.'))
+        self.assertEqual(translate_feature('RyukGram'), 'RyukGram')
+
+
+class MirrorTest(unittest.TestCase):
+    def test_proxy_copy_removed_but_mods_kept(self):
+        gh = 'https://github.com/x/r/releases/download/1/TikTok_47.0_Premium.ipa'
+        proxy = 'https://proxy-files.thuthuatjb.com/apps?=x/r/releases/download/1/TikTok_47.0_Premium.ipa'
+        other_mod = 'https://github.com/x/r/releases/download/1/TikTok_47.0_ASJTikTok.ipa'
+        s = source(app('TikTok', url=proxy, bundle='com.zhiliaoapp.musically'),
+                   app('TikTok', url=gh, bundle='com.zhiliaoapp.musically'),
+                   app('TikTok', url=other_mod, bundle='com.zhiliaoapp.musically'))
+        for a in s['apps']:
+            a['version'] = '47.0'
+        self.assertEqual(remove_mirrors(s)['removedMirrors'], 1)
+        self.assertEqual([a['downloadURL'] for a in s['apps']], [gh, other_mod])
 
 
 class BlockingTest(unittest.TestCase):

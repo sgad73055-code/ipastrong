@@ -25,7 +25,9 @@
     "it.ned.appdb-ios",
     "com.thuthuatjb.ttapps",
     "vip.nabzclan.school",
-    "com.pandahelper.deb"
+    "com.pandahelper.deb",
+    "com.julioverne.netflixchecker",
+    "cypwn.netflixchecker_ts.0.3"
   ],
   "blockedBundlePrefixes": [
     "cypwn.AppDB_"
