@@ -3,9 +3,9 @@
   "outcomes": {},
   "repaired": [],
   "unresolved": [],
-  "date": "2026-11-28T19:25:59.834564+00:00",
-  "inputApps": 6000,
-  "outputApps": 5997,
+  "date": "2026-11-28T19:26:49.597525+00:00",
+  "inputApps": 5305,
+  "outputApps": 5305,
   "preservedApps": 0,
   "recoveredPublishedSource": false,
   "removedApps": 0,
@@ -21,7 +21,7 @@
     "duplicates": []
   },
   "blockedFamilies": {
-    "removedApps": 3,
+    "removedApps": 0,
     "strippedCredits": 0
   },
   "catalogLimit": {
