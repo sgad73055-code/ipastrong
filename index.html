@@ -154,6 +154,22 @@ h1 .l2{color:var(--cyan);text-shadow:0 0 60px rgb(79 214 255/.35)}
 .mosaic-logo{position:absolute;z-index:2;width:104px;height:104px;border-radius:26px;padding:5px;background:rgb(4 7 12/.6);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border:1px solid var(--line2);box-shadow:0 20px 60px rgb(0 0 0/.65),0 0 70px rgb(79 214 255/.24)}
 .mosaic-logo::before{content:"";position:absolute;inset:-2px;border-radius:28px;padding:2px;background:conic-gradient(from var(--a),transparent 0 62%,var(--cyan) 92%,transparent);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box exclude,linear-gradient(#000 0 0);animation:spin 5s linear infinite}
 .mosaic-logo img{display:block;width:100%;height:100%;object-fit:cover;border-radius:21px}
+.mosaic-wrap .ground{position:absolute;z-index:0;bottom:2%;width:62%;height:46px;border-radius:50%;background:radial-gradient(ellipse,rgb(0 0 0/.6),transparent 72%);filter:blur(4px)}
+
+/* ═════════════ Hero — Cinematic polish (scoped to .hero only) ═════════════ */
+.hero-frame{position:absolute;inset:0;z-index:0;pointer-events:none}
+.hero-frame::before{content:"";position:absolute;inset:0;background:radial-gradient(130% 110% at 50% 28%,transparent 56%,rgb(2 4 8/.5) 100%)}
+.hero-frame::after{content:"";position:absolute;inset:0;opacity:.045;mix-blend-mode:overlay;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");background-size:150px 150px}
+.hero-sheen{position:absolute;inset:0;z-index:3;pointer-events:none;background:linear-gradient(100deg,transparent 42%,rgb(255 255 255/.06) 50%,transparent 58%);transform:translateX(-130%);animation:heroSheen 1.7s .5s var(--ease) both}
+@keyframes heroSheen{to{transform:translateX(130%)}}
+@media(prefers-reduced-motion:reduce){.hero-sheen{display:none}}
+.hero .badge{backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);background:linear-gradient(180deg,rgb(255 255 255/.065),rgb(255 255 255/.018));box-shadow:inset 0 1px 0 rgb(255 255 255/.09),0 14px 34px -20px rgb(0 0 0/.85);letter-spacing:.25px}
+.hero-kicker-rule{display:block;width:52px;height:2px;margin:18px 0 0;border-radius:2px;background:linear-gradient(90deg,var(--cyan),transparent);opacity:.85}
+.hero h1{letter-spacing:-.01em}
+.hero h1 .l2{text-shadow:0 0 70px rgb(79 214 255/.45),0 0 16px rgb(79 214 255/.3)}
+.hero .actions .button:not(.primary){backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.hero .actions .button.primary{box-shadow:0 14px 38px -10px rgb(79 214 255/.7)}
+.hero .hero-stats{backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);background:linear-gradient(180deg,rgb(255 255 255/.04),rgb(255 255 255/.012));box-shadow:inset 0 1px 0 rgb(255 255 255/.06),0 24px 60px -36px rgb(0 0 0/.9)}
 
 /* ═════════════ Library ═════════════ */
 .library{padding:clamp(28px,4vw,52px) 0 clamp(48px,6vw,84px)}
@@ -551,10 +567,13 @@ html.journey-on .ft-tile:not(.on) .ft-ic{opacity:0}
 
 <main>
 <section class="hero">
+  <div class="hero-frame" aria-hidden="true"></div>
   <div class="hero-orbs" aria-hidden="true"><i class="orb a"></i><i class="orb b"></i><i class="hero-spot"></i></div>
+  <div class="hero-sheen" aria-hidden="true"></div>
   <div class="wrap hero-in">
     <div class="hero-copy">
       <div class="badge"><i aria-hidden="true"></i>مكتبة IPA STRONG</div>
+      <span class="hero-kicker-rule" aria-hidden="true"></span>
       <h1><span class="l1">نسختك المفضّلة.</span><span class="l2">بمكان واحد.</span></h1>
       <p>تطبيقات، ألعاب، ونسخ بمميزات إضافية.<br>ابحث عن اللي تريده وخلي الباقي علينا.</p>
       <div class="actions">
@@ -569,6 +588,7 @@ html.journey-on .ft-tile:not(.on) .ft-ic{opacity:0}
       </div>
     </div>
     <div class="mosaic-wrap" aria-hidden="true">
+      <i class="ground"></i>
       <div class="mosaic is-loading" id="mosaic"></div>
       <div class="mosaic-logo"><img src="https://raw.githubusercontent.com/sgad73055-code/ipastrong/main/source-icon.jpeg" alt="" width="94" height="94"></div>
     </div>
