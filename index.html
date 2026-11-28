@@ -686,7 +686,6 @@ html.journey-on .ft-tile:not(.on) .ft-ic{opacity:0}
     <button type="button" class="button copy" id="copyName"><svg class="ic" aria-hidden="true"><use href="#i-copy"/></svg><span>نسخ اسم التطبيق</span></button>
     <button type="button" class="button" id="copyLink"><svg class="ic" aria-hidden="true"><use href="#i-link"/></svg><span>نسخ رابط IPA المباشر</span></button>
     <a class="button" id="downloadIPA" href="#" target="_blank" rel="noopener" hidden><svg class="ic" aria-hidden="true"><use href="#i-down"/></svg><span>تنزيل ملف IPA</span></a>
-    <a class="button" id="signWithMine" href="#" hidden><svg class="ic" aria-hidden="true"><use href="#i-shield"/></svg><span>وقّع بشهادتك الخاصة</span></a>
   </div>
   <p class="dialog-note">يفتح قناة المتجر على تيليگرام</p>
 </dialog>
@@ -978,8 +977,6 @@ function openDetails(a){
   if(a.date){const t3=make('span');t3.append(icon('cal'),make('span','','آخر تحديث '+dateText(a.date)));tags.append(t3)}
   $('description').textContent=a.description;$('description').scrollTop=0;
   const ipaButton=$('downloadIPA');ipaButton.hidden=!a.downloadURL;ipaButton.href=a.downloadURL||'#';
-  const signButton=$('signWithMine');signButton.hidden=!a.downloadURL;
-  if(a.downloadURL){const p=new URLSearchParams({bundleId:a.bundleIdentifier||'',version:a.version||'1.0',title:a.name||'',ipaUrl:a.downloadURL,icon:a.icon&&a.icon.startsWith('http')?a.icon:''});signButton.href='./signer.html?'+p.toString()}
   resetCopy();
   $('details').showModal();document.body.style.overflow='hidden';window.__lenis&&window.__lenis.stop();
 }
