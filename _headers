@@ -1,0 +1,6 @@
+/certs/registry.json
+  Cache-Control: no-cache
+
+/certs/manifests/*
+  Content-Type: text/xml; charset=utf-8
+  Cache-Control: no-cache
