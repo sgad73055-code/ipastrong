@@ -1,13 +1,14 @@
 {
   "checked": 400,
   "outcomes": {
-    "ok": 376,
-    "missing": 24
+    "missing": 12,
+    "ok": 387,
+    "temporary": 1
   },
   "repaired": [],
   "unresolved": [],
-  "date": "2026-11-28T19:33:58.123120+00:00",
-  "inputApps": 5299,
+  "date": "2026-11-28T20:04:12.083881+00:00",
+  "inputApps": 5528,
   "outputApps": 5528,
   "preservedApps": 46,
   "recoveredPublishedSource": false,
@@ -25,7 +26,7 @@
       },
       {
         "source": "https://ipa.cypwn.xyz/cypwn.json",
-        "apps": 209,
+        "apps": 210,
         "error": null
       },
       {
@@ -65,8 +66,8 @@
       },
       {
         "source": "https://apps.nabzclan.vip/repos/altstore.php",
-        "apps": 0,
-        "error": "HTTP Error 500: Internal Server Error"
+        "apps": 222,
+        "error": null
       },
       {
         "source": "https://ipa.thuthuatjb.com/repo",
@@ -179,8 +180,8 @@
         "error": null
       }
     ],
-    "inputRecords": 25739,
-    "outputApps": 6368,
+    "inputRecords": 25741,
+    "outputApps": 6370,
     "rejectedRecords": 202
   },
   "deduplication": {
@@ -451,7 +452,7 @@
     }
   },
   "blockedFamilies": {
-    "removedApps": 7,
+    "removedApps": 9,
     "strippedCredits": 0
   },
   "catalogLimit": {
