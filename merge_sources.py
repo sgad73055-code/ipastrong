@@ -5,7 +5,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlsplit, urljoin
 
-SOURCES = ['https://repository.apptesters.org', 'https://ipa.cypwn.xyz/cypwn.json', 'https://wuxu1.github.io/wuxu-complete.json', 'https://wuxu1.github.io/wuxu-complete-plus.json', 'https://repo.ikghd.me/repo.json', 'https://check0ver.site/repo.json', 'https://quarksources.github.io/dist/quantumsource%2B%2B.min.json', 'https://cdn.altstore.io/file/altstore/apps.json', 'https://alts.lao.sb/source.json', 'https://apps.nabzclan.vip/repos/altstore.php', 'https://ipa.thuthuatjb.com/repo', 'https://repo.ethsign.fyi', 'https://fastsign.dev/repo.json']
+SOURCES = ['https://repository.apptesters.org', 'https://ipa.cypwn.xyz/cypwn.json', 'https://wuxu1.github.io/wuxu-complete.json', 'https://wuxu1.github.io/wuxu-complete-plus.json', 'https://repo.ikghd.me/repo.json', 'https://check0ver.site/repo.json', 'https://quarksources.github.io/dist/quantumsource%2B%2B.min.json', 'https://cdn.altstore.io/file/altstore/apps.json', 'https://alts.lao.sb/source.json', 'https://apps.nabzclan.vip/repos/altstore.php', 'https://ipa.thuthuatjb.com/repo', 'https://repo.ethsign.fyi']
 OUTPUT = Path("ipastrong.json")
 BLOCKLIST = Path(__file__).with_name("excluded-downloads.json")
 BLOCKED = set(json.loads(BLOCKLIST.read_text()).get("urls", [])) if BLOCKLIST.exists() else set()
