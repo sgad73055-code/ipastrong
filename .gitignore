@@ -1,0 +1,8 @@
+# ملفات التوقيع السرية: لا تُرفع للمستودع أبداً
+*.p12
+*.pfx
+*.pem
+*.key
+*.mobileprovision
+.dev.vars
+__pycache__/

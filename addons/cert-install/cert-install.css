@@ -1,0 +1,19 @@
+/* تستخدم ألوان وخطوط الموقع نفسها (متغيرات :root) */
+.ci{padding-block:48px;scroll-margin-top:var(--header)}
+.ci h2{margin:0 0 8px}
+.ci-lead,.ci-type,.ci-head p,.ci-empty,.ci-down{color:var(--muted);font-size:13px;line-height:1.8}
+.ci-warn{padding:12px 16px;border:1px solid #c9a23f;border-radius:14px;font-size:13px}
+.ci-search{width:100%;min-height:48px;padding:10px 16px;border:1px solid var(--line2);border-radius:14px;background:var(--s1);color:var(--text);font:inherit;font-size:16px}
+.ci-status{min-height:1.6em;margin:10px 0;color:var(--cyan-2);font-size:13px}
+.ci-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(260px,100%),1fr));gap:14px}
+.ci-card{display:flex;flex-direction:column;gap:6px;padding:18px;border:1px solid var(--line);border-radius:20px;background:var(--s1);min-width:0}
+.ci-card p{margin:0}
+.ci-head{display:flex;gap:12px;align-items:center}
+.ci-head>div{min-width:0}
+.ci-head h3{margin:0;font-size:16px;overflow-wrap:anywhere}
+.ci-head img{border-radius:22.4%;object-fit:cover;flex:none}
+.ci-cert{font-weight:600;font-size:13.5px}
+.ci-card .button{margin-top:auto}
+.ci-in-dialog{grid-column:1/-1}
+.ci-down{margin-top:14px}
+@media(max-width:760px){.tabbar:has(a[href="#direct-install"]){grid-template-columns:repeat(4,1fr)}}
